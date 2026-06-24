@@ -1,0 +1,8 @@
+{
+  "cities": [],
+  "positions": [],
+  "industries": [],
+  "functions": [],
+  "updatedAt": 0,
+  "_note": "由小程序「偏好设置」保存时自动更新，Mac 采集器读取此文件来确定搜索词"
+}
