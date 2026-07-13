@@ -1,9 +1,9 @@
 {
-  "observed_at": "2026-07-13T20:38:43.380663+00:00",
-  "navigation_rows_scanned": 45952,
-  "strong_detail_urls_identified": 1658,
+  "observed_at": "2026-07-13T20:41:04.678431+00:00",
+  "navigation_rows_scanned": 47437,
+  "strong_detail_urls_identified": 1659,
   "new_detail_candidates_created": 0,
-  "navigation_resolutions_created": 1658,
+  "navigation_resolutions_created": 1659,
   "review_status": "candidate_raw",
   "content_validation_completed": false
 }

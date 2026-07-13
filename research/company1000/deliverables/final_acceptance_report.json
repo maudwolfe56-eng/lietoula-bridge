@@ -1,19 +1,19 @@
 {
   "schema_version": "1.2",
-  "assessed_at": "2026-07-13T20:40:20.567792+00:00",
+  "assessed_at": "2026-07-13T20:43:17.126542+00:00",
   "target_companies": 1000,
   "seeded_unique_companies": 1020,
   "seed_shortfall": 0,
   "companies_with_coverage": 993,
-  "companies_with_explicit_failure_reason": 860,
+  "companies_with_explicit_failure_reason": 862,
   "companies_without_audit_count": 0,
   "companies_without_audit_sample": [],
-  "job_records": 291,
-  "all_recruitment_candidates": 40231,
-  "probable_job_detail_candidates": 19441,
-  "terminal_detail_failures": 95,
-  "resolved_job_detail_candidates": 181,
-  "pending_job_detail_candidates": 19260,
+  "job_records": 390,
+  "all_recruitment_candidates": 41261,
+  "probable_job_detail_candidates": 19461,
+  "terminal_detail_failures": 112,
+  "resolved_job_detail_candidates": 280,
+  "pending_job_detail_candidates": 19181,
   "pending_job_detail_sample": [
     {
       "company_id": "cn-soe-0050",
@@ -316,9 +316,9 @@
       "reason": "official_multi_position_announcement"
     }
   ],
-  "recruitment_navigation_candidates": 20790,
-  "resolved_recruitment_navigation": 5830,
-  "pending_recruitment_navigation": 14960,
+  "recruitment_navigation_candidates": 21800,
+  "resolved_recruitment_navigation": 6075,
+  "pending_recruitment_navigation": 15725,
   "pending_recruitment_navigation_sample": [
     {
       "company_id": "cn-soe-0020",
@@ -453,12 +453,6 @@
       "reason": null
     },
     {
-      "company_id": "cn-chip-0236",
-      "company_name": "中芯国际集成电路制造有限公司",
-      "source_url": "https://smics.zhiye.com/overseas",
-      "reason": null
-    },
-    {
       "company_id": "cn-elec-0241",
       "company_name": "立讯精密工业股份有限公司",
       "source_url": "https://www.luxshare-ict.com/careers.html",
@@ -501,123 +495,129 @@
       "reason": null
     },
     {
-      "company_id": "cn-autoparts-0748",
-      "company_name": "安波福（中国）投资有限公司",
-      "source_url": "https://www.aptiv.com/en/jobs/students/infrastructure-leadership-development-programs/finance-leadership-development-program",
-      "reason": null
-    },
-    {
-      "company_id": "cn-autoparts-0748",
-      "company_name": "安波福（中国）投资有限公司",
-      "source_url": "https://www.aptiv.com/en/jobs/working-here/diversity-inclusion",
+      "company_id": "cn-property-0912",
+      "company_name": "恒隆地产有限公司",
+      "source_url": "https://careers.hanglung.com/job/Senior-Officer/1409243733/",
       "reason": null
     },
     {
       "company_id": "cn-property-0912",
       "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/go/Internship/9524801/",
+      "source_url": "https://careers.hanglung.com/job/Senior-Secretary/1369371033/",
       "reason": null
     },
     {
       "company_id": "cn-property-0912",
       "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/Officer-Hygiene/1375436133/",
+      "source_url": "https://careers.hanglung.com/job/Senior-Manager-Property-Management-Services-%28Technical%29/1389280633/",
       "reason": null
     },
     {
       "company_id": "cn-property-0912",
       "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/%E5%8A%9E%E5%85%AC%E6%A5%BC-%E5%89%AF%E4%B8%BB%E4%BB%BB/1414092933/",
+      "source_url": "https://careers.hanglung.com/job/Associate-CS/1388273833/",
       "reason": null
     },
     {
       "company_id": "cn-property-0912",
       "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/Secretary-%28Travel-Arrangement-focus%29/1383427033/",
+      "source_url": "https://careers.hanglung.com/job/Officer-%28Administration-and-Documentation-support%29/1279732201/",
       "reason": null
     },
     {
       "company_id": "cn-property-0912",
       "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/Driver/1413743933/",
+      "source_url": "https://careers.hanglung.com/job/Manager-Property-Management-Services/1397528833/",
       "reason": null
     },
     {
       "company_id": "cn-property-0912",
       "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/%E4%B8%BB%E4%BB%BB/1392634233/",
+      "source_url": "https://careers.hanglung.com/job/%E9%AB%98%E7%BA%A7%E5%AE%A2%E6%9C%8D%E5%91%98/1408145133/",
       "reason": null
     },
     {
       "company_id": "cn-property-0912",
       "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/Manager-Leasing/1402649633/",
+      "source_url": "https://careers.hanglung.com/job/%E5%AE%A2%E6%88%B7%E6%9C%8D%E5%8A%A1%E5%89%AF%E9%A2%86%E7%8F%AD/1408145433/",
       "reason": null
     },
     {
       "company_id": "cn-property-0912",
       "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/Technical-Senior-Officer/1392129233/",
+      "source_url": "https://careers.hanglung.com/job/%E9%AB%98%E7%BA%A7%E5%AE%A2%E6%9C%8D%E5%91%98/1408146333/",
       "reason": null
     },
     {
       "company_id": "cn-property-0912",
       "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/Marketing-Senior-Manager/1392129833/",
+      "source_url": "https://careers.hanglung.com/job/Finance-Manager/1397076133/",
       "reason": null
     },
     {
       "company_id": "cn-property-0912",
       "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/Manager-Leasing/1412578533/",
+      "source_url": "https://careers.hanglung.com/job/Senior-Financial-Analyst/1397075033/",
       "reason": null
     },
     {
       "company_id": "cn-property-0912",
       "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/Administration-Officer/1293039101/",
+      "source_url": "https://careers.hanglung.com/job/Intern/1407764133/",
       "reason": null
     },
     {
       "company_id": "cn-property-0912",
       "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/Assistant-Officer-Finance-1/1412051433/",
+      "source_url": "https://careers.hanglung.com/job/Intern/1407814033/",
       "reason": null
     },
     {
       "company_id": "cn-property-0912",
       "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/Officer-Technical/1381997833/",
+      "source_url": "https://careers.hanglung.com/job/Intern/1407814733/",
       "reason": null
     },
     {
       "company_id": "cn-property-0912",
       "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/Assistant-Manager-Corporate-Communications-%28Brand-Communications%29/1390809433/",
+      "source_url": "https://careers.hanglung.com/job/Intern/1407806633/",
       "reason": null
     },
     {
       "company_id": "cn-property-0912",
       "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/Assistant-Manager/1368986533/",
+      "source_url": "https://careers.hanglung.com/job/Intern/1407779833/",
       "reason": null
     },
     {
       "company_id": "cn-property-0912",
       "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/Customer-Service-Ambassador/1400763533/",
+      "source_url": "https://careers.hanglung.com/job/Intern/1407773833/",
       "reason": null
     },
     {
       "company_id": "cn-property-0912",
       "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/Assistant-Manager-Finance/1411205233/",
+      "source_url": "https://careers.hanglung.com/job/Intern/1407765333/",
       "reason": null
     },
     {
       "company_id": "cn-property-0912",
       "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/Assistant-Manager-Property-Management-Services/1389743533/",
+      "source_url": "https://careers.hanglung.com/job/Intern/1407766933/",
+      "reason": null
+    },
+    {
+      "company_id": "cn-property-0912",
+      "company_name": "恒隆地产有限公司",
+      "source_url": "https://careers.hanglung.com/job/Intern/1407786333/",
+      "reason": null
+    },
+    {
+      "company_id": "cn-property-0912",
+      "company_name": "恒隆地产有限公司",
+      "source_url": "https://careers.hanglung.com/job/Manager-Customer-Service/1368433533/",
       "reason": null
     }
   ],
@@ -642,15 +642,15 @@
   "final_acceptance": false,
   "assessment_version": "2.1-classification-aware-latest-ledger-announcement-gate",
   "counts": {
-    "probable_job_detail_candidates": 19390,
-    "classified_detail_urls_excluded": 20413,
+    "probable_job_detail_candidates": 19410,
+    "classified_detail_urls_excluded": 20434,
     "routed_announcement_urls": 85,
     "resolved_routed_announcements": 0,
     "pending_routed_announcements": 85,
-    "pending_job_detail_candidates": 352,
-    "recruitment_navigation_candidates": 20786,
-    "terminal_latest_navigation_resolutions": 24665,
-    "pending_recruitment_navigation": 15040
+    "pending_job_detail_candidates": 243,
+    "recruitment_navigation_candidates": 21802,
+    "terminal_latest_navigation_resolutions": 24931,
+    "pending_recruitment_navigation": 15805
   },
   "pending_samples": {
     "job_details": [
@@ -684,6 +684,10 @@
       },
       {
         "company_id": "cn-chip-0236",
+        "source_url": "https://smics.zhiye.com/overseasxq?jobId=390472338&jc=3&c=&p=1%5E-1%2C3%5E-1&ky="
+      },
+      {
+        "company_id": "cn-chip-0236",
         "source_url": "https://smics.zhiye.com/socialxq?jobId=390609112&jc=1&c=&p=1%5E-1%2C3%5E-1&ky="
       },
       {
@@ -699,72 +703,16 @@
         "source_url": "https://smics.zhiye.com/socialxq?jobId=390841785&jc=1&c=&p=1%5E-1%2C3%5E-1&ky="
       },
       {
-        "company_id": "cn-edu-0795",
-        "source_url": "https://www.fenbi.com/page/positions/9/730999?department=%E5%8C%97%E5%B1%AF%E5%BE%97%E4%BB%81%E5%9F%8E%E5%B8%82%E5%BB%BA%E8%AE%BE%E6%8A%95%E8%B5%84%E7%BB%8F%E8%90%A5%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
-      },
-      {
-        "company_id": "cn-edu-0795",
-        "source_url": "https://www.fenbi.com/page/positions/9/730999?region=3428"
-      },
-      {
-        "company_id": "cn-edu-0795",
-        "source_url": "https://www.fenbi.com/page/positions/9/731092?department=%E4%B8%AD%E5%9B%BD%E5%8F%91%E5%B1%95%E5%87%BA%E7%89%88%E7%A4%BE%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90%E9%83%A8"
-      },
-      {
-        "company_id": "cn-edu-0795",
-        "source_url": "https://www.fenbi.com/page/positions/9/731092?region=159"
-      },
-      {
-        "company_id": "cn-edu-0795",
-        "source_url": "https://www.fenbi.com/page/positions/9/731093?department=%E5%8C%97%E4%BA%AC%E5%B8%82%E9%A6%96%E5%8F%91%E5%B7%A5%E8%B4%B8%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8"
-      },
-      {
-        "company_id": "cn-edu-0795",
-        "source_url": "https://www.fenbi.com/page/positions/9/731093?region=159"
-      },
-      {
-        "company_id": "cn-edu-0795",
-        "source_url": "https://www.fenbi.com/page/positions/9/731166?department=%E7%BA%A2%E7%9F%B3%E5%88%9B%E4%B8%9A%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%91%E7%AE%A1%E7%90%86%EF%BC%88%E5%A4%A9%E6%B4%A5%EF%BC%89%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
-      },
-      {
-        "company_id": "cn-edu-0795",
-        "source_url": "https://www.fenbi.com/page/positions/9/731166?region=3406"
-      },
-      {
-        "company_id": "cn-edu-0795",
-        "source_url": "https://www.fenbi.com/page/positions/9/731219?department=%E4%B8%AD%E9%87%91%E5%85%AC%E5%8F%B8"
-      },
-      {
-        "company_id": "cn-edu-0795",
-        "source_url": "https://www.fenbi.com/page/positions/9/731219?department=%E5%B9%BF%E8%A5%BF%E9%92%A2%E9%93%81"
-      },
-      {
-        "company_id": "cn-edu-0795",
-        "source_url": "https://www.fenbi.com/page/positions/9/731219?region=683"
-      },
-      {
-        "company_id": "cn-edu-0795",
-        "source_url": "https://www.fenbi.com/page/positions/9/731241?department=%E6%8A%95%E8%B5%84%E4%B8%9A%E5%8A%A1%E9%83%A8"
-      },
-      {
-        "company_id": "cn-edu-0795",
-        "source_url": "https://www.fenbi.com/page/positions/9/731241?department=%E8%B5%84%E4%BA%A7%E7%AE%A1%E7%90%86%E9%83%A8"
-      },
-      {
-        "company_id": "cn-edu-0795",
-        "source_url": "https://www.fenbi.com/page/positions/9/731241?department=%E9%A3%8E%E6%8E%A7%E5%90%88%E8%A7%84%E9%83%A8"
-      },
-      {
-        "company_id": "cn-edu-0795",
-        "source_url": "https://www.fenbi.com/page/positions/9/731241?region=1694"
-      },
-      {
         "company_id": "cn-fintech-0642",
         "source_url": "https://career.brgroup.com/campus-recruitment/100credit/102451"
       },
       {
         "company_id": "cn-fintech-0642",
         "source_url": "https://career.brgroup.com/social-recruitment/100credit/92460"
+      },
+      {
+        "company_id": "cn-game-0620",
+        "source_url": "https://app.mokahr.com/campus-recruitment/37/58016?locale=zh-CN"
       },
       {
         "company_id": "cn-machinery-0583",
@@ -844,15 +792,67 @@
       },
       {
         "company_id": "cn-property-0912",
-        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/25/?q=&sortColumn=referencedate&sortDirection=desc"
+        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/25/?q=&sortColumn=sort_department&sortDirection=desc"
       },
       {
         "company_id": "cn-property-0912",
-        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/50/?q=&sortColumn=referencedate&sortDirection=desc"
+        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/25/?q=&sortColumn=sort_facility&sortDirection=desc"
       },
       {
         "company_id": "cn-property-0912",
-        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/?q=&sortColumn=referencedate&sortDirection=desc"
+        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/25/?q=&sortColumn=sort_title&sortDirection=desc"
+      },
+      {
+        "company_id": "cn-property-0912",
+        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/50/?q=&sortColumn=sort_department&sortDirection=desc"
+      },
+      {
+        "company_id": "cn-property-0912",
+        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/50/?q=&sortColumn=sort_facility&sortDirection=desc"
+      },
+      {
+        "company_id": "cn-property-0912",
+        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/50/?q=&sortColumn=sort_title&sortDirection=desc"
+      },
+      {
+        "company_id": "cn-property-0912",
+        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/?q=&sortColumn=sort_department&sortDirection=asc"
+      },
+      {
+        "company_id": "cn-property-0912",
+        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/?q=&sortColumn=sort_facility&sortDirection=asc"
+      },
+      {
+        "company_id": "cn-property-0912",
+        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/?q=&sortColumn=sort_title&sortDirection=asc"
+      },
+      {
+        "company_id": "cn-property-0912",
+        "source_url": "https://careers.hanglung.com/go/Management-Trainee-Jobs/9356901/"
+      },
+      {
+        "company_id": "cn-soe-0050",
+        "source_url": "https://job.ceair.com/pilotJobDetail1.html?positionId=NTQzNg%3D%3D&cateId=MTAwMA%3D%3D"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "source_url": "https://jobs.lenovo.com/de_DE/careers/JobDetail/78990"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "source_url": "https://jobs.lenovo.com/de_DE/careers/JobDetail/79160"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "source_url": "https://jobs.lenovo.com/de_DE/careers/JobDetail/79245"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "source_url": "https://jobs.lenovo.com/de_DE/careers/JobDetail/79267"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "source_url": "https://jobs.lenovo.com/de_DE/careers/JobDetail/79504"
       }
     ],
     "routed_announcements": [
@@ -1204,6 +1204,10 @@
       },
       {
         "company_id": "cn-autoparts-0748",
+        "source_url": "https://www.aptiv.com/de/einblicke/search"
+      },
+      {
+        "company_id": "cn-autoparts-0748",
         "source_url": "https://www.aptiv.com/de/karriere/jobsuche"
       },
       {
@@ -1232,6 +1236,10 @@
       },
       {
         "company_id": "cn-autoparts-0748",
+        "source_url": "https://www.aptiv.com/en/global-search"
+      },
+      {
+        "company_id": "cn-autoparts-0748",
         "source_url": "https://www.aptiv.com/en/home"
       },
       {
@@ -1244,19 +1252,11 @@
       },
       {
         "company_id": "cn-autoparts-0748",
-        "source_url": "https://www.aptiv.com/en/insights/search?newstypes=Articles"
+        "source_url": "https://www.aptiv.com/en/insights/search"
       },
       {
         "company_id": "cn-autoparts-0748",
-        "source_url": "https://www.aptiv.com/en/insights/search?newstypes=Case+Studies"
-      },
-      {
-        "company_id": "cn-autoparts-0748",
-        "source_url": "https://www.aptiv.com/en/insights/search?newstypes=Inside+Edge"
-      },
-      {
-        "company_id": "cn-autoparts-0748",
-        "source_url": "https://www.aptiv.com/en/insights/search?newstypes=Research+Publications"
+        "source_url": "https://www.aptiv.com/en/jobs/search/open-positions"
       }
     ]
   }
