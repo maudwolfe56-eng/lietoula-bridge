@@ -1,25 +1,25 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-13T13:46:26.460031+00:00",
+  "generated_at": "2026-07-13T13:51:32.814064+00:00",
   "target_companies": 1000,
-  "seeded_companies": 50,
-  "coverage_records": 37,
-  "companies_with_coverage": 27,
+  "seeded_companies": 60,
+  "coverage_records": 47,
+  "companies_with_coverage": 37,
   "job_records": 121,
   "job_status_counts": {
     "inactive_expired": 23,
     "review_pending": 56,
     "candidate_raw": 42
   },
-  "failure_records": 66,
+  "failure_records": 74,
   "job_change_records": 121,
   "active_verified_records": 0,
   "final_acceptance_met": false,
   "checkpoint": {
     "schema_version": "1.0",
-    "updated_at": "2026-07-13T13:46:26.353699+00:00",
+    "updated_at": "2026-07-13T13:51:32.688436+00:00",
     "target_companies": 1000,
-    "valid_seed_count": 50,
+    "valid_seed_count": 60,
     "official_entries_verified": 14,
     "official_entry_candidates_pending": 2,
     "companies_with_job_records": 4,
@@ -28,7 +28,7 @@
     "job_records_review_pending": 64,
     "job_records_inactive_expired": 23,
     "companies_final_acceptance_met": 0,
-    "next_batch_start_index": 50,
+    "next_batch_start_index": 60,
     "batch_progress": {
       "batch_0001": {
         "companies_reviewed": 10,
@@ -132,7 +132,7 @@
     },
     "last_auto_batch": {
       "start_index": 50,
-      "count": 0
+      "count": 10
     }
   },
   "policy": {
