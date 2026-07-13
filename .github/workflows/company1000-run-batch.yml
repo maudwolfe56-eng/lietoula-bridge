@@ -48,6 +48,8 @@ jobs:
             enumerate_recruitment_navigation.py \
             enumerate_recruitment_navigation_v2.py \
             enumerate_recruitment_navigation_v3.py \
+            enumerate_recruitment_navigation_v4.py \
+            reclassify_navigation_detail_urls.py \
             resolve_job_detail_candidates.py \
             resolve_job_detail_candidates_safe.py \
             resolve_job_detail_candidates_v2.py \
@@ -72,6 +74,18 @@ jobs:
             --batch-size 50 \
             | tee logs/next_batch_auto.log
 
+      - name: Reclassify strong official ATS detail URLs
+        id: reclassify
+        continue-on-error: true
+        working-directory: research/company1000
+        env:
+          PYTHONUNBUFFERED: '1'
+        run: |
+          set -o pipefail
+          python reclassify_navigation_detail_urls.py \
+            --output-dir output \
+            | tee logs/reclassify_navigation_detail_urls.log
+
       - name: Expand public recruitment navigation with bounded retry-aware classifier
         id: navigation
         continue-on-error: true
@@ -80,7 +94,7 @@ jobs:
           PYTHONUNBUFFERED: '1'
         run: |
           set -o pipefail
-          python enumerate_recruitment_navigation_v3.py \
+          python enumerate_recruitment_navigation_v4.py \
             --seed-file runtime/company_seed_merged.json \
             --output-dir output \
             --state-file runtime/checkpoint.json \
@@ -168,13 +182,15 @@ jobs:
               'generated_at_utc': datetime.now(timezone.utc).isoformat(),
               'runner_step_outcome': '${{ steps.batch.outcome }}',
               'runner_step_conclusion': '${{ steps.batch.conclusion }}',
+              'reclassification_step_outcome': '${{ steps.reclassify.outcome }}',
+              'reclassification_step_conclusion': '${{ steps.reclassify.conclusion }}',
               'navigation_step_outcome': '${{ steps.navigation.outcome }}',
               'navigation_step_conclusion': '${{ steps.navigation.conclusion }}',
               'detail_step_outcome': '${{ steps.detail.outcome }}',
               'detail_step_conclusion': '${{ steps.detail.conclusion }}',
               'announcement_step_outcome': '${{ steps.announcement.outcome }}',
               'announcement_step_conclusion': '${{ steps.announcement.conclusion }}',
-              'mode': 'entry_audit_bounded_retry_navigation_retry_detail_and_announcement_resolution'
+              'mode': 'entry_audit_ats_reclassification_bounded_navigation_retry_detail_and_announcement_resolution'
           }, ensure_ascii=False, indent=2), encoding='utf-8')
           PY
 
@@ -204,5 +220,5 @@ jobs:
           fi
 
       - name: Fail workflow if an audit stage failed
-        if: steps.batch.outcome == 'failure' || steps.navigation.outcome == 'failure' || steps.detail.outcome == 'failure' || steps.announcement.outcome == 'failure'
+        if: steps.batch.outcome == 'failure' || steps.reclassify.outcome == 'failure' || steps.navigation.outcome == 'failure' || steps.detail.outcome == 'failure' || steps.announcement.outcome == 'failure'
         run: exit 1
