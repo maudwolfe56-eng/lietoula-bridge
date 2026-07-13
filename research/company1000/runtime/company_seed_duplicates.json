@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "duplicate_seed_rows_excluded": 23,
+  "duplicates": [
+    {
+      "source_file": "company_seed_expansion_0001.json",
+      "source_row": 1,
+      "skipped_company_id": "cn-soe-0027",
+      "skipped_company_name": "中国移动通信集团有限公司",
+      "kept_company_id": "cn-soe-0027",
+      "kept_company_name": "中国移动通信集团有限公司",
+      "reason": "duplicate_company_id"
+    },
+    {
+      "source_file": "company_seed_expansion_0001.json",
+      "source_row": 2,
+      "skipped_company_id": "cn-soe-0028",
+      "skipped_company_name": "中国电信集团有限公司",
+      "kept_company_id": "cn-soe-0028",
+      "kept_company_name": "中国电信集团有限公司",
+      "reason": "duplicate_company_id"
+    },
+    {
+      "source_file": "company_seed_expansion_0001.json",
+      "source_row": 3,
+      "skipped_company_id": "cn-soe-0029",
+      "skipped_company_name": "中国联合网络通信集团有限公司",
+      "kept_company_id": "cn-soe-0029",
+      "kept_company_name": "中国建筑集团有限公司",
+      "reason": "duplicate_company_id"
+    },
+    {
+      "source_file": "company_seed_expansion_0001.json",
+      "source_row": 4,
+      "skipped_company_id": "cn-soe-0030",
+      "skipped_company_name": "中国邮政集团有限公司",
+      "kept_company_id": "cn-soe-0030",
+      "kept_company_name": "中国交通建设集团有限公司",
+      "reason": "duplicate_company_id"
+    },
+    {
+      "source_file": "company_seed_expansion_0001.json",
+      "source_row": 5,
+      "skipped_company_id": "cn-soe-0031",
+      "skipped_company_name": "中国建筑集团有限公司",
+      "kept_company_id": "cn-soe-0031",
+      "kept_company_name": "中国铁路工程集团有限公司",
+      "reason": "duplicate_company_id"
+    },
+    {
+      "source_file": "company_seed_expansion_0001.json",
+      "source_row": 6,
+      "skipped_company_id": "cn-soe-0032",
+      "skipped_company_name": "中国中铁股份有限公司",
+      "kept_company_id": "cn-soe-0032",
+      "kept_company_name": "中国铁道建筑集团有限公司",
+      "reason": "duplicate_company_id"
+    },
+    {
+      "source_file": "company_seed_expansion_0001.json",
+      "source_row": 7,
+      "skipped_company_id": "cn-soe-0033",
+      "skipped_company_name": "中国铁建股份有限公司",
+      "kept_company_id": "cn-soe-0033",
+      "kept_company_name": "中国第一汽车集团有限公司",
+      "reason": "duplicate_company_id"
+    },
+    {
+      "source_file": "company_seed_expansion_0001.json",
+      "source_row": 8,
+      "skipped_company_id": "cn-soe-0034",
+      "skipped_company_name": "中国交通建设集团有限公司",
+      "kept_company_id": "cn-soe-0034",
+      "kept_company_name": "东风汽车集团有限公司",
+      "reason": "duplicate_company_id"
+    },
+    {
+      "source_file": "company_seed_expansion_0001.json",
+      "source_row": 9,
+      "skipped_company_id": "cn-soe-0035",
+      "skipped_company_name": "中国中车集团有限公司",
+      "kept_company_id": "cn-soe-0035",
+      "kept_company_name": "中国宝武钢铁集团有限公司",
+      "reason": "duplicate_company_id"
+    },
+    {
+      "source_file": "company_seed_expansion_0001.json",
+      "source_row": 10,
+      "skipped_company_id": "cn-soe-0036",
+      "skipped_company_name": "中国宝武钢铁集团有限公司",
+      "kept_company_id": "cn-soe-0036",
+      "kept_company_name": "鞍钢集团有限公司",
+      "reason": "duplicate_company_id"
+    },
+    {
+      "source_file": "company_seed_expansion_0001.json",
+      "source_row": 11,
+      "skipped_company_id": "cn-soe-0037",
+      "skipped_company_name": "鞍钢集团有限公司",
+      "kept_company_id": "cn-soe-0037",
+      "kept_company_name": "中国五矿集团有限公司",
+      "reason": "duplicate_company_id"
+    },
+    {
+      "source_file": "company_seed_expansion_0001.json",
+      "source_row": 12,
+      "skipped_company_id": "cn-soe-0038",
+      "skipped_company_name": "中国五矿集团有限公司",
+      "kept_company_id": "cn-soe-0038",
+      "kept_company_name": "中国铝业集团有限公司",
+      "reason": "duplicate_company_id"
+    },
+    {
+      "source_file": "company_seed_expansion_0001.json",
+      "source_row": 13,
+      "skipped_company_id": "cn-soe-0039",
+      "skipped_company_name": "中国铝业集团有限公司",
+      "kept_company_id": "cn-soe-0039",
+      "kept_company_name": "中国远洋海运集团有限公司",
+      "reason": "duplicate_company_id"
+    },
+    {
+      "source_file": "company_seed_expansion_0001.json",
+      "source_row": 14,
+      "skipped_company_id": "cn-soe-0040",
+      "skipped_company_name": "中国建材集团有限公司",
+      "kept_company_id": "cn-soe-0040",
+      "kept_company_name": "招商局集团有限公司",
+      "reason": "duplicate_company_id"
+    },
+    {
+      "source_file": "company_seed_expansion_0001.json",
+      "source_row": 15,
+      "skipped_company_id": "cn-soe-0041",
+      "skipped_company_name": "中国机械工业集团有限公司",
+      "kept_company_id": "cn-soe-0041",
+      "kept_company_name": "华润（集团）有限公司",
+      "reason": "duplicate_company_id"
+    },
+    {
+      "source_file": "company_seed_expansion_0001.json",
+      "source_row": 16,
+      "skipped_company_id": "cn-soe-0042",
+      "skipped_company_name": "中国通用技术（集团）控股有限责任公司",
+      "kept_company_id": "cn-soe-0042",
+      "kept_company_name": "中国机械工业集团有限公司",
+      "reason": "duplicate_company_id"
+    },
+    {
+      "source_file": "company_seed_expansion_0001.json",
+      "source_row": 17,
+      "skipped_company_id": "cn-soe-0043",
+      "skipped_company_name": "华润（集团）有限公司",
+      "kept_company_id": "cn-soe-0043",
+      "kept_company_name": "中国通用技术（集团）控股有限责任公司",
+      "reason": "duplicate_company_id"
+    },
+    {
+      "source_file": "company_seed_expansion_0001.json",
+      "source_row": 18,
+      "skipped_company_id": "cn-soe-0044",
+      "skipped_company_name": "招商局集团有限公司",
+      "kept_company_id": "cn-soe-0044",
+      "kept_company_name": "中国建材集团有限公司",
+      "reason": "duplicate_company_id"
+    },
+    {
+      "source_file": "company_seed_expansion_0001.json",
+      "source_row": 19,
+      "skipped_company_id": "cn-soe-0045",
+      "skipped_company_name": "中国保利集团有限公司",
+      "kept_company_id": "cn-soe-0045",
+      "kept_company_name": "中国能源建设集团有限公司",
+      "reason": "duplicate_company_id"
+    },
+    {
+      "source_file": "company_seed_expansion_0001.json",
+      "source_row": 20,
+      "skipped_company_id": "cn-soe-0046",
+      "skipped_company_name": "中国医药集团有限公司",
+      "kept_company_id": "cn-soe-0046",
+      "kept_company_name": "中国电力建设集团有限公司",
+      "reason": "duplicate_company_id"
+    },
+    {
+      "source_file": "company_seed_expansion_0001.json",
+      "source_row": 22,
+      "skipped_company_id": "cn-soe-0048",
+      "skipped_company_name": "中国远洋海运集团有限公司",
+      "kept_company_id": "cn-soe-0039",
+      "kept_company_name": "中国远洋海运集团有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0004.json",
+      "source_row": 3,
+      "skipped_company_id": "cn-auto-0083",
+      "skipped_company_name": "东风汽车集团有限公司",
+      "kept_company_id": "cn-soe-0034",
+      "kept_company_name": "东风汽车集团有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0004.json",
+      "source_row": 4,
+      "skipped_company_id": "cn-auto-0084",
+      "skipped_company_name": "中国第一汽车集团有限公司",
+      "kept_company_id": "cn-soe-0033",
+      "kept_company_name": "中国第一汽车集团有限公司",
+      "reason": "duplicate_exact_company_name"
+    }
+  ]
+}

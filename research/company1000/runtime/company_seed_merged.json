@@ -1,8 +1,9 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "target_count": 1000,
   "seed_status": "incrementally_expanded_auditable_seed",
-  "valid_seed_count": 220,
+  "valid_seed_count": 217,
+  "duplicate_seed_rows_excluded": 23,
   "source_files": [
     "company_seed_1000.json",
     "company_seed_expansion_0001.json",
@@ -485,16 +486,6 @@
       "seed_status": "official_entry_candidate"
     },
     {
-      "company_id": "cn-soe-0048",
-      "company_name": "中国远洋海运集团有限公司",
-      "short_name": "中国远洋海运",
-      "industry": "航运与物流",
-      "official_website": "https://www.coscoshipping.com/",
-      "career_url": "https://coscoshipping.zhiye.com/",
-      "career_entry_evidence": "集团招聘ATS域名候选，待公开访问审计。",
-      "seed_status": "official_entry_candidate"
-    },
-    {
       "company_id": "cn-soe-0049",
       "company_name": "中国国际航空股份有限公司",
       "short_name": "中国国航",
@@ -832,26 +823,6 @@
       "official_website": "https://www.gac.com.cn/",
       "career_url": "https://gac.zhiye.com/",
       "career_entry_evidence": "广汽集团品牌招聘ATS候选，须由官方主站链接或官方招聘公告复核。",
-      "seed_status": "official_entry_candidate"
-    },
-    {
-      "company_id": "cn-auto-0083",
-      "company_name": "东风汽车集团有限公司",
-      "short_name": "东风汽车集团",
-      "industry": "汽车与智能出行",
-      "official_website": "https://www.dfmc.com.cn/",
-      "career_url": "https://dfmc.zhiye.com/",
-      "career_entry_evidence": "东风汽车集团品牌招聘ATS候选，须由官方主站链接或官方招聘公告复核。",
-      "seed_status": "official_entry_candidate"
-    },
-    {
-      "company_id": "cn-auto-0084",
-      "company_name": "中国第一汽车集团有限公司",
-      "short_name": "中国一汽",
-      "industry": "汽车与智能出行",
-      "official_website": "https://www.faw.com.cn/",
-      "career_url": "https://faw.zhiye.com/",
-      "career_entry_evidence": "中国一汽品牌招聘ATS候选，须由官方主站链接或官方招聘公告复核。",
       "seed_status": "official_entry_candidate"
     },
     {
