@@ -144,6 +144,8 @@ a2117d04f0107623bbe9,cn-soe-0169,中国广播电视网络集团有限公司,fetc
 0b56658ab0dd3b417018,cn-soe-0039,中国远洋海运集团有限公司,fetch_failed,ConnectionError,False,,,0,2026-07-13T16:59:56.206848+00:00,https://coscoshipping.zhiye.com/,False,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 b8baef4a9b0151796e58,cn-fin-0115,杭州银行股份有限公司,fetch_failed,ConnectionError,False,,,0,2026-07-13T16:59:59.436839+00:00,https://hzb.zhiye.com/,False,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 7faaedc4d0643cf13740,cn-soe-0162,矿冶科技集团有限公司,fetch_failed,ConnectionError,False,,,0,2026-07-13T16:59:56.445090+00:00,https://bgrimm.zhiye.com/,False,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+385da1842e1a8bc01847,cn-soe-0140,国家开发投资集团有限公司,fetch_failed,ConnectionError,False,,,0,2026-07-13T17:02:16.867955+00:00,https://sdic.zhiye.com/,False,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2b18fbff87f4d29dd37b,cn-soe-0141,中国农业发展集团有限公司,fetch_failed,ConnectionError,False,,,0,2026-07-13T17:02:17.157505+00:00,https://cnadc.zhiye.com/,False,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,cn-fin-0001,中国工商银行股份有限公司,pending_dynamic_js,,False,,,,,https://job.icbc.com.cn/,True,,,2026-07-13T12:05:00Z,,页面标题为中国工商银行人才招聘，但当前抓取器未取得岗位列表正文。,dynamic_javascript_or_api_enumeration_not_yet_implemented,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,cn-fin-0002,中国建设银行股份有限公司,pending_dynamic_js,,False,,,,,https://job.ccb.com/,True,,,2026-07-13T12:05:00Z,,job.ccb.com招聘入口可访问，但当前抓取器未取得岗位列表正文。,dynamic_javascript_or_api_enumeration_not_yet_implemented,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,cn-fin-0003,中国农业银行股份有限公司,entry_candidate_pending_verification,,False,,,,,https://career.abchina.com/,False,,,2026-07-13T12:05:00Z,,候选官方招聘域名已记录，当前环境安全校验未允许直接打开，尚不能视为已核验。,entry_verification_pending,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
