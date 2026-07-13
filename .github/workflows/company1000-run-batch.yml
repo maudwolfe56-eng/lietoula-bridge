@@ -82,6 +82,7 @@ jobs:
               state['target_companies'] = 1000
               state['valid_seed_count'] = len(companies)
               state['duplicate_seed_rows_excluded'] = merged.get('duplicate_seed_rows_excluded', 0)
+              state['company_id_collisions_resolved'] = merged.get('company_id_collisions_resolved', 0)
               state['merged_seed_sources'] = merged.get('source_files', [])
               state['updated_at'] = datetime.now(timezone.utc).isoformat()
               state.setdefault('policy', {})['auto_active_verified'] = False
