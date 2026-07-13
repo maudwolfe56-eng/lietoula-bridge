@@ -140,6 +140,7 @@ d295ca70f39e7fcb59bd,cn-soe-0167,中国铁塔股份有限公司,fetch_failed,Con
 a2117d04f0107623bbe9,cn-soe-0169,中国广播电视网络集团有限公司,fetch_failed,ConnectionError,False,,,0,2026-07-13T16:54:23.642999+00:00,https://www.chinabtn.com/,False,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 187d6e427389e1962802,cn-soe-0170,中国卫通集团股份有限公司,fetch_failed,SSLError,False,,,0,2026-07-13T16:54:24.936752+00:00,https://www.chinasatcom.com/,False,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 2808b1c4f40f4426bd80,cn-soe-0045,中国能源建设集团有限公司,fetch_failed,ConnectionError,False,,,0,2026-07-13T16:56:20.460958+00:00,https://ceec.zhiye.com/,False,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+77b26ab7694d6a84baa2,cn-soe-0159,中国国际技术智力合作集团有限公司,fetch_failed,ConnectionError,False,,,0,2026-07-13T16:59:31.968172+00:00,https://ciic.zhiye.com/,False,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,cn-fin-0001,中国工商银行股份有限公司,pending_dynamic_js,,False,,,,,https://job.icbc.com.cn/,True,,,2026-07-13T12:05:00Z,,页面标题为中国工商银行人才招聘，但当前抓取器未取得岗位列表正文。,dynamic_javascript_or_api_enumeration_not_yet_implemented,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,cn-fin-0002,中国建设银行股份有限公司,pending_dynamic_js,,False,,,,,https://job.ccb.com/,True,,,2026-07-13T12:05:00Z,,job.ccb.com招聘入口可访问，但当前抓取器未取得岗位列表正文。,dynamic_javascript_or_api_enumeration_not_yet_implemented,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,cn-fin-0003,中国农业银行股份有限公司,entry_candidate_pending_verification,,False,,,,,https://career.abchina.com/,False,,,2026-07-13T12:05:00Z,,候选官方招聘域名已记录，当前环境安全校验未允许直接打开，尚不能视为已核验。,entry_verification_pending,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
