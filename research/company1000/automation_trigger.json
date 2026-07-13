@@ -1,7 +1,7 @@
 {
-  "requested_at": "2026-07-13T18:39:00Z",
-  "sequence": 14,
-  "purpose": "Continue official recruitment navigation and detail resolution, enforce stable unique import URLs for multi-position official announcements, rebuild deliverables, and reassess acceptance",
+  "requested_at": "2026-07-13T18:43:00Z",
+  "sequence": 15,
+  "purpose": "Run official-entry audit, enumerate recruitment navigation, resolve job details and multi-position announcements, rebuild unique import deliverables, and reassess final acceptance",
   "target_companies": 1000,
   "policy": {
     "official_sources_only": true,
@@ -11,6 +11,7 @@
     "new_job_link_default_status": "candidate_raw",
     "review_pending_requires_detail_validation": true,
     "official_entry_verification_requires_recruitment_signal": true,
-    "recruitment_navigation_requires_site_specific_resolution": true
+    "recruitment_navigation_requires_site_specific_resolution": true,
+    "unparseable_public_announcements_remain_pending": true
   }
 }
