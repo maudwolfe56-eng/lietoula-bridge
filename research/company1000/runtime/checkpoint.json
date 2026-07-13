@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-13T12:08:00Z",
+  "updated_at": "2026-07-13T12:03:12.114115+00:00",
   "target_companies": 1000,
   "valid_seed_count": 10,
   "official_entries_verified": 8,
@@ -23,5 +23,9 @@
     "auto_active_verified": false,
     "salary_inference_allowed": false,
     "login_captcha_or_paywall_bypass_allowed": false
+  },
+  "last_auto_batch": {
+    "start_index": 0,
+    "count": 10
   }
 }

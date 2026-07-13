@@ -1,0 +1,16 @@
+{
+  "generated_at_utc": "2026-07-13T12:03:12.177662+00:00",
+  "run_type": "public_career_entry_audit",
+  "policy": {
+    "auto_active_verified": false,
+    "salary_inference_allowed": false,
+    "login_captcha_or_paywall_bypass_allowed": false
+  },
+  "outputs": [
+    "output/coverage_auto.jsonl",
+    "output/coverage_batch_0001.jsonl",
+    "output/failures_auto.jsonl",
+    "output/job_link_candidates_auto.jsonl",
+    "output/jobs_batch_0001.jsonl"
+  ]
+}

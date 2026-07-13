@@ -1,0 +1,8 @@
+{"company_id": "cn-fin-0001", "company_name": "中国工商银行股份有限公司", "http_status": null, "observed_at": "2026-07-13T12:03:00.001568+00:00", "reason": "fetch_failed", "url": "https://job.icbc.com.cn/"}
+{"company_id": "cn-fin-0002", "company_name": "中国建设银行股份有限公司", "http_status": null, "observed_at": "2026-07-13T12:03:00.880686+00:00", "reason": "fetch_failed", "url": "https://job.ccb.com/"}
+{"company_id": "cn-fin-0003", "company_name": "中国农业银行股份有限公司", "http_status": null, "observed_at": "2026-07-13T12:03:01.664356+00:00", "reason": "fetch_failed", "url": "https://career.abchina.com/"}
+{"company_id": "cn-fin-0005", "company_name": "交通银行股份有限公司", "http_status": null, "observed_at": "2026-07-13T12:03:05.378249+00:00", "reason": "fetch_failed", "url": "https://job.bankcomm.com/"}
+{"company_id": "cn-fin-0006", "company_name": "招商银行股份有限公司", "http_status": 200, "observed_at": "2026-07-13T12:03:07.305916+00:00", "reason": "pending_dynamic_js", "url": "https://career.cmbchina.com/"}
+{"company_id": "cn-fin-0008", "company_name": "中国人民保险集团股份有限公司", "http_status": 403, "observed_at": "2026-07-13T12:03:09.673513+00:00", "reason": "restricted", "url": "https://picc.zhiye.com/"}
+{"company_id": "cn-fin-0009", "company_name": "中国中信集团有限公司", "http_status": null, "observed_at": "2026-07-13T12:03:11.135830+00:00", "reason": "fetch_failed", "url": "https://job.citic.com/recruit"}
+{"company_id": "cn-fin-0010", "company_name": "中国人寿保险（集团）公司", "http_status": null, "observed_at": "2026-07-13T12:03:12.113526+00:00", "reason": "fetch_failed", "url": "https://www.chinalife.com.cn/chinalife/zhaopin/"}
