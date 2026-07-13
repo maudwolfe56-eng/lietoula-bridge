@@ -44,7 +44,7 @@ jobs:
         env:
           PYTHONUNBUFFERED: '1'
         run: |
-          mkdir -p output runtime logs
+          mkdir -p output runtime logs deliverables
           python crawl_company_jobs_merged.py \
             --seed-file company_seed_1000.json \
             --output-dir output \
@@ -52,14 +52,21 @@ jobs:
             --batch-size 10 \
             | tee logs/next_batch_auto.log
 
+      - name: Build import and audit package
+        working-directory: research/company1000
+        env:
+          PYTHONUNBUFFERED: '1'
+        run: |
+          python build_import_package.py | tee logs/build_import_package.log
+
       - name: Commit auditable outputs
         run: |
           git config user.name 'company1000-automation'
           git config user.email 'company1000-automation@users.noreply.github.com'
-          git add research/company1000/output research/company1000/runtime research/company1000/logs
+          git add research/company1000/output research/company1000/runtime research/company1000/logs research/company1000/deliverables
           if git diff --cached --quiet; then
             echo 'No generated changes to commit'
           else
-            git commit -m 'research: audit next official career entries'
+            git commit -m 'research: audit next official career entries and rebuild import package'
             git push origin HEAD:research/company1000-crawler-20260713
           fi
