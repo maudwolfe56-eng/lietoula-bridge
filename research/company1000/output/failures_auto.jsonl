@@ -17,3 +17,12 @@
 {"company_id": "cn-soe-0024", "company_name": "中国华电集团有限公司", "http_status": 403, "observed_at": "2026-07-13T12:55:00.457046+00:00", "reason": "restricted", "url": "https://chd.zhiye.com/"}
 {"company_id": "cn-soe-0025", "company_name": "国家电力投资集团有限公司", "http_status": 403, "observed_at": "2026-07-13T12:55:01.715632+00:00", "reason": "restricted", "url": "https://spic.zhiye.com/"}
 {"company_id": "cn-soe-0026", "company_name": "中国长江三峡集团有限公司", "http_status": 403, "observed_at": "2026-07-13T12:55:02.827195+00:00", "reason": "restricted", "url": "https://ctg.zhiye.com/"}
+{"company_id": "cn-soe-0027", "company_name": "中国移动通信集团有限公司", "http_status": null, "observed_at": "2026-07-13T13:37:44.717543+00:00", "reason": "fetch_failed", "url": "https://job.10086.cn/"}
+{"company_id": "cn-soe-0028", "company_name": "中国电信集团有限公司", "http_status": 412, "observed_at": "2026-07-13T13:37:47.542235+00:00", "reason": "pending_dynamic_js", "url": "https://job.chinatelecom.com.cn/"}
+{"company_id": "cn-soe-0029", "company_name": "中国联合网络通信集团有限公司", "http_status": 403, "observed_at": "2026-07-13T13:37:48.176282+00:00", "reason": "restricted", "url": "https://chinaunicom.zhaopin.com/"}
+{"company_id": "cn-soe-0030", "company_name": "中国邮政集团有限公司", "http_status": 403, "observed_at": "2026-07-13T13:37:48.808302+00:00", "reason": "restricted", "url": "https://chinapost.zhaopin.com/"}
+{"company_id": "cn-soe-0031", "company_name": "中国建筑集团有限公司", "http_status": 403, "observed_at": "2026-07-13T13:37:49.766628+00:00", "reason": "restricted", "url": "https://cscec.zhiye.com/"}
+{"company_id": "cn-soe-0032", "company_name": "中国中铁股份有限公司", "http_status": 403, "observed_at": "2026-07-13T13:37:50.920341+00:00", "reason": "restricted", "url": "https://crec.zhiye.com/"}
+{"company_id": "cn-soe-0034", "company_name": "中国交通建设集团有限公司", "http_status": 403, "observed_at": "2026-07-13T13:37:53.339552+00:00", "reason": "restricted", "url": "https://cccc.zhiye.com/"}
+{"company_id": "cn-soe-0035", "company_name": "中国中车集团有限公司", "http_status": 403, "observed_at": "2026-07-13T13:37:54.402898+00:00", "reason": "restricted", "url": "https://crrc.zhiye.com/"}
+{"company_id": "cn-soe-0036", "company_name": "中国宝武钢铁集团有限公司", "http_status": 403, "observed_at": "2026-07-13T13:37:55.653223+00:00", "reason": "restricted", "url": "https://baowu.zhiye.com/"}
