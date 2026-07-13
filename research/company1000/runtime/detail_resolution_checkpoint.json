@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-13T20:31:07.998156+00:00",
+  "updated_at": "2026-07-13T20:33:10.590087+00:00",
   "resolver_version": "3.0-retry-aware-classification-ledger",
-  "probable_detail_candidates": 20710,
+  "probable_detail_candidates": 20859,
   "suppressed_detail_urls": 2416,
   "routed_announcement_urls": 85,
   "resolved_job_urls_before_batch": 149,

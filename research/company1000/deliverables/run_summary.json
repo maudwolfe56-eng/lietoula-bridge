@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-13T20:31:31.373531+00:00",
+  "generated_at": "2026-07-13T20:33:37.132460+00:00",
   "target_companies": 1000,
   "seeded_companies": 1020,
   "coverage_records": 1061,
@@ -11,13 +11,13 @@
     "review_pending": 61,
     "candidate_raw": 124
   },
-  "failure_records": 3056,
+  "failure_records": 3176,
   "job_change_records": 219,
   "active_verified_records": 0,
   "final_acceptance_met": false,
   "checkpoint": {
     "schema_version": "1.0",
-    "updated_at": "2026-07-13T20:30:50.140291+00:00",
+    "updated_at": "2026-07-13T20:32:54.920415+00:00",
     "target_companies": 1000,
     "valid_seed_count": 1020,
     "official_entries_verified": 14,
@@ -28,7 +28,7 @@
     "job_records_review_pending": 64,
     "job_records_inactive_expired": 23,
     "companies_final_acceptance_met": 0,
-    "next_batch_start_index": 864,
+    "next_batch_start_index": 440,
     "batch_progress": {
       "batch_0001": {
         "companies_reviewed": 10,
@@ -165,8 +165,40 @@
       "cross_domain_candidate_requires_verified_seed_association": true
     },
     "last_auto_batch": {
-      "requested_start_index": 231,
+      "requested_start_index": 864,
       "selected_indices": [
+        867,
+        886,
+        902,
+        903,
+        906,
+        969,
+        986,
+        987,
+        114,
+        118,
+        121,
+        123,
+        125,
+        132,
+        134,
+        136,
+        137,
+        152,
+        157,
+        161,
+        170,
+        173,
+        174,
+        175,
+        181,
+        183,
+        187,
+        195,
+        200,
+        220,
+        227,
+        230,
         242,
         243,
         252,
@@ -184,44 +216,12 @@
         416,
         417,
         420,
-        439,
-        468,
-        483,
-        485,
-        487,
-        500,
-        509,
-        525,
-        537,
-        542,
-        558,
-        565,
-        574,
-        584,
-        588,
-        602,
-        639,
-        642,
-        644,
-        646,
-        649,
-        651,
-        687,
-        692,
-        706,
-        709,
-        718,
-        773,
-        799,
-        806,
-        829,
-        856,
-        863
+        439
       ],
       "selected_count": 50,
       "processed_count": 50,
       "job_detail_candidates": 0,
-      "recruitment_navigation_links": 14,
+      "recruitment_navigation_links": 11,
       "max_workers": 8
     },
     "pending_seed_audits": 32,
@@ -258,33 +258,36 @@
     "company_id_collisions_resolved": 7,
     "seed_shortfall": 0,
     "companies_without_audit": 0,
-    "pending_job_link_candidates": 18970,
+    "pending_job_link_candidates": 18197,
     "invalid_job_records": 0,
     "final_acceptance_met": false,
     "notification_eligible": false,
-    "pending_recruitment_navigation": 9202,
+    "pending_recruitment_navigation": 10038,
     "duplicate_job_source_urls": 0,
     "navigation_expansion_last_batch": {
       "enumerator_version": "3.0-bounded-retry-aware",
-      "candidate_count": 14026,
-      "legacy_candidates_reclassified": 6459,
+      "candidate_count": 15032,
+      "legacy_candidates_reclassified": 6463,
       "selected_count": 300,
       "processed_count": 300,
-      "detail_candidates_discovered": 154,
-      "child_navigation_discovered": 1631,
-      "filtered_non_recruitment_links": 4973,
+      "detail_candidates_discovered": 165,
+      "child_navigation_discovered": 2921,
+      "filtered_non_recruitment_links": 5009,
       "resolution_status_counts": {
-        "enumerated": 258,
+        "enumerated": 261,
         "requires_site_specific_dynamic_enumerator": 1,
         "requires_manual_review_no_links": 2,
-        "requires_retry_transient_fetch": 1,
-        "restricted_with_explicit_reason": 38
+        "restricted_with_explicit_reason": 35,
+        "requires_retry_transient_fetch": 1
       },
-      "terminal_latest_resolution_count": 5720,
+      "terminal_latest_resolution_count": 5969,
       "max_workers": 12,
       "max_children_per_page": 60,
       "max_attempts": 4
-    }
+    },
+    "classified_detail_urls_excluded": 2416,
+    "routed_announcement_urls": 85,
+    "final_acceptance": false
   },
   "policy": {
     "auto_active_verified": false,
@@ -294,7 +297,7 @@
   "notification_eligible": false,
   "final_acceptance_report": {
     "schema_version": "1.2",
-    "assessed_at": "2026-07-13T20:31:33.927642+00:00",
+    "assessed_at": "2026-07-13T20:33:39.525893+00:00",
     "target_companies": 1000,
     "seeded_unique_companies": 1020,
     "seed_shortfall": 0,
@@ -303,11 +306,11 @@
     "companies_without_audit_count": 0,
     "companies_without_audit_sample": [],
     "job_records": 219,
-    "all_recruitment_candidates": 34252,
-    "probable_job_detail_candidates": 19218,
+    "all_recruitment_candidates": 36727,
+    "probable_job_detail_candidates": 19367,
     "terminal_detail_failures": 30,
     "resolved_job_detail_candidates": 108,
-    "pending_job_detail_candidates": 19110,
+    "pending_job_detail_candidates": 19259,
     "pending_job_detail_sample": [
       {
         "company_id": "cn-soe-0050",
@@ -610,9 +613,9 @@
         "reason": "official_multi_position_announcement"
       }
     ],
-    "recruitment_navigation_candidates": 15034,
-    "resolved_recruitment_navigation": 5075,
-    "pending_recruitment_navigation": 9959,
+    "recruitment_navigation_candidates": 17360,
+    "resolved_recruitment_navigation": 5327,
+    "pending_recruitment_navigation": 12033,
     "pending_recruitment_navigation_sample": [
       {
         "company_id": "cn-soe-0020",
@@ -672,18 +675,6 @@
         "company_id": "cn-soe-0012",
         "company_name": "中国航天科工集团有限公司",
         "source_url": "https://casic.zhiye.com/xzlist",
-        "reason": null
-      },
-      {
-        "company_id": "cn-soe-0012",
-        "company_name": "中国航天科工集团有限公司",
-        "source_url": "https://casic.zhiye.com/zblist",
-        "reason": null
-      },
-      {
-        "company_id": "cn-soe-0012",
-        "company_name": "中国航天科工集团有限公司",
-        "source_url": "https://casic.zhiye.com/Overseaslist",
         "reason": null
       },
       {
@@ -801,6 +792,12 @@
         "reason": "javascript_shell_no_public_html_job_enumeration"
       },
       {
+        "company_id": "cn-soe-0012",
+        "company_name": "中国航天科工集团有限公司",
+        "source_url": "https://stc-cms.beisen.com/cmsportal/603714/603714_themes_theme2_images_23158782.wps",
+        "reason": null
+      },
+      {
         "company_id": "cn-energy-0244",
         "company_name": "隆基绿能科技股份有限公司",
         "source_url": "https://longi.hotjob.cn/",
@@ -900,7 +897,7 @@
         "company_id": "cn-indtech-0444",
         "company_name": "三安光电股份有限公司",
         "source_url": "https://sanan-e.zhiye.com/",
-        "reason": null
+        "reason": "ConnectionError"
       },
       {
         "company_id": "cn-indtech-0444",
@@ -912,6 +909,12 @@
         "company_id": "cn-consumer-0458",
         "company_name": "雅戈尔集团股份有限公司",
         "source_url": "https://www.youngor.com/zp/31.html",
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
+      },
+      {
+        "company_id": "cn-consumer-0461",
+        "company_name": "周大福珠宝集团有限公司",
+        "source_url": "https://www.ctfjewellerygroup.com/content/ctfjewellerygroup/en/Talents/job-opportunities",
         "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       }
     ],

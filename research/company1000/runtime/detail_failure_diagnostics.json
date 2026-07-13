@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-13T20:31:08.302377+00:00",
-  "failure_rows": 1280,
-  "unique_failed_urls": 1280,
+  "generated_at": "2026-07-13T20:33:10.860308+00:00",
+  "failure_rows": 1400,
+  "unique_failed_urls": 1400,
   "reason_counts_all_attempts": {
-    "detail_unparseable_or_multi_position_announcement": 1229,
+    "detail_unparseable_or_multi_position_announcement": 1349,
     "detail_access_restricted": 25,
     "detail_http_error": 9,
     "detail_fetch_failed:ConnectionError": 9,
@@ -11,7 +11,7 @@
     "detail_fetch_failed:ConnectTimeout": 1
   },
   "reason_counts_latest_by_url": {
-    "detail_unparseable_or_multi_position_announcement": 1229,
+    "detail_unparseable_or_multi_position_announcement": 1349,
     "detail_access_restricted": 25,
     "detail_http_error": 9,
     "detail_fetch_failed:ConnectionError": 9,
@@ -19,7 +19,7 @@
     "detail_fetch_failed:ConnectTimeout": 1
   },
   "http_status_counts": {
-    "200": 1229,
+    "200": 1349,
     "403": 25,
     "none": 17,
     "404": 5,
@@ -29,7 +29,7 @@
   "top_hosts": [
     {
       "host": "www.fenbi.com",
-      "count": 394
+      "count": 514
     },
     {
       "host": "jobs.lenovo.com",
@@ -99,7 +99,7 @@
     },
     {
       "path_shape": "/page/positions/{id}/{id}?department",
-      "count": 164
+      "count": 284
     },
     {
       "path_shape": "/page/positions/{id}/{id}?region",
@@ -259,7 +259,7 @@
       {
         "company_id": "cn-edu-0795",
         "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/7?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E5%9B%9B%E5%B7%9D%E7%9B%91%E7%AE%A1%E5%B1%80",
+        "source_url": "https://www.fenbi.com/page/positions/0/7?department=%E8%B4%A2%E6%94%BF%E9%83%A8%E5%AE%81%E5%A4%8F%E7%9B%91%E7%AE%A1%E5%B1%80",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
@@ -268,7 +268,7 @@
       {
         "company_id": "cn-edu-0795",
         "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/7?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E5%86%85%E8%92%99%E5%8F%A4%E7%9B%91%E7%AE%A1%E5%B1%80",
+        "source_url": "https://www.fenbi.com/page/positions/0/7?department=%E8%A5%BF%E5%AE%89%E9%93%81%E8%B7%AF%E5%85%AC%E5%AE%89%E5%B1%80",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
@@ -277,7 +277,7 @@
       {
         "company_id": "cn-edu-0795",
         "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/7?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A",
+        "source_url": "https://www.fenbi.com/page/positions/0/7?department=%E8%87%AA%E7%84%B6%E8%B5%84%E6%BA%90%E9%83%A8%E5%8D%97%E6%B5%B7%E5%B1%80",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
@@ -286,7 +286,7 @@
       {
         "company_id": "cn-edu-0795",
         "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/7?department=%E4%B8%AD%E5%9B%BD%E6%B0%94%E8%B1%A1%E5%B1%80",
+        "source_url": "https://www.fenbi.com/page/positions/0/7?department=%E8%87%AA%E7%84%B6%E8%B5%84%E6%BA%90%E9%83%A8",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
@@ -295,7 +295,7 @@
       {
         "company_id": "cn-edu-0795",
         "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/7?department=%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%B1%80%E8%A5%BF%E5%8D%97%E5%9C%B0%E5%8C%BA%E7%AE%A1%E7%90%86%E5%B1%80",
+        "source_url": "https://www.fenbi.com/page/positions/0/7?department=%E7%A6%8F%E5%BB%BA%E7%9C%81%E5%9C%B0%E9%9C%87%E5%B1%80",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
@@ -507,7 +507,7 @@
       {
         "company_id": "cn-edu-0795",
         "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/7?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E5%9B%9B%E5%B7%9D%E7%9B%91%E7%AE%A1%E5%B1%80",
+        "source_url": "https://www.fenbi.com/page/positions/0/7?department=%E8%B4%A2%E6%94%BF%E9%83%A8%E5%AE%81%E5%A4%8F%E7%9B%91%E7%AE%A1%E5%B1%80",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
@@ -516,7 +516,7 @@
       {
         "company_id": "cn-edu-0795",
         "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/7?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E5%86%85%E8%92%99%E5%8F%A4%E7%9B%91%E7%AE%A1%E5%B1%80",
+        "source_url": "https://www.fenbi.com/page/positions/0/7?department=%E8%A5%BF%E5%AE%89%E9%93%81%E8%B7%AF%E5%85%AC%E5%AE%89%E5%B1%80",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
@@ -525,7 +525,7 @@
       {
         "company_id": "cn-edu-0795",
         "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/7?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A",
+        "source_url": "https://www.fenbi.com/page/positions/0/7?department=%E8%87%AA%E7%84%B6%E8%B5%84%E6%BA%90%E9%83%A8%E5%8D%97%E6%B5%B7%E5%B1%80",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
