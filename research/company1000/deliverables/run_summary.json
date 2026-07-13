@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-13T13:41:45.966176+00:00",
+  "generated_at": "2026-07-13T13:46:26.460031+00:00",
   "target_companies": 1000,
   "seeded_companies": 50,
   "coverage_records": 37,
@@ -17,7 +17,7 @@
   "final_acceptance_met": false,
   "checkpoint": {
     "schema_version": "1.0",
-    "updated_at": "2026-07-13T13:41:45.885280+00:00",
+    "updated_at": "2026-07-13T13:46:26.353699+00:00",
     "target_companies": 1000,
     "valid_seed_count": 50,
     "official_entries_verified": 14,
