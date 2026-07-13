@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-13T13:00:00Z",
+  "updated_at": "2026-07-13T13:33:53.564214+00:00",
   "target_companies": 1000,
   "valid_seed_count": 26,
   "official_entries_verified": 14,
@@ -13,11 +13,86 @@
   "companies_final_acceptance_met": 0,
   "next_batch_start_index": 26,
   "batch_progress": {
-    "batch_0001": {"companies_reviewed":10,"records":22,"status":"partial"},
-    "batch_0002": {"companies_reviewed":2,"records":47,"status":"partial","cnnc_records":10,"cnnc_social_pages_completed":1,"cnnc_social_pages_observed":40,"casic_records":37,"casic_candidate_raw":22,"casic_review_pending":14,"casic_inactive_expired":1,"casic_social_pages_completed":3,"casic_social_pages_observed":4,"casic_page_4_status":"retry_transient_cache_miss","casic_headquarters_channel_reviewed":true,"casic_headquarters_openings_observed":0,"casic_overseas_channel_reviewed":true,"casic_overseas_records_normalized":1,"casic_duplicate_records_deduplicated":1,"casic_campus_channel_completed":false},
-    "batch_0003": {"companies_reviewed":2,"records":52,"candidate_raw":2,"review_pending":50,"status":"partial","cssc_official_entry_verified_by_browser":true,"cssc_social_listing_observed":13,"cssc_social_details_normalized":4,"cssc_campus_records_observed_latest":66,"cssc_campus_pages_observed_latest":5,"cssc_campus_unique_records_captured":48,"cssc_campus_full_listing_pages_captured":[2,3,4],"cssc_campus_page_1_details_captured":4,"cssc_campus_page_5_status":"transient_cache_miss","cssc_duplicate_job_code_skipped":"J11958","cssc_intern_channel_reviewed":true,"cssc_intern_openings_observed":0,"cssc_freshness_policy_applied":"Only two 2026 detailed roles remain candidate_raw; 50 older or incomplete records are review_pending","sgcc_official_entry_verified_by_browser":true,"sgcc_enumeration_status":"pending_search_api_or_browser"},
-    "batch_0004": {"companies_reviewed":2,"records":0,"status":"partial","avic_official_entry_verified_by_browser":true,"avic_crawler_status":"http_405_access_blocked","avic_enumeration_status":"official_talent_page_no_positions_enumerated","cetc_official_entry_verified":true,"cetc_crawler_status":"http_200_no_job_links_observed","cetc_enumeration_status":"official_announcements_list_requires_member_unit_followup","cetc_latest_recruitment_item_observed":"中国电科2026届校园招聘正式启动","cetc_latest_recruitment_item_published":"2025-09-08","current_application_indicator_observed":false},
-    "batch_0005": {"companies_reviewed":10,"records":0,"status":"partial","seed_start_index":16,"seed_end_index_exclusive":26,"official_entry_http_verified":2,"pending_dynamic_js":3,"restricted":6,"fetch_failed":1,"review_pending_link_candidates":1,"final_acceptance_met":0,"run_path":"runs/batch_0005"}
+    "batch_0001": {
+      "companies_reviewed": 10,
+      "records": 22,
+      "status": "partial"
+    },
+    "batch_0002": {
+      "companies_reviewed": 2,
+      "records": 47,
+      "status": "partial",
+      "cnnc_records": 10,
+      "cnnc_social_pages_completed": 1,
+      "cnnc_social_pages_observed": 40,
+      "casic_records": 37,
+      "casic_candidate_raw": 22,
+      "casic_review_pending": 14,
+      "casic_inactive_expired": 1,
+      "casic_social_pages_completed": 3,
+      "casic_social_pages_observed": 4,
+      "casic_page_4_status": "retry_transient_cache_miss",
+      "casic_headquarters_channel_reviewed": true,
+      "casic_headquarters_openings_observed": 0,
+      "casic_overseas_channel_reviewed": true,
+      "casic_overseas_records_normalized": 1,
+      "casic_duplicate_records_deduplicated": 1,
+      "casic_campus_channel_completed": false
+    },
+    "batch_0003": {
+      "companies_reviewed": 2,
+      "records": 52,
+      "candidate_raw": 2,
+      "review_pending": 50,
+      "status": "partial",
+      "cssc_official_entry_verified_by_browser": true,
+      "cssc_social_listing_observed": 13,
+      "cssc_social_details_normalized": 4,
+      "cssc_campus_records_observed_latest": 66,
+      "cssc_campus_pages_observed_latest": 5,
+      "cssc_campus_unique_records_captured": 48,
+      "cssc_campus_full_listing_pages_captured": [
+        2,
+        3,
+        4
+      ],
+      "cssc_campus_page_1_details_captured": 4,
+      "cssc_campus_page_5_status": "transient_cache_miss",
+      "cssc_duplicate_job_code_skipped": "J11958",
+      "cssc_intern_channel_reviewed": true,
+      "cssc_intern_openings_observed": 0,
+      "cssc_freshness_policy_applied": "Only two 2026 detailed roles remain candidate_raw; 50 older or incomplete records are review_pending",
+      "sgcc_official_entry_verified_by_browser": true,
+      "sgcc_enumeration_status": "pending_search_api_or_browser"
+    },
+    "batch_0004": {
+      "companies_reviewed": 2,
+      "records": 0,
+      "status": "partial",
+      "avic_official_entry_verified_by_browser": true,
+      "avic_crawler_status": "http_405_access_blocked",
+      "avic_enumeration_status": "official_talent_page_no_positions_enumerated",
+      "cetc_official_entry_verified": true,
+      "cetc_crawler_status": "http_200_no_job_links_observed",
+      "cetc_enumeration_status": "official_announcements_list_requires_member_unit_followup",
+      "cetc_latest_recruitment_item_observed": "中国电科2026届校园招聘正式启动",
+      "cetc_latest_recruitment_item_published": "2025-09-08",
+      "current_application_indicator_observed": false
+    },
+    "batch_0005": {
+      "companies_reviewed": 10,
+      "records": 0,
+      "status": "partial",
+      "seed_start_index": 16,
+      "seed_end_index_exclusive": 26,
+      "official_entry_http_verified": 2,
+      "pending_dynamic_js": 3,
+      "restricted": 6,
+      "fetch_failed": 1,
+      "review_pending_link_candidates": 1,
+      "final_acceptance_met": 0,
+      "run_path": "runs/batch_0005"
+    }
   },
   "next_actions": [
     "补齐中国船舶集团校园招聘第1页其余岗位和第5页，并重试所有缓存缺失详情；完成后重新核验动态总数",
@@ -33,6 +108,13 @@
     "继续扩充1000家可审计企业种子，复核农业银行和中国人寿招聘入口",
     "仅在公开页面仍提供申请入口且岗位详情完整时保留candidate_raw；不得自动设置active_verified"
   ],
-  "policy": {"auto_active_verified":false,"salary_inference_allowed":false,"login_captcha_or_paywall_bypass_allowed":false},
-  "last_auto_batch": {"start_index":16,"count":10}
+  "policy": {
+    "auto_active_verified": false,
+    "salary_inference_allowed": false,
+    "login_captcha_or_paywall_bypass_allowed": false
+  },
+  "last_auto_batch": {
+    "start_index": 26,
+    "count": 0
+  }
 }
