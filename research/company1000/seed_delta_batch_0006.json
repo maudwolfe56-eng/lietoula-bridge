@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "batch_0006",
+  "generated_at": "2026-07-13T14:55:00Z",
+  "companies": [
+    {
+      "company_id": "cn-soe-0027",
+      "company_name": "中国移动通信集团有限公司",
+      "short_name": "中国移动",
+      "industry": "通信与信息服务",
+      "official_website": "https://www.chinamobile.com/",
+      "career_url": "https://job.10086.cn/",
+      "career_entry_evidence": "2026-07-13公开页面标题为中国移动招聘网站，并提供校园招聘、社会招聘、实习生计划和公开职位入口。",
+      "seed_status": "official_entry_verified"
+    },
+    {
+      "company_id": "cn-soe-0028",
+      "company_name": "中国电信集团有限公司",
+      "short_name": "中国电信",
+      "industry": "通信与信息服务",
+      "official_website": "https://www.chinatelecom.com.cn/",
+      "career_url": "https://job.chinatelecom.com.cn/",
+      "career_entry_evidence": "集团官方招聘子域名候选，交由本批HTTP审计核验，不绕过登录或访问控制。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-soe-0029",
+      "company_name": "中国建筑集团有限公司",
+      "short_name": "中国建筑",
+      "industry": "建筑与工程",
+      "official_website": "https://www.cscec.com/",
+      "career_url": "https://cscec.zhiye.com/",
+      "career_entry_evidence": "2026-07-13公开页面可访问，标题为中国建筑高校毕业生接收考试网；当前页面显示报名截止，需继续核验公开岗位入口。",
+      "seed_status": "official_entry_verified"
+    },
+    {
+      "company_id": "cn-soe-0030",
+      "company_name": "中国交通建设集团有限公司",
+      "short_name": "中国交建",
+      "industry": "基础设施与工程",
+      "official_website": "https://www.ccccltd.cn/",
+      "career_url": "https://ccccltd.zhiye.com/",
+      "career_entry_evidence": "2026-07-13公开页面可访问并显示中国交建，岗位枚举交由本批审计。",
+      "seed_status": "official_entry_verified"
+    },
+    {
+      "company_id": "cn-soe-0031",
+      "company_name": "中国铁路工程集团有限公司",
+      "short_name": "中国中铁",
+      "industry": "基础设施与工程",
+      "official_website": "https://www.crecg.com/",
+      "career_url": "https://crec.zhiye.com/",
+      "career_entry_evidence": "集团招聘ATS域名候选，交由本批HTTP与页面标题审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-soe-0032",
+      "company_name": "中国铁道建筑集团有限公司",
+      "short_name": "中国铁建",
+      "industry": "基础设施与工程",
+      "official_website": "https://www.crcc.cn/",
+      "career_url": "https://crcc.zhiye.com/",
+      "career_entry_evidence": "集团招聘ATS域名候选，交由本批HTTP与页面标题审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-soe-0033",
+      "company_name": "中国第一汽车集团有限公司",
+      "short_name": "中国一汽",
+      "industry": "汽车制造",
+      "official_website": "https://www.faw.com.cn/",
+      "career_url": "https://faw.zhiye.com/",
+      "career_entry_evidence": "集团招聘ATS域名候选，交由本批HTTP与页面标题审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-soe-0034",
+      "company_name": "东风汽车集团有限公司",
+      "short_name": "东风公司",
+      "industry": "汽车制造",
+      "official_website": "https://www.dfmc.com.cn/",
+      "career_url": "https://dfmc.zhiye.com/",
+      "career_entry_evidence": "集团招聘ATS域名候选，交由本批HTTP与页面标题审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-soe-0035",
+      "company_name": "中国宝武钢铁集团有限公司",
+      "short_name": "中国宝武",
+      "industry": "钢铁与新材料",
+      "official_website": "https://www.baowugroup.com/",
+      "career_url": "https://baowu.zhiye.com/",
+      "career_entry_evidence": "集团招聘ATS域名候选，交由本批HTTP与页面标题审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-soe-0036",
+      "company_name": "鞍钢集团有限公司",
+      "short_name": "鞍钢集团",
+      "industry": "钢铁与新材料",
+      "official_website": "https://www.ansteelgroup.com/",
+      "career_url": "https://ansteel.zhiye.com/",
+      "career_entry_evidence": "集团招聘ATS域名候选，交由本批HTTP与页面标题审计。",
+      "seed_status": "official_entry_candidate"
+    }
+  ]
+}
