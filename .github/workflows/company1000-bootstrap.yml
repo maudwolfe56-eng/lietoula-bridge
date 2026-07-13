@@ -1,4 +1,4 @@
-name: Company1000 audit batch
+name: Company1000 audit batch 0006
 
 on:
   push:
@@ -14,7 +14,7 @@ permissions:
 jobs:
   audit:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
       - name: Checkout research branch
         uses: actions/checkout@v4
@@ -26,73 +26,147 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: pip
-          cache-dependency-path: research/company1000/requirements.txt
 
       - name: Install crawler dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4 lxml python-dateutil
 
-      - name: Validate seed and crawler
-        working-directory: research/company1000
-        run: |
-          python -m py_compile crawl_company_jobs.py
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          data = json.loads(Path('company_seed_1000.json').read_text(encoding='utf-8'))
-          companies = data['companies']
-          assert companies and all(c.get('company_id') and c.get('company_name') for c in companies)
-          print({'valid_seed_count': len(companies), 'target_count': data.get('target_count')})
-          PY
-
-      - name: Audit first valid batch conservatively
-        working-directory: research/company1000
-        env:
-          PYTHONUNBUFFERED: "1"
-        run: |
-          mkdir -p output runtime logs
-          python crawl_company_jobs.py \
-            --seed-file company_seed_1000.json \
-            --output-dir output \
-            --state-file runtime/checkpoint.json \
-            --start-index 0 \
-            --batch-size 10 \
-            | tee logs/batch_0001_auto.log
-
-      - name: Write run manifest
+      - name: Merge batch 0006 seed delta
         working-directory: research/company1000
         run: |
           python - <<'PY'
           import json
           from datetime import datetime, timezone
           from pathlib import Path
+
+          seed_path = Path('company_seed_1000.json')
+          delta_path = Path('seed_delta_batch_0006.json')
+          seed = json.loads(seed_path.read_text(encoding='utf-8'))
+          delta = json.loads(delta_path.read_text(encoding='utf-8'))
+          companies = seed.get('companies', [])
+          by_id = {c['company_id']: c for c in companies if c.get('company_id')}
+          order = [c['company_id'] for c in companies if c.get('company_id')]
+          for company in delta.get('companies', []):
+              cid = company['company_id']
+              if cid not in by_id:
+                  order.append(cid)
+              by_id[cid] = company
+          merged = [by_id[cid] for cid in order]
+          seed['companies'] = merged
+          seed['valid_seed_count'] = len(merged)
+          seed['target_count'] = 1000
+          seed['seed_status'] = 'partial_valid_seed_expanding'
+          seed['generated_at'] = datetime.now(timezone.utc).isoformat()
+          seed_path.write_text(json.dumps(seed, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+          assert len(merged) >= 36, len(merged)
+          print({'merged_seed_count': len(merged)})
+          PY
+
+      - name: Validate crawler and capture offsets
+        working-directory: research/company1000
+        run: |
+          python -m py_compile crawl_company_jobs.py
+          mkdir -p output runtime logs runs/batch_0006
+          wc -l output/coverage_auto.jsonl 2>/dev/null | awk '{print $1}' > runs/batch_0006/coverage_before.txt || echo 0 > runs/batch_0006/coverage_before.txt
+          wc -l output/failures_auto.jsonl 2>/dev/null | awk '{print $1}' > runs/batch_0006/failures_before.txt || echo 0 > runs/batch_0006/failures_before.txt
+          wc -l output/job_link_candidates_auto.jsonl 2>/dev/null | awk '{print $1}' > runs/batch_0006/links_before.txt || echo 0 > runs/batch_0006/links_before.txt
+
+      - name: Audit seed entries 27-36 conservatively
+        working-directory: research/company1000
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          python crawl_company_jobs.py \
+            --seed-file company_seed_1000.json \
+            --output-dir output \
+            --state-file runtime/checkpoint.json \
+            --start-index 26 \
+            --batch-size 10 \
+            | tee logs/batch_0006_auto.log
+
+      - name: Materialize auditable batch snapshots and update checkpoint
+        working-directory: research/company1000
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          run = Path('runs/batch_0006')
+          output = Path('output')
+          mappings = [
+              ('coverage_auto.jsonl', 'coverage_before.txt', 'coverage_batch_0006.jsonl'),
+              ('failures_auto.jsonl', 'failures_before.txt', 'failures_batch_0006.jsonl'),
+              ('job_link_candidates_auto.jsonl', 'links_before.txt', 'job_link_candidates_batch_0006.jsonl'),
+          ]
+          counts = {}
+          for src_name, before_name, dst_name in mappings:
+              src = output / src_name
+              before = int((run / before_name).read_text().strip() or '0')
+              lines = src.read_text(encoding='utf-8').splitlines() if src.exists() else []
+              new_lines = lines[before:]
+              (run / dst_name).write_text(('\n'.join(new_lines) + ('\n' if new_lines else '')), encoding='utf-8')
+              counts[dst_name] = len(new_lines)
+
+          coverage_rows = []
+          coverage_path = run / 'coverage_batch_0006.jsonl'
+          for line in coverage_path.read_text(encoding='utf-8').splitlines() if coverage_path.exists() else []:
+              if line.strip(): coverage_rows.append(json.loads(line))
+          status_counts = {}
+          for row in coverage_rows:
+              status = row.get('enumeration_status', 'unknown')
+              status_counts[status] = status_counts.get(status, 0) + 1
+
           manifest = {
+              'batch_id': 'batch_0006',
               'generated_at_utc': datetime.now(timezone.utc).isoformat(),
-              'run_type': 'public_career_entry_audit',
+              'seed_start_index': 26,
+              'seed_end_index_exclusive': 36,
+              'companies_reviewed': len(coverage_rows),
+              'status_counts': status_counts,
+              'new_output_counts': counts,
               'policy': {
                   'auto_active_verified': False,
                   'salary_inference_allowed': False,
                   'login_captcha_or_paywall_bypass_allowed': False,
               },
-              'outputs': [
-                  p.as_posix() for p in sorted(Path('output').glob('*')) if p.is_file()
-              ],
+              'final_acceptance_met': False,
           }
-          Path('runtime/last_workflow_manifest.json').write_text(
-              json.dumps(manifest, ensure_ascii=False, indent=2), encoding='utf-8'
-          )
+          (run / 'manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding='utf-8')
+
+          state_path = Path('runtime/checkpoint.json')
+          state = json.loads(state_path.read_text(encoding='utf-8'))
+          state['valid_seed_count'] = 36
+          state['next_batch_start_index'] = 36
+          state.setdefault('batch_progress', {})['batch_0006'] = {
+              'companies_reviewed': len(coverage_rows),
+              'records': 0,
+              'status': 'partial',
+              'seed_start_index': 26,
+              'seed_end_index_exclusive': 36,
+              'enumeration_status_counts': status_counts,
+              'job_link_candidates_discovered': counts.get('job_link_candidates_batch_0006.jsonl', 0),
+              'final_acceptance_met': 0,
+              'run_path': 'runs/batch_0006',
+          }
+          state['updated_at'] = datetime.now(timezone.utc).isoformat()
+          state_path.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding='utf-8')
+          print(json.dumps(manifest, ensure_ascii=False))
           PY
 
       - name: Commit auditable outputs
         run: |
           git config user.name "company1000-automation"
           git config user.email "company1000-automation@users.noreply.github.com"
-          git add research/company1000/output research/company1000/runtime research/company1000/logs
+          git add research/company1000/company_seed_1000.json \
+                  research/company1000/output \
+                  research/company1000/runtime \
+                  research/company1000/logs \
+                  research/company1000/runs/batch_0006
           if git diff --cached --quiet; then
             echo "No generated changes to commit"
           else
-            git commit -m "research: audit first 10 official career entries"
+            git commit -m "research: audit company1000 batch 0006 entries 27-36"
             git push origin HEAD:research/company1000-crawler-20260713
           fi
