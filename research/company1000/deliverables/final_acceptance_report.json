@@ -1,19 +1,19 @@
 {
   "schema_version": "1.2",
-  "assessed_at": "2026-07-13T20:49:18.361072+00:00",
+  "assessed_at": "2026-07-13T21:36:38.188955+00:00",
   "target_companies": 1000,
   "seeded_unique_companies": 1020,
   "seed_shortfall": 0,
   "companies_with_coverage": 993,
-  "companies_with_explicit_failure_reason": 864,
+  "companies_with_explicit_failure_reason": 866,
   "companies_without_audit_count": 0,
   "companies_without_audit_sample": [],
-  "job_records": 492,
-  "all_recruitment_candidates": 41623,
-  "probable_job_detail_candidates": 19477,
-  "terminal_detail_failures": 145,
-  "resolved_job_detail_candidates": 382,
-  "pending_job_detail_candidates": 19095,
+  "job_records": 511,
+  "all_recruitment_candidates": 43145,
+  "probable_job_detail_candidates": 19483,
+  "terminal_detail_failures": 269,
+  "resolved_job_detail_candidates": 411,
+  "pending_job_detail_candidates": 19072,
   "pending_job_detail_sample": [
     {
       "company_id": "cn-soe-0050",
@@ -316,9 +316,9 @@
       "reason": "official_multi_position_announcement"
     }
   ],
-  "recruitment_navigation_candidates": 22146,
-  "resolved_recruitment_navigation": 6320,
-  "pending_recruitment_navigation": 15826,
+  "recruitment_navigation_candidates": 23662,
+  "resolved_recruitment_navigation": 7025,
+  "pending_recruitment_navigation": 16637,
   "pending_recruitment_navigation_sample": [
     {
       "company_id": "cn-soe-0020",
@@ -492,132 +492,132 @@
       "company_id": "cn-soe-0012",
       "company_name": "中国航天科工集团有限公司",
       "source_url": "https://stc-cms.beisen.com/cmsportal/603714/603714_themes_theme2_images_23158782.wps",
+      "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
+    },
+    {
+      "company_id": "cn-health-0374",
+      "company_name": "康龙化成（北京）新药技术股份有限公司",
+      "source_url": "https://careerssearch.pharmaron.com/jobs/job/Scientific-BD-Proposals-Coordinator-ADMEPK/679",
       "reason": null
     },
     {
-      "company_id": "cn-property-0912",
-      "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/go/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86%E4%BA%BA%E6%89%8D%E5%8F%91%E5%B1%95%E8%AE%A1%E5%88%92/9560801/",
+      "company_id": "cn-health-0374",
+      "company_name": "康龙化成（北京）新药技术股份有限公司",
+      "source_url": "https://careerssearch.pharmaron.com/jobs/job/Director-Business-Development-RLS/639",
       "reason": null
     },
     {
-      "company_id": "cn-property-0912",
-      "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/%E5%AE%A2%E6%88%B7%E6%9C%8D%E5%8A%A1%E5%89%AF%E9%A2%86%E7%8F%AD/1408145233/",
+      "company_id": "cn-health-0374",
+      "company_name": "康龙化成（北京）新药技术股份有限公司",
+      "source_url": "https://careerssearch.pharmaron.com/jobs/job/IT-Support-Specialist/675",
       "reason": null
     },
     {
-      "company_id": "cn-property-0912",
-      "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/%E5%AE%A2%E6%88%B7%E6%9C%8D%E5%8A%A1%E5%89%AF%E9%A2%86%E7%8F%AD/1408145333/",
+      "company_id": "cn-health-0369",
+      "company_name": "浙江海正药业股份有限公司",
+      "source_url": "https://www.hisunpharm.com/main/product-show-list.thtml?cId=10985",
       "reason": null
     },
     {
-      "company_id": "cn-property-0912",
-      "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/%E9%AB%98%E7%BA%A7%E5%AE%A2%E6%9C%8D%E5%91%98/1408144933/",
+      "company_id": "cn-health-0369",
+      "company_name": "浙江海正药业股份有限公司",
+      "source_url": "https://www.hisunpharm.com/main/product-list-ah.thtml?cId=11018",
       "reason": null
     },
     {
-      "company_id": "cn-property-0912",
-      "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/%E9%AB%98%E7%BA%A7%E5%AE%A2%E6%9C%8D%E5%91%98/1408145033/",
+      "company_id": "cn-health-0369",
+      "company_name": "浙江海正药业股份有限公司",
+      "source_url": "https://www.hisunpharm.com/main/product-list-ah.thtml?cId=11019",
       "reason": null
     },
     {
-      "company_id": "cn-property-0912",
-      "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/%E9%AB%98%E7%BA%A7%E5%AE%A2%E6%9C%8D%E5%91%98/1408146233/",
+      "company_id": "cn-health-0369",
+      "company_name": "浙江海正药业股份有限公司",
+      "source_url": "https://www.hisunpharm.com/main/product-list-ah.thtml?cId=11020",
       "reason": null
     },
     {
-      "company_id": "cn-property-0912",
-      "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/%E9%AB%98%E7%BA%A7%E5%AE%A2%E6%9C%8D%E5%91%98/1408146433/",
+      "company_id": "cn-health-0369",
+      "company_name": "浙江海正药业股份有限公司",
+      "source_url": "https://www.hisunpharm.com/main/file/2026-02-06/1770361631551000000009b54440e524019c31c6b33f246b.pdf",
       "reason": null
     },
     {
-      "company_id": "cn-property-0912",
-      "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/%E5%B7%A5%E7%A8%8B%E5%89%AF%E7%BB%8F%E7%90%86/1293509201/",
+      "company_id": "cn-mnc-1001",
+      "company_name": "西门子（中国）有限公司",
+      "source_url": "https://www.siemens.com/global/en/company/jobs/faq.html",
       "reason": null
     },
     {
-      "company_id": "cn-property-0912",
-      "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/%E5%B7%A5%E7%A8%8B%E5%89%AF%E7%BB%8F%E7%90%86/1293509401/",
+      "company_id": "cn-mnc-1001",
+      "company_name": "西门子（中国）有限公司",
+      "source_url": "https://www.siemens.com/global/en/company/jobs/life-at-siemens.html",
       "reason": null
     },
     {
-      "company_id": "cn-property-0912",
-      "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/%E5%AE%A2%E6%9C%8D%E5%91%98-%E5%95%86%E5%9C%BA%E6%A5%BC%E5%B1%82/1388273733/",
+      "company_id": "cn-mnc-1001",
+      "company_name": "西门子（中国）有限公司",
+      "source_url": "https://www.siemens.com/global/en/company/jobs/how-we-hire.html",
       "reason": null
     },
     {
-      "company_id": "cn-property-0912",
-      "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/%E5%AE%A2%E6%9C%8D%E5%93%A1-%E5%95%86%E5%A0%B4%E6%A8%93%E5%B1%A4/1388273933/",
+      "company_id": "cn-mnc-1001",
+      "company_name": "西门子（中国）有限公司",
+      "source_url": "https://jobs.siemens.com/zh_CN/externaljobs/wechat/ShareJob?url=https%3A%2F%2Fjobs.siemens.com%2Fzh_CN%2Fexternaljobs%2FJobDetail%2F511843",
       "reason": null
     },
     {
-      "company_id": "cn-property-0912",
-      "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86%E4%BA%BA%E6%89%8D%E5%8F%91%E5%B1%95%E8%AE%A1%E5%88%92/1118500201/",
+      "company_id": "cn-mnc-1001",
+      "company_name": "西门子（中国）有限公司",
+      "source_url": "https://jobs.siemens.com/zh_CN/externaljobs/wechat/ShareJob?url=https%3A%2F%2Fjobs.siemens.com%2Fzh_CN%2Fexternaljobs%2FJobDetail%2F512669",
       "reason": null
     },
     {
-      "company_id": "cn-property-0912",
-      "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/%E8%B2%A1%E5%8B%99%E7%AE%A1%E7%90%86%E4%BA%BA%E6%89%8D%E7%99%BC%E5%B1%95%E8%A8%88%E5%8A%83/1118500301/",
+      "company_id": "cn-mnc-1001",
+      "company_name": "西门子（中国）有限公司",
+      "source_url": "https://jobs.siemens.com/zh_CN/externaljobs/wechat/ShareJob?url=https%3A%2F%2Fjobs.siemens.com%2Fzh_CN%2Fexternaljobs%2FJobDetail%2F512998",
       "reason": null
     },
     {
-      "company_id": "cn-property-0912",
-      "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86%E4%BA%BA%E6%89%8D%E5%8F%91%E5%B1%95%E8%AE%A1%E5%88%92/1211673501/",
+      "company_id": "cn-mnc-1001",
+      "company_name": "西门子（中国）有限公司",
+      "source_url": "https://jobs.siemens.com/zh_CN/externaljobs/wechat/ShareJob?url=https%3A%2F%2Fjobs.siemens.com%2Fzh_CN%2Fexternaljobs%2FJobDetail%2F513058",
       "reason": null
     },
     {
-      "company_id": "cn-property-0912",
-      "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/%E8%B2%A1%E5%8B%99%E7%AE%A1%E7%90%86%E4%BA%BA%E6%89%8D%E7%99%BC%E5%B1%95%E8%A8%88%E5%8A%83/1211673701/",
+      "company_id": "cn-mnc-1001",
+      "company_name": "西门子（中国）有限公司",
+      "source_url": "https://jobs.siemens.com/zh_CN/externaljobs/wechat/ShareJob?url=https%3A%2F%2Fjobs.siemens.com%2Fzh_CN%2Fexternaljobs%2FJobDetail%2F513095",
       "reason": null
     },
     {
-      "company_id": "cn-property-0912",
-      "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/%E8%B4%A2%E5%8A%A1%E7%BB%8F%E7%90%86/1397076233/",
+      "company_id": "cn-mnc-1001",
+      "company_name": "西门子（中国）有限公司",
+      "source_url": "https://jobs.siemens.com/zh_CN/externaljobs/wechat/ShareJob?url=https%3A%2F%2Fjobs.siemens.com%2Fzh_CN%2Fexternaljobs%2FJobDetail%2F513278",
       "reason": null
     },
     {
-      "company_id": "cn-property-0912",
-      "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/%E8%B2%A1%E5%8B%99%E7%B6%93%E7%90%86/1397076033/",
+      "company_id": "cn-mnc-1020",
+      "company_name": "超威半导体产品（中国）有限公司",
+      "source_url": "https://careers.amd.com/careers-home/jobs/categories",
       "reason": null
     },
     {
-      "company_id": "cn-property-0912",
-      "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/%E8%B5%84%E8%AE%AF%E7%A7%91%E6%8A%80%E4%B8%9A%E5%8A%A1%E5%88%86%E6%9E%90%E5%91%98/1395962433/",
+      "company_id": "cn-mnc-1020",
+      "company_name": "超威半导体产品（中国）有限公司",
+      "source_url": "https://careers.amd.com/careers-home/jobs/jobs?page=1&categories=Student%20%2F%20Intern%20%2F%20Temp",
       "reason": null
     },
     {
-      "company_id": "cn-property-0912",
-      "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/%E8%B3%87%E8%A8%8A%E7%A7%91%E6%8A%80%E6%A5%AD%E5%8B%99%E5%88%86%E6%9E%90%E5%93%A1/1395962533/",
+      "company_id": "cn-mnc-1020",
+      "company_name": "超威半导体产品（中国）有限公司",
+      "source_url": "https://careers.amd.com/careers-home/jobs/locations",
       "reason": null
     },
     {
-      "company_id": "cn-property-0912",
-      "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/%E5%AE%A2%E6%88%B7%E6%9C%8D%E5%8A%A1%E7%BB%8F%E7%90%86/1368433433/",
-      "reason": null
-    },
-    {
-      "company_id": "cn-property-0912",
-      "company_name": "恒隆地产有限公司",
-      "source_url": "https://careers.hanglung.com/job/%E5%AE%A2%E6%88%B6%E6%9C%8D%E5%8B%99%E7%B6%93%E7%90%86/1368433633/",
+      "company_id": "cn-mnc-1020",
+      "company_name": "超威半导体产品（中国）有限公司",
+      "source_url": "https://careers.amd.com/careers-home/jobs?categories=Engineering&page=1",
       "reason": null
     }
   ],
@@ -642,15 +642,15 @@
   "final_acceptance": false,
   "assessment_version": "2.1-classification-aware-latest-ledger-announcement-gate",
   "counts": {
-    "probable_job_detail_candidates": 19426,
-    "classified_detail_urls_excluded": 20443,
+    "probable_job_detail_candidates": 19432,
+    "classified_detail_urls_excluded": 20452,
     "routed_announcement_urls": 85,
     "resolved_routed_announcements": 0,
     "pending_routed_announcements": 85,
-    "pending_job_detail_candidates": 139,
-    "recruitment_navigation_candidates": 22157,
-    "terminal_latest_navigation_resolutions": 25179,
-    "pending_recruitment_navigation": 15912
+    "pending_job_detail_candidates": 106,
+    "recruitment_navigation_candidates": 23668,
+    "terminal_latest_navigation_resolutions": 25883,
+    "pending_recruitment_navigation": 16719
   },
   "pending_samples": {
     "job_details": [
@@ -677,34 +677,6 @@
       {
         "company_id": "cn-bank-0344",
         "source_url": "https://www.gdnybank.com/sojob/20260120/37629.html"
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "source_url": "https://smics.zhiye.com/campusxq?jobId=390776941&jc=2&c=&p=1%5E-1%2C3%5E-1&ky="
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "source_url": "https://smics.zhiye.com/campusxq?jobId=390777118&jc=2&c=&p=1%5E-1%2C3%5E-1&ky="
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "source_url": "https://smics.zhiye.com/overseasxq?jobId=390472338&jc=3&c=&p=1%5E-1%2C3%5E-1&ky="
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "source_url": "https://smics.zhiye.com/socialxq?jobId=390609112&jc=1&c=&p=1%5E-1%2C3%5E-1&ky="
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "source_url": "https://smics.zhiye.com/socialxq?jobId=390625692&jc=1&c=&p=1%5E-1%2C3%5E-1&ky="
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "source_url": "https://smics.zhiye.com/socialxq?jobId=390841277&jc=1&c=&p=1%5E-1%2C3%5E-1&ky="
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "source_url": "https://smics.zhiye.com/socialxq?jobId=390841785&jc=1&c=&p=1%5E-1%2C3%5E-1&ky="
       },
       {
         "company_id": "cn-fintech-0642",
@@ -771,6 +743,22 @@
         "source_url": "https://www.lifotronic.com/job/enterprise751.html"
       },
       {
+        "company_id": "cn-mnc-1001",
+        "source_url": "https://jobs.siemens.com/zh_CN/externaljobs/JobDetail/511843"
+      },
+      {
+        "company_id": "cn-mnc-1001",
+        "source_url": "https://jobs.siemens.com/zh_CN/externaljobs/JobDetail/512669"
+      },
+      {
+        "company_id": "cn-mnc-1001",
+        "source_url": "https://jobs.siemens.com/zh_CN/externaljobs/JobDetail/512998"
+      },
+      {
+        "company_id": "cn-mnc-1001",
+        "source_url": "https://jobs.siemens.com/zh_CN/externaljobs/JobDetail/513058"
+      },
+      {
         "company_id": "cn-mnc-1046",
         "source_url": "https://jobs.sanofi.cn/zh-hans/%e4%bd%8d%e7%bd%ae/china-country-jobs/2649/1814991/2"
       },
@@ -793,30 +781,6 @@
       {
         "company_id": "cn-power-0990",
         "source_url": "https://www.ctny.com.cn/job/9.html"
-      },
-      {
-        "company_id": "cn-property-0912",
-        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/25/?q=&sortColumn=sort_department&sortDirection=asc"
-      },
-      {
-        "company_id": "cn-property-0912",
-        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/25/?q=&sortColumn=sort_facility&sortDirection=asc"
-      },
-      {
-        "company_id": "cn-property-0912",
-        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/25/?q=&sortColumn=sort_title&sortDirection=asc"
-      },
-      {
-        "company_id": "cn-property-0912",
-        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/50/?q=&sortColumn=sort_department&sortDirection=asc"
-      },
-      {
-        "company_id": "cn-property-0912",
-        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/50/?q=&sortColumn=sort_facility&sortDirection=asc"
-      },
-      {
-        "company_id": "cn-property-0912",
-        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/50/?q=&sortColumn=sort_title&sortDirection=asc"
       },
       {
         "company_id": "cn-property-0912",
@@ -853,6 +817,42 @@
       {
         "company_id": "cn-tech-0063",
         "source_url": "https://jobs.lenovo.com/de_DE/careers/JobDetail/79698"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "source_url": "https://jobs.lenovo.com/en_US/careers/JobDetail/Evergreen-HROPs-Brasil/79057"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "source_url": "https://jobs.lenovo.com/es_ES/careers/JobDetail/78990"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "source_url": "https://jobs.lenovo.com/es_ES/careers/JobDetail/79160"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "source_url": "https://jobs.lenovo.com/es_ES/careers/JobDetail/79245"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "source_url": "https://jobs.lenovo.com/es_ES/careers/JobDetail/79267"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "source_url": "https://jobs.lenovo.com/es_ES/careers/JobDetail/79504"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "source_url": "https://jobs.lenovo.com/es_ES/careers/JobDetail/79531"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "source_url": "https://jobs.lenovo.com/es_ES/careers/JobDetail/79698"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "source_url": "https://jobs.lenovo.com/fr_FR/careers/JobDetail/79698"
       }
     ],
     "routed_announcements": [

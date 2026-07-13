@@ -1,11 +1,13 @@
 {
-  "generated_at_utc": "2026-07-13T20:49:24.810818+00:00",
+  "generated_at_utc": "2026-07-13T21:36:44.512219+00:00",
   "batch": "success",
   "reclassify": "success",
   "classify": "success",
   "navigation": "success",
+  "reclassify_post_navigation": "success",
+  "classify_post_navigation": "success",
   "embedded": "success",
   "detail": "success",
   "announcement": "success",
-  "mode": "embedded_and_html_detail_resolution"
+  "mode": "two_pass_classification_and_accelerated_detail_resolution"
 }
