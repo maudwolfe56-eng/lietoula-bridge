@@ -1,7 +1,7 @@
 {
-  "requested_at": "2026-07-13T18:18:00Z",
-  "sequence": 9,
-  "purpose": "Validate detail-vs-navigation classification, audit the next unprocessed official recruitment entries, rebuild deliverables, and reassess final acceptance",
+  "requested_at": "2026-07-13T18:25:00Z",
+  "sequence": 10,
+  "purpose": "Run official-entry audit plus conservative job-detail resolution, rebuild all import deliverables, and reassess final acceptance",
   "target_companies": 1000,
   "policy": {
     "official_sources_only": true,
