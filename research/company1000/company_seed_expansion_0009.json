@@ -1,0 +1,206 @@
+{
+  "schema_version": "1.0",
+  "source_note": "2026-07-14增量种子（第251-270家）。本批补齐不动产综合服务、零售与物流重点企业。仅登记企业官方主站、官方招聘子域名或由企业官网公开链接确认的招聘入口；候选入口需继续审计，不绕过登录、验证码、付费墙或访问控制。",
+  "companies": [
+    {
+      "company_id": "cn-re-0251",
+      "company_name": "万科企业股份有限公司",
+      "short_name": "万科",
+      "industry": "不动产与综合服务",
+      "official_website": "https://www.vanke.com/",
+      "career_url": "https://www.vanke.com/",
+      "career_entry_evidence": "万科官方主域名已登记；从官网人才及成员业务公开页面继续核验当前招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-re-0252",
+      "company_name": "保利发展控股集团股份有限公司",
+      "short_name": "保利发展控股",
+      "industry": "不动产开发与运营",
+      "official_website": "https://www.polycn.com/",
+      "career_url": "https://polycareer.zhiye.com/",
+      "career_entry_evidence": "2026-07-14保利发展控股官方网站职业发展栏目直接链接官方招聘门户；继续枚举社会、校园及实习岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-re-0253",
+      "company_name": "招商局蛇口工业区控股股份有限公司",
+      "short_name": "招商蛇口",
+      "industry": "城市与园区综合开发",
+      "official_website": "https://www.cmsk1979.com/",
+      "career_url": "https://cmsk1979.zhiye.com/",
+      "career_entry_evidence": "2026-07-14招商蛇口官方网站人力资源栏目直接链接加入我们招聘门户；继续核验当前岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-re-0254",
+      "company_name": "华润置地有限公司",
+      "short_name": "华润置地",
+      "industry": "不动产开发与运营",
+      "official_website": "https://www.crland.com.hk/",
+      "career_url": "https://www.crland.com.hk/",
+      "career_entry_evidence": "2026-07-14华润置地官方网站公开设置人力资源与加入我们入口；继续核验集团社会招聘及校园招聘岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-re-0255",
+      "company_name": "龙湖集团控股有限公司",
+      "short_name": "龙湖集团",
+      "industry": "不动产与空间运营",
+      "official_website": "https://www.longfor.com/",
+      "career_url": "https://www.longfor.com/",
+      "career_entry_evidence": "龙湖集团官方主域名已登记；从官网人才栏目继续核验社会招聘、校园招聘及岗位详情。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-re-0256",
+      "company_name": "新城控股集团股份有限公司",
+      "short_name": "新城控股",
+      "industry": "不动产与商业运营",
+      "official_website": "https://www.seazen.com.cn/",
+      "career_url": "https://www.seazen.com.cn/",
+      "career_entry_evidence": "新城控股官方主域名已登记；从官网公开人才入口继续核验当前岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-re-0257",
+      "company_name": "绿城中国控股有限公司",
+      "short_name": "绿城中国",
+      "industry": "不动产与生活服务",
+      "official_website": "https://www.greentownchina.com/",
+      "career_url": "https://www.greentownchina.com/",
+      "career_entry_evidence": "绿城中国官方主域名已登记；从官方网站继续核验招聘入口及当前可申请岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-re-0258",
+      "company_name": "金地（集团）股份有限公司",
+      "short_name": "金地集团",
+      "industry": "不动产开发与服务",
+      "official_website": "https://www.gemdale.com/",
+      "career_url": "https://www.gemdale.com/",
+      "career_entry_evidence": "金地集团官方主域名已登记；从官网人才栏目继续核验招聘门户和岗位详情。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-re-0259",
+      "company_name": "杭州滨江房产集团股份有限公司",
+      "short_name": "滨江集团",
+      "industry": "不动产开发与服务",
+      "official_website": "https://www.binjiang.com.cn/",
+      "career_url": "https://www.binjiang.com.cn/",
+      "career_entry_evidence": "滨江集团官方主域名已登记；从官网公开栏目继续核验人才招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-re-0260",
+      "company_name": "大连万达集团股份有限公司",
+      "short_name": "万达集团",
+      "industry": "商业运营与文化产业",
+      "official_website": "https://www.wanda.com.cn/",
+      "career_url": "https://www.wanda.com.cn/",
+      "career_entry_evidence": "万达集团官方主域名已登记；从官方网站及成员业务公开页面继续核验招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-retail-0261",
+      "company_name": "苏宁易购集团股份有限公司",
+      "short_name": "苏宁易购",
+      "industry": "零售与供应链",
+      "official_website": "https://www.suning.cn/",
+      "career_url": "https://www.suning.cn/",
+      "career_entry_evidence": "苏宁易购官方主域名已登记；从官网人才招聘及公开公告继续核验当前岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-retail-0262",
+      "company_name": "永辉超市股份有限公司",
+      "short_name": "永辉超市",
+      "industry": "商超零售",
+      "official_website": "https://www.yonghui.com.cn/",
+      "career_url": "https://www.yonghui.com.cn/",
+      "career_entry_evidence": "永辉超市官方主域名已登记；从官网公开栏目继续核验总部、区域及门店招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-retail-0263",
+      "company_name": "物美科技集团有限公司",
+      "short_name": "物美集团",
+      "industry": "零售与数字商业",
+      "official_website": "https://www.wumart.com/",
+      "career_url": "https://www.wumart.com/",
+      "career_entry_evidence": "物美集团官方主域名已登记；从官网公开人才入口继续核验当前招聘信息。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-retail-0264",
+      "company_name": "华润万家有限公司",
+      "short_name": "华润万家",
+      "industry": "商超零售",
+      "official_website": "https://www.crv.com.cn/",
+      "career_url": "https://www.crv.com.cn/",
+      "career_entry_evidence": "华润万家官方主域名已登记；从官网人力资源和华润招聘公开入口继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-retail-0265",
+      "company_name": "居然智家新零售集团股份有限公司",
+      "short_name": "居然智家",
+      "industry": "家居零售与数字服务",
+      "official_website": "https://www.juran.com.cn/",
+      "career_url": "https://www.juran.com.cn/",
+      "career_entry_evidence": "居然智家官方主域名已登记；从官方网站继续核验集团及区域招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-log-0266",
+      "company_name": "圆通速递股份有限公司",
+      "short_name": "圆通速递",
+      "industry": "快递与物流",
+      "official_website": "https://www.yto.net.cn/",
+      "career_url": "https://www.yto.net.cn/",
+      "career_entry_evidence": "圆通速递官方主域名已登记；从官网人才招聘栏目继续核验总部、区域及直营网点岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-log-0267",
+      "company_name": "申通快递股份有限公司",
+      "short_name": "申通快递",
+      "industry": "快递与物流",
+      "official_website": "https://www.sto.cn/",
+      "career_url": "https://www.sto.cn/",
+      "career_entry_evidence": "申通快递官方主域名已登记；从官网公开人才入口继续核验当前岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-log-0268",
+      "company_name": "韵达控股股份有限公司",
+      "short_name": "韵达股份",
+      "industry": "快递与物流",
+      "official_website": "https://www.yundaex.com/",
+      "career_url": "https://www.yundaex.com/",
+      "career_entry_evidence": "韵达官方主域名已登记；从官网公开栏目继续核验总部与网络招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-log-0269",
+      "company_name": "极兔速递环球有限公司",
+      "short_name": "极兔速递",
+      "industry": "快递与跨境物流",
+      "official_website": "https://www.jtexpress.com/",
+      "career_url": "https://www.jtexpress.com/",
+      "career_entry_evidence": "极兔速递集团官方主域名已登记；从官网全球及中国区公开入口继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-log-0270",
+      "company_name": "菜鸟网络科技有限公司",
+      "short_name": "菜鸟",
+      "industry": "智慧物流与供应链科技",
+      "official_website": "https://www.cainiao.com/",
+      "career_url": "https://www.cainiao.com/",
+      "career_entry_evidence": "菜鸟官方主域名已登记；从官网及阿里巴巴集团官方招聘入口继续核验当前岗位。",
+      "seed_status": "official_entry_candidate"
+    }
+  ]
+}
