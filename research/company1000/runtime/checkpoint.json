@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-13T18:31:45.811932+00:00",
+  "updated_at": "2026-07-13T18:32:40.461288+00:00",
   "target_companies": 1000,
   "valid_seed_count": 350,
   "official_entries_verified": 14,
@@ -145,12 +145,29 @@
     "new_job_link_default_status": "candidate_raw",
     "review_pending_requires_detail_validation": true,
     "official_entry_verification_requires_recruitment_signal": true,
-    "cross_domain_candidate_requires_verified_seed_association": true,
-    "recruitment_navigation_requires_site_specific_resolution": true
+    "cross_domain_candidate_requires_verified_seed_association": true
   },
   "last_auto_batch": {
-    "requested_start_index": 306,
+    "requested_start_index": 174,
     "selected_indices": [
+      174,
+      175,
+      181,
+      183,
+      187,
+      191,
+      195,
+      200,
+      220,
+      227,
+      230,
+      242,
+      243,
+      251,
+      252,
+      283,
+      296,
+      305,
       327,
       329,
       114,
@@ -172,13 +189,13 @@
       170,
       173
     ],
-    "selected_count": 20,
-    "processed_count": 20,
+    "selected_count": 38,
+    "processed_count": 38,
     "job_detail_candidates": 0,
-    "recruitment_navigation_links": 0,
-    "max_workers": 8
+    "recruitment_navigation_links": 3,
+    "max_workers": 10
   },
-  "pending_seed_audits": 18,
+  "pending_seed_audits": 0,
   "merged_seed_sources": [
     "company_seed_1000.json",
     "company_seed_expansion_0001.json",
