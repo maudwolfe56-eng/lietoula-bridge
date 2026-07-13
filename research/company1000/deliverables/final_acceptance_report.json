@@ -1,6 +1,6 @@
 {
   "schema_version": "1.2",
-  "assessed_at": "2026-07-13T20:29:29.991224+00:00",
+  "assessed_at": "2026-07-13T20:31:33.927642+00:00",
   "target_companies": 1000,
   "seeded_unique_companies": 1020,
   "seed_shortfall": 0,
@@ -9,11 +9,11 @@
   "companies_without_audit_count": 0,
   "companies_without_audit_sample": [],
   "job_records": 219,
-  "all_recruitment_candidates": 33106,
-  "probable_job_detail_candidates": 19078,
+  "all_recruitment_candidates": 34252,
+  "probable_job_detail_candidates": 19218,
   "terminal_detail_failures": 30,
   "resolved_job_detail_candidates": 108,
-  "pending_job_detail_candidates": 18970,
+  "pending_job_detail_candidates": 19110,
   "pending_job_detail_sample": [
     {
       "company_id": "cn-soe-0050",
@@ -316,9 +316,9 @@
       "reason": "official_multi_position_announcement"
     }
   ],
-  "recruitment_navigation_candidates": 14028,
-  "resolved_recruitment_navigation": 4826,
-  "pending_recruitment_navigation": 9202,
+  "recruitment_navigation_candidates": 15034,
+  "resolved_recruitment_navigation": 5075,
+  "pending_recruitment_navigation": 9959,
   "pending_recruitment_navigation_sample": [
     {
       "company_id": "cn-soe-0020",
@@ -378,12 +378,6 @@
       "company_id": "cn-soe-0012",
       "company_name": "中国航天科工集团有限公司",
       "source_url": "https://casic.zhiye.com/xzlist",
-      "reason": null
-    },
-    {
-      "company_id": "cn-soe-0012",
-      "company_name": "中国航天科工集团有限公司",
-      "source_url": "https://casic.zhiye.com/szlist",
       "reason": null
     },
     {
@@ -619,6 +613,12 @@
       "company_name": "三安光电股份有限公司",
       "source_url": "https://sanan-e.zhiye.com/Social",
       "reason": null
+    },
+    {
+      "company_id": "cn-consumer-0458",
+      "company_name": "雅戈尔集团股份有限公司",
+      "source_url": "https://www.youngor.com/zp/31.html",
+      "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
     }
   ],
   "invalid_job_records": 0,
@@ -632,8 +632,427 @@
     "all_jobs_have_identity_title_and_source": true,
     "job_source_urls_unique": true,
     "no_auto_active_verified_records": true,
-    "deliverable_set_present": true
+    "deliverable_set_present": true,
+    "all_recruitment_navigation_resolved": false,
+    "all_probable_job_details_resolved": false
   },
   "final_acceptance_met": false,
-  "notification_eligible": false
+  "notification_eligible": false,
+  "final_acceptance": false,
+  "assessment_version": "2.0-classification-aware-latest-ledger",
+  "counts": {
+    "probable_job_detail_candidates": 19220,
+    "classified_detail_urls_excluded": 2416,
+    "routed_announcement_urls": 85,
+    "pending_job_detail_candidates": 18197,
+    "recruitment_navigation_candidates": 13472,
+    "terminal_latest_navigation_resolutions": 5969,
+    "pending_recruitment_navigation": 10038
+  },
+  "pending_samples": {
+    "job_details": [
+      {
+        "company_id": "cn-autoparts-0748",
+        "source_url": "https://www.aptiv.com/en/jobs/25for25"
+      },
+      {
+        "company_id": "cn-bank-0304",
+        "source_url": "https://www.cqrcb.com/cqrcb/aboutus/job/334094.html"
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "source_url": "https://www.gdnybank.com/sojob/20220317/26704.html"
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "source_url": "https://www.gdnybank.com/sojob/20250811/36623.html"
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "source_url": "https://www.gdnybank.com/sojob/20250909/36783.html"
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "source_url": "https://www.gdnybank.com/sojob/20250916/36829.html"
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "source_url": "https://www.gdnybank.com/sojob/20260120/37629.html"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390776941&jc=2&c=&p=1%5E-1%2C3%5E-1&ky="
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "source_url": "https://smics.zhiye.com/socialxq?jobId=390609112&jc=1&c=&p=1%5E-1%2C3%5E-1&ky="
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "source_url": "https://smics.zhiye.com/socialxq?jobId=390625692&jc=1&c=&p=1%5E-1%2C3%5E-1&ky="
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "source_url": "https://smics.zhiye.com/socialxq?jobId=390841277&jc=1&c=&p=1%5E-1%2C3%5E-1&ky="
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "source_url": "https://smics.zhiye.com/socialxq?jobId=390841785&jc=1&c=&p=1%5E-1%2C3%5E-1&ky="
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%8A%E6%B5%B7%E5%87%BA%E5%85%A5%E5%A2%83%E8%BE%B9%E9%98%B2%E6%A3%80%E6%9F%A5%E6%80%BB%E7%AB%99"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%8A%E6%B5%B7%E5%B8%82%E9%82%AE%E6%94%BF%E7%AE%A1%E7%90%86%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%8D%8E%E5%85%A8%E5%9B%BD%E4%BE%9B%E9%94%80%E5%90%88%E4%BD%9C%E6%80%BB%E7%A4%BE"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E6%AE%8B%E8%81%94"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E4%B8%9C%E5%8C%97%E5%9C%B0%E5%8C%BA%E7%AE%A1%E7%90%86%E5%B1%80%E5%85%AC%E5%AE%89%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%8D%8E%E5%8C%97%E5%9C%B0%E5%8C%BA%E7%AE%A1%E7%90%86%E5%B1%80%E5%85%AC%E5%AE%89%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%B1%80%E6%96%B0%E7%96%86%E7%AE%A1%E7%90%86%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%B1%80%E8%A5%BF%E5%8D%97%E5%9C%B0%E5%8C%BA%E7%AE%A1%E7%90%86%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E6%B0%94%E8%B1%A1%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E5%86%85%E8%92%99%E5%8F%A4%E7%9B%91%E7%AE%A1%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E5%9B%9B%E5%B7%9D%E7%9B%91%E7%AE%A1%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E5%B1%B1%E8%A5%BF%E7%9B%91%E7%AE%A1%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E5%B9%BF%E4%B8%9C%E7%9B%91%E7%AE%A1%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E6%96%B0%E7%96%86%E7%9B%91%E7%AE%A1%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E6%B7%B1%E5%9C%B3%E7%9B%91%E7%AE%A1%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E6%B9%96%E5%8C%97%E7%9B%91%E7%AE%A1%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E6%B9%96%E5%8D%97%E7%9B%91%E7%AE%A1%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E7%A6%8F%E5%BB%BA%E7%9B%91%E7%AE%A1%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E8%A5%BF%E8%97%8F%E7%9B%91%E7%AE%A1%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E9%99%95%E8%A5%BF%E7%9B%91%E7%AE%A1%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E9%BB%91%E9%BE%99%E6%B1%9F%E7%9B%91%E7%AE%A1%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E4%BF%9D%E9%99%A9%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E5%9B%9B%E5%B7%9D%E7%9B%91%E7%AE%A1%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E4%BF%9D%E9%99%A9%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E5%A4%A7%E8%BF%9E%E7%9B%91%E7%AE%A1%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E4%BF%9D%E9%99%A9%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E5%AE%81%E6%B3%A2%E7%9B%91%E7%AE%A1%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E4%BF%9D%E9%99%A9%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E5%B9%BF%E4%B8%9C%E7%9B%91%E7%AE%A1%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E4%BF%9D%E9%99%A9%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E6%96%B0%E7%96%86%E7%9B%91%E7%AE%A1%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E4%BF%9D%E9%99%A9%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E6%B2%B3%E5%8C%97%E7%9B%91%E7%AE%A1%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E4%BF%9D%E9%99%A9%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E6%B2%B3%E5%8D%97%E7%9B%91%E7%AE%A1%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E4%BF%9D%E9%99%A9%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E6%B7%B1%E5%9C%B3%E7%9B%91%E7%AE%A1%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E4%BF%9D%E9%99%A9%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E8%A5%BF%E8%97%8F%E7%9B%91%E7%AE%A1%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E4%BF%9D%E9%99%A9%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E8%B4%B5%E5%B7%9E%E7%9B%91%E7%AE%A1%E5%B1%80"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%A4%AE%E5%8A%9E%E5%85%AC%E5%8E%85"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%A4%AE%E5%92%8C%E5%9B%BD%E5%AE%B6%E6%9C%BA%E5%85%B3%E5%B7%A5%E5%A7%94"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%A4%AE%E7%BB%84%E7%BB%87%E9%83%A8"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%BA%91%E5%8D%97%E5%87%BA%E5%85%A5%E5%A2%83%E8%BE%B9%E9%98%B2%E6%A3%80%E6%9F%A5%E6%80%BB%E7%AB%99"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%BA%91%E5%8D%97%E7%9C%81%E6%A3%AE%E6%9E%97%E6%B6%88%E9%98%B2%E6%80%BB%E9%98%9F"
+      }
+    ],
+    "recruitment_navigation": [
+      {
+        "company_id": "cn-agri-0497",
+        "source_url": "http://mokahr.com"
+      },
+      {
+        "company_id": "cn-ai-0630",
+        "source_url": "http://mokahr.com"
+      },
+      {
+        "company_id": "cn-airline-0879",
+        "source_url": "http://zhaopin.sichuanair.com/"
+      },
+      {
+        "company_id": "cn-airport-0871",
+        "source_url": "http://iport.zhiye.com/Social"
+      },
+      {
+        "company_id": "cn-airport-0874",
+        "source_url": "https://www.hzairport.com/talent/index/cid/10010.html"
+      },
+      {
+        "company_id": "cn-apparel-0790",
+        "source_url": "https://career-site.lululemon.cn/"
+      },
+      {
+        "company_id": "cn-autoai-0634",
+        "source_url": "http://mokahr.com"
+      },
+      {
+        "company_id": "cn-autoai-0634",
+        "source_url": "https://app.mokahr.com/apply/jingchi/2138"
+      },
+      {
+        "company_id": "cn-autoai-0635",
+        "source_url": "https://www.momenta.cn/en/join.html"
+      },
+      {
+        "company_id": "cn-autoparts-0702",
+        "source_url": "http://mokahr.com"
+      },
+      {
+        "company_id": "cn-autoparts-0706",
+        "source_url": "https://www.foryougroup.com/Employer-Brand.html"
+      },
+      {
+        "company_id": "cn-autoparts-0710",
+        "source_url": "https://wecruit.hotjob.cn/SU61304acdbef57c061649be2e/pb/social.html"
+      },
+      {
+        "company_id": "cn-autoparts-0712",
+        "source_url": "https://weifuhr.weifu.com.cn/recruit"
+      },
+      {
+        "company_id": "cn-autoparts-0713",
+        "source_url": "http://mokahr.com"
+      },
+      {
+        "company_id": "cn-autoparts-0717",
+        "source_url": "https://www.shuanglin.com/core/control/common/down.jsp?filename=%2Fupload%2Fimages%2F2023%2F06%2F27%2F7582d05c21ce4da3a9dadbbc14bd8836.jpg&title=2023%E5%B1%8A%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%8B%9B%E8%81%98%E4%BF%A1%E6%81%AF"
+      },
+      {
+        "company_id": "cn-autoparts-0717",
+        "source_url": "https://www.shuanglin.com/core/control/common/down.jsp?filename=%2Fupload%2Fimages%2F2023%2F06%2F27%2F79f1a2ba754d47fcb95c0c8597fa90e5.jpg&title=2022%E5%B1%8A%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%8B%9B%E8%81%98%E4%BF%A1%E6%81%AF"
+      },
+      {
+        "company_id": "cn-autoparts-0717",
+        "source_url": "https://www.shuanglin.com/core/control/common/down.jsp?filename=%2Fupload%2Fimages%2F2024%2F06%2F03%2F58b9e2fdad30456fbe9cfb7af9131f98.jpg&title=2024%E5%B1%8A%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%8B%9B%E8%81%98%E4%BF%A1%E6%81%AF"
+      },
+      {
+        "company_id": "cn-autoparts-0717",
+        "source_url": "https://www.shuanglin.com/job/jian-li-tou-di.htm?%3Fid=2437"
+      },
+      {
+        "company_id": "cn-autoparts-0717",
+        "source_url": "https://www.shuanglin.com/job/jian-li-tou-di.htm?%3Fid=3581"
+      },
+      {
+        "company_id": "cn-autoparts-0717",
+        "source_url": "https://www.shuanglin.com/job/jian-li-tou-di.htm?%3Fid=3582"
+      },
+      {
+        "company_id": "cn-autoparts-0717",
+        "source_url": "https://www.shuanglin.com/job/jian-li-tou-di.htm?%3Fid=3583"
+      },
+      {
+        "company_id": "cn-autoparts-0717",
+        "source_url": "https://www.shuanglin.com/job/jian-li-tou-di.htm?%3Fid=3584"
+      },
+      {
+        "company_id": "cn-autoparts-0717",
+        "source_url": "https://www.shuanglin.com/job/jian-li-tou-di.htm?%3Fid=3585"
+      },
+      {
+        "company_id": "cn-autoparts-0717",
+        "source_url": "https://www.shuanglin.com/job/jian-li-tou-di.htm?%3Fid=3586"
+      },
+      {
+        "company_id": "cn-autoparts-0717",
+        "source_url": "https://www.shuanglin.com/job/jian-li-tou-di.htm?%3Fid=3587"
+      },
+      {
+        "company_id": "cn-autoparts-0717",
+        "source_url": "https://www.shuanglin.com/job/jian-li-tou-di.htm?%3Fid=3588"
+      },
+      {
+        "company_id": "cn-autoparts-0717",
+        "source_url": "https://www.shuanglin.com/job/jian-li-tou-di.htm?%3Fid=3589"
+      },
+      {
+        "company_id": "cn-autoparts-0717",
+        "source_url": "https://www.shuanglin.com/job/jian-li-tou-di.htm?%3Fid=3590"
+      },
+      {
+        "company_id": "cn-autoparts-0717",
+        "source_url": "https://www.shuanglin.com/job/jian-li-tou-di.htm?%3Fid=3592"
+      },
+      {
+        "company_id": "cn-autoparts-0717",
+        "source_url": "https://www.shuanglin.com/job/jian-li-tou-di.htm?%3Fid=3593"
+      },
+      {
+        "company_id": "cn-autoparts-0717",
+        "source_url": "https://www.shuanglin.com/upload/images/2023/06/27/7582d05c21ce4da3a9dadbbc14bd8836.jpg"
+      },
+      {
+        "company_id": "cn-autoparts-0717",
+        "source_url": "https://www.shuanglin.com/upload/images/2023/06/27/79f1a2ba754d47fcb95c0c8597fa90e5.jpg"
+      },
+      {
+        "company_id": "cn-autoparts-0717",
+        "source_url": "https://www.shuanglin.com/upload/images/2024/06/03/58b9e2fdad30456fbe9cfb7af9131f98.jpg"
+      },
+      {
+        "company_id": "cn-autoparts-0744",
+        "source_url": "https://www.yanfeng.com/en/global-user-research"
+      },
+      {
+        "company_id": "cn-autoparts-0744",
+        "source_url": "https://www.yanfeng.com/en/jobs"
+      },
+      {
+        "company_id": "cn-autoparts-0744",
+        "source_url": "https://www.yanfeng.com/en/jobs?job_category_target_id=22&field_country_value="
+      },
+      {
+        "company_id": "cn-autoparts-0744",
+        "source_url": "https://www.yanfeng.com/en/recent-graduates"
+      },
+      {
+        "company_id": "cn-autoparts-0744",
+        "source_url": "https://www.yanfeng.com/en/yanfeng-international-automotive-technology-uk-co-ltd"
+      },
+      {
+        "company_id": "cn-autoparts-0745",
+        "source_url": "http://mokahr.com"
+      },
+      {
+        "company_id": "cn-autoparts-0745",
+        "source_url": "https://app.mokahr.com/campus-recruitment/bosch/142589?locale=zh-CN"
+      },
+      {
+        "company_id": "cn-autoparts-0745",
+        "source_url": "https://app.mokahr.com/campus-recruitment/bosch/75909?locale=zh-CN"
+      },
+      {
+        "company_id": "cn-autoparts-0745",
+        "source_url": "https://www.bosch.com.cn/careers/"
+      },
+      {
+        "company_id": "cn-autoparts-0745",
+        "source_url": "https://www.bosch.com.cn/careers/fields-of-work/bosch-global-business-services/"
+      },
+      {
+        "company_id": "cn-autoparts-0745",
+        "source_url": "https://www.bosch.com.cn/careers/job-offers/professionals-recruitment/junior-manager-program/story/"
+      },
+      {
+        "company_id": "cn-autoparts-0745",
+        "source_url": "https://www.bosch.com.cn/careers/job-offers/professionals-recruitment/junior-manager-program/story/cuivincent.html"
+      },
+      {
+        "company_id": "cn-autoparts-0745",
+        "source_url": "https://www.bosch.com.cn/careers/job-offers/professionals-recruitment/junior-manager-program/story/guyudanhanhuizhongliuzaozaosunjingjing.html"
+      },
+      {
+        "company_id": "cn-autoparts-0745",
+        "source_url": "https://www.bosch.com.cn/careers/job-offers/professionals-recruitment/junior-manager-program/story/machenjie.html"
+      },
+      {
+        "company_id": "cn-autoparts-0745",
+        "source_url": "https://www.bosch.com.cn/careers/start-your-career/"
+      },
+      {
+        "company_id": "cn-autoparts-0748",
+        "source_url": "https://www.aptiv.com/de/karriere/jobsuche"
+      },
+      {
+        "company_id": "cn-autoparts-0748",
+        "source_url": "https://www.aptiv.com/docs/default-source/careers/aptiv_broszura_mfg_pro_web_eng.pdf?sfvrsn=ccfd138_1"
+      }
+    ]
+  }
 }

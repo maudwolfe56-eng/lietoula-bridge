@@ -1,0 +1,10 @@
+{
+  "generated_at_utc": "2026-07-13T20:31:36.721370+00:00",
+  "batch": "success",
+  "reclassify": "success",
+  "classify": "success",
+  "navigation": "success",
+  "detail": "success",
+  "announcement": "success",
+  "mode": "classification_aware_acceptance"
+}

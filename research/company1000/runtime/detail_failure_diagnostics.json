@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-13T20:29:13.560932+00:00",
-  "failure_rows": 1160,
-  "unique_failed_urls": 1160,
+  "generated_at": "2026-07-13T20:31:08.302377+00:00",
+  "failure_rows": 1280,
+  "unique_failed_urls": 1280,
   "reason_counts_all_attempts": {
-    "detail_unparseable_or_multi_position_announcement": 1109,
+    "detail_unparseable_or_multi_position_announcement": 1229,
     "detail_access_restricted": 25,
     "detail_http_error": 9,
     "detail_fetch_failed:ConnectionError": 9,
@@ -11,7 +11,7 @@
     "detail_fetch_failed:ConnectTimeout": 1
   },
   "reason_counts_latest_by_url": {
-    "detail_unparseable_or_multi_position_announcement": 1109,
+    "detail_unparseable_or_multi_position_announcement": 1229,
     "detail_access_restricted": 25,
     "detail_http_error": 9,
     "detail_fetch_failed:ConnectionError": 9,
@@ -19,7 +19,7 @@
     "detail_fetch_failed:ConnectTimeout": 1
   },
   "http_status_counts": {
-    "200": 1109,
+    "200": 1229,
     "403": 25,
     "none": 17,
     "404": 5,
@@ -28,16 +28,16 @@
   },
   "top_hosts": [
     {
+      "host": "www.fenbi.com",
+      "count": 394
+    },
+    {
       "host": "jobs.lenovo.com",
       "count": 331
     },
     {
       "host": "mokahr.com",
       "count": 326
-    },
-    {
-      "host": "www.fenbi.com",
-      "count": 274
     },
     {
       "host": "www.gdnybank.com",
@@ -99,7 +99,15 @@
     },
     {
       "path_shape": "/page/positions/{id}/{id}?department",
-      "count": 150
+      "count": 164
+    },
+    {
+      "path_shape": "/page/positions/{id}/{id}?region",
+      "count": 124
+    },
+    {
+      "path_shape": "/page/positions/{id}/{id}?department&institution",
+      "count": 92
     },
     {
       "path_shape": "/site/productcompositiondetail/{id}",
@@ -108,14 +116,6 @@
     {
       "path_shape": "/jobnews/{id}/{id}",
       "count": 85
-    },
-    {
-      "path_shape": "/page/positions/{id}/{id}?region",
-      "count": 62
-    },
-    {
-      "path_shape": "/page/positions/{id}/{id}?department&institution",
-      "count": 48
     },
     {
       "path_shape": "/es_es/careers/jobdetail/{id}/{id}",
@@ -259,47 +259,47 @@
       {
         "company_id": "cn-edu-0795",
         "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/34056?department=%E4%B8%AD%E5%9B%BD%E4%BD%9C%E5%8D%8F&institution=%E4%B8%AD%E5%A4%AE%E5%85%9A%E7%BE%A4%E6%9C%BA%E5%85%B3",
+        "source_url": "https://www.fenbi.com/page/positions/0/7?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E5%9B%9B%E5%B7%9D%E7%9B%91%E7%AE%A1%E5%B1%80",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/page/positions/{id}/{id}?department&institution"
+        "path_shape": "/page/positions/{id}/{id}?department"
       },
       {
         "company_id": "cn-edu-0795",
         "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/191534?region=947",
+        "source_url": "https://www.fenbi.com/page/positions/0/7?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E5%86%85%E8%92%99%E5%8F%A4%E7%9B%91%E7%AE%A1%E5%B1%80",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/page/positions/{id}/{id}?region"
+        "path_shape": "/page/positions/{id}/{id}?department"
       },
       {
         "company_id": "cn-edu-0795",
         "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/191534?region=836",
+        "source_url": "https://www.fenbi.com/page/positions/0/7?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/page/positions/{id}/{id}?region"
+        "path_shape": "/page/positions/{id}/{id}?department"
       },
       {
         "company_id": "cn-edu-0795",
         "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/191534?region=683",
+        "source_url": "https://www.fenbi.com/page/positions/0/7?department=%E4%B8%AD%E5%9B%BD%E6%B0%94%E8%B1%A1%E5%B1%80",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/page/positions/{id}/{id}?region"
+        "path_shape": "/page/positions/{id}/{id}?department"
       },
       {
         "company_id": "cn-edu-0795",
         "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/191534?region=557",
+        "source_url": "https://www.fenbi.com/page/positions/0/7?department=%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%B1%80%E8%A5%BF%E5%8D%97%E5%9C%B0%E5%8C%BA%E7%AE%A1%E7%90%86%E5%B1%80",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/page/positions/{id}/{id}?region"
+        "path_shape": "/page/positions/{id}/{id}?department"
       }
     ],
     "detail_access_restricted": [
@@ -503,6 +503,35 @@
     ]
   },
   "samples_by_top_host": {
+    "www.fenbi.com": [
+      {
+        "company_id": "cn-edu-0795",
+        "company_name": "北京粉笔蓝天科技有限公司",
+        "source_url": "https://www.fenbi.com/page/positions/0/7?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E5%9B%9B%E5%B7%9D%E7%9B%91%E7%AE%A1%E5%B1%80",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/page/positions/{id}/{id}?department"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "company_name": "北京粉笔蓝天科技有限公司",
+        "source_url": "https://www.fenbi.com/page/positions/0/7?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E5%86%85%E8%92%99%E5%8F%A4%E7%9B%91%E7%AE%A1%E5%B1%80",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/page/positions/{id}/{id}?department"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "company_name": "北京粉笔蓝天科技有限公司",
+        "source_url": "https://www.fenbi.com/page/positions/0/7?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/page/positions/{id}/{id}?department"
+      }
+    ],
     "jobs.lenovo.com": [
       {
         "company_id": "cn-tech-0063",
@@ -559,35 +588,6 @@
         "detail": null,
         "http_status": 200,
         "path_shape": "/blog/{id}"
-      }
-    ],
-    "www.fenbi.com": [
-      {
-        "company_id": "cn-edu-0795",
-        "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/34056?department=%E4%B8%AD%E5%9B%BD%E4%BD%9C%E5%8D%8F&institution=%E4%B8%AD%E5%A4%AE%E5%85%9A%E7%BE%A4%E6%9C%BA%E5%85%B3",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/page/positions/{id}/{id}?department&institution"
-      },
-      {
-        "company_id": "cn-edu-0795",
-        "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/191534?region=947",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/page/positions/{id}/{id}?region"
-      },
-      {
-        "company_id": "cn-edu-0795",
-        "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/191534?region=836",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/page/positions/{id}/{id}?region"
       }
     ],
     "www.gdnybank.com": [
