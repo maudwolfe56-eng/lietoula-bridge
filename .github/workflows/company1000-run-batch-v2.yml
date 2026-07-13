@@ -1,0 +1,198 @@
+name: Company1000 classified incremental runner
+
+on:
+  push:
+    branches:
+      - research/company1000-crawler-20260713
+    paths:
+      - 'research/company1000/automation_trigger_v2.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: company1000-research-writes
+  cancel-in-progress: false
+
+jobs:
+  run-batch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout research branch
+        uses: actions/checkout@v4
+        with:
+          ref: research/company1000-crawler-20260713
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: research/company1000/requirements.txt
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 lxml python-dateutil
+
+      - name: Validate scripts
+        working-directory: research/company1000
+        run: |
+          python -m py_compile \
+            crawl_company_jobs.py \
+            crawl_company_jobs_merged.py \
+            reclassify_navigation_detail_urls.py \
+            classify_detail_candidates_v2.py \
+            enumerate_recruitment_navigation_v2.py \
+            enumerate_recruitment_navigation_v3.py \
+            enumerate_recruitment_navigation_v4.py \
+            resolve_job_detail_candidates.py \
+            resolve_job_detail_candidates_safe.py \
+            resolve_job_detail_candidates_v3.py \
+            summarize_detail_failures.py \
+            resolve_multi_position_announcements.py \
+            build_import_package.py \
+            ensure_unique_job_source_urls.py \
+            assess_final_acceptance.py
+
+      - name: Audit next unprocessed companies
+        id: batch
+        continue-on-error: true
+        working-directory: research/company1000
+        env:
+          PYTHONUNBUFFERED: '1'
+        run: |
+          set -o pipefail
+          mkdir -p output runtime logs deliverables
+          python crawl_company_jobs_merged.py \
+            --seed-file company_seed_1000.json \
+            --output-dir output \
+            --state-file runtime/checkpoint.json \
+            --batch-size 50 \
+            | tee logs/next_batch_auto.log
+
+      - name: Reclassify strong official ATS detail URLs
+        id: reclassify
+        continue-on-error: true
+        working-directory: research/company1000
+        run: |
+          set -o pipefail
+          python reclassify_navigation_detail_urls.py --output-dir output \
+            | tee logs/reclassify_navigation_detail_urls.log
+
+      - name: Classify non-job, locale-duplicate and announcement candidates
+        id: classify
+        continue-on-error: true
+        working-directory: research/company1000
+        run: |
+          set -o pipefail
+          python classify_detail_candidates_v2.py --output-dir output \
+            | tee logs/classify_detail_candidates.log
+
+      - name: Expand recruitment navigation conservatively
+        id: navigation
+        continue-on-error: true
+        working-directory: research/company1000
+        run: |
+          set -o pipefail
+          python enumerate_recruitment_navigation_v4.py \
+            --seed-file runtime/company_seed_merged.json \
+            --output-dir output \
+            --state-file runtime/checkpoint.json \
+            --batch-size 300 \
+            --max-workers 12 \
+            --max-attempts 4 \
+            --max-children-per-page 60 \
+            --timeout-seconds 18 \
+            | tee logs/navigation_expansion.log
+
+      - name: Resolve unsuppressed job details
+        id: detail
+        continue-on-error: true
+        working-directory: research/company1000
+        run: |
+          set -o pipefail
+          python resolve_job_detail_candidates_v3.py \
+            --output-dir output \
+            --batch-size 120 \
+            --max-workers 12 \
+            --max-attempts 3 \
+            | tee logs/resolve_job_details.log
+
+      - name: Summarize detail failures
+        if: always()
+        working-directory: research/company1000
+        run: |
+          python summarize_detail_failures.py | tee logs/summarize_detail_failures.log
+
+      - name: Resolve routed multi-position announcements
+        id: announcement
+        continue-on-error: true
+        working-directory: research/company1000
+        run: |
+          set -o pipefail
+          python resolve_multi_position_announcements.py \
+            --output-dir output \
+            --batch-size 80 \
+            --max-workers 8 \
+            --max-attempts 3 \
+            | tee logs/resolve_multi_position_announcements.log
+
+      - name: Rebuild import package and acceptance report
+        if: always()
+        working-directory: research/company1000
+        run: |
+          python build_import_package.py | tee logs/build_import_package.log
+          python ensure_unique_job_source_urls.py | tee logs/ensure_unique_job_source_urls.log
+          python assess_final_acceptance.py | tee logs/assess_final_acceptance.log
+
+      - name: Record workflow outcome
+        if: always()
+        working-directory: research/company1000
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+          Path('runtime').mkdir(parents=True, exist_ok=True)
+          Path('runtime/last_workflow_manifest_v2.json').write_text(json.dumps({
+              'generated_at_utc': datetime.now(timezone.utc).isoformat(),
+              'batch': '${{ steps.batch.outcome }}',
+              'reclassify': '${{ steps.reclassify.outcome }}',
+              'classify': '${{ steps.classify.outcome }}',
+              'navigation': '${{ steps.navigation.outcome }}',
+              'detail': '${{ steps.detail.outcome }}',
+              'announcement': '${{ steps.announcement.outcome }}',
+              'mode': 'classified_bounded_navigation_detail_and_announcement_resolution'
+          }, ensure_ascii=False, indent=2), encoding='utf-8')
+          PY
+
+      - name: Commit generated outputs
+        if: always()
+        run: |
+          git config user.name 'company1000-automation'
+          git config user.email 'company1000-automation@users.noreply.github.com'
+          git add research/company1000/output \
+                  research/company1000/runtime \
+                  research/company1000/logs \
+                  research/company1000/deliverables
+          if git diff --cached --quiet; then
+            echo 'No generated changes to commit'
+          else
+            git commit -m 'research: persist classified company1000 resolution outputs'
+            for attempt in 1 2 3; do
+              if git pull --rebase origin research/company1000-crawler-20260713 && \
+                 git push origin HEAD:research/company1000-crawler-20260713; then
+                exit 0
+              fi
+              sleep 5
+            done
+            exit 1
+          fi
+
+      - name: Fail workflow if a processing stage failed
+        if: steps.batch.outcome == 'failure' || steps.reclassify.outcome == 'failure' || steps.classify.outcome == 'failure' || steps.navigation.outcome == 'failure' || steps.detail.outcome == 'failure' || steps.announcement.outcome == 'failure'
+        run: exit 1
