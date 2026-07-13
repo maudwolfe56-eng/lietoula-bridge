@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-13T14:10:00Z",
+  "updated_at": "2026-07-13T12:55:02.827762+00:00",
   "target_companies": 1000,
-  "valid_seed_count": 16,
+  "valid_seed_count": 26,
   "official_entries_verified": 14,
   "official_entry_candidates_pending": 2,
   "companies_with_job_records": 4,
@@ -11,7 +11,7 @@
   "job_records_review_pending": 64,
   "job_records_inactive_expired": 23,
   "companies_final_acceptance_met": 0,
-  "next_batch_start_index": 16,
+  "next_batch_start_index": 26,
   "batch_progress": {
     "batch_0001": {
       "companies_reviewed": 10,
@@ -51,7 +51,11 @@
       "cssc_campus_records_observed_latest": 66,
       "cssc_campus_pages_observed_latest": 5,
       "cssc_campus_unique_records_captured": 48,
-      "cssc_campus_full_listing_pages_captured": [2, 3, 4],
+      "cssc_campus_full_listing_pages_captured": [
+        2,
+        3,
+        4
+      ],
       "cssc_campus_page_1_details_captured": 4,
       "cssc_campus_page_5_status": "transient_cache_miss",
       "cssc_duplicate_job_code_skipped": "J11958",
@@ -93,7 +97,7 @@
     "login_captcha_or_paywall_bypass_allowed": false
   },
   "last_auto_batch": {
-    "start_index": 14,
-    "count": 2
+    "start_index": 16,
+    "count": 10
   }
 }

@@ -7,3 +7,13 @@
 {"company_id": "cn-fin-0009", "company_name": "中国中信集团有限公司", "http_status": null, "observed_at": "2026-07-13T12:03:11.135830+00:00", "reason": "fetch_failed", "url": "https://job.citic.com/recruit"}
 {"company_id": "cn-fin-0010", "company_name": "中国人寿保险（集团）公司", "http_status": null, "observed_at": "2026-07-13T12:03:12.113526+00:00", "reason": "fetch_failed", "url": "https://www.chinalife.com.cn/chinalife/zhaopin/"}
 {"company_id": "cn-soe-0013", "company_name": "中国船舶集团有限公司", "http_status": 403, "observed_at": "2026-07-13T12:27:35.556814+00:00", "reason": "restricted", "url": "https://cssc.zhiye.com/"}
+{"company_id": "cn-soe-0017", "company_name": "中国石油天然气集团有限公司", "http_status": 412, "observed_at": "2026-07-13T12:53:37.694353+00:00", "reason": "pending_dynamic_js", "url": "https://zhaopin.cnpc.com.cn/"}
+{"company_id": "cn-soe-0018", "company_name": "中国石油化工集团有限公司", "http_status": 200, "observed_at": "2026-07-13T12:53:38.978717+00:00", "reason": "pending_dynamic_js", "url": "https://job.sinopec.com/"}
+{"company_id": "cn-soe-0019", "company_name": "中国海洋石油集团有限公司", "http_status": 403, "observed_at": "2026-07-13T12:53:40.013757+00:00", "reason": "restricted", "url": "https://cnooc.zhiye.com/"}
+{"company_id": "cn-soe-0020", "company_name": "国家能源投资集团有限责任公司", "http_status": 200, "observed_at": "2026-07-13T12:53:41.825836+00:00", "reason": "pending_dynamic_js", "url": "https://zhaopin.chnenergy.com.cn/"}
+{"company_id": "cn-soe-0021", "company_name": "中国南方电网有限责任公司", "http_status": null, "observed_at": "2026-07-13T12:54:57.273474+00:00", "reason": "fetch_failed", "url": "https://zhaopin.csg.cn/"}
+{"company_id": "cn-soe-0022", "company_name": "中国华能集团有限公司", "http_status": 403, "observed_at": "2026-07-13T12:54:58.290560+00:00", "reason": "restricted", "url": "https://chng.zhiye.com/"}
+{"company_id": "cn-soe-0023", "company_name": "中国大唐集团有限公司", "http_status": 403, "observed_at": "2026-07-13T12:54:59.326901+00:00", "reason": "restricted", "url": "https://cdt.zhiye.com/"}
+{"company_id": "cn-soe-0024", "company_name": "中国华电集团有限公司", "http_status": 403, "observed_at": "2026-07-13T12:55:00.457046+00:00", "reason": "restricted", "url": "https://chd.zhiye.com/"}
+{"company_id": "cn-soe-0025", "company_name": "国家电力投资集团有限公司", "http_status": 403, "observed_at": "2026-07-13T12:55:01.715632+00:00", "reason": "restricted", "url": "https://spic.zhiye.com/"}
+{"company_id": "cn-soe-0026", "company_name": "中国长江三峡集团有限公司", "http_status": 403, "observed_at": "2026-07-13T12:55:02.827195+00:00", "reason": "restricted", "url": "https://ctg.zhiye.com/"}
