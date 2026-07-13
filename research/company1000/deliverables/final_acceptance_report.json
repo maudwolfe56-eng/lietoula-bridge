@@ -1,19 +1,19 @@
 {
   "schema_version": "1.2",
-  "assessed_at": "2026-07-13T19:12:19.624506+00:00",
+  "assessed_at": "2026-07-13T19:36:36.381836+00:00",
   "target_companies": 1000,
-  "seeded_unique_companies": 592,
-  "seed_shortfall": 408,
-  "companies_with_coverage": 565,
-  "companies_with_explicit_failure_reason": 474,
+  "seeded_unique_companies": 832,
+  "seed_shortfall": 168,
+  "companies_with_coverage": 805,
+  "companies_with_explicit_failure_reason": 675,
   "companies_without_audit_count": 0,
   "companies_without_audit_sample": [],
-  "job_records": 192,
-  "all_recruitment_candidates": 3884,
-  "probable_job_detail_candidates": 1283,
+  "job_records": 194,
+  "all_recruitment_candidates": 5502,
+  "probable_job_detail_candidates": 1333,
   "terminal_detail_failures": 6,
-  "resolved_job_detail_candidates": 67,
-  "pending_job_detail_candidates": 1216,
+  "resolved_job_detail_candidates": 69,
+  "pending_job_detail_candidates": 1264,
   "pending_job_detail_sample": [
     {
       "company_id": "cn-soe-0050",
@@ -31,6 +31,12 @@
       "company_id": "cn-tech-0066",
       "company_name": "中兴通讯股份有限公司",
       "source_url": "https://job.zte.com.cn/content/zte-job/cn/campus-recruitment/School_Recruitment_Announcement/news/10011.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-vaccine-0815",
+      "company_name": "重庆智飞生物制品股份有限公司",
+      "source_url": "https://www.zhifeishengwu.com/zh_CN/recruitment/42.html",
       "reason": null
     },
     {
@@ -308,17 +314,11 @@
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251013/36965.html",
       "reason": null
-    },
-    {
-      "company_id": "cn-bank-0344",
-      "company_name": "广东南粤银行股份有限公司",
-      "source_url": "https://www.gdnybank.com/jobnews/20251013/36964.html",
-      "reason": null
     }
   ],
-  "recruitment_navigation_candidates": 2601,
-  "resolved_recruitment_navigation": 613,
-  "pending_recruitment_navigation": 1988,
+  "recruitment_navigation_candidates": 4169,
+  "resolved_recruitment_navigation": 739,
+  "pending_recruitment_navigation": 3430,
   "pending_recruitment_navigation_sample": [
     {
       "company_id": "cn-soe-0020",
