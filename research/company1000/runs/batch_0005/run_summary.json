@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "batch_0005",
+  "completed_at_utc": "2026-07-13T12:55:03Z",
+  "seed_range": {"start_index":16,"end_index_exclusive":26},
+  "companies_processed": 10,
+  "official_entry_http_verified": 2,
+  "enumeration_status_counts": {
+    "pending_dynamic_js": 3,
+    "restricted": 6,
+    "fetch_failed": 1
+  },
+  "job_detail_records_created": 0,
+  "review_pending_link_candidates": 1,
+  "final_acceptance_met": 0,
+  "checkpoint": {
+    "valid_seed_count": 26,
+    "next_batch_start_index": 26,
+    "target_companies": 1000
+  },
+  "failure_policy": "动态页面、HTTP 403/412及连接失败均记录为待复核或受限，不推导为无公开岗位。",
+  "next_actions": [
+    "对中国石化和国家能源集团使用公开浏览器渲染或官方公开接口继续枚举岗位详情",
+    "对中国石油HTTP 412及六个ATS HTTP 403入口进行合规浏览器复核，不绕过访问控制",
+    "重试南方电网连接并核验公开职位搜索入口",
+    "继续扩充下一批可审计企业种子"
+  ],
+  "policy": {
+    "auto_active_verified": false,
+    "salary_inference_allowed": false,
+    "login_captcha_or_paywall_bypass_allowed": false
+  }
+}
