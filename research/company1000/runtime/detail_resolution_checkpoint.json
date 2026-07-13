@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-07-13T20:33:10.590087+00:00",
+  "updated_at": "2026-07-13T20:37:25.735183+00:00",
   "resolver_version": "3.0-retry-aware-classification-ledger",
   "probable_detail_candidates": 20859,
   "suppressed_detail_urls": 2416,
   "routed_announcement_urls": 85,
   "resolved_job_urls_before_batch": 149,
-  "terminal_failure_urls_before_batch": 24,
+  "terminal_failure_urls_before_batch": 88,
   "selected": 120,
   "job_records_created": 0,
   "terminal_failures_created": 0,

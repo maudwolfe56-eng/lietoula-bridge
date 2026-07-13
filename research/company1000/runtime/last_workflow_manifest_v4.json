@@ -1,0 +1,11 @@
+{
+  "generated_at_utc": "2026-07-13T20:38:01.468201+00:00",
+  "batch": "success",
+  "reclassify": "success",
+  "classify": "success",
+  "navigation": "success",
+  "embedded": "success",
+  "detail": "success",
+  "announcement": "success",
+  "mode": "embedded_and_html_detail_resolution"
+}
