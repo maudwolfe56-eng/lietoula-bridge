@@ -22,11 +22,14 @@ from typing import Any
 import requests
 
 from crawl_company_jobs import (
+    JOB_WORDS,
     USER_AGENT,
     append_jsonl,
     existing_keys,
     fetch_page,
+    host,
     load_companies,
+    registrable_hint,
     same_official_family,
     utc_now,
 )
@@ -65,6 +68,7 @@ def audit_one(entry: tuple[int, dict[str, Any]]) -> tuple[int, dict[str, Any], l
     name = str(company.get("company_name") or company.get("name") or "")
     career_url = str(company.get("career_url") or "")
     official_site = str(company.get("official_website") or career_url)
+    seed_status = str(company.get("seed_status") or "")
     audit_key = company_audit_key(company)
     observed_at = utc_now()
 
@@ -99,12 +103,23 @@ def audit_one(entry: tuple[int, dict[str, Any]]) -> tuple[int, dict[str, Any], l
         "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.5",
     })
     result = fetch_page(session, career_url, official_site, career_url)
+
+    same_registered_family = (
+        registrable_hint(host(official_site)) == registrable_hint(host(career_url))
+    )
+    source_association_supported = same_registered_family or seed_status == "official_entry_verified"
+    recruitment_signal_present = bool(result.job_links) or bool(
+        JOB_WORDS.search(f"{result.title or ''} {career_url}")
+    )
     verified = bool(
         result.http_status
         and 200 <= result.http_status < 400
         and result.final_url
         and same_official_family(result.final_url, official_site, career_url)
+        and source_association_supported
+        and recruitment_signal_present
     )
+
     enumeration_status = "html_links_discovered" if result.job_links else "no_links_observed"
     if result.blocked:
         enumeration_status = "restricted"
@@ -112,6 +127,10 @@ def audit_one(entry: tuple[int, dict[str, Any]]) -> tuple[int, dict[str, Any], l
         enumeration_status = "pending_dynamic_js"
     elif result.error:
         enumeration_status = "fetch_failed"
+    elif not source_association_supported:
+        enumeration_status = "official_association_pending_verification"
+    elif not recruitment_signal_present:
+        enumeration_status = "official_site_reached_no_recruitment_signal"
 
     observed_at = utc_now()
     coverage = {
@@ -121,6 +140,8 @@ def audit_one(entry: tuple[int, dict[str, Any]]) -> tuple[int, dict[str, Any], l
         "official_entry_url": career_url,
         "final_url": result.final_url,
         "official_entry_verified": verified,
+        "source_association_supported": source_association_supported,
+        "recruitment_signal_present": recruitment_signal_present,
         "http_status": result.http_status,
         "page_title": result.title,
         "text_length": result.text_length,
@@ -131,7 +152,14 @@ def audit_one(entry: tuple[int, dict[str, Any]]) -> tuple[int, dict[str, Any], l
         "final_acceptance_met": False,
     }
     failures: list[dict[str, Any]] = []
-    if result.error or result.blocked or result.javascript_shell:
+    failure_statuses = {
+        "restricted",
+        "pending_dynamic_js",
+        "fetch_failed",
+        "official_association_pending_verification",
+        "official_site_reached_no_recruitment_signal",
+    }
+    if enumeration_status in failure_statuses:
         failures.append({
             "company_id": company_id,
             "company_name": name,
@@ -222,6 +250,8 @@ def main() -> int:
             "login_captcha_or_paywall_bypass_allowed": False,
             "new_job_link_default_status": "candidate_raw",
             "review_pending_requires_detail_validation": True,
+            "official_entry_verification_requires_recruitment_signal": True,
+            "cross_domain_candidate_requires_verified_seed_association": True,
         },
     })
     state_path.parent.mkdir(parents=True, exist_ok=True)
