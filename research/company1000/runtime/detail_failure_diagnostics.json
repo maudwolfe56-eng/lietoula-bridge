@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-13T23:39:40.576007+00:00",
-  "failure_rows": 2102,
+  "generated_at": "2026-07-13T23:51:58.805514+00:00",
+  "failure_rows": 2135,
   "unique_failed_urls": 1967,
   "reason_counts_all_attempts": {
-    "detail_unparseable_or_multi_position_announcement": 1762,
+    "detail_unparseable_or_multi_position_announcement": 1795,
     "detail_http_error": 234,
     "detail_access_restricted": 75,
     "detail_fetch_failed:ConnectionError": 23,
@@ -19,7 +19,7 @@
     "detail_fetch_failed:ConnectTimeout": 1
   },
   "http_status_counts": {
-    "200": 1762,
+    "200": 1795,
     "406": 221,
     "403": 75,
     "none": 31,
@@ -34,7 +34,7 @@
     },
     {
       "host": "jobs.lenovo.com",
-      "count": 644
+      "count": 677
     },
     {
       "host": "mokahr.com",
@@ -168,11 +168,11 @@
     },
     {
       "path_shape": "/de_de/careers/jobdetail/{id}",
-      "count": 33
+      "count": 40
     },
     {
       "path_shape": "/es_es/careers/jobdetail/{id}",
-      "count": 33
+      "count": 40
     },
     {
       "path_shape": "/es_es/careers/jobdetail/{id}/{id}",
@@ -212,7 +212,15 @@
     },
     {
       "path_shape": "/ja_jp/careers/jobdetail/{id}",
-      "count": 14
+      "count": 20
+    },
+    {
+      "path_shape": "/fr_fr/careers/jobdetail/{id}",
+      "count": 19
+    },
+    {
+      "path_shape": "/pt_br/careers/jobdetail/{id}",
+      "count": 19
     },
     {
       "path_shape": "/page/positions/{id}/{id}?quickpick",
@@ -225,14 +233,6 @@
     {
       "path_shape": "/go/all-jobs/{id}/{id}?sortcolumn&sortdirection",
       "count": 14
-    },
-    {
-      "path_shape": "/fr_fr/careers/jobdetail/{id}",
-      "count": 13
-    },
-    {
-      "path_shape": "/pt_br/careers/jobdetail/{id}",
-      "count": 13
     },
     {
       "path_shape": "/zh_cn/externaljobs/jobdetail/{id}",
@@ -279,64 +279,64 @@
       "count": 3
     },
     {
+      "path_shape": "/en_us/careers/jobdetail/nec/{id}",
+      "count": 3
+    },
+    {
       "path_shape": "/content/zte-job/cn/campus-recruitment/{id}/news/{id}",
       "count": 2
     },
     {
       "path_shape": "/campus-recruitment/{id}/{id}",
       "count": 2
-    },
-    {
-      "path_shape": "/social-recruitment/{id}/{id}",
-      "count": 2
     }
   ],
   "samples_by_reason": {
     "detail_unparseable_or_multi_position_announcement": [
       {
-        "company_id": "cn-wind-0974",
-        "company_name": "三一重能股份有限公司",
-        "source_url": "https://www.sanyre.com.cn/job/index2.html",
+        "company_id": "cn-tech-0063",
+        "company_name": "联想集团有限公司",
+        "source_url": "https://jobs.lenovo.com/pt_BR/careers/JobDetail/79531",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/job/{id}"
+        "path_shape": "/pt_br/careers/jobdetail/{id}"
       },
       {
         "company_id": "cn-tech-0063",
         "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Alternance-Sales-Operations-H-F/77442",
+        "source_url": "https://jobs.lenovo.com/pt_BR/careers/JobDetail/79504",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
+        "path_shape": "/pt_br/careers/jobdetail/{id}"
       },
       {
         "company_id": "cn-tech-0063",
         "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Alternance-Open-Channel-Sales/77638",
+        "source_url": "https://jobs.lenovo.com/pt_BR/careers/JobDetail/79267",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
+        "path_shape": "/pt_br/careers/jobdetail/{id}"
       },
       {
         "company_id": "cn-tech-0063",
         "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Alternance-Assistant-e-Commercial-Secteur-Public/77635",
+        "source_url": "https://jobs.lenovo.com/pt_BR/careers/JobDetail/79245",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
+        "path_shape": "/pt_br/careers/jobdetail/{id}"
       },
       {
         "company_id": "cn-tech-0063",
         "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Alternance-Assistant-e-Commercial-Secteur-Priv/77636",
+        "source_url": "https://jobs.lenovo.com/pt_BR/careers/JobDetail/79160",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
+        "path_shape": "/pt_br/careers/jobdetail/{id}"
       }
     ],
     "detail_access_restricted": [
@@ -573,29 +573,29 @@
       {
         "company_id": "cn-tech-0063",
         "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Alternance-Sales-Operations-H-F/77442",
+        "source_url": "https://jobs.lenovo.com/pt_BR/careers/JobDetail/79531",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
+        "path_shape": "/pt_br/careers/jobdetail/{id}"
       },
       {
         "company_id": "cn-tech-0063",
         "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Alternance-Open-Channel-Sales/77638",
+        "source_url": "https://jobs.lenovo.com/pt_BR/careers/JobDetail/79504",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
+        "path_shape": "/pt_br/careers/jobdetail/{id}"
       },
       {
         "company_id": "cn-tech-0063",
         "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Alternance-Assistant-e-Commercial-Secteur-Public/77635",
+        "source_url": "https://jobs.lenovo.com/pt_BR/careers/JobDetail/79267",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
+        "path_shape": "/pt_br/careers/jobdetail/{id}"
       }
     ],
     "mokahr.com": [

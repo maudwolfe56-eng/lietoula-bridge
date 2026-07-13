@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-13T23:40:17.964600+00:00",
+  "generated_at": "2026-07-13T23:52:25.427021+00:00",
   "target_companies": 1000,
   "seeded_companies": 1020,
   "coverage_records": 1061,
@@ -11,13 +11,13 @@
     "candidate_raw": 617,
     "review_pending": 61
   },
-  "failure_records": 5302,
+  "failure_records": 5611,
   "job_change_records": 726,
   "active_verified_records": 0,
   "final_acceptance_met": false,
   "checkpoint": {
     "schema_version": "1.0",
-    "updated_at": "2026-07-13T23:38:36.240166+00:00",
+    "updated_at": "2026-07-13T23:51:14.018011+00:00",
     "target_companies": 1000,
     "valid_seed_count": 1020,
     "official_entries_verified": 14,
@@ -28,7 +28,7 @@
     "job_records_review_pending": 64,
     "job_records_inactive_expired": 23,
     "companies_final_acceptance_met": 0,
-    "next_batch_start_index": 643,
+    "next_batch_start_index": 297,
     "batch_progress": {
       "batch_0001": {
         "companies_reviewed": 10,
@@ -165,8 +165,37 @@
       "cross_domain_candidate_requires_verified_seed_association": true
     },
     "last_auto_batch": {
-      "requested_start_index": 135,
+      "requested_start_index": 643,
       "selected_indices": [
+        644,
+        646,
+        649,
+        651,
+        687,
+        692,
+        706,
+        709,
+        718,
+        773,
+        799,
+        806,
+        829,
+        856,
+        863,
+        867,
+        886,
+        902,
+        903,
+        906,
+        969,
+        986,
+        987,
+        118,
+        121,
+        123,
+        125,
+        132,
+        134,
         136,
         137,
         152,
@@ -187,41 +216,12 @@
         243,
         252,
         283,
-        296,
-        305,
-        327,
-        329,
-        369,
-        388,
-        393,
-        395,
-        400,
-        403,
-        416,
-        417,
-        420,
-        439,
-        468,
-        483,
-        485,
-        487,
-        500,
-        525,
-        537,
-        542,
-        558,
-        565,
-        574,
-        584,
-        588,
-        602,
-        639,
-        642
+        296
       ],
       "selected_count": 50,
       "processed_count": 50,
       "job_detail_candidates": 0,
-      "recruitment_navigation_links": 9,
+      "recruitment_navigation_links": 12,
       "max_workers": 8
     },
     "pending_seed_audits": 29,
@@ -258,28 +258,28 @@
     "company_id_collisions_resolved": 7,
     "seed_shortfall": 0,
     "companies_without_audit": 0,
-    "pending_job_link_candidates": 20393,
+    "pending_job_link_candidates": 139,
     "invalid_job_records": 0,
     "final_acceptance_met": false,
     "notification_eligible": false,
-    "pending_recruitment_navigation": 18886,
+    "pending_recruitment_navigation": 18895,
     "duplicate_job_source_urls": 0,
     "navigation_expansion_last_batch": {
       "enumerator_version": "3.0-bounded-retry-aware",
-      "candidate_count": 26821,
-      "legacy_candidates_reclassified": 15827,
+      "candidate_count": 27515,
+      "legacy_candidates_reclassified": 31357,
       "selected_count": 800,
       "processed_count": 800,
-      "detail_candidates_discovered": 15532,
-      "child_navigation_discovered": 17599,
-      "filtered_non_recruitment_links": 31014,
+      "detail_candidates_discovered": 7952,
+      "child_navigation_discovered": 12170,
+      "filtered_non_recruitment_links": 21957,
       "resolution_status_counts": {
-        "enumerated": 461,
+        "enumerated": 319,
         "requires_site_specific_dynamic_enumerator": 1,
-        "requires_manual_review_no_links": 28,
-        "restricted_with_explicit_reason": 310
+        "requires_manual_review_no_links": 94,
+        "restricted_with_explicit_reason": 386
       },
-      "terminal_latest_resolution_count": 27907,
+      "terminal_latest_resolution_count": 28666,
       "max_workers": 12,
       "max_children_per_page": 60,
       "max_attempts": 4
@@ -297,7 +297,7 @@
   "notification_eligible": false,
   "final_acceptance_report": {
     "schema_version": "1.2",
-    "assessed_at": "2026-07-13T23:40:22.656948+00:00",
+    "assessed_at": "2026-07-13T23:52:29.786099+00:00",
     "target_companies": 1000,
     "seeded_unique_companies": 1020,
     "seed_shortfall": 0,
@@ -306,9 +306,9 @@
     "companies_without_audit_count": 0,
     "companies_without_audit_sample": [],
     "job_records": 726,
-    "all_recruitment_candidates": 48349,
+    "all_recruitment_candidates": 48904,
     "probable_job_detail_candidates": 20854,
-    "terminal_detail_failures": 501,
+    "terminal_detail_failures": 512,
     "resolved_job_detail_candidates": 634,
     "pending_job_detail_candidates": 20220,
     "pending_job_detail_sample": [
@@ -613,9 +613,9 @@
         "reason": "official_multi_position_announcement"
       }
     ],
-    "recruitment_navigation_candidates": 27495,
-    "resolved_recruitment_navigation": 8674,
-    "pending_recruitment_navigation": 18821,
+    "recruitment_navigation_candidates": 28050,
+    "resolved_recruitment_navigation": 9367,
+    "pending_recruitment_navigation": 18683,
     "pending_recruitment_navigation_sample": [
       {
         "company_id": "cn-soe-0020",
@@ -897,25 +897,25 @@
         "company_id": "cn-tech-0063",
         "company_name": "联想集团有限公司",
         "source_url": "https://jobs.lenovo.com/_linkedinApiv2?portalUrl=https%3A%2F%2Fjobs.lenovo.com%2F&action=INIT_SHARE&shareUrl=https%3A%2F%2Fjobs.lenovo.com%2Fde_DE%2Fcareers%2FJobDetail%2FParent-Evergreen-Technical-Project-Manager%2F79247",
-        "reason": null
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-tech-0063",
         "company_name": "联想集团有限公司",
         "source_url": "https://jobs.lenovo.com/_linkedinApiv2?portalUrl=https%3A%2F%2Fjobs.lenovo.com%2F&action=INIT_SHARE&shareUrl=https%3A%2F%2Fjobs.lenovo.com%2Fde_DE%2Fcareers%2FJobDetail%2FServer-FW-Test-Engineer%2F78320",
-        "reason": null
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-tech-0063",
         "company_name": "联想集团有限公司",
         "source_url": "https://jobs.lenovo.com/_linkedinApiv2?portalUrl=https%3A%2F%2Fjobs.lenovo.com%2F&action=INIT_SHARE&shareUrl=https%3A%2F%2Fjobs.lenovo.com%2Fde_DE%2Fcareers%2FJobDetail%2FServer-FW-Test-Engineer%2F78321",
-        "reason": null
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-tech-0063",
         "company_name": "联想集团有限公司",
         "source_url": "https://jobs.lenovo.com/_linkedinApiv2?portalUrl=https%3A%2F%2Fjobs.lenovo.com%2F&action=INIT_SHARE&shareUrl=https%3A%2F%2Fjobs.lenovo.com%2Fde_DE%2Fcareers%2FJobDetail%2FServer-FW-Test-Engineer%2F78314",
-        "reason": null
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       }
     ],
     "invalid_job_records": 0,
@@ -945,9 +945,9 @@
       "resolved_routed_announcements": 0,
       "pending_routed_announcements": 85,
       "pending_job_detail_candidates": 139,
-      "recruitment_navigation_candidates": 27493,
-      "terminal_latest_navigation_resolutions": 28665,
-      "pending_recruitment_navigation": 18895
+      "recruitment_navigation_candidates": 28048,
+      "terminal_latest_navigation_resolutions": 29358,
+      "pending_recruitment_navigation": 18757
     },
     "pending_samples": {
       "job_details": [

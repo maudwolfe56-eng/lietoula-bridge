@@ -1,6 +1,6 @@
 {
   "schema_version": "1.2",
-  "assessed_at": "2026-07-13T23:40:22.656948+00:00",
+  "assessed_at": "2026-07-13T23:52:29.786099+00:00",
   "target_companies": 1000,
   "seeded_unique_companies": 1020,
   "seed_shortfall": 0,
@@ -9,9 +9,9 @@
   "companies_without_audit_count": 0,
   "companies_without_audit_sample": [],
   "job_records": 726,
-  "all_recruitment_candidates": 48349,
+  "all_recruitment_candidates": 48904,
   "probable_job_detail_candidates": 20854,
-  "terminal_detail_failures": 501,
+  "terminal_detail_failures": 512,
   "resolved_job_detail_candidates": 634,
   "pending_job_detail_candidates": 20220,
   "pending_job_detail_sample": [
@@ -316,9 +316,9 @@
       "reason": "official_multi_position_announcement"
     }
   ],
-  "recruitment_navigation_candidates": 27495,
-  "resolved_recruitment_navigation": 8674,
-  "pending_recruitment_navigation": 18821,
+  "recruitment_navigation_candidates": 28050,
+  "resolved_recruitment_navigation": 9367,
+  "pending_recruitment_navigation": 18683,
   "pending_recruitment_navigation_sample": [
     {
       "company_id": "cn-soe-0020",
@@ -600,25 +600,25 @@
       "company_id": "cn-tech-0063",
       "company_name": "联想集团有限公司",
       "source_url": "https://jobs.lenovo.com/_linkedinApiv2?portalUrl=https%3A%2F%2Fjobs.lenovo.com%2F&action=INIT_SHARE&shareUrl=https%3A%2F%2Fjobs.lenovo.com%2Fde_DE%2Fcareers%2FJobDetail%2FParent-Evergreen-Technical-Project-Manager%2F79247",
-      "reason": null
+      "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
     },
     {
       "company_id": "cn-tech-0063",
       "company_name": "联想集团有限公司",
       "source_url": "https://jobs.lenovo.com/_linkedinApiv2?portalUrl=https%3A%2F%2Fjobs.lenovo.com%2F&action=INIT_SHARE&shareUrl=https%3A%2F%2Fjobs.lenovo.com%2Fde_DE%2Fcareers%2FJobDetail%2FServer-FW-Test-Engineer%2F78320",
-      "reason": null
+      "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
     },
     {
       "company_id": "cn-tech-0063",
       "company_name": "联想集团有限公司",
       "source_url": "https://jobs.lenovo.com/_linkedinApiv2?portalUrl=https%3A%2F%2Fjobs.lenovo.com%2F&action=INIT_SHARE&shareUrl=https%3A%2F%2Fjobs.lenovo.com%2Fde_DE%2Fcareers%2FJobDetail%2FServer-FW-Test-Engineer%2F78321",
-      "reason": null
+      "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
     },
     {
       "company_id": "cn-tech-0063",
       "company_name": "联想集团有限公司",
       "source_url": "https://jobs.lenovo.com/_linkedinApiv2?portalUrl=https%3A%2F%2Fjobs.lenovo.com%2F&action=INIT_SHARE&shareUrl=https%3A%2F%2Fjobs.lenovo.com%2Fde_DE%2Fcareers%2FJobDetail%2FServer-FW-Test-Engineer%2F78314",
-      "reason": null
+      "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
     }
   ],
   "invalid_job_records": 0,
@@ -648,9 +648,9 @@
     "resolved_routed_announcements": 0,
     "pending_routed_announcements": 85,
     "pending_job_detail_candidates": 139,
-    "recruitment_navigation_candidates": 27493,
-    "terminal_latest_navigation_resolutions": 28665,
-    "pending_recruitment_navigation": 18895
+    "recruitment_navigation_candidates": 28048,
+    "terminal_latest_navigation_resolutions": 29358,
+    "pending_recruitment_navigation": 18757
   },
   "pending_samples": {
     "job_details": [
