@@ -108,3 +108,4 @@
 {"company_id": "cn-air-0272", "company_name": "春秋航空股份有限公司", "discovered_at": "2026-07-13T17:56:33.477155+00:00", "review_status": "review_pending", "source_url": "https://job.ch.com"}
 {"company_id": "cn-hotel-0285", "company_name": "北京首旅酒店（集团）股份有限公司", "discovered_at": "2026-07-13T17:56:35.019418+00:00", "review_status": "review_pending", "source_url": "https://www.bthhotels.com/culture/TalentDevelopment"}
 {"company_id": "cn-software-0300", "company_name": "用友网络科技股份有限公司", "discovered_at": "2026-07-13T17:56:36.435028+00:00", "review_status": "review_pending", "source_url": "http://career.yonyou.com/"}
+{"company_id": "cn-energy-0244", "company_name": "隆基绿能科技股份有限公司", "discovered_at": "2026-07-13T18:00:34.219399+00:00", "promotion_eligible": false, "review_recommendation": "fetch_detail_and_validate_required_fields", "review_status": "candidate_raw", "source_type": "official_job_link_candidate", "source_url": "https://www.longi.com/cn/career/"}
