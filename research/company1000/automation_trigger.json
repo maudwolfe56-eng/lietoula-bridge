@@ -1,7 +1,7 @@
 {
-  "requested_at": "2026-07-13T18:25:00Z",
-  "sequence": 10,
-  "purpose": "Run official-entry audit plus conservative job-detail resolution, rebuild all import deliverables, and reassess final acceptance",
+  "requested_at": "2026-07-13T18:28:00Z",
+  "sequence": 11,
+  "purpose": "Run corrected 350-company seed audit, expand unresolved public recruitment navigation, resolve probable job details, rebuild deliverables, and reassess final acceptance",
   "target_companies": 1000,
   "policy": {
     "official_sources_only": true,
