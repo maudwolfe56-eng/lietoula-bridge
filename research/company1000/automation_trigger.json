@@ -1,7 +1,7 @@
 {
-  "requested_at": "2026-07-13T18:57:15Z",
-  "sequence": 18,
-  "purpose": "Continue from the current checkpoint: prioritize unresolved official recruitment navigation candidates and probable job-detail candidates, audit the next untouched official company sources, preserve explicit restricted/fetch-failure reasons, rebuild deduplicated CompanySource/JobImport/Coverage/Failures/JobChanges deliverables, and reassess final acceptance.",
+  "requested_at": "2026-07-13T19:02:00Z",
+  "sequence": 19,
+  "purpose": "Use the increased-throughput runner to clear remaining seed audits, enumerate unresolved official recruitment navigation, resolve probable job details and multi-position announcements, rebuild deduplicated deliverables, and reassess final acceptance",
   "target_companies": 1000,
   "priority": {
     "unresolved_recruitment_navigation": true,
