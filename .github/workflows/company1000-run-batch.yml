@@ -32,15 +32,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4 lxml python-dateutil
 
-      - name: Run deterministic batch 0006
+      - name: Run deterministic batch 0007
         id: batch
         continue-on-error: true
         shell: bash
         run: |
           set -o pipefail
-          mkdir -p research/company1000/logs research/company1000/runs/batch_0006
-          python research/company1000/run_batch_0006.py 2>&1 \
-            | tee research/company1000/logs/batch_0006_workflow.log
+          mkdir -p research/company1000/logs research/company1000/runs/batch_0007
+          python research/company1000/run_batch_0007.py 2>&1 \
+            | tee research/company1000/logs/batch_0007_workflow.log
 
       - name: Record workflow outcome
         if: always()
@@ -50,7 +50,7 @@ jobs:
           import json
           from datetime import datetime, timezone
           from pathlib import Path
-          path = Path('research/company1000/runs/batch_0006/workflow_outcome.json')
+          path = Path('research/company1000/runs/batch_0007/workflow_outcome.json')
           path.parent.mkdir(parents=True, exist_ok=True)
           path.write_text(json.dumps({
               'generated_at_utc': datetime.now(timezone.utc).isoformat(),
@@ -69,11 +69,11 @@ jobs:
                      research/company1000/output \
                      research/company1000/runtime \
                      research/company1000/logs \
-                     research/company1000/runs/batch_0006
+                     research/company1000/runs/batch_0007
           if git diff --cached --quiet; then
             echo "No generated changes to commit"
           else
-            git commit -m "research: persist company1000 batch 0006 outputs and diagnostics"
+            git commit -m "research: persist company1000 batch 0007 outputs and diagnostics"
             git push origin HEAD:research/company1000-crawler-20260713
           fi
 
