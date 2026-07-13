@@ -45,7 +45,7 @@ jobs:
           PYTHONUNBUFFERED: '1'
         run: |
           mkdir -p output runtime logs
-          python crawl_company_jobs.py \
+          python crawl_company_jobs_merged.py \
             --seed-file company_seed_1000.json \
             --output-dir output \
             --state-file runtime/checkpoint.json \
