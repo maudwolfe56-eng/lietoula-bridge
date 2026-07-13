@@ -1,8 +1,14 @@
 {
-  "requested_at": "2026-07-13T18:56:00Z",
-  "sequence": 17,
-  "purpose": "After the latest seed audits, continue official recruitment navigation enumeration, resolve probable job details and multi-position announcements, rebuild unique import deliverables, and reassess final acceptance",
+  "requested_at": "2026-07-13T18:57:15Z",
+  "sequence": 18,
+  "purpose": "Continue from the current checkpoint: prioritize unresolved official recruitment navigation candidates and probable job-detail candidates, audit the next untouched official company sources, preserve explicit restricted/fetch-failure reasons, rebuild deduplicated CompanySource/JobImport/Coverage/Failures/JobChanges deliverables, and reassess final acceptance.",
   "target_companies": 1000,
+  "priority": {
+    "unresolved_recruitment_navigation": true,
+    "probable_job_detail_candidates": true,
+    "untouched_official_company_sources": true,
+    "seed_shortfall_tracking": true
+  },
   "policy": {
     "official_sources_only": true,
     "auto_active_verified": false,
