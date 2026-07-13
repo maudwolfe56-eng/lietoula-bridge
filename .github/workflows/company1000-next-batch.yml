@@ -7,19 +7,20 @@ on:
     paths:
       - .github/workflows/company1000-next-batch.yml
       - research/company1000/next_batch.trigger
+      - research/company1000/company_seed_expansion_*.json
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: company1000-next-entry-audit
+  group: company1000-research-writes
   cancel-in-progress: false
 
 jobs:
   audit:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
       - name: Checkout research branch
         uses: actions/checkout@v4
@@ -42,7 +43,7 @@ jobs:
       - name: Validate crawler scripts
         working-directory: research/company1000
         run: |
-          python -m py_compile crawl_company_jobs.py crawl_company_jobs_pending.py crawl_company_jobs_merged.py
+          python -m py_compile crawl_company_jobs.py crawl_company_jobs_pending.py crawl_company_jobs_merged.py build_import_package.py
 
       - name: Audit next truly unprocessed seed entries
         working-directory: research/company1000
@@ -57,6 +58,30 @@ jobs:
             --batch-size 20 \
             | tee logs/next_batch_auto.log
 
+      - name: Reconcile checkpoint with merged seed
+        working-directory: research/company1000
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          merged_path = Path('runtime/company_seed_merged.json')
+          state_path = Path('runtime/checkpoint.json')
+          merged = json.loads(merged_path.read_text(encoding='utf-8'))
+          state = json.loads(state_path.read_text(encoding='utf-8')) if state_path.exists() else {}
+          companies = merged.get('companies', [])
+          state['target_companies'] = 1000
+          state['valid_seed_count'] = len(companies)
+          state['merged_seed_sources'] = merged.get('source_files', [])
+          state['updated_at'] = datetime.now(timezone.utc).isoformat()
+          state.setdefault('policy', {})['auto_active_verified'] = False
+          state['policy']['salary_inference_allowed'] = False
+          state['policy']['login_captcha_or_paywall_bypass_allowed'] = False
+          state_path.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding='utf-8')
+          print(json.dumps({'valid_seed_count': len(companies), 'next_batch_start_index': state.get('next_batch_start_index')}, ensure_ascii=False))
+          PY
+
       - name: Build import and audit package
         working-directory: research/company1000
         env:
@@ -68,10 +93,22 @@ jobs:
         run: |
           git config user.name 'company1000-automation'
           git config user.email 'company1000-automation@users.noreply.github.com'
-          git add research/company1000/output research/company1000/runtime research/company1000/logs research/company1000/deliverables
+          git add research/company1000/output \
+                  research/company1000/runtime \
+                  research/company1000/logs \
+                  research/company1000/deliverables
           if git diff --cached --quiet; then
             echo 'No generated changes to commit'
           else
             git commit -m 'research: audit next unprocessed official career entries and rebuild import package'
-            git push origin HEAD:research/company1000-crawler-20260713
+            for attempt in 1 2 3; do
+              if git pull --rebase origin research/company1000-crawler-20260713 && \
+                 git push origin HEAD:research/company1000-crawler-20260713; then
+                exit 0
+              fi
+              echo "Push attempt ${attempt} failed; retrying"
+              sleep 5
+            done
+            echo 'Unable to push generated outputs after retries'
+            exit 1
           fi
