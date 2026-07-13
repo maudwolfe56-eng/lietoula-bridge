@@ -45,6 +45,7 @@ jobs:
             crawl_company_jobs.py \
             crawl_company_jobs_pending.py \
             crawl_company_jobs_merged.py \
+            enumerate_recruitment_navigation.py \
             resolve_job_detail_candidates.py \
             build_import_package.py \
             assess_final_acceptance.py
@@ -64,6 +65,23 @@ jobs:
             --state-file runtime/checkpoint.json \
             --batch-size 20 \
             | tee logs/next_batch_auto.log
+
+      - name: Expand public recruitment navigation
+        id: navigation
+        continue-on-error: true
+        working-directory: research/company1000
+        env:
+          PYTHONUNBUFFERED: '1'
+        run: |
+          set -o pipefail
+          python enumerate_recruitment_navigation.py \
+            --seed-file runtime/company_seed_merged.json \
+            --output-dir output \
+            --state-file runtime/checkpoint.json \
+            --batch-size 100 \
+            --max-workers 10 \
+            --max-attempts 2 \
+            | tee logs/navigation_expansion.log
 
       - name: Resolve probable job detail candidates
         id: detail
@@ -125,9 +143,11 @@ jobs:
               'generated_at_utc': datetime.now(timezone.utc).isoformat(),
               'runner_step_outcome': '${{ steps.batch.outcome }}',
               'runner_step_conclusion': '${{ steps.batch.conclusion }}',
+              'navigation_step_outcome': '${{ steps.navigation.outcome }}',
+              'navigation_step_conclusion': '${{ steps.navigation.conclusion }}',
               'detail_step_outcome': '${{ steps.detail.outcome }}',
               'detail_step_conclusion': '${{ steps.detail.conclusion }}',
-              'mode': 'next_unprocessed_incremental_with_detail_resolution'
+              'mode': 'next_unprocessed_incremental_with_navigation_and_detail_resolution'
           }, ensure_ascii=False, indent=2), encoding='utf-8')
           PY
 
@@ -143,7 +163,7 @@ jobs:
           if git diff --cached --quiet; then
             echo 'No generated changes to commit'
           else
-            git commit -m 'research: persist next company1000 audit and detail outputs'
+            git commit -m 'research: persist company1000 navigation and detail outputs'
             for attempt in 1 2 3; do
               if git pull --rebase origin research/company1000-crawler-20260713 && \
                  git push origin HEAD:research/company1000-crawler-20260713; then
@@ -157,5 +177,5 @@ jobs:
           fi
 
       - name: Fail workflow if an audit stage failed
-        if: steps.batch.outcome == 'failure' || steps.detail.outcome == 'failure'
+        if: steps.batch.outcome == 'failure' || steps.navigation.outcome == 'failure' || steps.detail.outcome == 'failure'
         run: exit 1
