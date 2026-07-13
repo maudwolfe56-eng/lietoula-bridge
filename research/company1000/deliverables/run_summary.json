@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-13T13:41:26.372207+00:00",
+  "generated_at": "2026-07-13T13:41:45.966176+00:00",
   "target_companies": 1000,
   "seeded_companies": 50,
   "coverage_records": 37,
@@ -17,7 +17,7 @@
   "final_acceptance_met": false,
   "checkpoint": {
     "schema_version": "1.0",
-    "updated_at": "2026-07-13T13:41:26.259196+00:00",
+    "updated_at": "2026-07-13T13:41:45.885280+00:00",
     "target_companies": 1000,
     "valid_seed_count": 50,
     "official_entries_verified": 14,
@@ -131,8 +131,8 @@
       "login_captcha_or_paywall_bypass_allowed": false
     },
     "last_auto_batch": {
-      "start_index": 46,
-      "count": 4
+      "start_index": 50,
+      "count": 0
     }
   },
   "policy": {
