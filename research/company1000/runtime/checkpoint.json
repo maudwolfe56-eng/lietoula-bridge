@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-13T17:05:40.250789+00:00",
+  "updated_at": "2026-07-13T17:06:04.614987+00:00",
   "target_companies": 1000,
   "valid_seed_count": 170,
   "official_entries_verified": 14,
@@ -144,9 +144,26 @@
     "login_captcha_or_paywall_bypass_allowed": false
   },
   "last_auto_batch": {
-    "requested_start_index": 121,
+    "requested_start_index": 152,
     "selected_indices": [
-      121,
+      152,
+      153,
+      155,
+      156,
+      159,
+      160,
+      37,
+      41,
+      43,
+      45,
+      109,
+      110,
+      111,
+      112,
+      115,
+      117,
+      118,
+      120,
       122,
       124,
       126,
@@ -167,11 +184,11 @@
       149,
       151
     ],
-    "selected_count": 20,
-    "processed_count": 20,
-    "max_workers": 8
+    "selected_count": 37,
+    "processed_count": 37,
+    "max_workers": 10
   },
-  "pending_seed_audits": 18,
+  "pending_seed_audits": 0,
   "merged_seed_sources": [
     "company_seed_1000.json",
     "company_seed_expansion_0001.json",
