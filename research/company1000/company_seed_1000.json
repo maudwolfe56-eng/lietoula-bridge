@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "target_count": 1000,
   "seed_status": "partial_valid_seed_replacing_placeholder",
-  "generated_at": "2026-07-13T12:00:00Z",
+  "generated_at": "2026-07-13T12:30:00Z",
   "companies": [
     {
       "company_id": "cn-fin-0001",
@@ -103,6 +103,27 @@
       "career_url": "https://www.chinalife.com.cn/chinalife/zhaopin/",
       "career_entry_evidence": "官方招聘路径候选，2026-07-13抓取超时，待下一批复核",
       "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-soe-0011",
+      "company_name": "中国核工业集团有限公司",
+      "short_name": "中核集团",
+      "industry": "核工业与能源",
+      "official_website": "https://www.cnnc.com.cn/",
+      "career_url": "https://cnnc.zhiye.com/",
+      "career_entry_evidence": "2026-07-13官方人才招聘站可访问；社会招聘页展示40页公开岗位及“立即投递”入口。",
+      "seed_status": "official_entry_verified"
+    },
+    {
+      "company_id": "cn-soe-0012",
+      "company_name": "中国航天科工集团有限公司",
+      "short_name": "航天科工",
+      "industry": "航空航天与国防科技",
+      "official_website": "http://www.casic.com.cn/",
+      "career_url": "https://casic.zhiye.com/",
+      "career_entry_evidence": "2026-07-13集团网申系统可访问；社会招聘页展示4页公开岗位，总部招聘页明确无在招职位，海外专项页展示1个岗位。",
+      "seed_status": "official_entry_verified"
     }
-  ]
+  ],
+  "valid_seed_count": 12
 }
