@@ -1,4 +1,4 @@
-name: Company1000 next entry audit
+name: Company1000 next unprocessed entry audit
 
 on:
   push:
@@ -39,7 +39,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4 lxml python-dateutil
 
-      - name: Audit next unprocessed seed entries
+      - name: Validate crawler scripts
+        working-directory: research/company1000
+        run: |
+          python -m py_compile crawl_company_jobs.py crawl_company_jobs_pending.py crawl_company_jobs_merged.py
+
+      - name: Audit next truly unprocessed seed entries
         working-directory: research/company1000
         env:
           PYTHONUNBUFFERED: '1'
@@ -67,6 +72,6 @@ jobs:
           if git diff --cached --quiet; then
             echo 'No generated changes to commit'
           else
-            git commit -m 'research: audit next official career entries and rebuild import package'
+            git commit -m 'research: audit next unprocessed official career entries and rebuild import package'
             git push origin HEAD:research/company1000-crawler-20260713
           fi
