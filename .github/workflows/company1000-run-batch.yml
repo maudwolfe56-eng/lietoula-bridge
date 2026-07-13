@@ -53,6 +53,7 @@ jobs:
             resolve_job_detail_candidates.py \
             resolve_job_detail_candidates_safe.py \
             resolve_job_detail_candidates_v2.py \
+            summarize_detail_failures.py \
             resolve_multi_position_announcements.py \
             build_import_package.py \
             ensure_unique_job_source_urls.py \
@@ -119,6 +120,13 @@ jobs:
             --max-workers 12 \
             --max-attempts 3 \
             | tee logs/resolve_job_details.log
+
+      - name: Summarize detail resolution failures
+        if: always()
+        working-directory: research/company1000
+        run: |
+          python summarize_detail_failures.py \
+            | tee logs/summarize_detail_failures.log
 
       - name: Extract roles from multi-position announcements
         id: announcement
@@ -190,7 +198,7 @@ jobs:
               'detail_step_conclusion': '${{ steps.detail.conclusion }}',
               'announcement_step_outcome': '${{ steps.announcement.outcome }}',
               'announcement_step_conclusion': '${{ steps.announcement.conclusion }}',
-              'mode': 'entry_audit_ats_reclassification_bounded_navigation_retry_detail_and_announcement_resolution'
+              'mode': 'entry_audit_ats_reclassification_bounded_navigation_retry_detail_diagnostics_and_announcement_resolution'
           }, ensure_ascii=False, indent=2), encoding='utf-8')
           PY
 
