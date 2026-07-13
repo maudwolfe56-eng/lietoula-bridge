@@ -1,19 +1,19 @@
 {
   "schema_version": "1.2",
-  "assessed_at": "2026-07-13T19:52:14.206827+00:00",
+  "assessed_at": "2026-07-13T19:56:12.591130+00:00",
   "target_companies": 1000,
   "seeded_unique_companies": 1020,
   "seed_shortfall": 0,
   "companies_with_coverage": 993,
-  "companies_with_explicit_failure_reason": 855,
+  "companies_with_explicit_failure_reason": 858,
   "companies_without_audit_count": 0,
   "companies_without_audit_sample": [],
-  "job_records": 211,
-  "all_recruitment_candidates": 7882,
-  "probable_job_detail_candidates": 1381,
+  "job_records": 217,
+  "all_recruitment_candidates": 8502,
+  "probable_job_detail_candidates": 1410,
   "terminal_detail_failures": 6,
-  "resolved_job_detail_candidates": 86,
-  "pending_job_detail_candidates": 1295,
+  "resolved_job_detail_candidates": 91,
+  "pending_job_detail_candidates": 1319,
   "pending_job_detail_sample": [
     {
       "company_id": "cn-soe-0050",
@@ -316,9 +316,9 @@
       "reason": null
     }
   ],
-  "recruitment_navigation_candidates": 6501,
-  "resolved_recruitment_navigation": 1156,
-  "pending_recruitment_navigation": 5345,
+  "recruitment_navigation_candidates": 7092,
+  "resolved_recruitment_navigation": 1385,
+  "pending_recruitment_navigation": 5707,
   "pending_recruitment_navigation_sample": [
     {
       "company_id": "cn-soe-0020",
@@ -373,18 +373,6 @@
       "company_name": "上海浦东发展银行股份有限公司",
       "source_url": "https://job.spdb.com.cn/loginOut",
       "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
-    },
-    {
-      "company_id": "cn-soe-0011",
-      "company_name": "中国核工业集团有限公司",
-      "source_url": "https://cnnc.zhiye.com/xiaoyuan",
-      "reason": null
-    },
-    {
-      "company_id": "cn-soe-0011",
-      "company_name": "中国核工业集团有限公司",
-      "source_url": "https://cnnc.zhiye.com/shehui2025",
-      "reason": null
     },
     {
       "company_id": "cn-soe-0011",
@@ -531,93 +519,105 @@
       "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
     },
     {
-      "company_id": "cn-profservice-1098",
-      "company_name": "任仕达企业管理（上海）有限公司",
-      "source_url": "https://www.randstad.cn/jobs/s-xiao-shou/",
-      "reason": null
-    },
-    {
-      "company_id": "cn-soe-0143",
-      "company_name": "中国物流集团有限公司",
-      "source_url": "https://www.chinalogisticsgroup.com.cn/zh-cn/articles/2025/06/56528.shtml",
-      "reason": null
-    },
-    {
       "company_id": "cn-env-0599",
       "company_name": "瀚蓝环境股份有限公司",
       "source_url": "https://www.grandblue.cn/hanbluedynamic/info.aspx?itemid=9906",
-      "reason": null
+      "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
     },
     {
-      "company_id": "cn-health-0359",
-      "company_name": "四川科伦药业股份有限公司",
-      "source_url": "https://www.kelun.com/news/3050.html",
-      "reason": null
-    },
-    {
-      "company_id": "cn-health-0359",
-      "company_name": "四川科伦药业股份有限公司",
-      "source_url": "https://www.kelun.com/news/3021.html",
+      "company_id": "cn-ins-0350",
+      "company_name": "众安在线财产保险股份有限公司",
+      "source_url": "https://mokahr.com/blog/9027.html",
       "reason": null
     },
     {
       "company_id": "cn-ins-0350",
       "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/10730.html",
+      "source_url": "https://mokahr.com/blog/8999.html",
       "reason": null
     },
     {
       "company_id": "cn-ins-0350",
       "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/10891.html",
+      "source_url": "https://mokahr.com/blog/15510.html",
       "reason": null
     },
     {
       "company_id": "cn-ins-0350",
       "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/16100.html",
+      "source_url": "https://mokahr.com/blog/27116.html",
       "reason": null
     },
     {
       "company_id": "cn-ins-0350",
       "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/6866.html",
+      "source_url": "https://mokahr.com/blog/14888.html",
       "reason": null
     },
     {
       "company_id": "cn-ins-0350",
       "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/14909.html",
+      "source_url": "https://mokahr.com/blog/14732.html",
       "reason": null
     },
     {
       "company_id": "cn-ins-0350",
       "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/14936.html",
+      "source_url": "https://mokahr.com/blog/14810.html",
       "reason": null
     },
     {
       "company_id": "cn-ins-0350",
       "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/6623.html",
+      "source_url": "https://mokahr.com/blog/14904.html",
       "reason": null
     },
     {
       "company_id": "cn-ins-0350",
       "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/11197.html",
+      "source_url": "https://mokahr.com/blog/13257.html",
       "reason": null
     },
     {
       "company_id": "cn-ins-0350",
       "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/17410.html",
+      "source_url": "https://mokahr.com/blog/14779.html",
       "reason": null
     },
     {
       "company_id": "cn-ins-0350",
       "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/15205.html",
+      "source_url": "https://mokahr.com/blog/14994.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-ins-0350",
+      "company_name": "众安在线财产保险股份有限公司",
+      "source_url": "https://mokahr.com/blog/14723.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-ins-0350",
+      "company_name": "众安在线财产保险股份有限公司",
+      "source_url": "https://mokahr.com/blog/11694.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-ins-0350",
+      "company_name": "众安在线财产保险股份有限公司",
+      "source_url": "https://mokahr.com/blog/15051.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-ins-0350",
+      "company_name": "众安在线财产保险股份有限公司",
+      "source_url": "https://mokahr.com/blog/9187.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-ins-0350",
+      "company_name": "众安在线财产保险股份有限公司",
+      "source_url": "https://mokahr.com/blog/16133.html",
       "reason": null
     }
   ],
