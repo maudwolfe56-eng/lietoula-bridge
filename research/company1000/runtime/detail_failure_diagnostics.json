@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-07-13T20:27:01.049852+00:00",
-  "failure_rows": 1040,
-  "unique_failed_urls": 1040,
+  "generated_at": "2026-07-13T20:29:13.560932+00:00",
+  "failure_rows": 1160,
+  "unique_failed_urls": 1160,
   "reason_counts_all_attempts": {
-    "detail_unparseable_or_multi_position_announcement": 999,
-    "detail_access_restricted": 17,
+    "detail_unparseable_or_multi_position_announcement": 1109,
+    "detail_access_restricted": 25,
     "detail_http_error": 9,
+    "detail_fetch_failed:ConnectionError": 9,
     "detail_fetch_failed:ReadTimeout": 7,
-    "detail_fetch_failed:ConnectionError": 7,
     "detail_fetch_failed:ConnectTimeout": 1
   },
   "reason_counts_latest_by_url": {
-    "detail_unparseable_or_multi_position_announcement": 999,
-    "detail_access_restricted": 17,
+    "detail_unparseable_or_multi_position_announcement": 1109,
+    "detail_access_restricted": 25,
     "detail_http_error": 9,
+    "detail_fetch_failed:ConnectionError": 9,
     "detail_fetch_failed:ReadTimeout": 7,
-    "detail_fetch_failed:ConnectionError": 7,
     "detail_fetch_failed:ConnectTimeout": 1
   },
   "http_status_counts": {
-    "200": 999,
-    "403": 17,
-    "none": 15,
+    "200": 1109,
+    "403": 25,
+    "none": 17,
     "404": 5,
     "502": 2,
     "504": 2
@@ -37,7 +37,7 @@
     },
     {
       "host": "www.fenbi.com",
-      "count": 164
+      "count": 274
     },
     {
       "host": "www.gdnybank.com",
@@ -49,7 +49,7 @@
     },
     {
       "host": "smics.zhiye.com",
-      "count": 20
+      "count": 30
     },
     {
       "host": "www.airchina.com.cn",
@@ -99,7 +99,7 @@
     },
     {
       "path_shape": "/page/positions/{id}/{id}?department",
-      "count": 106
+      "count": 150
     },
     {
       "path_shape": "/site/productcompositiondetail/{id}",
@@ -108,6 +108,14 @@
     {
       "path_shape": "/jobnews/{id}/{id}",
       "count": 85
+    },
+    {
+      "path_shape": "/page/positions/{id}/{id}?region",
+      "count": 62
+    },
+    {
+      "path_shape": "/page/positions/{id}/{id}?department&institution",
+      "count": 48
     },
     {
       "path_shape": "/es_es/careers/jobdetail/{id}/{id}",
@@ -134,27 +142,19 @@
       "count": 31
     },
     {
-      "path_shape": "/page/positions/{id}/{id}?region",
-      "count": 31
-    },
-    {
       "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}",
       "count": 27
+    },
+    {
+      "path_shape": "/campusxq?jc&jobid&p",
+      "count": 20
     },
     {
       "path_shape": "/page/positions/{id}/{id}?quickpick",
       "count": 14
     },
     {
-      "path_shape": "/page/positions/{id}/{id}?department&institution",
-      "count": 13
-    },
-    {
       "path_shape": "/socialxq?jc&jobid&p",
-      "count": 10
-    },
-    {
-      "path_shape": "/campusxq?jc&jobid&p",
       "count": 10
     },
     {
@@ -259,65 +259,54 @@
       {
         "company_id": "cn-edu-0795",
         "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E5%AE%A1%E8%AE%A1%E7%BD%B2%E9%A9%BB%E9%95%BF%E6%98%A5%E7%89%B9%E6%B4%BE%E5%91%98%E5%8A%9E%E4%BA%8B%E5%A4%84",
+        "source_url": "https://www.fenbi.com/page/positions/0/34056?department=%E4%B8%AD%E5%9B%BD%E4%BD%9C%E5%8D%8F&institution=%E4%B8%AD%E5%A4%AE%E5%85%9A%E7%BE%A4%E6%9C%BA%E5%85%B3",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/page/positions/{id}/{id}?department"
+        "path_shape": "/page/positions/{id}/{id}?department&institution"
       },
       {
         "company_id": "cn-edu-0795",
         "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E5%AE%A1%E8%AE%A1%E7%BD%B2%E9%A9%BB%E6%B7%B1%E5%9C%B3%E7%89%B9%E6%B4%BE%E5%91%98%E5%8A%9E%E4%BA%8B%E5%A4%84",
+        "source_url": "https://www.fenbi.com/page/positions/0/191534?region=947",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/page/positions/{id}/{id}?department"
+        "path_shape": "/page/positions/{id}/{id}?region"
       },
       {
         "company_id": "cn-edu-0795",
         "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E5%AE%A1%E8%AE%A1%E7%BD%B2%E9%A9%BB%E6%B5%8E%E5%8D%97%E7%89%B9%E6%B4%BE%E5%91%98%E5%8A%9E%E4%BA%8B%E5%A4%84",
+        "source_url": "https://www.fenbi.com/page/positions/0/191534?region=836",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/page/positions/{id}/{id}?department"
+        "path_shape": "/page/positions/{id}/{id}?region"
       },
       {
         "company_id": "cn-edu-0795",
         "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E5%AE%A1%E8%AE%A1%E7%BD%B2%E9%A9%BB%E6%B2%88%E9%98%B3%E7%89%B9%E6%B4%BE%E5%91%98%E5%8A%9E%E4%BA%8B%E5%A4%84",
+        "source_url": "https://www.fenbi.com/page/positions/0/191534?region=683",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/page/positions/{id}/{id}?department"
+        "path_shape": "/page/positions/{id}/{id}?region"
       },
       {
         "company_id": "cn-edu-0795",
         "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E5%AE%A1%E8%AE%A1%E7%BD%B2%E9%A9%BB%E6%AD%A6%E6%B1%89%E7%89%B9%E6%B4%BE%E5%91%98%E5%8A%9E%E4%BA%8B%E5%A4%84",
+        "source_url": "https://www.fenbi.com/page/positions/0/191534?region=557",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/page/positions/{id}/{id}?department"
-      }
-    ],
-    "detail_fetch_failed:ConnectTimeout": [
-      {
-        "company_id": "cn-edu-0795",
-        "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E8%A5%BF%E8%97%8F%E7%9B%91%E7%AE%A1%E5%B1%80",
-        "reason": "detail_fetch_failed:ConnectTimeout",
-        "detail": null,
-        "http_status": null,
-        "path_shape": "/page/positions/{id}/{id}?department"
+        "path_shape": "/page/positions/{id}/{id}?region"
       }
     ],
     "detail_access_restricted": [
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?jobId=390839458&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390839458&jc=2&c=&p=1^-1,3^-1&ky=",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,
@@ -326,7 +315,7 @@
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?jobId=390825895&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390825895&jc=2&c=&p=1^-1,3^-1&ky=",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,
@@ -335,7 +324,7 @@
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?jobId=390810677&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390810677&jc=2&c=&p=1^-1,3^-1&ky=",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,
@@ -344,7 +333,7 @@
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?jobId=390810359&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390810359&jc=2&c=&p=1^-1,3^-1&ky=",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,
@@ -353,7 +342,7 @@
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?jobId=390776947&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390776946&jc=2&c=&p=1^-1,3^-1&ky=",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,
@@ -361,6 +350,24 @@
       }
     ],
     "detail_fetch_failed:ConnectionError": [
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390776947&jc=2&c=&p=1^-1,3^-1&ky=",
+        "reason": "detail_fetch_failed:ConnectionError",
+        "detail": null,
+        "http_status": null,
+        "path_shape": "/campusxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390776941&jc=2&c=&p=1^-1,3^-1&ky=",
+        "reason": "detail_fetch_failed:ConnectionError",
+        "detail": null,
+        "http_status": null,
+        "path_shape": "/campusxq?jc&jobid&p"
+      },
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
@@ -387,24 +394,17 @@
         "detail": null,
         "http_status": null,
         "path_shape": "/campusxq?jc&jobid&p"
-      },
+      }
+    ],
+    "detail_fetch_failed:ConnectTimeout": [
       {
-        "company_id": "cn-chip-0236",
-        "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/socialxq?jobId=390841785&jc=1&c=&p=1^-1,3^-1&ky=",
-        "reason": "detail_fetch_failed:ConnectionError",
+        "company_id": "cn-edu-0795",
+        "company_name": "北京粉笔蓝天科技有限公司",
+        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A%E8%A5%BF%E8%97%8F%E7%9B%91%E7%AE%A1%E5%B1%80",
+        "reason": "detail_fetch_failed:ConnectTimeout",
         "detail": null,
         "http_status": null,
-        "path_shape": "/socialxq?jc&jobid&p"
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/socialxq?jobId=390841277&jc=1&c=&p=1^-1,3^-1&ky=",
-        "reason": "detail_fetch_failed:ConnectionError",
-        "detail": null,
-        "http_status": null,
-        "path_shape": "/socialxq?jc&jobid&p"
+        "path_shape": "/page/positions/{id}/{id}?department"
       }
     ],
     "detail_fetch_failed:ReadTimeout": [
@@ -565,29 +565,29 @@
       {
         "company_id": "cn-edu-0795",
         "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E5%AE%A1%E8%AE%A1%E7%BD%B2%E9%A9%BB%E9%95%BF%E6%98%A5%E7%89%B9%E6%B4%BE%E5%91%98%E5%8A%9E%E4%BA%8B%E5%A4%84",
+        "source_url": "https://www.fenbi.com/page/positions/0/34056?department=%E4%B8%AD%E5%9B%BD%E4%BD%9C%E5%8D%8F&institution=%E4%B8%AD%E5%A4%AE%E5%85%9A%E7%BE%A4%E6%9C%BA%E5%85%B3",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/page/positions/{id}/{id}?department"
+        "path_shape": "/page/positions/{id}/{id}?department&institution"
       },
       {
         "company_id": "cn-edu-0795",
         "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E5%AE%A1%E8%AE%A1%E7%BD%B2%E9%A9%BB%E6%B7%B1%E5%9C%B3%E7%89%B9%E6%B4%BE%E5%91%98%E5%8A%9E%E4%BA%8B%E5%A4%84",
+        "source_url": "https://www.fenbi.com/page/positions/0/191534?region=947",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/page/positions/{id}/{id}?department"
+        "path_shape": "/page/positions/{id}/{id}?region"
       },
       {
         "company_id": "cn-edu-0795",
         "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/0/112?department=%E5%AE%A1%E8%AE%A1%E7%BD%B2%E9%A9%BB%E6%B5%8E%E5%8D%97%E7%89%B9%E6%B4%BE%E5%91%98%E5%8A%9E%E4%BA%8B%E5%A4%84",
+        "source_url": "https://www.fenbi.com/page/positions/0/191534?region=836",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/page/positions/{id}/{id}?department"
+        "path_shape": "/page/positions/{id}/{id}?region"
       }
     ],
     "www.gdnybank.com": [
@@ -652,7 +652,7 @@
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?jobId=390839458&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390839458&jc=2&c=&p=1^-1,3^-1&ky=",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,
@@ -661,7 +661,7 @@
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?jobId=390825895&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390825895&jc=2&c=&p=1^-1,3^-1&ky=",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,
@@ -670,7 +670,7 @@
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?jobId=390810677&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390810677&jc=2&c=&p=1^-1,3^-1&ky=",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,
