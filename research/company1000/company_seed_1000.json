@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "target_count": 1000,
   "seed_status": "partial_valid_seed_replacing_placeholder",
-  "generated_at": "2026-07-13T12:50:00Z",
+  "generated_at": "2026-07-13T13:05:00Z",
   "companies": [
     {
       "company_id": "cn-fin-0001",
@@ -143,7 +143,27 @@
       "career_url": "https://zhaopin.sgcc.com.cn/",
       "career_entry_evidence": "2026-07-13官方招聘平台可访问，页面链接国家电网官网并提供单位一览、搜索职位和招聘公告等公开入口。",
       "seed_status": "official_entry_verified"
+    },
+    {
+      "company_id": "cn-soe-0015",
+      "company_name": "中国航空工业集团有限公司",
+      "short_name": "中国航空工业集团",
+      "industry": "航空制造与国防科技",
+      "official_website": "https://www.avic.com.cn/",
+      "career_url": "https://www.avic.com.cn/sycd/rczp/",
+      "career_entry_evidence": "2026-07-13集团官方网站“人才招聘”栏目可访问，公开人才理念、职业管理、职业发展、教育培训及薪酬福利等内容；当前页面未直接枚举具体岗位，需继续核验所属单位公开招聘入口。",
+      "seed_status": "official_entry_verified"
+    },
+    {
+      "company_id": "cn-soe-0016",
+      "company_name": "中国电子科技集团有限公司",
+      "short_name": "中国电科",
+      "industry": "电子信息与国防科技",
+      "official_website": "https://www.cetc.com.cn/",
+      "career_url": "https://www.cetc.com.cn/zgdk/1593022/1592495/index.html",
+      "career_entry_evidence": "2026-07-13集团官方网站“招聘及公告”栏目可访问，列有“中国电科2026届校园招聘正式启动”等官方公告；当前列表未直接枚举仍可申请岗位，需继续核验成员单位和申请入口。",
+      "seed_status": "official_entry_verified"
     }
   ],
-  "valid_seed_count": 14
+  "valid_seed_count": 16
 }
