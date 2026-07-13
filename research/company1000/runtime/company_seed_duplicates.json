@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "duplicate_seed_rows_excluded": 28,
+  "duplicate_seed_rows_excluded": 32,
   "company_id_collisions_resolved": 7,
   "duplicates": [
     {
@@ -253,6 +253,42 @@
       "skipped_company_name": "京东方科技集团股份有限公司",
       "kept_company_id": "cn-tech-0077",
       "kept_company_name": "京东方科技集团股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0017.json",
+      "source_row": 1,
+      "skipped_company_id": "cn-software-0601",
+      "skipped_company_name": "用友网络科技股份有限公司",
+      "kept_company_id": "cn-software-0300",
+      "kept_company_name": "用友网络科技股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0017.json",
+      "source_row": 10,
+      "skipped_company_id": "cn-cyber-0610",
+      "skipped_company_name": "三六零安全科技股份有限公司",
+      "kept_company_id": "cn-software-0297",
+      "kept_company_name": "三六零安全科技股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0017.json",
+      "source_row": 15,
+      "skipped_company_id": "cn-software-0615",
+      "skipped_company_name": "金山软件有限公司",
+      "kept_company_id": "cn-software-0298",
+      "kept_company_name": "金山软件有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0017.json",
+      "source_row": 17,
+      "skipped_company_id": "cn-software-0617",
+      "skipped_company_name": "北京金山办公软件股份有限公司",
+      "kept_company_id": "cn-software-0299",
+      "kept_company_name": "北京金山办公软件股份有限公司",
       "reason": "duplicate_exact_company_name"
     }
   ],
