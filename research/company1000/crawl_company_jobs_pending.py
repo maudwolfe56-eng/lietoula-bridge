@@ -5,6 +5,10 @@ This wrapper scans from the checkpoint cursor, wraps once, and selects only
 companies whose current company_id/career_url audit key is absent from the
 coverage ledger. It preserves the conservative policy of crawl_company_jobs.py
 and uses bounded parallelism only for independent public HTTP requests.
+
+A discovered link is only a raw candidate. It must not become review_pending
+until the detail page has been fetched and the required fields, source family,
+location and timeliness checks have passed.
 """
 from __future__ import annotations
 
@@ -140,7 +144,10 @@ def audit_one(entry: tuple[int, dict[str, Any]]) -> tuple[int, dict[str, Any], l
         "company_id": company_id,
         "company_name": name,
         "source_url": job_url,
-        "review_status": "review_pending",
+        "source_type": "official_job_link_candidate",
+        "review_status": "candidate_raw",
+        "promotion_eligible": False,
+        "review_recommendation": "fetch_detail_and_validate_required_fields",
         "discovered_at": observed_at,
     } for job_url in result.job_links]
     return index, coverage, failures, links
@@ -213,6 +220,8 @@ def main() -> int:
             "auto_active_verified": False,
             "salary_inference_allowed": False,
             "login_captcha_or_paywall_bypass_allowed": False,
+            "new_job_link_default_status": "candidate_raw",
+            "review_pending_requires_detail_validation": True,
         },
     })
     state_path.parent.mkdir(parents=True, exist_ok=True)
