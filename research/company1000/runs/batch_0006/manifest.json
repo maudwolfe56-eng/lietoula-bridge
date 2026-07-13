@@ -1,0 +1,27 @@
+{
+  "batch_id": "batch_0006",
+  "generated_at_utc": "2026-07-13T15:13:05.792795+00:00",
+  "seed_count_after_merge": 36,
+  "seed_start_index": 26,
+  "seed_end_index_exclusive": 36,
+  "companies_targeted": 10,
+  "companies_reviewed": 10,
+  "unobserved_company_ids": [],
+  "status_counts": {
+    "fetch_failed": 1,
+    "pending_dynamic_js": 1,
+    "restricted": 15,
+    "no_links_observed": 1
+  },
+  "batch_output_counts": {
+    "coverage": 18,
+    "failures": 17,
+    "job_link_candidates": 0
+  },
+  "policy": {
+    "auto_active_verified": false,
+    "salary_inference_allowed": false,
+    "login_captcha_or_paywall_bypass_allowed": false
+  },
+  "final_acceptance_met": false
+}

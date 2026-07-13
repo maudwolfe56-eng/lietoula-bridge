@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-13T15:09:23.358895+00:00",
+  "updated_at": "2026-07-13T15:13:05.793198+00:00",
   "target_companies": 1000,
   "valid_seed_count": 36,
   "official_entries_verified": 14,
@@ -92,6 +92,23 @@
       "review_pending_link_candidates": 1,
       "final_acceptance_met": 0,
       "run_path": "runs/batch_0005"
+    },
+    "batch_0006": {
+      "companies_reviewed": 10,
+      "records": 0,
+      "status": "partial",
+      "seed_start_index": 26,
+      "seed_end_index_exclusive": 36,
+      "enumeration_status_counts": {
+        "fetch_failed": 1,
+        "pending_dynamic_js": 1,
+        "restricted": 15,
+        "no_links_observed": 1
+      },
+      "job_link_candidates_discovered": 0,
+      "unobserved_company_ids": [],
+      "final_acceptance_met": 0,
+      "run_path": "runs/batch_0006"
     }
   },
   "next_actions": [
