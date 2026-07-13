@@ -43,7 +43,8 @@ def main() -> int:
     parser.add_argument("--merged-seed-file", default="runtime/company_seed_merged.json")
     parser.add_argument("--output-dir", default="output")
     parser.add_argument("--state-file", default="runtime/checkpoint.json")
-    parser.add_argument("--batch-size", type=int, default=10)
+    parser.add_argument("--batch-size", type=int, default=20)
+    parser.add_argument("--max-workers", type=int, default=8)
     parser.add_argument("--start-index", type=int)
     args = parser.parse_args()
 
@@ -78,6 +79,8 @@ def main() -> int:
         args.state_file,
         "--batch-size",
         str(args.batch_size),
+        "--max-workers",
+        str(args.max_workers),
     ]
     if args.start_index is not None:
         cmd.extend(["--start-index", str(args.start_index)])
