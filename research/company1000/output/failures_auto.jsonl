@@ -79,3 +79,11 @@
 {"company_id": "cn-health-0098", "company_name": "无锡药明康德新药开发股份有限公司", "http_status": 403, "observed_at": "2026-07-13T14:41:33.392107+00:00", "reason": "restricted", "url": "https://wuxiapptec.zhiye.com/"}
 {"company_id": "cn-health-0099", "company_name": "江苏恒瑞医药股份有限公司", "http_status": 403, "observed_at": "2026-07-13T14:41:34.499340+00:00", "reason": "restricted", "url": "https://hrs.zhiye.com/"}
 {"company_id": "cn-hold-0100", "company_name": "复星国际有限公司", "http_status": 403, "observed_at": "2026-07-13T14:41:35.814391+00:00", "reason": "restricted", "url": "https://fosun.zhiye.com/"}
+{"company_id": "cn-soe-0029", "company_name": "中国建筑集团有限公司", "http_status": 403, "observed_at": "2026-07-13T15:09:14.367790+00:00", "reason": "restricted", "url": "https://cscec.zhiye.com/"}
+{"company_id": "cn-soe-0030", "company_name": "中国交通建设集团有限公司", "http_status": 403, "observed_at": "2026-07-13T15:09:15.530653+00:00", "reason": "restricted", "url": "https://ccccltd.zhiye.com/"}
+{"company_id": "cn-soe-0031", "company_name": "中国铁路工程集团有限公司", "http_status": 403, "observed_at": "2026-07-13T15:09:17.008669+00:00", "reason": "restricted", "url": "https://crec.zhiye.com/"}
+{"company_id": "cn-soe-0032", "company_name": "中国铁道建筑集团有限公司", "http_status": 403, "observed_at": "2026-07-13T15:09:18.117525+00:00", "reason": "restricted", "url": "https://crcc.zhiye.com/"}
+{"company_id": "cn-soe-0033", "company_name": "中国第一汽车集团有限公司", "http_status": 403, "observed_at": "2026-07-13T15:09:19.493154+00:00", "reason": "restricted", "url": "https://faw.zhiye.com/"}
+{"company_id": "cn-soe-0034", "company_name": "东风汽车集团有限公司", "http_status": 403, "observed_at": "2026-07-13T15:09:20.912382+00:00", "reason": "restricted", "url": "https://dfmc.zhiye.com/"}
+{"company_id": "cn-soe-0035", "company_name": "中国宝武钢铁集团有限公司", "http_status": 403, "observed_at": "2026-07-13T15:09:22.039792+00:00", "reason": "restricted", "url": "https://baowu.zhiye.com/"}
+{"company_id": "cn-soe-0036", "company_name": "鞍钢集团有限公司", "http_status": 403, "observed_at": "2026-07-13T15:09:23.358378+00:00", "reason": "restricted", "url": "https://ansteel.zhiye.com/"}

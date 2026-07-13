@@ -1,0 +1,8 @@
+{
+  "batch_id": "batch_0006",
+  "generated_at_utc": "2026-07-13T15:09:23.396190+00:00",
+  "exception_type": "JSONDecodeError",
+  "exception_message": "Unterminated string starting at: line 1 column 421 (char 420)",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/lietoula-bridge/lietoula-bridge/research/company1000/run_batch_0006.py\", line 182, in run_with_diagnostics\n    return main()\n           ^^^^^^\n  File \"/home/runner/work/lietoula-bridge/lietoula-bridge/research/company1000/run_batch_0006.py\", line 135, in main\n    coverage_rows.append(json.loads(line))\n                         ^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/json/__init__.py\", line 346, in loads\n    return _default_decoder.decode(s)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/json/decoder.py\", line 338, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/json/decoder.py\", line 354, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ^^^^^^^^^^^^^^^^^^^^^^\njson.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 421 (char 420)\n",
+  "final_acceptance_met": false
+}
