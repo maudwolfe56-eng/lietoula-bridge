@@ -1,7 +1,7 @@
 {
-  "requested_at": "2026-07-13T18:04:00Z",
-  "sequence": 3,
-  "purpose": "Run next incremental official-source recruitment audit batch after seed expansion 0009",
+  "requested_at": "2026-07-13T17:52:13Z",
+  "sequence": 4,
+  "purpose": "Run next incremental official-source recruitment audit batch from checkpoint after automation turn 1",
   "target_companies": 1000,
   "policy": {
     "official_sources_only": true,
