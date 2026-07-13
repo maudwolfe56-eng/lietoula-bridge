@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Merge the base company seed with incremental expansion files, then run the conservative crawler."""
+"""Merge the base company seed with incremental expansion files, then audit pending entries."""
 from __future__ import annotations
 
 import argparse
@@ -69,7 +69,7 @@ def main() -> int:
 
     cmd = [
         sys.executable,
-        "crawl_company_jobs.py",
+        "crawl_company_jobs_pending.py",
         "--seed-file",
         str(merged_path),
         "--output-dir",
