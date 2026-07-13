@@ -48,6 +48,7 @@ jobs:
             enumerate_recruitment_navigation.py \
             resolve_job_detail_candidates.py \
             resolve_job_detail_candidates_safe.py \
+            resolve_multi_position_announcements.py \
             build_import_package.py \
             ensure_unique_job_source_urls.py \
             assess_final_acceptance.py
@@ -98,6 +99,21 @@ jobs:
             --batch-size 20 \
             --max-workers 6 \
             | tee logs/resolve_job_details.log
+
+      - name: Extract roles from multi-position announcements
+        id: announcement
+        continue-on-error: true
+        working-directory: research/company1000
+        env:
+          PYTHONUNBUFFERED: '1'
+        run: |
+          set -o pipefail
+          python resolve_multi_position_announcements.py \
+            --output-dir output \
+            --batch-size 20 \
+            --max-workers 5 \
+            --max-attempts 2 \
+            | tee logs/resolve_multi_position_announcements.log
 
       - name: Reconcile checkpoint and build deliverables
         if: always()
@@ -150,7 +166,9 @@ jobs:
               'navigation_step_conclusion': '${{ steps.navigation.conclusion }}',
               'detail_step_outcome': '${{ steps.detail.outcome }}',
               'detail_step_conclusion': '${{ steps.detail.conclusion }}',
-              'mode': 'next_unprocessed_incremental_with_navigation_and_detail_resolution'
+              'announcement_step_outcome': '${{ steps.announcement.outcome }}',
+              'announcement_step_conclusion': '${{ steps.announcement.conclusion }}',
+              'mode': 'entry_audit_navigation_detail_and_announcement_resolution'
           }, ensure_ascii=False, indent=2), encoding='utf-8')
           PY
 
@@ -180,5 +198,5 @@ jobs:
           fi
 
       - name: Fail workflow if an audit stage failed
-        if: steps.batch.outcome == 'failure' || steps.navigation.outcome == 'failure' || steps.detail.outcome == 'failure'
+        if: steps.batch.outcome == 'failure' || steps.navigation.outcome == 'failure' || steps.detail.outcome == 'failure' || steps.announcement.outcome == 'failure'
         run: exit 1
