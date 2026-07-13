@@ -2,8 +2,8 @@
   "schema_version": "1.2",
   "target_count": 1000,
   "seed_status": "incrementally_expanded_auditable_seed",
-  "valid_seed_count": 323,
-  "duplicate_seed_rows_excluded": 47,
+  "valid_seed_count": 350,
+  "duplicate_seed_rows_excluded": 20,
   "company_id_collisions_resolved": 7,
   "source_files": [
     "company_seed_1000.json",
@@ -3235,7 +3235,277 @@
       "seed_status": "official_entry_candidate"
     },
     {
-      "company_id": "cn-sec-0332",
+      "company_id": "cn-bank-0321",
+      "company_name": "江西银行股份有限公司",
+      "short_name": "江西银行",
+      "industry": "银行",
+      "official_website": "https://www.jx-bank.com/",
+      "career_url": "https://www.jx-bank.com/",
+      "career_entry_evidence": "2026-07-14江西银行官方网站公开人才招聘入口及2026年社会、校园招聘启事。",
+      "seed_status": "official_entry_verified"
+    },
+    {
+      "company_id": "cn-bank-0322",
+      "company_name": "河北银行股份有限公司",
+      "short_name": "河北银行",
+      "industry": "银行",
+      "official_website": "https://www.hebbank.com/",
+      "career_url": "https://www.hebbank.com/",
+      "career_entry_evidence": "河北银行官方主站已核验；从官网人才招聘及公告入口继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-bank-0323",
+      "company_name": "盛京银行股份有限公司",
+      "short_name": "盛京银行",
+      "industry": "银行",
+      "official_website": "https://www.shengjingbank.com.cn/",
+      "career_url": "https://www.shengjingbank.com.cn/",
+      "career_entry_evidence": "盛京银行官方主站已核验；从官网人才招聘栏目继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-bank-0324",
+      "company_name": "哈尔滨银行股份有限公司",
+      "short_name": "哈尔滨银行",
+      "industry": "银行",
+      "official_website": "https://www.hrbb.com.cn/",
+      "career_url": "https://www.hrbb.com.cn/",
+      "career_entry_evidence": "哈尔滨银行官方主站已核验；从官网人才招聘栏目继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-bank-0325",
+      "company_name": "吉林银行股份有限公司",
+      "short_name": "吉林银行",
+      "industry": "银行",
+      "official_website": "https://www.jlbank.com.cn/",
+      "career_url": "https://www.jlbank.com.cn/",
+      "career_entry_evidence": "吉林银行官方主站已核验；从官网人才招聘栏目继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-bank-0326",
+      "company_name": "大连银行股份有限公司",
+      "short_name": "大连银行",
+      "industry": "银行",
+      "official_website": "https://www.bankofdl.com/",
+      "career_url": "https://www.bankofdl.com/",
+      "career_entry_evidence": "大连银行官方主域名已登记；招聘入口待公开访问复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-bank-0327",
+      "company_name": "天津银行股份有限公司",
+      "short_name": "天津银行",
+      "industry": "银行",
+      "official_website": "https://www.bank-of-tianjin.com.cn/",
+      "career_url": "https://www.bank-of-tianjin.com.cn/",
+      "career_entry_evidence": "天津银行官方主域名已登记；招聘入口待公开访问复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-bank-0328",
+      "company_name": "广东华兴银行股份有限公司",
+      "short_name": "广东华兴银行",
+      "industry": "银行",
+      "official_website": "https://www.ghbank.com.cn/",
+      "career_url": "https://www.ghbank.com.cn/",
+      "career_entry_evidence": "广东华兴银行官方主站已核验；从官网人才招聘栏目继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-bank-0329",
+      "company_name": "四川银行股份有限公司",
+      "short_name": "四川银行",
+      "industry": "银行",
+      "official_website": "https://www.scbank.cn/",
+      "career_url": "https://www.scbank.cn/",
+      "career_entry_evidence": "四川银行官方主站已核验；从官网人才招聘栏目继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-bank-0330",
+      "company_name": "中原银行股份有限公司",
+      "short_name": "中原银行",
+      "industry": "银行",
+      "official_website": "https://www.zybank.com.cn/",
+      "career_url": "https://www.zybank.com.cn/",
+      "career_entry_evidence": "中原银行官方主站已核验；从官网人才招聘栏目继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-bank-0331",
+      "company_name": "海南银行股份有限公司",
+      "short_name": "海南银行",
+      "industry": "银行",
+      "official_website": "https://www.hnbankchina.com.cn/",
+      "career_url": "https://www.hnbankchina.com.cn/",
+      "career_entry_evidence": "海南银行官方主站已核验；从官网人才招聘栏目继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-bank-0332",
+      "company_name": "新疆银行股份有限公司",
+      "short_name": "新疆银行",
+      "industry": "银行",
+      "official_website": "https://www.xjbank.com/",
+      "career_url": "https://www.xjbank.com/",
+      "career_entry_evidence": "新疆银行官方主站可访问但为JavaScript应用；从公开招聘入口继续核验。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-bank-0333",
+      "company_name": "甘肃银行股份有限公司",
+      "short_name": "甘肃银行",
+      "industry": "银行",
+      "official_website": "https://www.gsbankchina.com/",
+      "career_url": "https://www.gsbankchina.com/",
+      "career_entry_evidence": "2026-07-14甘肃银行官方网站公开人才招聘、校园招聘和社会招聘栏目。",
+      "seed_status": "official_entry_verified"
+    },
+    {
+      "company_id": "cn-bank-0334",
+      "company_name": "宁夏银行股份有限公司",
+      "short_name": "宁夏银行",
+      "industry": "银行",
+      "official_website": "https://www.bankofnx.com.cn/",
+      "career_url": "https://www.bankofnx.com.cn/",
+      "career_entry_evidence": "宁夏银行官方主站已核验；从官网人才招聘栏目继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-bank-0335",
+      "company_name": "内蒙古银行股份有限公司",
+      "short_name": "内蒙古银行",
+      "industry": "银行",
+      "official_website": "https://www.boimc.com.cn/",
+      "career_url": "https://www.boimc.com.cn/",
+      "career_entry_evidence": "内蒙古银行官方主站已核验；从官网人才招聘栏目继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-bank-0336",
+      "company_name": "广西北部湾银行股份有限公司",
+      "short_name": "广西北部湾银行",
+      "industry": "银行",
+      "official_website": "https://www.bankofbbg.com/",
+      "career_url": "https://www.bankofbbg.com/",
+      "career_entry_evidence": "广西北部湾银行官方主域名已登记；招聘入口待公开访问复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-bank-0337",
+      "company_name": "桂林银行股份有限公司",
+      "short_name": "桂林银行",
+      "industry": "银行",
+      "official_website": "https://www.guilinbank.com.cn/",
+      "career_url": "https://www.guilinbank.com.cn/",
+      "career_entry_evidence": "桂林银行官方主站已核验；从官网人才招聘栏目继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-bank-0338",
+      "company_name": "柳州银行股份有限公司",
+      "short_name": "柳州银行",
+      "industry": "银行",
+      "official_website": "https://www.lzccb.com/",
+      "career_url": "https://www.lzccb.com/",
+      "career_entry_evidence": "柳州银行官方主域名已登记；招聘入口待公开访问复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-bank-0339",
+      "company_name": "汉口银行股份有限公司",
+      "short_name": "汉口银行",
+      "industry": "银行",
+      "official_website": "https://www.hkbchina.com/",
+      "career_url": "https://www.hkbchina.com/",
+      "career_entry_evidence": "汉口银行官方主域名已登记；招聘入口待公开访问复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-bank-0340",
+      "company_name": "湖北银行股份有限公司",
+      "short_name": "湖北银行",
+      "industry": "银行",
+      "official_website": "https://www.hubeibank.cn/",
+      "career_url": "https://www.hubeibank.cn/",
+      "career_entry_evidence": "湖北银行官方主域名已登记；招聘入口待公开访问复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-bank-0341",
+      "company_name": "湖南银行股份有限公司",
+      "short_name": "湖南银行",
+      "industry": "银行",
+      "official_website": "https://www.hunan-bank.com/",
+      "career_url": "https://www.hunan-bank.com/",
+      "career_entry_evidence": "2026-07-14湖南银行官方网站公开设置人才招聘入口。",
+      "seed_status": "official_entry_verified"
+    },
+    {
+      "company_id": "cn-bank-0342",
+      "company_name": "东莞银行股份有限公司",
+      "short_name": "东莞银行",
+      "industry": "银行",
+      "official_website": "https://www.dongguanbank.cn/",
+      "career_url": "https://www.dongguanbank.cn/",
+      "career_entry_evidence": "东莞银行官方主站已核验；从官网人才招聘栏目继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-bank-0343",
+      "company_name": "珠海华润银行股份有限公司",
+      "short_name": "珠海华润银行",
+      "industry": "银行",
+      "official_website": "https://www.crbank.com.cn/",
+      "career_url": "https://www.crbank.com.cn/",
+      "career_entry_evidence": "珠海华润银行官方主站已核验；从官网人才招聘栏目继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "short_name": "广东南粤银行",
+      "industry": "银行",
+      "official_website": "https://www.gdnybank.com/",
+      "career_url": "https://www.gdnybank.com/",
+      "career_entry_evidence": "广东南粤银行官方主站已核验；从官网人才招聘栏目继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-bank-0345",
+      "company_name": "温州银行股份有限公司",
+      "short_name": "温州银行",
+      "industry": "银行",
+      "official_website": "https://www.wzbank.cn/",
+      "career_url": "https://www.wzbank.cn/",
+      "career_entry_evidence": "温州银行官方主站已核验；从官网人才招聘栏目继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-bank-0346",
+      "company_name": "台州银行股份有限公司",
+      "short_name": "台州银行",
+      "industry": "银行",
+      "official_website": "https://www.tzbank.com/",
+      "career_url": "https://www.tzbank.com/",
+      "career_entry_evidence": "台州银行官方主站已核验；从官网人才招聘栏目继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-bank-0347",
+      "company_name": "浙江泰隆商业银行股份有限公司",
+      "short_name": "浙江泰隆商业银行",
+      "industry": "银行",
+      "official_website": "https://www.zjtlcb.com/",
+      "career_url": "https://www.zjtlcb.com/",
+      "career_entry_evidence": "浙江泰隆商业银行官方主站已核验；从官网人才招聘栏目继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0348",
       "company_name": "东兴证券股份有限公司",
       "short_name": "东兴证券",
       "industry": "证券与资本市场",
@@ -3245,7 +3515,7 @@
       "seed_status": "official_entry_candidate"
     },
     {
-      "company_id": "cn-ins-0348",
+      "company_id": "cn-ins-0349",
       "company_name": "友邦人寿保险有限公司",
       "short_name": "友邦人寿",
       "industry": "人寿保险",
