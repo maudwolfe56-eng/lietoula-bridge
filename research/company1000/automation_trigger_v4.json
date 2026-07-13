@@ -1,7 +1,7 @@
 {
-  "requested_at": "2026-07-13T20:32:00Z",
-  "sequence": 1,
-  "purpose": "Resolve public official job payloads embedded in JSON or client-side page state, continue classified navigation, HTML details and official announcements, rebuild deliverables, and reassess final acceptance",
+  "requested_at": "2026-07-13T20:42:00Z",
+  "sequence": 2,
+  "purpose": "Run corrected company-and-URL-scoped classification, embedded public job payload extraction, bounded recruitment navigation, HTML detail and official announcement resolution, rebuild deduplicated deliverables, detect changes, and reassess final acceptance",
   "target_companies": 1000,
   "policy": {
     "official_sources_only": true,
@@ -10,6 +10,10 @@
     "salary_inference_allowed": false,
     "access_control_bypass_allowed": false,
     "new_job_link_default_status": "candidate_raw",
-    "review_pending_requires_detail_validation": true
+    "review_pending_requires_detail_validation": true,
+    "transient_failures_remain_retryable": true,
+    "navigation_pages_must_not_count_as_job_details": true,
+    "official_multi_position_announcements_are_routed_separately": true,
+    "resolution_scope": "company_id_plus_canonical_source_url"
   }
 }
