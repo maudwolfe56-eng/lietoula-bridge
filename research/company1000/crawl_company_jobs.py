@@ -2,8 +2,10 @@
 """Conservative public-career-page crawler for the Company1000 research set.
 
 It never logs in, bypasses CAPTCHA/paywalls, infers salary, or writes
-`active_verified`. Dynamic or blocked pages are recorded as auditable coverage
-failures for later browser/API work.
+``active_verified``. Dynamic or blocked pages are recorded as auditable coverage
+failures for later browser/API work. Recruitment navigation links are separated
+from probable job-detail links so a careers homepage is never mistaken for an
+individual opening.
 """
 from __future__ import annotations
 
@@ -11,28 +13,48 @@ import argparse
 import hashlib
 import json
 import re
-import sys
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Iterable
-from urllib.parse import urljoin, urlparse, urldefrag
+from urllib.parse import parse_qs, urljoin, urlparse, urldefrag
 
 import requests
 from bs4 import BeautifulSoup
 
 USER_AGENT = (
-    "Mozilla/5.0 (compatible; LietoulaCompany1000Research/1.0; "
+    "Mozilla/5.0 (compatible; LietoulaCompany1000Research/1.1; "
     "+public-career-page-audit)"
 )
 JOB_WORDS = re.compile(
-    r"招聘|职位|岗位|社会招聘|校园招聘|实习|career|careers|job|jobs|vacancy|position",
+    r"招聘|职位|岗位|社会招聘|校园招聘|实习|career|careers|job|jobs|vacancy|position|requisition",
     re.I,
 )
 BLOCK_WORDS = re.compile(r"验证码|captcha|登录后|请登录|access denied|forbidden", re.I)
 THIRD_PARTY_HOSTS = {
     "zhaopin.com", "liepin.com", "51job.com", "bosszhipin.com",
     "lagou.com", "linkedin.com", "indeed.com",
+}
+ATS_HOST_HINTS = ("zhiye", "moka", "mokahr", "beisen", "hotjob", "chinahr")
+
+# Generic recruitment pages are useful discovery evidence, but they are not jobs.
+GENERIC_PATH_WORDS = re.compile(
+    r"(?:^|/)(?:index(?:\.[a-z0-9]+)?|home|searchjobs?|job[_-]?list|"
+    r"campusjoblist|internaljoblist|login|faq|culture|perks?|locations?|"
+    r"university|earlycareer|internship|about|profile|benefits?|learn|"
+    r"recommendationmethods?|talentcommunity)(?:/|$|\?)",
+    re.I,
+)
+DETAIL_PATH_WORDS = re.compile(
+    r"(?:job|jobs|position|positions|vacancy|vacancies|requisition|recruitment)"
+    r"(?:[-_/]?(?:detail|info))?(?:/|[-_])(?:[a-z]*\d[a-z0-9_-]*)(?:/|$|\.)",
+    re.I,
+)
+DETAIL_FILENAME = re.compile(r"/(?:\d{5,}|[a-z]+\d{4,})\.(?:s?html?|aspx?)$", re.I)
+DETAIL_QUERY_KEYS = {
+    "jobid", "job_id", "positionid", "position_id", "postid", "post_id",
+    "vacancyid", "vacancy_id", "requisitionid", "requisition_id", "reqid",
+    "jobcode", "job_code", "positioncode", "position_code",
 }
 
 
@@ -69,6 +91,31 @@ def canonical(url: str) -> str:
     return urldefrag(url)[0].strip()
 
 
+def is_probable_job_detail_url(url: str, label: str = "") -> bool:
+    """Return True only when URL structure strongly suggests one opening/detail.
+
+    This intentionally favors precision over recall. List/search/culture/login pages
+    remain recruitment-navigation candidates for a later site-specific enumerator.
+    """
+    parsed = urlparse(url)
+    path_and_query = f"{parsed.path}?{parsed.query}".lower()
+    if GENERIC_PATH_WORDS.search(path_and_query):
+        return False
+
+    query = {key.lower(): values for key, values in parse_qs(parsed.query).items()}
+    if DETAIL_QUERY_KEYS.intersection(query):
+        return True
+    if any("detail" in key and any(str(v).strip() for v in values) for key, values in query.items()):
+        return True
+    if re.search(r"(?:job|position|vacancy|requisition)[_-]?detail", parsed.path, re.I):
+        return True
+    if DETAIL_PATH_WORDS.search(parsed.path):
+        return True
+    if DETAIL_FILENAME.search(parsed.path) and JOB_WORDS.search(parsed.path + " " + label):
+        return True
+    return False
+
+
 def append_jsonl(path: Path, rows: Iterable[dict[str, Any]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("a", encoding="utf-8") as f:
@@ -101,13 +148,14 @@ class FetchResult:
     javascript_shell: bool
     error: str | None
     job_links: list[str]
+    recruitment_links: list[str]
 
 
 def fetch_page(session: requests.Session, url: str, official_site: str, career_url: str) -> FetchResult:
     try:
         response = session.get(url, timeout=25, allow_redirects=True)
     except requests.RequestException as exc:
-        return FetchResult(url, None, None, None, 0, False, False, type(exc).__name__, [])
+        return FetchResult(url, None, None, None, 0, False, False, type(exc).__name__, [], [])
 
     text = response.text or ""
     soup = BeautifulSoup(text, "lxml")
@@ -120,8 +168,10 @@ def fetch_page(session: requests.Session, url: str, official_site: str, career_u
         or "__NEXT_DATA__" in text
     )
 
-    links: list[str] = []
-    seen: set[str] = set()
+    detail_links: list[str] = []
+    recruitment_links: list[str] = []
+    seen_recruitment: set[str] = set()
+    seen_detail: set[str] = set()
     for a in soup.find_all("a", href=True):
         label = " ".join(a.stripped_strings)
         href = canonical(urljoin(response.url, a.get("href", "")))
@@ -134,12 +184,16 @@ def fetch_page(session: requests.Session, url: str, official_site: str, career_u
             continue
         if not same_official_family(href, official_site, career_url):
             # ATS links are retained only when directly linked by the official page.
-            if not any(x in h for x in ("zhiye", "moka", "beisen", "chinahr")):
+            if not any(x in h for x in ATS_HOST_HINTS):
                 continue
-        if href not in seen:
-            seen.add(href)
-            links.append(href)
-        if len(links) >= 100:
+
+        if href not in seen_recruitment:
+            seen_recruitment.add(href)
+            recruitment_links.append(href)
+        if is_probable_job_detail_url(href, label) and href not in seen_detail:
+            seen_detail.add(href)
+            detail_links.append(href)
+        if len(recruitment_links) >= 200 or len(detail_links) >= 100:
             break
 
     return FetchResult(
@@ -151,7 +205,8 @@ def fetch_page(session: requests.Session, url: str, official_site: str, career_u
         blocked=blocked,
         javascript_shell=javascript_shell,
         error=None,
-        job_links=links,
+        job_links=detail_links,
+        recruitment_links=recruitment_links,
     )
 
 
@@ -178,6 +233,7 @@ def main() -> int:
     coverage_file = out_dir / "coverage_auto.jsonl"
     failure_file = out_dir / "failures_auto.jsonl"
     link_file = out_dir / "job_link_candidates_auto.jsonl"
+    navigation_file = out_dir / "recruitment_navigation_auto.jsonl"
     processed = existing_keys(coverage_file, "audit_key")
 
     session = requests.Session()
@@ -185,6 +241,7 @@ def main() -> int:
     coverage_rows: list[dict[str, Any]] = []
     failure_rows: list[dict[str, Any]] = []
     link_rows: list[dict[str, Any]] = []
+    navigation_rows: list[dict[str, Any]] = []
 
     for company in batch:
         company_id = str(company.get("company_id") or "")
@@ -207,7 +264,12 @@ def main() -> int:
             and result.final_url
             and same_official_family(result.final_url, official_site, career_url)
         )
-        enumeration_status = "html_links_discovered" if result.job_links else "no_links_observed"
+        if result.job_links:
+            enumeration_status = "job_detail_links_discovered"
+        elif result.recruitment_links:
+            enumeration_status = "recruitment_navigation_discovered"
+        else:
+            enumeration_status = "no_links_observed"
         if result.blocked:
             enumeration_status = "restricted"
         elif result.javascript_shell:
@@ -227,6 +289,7 @@ def main() -> int:
             "text_length": result.text_length,
             "enumeration_status": enumeration_status,
             "job_link_candidate_count": len(result.job_links),
+            "recruitment_navigation_count": len(result.recruitment_links),
             "error": result.error,
             "observed_at": utc_now(),
             "final_acceptance_met": False,
@@ -245,13 +308,28 @@ def main() -> int:
                 "company_id": company_id,
                 "company_name": name,
                 "source_url": job_url,
-                "review_status": "review_pending",
+                "source_type": "official_job_detail_candidate",
+                "review_status": "candidate_raw",
+                "promotion_eligible": False,
+                "review_recommendation": "fetch_detail_and_validate_required_fields",
+                "discovered_at": utc_now(),
+            })
+        for navigation_url in result.recruitment_links:
+            if navigation_url in result.job_links:
+                continue
+            navigation_rows.append({
+                "company_id": company_id,
+                "company_name": name,
+                "source_url": navigation_url,
+                "source_type": "official_recruitment_navigation",
+                "enumeration_status": "requires_site_specific_enumerator",
                 "discovered_at": utc_now(),
             })
 
     append_jsonl(coverage_file, coverage_rows)
     append_jsonl(failure_file, failure_rows)
     append_jsonl(link_file, link_rows)
+    append_jsonl(navigation_file, navigation_rows)
 
     next_index = min(len(companies), start + len(batch))
     state.update({
@@ -264,11 +342,18 @@ def main() -> int:
             "auto_active_verified": False,
             "salary_inference_allowed": False,
             "login_captcha_or_paywall_bypass_allowed": False,
+            "new_job_link_default_status": "candidate_raw",
+            "review_pending_requires_detail_validation": True,
         },
     })
     state_path.parent.mkdir(parents=True, exist_ok=True)
     state_path.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(json.dumps({"processed": len(coverage_rows), "links": len(link_rows), "next_index": next_index}))
+    print(json.dumps({
+        "processed": len(coverage_rows),
+        "detail_links": len(link_rows),
+        "navigation_links": len(navigation_rows),
+        "next_index": next_index,
+    }))
     return 0
 
 
