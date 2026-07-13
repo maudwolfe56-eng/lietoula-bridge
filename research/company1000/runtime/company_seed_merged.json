@@ -2,7 +2,7 @@
   "schema_version": "1.2",
   "target_count": 1000,
   "seed_status": "incrementally_expanded_auditable_seed",
-  "valid_seed_count": 442,
+  "valid_seed_count": 492,
   "duplicate_seed_rows_excluded": 28,
   "company_id_collisions_resolved": 7,
   "source_files": [
@@ -19,7 +19,8 @@
     "company_seed_expansion_0010.json",
     "company_seed_expansion_0011.json",
     "company_seed_expansion_0012.json",
-    "company_seed_expansion_0013.json"
+    "company_seed_expansion_0013.json",
+    "company_seed_expansion_0014.json"
   ],
   "companies": [
     {
@@ -4453,6 +4454,506 @@
       "industry": "建筑数字化与企业软件",
       "official_website": "https://www.glodon.com/",
       "career_url": "https://www.glodon.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0451",
+      "company_name": "安踏体育用品集团有限公司",
+      "short_name": "安踏体育",
+      "industry": "运动服饰与体育用品",
+      "official_website": "https://www.anta.com/",
+      "career_url": "https://www.anta.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0452",
+      "company_name": "李宁有限公司",
+      "short_name": "李宁",
+      "industry": "运动服饰与体育用品",
+      "official_website": "https://www.lining.com/",
+      "career_url": "https://www.lining.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0453",
+      "company_name": "特步国际控股有限公司",
+      "short_name": "特步国际",
+      "industry": "运动服饰与体育用品",
+      "official_website": "https://www.xtep.com/",
+      "career_url": "https://www.xtep.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0454",
+      "company_name": "三六一度国际有限公司",
+      "short_name": "361度",
+      "industry": "运动服饰与体育用品",
+      "official_website": "https://www.361sport.com/",
+      "career_url": "https://www.361sport.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0455",
+      "company_name": "波司登国际控股有限公司",
+      "short_name": "波司登",
+      "industry": "服装与品牌消费",
+      "official_website": "https://www.bosideng.com/",
+      "career_url": "https://www.bosideng.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0456",
+      "company_name": "海澜之家集团股份有限公司",
+      "short_name": "海澜之家",
+      "industry": "服装与品牌零售",
+      "official_website": "https://www.hla.com.cn/",
+      "career_url": "https://www.hla.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0457",
+      "company_name": "浙江森马服饰股份有限公司",
+      "short_name": "森马服饰",
+      "industry": "服装与品牌零售",
+      "official_website": "https://www.semir.com/",
+      "career_url": "https://www.semir.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0458",
+      "company_name": "雅戈尔集团股份有限公司",
+      "short_name": "雅戈尔集团",
+      "industry": "服装与综合产业",
+      "official_website": "https://www.youngor.com/",
+      "career_url": "https://www.youngor.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0459",
+      "company_name": "宁波太平鸟时尚服饰股份有限公司",
+      "short_name": "太平鸟",
+      "industry": "时尚服饰与品牌零售",
+      "official_website": "https://www.peacebird.com/",
+      "career_url": "https://www.peacebird.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0460",
+      "company_name": "福建七匹狼实业股份有限公司",
+      "short_name": "七匹狼",
+      "industry": "服装与品牌零售",
+      "official_website": "https://www.septwolves.com/",
+      "career_url": "https://www.septwolves.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0461",
+      "company_name": "周大福珠宝集团有限公司",
+      "short_name": "周大福珠宝集团",
+      "industry": "珠宝与品牌零售",
+      "official_website": "https://www.ctfjewellerygroup.com/",
+      "career_url": "https://www.ctfjewellerygroup.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0462",
+      "company_name": "老凤祥股份有限公司",
+      "short_name": "老凤祥",
+      "industry": "珠宝与品牌零售",
+      "official_website": "https://www.laofengxiang.com/",
+      "career_url": "https://www.laofengxiang.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0463",
+      "company_name": "上海豫园旅游商城（集团）股份有限公司",
+      "short_name": "豫园股份",
+      "industry": "珠宝时尚与消费产业",
+      "official_website": "https://www.yuyuantm.com.cn/",
+      "career_url": "https://www.yuyuantm.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0464",
+      "company_name": "珀莱雅化妆品股份有限公司",
+      "short_name": "珀莱雅",
+      "industry": "化妆品与品牌消费",
+      "official_website": "https://www.proya.com/",
+      "career_url": "https://www.proya.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0465",
+      "company_name": "云南贝泰妮生物科技集团股份有限公司",
+      "short_name": "贝泰妮",
+      "industry": "化妆品与皮肤健康",
+      "official_website": "https://www.botanee.com.cn/",
+      "career_url": "https://www.botanee.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0466",
+      "company_name": "上海家化联合股份有限公司",
+      "short_name": "上海家化",
+      "industry": "日化与品牌消费",
+      "official_website": "https://www.jahwa.com.cn/",
+      "career_url": "https://www.jahwa.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0467",
+      "company_name": "广东丸美生物技术股份有限公司",
+      "short_name": "丸美股份",
+      "industry": "化妆品与品牌消费",
+      "official_website": "https://www.marubi.cn/",
+      "career_url": "https://www.marubi.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0468",
+      "company_name": "广州立白企业集团有限公司",
+      "short_name": "立白集团",
+      "industry": "日化与家庭清洁",
+      "official_website": "https://www.liby.com.cn/",
+      "career_url": "https://www.liby.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0469",
+      "company_name": "纳爱斯集团有限公司",
+      "short_name": "纳爱斯集团",
+      "industry": "日化与家庭清洁",
+      "official_website": "https://www.cnnais.com/",
+      "career_url": "https://www.cnnais.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0470",
+      "company_name": "恒安国际集团有限公司",
+      "short_name": "恒安国际",
+      "industry": "个人与家庭护理",
+      "official_website": "https://www.hengan.com/",
+      "career_url": "https://www.hengan.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0471",
+      "company_name": "蓝月亮集团控股有限公司",
+      "short_name": "蓝月亮集团",
+      "industry": "日化与家庭清洁",
+      "official_website": "https://www.bluemoon.com.cn/",
+      "career_url": "https://www.bluemoon.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0472",
+      "company_name": "逸仙电商（广州）有限公司",
+      "short_name": "逸仙电商",
+      "industry": "美妆与数字化品牌消费",
+      "official_website": "https://www.yatsenglobal.com/",
+      "career_url": "https://www.yatsenglobal.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0473",
+      "company_name": "泡泡玛特国际集团有限公司",
+      "short_name": "泡泡玛特",
+      "industry": "潮流文化与品牌零售",
+      "official_website": "https://www.popmart.com/",
+      "career_url": "https://www.popmart.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0474",
+      "company_name": "上海晨光文具股份有限公司",
+      "short_name": "晨光股份",
+      "industry": "文具与办公用品",
+      "official_website": "https://www.mg-pen.com/",
+      "career_url": "https://www.mg-pen.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-consumer-0475",
+      "company_name": "得力集团有限公司",
+      "short_name": "得力集团",
+      "industry": "办公用品与智能办公",
+      "official_website": "https://www.nbdeli.com/",
+      "career_url": "https://www.nbdeli.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-home-0476",
+      "company_name": "顾家家居股份有限公司",
+      "short_name": "顾家家居",
+      "industry": "家居制造与品牌零售",
+      "official_website": "https://www.kukahome.com/",
+      "career_url": "https://www.kukahome.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-home-0477",
+      "company_name": "欧派家居集团股份有限公司",
+      "short_name": "欧派家居",
+      "industry": "定制家居与品牌零售",
+      "official_website": "https://www.oppein.com/",
+      "career_url": "https://www.oppein.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-home-0478",
+      "company_name": "索菲亚家居股份有限公司",
+      "short_name": "索菲亚",
+      "industry": "定制家居与品牌零售",
+      "official_website": "https://www.sogal.com.cn/",
+      "career_url": "https://www.sogal.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-home-0479",
+      "company_name": "志邦家居股份有限公司",
+      "short_name": "志邦家居",
+      "industry": "定制家居与品牌零售",
+      "official_website": "https://www.zbom.com/",
+      "career_url": "https://www.zbom.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-home-0480",
+      "company_name": "敏华控股有限公司",
+      "short_name": "敏华控股",
+      "industry": "家居制造与品牌零售",
+      "official_website": "https://www.manwahholdings.com/",
+      "career_url": "https://www.manwahholdings.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-retail-0481",
+      "company_name": "红星美凯龙家居集团股份有限公司",
+      "short_name": "红星美凯龙",
+      "industry": "家居零售与商业运营",
+      "official_website": "https://www.chinaredstar.com/",
+      "career_url": "https://www.chinaredstar.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-retail-0482",
+      "company_name": "家家悦集团股份有限公司",
+      "short_name": "家家悦",
+      "industry": "商超零售与供应链",
+      "official_website": "https://www.jiajiayue.com.cn/",
+      "career_url": "https://www.jiajiayue.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-retail-0483",
+      "company_name": "百联集团有限公司",
+      "short_name": "百联集团",
+      "industry": "商业零售与综合服务",
+      "official_website": "https://www.bailiangroup.cn/",
+      "career_url": "https://www.bailiangroup.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-retail-0484",
+      "company_name": "王府井集团股份有限公司",
+      "short_name": "王府井集团",
+      "industry": "百货零售与商业运营",
+      "official_website": "https://www.wfj.com.cn/",
+      "career_url": "https://www.wfj.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-retail-0485",
+      "company_name": "大商集团有限公司",
+      "short_name": "大商集团",
+      "industry": "百货零售与商业运营",
+      "official_website": "https://www.dsjt.com/",
+      "career_url": "https://www.dsjt.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-food-0486",
+      "company_name": "中国飞鹤有限公司",
+      "short_name": "中国飞鹤",
+      "industry": "乳制品与婴幼儿营养",
+      "official_website": "https://www.feihe.com/",
+      "career_url": "https://www.feihe.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-food-0487",
+      "company_name": "光明乳业股份有限公司",
+      "short_name": "光明乳业",
+      "industry": "乳制品与健康食品",
+      "official_website": "https://www.brightdairy.com/",
+      "career_url": "https://www.brightdairy.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-food-0488",
+      "company_name": "中国旺旺控股有限公司",
+      "short_name": "中国旺旺",
+      "industry": "食品饮料与品牌消费",
+      "official_website": "https://www.want-want.com/",
+      "career_url": "https://www.want-want.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-food-0489",
+      "company_name": "康师傅控股有限公司",
+      "short_name": "康师傅控股",
+      "industry": "食品饮料与方便食品",
+      "official_website": "https://www.masterkong.com.cn/",
+      "career_url": "https://www.masterkong.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-food-0490",
+      "company_name": "统一企业中国控股有限公司",
+      "short_name": "统一企业中国",
+      "industry": "食品饮料与方便食品",
+      "official_website": "https://www.uni-president.com.cn/",
+      "career_url": "https://www.uni-president.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-food-0491",
+      "company_name": "洽洽食品股份有限公司",
+      "short_name": "洽洽食品",
+      "industry": "休闲食品",
+      "official_website": "https://www.qiaqiafood.com/",
+      "career_url": "https://www.qiaqiafood.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-food-0492",
+      "company_name": "安井食品集团股份有限公司",
+      "short_name": "安井食品",
+      "industry": "速冻食品与供应链",
+      "official_website": "https://www.anjoyfood.com/",
+      "career_url": "https://www.anjoyfood.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-food-0493",
+      "company_name": "三全食品股份有限公司",
+      "short_name": "三全食品",
+      "industry": "速冻食品与品牌消费",
+      "official_website": "https://www.sanquan.com/",
+      "career_url": "https://www.sanquan.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-food-0494",
+      "company_name": "绝味食品股份有限公司",
+      "short_name": "绝味食品",
+      "industry": "休闲食品与连锁零售",
+      "official_website": "https://www.juewei.cn/",
+      "career_url": "https://www.juewei.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-agri-0495",
+      "company_name": "新希望集团有限公司",
+      "short_name": "新希望集团",
+      "industry": "农业食品与综合产业",
+      "official_website": "https://www.newhopegroup.com/",
+      "career_url": "https://www.newhopegroup.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-agri-0496",
+      "company_name": "牧原食品股份有限公司",
+      "short_name": "牧原股份",
+      "industry": "畜牧养殖与食品产业",
+      "official_website": "https://www.muyuanfoods.com/",
+      "career_url": "https://www.muyuanfoods.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-agri-0497",
+      "company_name": "温氏食品集团股份有限公司",
+      "short_name": "温氏股份",
+      "industry": "畜牧养殖与食品产业",
+      "official_website": "https://www.wens.com.cn/",
+      "career_url": "https://www.wens.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-agri-0498",
+      "company_name": "广东海大集团股份有限公司",
+      "short_name": "海大集团",
+      "industry": "饲料与农业科技",
+      "official_website": "https://www.haid.com.cn/",
+      "career_url": "https://www.haid.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-agri-0499",
+      "company_name": "北京大北农科技集团股份有限公司",
+      "short_name": "大北农",
+      "industry": "农业科技与饲料种业",
+      "official_website": "https://www.dbn.com.cn/",
+      "career_url": "https://www.dbn.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-food-0500",
+      "company_name": "安琪酵母股份有限公司",
+      "short_name": "安琪酵母",
+      "industry": "生物发酵与食品配料",
+      "official_website": "https://www.angelyeast.com/",
+      "career_url": "https://www.angelyeast.com/",
       "career_entry_evidence": "企业官方主域名已登记；后续仅从官网公开人才招聘、加入我们或招聘公告栏目核验当前岗位，未完成公开页面核验前保持候选状态。",
       "seed_status": "official_entry_candidate"
     }
