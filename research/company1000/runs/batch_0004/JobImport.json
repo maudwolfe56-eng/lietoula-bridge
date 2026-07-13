@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "batch_0004",
+  "generated_at": "2026-07-13T12:45:00Z",
+  "default_review_status": "candidate_raw",
+  "active_verified_allowed": false,
+  "records": [],
+  "empty_reason": "No individual current job details with complete responsibilities, requirements, city and unique official detail URL were enumerable from the two audited group-level official pages in this batch."
+}
