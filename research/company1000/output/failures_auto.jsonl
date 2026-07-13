@@ -87,3 +87,13 @@
 {"company_id": "cn-soe-0034", "company_name": "\u4e1c\u98ce\u6c7d\u8f66\u96c6\u56e2\u6709\u9650\u516c\u53f8", "http_status": 403, "observed_at": "2026-07-13T15:09:20.912382+00:00", "reason": "restricted", "url": "https://dfmc.zhiye.com/"}
 {"company_id": "cn-soe-0035", "company_name": "\u4e2d\u56fd\u5b9d\u6b66\u94a2\u94c1\u96c6\u56e2\u6709\u9650\u516c\u53f8", "http_status": 403, "observed_at": "2026-07-13T15:09:22.039792+00:00", "reason": "restricted", "url": "https://baowu.zhiye.com/"}
 {"company_id": "cn-soe-0036", "company_name": "\u978d\u94a2\u96c6\u56e2\u6709\u9650\u516c\u53f8", "http_status": 403, "observed_at": "2026-07-13T15:09:23.358378+00:00", "reason": "restricted", "url": "https://ansteel.zhiye.com/"}
+{"company_id": "cn-soe-0037", "company_name": "中国五矿集团有限公司", "http_status": 403, "observed_at": "2026-07-13T15:39:23.578661+00:00", "reason": "restricted", "url": "https://minmetals.zhiye.com/"}
+{"company_id": "cn-soe-0038", "company_name": "中国铝业集团有限公司", "http_status": 403, "observed_at": "2026-07-13T15:39:24.642971+00:00", "reason": "restricted", "url": "https://chinalco.zhiye.com/"}
+{"company_id": "cn-soe-0039", "company_name": "中国远洋海运集团有限公司", "http_status": 403, "observed_at": "2026-07-13T15:39:25.673332+00:00", "reason": "restricted", "url": "https://coscoshipping.zhiye.com/"}
+{"company_id": "cn-soe-0040", "company_name": "招商局集团有限公司", "http_status": 403, "observed_at": "2026-07-13T15:39:26.921466+00:00", "reason": "restricted", "url": "https://cmhk.zhiye.com/"}
+{"company_id": "cn-soe-0041", "company_name": "华润（集团）有限公司", "http_status": 403, "observed_at": "2026-07-13T15:39:27.853354+00:00", "reason": "restricted", "url": "https://crc.zhiye.com/"}
+{"company_id": "cn-soe-0042", "company_name": "中国机械工业集团有限公司", "http_status": 403, "observed_at": "2026-07-13T15:39:28.856263+00:00", "reason": "restricted", "url": "https://sinomach.zhiye.com/"}
+{"company_id": "cn-soe-0043", "company_name": "中国通用技术（集团）控股有限责任公司", "http_status": 403, "observed_at": "2026-07-13T15:39:29.827266+00:00", "reason": "restricted", "url": "https://genertec.zhiye.com/"}
+{"company_id": "cn-soe-0044", "company_name": "中国建材集团有限公司", "http_status": 403, "observed_at": "2026-07-13T15:39:30.998107+00:00", "reason": "restricted", "url": "https://cnbm.zhiye.com/"}
+{"company_id": "cn-soe-0045", "company_name": "中国能源建设集团有限公司", "http_status": 403, "observed_at": "2026-07-13T15:39:31.994597+00:00", "reason": "restricted", "url": "https://ceec.zhiye.com/"}
+{"company_id": "cn-soe-0046", "company_name": "中国电力建设集团有限公司", "http_status": 403, "observed_at": "2026-07-13T15:39:32.894906+00:00", "reason": "restricted", "url": "https://powerchina.zhiye.com/"}
