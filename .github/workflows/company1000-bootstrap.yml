@@ -1,4 +1,4 @@
-name: Company1000 audit batch 0006
+name: Company1000 audit batch 0007
 
 on:
   push:
@@ -32,7 +32,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4 lxml python-dateutil
 
-      - name: Merge batch 0006 seed delta
+      - name: Merge batch 0007 seed delta
         working-directory: research/company1000
         run: |
           python - <<'PY'
@@ -41,7 +41,7 @@ jobs:
           from pathlib import Path
 
           seed_path = Path('company_seed_1000.json')
-          delta_path = Path('seed_delta_batch_0006.json')
+          delta_path = Path('seed_delta_batch_0007.json')
           seed = json.loads(seed_path.read_text(encoding='utf-8'))
           delta = json.loads(delta_path.read_text(encoding='utf-8'))
           companies = seed.get('companies', [])
@@ -59,7 +59,7 @@ jobs:
           seed['seed_status'] = 'partial_valid_seed_expanding'
           seed['generated_at'] = datetime.now(timezone.utc).isoformat()
           seed_path.write_text(json.dumps(seed, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
-          assert len(merged) >= 36, len(merged)
+          assert len(merged) >= 46, len(merged)
           print({'merged_seed_count': len(merged)})
           PY
 
@@ -67,12 +67,12 @@ jobs:
         working-directory: research/company1000
         run: |
           python -m py_compile crawl_company_jobs.py
-          mkdir -p output runtime logs runs/batch_0006
-          wc -l output/coverage_auto.jsonl 2>/dev/null | awk '{print $1}' > runs/batch_0006/coverage_before.txt || echo 0 > runs/batch_0006/coverage_before.txt
-          wc -l output/failures_auto.jsonl 2>/dev/null | awk '{print $1}' > runs/batch_0006/failures_before.txt || echo 0 > runs/batch_0006/failures_before.txt
-          wc -l output/job_link_candidates_auto.jsonl 2>/dev/null | awk '{print $1}' > runs/batch_0006/links_before.txt || echo 0 > runs/batch_0006/links_before.txt
+          mkdir -p output runtime logs runs/batch_0007
+          wc -l output/coverage_auto.jsonl 2>/dev/null | awk '{print $1}' > runs/batch_0007/coverage_before.txt || echo 0 > runs/batch_0007/coverage_before.txt
+          wc -l output/failures_auto.jsonl 2>/dev/null | awk '{print $1}' > runs/batch_0007/failures_before.txt || echo 0 > runs/batch_0007/failures_before.txt
+          wc -l output/job_link_candidates_auto.jsonl 2>/dev/null | awk '{print $1}' > runs/batch_0007/links_before.txt || echo 0 > runs/batch_0007/links_before.txt
 
-      - name: Audit seed entries 27-36 conservatively
+      - name: Audit seed entries 37-46 conservatively
         working-directory: research/company1000
         env:
           PYTHONUNBUFFERED: "1"
@@ -81,9 +81,9 @@ jobs:
             --seed-file company_seed_1000.json \
             --output-dir output \
             --state-file runtime/checkpoint.json \
-            --start-index 26 \
+            --start-index 36 \
             --batch-size 10 \
-            | tee logs/batch_0006_auto.log
+            | tee logs/batch_0007_auto.log
 
       - name: Materialize auditable batch snapshots and update checkpoint
         working-directory: research/company1000
@@ -93,12 +93,12 @@ jobs:
           from datetime import datetime, timezone
           from pathlib import Path
 
-          run = Path('runs/batch_0006')
+          run = Path('runs/batch_0007')
           output = Path('output')
           mappings = [
-              ('coverage_auto.jsonl', 'coverage_before.txt', 'coverage_batch_0006.jsonl'),
-              ('failures_auto.jsonl', 'failures_before.txt', 'failures_batch_0006.jsonl'),
-              ('job_link_candidates_auto.jsonl', 'links_before.txt', 'job_link_candidates_batch_0006.jsonl'),
+              ('coverage_auto.jsonl', 'coverage_before.txt', 'coverage_batch_0007.jsonl'),
+              ('failures_auto.jsonl', 'failures_before.txt', 'failures_batch_0007.jsonl'),
+              ('job_link_candidates_auto.jsonl', 'links_before.txt', 'job_link_candidates_batch_0007.jsonl'),
           ]
           counts = {}
           for src_name, before_name, dst_name in mappings:
@@ -110,19 +110,20 @@ jobs:
               counts[dst_name] = len(new_lines)
 
           coverage_rows = []
-          coverage_path = run / 'coverage_batch_0006.jsonl'
+          coverage_path = run / 'coverage_batch_0007.jsonl'
           for line in coverage_path.read_text(encoding='utf-8').splitlines() if coverage_path.exists() else []:
-              if line.strip(): coverage_rows.append(json.loads(line))
+              if line.strip():
+                  coverage_rows.append(json.loads(line))
           status_counts = {}
           for row in coverage_rows:
               status = row.get('enumeration_status', 'unknown')
               status_counts[status] = status_counts.get(status, 0) + 1
 
           manifest = {
-              'batch_id': 'batch_0006',
+              'batch_id': 'batch_0007',
               'generated_at_utc': datetime.now(timezone.utc).isoformat(),
-              'seed_start_index': 26,
-              'seed_end_index_exclusive': 36,
+              'seed_start_index': 36,
+              'seed_end_index_exclusive': 46,
               'companies_reviewed': len(coverage_rows),
               'status_counts': status_counts,
               'new_output_counts': counts,
@@ -137,18 +138,18 @@ jobs:
 
           state_path = Path('runtime/checkpoint.json')
           state = json.loads(state_path.read_text(encoding='utf-8'))
-          state['valid_seed_count'] = 36
-          state['next_batch_start_index'] = 36
-          state.setdefault('batch_progress', {})['batch_0006'] = {
+          state['valid_seed_count'] = 46
+          state['next_batch_start_index'] = 46
+          state.setdefault('batch_progress', {})['batch_0007'] = {
               'companies_reviewed': len(coverage_rows),
               'records': 0,
               'status': 'partial',
-              'seed_start_index': 26,
-              'seed_end_index_exclusive': 36,
+              'seed_start_index': 36,
+              'seed_end_index_exclusive': 46,
               'enumeration_status_counts': status_counts,
-              'job_link_candidates_discovered': counts.get('job_link_candidates_batch_0006.jsonl', 0),
+              'job_link_candidates_discovered': counts.get('job_link_candidates_batch_0007.jsonl', 0),
               'final_acceptance_met': 0,
-              'run_path': 'runs/batch_0006',
+              'run_path': 'runs/batch_0007',
           }
           state['updated_at'] = datetime.now(timezone.utc).isoformat()
           state_path.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding='utf-8')
@@ -163,10 +164,10 @@ jobs:
                   research/company1000/output \
                   research/company1000/runtime \
                   research/company1000/logs \
-                  research/company1000/runs/batch_0006
+                  research/company1000/runs/batch_0007
           if git diff --cached --quiet; then
             echo "No generated changes to commit"
           else
-            git commit -m "research: audit company1000 batch 0006 entries 27-36"
+            git commit -m "research: audit company1000 batch 0007 entries 37-46"
             git push origin HEAD:research/company1000-crawler-20260713
           fi
