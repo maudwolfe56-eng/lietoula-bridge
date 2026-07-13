@@ -47,6 +47,7 @@ jobs:
             crawl_company_jobs_merged.py \
             enumerate_recruitment_navigation.py \
             resolve_job_detail_candidates.py \
+            resolve_job_detail_candidates_safe.py \
             build_import_package.py \
             assess_final_acceptance.py
 
@@ -91,7 +92,7 @@ jobs:
           PYTHONUNBUFFERED: '1'
         run: |
           set -o pipefail
-          python resolve_job_detail_candidates.py \
+          python resolve_job_detail_candidates_safe.py \
             --output-dir output \
             --batch-size 20 \
             --max-workers 6 \
