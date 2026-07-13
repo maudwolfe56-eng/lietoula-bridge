@@ -1,7 +1,7 @@
 {
-  "requested_at": "2026-07-13T20:42:00Z",
-  "sequence": 2,
-  "purpose": "Run corrected company-and-URL-scoped classification, embedded public job payload extraction, bounded recruitment navigation, HTML detail and official announcement resolution, rebuild deduplicated deliverables, detect changes, and reassess final acceptance",
+  "requested_at": "2026-07-13T20:45:00Z",
+  "sequence": 3,
+  "purpose": "Continue the next unattended company1000 batch: audit uncompleted official recruitment entries, enumerate publicly accessible job and announcement details, resolve embedded and HTML job payloads, rebuild deduplicated deliverables, record coverage and auditable restrictions, detect changes, and reassess final acceptance",
   "target_companies": 1000,
   "policy": {
     "official_sources_only": true,
