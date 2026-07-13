@@ -1,4 +1,4 @@
-name: Company1000 bootstrap and first batch
+name: Company1000 audit batch
 
 on:
   push:
@@ -12,14 +12,11 @@ permissions:
   contents: write
 
 jobs:
-  crawl:
+  audit:
     runs-on: ubuntu-latest
-    timeout-minutes: 55
-    env:
-      PYTHONUNBUFFERED: "1"
-      COMPANY1000_BATCH_SIZE: "10"
+    timeout-minutes: 20
     steps:
-      - name: Checkout branch
+      - name: Checkout research branch
         uses: actions/checkout@v4
         with:
           ref: research/company1000-crawler-20260713
@@ -32,133 +29,70 @@ jobs:
           cache: pip
           cache-dependency-path: research/company1000/requirements.txt
 
-      - name: Decode crawler assets
-        shell: bash
+      - name: Install crawler dependencies
         run: |
-          set -euo pipefail
-          cd research/company1000
-          base64 -d crawl_company_jobs.py.gz.b64 | gzip -dc > crawl_company_jobs.py
-          base64 -d merge_job_results.py.gz.b64 | gzip -dc > merge_job_results.py
-          base64 -d company_seed_1000.json.gz.b64 | gzip -dc > company_seed_1000.decoded.json
-          python -m py_compile crawl_company_jobs.py merge_job_results.py
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 lxml python-dateutil
+
+      - name: Validate seed and crawler
+        working-directory: research/company1000
+        run: |
+          python -m py_compile crawl_company_jobs.py
           python - <<'PY'
           import json
           from pathlib import Path
-          p = Path('company_seed_1000.decoded.json')
-          data = json.loads(p.read_text(encoding='utf-8'))
-          count = len(data) if isinstance(data, list) else len(data.get('companies', []))
-          Path('bootstrap_decode_status.json').write_text(
-              json.dumps({'decoded': True, 'seed_company_count': count}, ensure_ascii=False, indent=2),
-              encoding='utf-8'
-          )
-          print(f'decoded seed companies: {count}')
+          data = json.loads(Path('company_seed_1000.json').read_text(encoding='utf-8'))
+          companies = data['companies']
+          assert companies and all(c.get('company_id') and c.get('company_name') for c in companies)
+          print({'valid_seed_count': len(companies), 'target_count': data.get('target_count')})
           PY
 
-      - name: Install dependencies
-        shell: bash
+      - name: Audit first valid batch conservatively
+        working-directory: research/company1000
+        env:
+          PYTHONUNBUFFERED: "1"
         run: |
-          set -euo pipefail
-          python -m pip install --upgrade pip
-          pip install -r research/company1000/requirements.txt
-          python -m playwright install --with-deps chromium
+          mkdir -p output runtime logs
+          python crawl_company_jobs.py \
+            --seed-file company_seed_1000.json \
+            --output-dir output \
+            --state-file runtime/checkpoint.json \
+            --start-index 0 \
+            --batch-size 10 \
+            | tee logs/batch_0001_auto.log
 
-      - name: Inspect CLI and run next batch
-        shell: bash
+      - name: Write run manifest
+        working-directory: research/company1000
         run: |
-          set +e
-          cd research/company1000
-          mkdir -p runtime output logs
-          python crawl_company_jobs.py --help > logs/crawler_help.txt 2>&1
-          HELP_RC=$?
-          python - <<'PY' > logs/launcher.log 2>&1
-          import os, re, subprocess, sys, json
-          from pathlib import Path
-
-          script = 'crawl_company_jobs.py'
-          seed = 'company_seed_1000.decoded.json'
-          outdir = 'output'
-          state = 'runtime/checkpoint.json'
-          help_text = Path('logs/crawler_help.txt').read_text(encoding='utf-8', errors='replace')
-
-          attempts = []
-          attempts.append([sys.executable, script])
-
-          cmd = [sys.executable, script]
-          option_map = [
-              (['--seed-file', '--seed', '--companies-file', '--companies', '--input-file', '--input'], seed),
-              (['--output-dir', '--out-dir'], outdir),
-              (['--state-file', '--checkpoint-file', '--checkpoint'], state),
-              (['--batch-size', '--limit', '--max-companies'], os.environ.get('COMPANY1000_BATCH_SIZE', '10')),
-          ]
-          for aliases, value in option_map:
-              for alias in aliases:
-                  if alias in help_text:
-                      cmd.extend([alias, value])
-                      break
-          if cmd != attempts[0]:
-              attempts.append(cmd)
-
-          results = []
-          for index, command in enumerate(attempts, start=1):
-              print(f'ATTEMPT {index}: {command}', flush=True)
-              proc = subprocess.run(command, text=True)
-              results.append({'attempt': index, 'command': command, 'returncode': proc.returncode})
-              if proc.returncode == 0:
-                  break
-
-          Path('runtime/launcher_result.json').write_text(
-              json.dumps({'help_returncode': 0, 'attempts': results}, ensure_ascii=False, indent=2),
-              encoding='utf-8'
-          )
-          if not results or results[-1]['returncode'] != 0:
-              raise SystemExit(results[-1]['returncode'] if results else 1)
-          PY
-          RUN_RC=$?
-          printf '{\n  "help_returncode": %s,\n  "run_returncode": %s,\n  "batch_size_target": 10\n}\n' "$HELP_RC" "$RUN_RC" > runtime/bootstrap_run_status.json
-          exit 0
-
-      - name: Build auditable run inventory
-        if: always()
-        shell: bash
-        run: |
-          set -euo pipefail
-          cd research/company1000
           python - <<'PY'
           import json
           from datetime import datetime, timezone
           from pathlib import Path
-
-          root = Path('.')
-          files = []
-          for p in sorted(root.rglob('*')):
-              if p.is_file() and '.git' not in p.parts:
-                  files.append({'path': p.as_posix(), 'bytes': p.stat().st_size})
-          report = {
+          manifest = {
               'generated_at_utc': datetime.now(timezone.utc).isoformat(),
-              'run_type': 'bootstrap_first_batch',
-              'review_policy': {
+              'run_type': 'public_career_entry_audit',
+              'policy': {
                   'auto_active_verified': False,
                   'salary_inference_allowed': False,
-                  'login_or_captcha_bypass_allowed': False
+                  'login_captcha_or_paywall_bypass_allowed': False,
               },
-              'files': files
+              'outputs': [
+                  p.as_posix() for p in sorted(Path('output').glob('*')) if p.is_file()
+              ],
           }
-          Path('runtime/run_inventory.json').write_text(
-              json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8'
+          Path('runtime/last_workflow_manifest.json').write_text(
+              json.dumps(manifest, ensure_ascii=False, indent=2), encoding='utf-8'
           )
           PY
 
-      - name: Commit crawler, checkpoint and first-batch outputs
-        if: always()
-        shell: bash
+      - name: Commit auditable outputs
         run: |
-          set -euo pipefail
           git config user.name "company1000-automation"
           git config user.email "company1000-automation@users.noreply.github.com"
-          git add research/company1000
+          git add research/company1000/output research/company1000/runtime research/company1000/logs
           if git diff --cached --quiet; then
             echo "No generated changes to commit"
           else
-            git commit -m "research: bootstrap company1000 crawler and run first batch"
+            git commit -m "research: audit first 10 official career entries"
             git push origin HEAD:research/company1000-crawler-20260713
           fi
