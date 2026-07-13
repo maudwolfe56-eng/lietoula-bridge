@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-13T19:49:25.500212+00:00",
+  "generated_at": "2026-07-13T19:52:13.625109+00:00",
   "target_companies": 1000,
   "seeded_companies": 1020,
   "coverage_records": 1061,
   "companies_with_coverage": 1027,
-  "job_records": 207,
+  "job_records": 211,
   "job_status_counts": {
     "inactive_expired": 31,
     "review_pending": 56,
-    "candidate_raw": 120
+    "candidate_raw": 124
   },
-  "failure_records": 1940,
-  "job_change_records": 207,
+  "failure_records": 2015,
+  "job_change_records": 211,
   "active_verified_records": 0,
   "final_acceptance_met": false,
   "checkpoint": {
     "schema_version": "1.0",
-    "updated_at": "2026-07-13T19:49:25.291084+00:00",
+    "updated_at": "2026-07-13T19:52:13.399871+00:00",
     "target_companies": 1000,
     "valid_seed_count": 1020,
     "official_entries_verified": 14,
@@ -28,7 +28,7 @@
     "job_records_review_pending": 64,
     "job_records_inactive_expired": 23,
     "companies_final_acceptance_met": 0,
-    "next_batch_start_index": 126,
+    "next_batch_start_index": 566,
     "batch_progress": {
       "batch_0001": {
         "companies_reviewed": 10,
@@ -166,66 +166,66 @@
       "recruitment_navigation_requires_site_specific_resolution": true
     },
     "last_auto_batch": {
-      "requested_start_index": 975,
+      "requested_start_index": 126,
       "selected_indices": [
-        975,
-        976,
-        977,
-        978,
-        979,
-        980,
-        981,
-        982,
-        983,
-        984,
-        985,
-        986,
-        987,
-        988,
-        989,
-        990,
-        991,
-        992,
-        993,
-        994,
-        995,
-        996,
-        997,
-        998,
-        999,
-        1000,
-        1001,
-        1002,
-        1003,
-        1004,
-        1005,
-        1006,
-        1007,
-        1008,
-        1009,
-        1010,
-        1011,
-        1012,
-        1013,
-        1014,
-        1015,
-        1016,
-        1017,
-        1018,
-        1019,
-        114,
-        118,
-        121,
-        123,
-        125
+        127,
+        132,
+        134,
+        136,
+        137,
+        152,
+        157,
+        161,
+        170,
+        173,
+        174,
+        175,
+        181,
+        183,
+        187,
+        195,
+        200,
+        220,
+        227,
+        230,
+        242,
+        243,
+        251,
+        252,
+        283,
+        296,
+        305,
+        327,
+        329,
+        369,
+        388,
+        393,
+        395,
+        400,
+        403,
+        416,
+        417,
+        420,
+        439,
+        468,
+        483,
+        485,
+        487,
+        500,
+        509,
+        525,
+        537,
+        542,
+        558,
+        565
       ],
       "selected_count": 50,
       "processed_count": 50,
       "job_detail_candidates": 0,
-      "recruitment_navigation_links": 110,
+      "recruitment_navigation_links": 8,
       "max_workers": 8
     },
-    "pending_seed_audits": 77,
+    "pending_seed_audits": 34,
     "merged_seed_sources": [
       "company_seed_1000.json",
       "company_seed_expansion_0001.json",
@@ -259,27 +259,29 @@
     "company_id_collisions_resolved": 7,
     "seed_shortfall": 0,
     "companies_without_audit": 0,
-    "pending_job_link_candidates": 1306,
+    "pending_job_link_candidates": 1297,
     "invalid_job_records": 0,
     "final_acceptance_met": false,
     "notification_eligible": false,
-    "pending_recruitment_navigation": 4321,
+    "pending_recruitment_navigation": 5168,
     "duplicate_job_source_urls": 0,
     "navigation_expansion_last_batch": {
-      "candidate_count": 5224,
-      "legacy_candidates_reclassified": 102,
-      "selected_count": 200,
-      "processed_count": 200,
-      "detail_candidates_discovered": 12,
-      "child_navigation_discovered": 3491,
+      "enumerator_version": "2.0-bounded",
+      "candidate_count": 6144,
+      "legacy_candidates_reclassified": 156,
+      "selected_count": 300,
+      "processed_count": 300,
+      "detail_candidates_discovered": 213,
+      "child_navigation_discovered": 3189,
+      "filtered_non_recruitment_links": 10149,
       "resolution_status_counts": {
-        "restricted_with_explicit_reason": 27,
-        "enumerated": 144,
-        "requires_manual_review_no_links": 20,
-        "requires_site_specific_dynamic_enumerator": 7,
-        "superseded": 2
+        "enumerated": 175,
+        "requires_manual_review_no_links": 57,
+        "requires_site_specific_dynamic_enumerator": 20,
+        "restricted_with_explicit_reason": 48
       },
-      "max_workers": 10
+      "max_workers": 12,
+      "max_children_per_page": 60
     }
   },
   "policy": {
@@ -290,20 +292,20 @@
   "notification_eligible": false,
   "final_acceptance_report": {
     "schema_version": "1.2",
-    "assessed_at": "2026-07-13T19:49:26.038275+00:00",
+    "assessed_at": "2026-07-13T19:52:14.206827+00:00",
     "target_companies": 1000,
     "seeded_unique_companies": 1020,
     "seed_shortfall": 0,
     "companies_with_coverage": 993,
-    "companies_with_explicit_failure_reason": 850,
+    "companies_with_explicit_failure_reason": 855,
     "companies_without_audit_count": 0,
     "companies_without_audit_sample": [],
-    "job_records": 207,
-    "all_recruitment_candidates": 7525,
-    "probable_job_detail_candidates": 1379,
+    "job_records": 211,
+    "all_recruitment_candidates": 7882,
+    "probable_job_detail_candidates": 1381,
     "terminal_detail_failures": 6,
-    "resolved_job_detail_candidates": 82,
-    "pending_job_detail_candidates": 1297,
+    "resolved_job_detail_candidates": 86,
+    "pending_job_detail_candidates": 1295,
     "pending_job_detail_sample": [
       {
         "company_id": "cn-soe-0050",
@@ -606,9 +608,9 @@
         "reason": null
       }
     ],
-    "recruitment_navigation_candidates": 6146,
-    "resolved_recruitment_navigation": 978,
-    "pending_recruitment_navigation": 5168,
+    "recruitment_navigation_candidates": 6501,
+    "resolved_recruitment_navigation": 1156,
+    "pending_recruitment_navigation": 5345,
     "pending_recruitment_navigation_sample": [
       {
         "company_id": "cn-soe-0020",
@@ -620,13 +622,13 @@
         "company_id": "cn-soe-0050",
         "company_name": "中国东方航空股份有限公司",
         "source_url": "https://job.ceair.com/campus/campusJobList.html",
-        "reason": "public_page_reached_but_no_enumerable_links_observed"
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-soe-0050",
         "company_name": "中国东方航空股份有限公司",
         "source_url": "https://job.ceair.com/about/culture.html",
-        "reason": "public_page_reached_but_no_enumerable_links_observed"
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-tech-0053",
@@ -647,28 +649,22 @@
         "reason": "javascript_shell_no_public_html_job_enumeration"
       },
       {
-        "company_id": "cn-tech-0066",
-        "company_name": "中兴通讯股份有限公司",
-        "source_url": "https://app.mokahr.com/social-recruitment/zte/47588",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
         "company_id": "cn-tech-0094",
         "company_name": "深圳市大疆创新科技有限公司",
         "source_url": "https://we.dji.com/jobs_en.html",
-        "reason": "public_page_reached_but_no_enumerable_links_observed"
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-fin-0106",
         "company_name": "上海浦东发展银行股份有限公司",
         "source_url": "https://job.spdb.com.cn/outInterviewer",
-        "reason": "public_page_reached_but_no_enumerable_links_observed"
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-fin-0106",
         "company_name": "上海浦东发展银行股份有限公司",
         "source_url": "https://job.spdb.com.cn/loginOut",
-        "reason": "public_page_reached_but_no_enumerable_links_observed"
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-soe-0011",
@@ -713,112 +709,64 @@
         "reason": null
       },
       {
-        "company_id": "cn-soe-0129",
-        "company_name": "中国旅游集团有限公司",
-        "source_url": "https://www.ctg.cn/careers-t46",
-        "reason": null
-      },
-      {
-        "company_id": "cn-soe-0129",
-        "company_name": "中国旅游集团有限公司",
-        "source_url": "https://www.ctg.cn/article/19926",
-        "reason": null
-      },
-      {
-        "company_id": "cn-soe-0143",
-        "company_name": "中国物流集团有限公司",
-        "source_url": "https://www.chinalogisticsgroup.com.cn/zh-cn/join/hotjob.shtml",
-        "reason": null
-      },
-      {
-        "company_id": "cn-soe-0164",
-        "company_name": "中国轻工集团有限公司",
-        "source_url": "https://www.sinolight.cn/1303.html",
-        "reason": null
-      },
-      {
-        "company_id": "cn-ins-0179",
-        "company_name": "富德生命人寿保险股份有限公司",
-        "source_url": "https://www.sino-life.com/job/",
-        "reason": null
-      },
-      {
-        "company_id": "cn-amc-0183",
-        "company_name": "中国长城资产管理股份有限公司",
-        "source_url": "https://www.gwamcc.com/JobInfo.aspx?liName=129",
-        "reason": null
-      },
-      {
-        "company_id": "cn-amc-0183",
-        "company_name": "中国长城资产管理股份有限公司",
-        "source_url": "https://www.gwamcc.com/JobInfo.aspx?liName=85",
-        "reason": null
-      },
-      {
         "company_id": "cn-sec-0189",
         "company_name": "中信证券股份有限公司",
         "source_url": "https://careers.citics.com",
-        "reason": null
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-sec-0189",
         "company_name": "中信证券股份有限公司",
         "source_url": "https://careers.citics.com/campus/headquarters",
-        "reason": null
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-sec-0189",
         "company_name": "中信证券股份有限公司",
         "source_url": "https://careers.citics.com/headquarters/interns",
-        "reason": null
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-sec-0189",
         "company_name": "中信证券股份有限公司",
         "source_url": "https://careers.citics.com/campus/branch",
-        "reason": null
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-sec-0189",
         "company_name": "中信证券股份有限公司",
         "source_url": "https://careers.citics.com/social/headquarters/",
-        "reason": null
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-sec-0189",
         "company_name": "中信证券股份有限公司",
         "source_url": "https://careers.citics.com/social/branch",
-        "reason": null
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-sec-0189",
         "company_name": "中信证券股份有限公司",
         "source_url": "https://careers.citics.com/",
-        "reason": null
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-sec-0189",
         "company_name": "中信证券股份有限公司",
         "source_url": "https://careers.citics.com/campus/headquarters/",
-        "reason": null
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-sec-0189",
         "company_name": "中信证券股份有限公司",
         "source_url": "https://careers.citics.com/headquarters/interns/",
-        "reason": null
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-sec-0189",
         "company_name": "中信证券股份有限公司",
         "source_url": "https://careers.citics.com/campus/branch/",
-        "reason": null
-      },
-      {
-        "company_id": "cn-health-0225",
-        "company_name": "国药控股股份有限公司",
-        "source_url": "https://www.sinopharmgroup.com.cn/gykg/rcfz/rczp/A006008002Gone1.html",
-        "reason": null
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-food-0232",
@@ -857,57 +805,111 @@
         "reason": null
       },
       {
-        "company_id": "cn-energy-0246",
-        "company_name": "晶科能源股份有限公司",
-        "source_url": "https://www.jinkosolar.com/en/site/brand",
-        "reason": null
-      },
-      {
-        "company_id": "cn-mining-0248",
-        "company_name": "紫金矿业集团股份有限公司",
-        "source_url": "https://www.zijinmining.com/join/join-us.htm",
-        "reason": null
-      },
-      {
         "company_id": "cn-re-0255",
         "company_name": "龙湖集团控股有限公司",
         "source_url": "https://www.longfor.com/join/job.html",
-        "reason": null
-      },
-      {
-        "company_id": "cn-re-0256",
-        "company_name": "新城控股集团股份有限公司",
-        "source_url": "https://www.seazen.com.cn/join/career.html",
-        "reason": null
-      },
-      {
-        "company_id": "cn-retail-0261",
-        "company_name": "苏宁易购集团股份有限公司",
-        "source_url": "http://careers.suning.cn/",
-        "reason": null
-      },
-      {
-        "company_id": "cn-log-0268",
-        "company_name": "韵达控股股份有限公司",
-        "source_url": "https://www.yundaex.com/cn/hr_online.php",
-        "reason": null
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-air-0272",
         "company_name": "春秋航空股份有限公司",
         "source_url": "https://job.ch.com",
-        "reason": null
-      },
-      {
-        "company_id": "cn-hotel-0285",
-        "company_name": "北京首旅酒店（集团）股份有限公司",
-        "source_url": "https://www.bthhotels.com/culture/TalentDevelopment",
-        "reason": null
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-software-0300",
         "company_name": "用友网络科技股份有限公司",
         "source_url": "http://career.yonyou.com/",
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
+      },
+      {
+        "company_id": "cn-profservice-1098",
+        "company_name": "任仕达企业管理（上海）有限公司",
+        "source_url": "https://www.randstad.cn/jobs/s-xiao-shou/",
+        "reason": null
+      },
+      {
+        "company_id": "cn-soe-0143",
+        "company_name": "中国物流集团有限公司",
+        "source_url": "https://www.chinalogisticsgroup.com.cn/zh-cn/articles/2025/06/56528.shtml",
+        "reason": null
+      },
+      {
+        "company_id": "cn-env-0599",
+        "company_name": "瀚蓝环境股份有限公司",
+        "source_url": "https://www.grandblue.cn/hanbluedynamic/info.aspx?itemid=9906",
+        "reason": null
+      },
+      {
+        "company_id": "cn-health-0359",
+        "company_name": "四川科伦药业股份有限公司",
+        "source_url": "https://www.kelun.com/news/3050.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-health-0359",
+        "company_name": "四川科伦药业股份有限公司",
+        "source_url": "https://www.kelun.com/news/3021.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-ins-0350",
+        "company_name": "众安在线财产保险股份有限公司",
+        "source_url": "https://mokahr.com/blog/10730.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-ins-0350",
+        "company_name": "众安在线财产保险股份有限公司",
+        "source_url": "https://mokahr.com/blog/10891.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-ins-0350",
+        "company_name": "众安在线财产保险股份有限公司",
+        "source_url": "https://mokahr.com/blog/16100.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-ins-0350",
+        "company_name": "众安在线财产保险股份有限公司",
+        "source_url": "https://mokahr.com/blog/6866.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-ins-0350",
+        "company_name": "众安在线财产保险股份有限公司",
+        "source_url": "https://mokahr.com/blog/14909.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-ins-0350",
+        "company_name": "众安在线财产保险股份有限公司",
+        "source_url": "https://mokahr.com/blog/14936.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-ins-0350",
+        "company_name": "众安在线财产保险股份有限公司",
+        "source_url": "https://mokahr.com/blog/6623.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-ins-0350",
+        "company_name": "众安在线财产保险股份有限公司",
+        "source_url": "https://mokahr.com/blog/11197.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-ins-0350",
+        "company_name": "众安在线财产保险股份有限公司",
+        "source_url": "https://mokahr.com/blog/17410.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-ins-0350",
+        "company_name": "众安在线财产保险股份有限公司",
+        "source_url": "https://mokahr.com/blog/15205.html",
         "reason": null
       }
     ],
