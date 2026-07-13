@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-07-13T20:42:39.777813+00:00",
-  "failure_rows": 1589,
-  "unique_failed_urls": 1589,
+  "generated_at": "2026-07-13T20:48:46.797261+00:00",
+  "failure_rows": 1607,
+  "unique_failed_urls": 1607,
   "reason_counts_all_attempts": {
-    "detail_unparseable_or_multi_position_announcement": 1527,
-    "detail_access_restricted": 35,
-    "detail_fetch_failed:ConnectionError": 10,
+    "detail_unparseable_or_multi_position_announcement": 1535,
+    "detail_access_restricted": 44,
+    "detail_fetch_failed:ConnectionError": 11,
     "detail_http_error": 9,
     "detail_fetch_failed:ReadTimeout": 7,
     "detail_fetch_failed:ConnectTimeout": 1
   },
   "reason_counts_latest_by_url": {
-    "detail_unparseable_or_multi_position_announcement": 1527,
-    "detail_access_restricted": 35,
-    "detail_fetch_failed:ConnectionError": 10,
+    "detail_unparseable_or_multi_position_announcement": 1535,
+    "detail_access_restricted": 44,
+    "detail_fetch_failed:ConnectionError": 11,
     "detail_http_error": 9,
     "detail_fetch_failed:ReadTimeout": 7,
     "detail_fetch_failed:ConnectTimeout": 1
   },
   "http_status_counts": {
-    "200": 1527,
-    "403": 35,
-    "none": 18,
+    "200": 1535,
+    "403": 44,
+    "none": 19,
     "404": 5,
     "502": 2,
     "504": 2
@@ -49,11 +49,11 @@
     },
     {
       "host": "smics.zhiye.com",
-      "count": 40
+      "count": 50
     },
     {
       "host": "careers.hanglung.com",
-      "count": 17
+      "count": 23
     },
     {
       "host": "www.helichina.com",
@@ -81,6 +81,10 @@
     },
     {
       "host": "career.brgroup.com",
+      "count": 2
+    },
+    {
+      "host": "www.mokahr.com",
       "count": 2
     },
     {
@@ -119,7 +123,7 @@
     },
     {
       "path_shape": "/blog/{id}",
-      "count": 326
+      "count": 328
     },
     {
       "path_shape": "/page/positions/{id}/{id}?region",
@@ -162,15 +166,19 @@
       "count": 31
     },
     {
+      "path_shape": "/campusxq?jc&jobid&p",
+      "count": 30
+    },
+    {
       "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}",
       "count": 27
     },
     {
-      "path_shape": "/campusxq?jc&jobid&p",
-      "count": 20
+      "path_shape": "/page/positions/{id}/{id}?quickpick",
+      "count": 14
     },
     {
-      "path_shape": "/page/positions/{id}/{id}?quickpick",
+      "path_shape": "/go/all-jobs/{id}/{id}?sortcolumn&sortdirection",
       "count": 14
     },
     {
@@ -187,10 +195,6 @@
     },
     {
       "path_shape": "/job/{id}",
-      "count": 8
-    },
-    {
-      "path_shape": "/go/all-jobs/{id}/{id}?sortcolumn&sortdirection",
       "count": 8
     },
     {
@@ -277,45 +281,45 @@
   "samples_by_reason": {
     "detail_unparseable_or_multi_position_announcement": [
       {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/en_US/careers/JobDetail/Evergreen-HROPs-Brasil/79057",
+        "company_id": "cn-property-0912",
+        "company_name": "恒隆地产有限公司",
+        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/50/?q=&sortColumn=sort_title&sortDirection=asc",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/en_us/careers/jobdetail/evergreen-hrops-brasil/{id}"
+        "path_shape": "/go/all-jobs/{id}/{id}?sortcolumn&sortdirection"
       },
       {
         "company_id": "cn-property-0912",
         "company_name": "恒隆地产有限公司",
-        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/?q=&sortColumn=sort_title&sortDirection=asc",
+        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/50/?q=&sortColumn=sort_facility&sortDirection=asc",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/go/all-jobs/{id}?sortcolumn&sortdirection"
+        "path_shape": "/go/all-jobs/{id}/{id}?sortcolumn&sortdirection"
       },
       {
         "company_id": "cn-property-0912",
         "company_name": "恒隆地产有限公司",
-        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/?q=&sortColumn=sort_facility&sortDirection=asc",
+        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/50/?q=&sortColumn=sort_department&sortDirection=asc",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/go/all-jobs/{id}?sortcolumn&sortdirection"
+        "path_shape": "/go/all-jobs/{id}/{id}?sortcolumn&sortdirection"
       },
       {
         "company_id": "cn-property-0912",
         "company_name": "恒隆地产有限公司",
-        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/?q=&sortColumn=sort_department&sortDirection=asc",
+        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/25/?q=&sortColumn=sort_title&sortDirection=asc",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/go/all-jobs/{id}?sortcolumn&sortdirection"
+        "path_shape": "/go/all-jobs/{id}/{id}?sortcolumn&sortdirection"
       },
       {
         "company_id": "cn-property-0912",
         "company_name": "恒隆地产有限公司",
-        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/50/?q=&sortColumn=sort_title&sortDirection=desc",
+        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/25/?q=&sortColumn=sort_facility&sortDirection=asc",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
@@ -326,50 +330,59 @@
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/overseasxq?jobId=390472652&jc=3&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390786029&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,
-        "path_shape": "/overseasxq?jc&jobid&p"
+        "path_shape": "/campusxq?jc&jobid&p"
       },
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/overseasxq?jobId=390472643&jc=3&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390785057&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,
-        "path_shape": "/overseasxq?jc&jobid&p"
+        "path_shape": "/campusxq?jc&jobid&p"
       },
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/overseasxq?jobId=390472631&jc=3&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390784678&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,
-        "path_shape": "/overseasxq?jc&jobid&p"
+        "path_shape": "/campusxq?jc&jobid&p"
       },
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/overseasxq?jobId=390472405&jc=3&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390777763&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,
-        "path_shape": "/overseasxq?jc&jobid&p"
+        "path_shape": "/campusxq?jc&jobid&p"
       },
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/overseasxq?jobId=390472404&jc=3&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390777757&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,
-        "path_shape": "/overseasxq?jc&jobid&p"
+        "path_shape": "/campusxq?jc&jobid&p"
       }
     ],
     "detail_fetch_failed:ConnectionError": [
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390777118&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "reason": "detail_fetch_failed:ConnectionError",
+        "detail": null,
+        "http_status": null,
+        "path_shape": "/campusxq?jc&jobid&p"
+      },
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
@@ -401,15 +414,6 @@
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
         "source_url": "https://smics.zhiye.com/campusxq?jobId=390776946&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
-        "reason": "detail_fetch_failed:ConnectionError",
-        "detail": null,
-        "http_status": null,
-        "path_shape": "/campusxq?jc&jobid&p"
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?jobId=390776943&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
         "reason": "detail_fetch_failed:ConnectionError",
         "detail": null,
         "http_status": null,
@@ -672,58 +676,58 @@
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/overseasxq?jobId=390472652&jc=3&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390786029&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,
-        "path_shape": "/overseasxq?jc&jobid&p"
+        "path_shape": "/campusxq?jc&jobid&p"
       },
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/overseasxq?jobId=390472643&jc=3&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390785057&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,
-        "path_shape": "/overseasxq?jc&jobid&p"
+        "path_shape": "/campusxq?jc&jobid&p"
       },
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/overseasxq?jobId=390472631&jc=3&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390784678&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,
-        "path_shape": "/overseasxq?jc&jobid&p"
+        "path_shape": "/campusxq?jc&jobid&p"
       }
     ],
     "careers.hanglung.com": [
       {
         "company_id": "cn-property-0912",
         "company_name": "恒隆地产有限公司",
-        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/?q=&sortColumn=sort_title&sortDirection=asc",
+        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/50/?q=&sortColumn=sort_title&sortDirection=asc",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/go/all-jobs/{id}?sortcolumn&sortdirection"
+        "path_shape": "/go/all-jobs/{id}/{id}?sortcolumn&sortdirection"
       },
       {
         "company_id": "cn-property-0912",
         "company_name": "恒隆地产有限公司",
-        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/?q=&sortColumn=sort_facility&sortDirection=asc",
+        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/50/?q=&sortColumn=sort_facility&sortDirection=asc",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/go/all-jobs/{id}?sortcolumn&sortdirection"
+        "path_shape": "/go/all-jobs/{id}/{id}?sortcolumn&sortdirection"
       },
       {
         "company_id": "cn-property-0912",
         "company_name": "恒隆地产有限公司",
-        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/?q=&sortColumn=sort_department&sortDirection=asc",
+        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/50/?q=&sortColumn=sort_department&sortDirection=asc",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/go/all-jobs/{id}?sortcolumn&sortdirection"
+        "path_shape": "/go/all-jobs/{id}/{id}?sortcolumn&sortdirection"
       }
     ],
     "www.helichina.com": [
@@ -920,6 +924,26 @@
         "path_shape": "/campus-recruitment/{id}/{id}"
       }
     ],
+    "www.mokahr.com": [
+      {
+        "company_id": "cn-ins-0350",
+        "company_name": "众安在线财产保险股份有限公司",
+        "source_url": "https://www.mokahr.com/blog/39643.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/blog/{id}"
+      },
+      {
+        "company_id": "cn-ins-0350",
+        "company_name": "众安在线财产保险股份有限公司",
+        "source_url": "https://www.mokahr.com/blog/39551.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/blog/{id}"
+      }
+    ],
     "job.ceair.com": [
       {
         "company_id": "cn-soe-0050",
@@ -973,17 +997,6 @@
         "detail": null,
         "http_status": 200,
         "path_shape": "/en/jobs/{id}"
-      }
-    ],
-    "jobs.sanofi.cn": [
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/zh-hans/%e4%bd%8d%e7%bd%ae/china-country-jobs/2649/1814991/2",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/zh-hans/{id}/china-country-jobs/{id}/{id}/{id}"
       }
     ]
   }
