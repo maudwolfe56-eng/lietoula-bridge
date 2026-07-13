@@ -26,3 +26,13 @@
 {"company_id": "cn-soe-0034", "company_name": "中国交通建设集团有限公司", "http_status": 403, "observed_at": "2026-07-13T13:37:53.339552+00:00", "reason": "restricted", "url": "https://cccc.zhiye.com/"}
 {"company_id": "cn-soe-0035", "company_name": "中国中车集团有限公司", "http_status": 403, "observed_at": "2026-07-13T13:37:54.402898+00:00", "reason": "restricted", "url": "https://crrc.zhiye.com/"}
 {"company_id": "cn-soe-0036", "company_name": "中国宝武钢铁集团有限公司", "http_status": 403, "observed_at": "2026-07-13T13:37:55.653223+00:00", "reason": "restricted", "url": "https://baowu.zhiye.com/"}
+{"company_id": "cn-soe-0037", "company_name": "鞍钢集团有限公司", "http_status": 403, "observed_at": "2026-07-13T13:40:32.740290+00:00", "reason": "restricted", "url": "https://ansteel.zhiye.com/"}
+{"company_id": "cn-soe-0038", "company_name": "中国五矿集团有限公司", "http_status": 403, "observed_at": "2026-07-13T13:40:33.985121+00:00", "reason": "restricted", "url": "https://minmetals.zhiye.com/"}
+{"company_id": "cn-soe-0039", "company_name": "中国铝业集团有限公司", "http_status": 403, "observed_at": "2026-07-13T13:40:35.256609+00:00", "reason": "restricted", "url": "https://chinalco.zhiye.com/"}
+{"company_id": "cn-soe-0040", "company_name": "中国建材集团有限公司", "http_status": 403, "observed_at": "2026-07-13T13:40:36.480829+00:00", "reason": "restricted", "url": "https://cnbm.zhiye.com/"}
+{"company_id": "cn-soe-0041", "company_name": "中国机械工业集团有限公司", "http_status": 403, "observed_at": "2026-07-13T13:40:37.727135+00:00", "reason": "restricted", "url": "https://sinomach.zhiye.com/"}
+{"company_id": "cn-soe-0042", "company_name": "中国通用技术（集团）控股有限责任公司", "http_status": 403, "observed_at": "2026-07-13T13:40:39.172803+00:00", "reason": "restricted", "url": "https://genertec.zhiye.com/"}
+{"company_id": "cn-soe-0043", "company_name": "华润（集团）有限公司", "http_status": 403, "observed_at": "2026-07-13T13:40:40.326012+00:00", "reason": "restricted", "url": "https://crc.zhiye.com/"}
+{"company_id": "cn-soe-0044", "company_name": "招商局集团有限公司", "http_status": 403, "observed_at": "2026-07-13T13:40:41.520629+00:00", "reason": "restricted", "url": "https://cmhk.zhiye.com/"}
+{"company_id": "cn-soe-0045", "company_name": "中国保利集团有限公司", "http_status": 403, "observed_at": "2026-07-13T13:40:42.666143+00:00", "reason": "restricted", "url": "https://poly.zhiye.com/"}
+{"company_id": "cn-soe-0046", "company_name": "中国医药集团有限公司", "http_status": 403, "observed_at": "2026-07-13T13:40:43.886712+00:00", "reason": "restricted", "url": "https://sinopharm.zhiye.com/"}
