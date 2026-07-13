@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-13T12:27:38.218096+00:00",
+  "updated_at": "2026-07-13T13:05:00Z",
   "target_companies": 1000,
   "valid_seed_count": 14,
-  "official_entries_verified": 10,
+  "official_entries_verified": 12,
   "official_entry_candidates_pending": 2,
-  "companies_with_job_records": 3,
-  "job_records_total": 69,
-  "job_records_candidate_raw": 32,
+  "companies_with_job_records": 4,
+  "job_records_total": 77,
+  "job_records_candidate_raw": 40,
   "job_records_review_pending": 14,
   "job_records_inactive_expired": 23,
   "companies_final_acceptance_met": 0,
@@ -38,15 +38,31 @@
       "casic_overseas_records_normalized": 1,
       "casic_duplicate_records_deduplicated": 1,
       "casic_campus_channel_completed": false
+    },
+    "batch_0003": {
+      "companies_reviewed": 2,
+      "records": 8,
+      "status": "partial",
+      "cssc_official_entry_verified_by_browser": true,
+      "cssc_social_listing_observed": 13,
+      "cssc_social_details_normalized": 4,
+      "cssc_campus_records_observed": 59,
+      "cssc_campus_pages_observed": 4,
+      "cssc_campus_details_normalized": 4,
+      "cssc_intern_channel_reviewed": true,
+      "cssc_intern_openings_observed": 0,
+      "sgcc_official_entry_verified_by_browser": true,
+      "sgcc_enumeration_status": "pending_search_api_or_browser"
     }
   },
   "next_actions": [
+    "继续结构化中国船舶集团社会招聘剩余详情及校园招聘第2-4页，保留实习招聘无在招职位的页面证据",
+    "通过国家电网公开职位搜索接口或浏览器核验当前可申请职位，不绕过登录或验证码",
     "重试航天科工社会招聘第4页并完整核验校园招聘渠道",
     "继续结构化中核集团社会招聘第2-40页，并核验校园招聘与实习招聘渠道",
-    "新增并核验中国航天科技集团、中国航空工业集团、中国船舶集团等中央企业招聘入口",
+    "扩充并核验中国航天科技集团、中国航空工业集团、中国电子科技集团等重点企业招聘入口",
     "复核农业银行和中国人寿招聘入口",
     "解析中国银行2026年高层次海外人才招聘附件PDF，补齐已过期记录的职责、学历和经验要求",
-    "复核14条旧岗位的实际申请有效性；未披露截止日期时不得推断",
     "仅在公开页面仍提供申请入口且岗位详情完整时保留candidate_raw；不得自动设置active_verified"
   ],
   "policy": {
