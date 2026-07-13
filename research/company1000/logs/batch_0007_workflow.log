@@ -1,17 +1,1 @@
-Traceback (most recent call last):
-  File "/home/runner/work/lietoula-bridge/lietoula-bridge/research/company1000/run_batch_0007.py", line 173, in <module>
-    raise SystemExit(main())
-                     ^^^^^^
-  File "/home/runner/work/lietoula-bridge/lietoula-bridge/research/company1000/run_batch_0007.py", line 123, in main
-    coverage_rows.append(json.loads(line))
-                         ^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/json/decoder.py", line 338, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/json/decoder.py", line 354, in raw_decode
-    obj, end = self.scan_once(s, idx)
-               ^^^^^^^^^^^^^^^^^^^^^^
-json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 429 (char 428)
+{"batch_id": "batch_0007", "generated_at_utc": "2026-07-13T15:42:51.764488+00:00", "seed_count_after_merge": 46, "seed_start_index": 36, "seed_end_index_exclusive": 46, "companies_reviewed": 10, "status_counts": {"restricted": 10}, "batch_output_counts": {"coverage_batch_0007.jsonl": 10, "failures_batch_0007.jsonl": 10, "job_link_candidates_batch_0007.jsonl": 0}, "crawler_skipped_existing_complete_batch": true, "crawler_return_code": 0, "policy": {"auto_active_verified": false, "salary_inference_allowed": false, "login_captcha_or_paywall_bypass_allowed": false}, "final_acceptance_met": false}
