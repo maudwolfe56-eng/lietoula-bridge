@@ -6,9 +6,9 @@ companies whose current company_id/career_url audit key is absent from the
 coverage ledger. It preserves the conservative policy of crawl_company_jobs.py
 and uses bounded parallelism only for independent public HTTP requests.
 
-A discovered link is only a raw candidate. It must not become review_pending
-until the detail page has been fetched and the required fields, source family,
-location and timeliness checks have passed.
+A discovered link is only a raw candidate. Recruitment navigation is stored
+separately from probable job details; neither is promoted to review_pending
+without fetching and validating the detail record.
 """
 from __future__ import annotations
 
@@ -62,7 +62,15 @@ def select_pending(
     return selected
 
 
-def audit_one(entry: tuple[int, dict[str, Any]]) -> tuple[int, dict[str, Any], list[dict[str, Any]], list[dict[str, Any]]]:
+def audit_one(
+    entry: tuple[int, dict[str, Any]],
+) -> tuple[
+    int,
+    dict[str, Any],
+    list[dict[str, Any]],
+    list[dict[str, Any]],
+    list[dict[str, Any]],
+]:
     index, company = entry
     company_id = str(company.get("company_id") or "")
     name = str(company.get("company_name") or company.get("name") or "")
@@ -85,6 +93,7 @@ def audit_one(entry: tuple[int, dict[str, Any]]) -> tuple[int, dict[str, Any], l
             "text_length": 0,
             "enumeration_status": "missing_career_url",
             "job_link_candidate_count": 0,
+            "recruitment_navigation_count": 0,
             "error": "missing_career_url",
             "observed_at": observed_at,
             "final_acceptance_met": False,
@@ -95,7 +104,7 @@ def audit_one(entry: tuple[int, dict[str, Any]]) -> tuple[int, dict[str, Any], l
             "reason": "missing_career_url",
             "observed_at": observed_at,
         }]
-        return index, coverage, failures, []
+        return index, coverage, failures, [], []
 
     session = requests.Session()
     session.headers.update({
@@ -108,7 +117,7 @@ def audit_one(entry: tuple[int, dict[str, Any]]) -> tuple[int, dict[str, Any], l
         registrable_hint(host(official_site)) == registrable_hint(host(career_url))
     )
     source_association_supported = same_registered_family or seed_status == "official_entry_verified"
-    recruitment_signal_present = bool(result.job_links) or bool(
+    recruitment_signal_present = bool(result.recruitment_links) or bool(
         JOB_WORDS.search(f"{result.title or ''} {career_url}")
     )
     verified = bool(
@@ -120,7 +129,12 @@ def audit_one(entry: tuple[int, dict[str, Any]]) -> tuple[int, dict[str, Any], l
         and recruitment_signal_present
     )
 
-    enumeration_status = "html_links_discovered" if result.job_links else "no_links_observed"
+    if result.job_links:
+        enumeration_status = "job_detail_links_discovered"
+    elif result.recruitment_links:
+        enumeration_status = "recruitment_navigation_discovered"
+    else:
+        enumeration_status = "no_links_observed"
     if result.blocked:
         enumeration_status = "restricted"
     elif result.javascript_shell:
@@ -147,6 +161,7 @@ def audit_one(entry: tuple[int, dict[str, Any]]) -> tuple[int, dict[str, Any], l
         "text_length": result.text_length,
         "enumeration_status": enumeration_status,
         "job_link_candidate_count": len(result.job_links),
+        "recruitment_navigation_count": len(result.recruitment_links),
         "error": result.error,
         "observed_at": observed_at,
         "final_acceptance_met": False,
@@ -172,13 +187,21 @@ def audit_one(entry: tuple[int, dict[str, Any]]) -> tuple[int, dict[str, Any], l
         "company_id": company_id,
         "company_name": name,
         "source_url": job_url,
-        "source_type": "official_job_link_candidate",
+        "source_type": "official_job_detail_candidate",
         "review_status": "candidate_raw",
         "promotion_eligible": False,
         "review_recommendation": "fetch_detail_and_validate_required_fields",
         "discovered_at": observed_at,
     } for job_url in result.job_links]
-    return index, coverage, failures, links
+    navigation = [{
+        "company_id": company_id,
+        "company_name": name,
+        "source_url": navigation_url,
+        "source_type": "official_recruitment_navigation",
+        "enumeration_status": "requires_site_specific_enumerator",
+        "discovered_at": observed_at,
+    } for navigation_url in result.recruitment_links if navigation_url not in result.job_links]
+    return index, coverage, failures, links, navigation
 
 
 def main() -> int:
@@ -204,25 +227,29 @@ def main() -> int:
     coverage_file = out_dir / "coverage_auto.jsonl"
     failure_file = out_dir / "failures_auto.jsonl"
     link_file = out_dir / "job_link_candidates_auto.jsonl"
+    navigation_file = out_dir / "recruitment_navigation_auto.jsonl"
     processed = existing_keys(coverage_file, "audit_key")
     selected = select_pending(companies, processed, start, args.batch_size)
 
     coverage_rows: list[dict[str, Any]] = []
     failure_rows: list[dict[str, Any]] = []
     link_rows: list[dict[str, Any]] = []
+    navigation_rows: list[dict[str, Any]] = []
 
     worker_count = max(1, min(args.max_workers, len(selected) or 1))
     if selected:
         with ThreadPoolExecutor(max_workers=worker_count) as executor:
             results = list(executor.map(audit_one, selected))
-        for _, coverage, failures, links in sorted(results, key=lambda row: row[0]):
+        for _, coverage, failures, links, navigation in sorted(results, key=lambda row: row[0]):
             coverage_rows.append(coverage)
             failure_rows.extend(failures)
             link_rows.extend(links)
+            navigation_rows.extend(navigation)
 
     append_jsonl(coverage_file, coverage_rows)
     append_jsonl(failure_file, failure_rows)
     append_jsonl(link_file, link_rows)
+    append_jsonl(navigation_file, navigation_rows)
 
     all_processed = processed | {row["audit_key"] for row in coverage_rows}
     pending_count = sum(1 for company in companies if company_audit_key(company) not in all_processed)
@@ -242,6 +269,8 @@ def main() -> int:
             "selected_indices": [index for index, _ in selected],
             "selected_count": len(selected),
             "processed_count": len(coverage_rows),
+            "job_detail_candidates": len(link_rows),
+            "recruitment_navigation_links": len(navigation_rows),
             "max_workers": worker_count,
         },
         "policy": {
@@ -260,7 +289,8 @@ def main() -> int:
     print(json.dumps({
         "selected": len(selected),
         "processed": len(coverage_rows),
-        "links": len(link_rows),
+        "detail_links": len(link_rows),
+        "navigation_links": len(navigation_rows),
         "pending_seed_audits": pending_count,
         "next_index": next_index,
         "max_workers": worker_count,
