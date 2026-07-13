@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "batch_0004",
+  "generated_at": "2026-07-13T12:45:00Z",
+  "target_companies": 1000,
+  "seeded_companies_after_run": 16,
+  "companies_audited_this_run": 2,
+  "official_entries_verified_this_run": 2,
+  "job_records_imported_this_run": 0,
+  "job_changes_emitted_this_run": 0,
+  "cumulative_job_records": 92,
+  "cumulative_status_counts": {
+    "candidate_raw": 43,
+    "review_pending": 26,
+    "inactive_expired": 23,
+    "active_verified": 0
+  },
+  "companies_final_acceptance_met": 0,
+  "completion_status": "not_complete",
+  "acceptance_gaps": [
+    "984 target companies have not yet been added to the verified seed set.",
+    "中国航空工业集团集团级人才页面未枚举具体职位，需继续核验所属单位公开招聘页。",
+    "中国电科集团级公告页未枚举当前可申请岗位，需继续核验成员单位和官方申请入口。",
+    "Existing partial companies still have outstanding pagination, dynamic portal, detail-page and freshness checks."
+  ],
+  "policy_checks": {
+    "active_verified_written": false,
+    "salary_inferred": false,
+    "access_controls_bypassed": false,
+    "third_party_used_as_sole_source": false
+  },
+  "artifacts": {
+    "company_source": "research/company1000/runs/batch_0004/CompanySource.json",
+    "job_import": "research/company1000/runs/batch_0004/JobImport.json",
+    "coverage": "research/company1000/output/coverage_batch_0004.jsonl",
+    "failures": "research/company1000/output/failures_batch_0004.jsonl",
+    "job_changes": "research/company1000/runs/batch_0004/JobChanges.json",
+    "checkpoint": "research/company1000/runtime/checkpoint.json"
+  }
+}
