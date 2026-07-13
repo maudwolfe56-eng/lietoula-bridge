@@ -1,0 +1,12 @@
+{
+  "requested_at": "2026-07-13T17:45:00Z",
+  "sequence": 1,
+  "purpose": "Run next incremental official-source recruitment audit batch",
+  "target_companies": 1000,
+  "policy": {
+    "official_sources_only": true,
+    "auto_active_verified": false,
+    "salary_inference_allowed": false,
+    "access_control_bypass_allowed": false
+  }
+}
