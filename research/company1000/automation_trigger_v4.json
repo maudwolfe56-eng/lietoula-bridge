@@ -1,6 +1,6 @@
 {
-  "requested_at": "2026-07-13T23:36:10Z",
-  "sequence": 6,
+  "requested_at": "2026-07-13T23:48:30Z",
+  "sequence": 7,
   "purpose": "Continue unattended company1000 processing after the next-unprocessed company audit: prioritize unresolved official recruitment navigation and detail candidates, perform two-pass classification, resolve public embedded and HTML job payloads, route official multi-position announcements, rebuild deduplicated deliverables, detect new/modified/closed/expired records, and reassess final acceptance",
   "target_companies": 1000,
   "execution": {
