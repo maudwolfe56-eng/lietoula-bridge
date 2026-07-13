@@ -52,14 +52,14 @@ jobs:
           set -o pipefail
           mkdir -p output runtime logs deliverables
           python crawl_company_jobs_merged.py --seed-file company_seed_1000.json --output-dir output --state-file runtime/checkpoint.json --batch-size 50 | tee logs/next_batch_auto.log
-      - name: Reclassify ATS URLs
+      - name: Reclassify existing ATS URLs
         id: reclassify
         continue-on-error: true
         working-directory: research/company1000
         run: |
           set -o pipefail
           python reclassify_navigation_detail_urls.py --output-dir output | tee logs/reclassify_navigation_detail_urls.log
-      - name: Classify detail candidates
+      - name: Classify existing detail candidates
         id: classify
         continue-on-error: true
         working-directory: research/company1000
@@ -72,21 +72,35 @@ jobs:
         working-directory: research/company1000
         run: |
           set -o pipefail
-          python enumerate_recruitment_navigation_v4.py --seed-file runtime/company_seed_merged.json --output-dir output --state-file runtime/checkpoint.json --batch-size 300 --max-workers 12 --max-attempts 4 --max-children-per-page 60 --timeout-seconds 18 | tee logs/navigation_expansion.log
+          python enumerate_recruitment_navigation_v4.py --seed-file runtime/company_seed_merged.json --output-dir output --state-file runtime/checkpoint.json --batch-size 800 --max-workers 12 --max-attempts 4 --max-children-per-page 60 --timeout-seconds 18 | tee logs/navigation_expansion.log
+      - name: Reclassify newly discovered ATS URLs
+        id: reclassify_post
+        continue-on-error: true
+        working-directory: research/company1000
+        run: |
+          set -o pipefail
+          python reclassify_navigation_detail_urls.py --output-dir output | tee logs/reclassify_navigation_detail_urls_post_navigation.log
+      - name: Classify newly discovered detail candidates
+        id: classify_post
+        continue-on-error: true
+        working-directory: research/company1000
+        run: |
+          set -o pipefail
+          python classify_detail_candidates_v2.py --output-dir output | tee logs/classify_detail_candidates_post_navigation.log
       - name: Resolve public embedded job payloads
         id: embedded
         continue-on-error: true
         working-directory: research/company1000
         run: |
           set -o pipefail
-          python resolve_embedded_job_data.py --output-dir output --batch-size 240 --max-workers 12 --timeout-seconds 20 | tee logs/resolve_embedded_job_data.log
+          python resolve_embedded_job_data.py --output-dir output --batch-size 500 --max-workers 12 --timeout-seconds 20 | tee logs/resolve_embedded_job_data.log
       - name: Resolve remaining HTML job details
         id: detail
         continue-on-error: true
         working-directory: research/company1000
         run: |
           set -o pipefail
-          python resolve_job_detail_candidates_v3.py --output-dir output --batch-size 120 --max-workers 12 --max-attempts 3 | tee logs/resolve_job_details.log
+          python resolve_job_detail_candidates_v3.py --output-dir output --batch-size 400 --max-workers 12 --max-attempts 3 | tee logs/resolve_job_details.log
       - name: Summarize detail failures
         if: always()
         working-directory: research/company1000
@@ -97,7 +111,7 @@ jobs:
         working-directory: research/company1000
         run: |
           set -o pipefail
-          python resolve_multi_position_announcements.py --output-dir output --batch-size 100 --max-workers 8 --max-attempts 3 | tee logs/resolve_multi_position_announcements.log
+          python resolve_multi_position_announcements.py --output-dir output --batch-size 200 --max-workers 8 --max-attempts 3 | tee logs/resolve_multi_position_announcements.log
       - name: Build package and acceptance
         if: always()
         working-directory: research/company1000
@@ -120,10 +134,12 @@ jobs:
             'reclassify': '${{ steps.reclassify.outcome }}',
             'classify': '${{ steps.classify.outcome }}',
             'navigation': '${{ steps.navigation.outcome }}',
+            'reclassify_post_navigation': '${{ steps.reclassify_post.outcome }}',
+            'classify_post_navigation': '${{ steps.classify_post.outcome }}',
             'embedded': '${{ steps.embedded.outcome }}',
             'detail': '${{ steps.detail.outcome }}',
             'announcement': '${{ steps.announcement.outcome }}',
-            'mode': 'embedded_and_html_detail_resolution'
+            'mode': 'two_pass_classification_and_accelerated_detail_resolution'
           }, ensure_ascii=False, indent=2), encoding='utf-8')
           PY
       - name: Commit generated outputs
@@ -135,7 +151,7 @@ jobs:
           if git diff --cached --quiet; then
             echo 'No generated changes to commit'
           else
-            git commit -m 'research: persist embedded company1000 detail outputs'
+            git commit -m 'research: persist accelerated company1000 detail outputs'
             for attempt in 1 2 3; do
               if git pull --rebase origin research/company1000-crawler-20260713 && git push origin HEAD:research/company1000-crawler-20260713; then exit 0; fi
               sleep 5
@@ -143,5 +159,5 @@ jobs:
             exit 1
           fi
       - name: Fail if processing failed
-        if: steps.batch.outcome == 'failure' || steps.reclassify.outcome == 'failure' || steps.classify.outcome == 'failure' || steps.navigation.outcome == 'failure' || steps.embedded.outcome == 'failure' || steps.detail.outcome == 'failure' || steps.announcement.outcome == 'failure'
+        if: steps.batch.outcome == 'failure' || steps.reclassify.outcome == 'failure' || steps.classify.outcome == 'failure' || steps.navigation.outcome == 'failure' || steps.reclassify_post.outcome == 'failure' || steps.classify_post.outcome == 'failure' || steps.embedded.outcome == 'failure' || steps.detail.outcome == 'failure' || steps.announcement.outcome == 'failure'
         run: exit 1
