@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "duplicate_seed_rows_excluded": 78,
+  "duplicate_seed_rows_excluded": 88,
   "company_id_collisions_resolved": 7,
   "duplicates": [
     {
@@ -703,6 +703,96 @@
       "skipped_company_name": "上海医药集团股份有限公司",
       "kept_company_id": "cn-health-0224",
       "kept_company_name": "上海医药集团股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0022.json",
+      "source_row": 1,
+      "skipped_company_id": "cn-port-0851",
+      "skipped_company_name": "上海国际港务（集团）股份有限公司",
+      "kept_company_id": "cn-port-0276",
+      "kept_company_name": "上海国际港务（集团）股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0022.json",
+      "source_row": 2,
+      "skipped_company_id": "cn-port-0852",
+      "skipped_company_name": "宁波舟山港股份有限公司",
+      "kept_company_id": "cn-port-0277",
+      "kept_company_name": "宁波舟山港股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0022.json",
+      "source_row": 3,
+      "skipped_company_id": "cn-port-0853",
+      "skipped_company_name": "青岛港国际股份有限公司",
+      "kept_company_id": "cn-port-0278",
+      "kept_company_name": "青岛港国际股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0022.json",
+      "source_row": 4,
+      "skipped_company_id": "cn-port-0854",
+      "skipped_company_name": "广州港股份有限公司",
+      "kept_company_id": "cn-port-0279",
+      "kept_company_name": "广州港股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0022.json",
+      "source_row": 26,
+      "skipped_company_id": "cn-airline-0876",
+      "skipped_company_name": "春秋航空股份有限公司",
+      "kept_company_id": "cn-air-0272",
+      "kept_company_name": "春秋航空股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0022.json",
+      "source_row": 27,
+      "skipped_company_id": "cn-airline-0877",
+      "skipped_company_name": "上海吉祥航空股份有限公司",
+      "kept_company_id": "cn-air-0273",
+      "kept_company_name": "上海吉祥航空股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0022.json",
+      "source_row": 28,
+      "skipped_company_id": "cn-airline-0878",
+      "skipped_company_name": "海南航空控股股份有限公司",
+      "kept_company_id": "cn-air-0271",
+      "kept_company_name": "海南航空控股股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0022.json",
+      "source_row": 30,
+      "skipped_company_id": "cn-airline-0880",
+      "skipped_company_name": "厦门航空有限公司",
+      "kept_company_id": "cn-air-0274",
+      "kept_company_name": "厦门航空有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0022.json",
+      "source_row": 32,
+      "skipped_company_id": "cn-airline-0882",
+      "skipped_company_name": "深圳航空有限责任公司",
+      "kept_company_id": "cn-air-0275",
+      "kept_company_name": "深圳航空有限责任公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0022.json",
+      "source_row": 37,
+      "skipped_company_id": "cn-logistics-0887",
+      "skipped_company_name": "顺丰控股股份有限公司",
+      "kept_company_id": "cn-log-0059",
+      "kept_company_name": "顺丰控股股份有限公司",
       "reason": "duplicate_exact_company_name"
     }
   ],
