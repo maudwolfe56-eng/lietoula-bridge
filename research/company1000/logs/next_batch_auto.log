@@ -1,2 +1,2 @@
 {"merged_seed_count": 250, "duplicate_seed_rows_excluded": 20, "company_id_collisions_resolved": 7, "sources": ["company_seed_1000.json", "company_seed_expansion_0001.json", "company_seed_expansion_0002.json", "company_seed_expansion_0003.json", "company_seed_expansion_0004.json", "company_seed_expansion_0005.json", "company_seed_expansion_0006.json", "company_seed_expansion_0007.json", "company_seed_expansion_0008.json"]}
-{"selected": 50, "processed": 50, "links": 10, "pending_seed_audits": 24, "next_index": 248, "max_workers": 10}
+{"selected": 20, "processed": 20, "links": 0, "pending_seed_audits": 29, "next_index": 133, "max_workers": 8}
