@@ -2,12 +2,13 @@
   "schema_version": "1.0",
   "target_count": 1000,
   "seed_status": "incrementally_expanded_auditable_seed",
-  "valid_seed_count": 80,
+  "valid_seed_count": 100,
   "source_files": [
     "company_seed_1000.json",
     "company_seed_expansion_0001.json",
     "company_seed_expansion_0002.json",
-    "company_seed_expansion_0003.json"
+    "company_seed_expansion_0003.json",
+    "company_seed_expansion_0004.json"
   ],
   "companies": [
     {
@@ -808,6 +809,206 @@
       "official_website": "https://www.gwm.com.cn/",
       "career_url": "https://career.gwm.com.cn/",
       "career_entry_evidence": "长城汽车官方主域名下招聘子域名候选，交由本批公开访问审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-auto-0081",
+      "company_name": "上海汽车集团股份有限公司",
+      "short_name": "上汽集团",
+      "industry": "汽车与智能出行",
+      "official_website": "https://www.saicmotor.com/",
+      "career_url": "https://saicmotor.zhiye.com/",
+      "career_entry_evidence": "上汽集团品牌招聘ATS候选，须由官方主站链接或官方招聘公告复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-auto-0082",
+      "company_name": "广州汽车集团股份有限公司",
+      "short_name": "广汽集团",
+      "industry": "汽车与智能出行",
+      "official_website": "https://www.gac.com.cn/",
+      "career_url": "https://gac.zhiye.com/",
+      "career_entry_evidence": "广汽集团品牌招聘ATS候选，须由官方主站链接或官方招聘公告复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-auto-0083",
+      "company_name": "东风汽车集团有限公司",
+      "short_name": "东风汽车集团",
+      "industry": "汽车与智能出行",
+      "official_website": "https://www.dfmc.com.cn/",
+      "career_url": "https://dfmc.zhiye.com/",
+      "career_entry_evidence": "东风汽车集团品牌招聘ATS候选，须由官方主站链接或官方招聘公告复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-auto-0084",
+      "company_name": "中国第一汽车集团有限公司",
+      "short_name": "中国一汽",
+      "industry": "汽车与智能出行",
+      "official_website": "https://www.faw.com.cn/",
+      "career_url": "https://faw.zhiye.com/",
+      "career_entry_evidence": "中国一汽品牌招聘ATS候选，须由官方主站链接或官方招聘公告复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-auto-0085",
+      "company_name": "重庆长安汽车股份有限公司",
+      "short_name": "长安汽车",
+      "industry": "汽车与智能出行",
+      "official_website": "https://www.changan.com.cn/",
+      "career_url": "https://changan.zhiye.com/",
+      "career_entry_evidence": "长安汽车品牌招聘ATS候选，须由官方主站链接或官方招聘公告复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-auto-0086",
+      "company_name": "广州小鹏汽车科技有限公司",
+      "short_name": "小鹏汽车",
+      "industry": "新能源汽车与智能出行",
+      "official_website": "https://www.xiaopeng.com/",
+      "career_url": "https://job.xiaopeng.com/",
+      "career_entry_evidence": "小鹏汽车官方主域名下招聘子域名候选，交由公开访问审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-auto-0087",
+      "company_name": "浙江零跑科技股份有限公司",
+      "short_name": "零跑汽车",
+      "industry": "新能源汽车与智能出行",
+      "official_website": "https://www.leapmotor.com/",
+      "career_url": "https://leapmotor.zhiye.com/",
+      "career_entry_evidence": "零跑汽车品牌招聘ATS候选，须由官方主站链接或官方招聘公告复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-auto-0088",
+      "company_name": "赛力斯集团股份有限公司",
+      "short_name": "赛力斯集团",
+      "industry": "新能源汽车与智能制造",
+      "official_website": "https://www.seres.cn/",
+      "career_url": "https://seres.zhiye.com/",
+      "career_entry_evidence": "赛力斯品牌招聘ATS候选，须由官方主站链接或官方招聘公告复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-mfg-0089",
+      "company_name": "海尔集团公司",
+      "short_name": "海尔集团",
+      "industry": "智能家电与物联网",
+      "official_website": "https://www.haier.com/",
+      "career_url": "https://maker.haier.net/client/hrportal/",
+      "career_entry_evidence": "海尔品牌公开招聘门户候选，交由HTTP、页面标题及官方关联审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-mfg-0090",
+      "company_name": "珠海格力电器股份有限公司",
+      "short_name": "格力电器",
+      "industry": "家电与智能制造",
+      "official_website": "https://www.gree.com/",
+      "career_url": "https://gree.zhiye.com/",
+      "career_entry_evidence": "格力电器品牌招聘ATS候选，须由官方主站链接或官方招聘公告复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-mfg-0091",
+      "company_name": "海信集团控股股份有限公司",
+      "short_name": "海信集团",
+      "industry": "智能家电与显示技术",
+      "official_website": "https://www.hisense.com/",
+      "career_url": "https://hisense.zhiye.com/",
+      "career_entry_evidence": "海信集团品牌招聘ATS候选，须由官方主站链接或官方招聘公告复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-mfg-0092",
+      "company_name": "创维集团有限公司",
+      "short_name": "创维集团",
+      "industry": "智能终端与家电",
+      "official_website": "https://www.skyworth.com/",
+      "career_url": "https://skyworth.zhiye.com/",
+      "career_entry_evidence": "创维集团品牌招聘ATS候选，须由官方主站链接或官方招聘公告复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-tech-0093",
+      "company_name": "科大讯飞股份有限公司",
+      "short_name": "科大讯飞",
+      "industry": "人工智能与智能语音",
+      "official_website": "https://www.iflytek.com/",
+      "career_url": "https://job.iflytek.com/",
+      "career_entry_evidence": "科大讯飞官方主域名下招聘子域名候选，交由公开访问审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-tech-0094",
+      "company_name": "深圳市大疆创新科技有限公司",
+      "short_name": "大疆创新",
+      "industry": "无人机与智能硬件",
+      "official_website": "https://www.dji.com/cn",
+      "career_url": "https://we.dji.com/",
+      "career_entry_evidence": "大疆品牌招聘门户候选，交由HTTP、页面标题及官方关联审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-tech-0095",
+      "company_name": "杭州海康威视数字技术股份有限公司",
+      "short_name": "海康威视",
+      "industry": "智能物联与视频技术",
+      "official_website": "https://www.hikvision.com/cn/",
+      "career_url": "https://career.hikvision.com/",
+      "career_entry_evidence": "海康威视官方主域名下招聘子域名候选，交由公开访问审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-tech-0096",
+      "company_name": "浙江大华技术股份有限公司",
+      "short_name": "大华股份",
+      "industry": "智能物联与视频技术",
+      "official_website": "https://www.dahuatech.com/",
+      "career_url": "https://dahua.zhiye.com/",
+      "career_entry_evidence": "大华股份品牌招聘ATS候选，须由官方主站链接或官方招聘公告复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-health-0097",
+      "company_name": "深圳迈瑞生物医疗电子股份有限公司",
+      "short_name": "迈瑞医疗",
+      "industry": "医疗器械与生命科技",
+      "official_website": "https://www.mindray.com/cn/",
+      "career_url": "https://career.mindray.com/",
+      "career_entry_evidence": "迈瑞品牌招聘子域名候选，交由HTTP、页面标题及官方关联审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-health-0098",
+      "company_name": "无锡药明康德新药开发股份有限公司",
+      "short_name": "药明康德",
+      "industry": "医药研发服务",
+      "official_website": "https://www.wuxiapptec.com.cn/",
+      "career_url": "https://wuxiapptec.zhiye.com/",
+      "career_entry_evidence": "药明康德品牌招聘ATS候选，须由官方主站链接或官方招聘公告复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-health-0099",
+      "company_name": "江苏恒瑞医药股份有限公司",
+      "short_name": "恒瑞医药",
+      "industry": "创新药与医药制造",
+      "official_website": "https://www.hrs.com.cn/",
+      "career_url": "https://hrs.zhiye.com/",
+      "career_entry_evidence": "恒瑞医药品牌招聘ATS候选，须由官方主站链接或官方招聘公告复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-hold-0100",
+      "company_name": "复星国际有限公司",
+      "short_name": "复星国际",
+      "industry": "综合产业与医药健康",
+      "official_website": "https://www.fosun.com/",
+      "career_url": "https://fosun.zhiye.com/",
+      "career_entry_evidence": "复星品牌招聘ATS候选，须由官方主站链接或官方招聘公告复核。",
       "seed_status": "official_entry_candidate"
     }
   ]
