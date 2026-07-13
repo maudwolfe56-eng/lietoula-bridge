@@ -1,10 +1,11 @@
 {
-  "requested_at": "2026-07-13T19:50:00Z",
-  "sequence": 24,
-  "purpose": "Run the bounded recruitment-navigation enumerator against unresolved official sources, continue remaining company audits, resolve probable job-detail candidates and multi-position official announcements, rebuild deduplicated deliverables, and reassess final acceptance",
+  "requested_at": "2026-07-13T19:53:00Z",
+  "sequence": 25,
+  "purpose": "Run the bounded recruitment-navigation and retry-aware job-detail resolvers, continue remaining official company audits and multi-position announcement extraction, rebuild deduplicated deliverables, and reassess final acceptance",
   "target_companies": 1000,
   "priority": {
     "bounded_recruitment_navigation_v2": true,
+    "retry_aware_job_detail_resolution_v2": true,
     "unresolved_recruitment_navigation": true,
     "probable_job_detail_candidates": true,
     "official_public_announcements": true,
@@ -20,6 +21,7 @@
     "review_pending_requires_detail_validation": true,
     "official_entry_verification_requires_recruitment_signal": true,
     "recruitment_navigation_requires_site_specific_resolution": true,
-    "unparseable_public_announcements_remain_pending": true
+    "unparseable_public_announcements_remain_pending": true,
+    "transient_detail_failures_remain_retryable": true
   }
 }
