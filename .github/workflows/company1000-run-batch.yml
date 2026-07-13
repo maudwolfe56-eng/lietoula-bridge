@@ -33,20 +33,50 @@ jobs:
           pip install requests beautifulsoup4 lxml python-dateutil
 
       - name: Run deterministic batch 0006
-        run: python research/company1000/run_batch_0006.py
+        id: batch
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          mkdir -p research/company1000/logs research/company1000/runs/batch_0006
+          python research/company1000/run_batch_0006.py 2>&1 \
+            | tee research/company1000/logs/batch_0006_workflow.log
 
-      - name: Commit results to research branch
+      - name: Record workflow outcome
+        if: always()
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+          path = Path('research/company1000/runs/batch_0006/workflow_outcome.json')
+          path.parent.mkdir(parents=True, exist_ok=True)
+          path.write_text(json.dumps({
+              'generated_at_utc': datetime.now(timezone.utc).isoformat(),
+              'runner_step_outcome': '${{ steps.batch.outcome }}',
+              'runner_step_conclusion': '${{ steps.batch.conclusion }}'
+          }, ensure_ascii=False, indent=2), encoding='utf-8')
+          PY
+
+      - name: Commit results and diagnostics to research branch
+        if: always()
+        shell: bash
         run: |
           git config user.name "company1000-automation"
           git config user.email "company1000-automation@users.noreply.github.com"
-          git add research/company1000/company_seed_1000.json \
-                  research/company1000/output \
-                  research/company1000/runtime \
-                  research/company1000/logs \
-                  research/company1000/runs/batch_0006
+          git add -A research/company1000/company_seed_1000.json \
+                     research/company1000/output \
+                     research/company1000/runtime \
+                     research/company1000/logs \
+                     research/company1000/runs/batch_0006
           if git diff --cached --quiet; then
             echo "No generated changes to commit"
           else
-            git commit -m "research: audit company1000 batch 0006 entries 27-36"
+            git commit -m "research: persist company1000 batch 0006 outputs and diagnostics"
             git push origin HEAD:research/company1000-crawler-20260713
           fi
+
+      - name: Fail workflow if runner failed
+        if: steps.batch.outcome == 'failure'
+        run: exit 1
