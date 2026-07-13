@@ -1,328 +1,622 @@
 {
   "schema_version": "1.1",
-  "assessed_at": "2026-07-13T18:22:10.062934+00:00",
+  "assessed_at": "2026-07-13T18:25:21.329658+00:00",
   "target_companies": 1000,
   "seeded_unique_companies": 350,
   "seed_shortfall": 650,
   "companies_with_coverage": 323,
-  "companies_with_explicit_failure_reason": 257,
+  "companies_with_explicit_failure_reason": 259,
   "companies_without_audit_count": 0,
   "companies_without_audit_sample": [],
   "job_records": 122,
-  "all_recruitment_candidates": 173,
-  "probable_job_detail_candidates": 30,
-  "resolved_job_detail_candidates": 29,
-  "pending_job_detail_candidates": 1,
+  "all_recruitment_candidates": 407,
+  "probable_job_detail_candidates": 108,
+  "resolved_job_detail_candidates": 49,
+  "pending_job_detail_candidates": 59,
   "pending_job_detail_sample": [
+    {
+      "company_id": "cn-ins-0350",
+      "company_name": "众安在线财产保险股份有限公司",
+      "source_url": "https://mokahr.com/blog/26725.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-ins-0350",
+      "company_name": "众安在线财产保险股份有限公司",
+      "source_url": "https://mokahr.com/blog/25407.html",
+      "reason": null
+    },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
-      "source_url": "https://www.gdnybank.com/jobnews/20251201/37312.html",
+      "source_url": "https://www.gdnybank.com/jobnews/20251013/36970.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20251013/36969.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20251013/36968.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20251013/36967.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20251013/36966.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20251013/36965.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20251013/36964.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20251013/36963.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20251013/36962.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20251013/36961.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20251013/36960.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20251013/36959.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20251013/36958.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20251013/36957.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20251013/36956.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250901/36745.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250901/36744.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250901/36743.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250901/36742.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250901/36741.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250901/36740.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250901/36739.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250901/36738.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250901/36737.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250901/36736.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250901/36735.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250901/36734.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250901/36733.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250901/36732.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250901/36731.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250901/36730.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250703/36400.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250611/36244.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250523/36132.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250523/36131.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250417/35918.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250417/35917.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250214/35452.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250120/35311.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250113/35220.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250113/35219.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250106/35175.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250106/35174.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250106/35173.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250106/35172.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20250106/35171.html",
+      "reason": null
+    },
+    {
+      "company_id": "cn-tech-0063",
+      "company_name": "联想集团有限公司",
+      "source_url": "https://jobs.lenovo.com/en_US/careers/JobDetail/Server-Test-Engineer/76629",
+      "reason": null
+    },
+    {
+      "company_id": "cn-tech-0063",
+      "company_name": "联想集团有限公司",
+      "source_url": "https://jobs.lenovo.com/en_US/careers/JobDetail/Firmware-Engineer-I-UEFI/79236",
       "reason": null
     }
   ],
-  "recruitment_navigation_candidates": 143,
-  "resolved_recruitment_navigation": 16,
-  "pending_recruitment_navigation": 127,
+  "recruitment_navigation_candidates": 299,
+  "resolved_recruitment_navigation": 108,
+  "pending_recruitment_navigation": 191,
   "pending_recruitment_navigation_sample": [
     {
-      "company_id": "cn-soe-0049",
-      "company_name": "中国国际航空股份有限公司",
-      "source_url": "http://www.airchina.com.cn/cn/about_us/recruitment/index.shtml",
+      "company_id": "cn-soe-0012",
+      "company_name": "中国航天科工集团有限公司",
+      "source_url": "https://casic.zhiye.com/xzlist",
       "reason": null
     },
     {
-      "company_id": "cn-soe-0049",
-      "company_name": "中国国际航空股份有限公司",
-      "source_url": "http://www.airchina.com.cn/cn/about_us/recruitment/pilot.shtml",
+      "company_id": "cn-soe-0012",
+      "company_name": "中国航天科工集团有限公司",
+      "source_url": "https://casic.zhiye.com/szlist",
       "reason": null
     },
     {
-      "company_id": "cn-soe-0049",
-      "company_name": "中国国际航空股份有限公司",
-      "source_url": "http://www.airchina.com.cn/cn/about_us/recruitment/cabin_crew.shtml",
+      "company_id": "cn-soe-0012",
+      "company_name": "中国航天科工集团有限公司",
+      "source_url": "https://casic.zhiye.com/zblist",
       "reason": null
     },
     {
-      "company_id": "cn-soe-0049",
-      "company_name": "中国国际航空股份有限公司",
-      "source_url": "http://www.airchina.com.cn/cn/about_us/recruitment/ground_crew.shtml",
+      "company_id": "cn-soe-0012",
+      "company_name": "中国航天科工集团有限公司",
+      "source_url": "https://casic.zhiye.com/Overseaslist",
       "reason": null
     },
     {
-      "company_id": "cn-soe-0049",
-      "company_name": "中国国际航空股份有限公司",
-      "source_url": "http://www.airchina.com.cn/cn/about_us/recruitment/ground_crew_info/185165.shtml",
+      "company_id": "cn-soe-0129",
+      "company_name": "中国旅游集团有限公司",
+      "source_url": "https://www.ctg.cn/careers-t46",
       "reason": null
     },
     {
-      "company_id": "cn-soe-0050",
-      "company_name": "中国东方航空股份有限公司",
-      "source_url": "https://job.ceair.com/campus/campusJobList.html",
+      "company_id": "cn-soe-0129",
+      "company_name": "中国旅游集团有限公司",
+      "source_url": "https://www.ctg.cn/article/19926",
       "reason": null
     },
     {
-      "company_id": "cn-soe-0050",
-      "company_name": "中国东方航空股份有限公司",
-      "source_url": "https://job.ceair.com/Internal/internalJobList.html",
+      "company_id": "cn-soe-0143",
+      "company_name": "中国物流集团有限公司",
+      "source_url": "https://www.chinalogisticsgroup.com.cn/zh-cn/join/hotjob.shtml",
       "reason": null
     },
     {
-      "company_id": "cn-soe-0050",
-      "company_name": "中国东方航空股份有限公司",
-      "source_url": "https://job.ceair.com/",
+      "company_id": "cn-soe-0164",
+      "company_name": "中国轻工集团有限公司",
+      "source_url": "https://www.sinolight.cn/1303.html",
       "reason": null
     },
     {
-      "company_id": "cn-soe-0050",
-      "company_name": "中国东方航空股份有限公司",
-      "source_url": "https://job.ceair.com/about/culture.html",
+      "company_id": "cn-ins-0179",
+      "company_name": "富德生命人寿保险股份有限公司",
+      "source_url": "https://www.sino-life.com/job/",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0053",
-      "company_name": "京东集团股份有限公司",
-      "source_url": "https://zhaopin.jd.com/web/job/job_info_list/3",
+      "company_id": "cn-amc-0183",
+      "company_name": "中国长城资产管理股份有限公司",
+      "source_url": "https://www.gwamcc.com/JobInfo.aspx?liName=129",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0053",
-      "company_name": "京东集团股份有限公司",
-      "source_url": "http://campus.jd.com/home",
+      "company_id": "cn-amc-0183",
+      "company_name": "中国长城资产管理股份有限公司",
+      "source_url": "https://www.gwamcc.com/JobInfo.aspx?liName=85",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0053",
-      "company_name": "京东集团股份有限公司",
-      "source_url": "https://campus.jd.com/",
+      "company_id": "cn-sec-0189",
+      "company_name": "中信证券股份有限公司",
+      "source_url": "https://careers.citics.com",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0056",
-      "company_name": "百度在线网络技术（北京）有限公司",
-      "source_url": "https://talent.baidu.com/static/index.html",
+      "company_id": "cn-sec-0189",
+      "company_name": "中信证券股份有限公司",
+      "source_url": "https://careers.citics.com/campus/headquarters",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0063",
-      "company_name": "联想集团有限公司",
-      "source_url": "https://jobs.lenovo.com/en_US/careers",
+      "company_id": "cn-sec-0189",
+      "company_name": "中信证券股份有限公司",
+      "source_url": "https://careers.citics.com/headquarters/interns",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0063",
-      "company_name": "联想集团有限公司",
-      "source_url": "https://jobs.lenovo.com/en_US/careers/Home",
+      "company_id": "cn-sec-0189",
+      "company_name": "中信证券股份有限公司",
+      "source_url": "https://careers.citics.com/campus/branch",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0063",
-      "company_name": "联想集团有限公司",
-      "source_url": "https://jobs.lenovo.com/en_US/careers/Perks",
+      "company_id": "cn-sec-0189",
+      "company_name": "中信证券股份有限公司",
+      "source_url": "https://careers.citics.com/social/headquarters/",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0063",
-      "company_name": "联想集团有限公司",
-      "source_url": "https://jobs.lenovo.com/en_US/careers/Culture",
+      "company_id": "cn-sec-0189",
+      "company_name": "中信证券股份有限公司",
+      "source_url": "https://careers.citics.com/social/branch",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0063",
-      "company_name": "联想集团有限公司",
-      "source_url": "https://jobs.lenovo.com/en_US/careers/Locations",
+      "company_id": "cn-sec-0189",
+      "company_name": "中信证券股份有限公司",
+      "source_url": "https://careers.citics.com/",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0063",
-      "company_name": "联想集团有限公司",
-      "source_url": "https://jobs.lenovo.com/en_US/careers/University",
+      "company_id": "cn-sec-0189",
+      "company_name": "中信证券股份有限公司",
+      "source_url": "https://careers.citics.com/campus/headquarters/",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0063",
-      "company_name": "联想集团有限公司",
-      "source_url": "https://jobs.lenovo.com/en_US/careers/EarlyCareer",
+      "company_id": "cn-sec-0189",
+      "company_name": "中信证券股份有限公司",
+      "source_url": "https://careers.citics.com/headquarters/interns/",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0063",
-      "company_name": "联想集团有限公司",
-      "source_url": "https://jobs.lenovo.com/en_US/careers/Internship",
+      "company_id": "cn-sec-0189",
+      "company_name": "中信证券股份有限公司",
+      "source_url": "https://careers.citics.com/campus/branch/",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0063",
-      "company_name": "联想集团有限公司",
-      "source_url": "https://jobs.lenovo.com/en_US/careers/Login",
+      "company_id": "cn-health-0225",
+      "company_name": "国药控股股份有限公司",
+      "source_url": "https://www.sinopharmgroup.com.cn/gykg/rcfz/rczp/A006008002Gone1.html",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0063",
-      "company_name": "联想集团有限公司",
-      "source_url": "https://jobs.lenovo.com/de_DE/careers",
+      "company_id": "cn-chip-0236",
+      "company_name": "中芯国际集成电路制造有限公司",
+      "source_url": "https://smics.zhiye.com/social",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0063",
-      "company_name": "联想集团有限公司",
-      "source_url": "https://jobs.lenovo.com/es_ES/careers",
+      "company_id": "cn-chip-0236",
+      "company_name": "中芯国际集成电路制造有限公司",
+      "source_url": "https://smics.zhiye.com/campus",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0063",
-      "company_name": "联想集团有限公司",
-      "source_url": "https://jobs.lenovo.com/fr_FR/careers",
+      "company_id": "cn-chip-0236",
+      "company_name": "中芯国际集成电路制造有限公司",
+      "source_url": "https://smics.zhiye.com/overseas",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0063",
-      "company_name": "联想集团有限公司",
-      "source_url": "https://jobs.lenovo.com/pt_BR/careers",
+      "company_id": "cn-elec-0241",
+      "company_name": "立讯精密工业股份有限公司",
+      "source_url": "https://www.luxshare-ict.com/careers.html",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0063",
-      "company_name": "联想集团有限公司",
-      "source_url": "https://jobs.lenovo.com/zh_CN/careers",
+      "company_id": "cn-energy-0246",
+      "company_name": "晶科能源股份有限公司",
+      "source_url": "https://www.jinkosolar.com/en/site/brand",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0063",
-      "company_name": "联想集团有限公司",
-      "source_url": "https://jobs.lenovo.com/zh_TW/careers",
+      "company_id": "cn-mining-0248",
+      "company_name": "紫金矿业集团股份有限公司",
+      "source_url": "https://www.zijinmining.com/join/join-us.htm",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0063",
-      "company_name": "联想集团有限公司",
-      "source_url": "https://jobs.lenovo.com/ja_JP/careers",
+      "company_id": "cn-re-0255",
+      "company_name": "龙湖集团控股有限公司",
+      "source_url": "https://www.longfor.com/join/job.html",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0063",
-      "company_name": "联想集团有限公司",
-      "source_url": "https://jobs.lenovo.com/careers/SearchJobs",
+      "company_id": "cn-re-0256",
+      "company_name": "新城控股集团股份有限公司",
+      "source_url": "https://www.seazen.com.cn/join/career.html",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0063",
-      "company_name": "联想集团有限公司",
-      "source_url": "https://jobs.lenovo.com/en_US/careers/RecommendationMethods",
+      "company_id": "cn-retail-0261",
+      "company_name": "苏宁易购集团股份有限公司",
+      "source_url": "http://careers.suning.cn/",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0063",
-      "company_name": "联想集团有限公司",
-      "source_url": "https://jobs.lenovo.com/en_US/careers/TalentCommunity?jobId=78103",
+      "company_id": "cn-log-0268",
+      "company_name": "韵达控股股份有限公司",
+      "source_url": "https://www.yundaex.com/cn/hr_online.php",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0063",
-      "company_name": "联想集团有限公司",
-      "source_url": "https://jobs.lenovo.com/careers/SearchJobs/?jobRecordsPerPage=10&",
+      "company_id": "cn-air-0272",
+      "company_name": "春秋航空股份有限公司",
+      "source_url": "https://job.ch.com",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0063",
-      "company_name": "联想集团有限公司",
-      "source_url": "https://jobs.lenovo.com/en_US/careers/SearchJobs",
+      "company_id": "cn-hotel-0285",
+      "company_name": "北京首旅酒店（集团）股份有限公司",
+      "source_url": "https://www.bthhotels.com/culture/TalentDevelopment",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0063",
-      "company_name": "联想集团有限公司",
-      "source_url": "https://jobs.lenovo.com/en_US/careers/FAQ",
+      "company_id": "cn-software-0300",
+      "company_name": "用友网络科技股份有限公司",
+      "source_url": "http://career.yonyou.com/",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0066",
-      "company_name": "中兴通讯股份有限公司",
-      "source_url": "https://job.zte.com.cn/content/zte-job/cn/index.html",
+      "company_id": "cn-energy-0244",
+      "company_name": "隆基绿能科技股份有限公司",
+      "source_url": "https://www.longi.com/cn/news/campus-career-forum/",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0066",
-      "company_name": "中兴通讯股份有限公司",
-      "source_url": "https://job.zte.com.cn/content/zte-job/cn/campus-recruitment/Recruitment_positions/freshstudent.html",
+      "company_id": "cn-ins-0350",
+      "company_name": "众安在线财产保险股份有限公司",
+      "source_url": "https://mokahr.com/ats",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0066",
-      "company_name": "中兴通讯股份有限公司",
-      "source_url": "https://app.mokahr.com/social-recruitment/zte/47588",
+      "company_id": "cn-ins-0350",
+      "company_name": "众安在线财产保险股份有限公司",
+      "source_url": "https://mokahr.com/features/pipeline",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0066",
-      "company_name": "中兴通讯股份有限公司",
-      "source_url": "https://job.zte.com.cn/content/zte-job/cn/Entering_ZTE/zte-profile/profile.html",
+      "company_id": "cn-ins-0350",
+      "company_name": "众安在线财产保险股份有限公司",
+      "source_url": "https://mokahr.com/features/data",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0066",
-      "company_name": "中兴通讯股份有限公司",
-      "source_url": "https://job.zte.com.cn/content/zte-job/cn/Entering_ZTE/career_development.html",
+      "company_id": "cn-ins-0350",
+      "company_name": "众安在线财产保险股份有限公司",
+      "source_url": "https://www.mokahr.io",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0066",
-      "company_name": "中兴通讯股份有限公司",
-      "source_url": "https://job.zte.com.cn/content/zte-job/cn/Entering_ZTE/employee_benefits/inzte.html",
+      "company_id": "cn-ins-0350",
+      "company_name": "众安在线财产保险股份有限公司",
+      "source_url": "https://mokahr.com/solution/social",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0066",
-      "company_name": "中兴通讯股份有限公司",
-      "source_url": "https://job.zte.com.cn/content/zte-job/cn/Entering_ZTE/employee_benefits/benefit.html",
+      "company_id": "cn-ins-0350",
+      "company_name": "众安在线财产保险股份有限公司",
+      "source_url": "https://mokahr.com/solution/campus",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0066",
-      "company_name": "中兴通讯股份有限公司",
-      "source_url": "https://job.zte.com.cn/content/zte-job/cn/Entering_ZTE/learn.html",
+      "company_id": "cn-ins-0350",
+      "company_name": "众安在线财产保险股份有限公司",
+      "source_url": "https://mokahr.com/solution/recommend",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0066",
-      "company_name": "中兴通讯股份有限公司",
-      "source_url": "https://job.zte.com.cn/content/zte-job/cn/campus-recruitment/School_Recruitment_Announcement/news/2023.html",
+      "company_id": "cn-ins-0350",
+      "company_name": "众安在线财产保险股份有限公司",
+      "source_url": "https://mokahr.com/solution/onboarding",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0066",
-      "company_name": "中兴通讯股份有限公司",
-      "source_url": "https://job.zte.com.cn/cn/Entering_ZTE/employee_benefits/inzte.html",
+      "company_id": "cn-ins-0350",
+      "company_name": "众安在线财产保险股份有限公司",
+      "source_url": "https://mokahr.com/solution/automation",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0066",
-      "company_name": "中兴通讯股份有限公司",
-      "source_url": "https://job.zte.com.cn/content/zte-job/cn/Privacy-Policy.html",
+      "company_id": "cn-ins-0350",
+      "company_name": "众安在线财产保险股份有限公司",
+      "source_url": "https://mokahr.com/features/personnel",
       "reason": null
     },
     {
-      "company_id": "cn-tech-0094",
-      "company_name": "深圳市大疆创新科技有限公司",
-      "source_url": "https://we.dji.com/jobs_en.html",
+      "company_id": "cn-ins-0350",
+      "company_name": "众安在线财产保险股份有限公司",
+      "source_url": "https://mokahr.com/solution/biomedicine",
       "reason": null
     },
     {
-      "company_id": "cn-fin-0106",
-      "company_name": "上海浦东发展银行股份有限公司",
-      "source_url": "https://job.spdb.com.cn/index",
+      "company_id": "cn-ins-0350",
+      "company_name": "众安在线财产保险股份有限公司",
+      "source_url": "https://mokahr.com/solution/retail",
       "reason": null
     },
     {
-      "company_id": "cn-fin-0106",
-      "company_name": "上海浦东发展银行股份有限公司",
-      "source_url": "https://job.spdb.com.cn/socialJob",
+      "company_id": "cn-ins-0350",
+      "company_name": "众安在线财产保险股份有限公司",
+      "source_url": "https://mokahr.com/solution/finance",
       "reason": null
     },
     {
-      "company_id": "cn-fin-0106",
-      "company_name": "上海浦东发展银行股份有限公司",
-      "source_url": "https://job.spdb.com.cn/internJob",
+      "company_id": "cn-ins-0350",
+      "company_name": "众安在线财产保险股份有限公司",
+      "source_url": "https://mokahr.com/",
       "reason": null
     }
   ],
