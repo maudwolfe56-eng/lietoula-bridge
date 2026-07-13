@@ -4,8 +4,9 @@
 The generic company auditor intentionally separates recruitment home/list pages from
 probable job-detail URLs. This script follows those public navigation links one level
 at a time, records child navigation and raw detail candidates, and emits an explicit
-resolution ledger. It never logs in, solves CAPTCHA, infers salary, or promotes a job
-beyond ``candidate_raw``.
+resolution ledger. It also reclassifies historical generic links that predate the
+navigation/detail split. It never logs in, solves CAPTCHA, infers salary, or promotes
+a job beyond ``candidate_raw``.
 """
 from __future__ import annotations
 
@@ -19,7 +20,14 @@ from typing import Any
 
 import requests
 
-from crawl_company_jobs import USER_AGENT, append_jsonl, fetch_page, load_companies, utc_now
+from crawl_company_jobs import (
+    USER_AGENT,
+    append_jsonl,
+    fetch_page,
+    is_probable_job_detail_url,
+    load_companies,
+    utc_now,
+)
 
 ACCEPTED_RESOLUTION_STATUSES = {
     "enumerated",
@@ -68,9 +76,26 @@ def canonical_candidates(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
         normalized = dict(row)
         normalized["company_id"] = company_id
         normalized["source_url"] = source_url
+        normalized["source_type"] = "official_recruitment_navigation"
         normalized["navigation_key"] = key
         unique[key] = normalized
     return list(unique.values())
+
+
+def historical_navigation_candidates(output_dir: Path) -> list[dict[str, Any]]:
+    """Recover generic career/list URLs written before the detail classifier existed."""
+    rows: list[dict[str, Any]] = []
+    for row in load_glob(output_dir, "*job_link_candidates*.jsonl"):
+        source_url = str(row.get("source_url") or "").strip()
+        source_type = str(row.get("source_type") or "")
+        if source_type == "official_job_detail_candidate":
+            continue
+        if source_type == "official_recruitment_navigation" or not is_probable_job_detail_url(source_url):
+            normalized = dict(row)
+            normalized["source_type"] = "official_recruitment_navigation"
+            normalized["enumeration_status"] = "historical_candidate_reclassified"
+            rows.append(normalized)
+    return rows
 
 
 def audit_navigation(
@@ -92,7 +117,7 @@ def audit_navigation(
     })
     result = fetch_page(session, source_url, official_site, career_url)
 
-    child_navigation = [url for url in result.recruitment_links if url != source_url]
+    child_navigation = [url for url in result.recruitment_links if url != source_url and url not in result.job_links]
     detail_links = [url for url in result.job_links if url != source_url]
 
     if result.http_status in {404, 410}:
@@ -145,13 +170,14 @@ def audit_navigation(
         "enumeration_status": "requires_navigation_expansion",
         "parent_navigation_url": source_url,
         "discovered_at": observed_at,
-    } for url in child_navigation if url not in detail_links]
+    } for url in child_navigation]
     failures: list[dict[str, Any]] = []
     if resolution_status not in {"enumerated", "superseded"}:
         failures.append({
             "company_id": company_id,
             "company_name": company_name,
             "url": source_url,
+            "source_url": source_url,
             "reason": resolution_status,
             "detail": reason,
             "http_status": result.http_status,
@@ -175,7 +201,9 @@ def main() -> int:
     output_dir = Path(args.output_dir)
     state_path = Path(args.state_file)
 
-    candidates = canonical_candidates(load_glob(output_dir, "*recruitment_navigation*.jsonl"))
+    explicit_navigation = load_glob(output_dir, "*recruitment_navigation*.jsonl")
+    legacy_navigation = historical_navigation_candidates(output_dir)
+    candidates = canonical_candidates([*explicit_navigation, *legacy_navigation])
     resolution_file = output_dir / "recruitment_navigation_resolution_auto.jsonl"
     prior_resolutions = read_jsonl(resolution_file)
     accepted = {
@@ -224,6 +252,8 @@ def main() -> int:
     state.update({
         "updated_at": utc_now(),
         "navigation_expansion_last_batch": {
+            "candidate_count": len(candidates),
+            "legacy_candidates_reclassified": len(legacy_navigation),
             "selected_count": len(pending),
             "processed_count": len(resolutions),
             "detail_candidates_discovered": len(details),
