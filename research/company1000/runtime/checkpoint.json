@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-13T12:08:00Z",
+  "target_companies": 1000,
+  "valid_seed_count": 10,
+  "official_entries_verified": 8,
+  "official_entry_candidates_pending": 2,
+  "companies_with_job_records": 1,
+  "job_records_total": 22,
+  "job_records_candidate_raw": 0,
+  "job_records_review_pending": 0,
+  "job_records_inactive_expired": 22,
+  "companies_final_acceptance_met": 0,
+  "next_batch_start_index": 10,
+  "next_actions": [
+    "扩展真实企业种子名单，不得用占位符凑数",
+    "优先解析8个已核验动态招聘站点的公开API或浏览器渲染结果",
+    "解析中国银行2026年高层次海外人才招聘附件PDF，补齐职责、学历和经验要求",
+    "复核农业银行和中国人寿招聘入口",
+    "只将当前仍在截止期内且详情完整的记录标记为candidate_raw或review_pending"
+  ],
+  "policy": {
+    "auto_active_verified": false,
+    "salary_inference_allowed": false,
+    "login_captcha_or_paywall_bypass_allowed": false
+  }
+}
