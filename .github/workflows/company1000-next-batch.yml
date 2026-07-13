@@ -49,7 +49,7 @@ jobs:
             --seed-file company_seed_1000.json \
             --output-dir output \
             --state-file runtime/checkpoint.json \
-            --batch-size 10 \
+            --batch-size 20 \
             | tee logs/next_batch_auto.log
 
       - name: Build import and audit package
