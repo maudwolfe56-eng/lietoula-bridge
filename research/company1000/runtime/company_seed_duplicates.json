@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "duplicate_seed_rows_excluded": 97,
+  "duplicate_seed_rows_excluded": 100,
   "company_id_collisions_resolved": 7,
   "duplicates": [
     {
@@ -874,6 +874,33 @@
       "skipped_company_name": "晶科能源股份有限公司",
       "kept_company_id": "cn-energy-0246",
       "kept_company_name": "晶科能源股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0026.json",
+      "source_row": 10,
+      "skipped_company_id": "cn-media-1060",
+      "skipped_company_name": "芒果超媒股份有限公司",
+      "kept_company_id": "cn-media-0295",
+      "kept_company_name": "芒果超媒股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0026.json",
+      "source_row": 15,
+      "skipped_company_id": "cn-media-1065",
+      "skipped_company_name": "北京爱奇艺科技有限公司",
+      "kept_company_id": "cn-media-0296",
+      "kept_company_name": "北京爱奇艺科技有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0026.json",
+      "source_row": 17,
+      "skipped_company_id": "cn-advertising-1067",
+      "skipped_company_name": "分众传媒信息技术股份有限公司",
+      "kept_company_id": "cn-media-0294",
+      "kept_company_name": "分众传媒信息技术股份有限公司",
       "reason": "duplicate_exact_company_name"
     }
   ],
