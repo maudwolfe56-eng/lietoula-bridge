@@ -47,6 +47,7 @@ jobs:
             crawl_company_jobs_merged.py \
             enumerate_recruitment_navigation.py \
             enumerate_recruitment_navigation_v2.py \
+            enumerate_recruitment_navigation_v3.py \
             resolve_job_detail_candidates.py \
             resolve_job_detail_candidates_safe.py \
             resolve_job_detail_candidates_v2.py \
@@ -71,7 +72,7 @@ jobs:
             --batch-size 50 \
             | tee logs/next_batch_auto.log
 
-      - name: Expand public recruitment navigation with bounded classifier
+      - name: Expand public recruitment navigation with bounded retry-aware classifier
         id: navigation
         continue-on-error: true
         working-directory: research/company1000
@@ -79,13 +80,13 @@ jobs:
           PYTHONUNBUFFERED: '1'
         run: |
           set -o pipefail
-          python enumerate_recruitment_navigation_v2.py \
+          python enumerate_recruitment_navigation_v3.py \
             --seed-file runtime/company_seed_merged.json \
             --output-dir output \
             --state-file runtime/checkpoint.json \
             --batch-size 300 \
             --max-workers 12 \
-            --max-attempts 3 \
+            --max-attempts 4 \
             --max-children-per-page 60 \
             --timeout-seconds 18 \
             | tee logs/navigation_expansion.log
@@ -173,7 +174,7 @@ jobs:
               'detail_step_conclusion': '${{ steps.detail.conclusion }}',
               'announcement_step_outcome': '${{ steps.announcement.outcome }}',
               'announcement_step_conclusion': '${{ steps.announcement.conclusion }}',
-              'mode': 'entry_audit_bounded_navigation_retry_detail_and_announcement_resolution'
+              'mode': 'entry_audit_bounded_retry_navigation_retry_detail_and_announcement_resolution'
           }, ensure_ascii=False, indent=2), encoding='utf-8')
           PY
 
