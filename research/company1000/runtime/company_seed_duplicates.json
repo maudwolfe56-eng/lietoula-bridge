@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "duplicate_seed_rows_excluded": 20,
+  "duplicate_seed_rows_excluded": 23,
   "company_id_collisions_resolved": 7,
   "duplicates": [
     {
@@ -181,6 +181,33 @@
       "skipped_company_name": "中国联合网络通信集团有限公司",
       "kept_company_id": "cn-soe-0029-e0001",
       "kept_company_name": "中国联合网络通信集团有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0012.json",
+      "source_row": 1,
+      "skipped_company_id": "cn-health-0351",
+      "skipped_company_name": "江苏恒瑞医药股份有限公司",
+      "kept_company_id": "cn-health-0099",
+      "kept_company_name": "江苏恒瑞医药股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0012.json",
+      "source_row": 23,
+      "skipped_company_id": "cn-health-0373",
+      "skipped_company_name": "无锡药明康德新药开发股份有限公司",
+      "kept_company_id": "cn-health-0098",
+      "kept_company_name": "无锡药明康德新药开发股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0012.json",
+      "source_row": 33,
+      "skipped_company_id": "cn-health-0383",
+      "skipped_company_name": "深圳迈瑞生物医疗电子股份有限公司",
+      "kept_company_id": "cn-health-0097",
+      "kept_company_name": "深圳迈瑞生物医疗电子股份有限公司",
       "reason": "duplicate_exact_company_name"
     }
   ],
