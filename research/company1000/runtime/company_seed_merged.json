@@ -1,9 +1,10 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "target_count": 1000,
   "seed_status": "incrementally_expanded_auditable_seed",
-  "valid_seed_count": 217,
-  "duplicate_seed_rows_excluded": 23,
+  "valid_seed_count": 220,
+  "duplicate_seed_rows_excluded": 20,
+  "company_id_collisions_resolved": 7,
   "source_files": [
     "company_seed_1000.json",
     "company_seed_expansion_0001.json",
@@ -474,6 +475,90 @@
       "career_url": "https://powerchina.zhiye.com/",
       "career_entry_evidence": "集团招聘ATS域名候选；本批核验公开访问结果和岗位可枚举性，任何访问限制均如实记录。",
       "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-soe-0029-e0001",
+      "company_name": "中国联合网络通信集团有限公司",
+      "short_name": "中国联通",
+      "industry": "通信运营",
+      "official_website": "https://www.chinaunicom.com.cn/",
+      "career_url": "https://chinaunicom.zhaopin.com/",
+      "career_entry_evidence": "集团公开招聘合作门户候选，待页面标题、官方关联和岗位入口审计。",
+      "seed_status": "official_entry_candidate",
+      "source_company_id": "cn-soe-0029",
+      "company_id_repair_reason": "collision_with_different_company"
+    },
+    {
+      "company_id": "cn-soe-0030-e0001",
+      "company_name": "中国邮政集团有限公司",
+      "short_name": "中国邮政",
+      "industry": "邮政与物流",
+      "official_website": "https://www.chinapost.com.cn/",
+      "career_url": "https://chinapost.zhaopin.com/",
+      "career_entry_evidence": "集团公开招聘合作门户候选，待页面标题、官方关联和岗位入口审计。",
+      "seed_status": "official_entry_candidate",
+      "source_company_id": "cn-soe-0030",
+      "company_id_repair_reason": "collision_with_different_company"
+    },
+    {
+      "company_id": "cn-soe-0032-e0001",
+      "company_name": "中国中铁股份有限公司",
+      "short_name": "中国中铁",
+      "industry": "基础设施建设",
+      "official_website": "https://www.crec.cn/",
+      "career_url": "https://crec.zhiye.com/",
+      "career_entry_evidence": "集团招聘ATS域名候选，待公开访问审计。",
+      "seed_status": "official_entry_candidate",
+      "source_company_id": "cn-soe-0032",
+      "company_id_repair_reason": "collision_with_different_company"
+    },
+    {
+      "company_id": "cn-soe-0033-e0001",
+      "company_name": "中国铁建股份有限公司",
+      "short_name": "中国铁建",
+      "industry": "基础设施建设",
+      "official_website": "https://www.crcc.cn/",
+      "career_url": "https://crcc.zhiye.com/",
+      "career_entry_evidence": "集团招聘ATS域名候选，待公开访问审计。",
+      "seed_status": "official_entry_candidate",
+      "source_company_id": "cn-soe-0033",
+      "company_id_repair_reason": "collision_with_different_company"
+    },
+    {
+      "company_id": "cn-soe-0035-e0001",
+      "company_name": "中国中车集团有限公司",
+      "short_name": "中国中车",
+      "industry": "轨道交通装备",
+      "official_website": "https://www.crrcgc.cc/",
+      "career_url": "https://crrc.zhiye.com/",
+      "career_entry_evidence": "集团招聘ATS域名候选，待公开访问审计。",
+      "seed_status": "official_entry_candidate",
+      "source_company_id": "cn-soe-0035",
+      "company_id_repair_reason": "collision_with_different_company"
+    },
+    {
+      "company_id": "cn-soe-0045-e0001",
+      "company_name": "中国保利集团有限公司",
+      "short_name": "保利集团",
+      "industry": "综合产业",
+      "official_website": "https://www.poly.com.cn/",
+      "career_url": "https://poly.zhiye.com/",
+      "career_entry_evidence": "集团招聘ATS域名候选，待公开访问审计。",
+      "seed_status": "official_entry_candidate",
+      "source_company_id": "cn-soe-0045",
+      "company_id_repair_reason": "collision_with_different_company"
+    },
+    {
+      "company_id": "cn-soe-0046-e0001",
+      "company_name": "中国医药集团有限公司",
+      "short_name": "国药集团",
+      "industry": "医药健康",
+      "official_website": "https://www.sinopharm.com/",
+      "career_url": "https://sinopharm.zhiye.com/",
+      "career_entry_evidence": "集团招聘ATS域名候选，待公开访问审计。",
+      "seed_status": "official_entry_candidate",
+      "source_company_id": "cn-soe-0046",
+      "company_id_repair_reason": "collision_with_different_company"
     },
     {
       "company_id": "cn-soe-0047",
@@ -986,16 +1071,6 @@
       "seed_status": "official_entry_candidate"
     },
     {
-      "company_id": "cn-fin-0101",
-      "company_name": "中国邮政集团有限公司",
-      "short_name": "中国邮政",
-      "industry": "邮政、快递与综合物流",
-      "official_website": "https://www.chinapost.com.cn/",
-      "career_url": "https://job.chinapost.com.cn/",
-      "career_entry_evidence": "中国邮政品牌招聘子域名候选，须由集团官方主站链接或官方招聘公告复核。",
-      "seed_status": "official_entry_candidate"
-    },
-    {
       "company_id": "cn-fin-0102",
       "company_name": "中国邮政储蓄银行股份有限公司",
       "short_name": "邮储银行",
@@ -1256,16 +1331,6 @@
       "seed_status": "official_entry_candidate"
     },
     {
-      "company_id": "cn-soe-0128",
-      "company_name": "中国保利集团有限公司",
-      "short_name": "保利集团",
-      "industry": "综合产业、地产与文化",
-      "official_website": "https://www.poly.com.cn/",
-      "career_url": "https://polygroup.zhiye.com/",
-      "career_entry_evidence": "保利集团品牌ATS候选，须由官方主站链接或官方招聘公告复核。",
-      "seed_status": "official_entry_candidate"
-    },
-    {
       "company_id": "cn-soe-0129",
       "company_name": "中国旅游集团有限公司",
       "short_name": "中国旅游集团",
@@ -1343,16 +1408,6 @@
       "official_website": "https://www.cfgc.cn/",
       "career_url": "https://cfgc.zhiye.com/",
       "career_entry_evidence": "中林集团品牌ATS候选，须由官方主站链接或官方招聘公告复核。",
-      "seed_status": "official_entry_candidate"
-    },
-    {
-      "company_id": "cn-soe-0137",
-      "company_name": "中国医药集团有限公司",
-      "short_name": "国药集团",
-      "industry": "医药健康与生命科技",
-      "official_website": "https://www.sinopharm.com/",
-      "career_url": "https://sinopharm.zhiye.com/",
-      "career_entry_evidence": "国药集团品牌ATS候选，须由官方主站链接或官方招聘公告复核。",
       "seed_status": "official_entry_candidate"
     },
     {
@@ -1653,16 +1708,6 @@
       "official_website": "https://www.china-tower.com/",
       "career_url": "https://zhaopin.china-tower.com/",
       "career_entry_evidence": "中国铁塔官方主域名下招聘子域名候选，交由公开访问审计。",
-      "seed_status": "official_entry_candidate"
-    },
-    {
-      "company_id": "cn-soe-0168",
-      "company_name": "中国联合网络通信集团有限公司",
-      "short_name": "中国联通",
-      "industry": "通信与数字信息服务",
-      "official_website": "https://www.chinaunicom.com.cn/",
-      "career_url": "https://www.chinaunicom.com.cn/",
-      "career_entry_evidence": "从中国联通官方主站开始审计招聘入口，未确认统一招聘门户前不作推断。",
       "seed_status": "official_entry_candidate"
     },
     {
