@@ -1,7 +1,7 @@
 {
-  "requested_at": "2026-07-13T18:35:00Z",
-  "sequence": 13,
-  "purpose": "Continue unresolved recruitment navigation and detail processing using canonical source URLs and labeled numeric recruitment-detail support; rebuild deliverables and reassess acceptance",
+  "requested_at": "2026-07-13T18:39:00Z",
+  "sequence": 14,
+  "purpose": "Continue official recruitment navigation and detail resolution, enforce stable unique import URLs for multi-position official announcements, rebuild deliverables, and reassess acceptance",
   "target_companies": 1000,
   "policy": {
     "official_sources_only": true,
