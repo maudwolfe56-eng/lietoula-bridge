@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-13T12:22:00Z",
+  "target_company_count": 1000,
+  "seeded_company_count": 12,
+  "summary": {
+    "complete": 1,
+    "partial": 1,
+    "pending": 10,
+    "active_jobs_captured": 10,
+    "active_verified": 0
+  },
+  "companies": [
+    {
+      "company_id": "cn-fin-0001",
+      "company_name": "中国工商银行股份有限公司",
+      "official_entry_status": "verified",
+      "enumeration_status": "pending_client_rendered_portal",
+      "career_url": "https://job.icbc.com.cn/",
+      "last_checked_at": "2026-07-13T12:15:00Z",
+      "evidence": "官方页面标题为中国工商银行人才招聘；当前文本抓取未返回岗位列表。"
+    },
+    {
+      "company_id": "cn-fin-0002",
+      "company_name": "中国建设银行股份有限公司",
+      "official_entry_status": "verified",
+      "enumeration_status": "pending_client_rendered_portal",
+      "career_url": "https://job.ccb.com/",
+      "last_checked_at": "2026-07-13T12:15:00Z",
+      "evidence": "官方招聘域名可访问；当前文本抓取未返回岗位列表。"
+    },
+    {
+      "company_id": "cn-fin-0003",
+      "company_name": "中国农业银行股份有限公司",
+      "official_entry_status": "candidate_pending_reverification",
+      "enumeration_status": "pending",
+      "career_url": "https://career.abchina.com/",
+      "last_checked_at": "2026-07-13T12:15:00Z",
+      "evidence": "种子中的官方招聘域名候选；本轮未获得可审计页面内容。"
+    },
+    {
+      "company_id": "cn-fin-0004",
+      "company_name": "中国银行股份有限公司",
+      "official_entry_status": "verified",
+      "enumeration_status": "complete_no_active_public_openings",
+      "career_url": "https://www.boc.cn/aboutboc/bi4/",
+      "last_checked_at": "2026-07-13T12:20:00Z",
+      "active_job_count": 0,
+      "evidence": "官方公告首页的2026年度招聘公告均有明确且已过报名截止时间；详见results/batch_0001_20260713.json。"
+    },
+    {
+      "company_id": "cn-fin-0005",
+      "company_name": "交通银行股份有限公司",
+      "official_entry_status": "verified",
+      "enumeration_status": "pending_client_rendered_portal",
+      "career_url": "https://job.bankcomm.com/",
+      "last_checked_at": "2026-07-13T12:16:00Z",
+      "evidence": "官方页面标题为交通银行人才招聘；当前文本抓取未返回岗位列表。"
+    },
+    {
+      "company_id": "cn-fin-0006",
+      "company_name": "招商银行股份有限公司",
+      "official_entry_status": "verified",
+      "enumeration_status": "pending_javascript_rendering",
+      "career_url": "https://career.cmbchina.com/",
+      "last_checked_at": "2026-07-13T12:16:00Z",
+      "evidence": "官方页面明确显示You need to enable JavaScript to run this app。"
+    },
+    {
+      "company_id": "cn-fin-0007",
+      "company_name": "中国平安保险（集团）股份有限公司",
+      "official_entry_status": "verified",
+      "enumeration_status": "pending_client_rendered_portal",
+      "career_url": "https://talent.pingan.com/",
+      "last_checked_at": "2026-07-13T12:16:00Z",
+      "evidence": "官方人才入口可访问；当前文本抓取未返回岗位列表。"
+    },
+    {
+      "company_id": "cn-fin-0008",
+      "company_name": "中国人民保险集团股份有限公司",
+      "official_entry_status": "verified",
+      "enumeration_status": "pending_portal_pagination",
+      "career_url": "https://picc.zhiye.com/",
+      "last_checked_at": "2026-07-13T12:16:00Z",
+      "evidence": "页面标题为中国人民保险招聘；岗位列表尚待分页枚举。"
+    },
+    {
+      "company_id": "cn-fin-0009",
+      "company_name": "中国中信集团有限公司",
+      "official_entry_status": "verified",
+      "enumeration_status": "pending_client_rendered_portal",
+      "career_url": "https://job.citic.com/recruit",
+      "last_checked_at": "2026-07-13T12:17:00Z",
+      "evidence": "页面标题为中信集团人才招聘系统；当前文本抓取未返回岗位列表。"
+    },
+    {
+      "company_id": "cn-fin-0010",
+      "company_name": "中国人寿保险（集团）公司",
+      "official_entry_status": "candidate_timeout",
+      "enumeration_status": "pending_transient_retry",
+      "career_url": "https://www.chinalife.com.cn/chinalife/zhaopin/",
+      "last_checked_at": "2026-07-13T12:17:00Z",
+      "evidence": "本轮官方招聘路径抓取超时；未绕过访问限制，后续重试。"
+    },
+    {
+      "company_id": "cn-soe-0011",
+      "company_name": "中国核工业集团有限公司",
+      "official_entry_status": "verified",
+      "enumeration_status": "partial_page_1_of_40",
+      "career_url": "https://cnnc.zhiye.com/shehui2025",
+      "last_checked_at": "2026-07-13T12:20:00Z",
+      "active_job_count_captured": 10,
+      "next_page": 2,
+      "evidence": "社会招聘页公开显示40页；第1页10条岗位已结构化，均保持candidate_raw。"
+    },
+    {
+      "company_id": "cn-soe-0012",
+      "company_name": "中国航天科工集团有限公司",
+      "official_entry_status": "verified",
+      "enumeration_status": "pending_multi_channel_pagination",
+      "career_url": "https://casic.zhiye.com/",
+      "last_checked_at": "2026-07-13T12:18:00Z",
+      "evidence": "官方网申系统可访问，包含校园招聘、社会招聘、总部招聘、海外招聘入口；岗位分页待枚举。"
+    }
+  ]
+}
