@@ -1,6 +1,6 @@
 {
   "schema_version": "1.2",
-  "assessed_at": "2026-07-13T20:13:37.081487+00:00",
+  "assessed_at": "2026-07-13T20:27:19.228019+00:00",
   "target_companies": 1000,
   "seeded_unique_companies": 1020,
   "seed_shortfall": 0,
@@ -9,11 +9,11 @@
   "companies_without_audit_count": 0,
   "companies_without_audit_sample": [],
   "job_records": 219,
-  "all_recruitment_candidates": 10126,
-  "probable_job_detail_candidates": 1471,
-  "terminal_detail_failures": 15,
+  "all_recruitment_candidates": 28815,
+  "probable_job_detail_candidates": 19065,
+  "terminal_detail_failures": 22,
   "resolved_job_detail_candidates": 100,
-  "pending_job_detail_candidates": 1371,
+  "pending_job_detail_candidates": 18965,
   "pending_job_detail_sample": [
     {
       "company_id": "cn-soe-0050",
@@ -55,270 +55,270 @@
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20260630/40722.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20260604/39941.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20260515/39787.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20260511/39760.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20260429/39657.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20260311/38107.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20260311/38106.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20260309/38092.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20260213/38009.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20260203/37839.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20260120/37629.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251201/37320.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251201/37319.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251201/37318.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251201/37317.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251201/37316.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251201/37315.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251201/37314.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251201/37313.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251201/37312.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251201/37311.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251201/37310.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251201/37309.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251201/37308.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251201/37307.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251126/37288.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251111/37151.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251104/37116.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251104/37115.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251104/37114.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251104/37113.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251104/37112.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251104/37111.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251104/37110.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251104/37109.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251104/37108.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251104/37107.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251104/37106.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251104/37105.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251013/36970.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251013/36969.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251013/36968.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251013/36967.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     },
     {
       "company_id": "cn-bank-0344",
       "company_name": "广东南粤银行股份有限公司",
       "source_url": "https://www.gdnybank.com/jobnews/20251013/36966.html",
-      "reason": null
+      "reason": "official_multi_position_announcement"
     }
   ],
-  "recruitment_navigation_candidates": 8655,
-  "resolved_recruitment_navigation": 3750,
-  "pending_recruitment_navigation": 4905,
+  "recruitment_navigation_candidates": 9750,
+  "resolved_recruitment_navigation": 4578,
+  "pending_recruitment_navigation": 5172,
   "pending_recruitment_navigation_sample": [
     {
       "company_id": "cn-soe-0020",
@@ -473,12 +473,6 @@
     {
       "company_id": "cn-chip-0236",
       "company_name": "中芯国际集成电路制造有限公司",
-      "source_url": "https://smics.zhiye.com/campus",
-      "reason": null
-    },
-    {
-      "company_id": "cn-chip-0236",
-      "company_name": "中芯国际集成电路制造有限公司",
       "source_url": "https://smics.zhiye.com/overseas",
       "reason": null
     },
@@ -515,109 +509,115 @@
     {
       "company_id": "cn-ins-0350",
       "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/9085.html",
+      "source_url": "https://post.mokahr.com/service/extcontent/page/2d9b68f00b0d45f99cb45442990c2cc3/home/3145?tab=8060&cl_source1=%E5%AE%98%E7%BD%91&cl_track=49494",
+      "reason": "javascript_shell_no_public_html_job_enumeration"
+    },
+    {
+      "company_id": "cn-energy-0244",
+      "company_name": "隆基绿能科技股份有限公司",
+      "source_url": "https://longi.hotjob.cn/",
+      "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
+    },
+    {
+      "company_id": "cn-bank-0301",
+      "company_name": "平安银行股份有限公司",
+      "source_url": "https://talent.pingan.com/recruit/social.html",
+      "reason": "javascript_shell_no_public_html_job_enumeration"
+    },
+    {
+      "company_id": "cn-bank-0312",
+      "company_name": "郑州银行股份有限公司",
+      "source_url": "https://wecruit.hotjob.cn/SU64f9783c1eb8051fabaf3fbc/pb/news.html?pageType=0",
+      "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
+    },
+    {
+      "company_id": "cn-bank-0329",
+      "company_name": "四川银行股份有限公司",
+      "source_url": "https://scbank.hotjob.cn",
+      "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
+    },
+    {
+      "company_id": "cn-health-0358",
+      "company_name": "再鼎医药有限公司",
+      "source_url": "https://www.zailaboratory.com/careers/",
+      "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
+    },
+    {
+      "company_id": "cn-health-0364",
+      "company_name": "石家庄以岭药业股份有限公司",
+      "source_url": "https://yiling.zhiye.com/social/jobs",
       "reason": null
     },
     {
-      "company_id": "cn-ins-0350",
-      "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/8156.html",
+      "company_id": "cn-health-0365",
+      "company_name": "湖北济川药业股份有限公司",
+      "source_url": "https://jumpcan1.zhiye.com/",
       "reason": null
     },
     {
-      "company_id": "cn-ins-0350",
-      "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/36004.html",
+      "company_id": "cn-health-0375",
+      "company_name": "杭州泰格医药科技股份有限公司",
+      "source_url": "https://www.tigermedgrp.com/zh/careers/join-tigermed",
       "reason": null
     },
     {
-      "company_id": "cn-ins-0350",
-      "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/32586.html",
+      "company_id": "cn-health-0375",
+      "company_name": "杭州泰格医药科技股份有限公司",
+      "source_url": "https://tigermed.zhiye.com/",
       "reason": null
     },
     {
-      "company_id": "cn-ins-0350",
-      "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/7144.html",
+      "company_id": "cn-health-0384",
+      "company_name": "上海联影医疗科技股份有限公司",
+      "source_url": "https://usa.united-imaging.com/careers",
+      "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
+    },
+    {
+      "company_id": "cn-indtech-0410",
+      "company_name": "宁波方太厨具有限公司",
+      "source_url": "http://fotile.zhiye.com/school",
       "reason": null
     },
     {
-      "company_id": "cn-ins-0350",
-      "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/34642.html",
+      "company_id": "cn-indtech-0426",
+      "company_name": "南京埃斯顿自动化股份有限公司",
+      "source_url": "https://ecup.estun.com/node/117",
+      "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
+    },
+    {
+      "company_id": "cn-indtech-0439",
+      "company_name": "北方华创科技集团股份有限公司",
+      "source_url": "https://career.naura.com/campus",
       "reason": null
     },
     {
-      "company_id": "cn-ins-0350",
-      "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/32769.html",
+      "company_id": "cn-indtech-0439",
+      "company_name": "北方华创科技集团股份有限公司",
+      "source_url": "https://career.naura.com/social",
       "reason": null
     },
     {
-      "company_id": "cn-ins-0350",
-      "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/34223.html",
+      "company_id": "cn-indtech-0439",
+      "company_name": "北方华创科技集团股份有限公司",
+      "source_url": "https://career.naura.com/4",
       "reason": null
     },
     {
-      "company_id": "cn-ins-0350",
-      "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/36014.html",
+      "company_id": "cn-indtech-0439",
+      "company_name": "北方华创科技集团股份有限公司",
+      "source_url": "https://career.naura.com/custom/%E4%BA%BA%E5%9C%A8NAURA",
       "reason": null
     },
     {
-      "company_id": "cn-ins-0350",
-      "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/28754.html",
+      "company_id": "cn-indtech-0444",
+      "company_name": "三安光电股份有限公司",
+      "source_url": "https://sanan-e.zhiye.com/",
       "reason": null
     },
     {
-      "company_id": "cn-ins-0350",
-      "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/29517.html",
-      "reason": null
-    },
-    {
-      "company_id": "cn-ins-0350",
-      "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/31016.html",
-      "reason": null
-    },
-    {
-      "company_id": "cn-ins-0350",
-      "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/33068.html",
-      "reason": null
-    },
-    {
-      "company_id": "cn-ins-0350",
-      "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/29235.html",
-      "reason": null
-    },
-    {
-      "company_id": "cn-ins-0350",
-      "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/28183.html",
-      "reason": null
-    },
-    {
-      "company_id": "cn-ins-0350",
-      "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/29239.html",
-      "reason": null
-    },
-    {
-      "company_id": "cn-ins-0350",
-      "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/32083.html",
-      "reason": null
-    },
-    {
-      "company_id": "cn-ins-0350",
-      "company_name": "众安在线财产保险股份有限公司",
-      "source_url": "https://mokahr.com/blog/34723.html",
+      "company_id": "cn-indtech-0444",
+      "company_name": "三安光电股份有限公司",
+      "source_url": "https://sanan-e.zhiye.com/Social",
       "reason": null
     }
   ],
