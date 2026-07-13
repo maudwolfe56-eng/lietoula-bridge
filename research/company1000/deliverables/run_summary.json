@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-13T21:36:34.486843+00:00",
+  "generated_at": "2026-07-13T21:55:30.973805+00:00",
   "target_companies": 1000,
   "seeded_companies": 1020,
   "coverage_records": 1061,
   "companies_with_coverage": 1027,
-  "job_records": 511,
+  "job_records": 542,
   "job_status_counts": {
-    "inactive_expired": 38,
-    "candidate_raw": 412,
+    "inactive_expired": 39,
+    "candidate_raw": 442,
     "review_pending": 61
   },
-  "failure_records": 4333,
-  "job_change_records": 511,
+  "failure_records": 5029,
+  "job_change_records": 542,
   "active_verified_records": 0,
   "final_acceptance_met": false,
   "checkpoint": {
     "schema_version": "1.0",
-    "updated_at": "2026-07-13T21:34:57.152453+00:00",
+    "updated_at": "2026-07-13T21:53:39.606553+00:00",
     "target_companies": 1000,
     "valid_seed_count": 1020,
     "official_entries_verified": 14,
@@ -28,7 +28,7 @@
     "job_records_review_pending": 64,
     "job_records_inactive_expired": 23,
     "companies_final_acceptance_met": 0,
-    "next_batch_start_index": 488,
+    "next_batch_start_index": 176,
     "batch_progress": {
       "batch_0001": {
         "companies_reviewed": 10,
@@ -165,13 +165,43 @@
       "cross_domain_candidate_requires_verified_seed_association": true
     },
     "last_auto_batch": {
-      "requested_start_index": 904,
+      "requested_start_index": 488,
       "selected_indices": [
+        500,
+        525,
+        537,
+        542,
+        558,
+        565,
+        574,
+        584,
+        588,
+        602,
+        639,
+        642,
+        644,
+        646,
+        649,
+        651,
+        687,
+        692,
+        706,
+        709,
+        718,
+        773,
+        799,
+        806,
+        829,
+        856,
+        863,
+        867,
+        886,
+        902,
+        903,
         906,
         969,
         986,
         987,
-        114,
         118,
         121,
         123,
@@ -186,45 +216,15 @@
         170,
         173,
         174,
-        175,
-        181,
-        183,
-        187,
-        195,
-        200,
-        220,
-        227,
-        230,
-        242,
-        243,
-        252,
-        283,
-        296,
-        305,
-        327,
-        329,
-        369,
-        388,
-        393,
-        395,
-        400,
-        403,
-        416,
-        417,
-        420,
-        439,
-        468,
-        483,
-        485,
-        487
+        175
       ],
       "selected_count": 50,
       "processed_count": 50,
       "job_detail_candidates": 0,
-      "recruitment_navigation_links": 11,
+      "recruitment_navigation_links": 12,
       "max_workers": 8
     },
-    "pending_seed_audits": 31,
+    "pending_seed_audits": 30,
     "merged_seed_sources": [
       "company_seed_1000.json",
       "company_seed_expansion_0001.json",
@@ -258,35 +258,34 @@
     "company_id_collisions_resolved": 7,
     "seed_shortfall": 0,
     "companies_without_audit": 0,
-    "pending_job_link_candidates": 139,
+    "pending_job_link_candidates": 106,
     "invalid_job_records": 0,
     "final_acceptance_met": false,
     "notification_eligible": false,
-    "pending_recruitment_navigation": 15912,
+    "pending_recruitment_navigation": 16719,
     "duplicate_job_source_urls": 0,
     "navigation_expansion_last_batch": {
       "enumerator_version": "3.0-bounded-retry-aware",
-      "candidate_count": 22167,
-      "legacy_candidates_reclassified": 7499,
+      "candidate_count": 23683,
+      "legacy_candidates_reclassified": 7973,
       "selected_count": 800,
       "processed_count": 800,
-      "detail_candidates_discovered": 535,
-      "child_navigation_discovered": 10615,
-      "filtered_non_recruitment_links": 70833,
+      "detail_candidates_discovered": 5518,
+      "child_navigation_discovered": 10876,
+      "filtered_non_recruitment_links": 31990,
       "resolution_status_counts": {
-        "enumerated": 578,
-        "requires_site_specific_dynamic_enumerator": 3,
-        "requires_manual_review_no_links": 49,
-        "restricted_with_explicit_reason": 42,
-        "requires_retry_transient_fetch": 4,
-        "superseded": 124
+        "enumerated": 610,
+        "requires_site_specific_dynamic_enumerator": 2,
+        "requires_manual_review_no_links": 59,
+        "restricted_with_explicit_reason": 44,
+        "superseded": 85
       },
-      "terminal_latest_resolution_count": 25182,
+      "terminal_latest_resolution_count": 25884,
       "max_workers": 12,
       "max_children_per_page": 60,
       "max_attempts": 4
     },
-    "classified_detail_urls_excluded": 20443,
+    "classified_detail_urls_excluded": 20452,
     "routed_announcement_urls": 85,
     "final_acceptance": false,
     "pending_routed_announcements": 85
@@ -299,20 +298,20 @@
   "notification_eligible": false,
   "final_acceptance_report": {
     "schema_version": "1.2",
-    "assessed_at": "2026-07-13T21:36:38.188955+00:00",
+    "assessed_at": "2026-07-13T21:55:34.532144+00:00",
     "target_companies": 1000,
     "seeded_unique_companies": 1020,
     "seed_shortfall": 0,
     "companies_with_coverage": 993,
-    "companies_with_explicit_failure_reason": 866,
+    "companies_with_explicit_failure_reason": 869,
     "companies_without_audit_count": 0,
     "companies_without_audit_sample": [],
-    "job_records": 511,
-    "all_recruitment_candidates": 43145,
-    "probable_job_detail_candidates": 19483,
-    "terminal_detail_failures": 269,
-    "resolved_job_detail_candidates": 411,
-    "pending_job_detail_candidates": 19072,
+    "job_records": 542,
+    "all_recruitment_candidates": 46862,
+    "probable_job_detail_candidates": 20852,
+    "terminal_detail_failures": 433,
+    "resolved_job_detail_candidates": 441,
+    "pending_job_detail_candidates": 20411,
     "pending_job_detail_sample": [
       {
         "company_id": "cn-soe-0050",
@@ -615,9 +614,9 @@
         "reason": "official_multi_position_announcement"
       }
     ],
-    "recruitment_navigation_candidates": 23662,
-    "resolved_recruitment_navigation": 7025,
-    "pending_recruitment_navigation": 16637,
+    "recruitment_navigation_candidates": 26010,
+    "resolved_recruitment_navigation": 7714,
+    "pending_recruitment_navigation": 18296,
     "pending_recruitment_navigation_sample": [
       {
         "company_id": "cn-soe-0020",
@@ -794,129 +793,129 @@
         "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
-        "company_id": "cn-health-0374",
-        "company_name": "康龙化成（北京）新药技术股份有限公司",
-        "source_url": "https://careerssearch.pharmaron.com/jobs/job/Scientific-BD-Proposals-Coordinator-ADMEPK/679",
-        "reason": null
-      },
-      {
-        "company_id": "cn-health-0374",
-        "company_name": "康龙化成（北京）新药技术股份有限公司",
-        "source_url": "https://careerssearch.pharmaron.com/jobs/job/Director-Business-Development-RLS/639",
-        "reason": null
-      },
-      {
-        "company_id": "cn-health-0374",
-        "company_name": "康龙化成（北京）新药技术股份有限公司",
-        "source_url": "https://careerssearch.pharmaron.com/jobs/job/IT-Support-Specialist/675",
-        "reason": null
-      },
-      {
-        "company_id": "cn-health-0369",
-        "company_name": "浙江海正药业股份有限公司",
-        "source_url": "https://www.hisunpharm.com/main/product-show-list.thtml?cId=10985",
-        "reason": null
-      },
-      {
-        "company_id": "cn-health-0369",
-        "company_name": "浙江海正药业股份有限公司",
-        "source_url": "https://www.hisunpharm.com/main/product-list-ah.thtml?cId=11018",
-        "reason": null
-      },
-      {
-        "company_id": "cn-health-0369",
-        "company_name": "浙江海正药业股份有限公司",
-        "source_url": "https://www.hisunpharm.com/main/product-list-ah.thtml?cId=11019",
-        "reason": null
-      },
-      {
-        "company_id": "cn-health-0369",
-        "company_name": "浙江海正药业股份有限公司",
-        "source_url": "https://www.hisunpharm.com/main/product-list-ah.thtml?cId=11020",
-        "reason": null
-      },
-      {
         "company_id": "cn-health-0369",
         "company_name": "浙江海正药业股份有限公司",
         "source_url": "https://www.hisunpharm.com/main/file/2026-02-06/1770361631551000000009b54440e524019c31c6b33f246b.pdf",
-        "reason": null
-      },
-      {
-        "company_id": "cn-mnc-1001",
-        "company_name": "西门子（中国）有限公司",
-        "source_url": "https://www.siemens.com/global/en/company/jobs/faq.html",
-        "reason": null
-      },
-      {
-        "company_id": "cn-mnc-1001",
-        "company_name": "西门子（中国）有限公司",
-        "source_url": "https://www.siemens.com/global/en/company/jobs/life-at-siemens.html",
-        "reason": null
-      },
-      {
-        "company_id": "cn-mnc-1001",
-        "company_name": "西门子（中国）有限公司",
-        "source_url": "https://www.siemens.com/global/en/company/jobs/how-we-hire.html",
-        "reason": null
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-mnc-1001",
         "company_name": "西门子（中国）有限公司",
         "source_url": "https://jobs.siemens.com/zh_CN/externaljobs/wechat/ShareJob?url=https%3A%2F%2Fjobs.siemens.com%2Fzh_CN%2Fexternaljobs%2FJobDetail%2F511843",
-        "reason": null
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-mnc-1001",
         "company_name": "西门子（中国）有限公司",
         "source_url": "https://jobs.siemens.com/zh_CN/externaljobs/wechat/ShareJob?url=https%3A%2F%2Fjobs.siemens.com%2Fzh_CN%2Fexternaljobs%2FJobDetail%2F512669",
-        "reason": null
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-mnc-1001",
         "company_name": "西门子（中国）有限公司",
         "source_url": "https://jobs.siemens.com/zh_CN/externaljobs/wechat/ShareJob?url=https%3A%2F%2Fjobs.siemens.com%2Fzh_CN%2Fexternaljobs%2FJobDetail%2F512998",
-        "reason": null
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-mnc-1001",
         "company_name": "西门子（中国）有限公司",
         "source_url": "https://jobs.siemens.com/zh_CN/externaljobs/wechat/ShareJob?url=https%3A%2F%2Fjobs.siemens.com%2Fzh_CN%2Fexternaljobs%2FJobDetail%2F513058",
-        "reason": null
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-mnc-1001",
         "company_name": "西门子（中国）有限公司",
         "source_url": "https://jobs.siemens.com/zh_CN/externaljobs/wechat/ShareJob?url=https%3A%2F%2Fjobs.siemens.com%2Fzh_CN%2Fexternaljobs%2FJobDetail%2F513095",
-        "reason": null
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
       },
       {
         "company_id": "cn-mnc-1001",
         "company_name": "西门子（中国）有限公司",
         "source_url": "https://jobs.siemens.com/zh_CN/externaljobs/wechat/ShareJob?url=https%3A%2F%2Fjobs.siemens.com%2Fzh_CN%2Fexternaljobs%2FJobDetail%2F513278",
+        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
+      },
+      {
+        "company_id": "cn-mnc-1001",
+        "company_name": "西门子（中国）有限公司",
+        "source_url": "https://www.siemens.com/en-us/company/jobs/faq/",
+        "reason": null
+      },
+      {
+        "company_id": "cn-mnc-1001",
+        "company_name": "西门子（中国）有限公司",
+        "source_url": "https://www.siemens.com/en-us/company/jobs/how-to-apply/",
+        "reason": null
+      },
+      {
+        "company_id": "cn-mnc-1001",
+        "company_name": "西门子（中国）有限公司",
+        "source_url": "https://www.siemens.com/en-us/company/jobs/growth-careers/",
+        "reason": null
+      },
+      {
+        "company_id": "cn-mnc-1001",
+        "company_name": "西门子（中国）有限公司",
+        "source_url": "https://www.siemens.com/en-us/company/jobs/life-at-siemens/",
+        "reason": null
+      },
+      {
+        "company_id": "cn-mnc-1001",
+        "company_name": "西门子（中国）有限公司",
+        "source_url": "https://www.siemens.com/en-us/company/jobs/growth-careers/siemens-graduate-program/",
         "reason": null
       },
       {
         "company_id": "cn-mnc-1020",
         "company_name": "超威半导体产品（中国）有限公司",
-        "source_url": "https://careers.amd.com/careers-home/jobs/categories",
+        "source_url": "https://careers.amd.com/careers-home/jobs/locations/city/Austin",
         "reason": null
       },
       {
         "company_id": "cn-mnc-1020",
         "company_name": "超威半导体产品（中国）有限公司",
-        "source_url": "https://careers.amd.com/careers-home/jobs/jobs?page=1&categories=Student%20%2F%20Intern%20%2F%20Temp",
+        "source_url": "https://careers.amd.com/careers-home/jobs/locations/city/Bangalore",
         "reason": null
       },
       {
         "company_id": "cn-mnc-1020",
         "company_name": "超威半导体产品（中国）有限公司",
-        "source_url": "https://careers.amd.com/careers-home/jobs/locations",
+        "source_url": "https://careers.amd.com/careers-home/jobs/locations/city/Beijing",
         "reason": null
       },
       {
         "company_id": "cn-mnc-1020",
         "company_name": "超威半导体产品（中国）有限公司",
-        "source_url": "https://careers.amd.com/careers-home/jobs?categories=Engineering&page=1",
+        "source_url": "https://careers.amd.com/careers-home/jobs/locations/city/Belfast",
+        "reason": null
+      },
+      {
+        "company_id": "cn-mnc-1020",
+        "company_name": "超威半导体产品（中国）有限公司",
+        "source_url": "https://careers.amd.com/careers-home/jobs/locations/city/Belgrade",
+        "reason": null
+      },
+      {
+        "company_id": "cn-mnc-1020",
+        "company_name": "超威半导体产品（中国）有限公司",
+        "source_url": "https://careers.amd.com/careers-home/jobs/locations/city/Bellevue",
+        "reason": null
+      },
+      {
+        "company_id": "cn-mnc-1020",
+        "company_name": "超威半导体产品（中国）有限公司",
+        "source_url": "https://careers.amd.com/careers-home/jobs/locations/city/Boxborough",
+        "reason": null
+      },
+      {
+        "company_id": "cn-mnc-1020",
+        "company_name": "超威半导体产品（中国）有限公司",
+        "source_url": "https://careers.amd.com/careers-home/jobs/locations/city/CALGARY",
+        "reason": null
+      },
+      {
+        "company_id": "cn-mnc-1020",
+        "company_name": "超威半导体产品（中国）有限公司",
+        "source_url": "https://careers.amd.com/careers-home/jobs/locations/city/Cambridge",
         "reason": null
       }
     ],
@@ -941,15 +940,15 @@
     "final_acceptance": false,
     "assessment_version": "2.1-classification-aware-latest-ledger-announcement-gate",
     "counts": {
-      "probable_job_detail_candidates": 19432,
-      "classified_detail_urls_excluded": 20452,
+      "probable_job_detail_candidates": 20801,
+      "classified_detail_urls_excluded": 21586,
       "routed_announcement_urls": 85,
       "resolved_routed_announcements": 0,
       "pending_routed_announcements": 85,
-      "pending_job_detail_candidates": 106,
-      "recruitment_navigation_candidates": 23668,
-      "terminal_latest_navigation_resolutions": 25883,
-      "pending_recruitment_navigation": 16719
+      "pending_job_detail_candidates": 312,
+      "recruitment_navigation_candidates": 26008,
+      "terminal_latest_navigation_resolutions": 27705,
+      "pending_recruitment_navigation": 18370
     },
     "pending_samples": {
       "job_details": [
@@ -1091,7 +1090,35 @@
         },
         {
           "company_id": "cn-tech-0063",
+          "source_url": "https://jobs.lenovo.com/de_DE/careers/JobDetail/76830"
+        },
+        {
+          "company_id": "cn-tech-0063",
           "source_url": "https://jobs.lenovo.com/de_DE/careers/JobDetail/78990"
+        },
+        {
+          "company_id": "cn-tech-0063",
+          "source_url": "https://jobs.lenovo.com/de_DE/careers/JobDetail/79007"
+        },
+        {
+          "company_id": "cn-tech-0063",
+          "source_url": "https://jobs.lenovo.com/de_DE/careers/JobDetail/79029"
+        },
+        {
+          "company_id": "cn-tech-0063",
+          "source_url": "https://jobs.lenovo.com/de_DE/careers/JobDetail/79033"
+        },
+        {
+          "company_id": "cn-tech-0063",
+          "source_url": "https://jobs.lenovo.com/de_DE/careers/JobDetail/79039"
+        },
+        {
+          "company_id": "cn-tech-0063",
+          "source_url": "https://jobs.lenovo.com/de_DE/careers/JobDetail/79082"
+        },
+        {
+          "company_id": "cn-tech-0063",
+          "source_url": "https://jobs.lenovo.com/de_DE/careers/JobDetail/79087"
         },
         {
           "company_id": "cn-tech-0063",
@@ -1119,39 +1146,11 @@
         },
         {
           "company_id": "cn-tech-0063",
-          "source_url": "https://jobs.lenovo.com/en_US/careers/JobDetail/Evergreen-HROPs-Brasil/79057"
+          "source_url": "https://jobs.lenovo.com/en_US/careers/JobDetail/Business-Development-Manager-Intel/79179"
         },
         {
           "company_id": "cn-tech-0063",
-          "source_url": "https://jobs.lenovo.com/es_ES/careers/JobDetail/78990"
-        },
-        {
-          "company_id": "cn-tech-0063",
-          "source_url": "https://jobs.lenovo.com/es_ES/careers/JobDetail/79160"
-        },
-        {
-          "company_id": "cn-tech-0063",
-          "source_url": "https://jobs.lenovo.com/es_ES/careers/JobDetail/79245"
-        },
-        {
-          "company_id": "cn-tech-0063",
-          "source_url": "https://jobs.lenovo.com/es_ES/careers/JobDetail/79267"
-        },
-        {
-          "company_id": "cn-tech-0063",
-          "source_url": "https://jobs.lenovo.com/es_ES/careers/JobDetail/79504"
-        },
-        {
-          "company_id": "cn-tech-0063",
-          "source_url": "https://jobs.lenovo.com/es_ES/careers/JobDetail/79531"
-        },
-        {
-          "company_id": "cn-tech-0063",
-          "source_url": "https://jobs.lenovo.com/es_ES/careers/JobDetail/79698"
-        },
-        {
-          "company_id": "cn-tech-0063",
-          "source_url": "https://jobs.lenovo.com/fr_FR/careers/JobDetail/79698"
+          "source_url": "https://jobs.lenovo.com/en_US/careers/JobDetail/Business-Development-Manager-Qualcomm/79181"
         }
       ],
       "routed_announcements": [

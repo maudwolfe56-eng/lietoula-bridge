@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-07-13T21:35:26.512387+00:00",
+  "updated_at": "2026-07-13T21:54:09.741080+00:00",
   "resolver_version": "1.0-public-embedded-json",
   "selected": 500,
   "jobs_created": 0,
   "failures_created": 500,
   "failure_reason_counts": {
-    "embedded_job_data_not_found": 313,
-    "detail_access_restricted": 187
+    "embedded_job_data_not_found": 325,
+    "detail_access_restricted": 175
   },
   "review_status_counts": {},
   "policy": {
