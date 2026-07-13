@@ -1,25 +1,25 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-13T18:02:38.480975+00:00",
+  "generated_at": "2026-07-13T18:11:31.414563+00:00",
   "target_companies": 1000,
-  "seeded_companies": 300,
-  "coverage_records": 337,
-  "companies_with_coverage": 305,
+  "seeded_companies": 323,
+  "coverage_records": 360,
+  "companies_with_coverage": 328,
   "job_records": 121,
   "job_status_counts": {
     "inactive_expired": 23,
     "review_pending": 56,
     "candidate_raw": 42
   },
-  "failure_records": 311,
+  "failure_records": 332,
   "job_change_records": 121,
   "active_verified_records": 0,
   "final_acceptance_met": false,
   "checkpoint": {
     "schema_version": "1.0",
-    "updated_at": "2026-07-13T18:02:38.406054+00:00",
+    "updated_at": "2026-07-13T18:11:31.230877+00:00",
     "target_companies": 1000,
-    "valid_seed_count": 300,
+    "valid_seed_count": 323,
     "official_entries_verified": 14,
     "official_entry_candidates_pending": 2,
     "companies_with_job_records": 4,
@@ -28,7 +28,7 @@
     "job_records_review_pending": 64,
     "job_records_inactive_expired": 23,
     "companies_final_acceptance_met": 0,
-    "next_batch_start_index": 228,
+    "next_batch_start_index": 158,
     "batch_progress": {
       "batch_0001": {
         "companies_reviewed": 10,
@@ -160,37 +160,71 @@
       "salary_inference_allowed": false,
       "login_captcha_or_paywall_bypass_allowed": false,
       "new_job_link_default_status": "candidate_raw",
-      "review_pending_requires_detail_validation": true
+      "review_pending_requires_detail_validation": true,
+      "official_entry_verification_requires_recruitment_signal": true,
+      "cross_domain_candidate_requires_verified_seed_association": true
     },
     "last_auto_batch": {
-      "requested_start_index": 135,
+      "requested_start_index": 228,
       "selected_indices": [
-        135,
+        230,
+        242,
+        243,
+        251,
+        252,
+        283,
+        296,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        41,
+        45,
+        50,
+        112,
+        114,
+        115,
+        118,
+        121,
+        123,
+        125,
+        127,
+        129,
+        132,
+        134,
         136,
         137,
         138,
         144,
         152,
-        157,
-        161,
-        170,
-        173,
-        174,
-        175,
-        181,
-        183,
-        187,
-        191,
-        195,
-        200,
-        220,
-        227
+        157
       ],
-      "selected_count": 20,
-      "processed_count": 20,
-      "max_workers": 8
+      "selected_count": 50,
+      "processed_count": 50,
+      "job_detail_candidates": 0,
+      "recruitment_navigation_links": 7,
+      "max_workers": 10
     },
-    "pending_seed_audits": 21,
+    "pending_seed_audits": 13,
     "merged_seed_sources": [
       "company_seed_1000.json",
       "company_seed_expansion_0001.json",
@@ -202,294 +236,21 @@
       "company_seed_expansion_0007.json",
       "company_seed_expansion_0008.json",
       "company_seed_expansion_0009.json",
-      "company_seed_expansion_0010.json"
+      "company_seed_expansion_0010.json",
+      "company_seed_expansion_0011.json"
     ],
     "duplicate_seed_rows_excluded": 20,
-    "company_id_collisions_resolved": 7
+    "company_id_collisions_resolved": 7,
+    "seed_shortfall": 700,
+    "companies_without_audit": 0,
+    "pending_job_link_candidates": 106,
+    "invalid_job_records": 0,
+    "final_acceptance_met": false,
+    "notification_eligible": false
   },
   "policy": {
     "auto_active_verified": false,
     "salary_inference_allowed": false,
     "login_captcha_or_paywall_bypass_allowed": false
-  },
-  "notification_eligible": false,
-  "final_acceptance_report": {
-    "schema_version": "1.0",
-    "assessed_at": "2026-07-13T18:02:38.520004+00:00",
-    "target_companies": 1000,
-    "seeded_unique_companies": 300,
-    "seed_shortfall": 700,
-    "companies_with_coverage": 271,
-    "companies_with_explicit_failure_reason": 204,
-    "companies_without_audit_count": 0,
-    "companies_without_audit_sample": [],
-    "job_records": 121,
-    "discovered_job_link_candidates": 108,
-    "resolved_job_link_candidates": 2,
-    "pending_job_link_candidates": 106,
-    "pending_job_link_sample": [
-      {
-        "company_id": "cn-soe-0049",
-        "company_name": "中国国际航空股份有限公司",
-        "source_url": "http://www.airchina.com.cn/cn/about_us/recruitment/index.shtml"
-      },
-      {
-        "company_id": "cn-soe-0049",
-        "company_name": "中国国际航空股份有限公司",
-        "source_url": "http://www.airchina.com.cn/cn/about_us/recruitment/pilot.shtml"
-      },
-      {
-        "company_id": "cn-soe-0049",
-        "company_name": "中国国际航空股份有限公司",
-        "source_url": "http://www.airchina.com.cn/cn/about_us/recruitment/cabin_crew.shtml"
-      },
-      {
-        "company_id": "cn-soe-0049",
-        "company_name": "中国国际航空股份有限公司",
-        "source_url": "http://www.airchina.com.cn/cn/about_us/recruitment/ground_crew.shtml"
-      },
-      {
-        "company_id": "cn-soe-0049",
-        "company_name": "中国国际航空股份有限公司",
-        "source_url": "http://www.airchina.com.cn/cn/about_us/recruitment/ground_crew_info/185165.shtml"
-      },
-      {
-        "company_id": "cn-soe-0049",
-        "company_name": "中国国际航空股份有限公司",
-        "source_url": "http://www.airchina.com.cn/cn/about_us/recruitment/185223.shtml"
-      },
-      {
-        "company_id": "cn-soe-0049",
-        "company_name": "中国国际航空股份有限公司",
-        "source_url": "http://www.airchina.com.cn/cn/about_us/recruitment/185220.shtml"
-      },
-      {
-        "company_id": "cn-soe-0049",
-        "company_name": "中国国际航空股份有限公司",
-        "source_url": "http://www.airchina.com.cn/cn/about_us/recruitment/185219.shtml"
-      },
-      {
-        "company_id": "cn-soe-0049",
-        "company_name": "中国国际航空股份有限公司",
-        "source_url": "http://www.airchina.com.cn/cn/about_us/recruitment/185216.shtml"
-      },
-      {
-        "company_id": "cn-soe-0050",
-        "company_name": "中国东方航空股份有限公司",
-        "source_url": "https://job.ceair.com/campus/campusJobList.html"
-      },
-      {
-        "company_id": "cn-soe-0050",
-        "company_name": "中国东方航空股份有限公司",
-        "source_url": "https://job.ceair.com/pilotJobDetail1.html?positionId=NTQzNg==&cateId=MTAwMA=="
-      },
-      {
-        "company_id": "cn-soe-0050",
-        "company_name": "中国东方航空股份有限公司",
-        "source_url": "https://job.ceair.com/Internal/internalJobList.html"
-      },
-      {
-        "company_id": "cn-soe-0050",
-        "company_name": "中国东方航空股份有限公司",
-        "source_url": "https://job.ceair.com/"
-      },
-      {
-        "company_id": "cn-soe-0050",
-        "company_name": "中国东方航空股份有限公司",
-        "source_url": "https://job.ceair.com/about/culture.html"
-      },
-      {
-        "company_id": "cn-tech-0053",
-        "company_name": "京东集团股份有限公司",
-        "source_url": "https://zhaopin.jd.com/web/job/job_info_list/3"
-      },
-      {
-        "company_id": "cn-tech-0053",
-        "company_name": "京东集团股份有限公司",
-        "source_url": "http://campus.jd.com/home"
-      },
-      {
-        "company_id": "cn-tech-0053",
-        "company_name": "京东集团股份有限公司",
-        "source_url": "https://campus.jd.com/"
-      },
-      {
-        "company_id": "cn-tech-0056",
-        "company_name": "百度在线网络技术（北京）有限公司",
-        "source_url": "https://talent.baidu.com/static/index.html"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/en_US/careers"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/en_US/careers/Home"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/en_US/careers/Perks"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/en_US/careers/Culture"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/en_US/careers/Locations"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/en_US/careers/University"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/en_US/careers/EarlyCareer"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/en_US/careers/Internship"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/en_US/careers/Login"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/de_DE/careers"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/es_ES/careers"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/fr_FR/careers"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/pt_BR/careers"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_TW/careers"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/ja_JP/careers"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/careers/SearchJobs"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/en_US/careers/RecommendationMethods"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/en_US/careers/TalentCommunity?jobId=78103"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/careers/SearchJobs/?jobRecordsPerPage=10&"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/en_US/careers/SearchJobs"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/en_US/careers/FAQ"
-      },
-      {
-        "company_id": "cn-tech-0066",
-        "company_name": "中兴通讯股份有限公司",
-        "source_url": "https://job.zte.com.cn/content/zte-job/cn/index.html"
-      },
-      {
-        "company_id": "cn-tech-0066",
-        "company_name": "中兴通讯股份有限公司",
-        "source_url": "https://job.zte.com.cn/content/zte-job/cn/campus-recruitment/Recruitment_positions/freshstudent.html"
-      },
-      {
-        "company_id": "cn-tech-0066",
-        "company_name": "中兴通讯股份有限公司",
-        "source_url": "https://app.mokahr.com/social-recruitment/zte/47588"
-      },
-      {
-        "company_id": "cn-tech-0066",
-        "company_name": "中兴通讯股份有限公司",
-        "source_url": "https://job.zte.com.cn/content/zte-job/cn/Entering_ZTE/zte-profile/profile.html"
-      },
-      {
-        "company_id": "cn-tech-0066",
-        "company_name": "中兴通讯股份有限公司",
-        "source_url": "https://job.zte.com.cn/content/zte-job/cn/Entering_ZTE/career_development.html"
-      },
-      {
-        "company_id": "cn-tech-0066",
-        "company_name": "中兴通讯股份有限公司",
-        "source_url": "https://job.zte.com.cn/content/zte-job/cn/Entering_ZTE/employee_benefits/inzte.html"
-      },
-      {
-        "company_id": "cn-tech-0066",
-        "company_name": "中兴通讯股份有限公司",
-        "source_url": "https://job.zte.com.cn/content/zte-job/cn/Entering_ZTE/employee_benefits/benefit.html"
-      },
-      {
-        "company_id": "cn-tech-0066",
-        "company_name": "中兴通讯股份有限公司",
-        "source_url": "https://job.zte.com.cn/content/zte-job/cn/Entering_ZTE/learn.html"
-      },
-      {
-        "company_id": "cn-tech-0066",
-        "company_name": "中兴通讯股份有限公司",
-        "source_url": "https://job.zte.com.cn/content/zte-job/cn/campus-recruitment/School_Recruitment_Announcement/news/202406061.html"
-      },
-      {
-        "company_id": "cn-tech-0066",
-        "company_name": "中兴通讯股份有限公司",
-        "source_url": "https://job.zte.com.cn/content/zte-job/cn/campus-recruitment/School_Recruitment_Announcement/news/10011.html"
-      }
-    ],
-    "invalid_job_records": 0,
-    "active_verified_records": 0,
-    "conditions": {
-      "seed_target_reached": false,
-      "all_seed_companies_accounted_for": true,
-      "all_discovered_job_links_resolved": false,
-      "all_jobs_have_identity_title_and_source": true,
-      "no_auto_active_verified_records": true,
-      "deliverable_set_present": true
-    },
-    "final_acceptance_met": false,
-    "notification_eligible": false
   }
 }
