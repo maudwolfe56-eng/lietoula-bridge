@@ -2,11 +2,12 @@
   "schema_version": "1.0",
   "target_count": 1000,
   "seed_status": "incrementally_expanded_auditable_seed",
-  "valid_seed_count": 60,
+  "valid_seed_count": 80,
   "source_files": [
     "company_seed_1000.json",
     "company_seed_expansion_0001.json",
-    "company_seed_expansion_0002.json"
+    "company_seed_expansion_0002.json",
+    "company_seed_expansion_0003.json"
   ],
   "companies": [
     {
@@ -608,6 +609,206 @@
       "career_url": "https://talent.didiglobal.com/",
       "career_entry_evidence": "2026-07-13公开页面标题为“滴滴招聘”",
       "seed_status": "official_entry_verified"
+    },
+    {
+      "company_id": "cn-auto-0061",
+      "company_name": "比亚迪股份有限公司",
+      "short_name": "比亚迪",
+      "industry": "新能源汽车与动力电池",
+      "official_website": "https://www.bydglobal.com/",
+      "career_url": "https://job.byd.com/",
+      "career_entry_evidence": "比亚迪品牌招聘子域名候选，交由本批HTTP、页面标题及官方关联审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-auto-0062",
+      "company_name": "宁德时代新能源科技股份有限公司",
+      "short_name": "宁德时代",
+      "industry": "动力电池与新能源科技",
+      "official_website": "https://www.catl.com/",
+      "career_url": "https://career.catl.com/",
+      "career_entry_evidence": "宁德时代官方主域名下招聘子域名候选，交由本批公开访问审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-tech-0063",
+      "company_name": "联想集团有限公司",
+      "short_name": "联想集团",
+      "industry": "智能设备与信息技术",
+      "official_website": "https://www.lenovo.com/",
+      "career_url": "https://jobs.lenovo.com/",
+      "career_entry_evidence": "联想官方主域名下全球招聘入口候选，交由本批公开访问审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-tech-0064",
+      "company_name": "OPPO广东移动通信有限公司",
+      "short_name": "OPPO",
+      "industry": "智能终端与消费电子",
+      "official_website": "https://www.oppo.com/cn/",
+      "career_url": "https://careers.oppo.com/",
+      "career_entry_evidence": "2026-07-13公开页面可访问，标题为“OPPO招聘 - 加入我们 join us”。",
+      "seed_status": "official_entry_verified"
+    },
+    {
+      "company_id": "cn-tech-0065",
+      "company_name": "维沃移动通信有限公司",
+      "short_name": "vivo",
+      "industry": "智能终端与消费电子",
+      "official_website": "https://www.vivo.com.cn/",
+      "career_url": "https://hr.vivo.com/",
+      "career_entry_evidence": "vivo官方主域名下人力招聘子域名候选，交由本批公开访问审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-tech-0066",
+      "company_name": "中兴通讯股份有限公司",
+      "short_name": "中兴通讯",
+      "industry": "通信设备与数字基础设施",
+      "official_website": "https://www.zte.com.cn/",
+      "career_url": "https://job.zte.com.cn/",
+      "career_entry_evidence": "中兴通讯官方主域名下招聘子域名候选，交由本批公开访问审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-mfg-0067",
+      "company_name": "美的集团股份有限公司",
+      "short_name": "美的集团",
+      "industry": "智能家电与工业技术",
+      "official_website": "https://www.midea.com.cn/",
+      "career_url": "https://careers.midea.com/",
+      "career_entry_evidence": "美的品牌招聘子域名候选，交由本批HTTP、页面标题及官方关联审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-auto-0068",
+      "company_name": "浙江吉利控股集团有限公司",
+      "short_name": "吉利控股集团",
+      "industry": "汽车与智能出行",
+      "official_website": "https://www.geely.com/",
+      "career_url": "https://hr.geely.com/",
+      "career_entry_evidence": "吉利官方主域名下招聘子域名候选，交由本批公开访问审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-auto-0069",
+      "company_name": "上海蔚来汽车有限公司",
+      "short_name": "蔚来",
+      "industry": "新能源汽车与智能出行",
+      "official_website": "https://www.nio.cn/",
+      "career_url": "https://jobs.nio.com/",
+      "career_entry_evidence": "蔚来品牌招聘子域名候选，交由本批HTTP、页面标题及官方关联审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-auto-0070",
+      "company_name": "北京车和家信息技术有限公司",
+      "short_name": "理想汽车",
+      "industry": "新能源汽车与智能出行",
+      "official_website": "https://www.lixiang.com/",
+      "career_url": "https://www.lixiang.com/careers",
+      "career_entry_evidence": "理想汽车官方主域名下职业入口候选，交由本批公开访问审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-tech-0071",
+      "company_name": "网易（杭州）网络有限公司",
+      "short_name": "网易",
+      "industry": "互联网与数字内容",
+      "official_website": "https://www.163.com/",
+      "career_url": "https://hr.163.com/",
+      "career_entry_evidence": "网易官方主域名下招聘子域名候选，交由本批公开访问审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-tech-0072",
+      "company_name": "北京快手科技有限公司",
+      "short_name": "快手",
+      "industry": "互联网与数字内容",
+      "official_website": "https://www.kuaishou.com/",
+      "career_url": "https://zhaopin.kuaishou.cn/",
+      "career_entry_evidence": "快手官方主域名下招聘子域名候选，交由本批公开访问审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-tech-0073",
+      "company_name": "上海寻梦信息技术有限公司",
+      "short_name": "拼多多",
+      "industry": "电子商务与互联网平台",
+      "official_website": "https://www.pinduoduo.com/",
+      "career_url": "https://careers.pinduoduo.com/",
+      "career_entry_evidence": "拼多多官方主域名下招聘子域名候选，交由本批公开访问审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-tech-0074",
+      "company_name": "上海宽娱数码科技有限公司",
+      "short_name": "哔哩哔哩",
+      "industry": "互联网与数字内容",
+      "official_website": "https://www.bilibili.com/",
+      "career_url": "https://jobs.bilibili.com/",
+      "career_entry_evidence": "哔哩哔哩品牌招聘子域名候选，交由本批HTTP、页面标题及官方关联审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0075",
+      "company_name": "蚂蚁科技集团股份有限公司",
+      "short_name": "蚂蚁集团",
+      "industry": "金融科技",
+      "official_website": "https://www.antgroup.com/",
+      "career_url": "https://talent.antgroup.com/",
+      "career_entry_evidence": "蚂蚁集团官方主域名下人才招聘子域名候选，交由本批公开访问审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-travel-0076",
+      "company_name": "携程集团有限公司",
+      "short_name": "携程集团",
+      "industry": "在线旅游与互联网服务",
+      "official_website": "https://group.trip.com/",
+      "career_url": "https://careers.trip.com/",
+      "career_entry_evidence": "携程集团官方主域名下招聘入口候选，交由本批公开访问审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-tech-0077",
+      "company_name": "京东方科技集团股份有限公司",
+      "short_name": "京东方",
+      "industry": "显示技术与物联网",
+      "official_website": "https://www.boe.com/",
+      "career_url": "https://career.boe.com/",
+      "career_entry_evidence": "京东方官方主域名下招聘子域名候选，交由本批公开访问审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-mfg-0078",
+      "company_name": "三一集团有限公司",
+      "short_name": "三一集团",
+      "industry": "工程机械与智能制造",
+      "official_website": "https://www.sanyglobal.com/",
+      "career_url": "https://sany.zhiye.com/",
+      "career_entry_evidence": "三一集团品牌招聘ATS候选；必须通过官方主站链接关系或官方公告复核后方可认定官方来源。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-tech-0079",
+      "company_name": "TCL科技集团股份有限公司",
+      "short_name": "TCL科技",
+      "industry": "半导体显示与智能终端",
+      "official_website": "https://www.tcltech.com/",
+      "career_url": "https://career.tcl.com/",
+      "career_entry_evidence": "TCL品牌招聘子域名候选，交由本批HTTP、页面标题及官方关联审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-auto-0080",
+      "company_name": "长城汽车股份有限公司",
+      "short_name": "长城汽车",
+      "industry": "汽车与智能出行",
+      "official_website": "https://www.gwm.com.cn/",
+      "career_url": "https://career.gwm.com.cn/",
+      "career_entry_evidence": "长城汽车官方主域名下招聘子域名候选，交由本批公开访问审计。",
+      "seed_status": "official_entry_candidate"
     }
   ]
 }
