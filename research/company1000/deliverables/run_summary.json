@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-13T14:41:35.922703+00:00",
+  "generated_at": "2026-07-13T15:50:15.383395+00:00",
   "target_companies": 1000,
   "seeded_companies": 100,
-  "coverage_records": 70,
-  "companies_with_coverage": 60,
+  "coverage_records": 122,
+  "companies_with_coverage": 100,
   "job_records": 121,
   "job_status_counts": {
     "inactive_expired": 23,
     "review_pending": 56,
     "candidate_raw": 42
   },
-  "failure_records": 107,
+  "failure_records": 125,
   "job_change_records": 121,
   "active_verified_records": 0,
   "final_acceptance_met": false,
   "checkpoint": {
     "schema_version": "1.0",
-    "updated_at": "2026-07-13T14:41:35.815105+00:00",
+    "updated_at": "2026-07-13T15:50:15.273435+00:00",
     "target_companies": 1000,
     "valid_seed_count": 100,
     "official_entries_verified": 14,
@@ -28,7 +28,7 @@
     "job_records_review_pending": 64,
     "job_records_inactive_expired": 23,
     "companies_final_acceptance_met": 0,
-    "next_batch_start_index": 100,
+    "next_batch_start_index": 66,
     "batch_progress": {
       "batch_0001": {
         "companies_reviewed": 10,
@@ -109,6 +109,36 @@
         "review_pending_link_candidates": 1,
         "final_acceptance_met": 0,
         "run_path": "runs/batch_0005"
+      },
+      "batch_0006": {
+        "companies_reviewed": 10,
+        "records": 0,
+        "status": "partial",
+        "seed_start_index": 26,
+        "seed_end_index_exclusive": 36,
+        "enumeration_status_counts": {
+          "fetch_failed": 1,
+          "pending_dynamic_js": 1,
+          "restricted": 15,
+          "no_links_observed": 1
+        },
+        "job_link_candidates_discovered": 0,
+        "unobserved_company_ids": [],
+        "final_acceptance_met": 0,
+        "run_path": "runs/batch_0006"
+      },
+      "batch_0007": {
+        "companies_reviewed": 10,
+        "records": 0,
+        "status": "partial",
+        "seed_start_index": 36,
+        "seed_end_index_exclusive": 46,
+        "enumeration_status_counts": {
+          "restricted": 10
+        },
+        "job_link_candidates_discovered": 0,
+        "final_acceptance_met": 0,
+        "run_path": "runs/batch_0007"
       }
     },
     "next_actions": [
@@ -131,7 +161,7 @@
       "login_captcha_or_paywall_bypass_allowed": false
     },
     "last_auto_batch": {
-      "start_index": 80,
+      "start_index": 46,
       "count": 20
     }
   },

@@ -1,2 +1,2 @@
 {"merged_seed_count": 100, "sources": ["company_seed_1000.json", "company_seed_expansion_0001.json", "company_seed_expansion_0002.json", "company_seed_expansion_0003.json", "company_seed_expansion_0004.json"]}
-{"processed": 20, "links": 1, "next_index": 100}
+{"processed": 0, "links": 0, "next_index": 66}
