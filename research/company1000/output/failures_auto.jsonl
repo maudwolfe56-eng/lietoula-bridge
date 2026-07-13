@@ -600,3 +600,15 @@
 {"company_id": "cn-soe-0157", "company_name": "中国检验认证（集团）有限公司", "http_status": 403, "observed_at": "2026-07-13T17:34:47.307739+00:00", "reason": "restricted", "url": "https://ccic.zhiye.com/"}
 {"company_id": "cn-soe-0160", "company_name": "中国有研科技集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:34:47.346619+00:00", "reason": "restricted", "url": "https://grinm.zhiye.com/"}
 {"company_id": "cn-soe-0161", "company_name": "中国钢研科技集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:34:47.312084+00:00", "reason": "restricted", "url": "https://cisri.zhiye.com/"}
+{"company_id": "cn-soe-0042", "company_name": "中国机械工业集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:35:53.739394+00:00", "reason": "restricted", "url": "https://sinomach.zhiye.com/"}
+{"company_id": "cn-soe-0046", "company_name": "中国电力建设集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:35:53.906768+00:00", "reason": "restricted", "url": "https://powerchina.zhiye.com/"}
+{"company_id": "cn-fin-0110", "company_name": "北京银行股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:35:54.166123+00:00", "reason": "restricted", "url": "https://bankofbeijing.zhiye.com/"}
+{"company_id": "cn-fin-0111", "company_name": "上海银行股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:35:54.701637+00:00", "reason": "restricted", "url": "https://bosc.zhiye.com/"}
+{"company_id": "cn-fin-0112", "company_name": "江苏银行股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:35:54.845854+00:00", "reason": "restricted", "url": "https://jsbchina.zhiye.com/"}
+{"company_id": "cn-fin-0113", "company_name": "南京银行股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:35:55.081825+00:00", "reason": "restricted", "url": "https://njcb.zhiye.com/"}
+{"company_id": "cn-fin-0116", "company_name": "徽商银行股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:35:55.097636+00:00", "reason": "restricted", "url": "https://hsbank.zhiye.com/"}
+{"company_id": "cn-fin-0118", "company_name": "中国银河证券股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:35:55.614867+00:00", "reason": "restricted", "url": "https://chinastock.zhiye.com/"}
+{"company_id": "cn-sec-0192", "company_name": "广发证券股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:35:52.984109+00:00", "reason": "restricted", "url": "https://www.gf.com.cn/"}
+{"company_id": "cn-sec-0197", "company_name": "申万宏源证券有限公司", "http_status": 403, "observed_at": "2026-07-13T17:35:54.780890+00:00", "reason": "restricted", "url": "https://www.swhysc.com/"}
+{"company_id": "cn-sec-0201", "company_name": "国金证券股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:35:53.232586+00:00", "reason": "restricted", "url": "https://gjzq.zhiye.com/"}
+{"company_id": "cn-sec-0212", "company_name": "中原证券股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:35:54.118066+00:00", "reason": "restricted", "url": "https://www.ccnew.com/"}
