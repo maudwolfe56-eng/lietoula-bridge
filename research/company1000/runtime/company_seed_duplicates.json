@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "duplicate_seed_rows_excluded": 76,
+  "duplicate_seed_rows_excluded": 78,
   "company_id_collisions_resolved": 7,
   "duplicates": [
     {
@@ -685,6 +685,24 @@
       "skipped_company_name": "中公教育科技股份有限公司",
       "kept_company_id": "cn-edu-0291",
       "kept_company_name": "中公教育科技股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0021.json",
+      "source_row": 4,
+      "skipped_company_id": "cn-pharma-0804",
+      "skipped_company_name": "上海复星医药（集团）股份有限公司",
+      "kept_company_id": "cn-health-0221",
+      "kept_company_name": "上海复星医药（集团）股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0021.json",
+      "source_row": 5,
+      "skipped_company_id": "cn-pharma-0805",
+      "skipped_company_name": "上海医药集团股份有限公司",
+      "kept_company_id": "cn-health-0224",
+      "kept_company_name": "上海医药集团股份有限公司",
       "reason": "duplicate_exact_company_name"
     }
   ],
