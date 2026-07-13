@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-07-13T18:34:11.590223+00:00",
-  "probable_detail_candidates": 727,
+  "updated_at": "2026-07-13T18:49:37.097675+00:00",
+  "probable_detail_candidates": 737,
   "selected": 20,
-  "job_records_created": 10,
-  "explicit_failures_created": 10,
-  "remaining_unresolved_estimate": 164,
+  "job_records_created": 14,
+  "explicit_failures_created": 6,
+  "remaining_unresolved_estimate": 54,
   "policy": {
     "auto_active_verified": false,
     "salary_inference_allowed": false,
