@@ -5,6 +5,11 @@ on:
     branches:
       - main
     types: [opened, synchronize, reopened]
+    paths-ignore:
+      - 'research/company1000/output/**'
+      - 'research/company1000/runtime/**'
+      - 'research/company1000/logs/**'
+      - 'research/company1000/deliverables/**'
   workflow_dispatch:
 
 permissions:
@@ -76,6 +81,7 @@ jobs:
               companies = merged.get('companies', [])
               state['target_companies'] = 1000
               state['valid_seed_count'] = len(companies)
+              state['duplicate_seed_rows_excluded'] = merged.get('duplicate_seed_rows_excluded', 0)
               state['merged_seed_sources'] = merged.get('source_files', [])
               state['updated_at'] = datetime.now(timezone.utc).isoformat()
               state.setdefault('policy', {})['auto_active_verified'] = False
