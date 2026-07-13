@@ -1,0 +1,506 @@
+{
+  "schema_version": "1.0",
+  "source_note": "2026-07-14增量种子（第171-220家）。本批优先补齐保险、金融资产管理与证券机构。仅登记企业官方主站、官方招聘子域名或由企业官网公开链接确认的招聘入口；无法直接访问的站点仅作为待审计候选，不绕过登录、验证码、付费墙或访问控制。",
+  "companies": [
+    {
+      "company_id": "cn-ins-0171",
+      "company_name": "中国太平保险集团有限责任公司",
+      "short_name": "中国太平",
+      "industry": "保险",
+      "official_website": "https://www.cntaiping.com/",
+      "career_url": "https://www.cntaiping.com/",
+      "career_entry_evidence": "2026-07-14已核验中国太平集团官方网站；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-ins-0172",
+      "company_name": "中国再保险（集团）股份有限公司",
+      "short_name": "中国再保",
+      "industry": "再保险",
+      "official_website": "https://www.chinare.com.cn/",
+      "career_url": "https://www.chinare.com.cn/",
+      "career_entry_evidence": "2026-07-14已核验中国再保官方网站；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-ins-0173",
+      "company_name": "中国出口信用保险公司",
+      "short_name": "中国信保",
+      "industry": "政策性保险",
+      "official_website": "https://www.sinosure.com.cn/",
+      "career_url": "https://www.sinosure.com.cn/",
+      "career_entry_evidence": "2026-07-14已核验中国信保官方网站；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-ins-0174",
+      "company_name": "中国太平洋保险（集团）股份有限公司",
+      "short_name": "中国太保",
+      "industry": "保险",
+      "official_website": "https://www.cpic.com.cn/",
+      "career_url": "https://www.cpic.com.cn/",
+      "career_entry_evidence": "2026-07-14已核验中国太保官方网站；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-ins-0175",
+      "company_name": "新华人寿保险股份有限公司",
+      "short_name": "新华保险",
+      "industry": "保险",
+      "official_website": "https://www.newchinalife.com/",
+      "career_url": "https://www.newchinalife.com/",
+      "career_entry_evidence": "2026-07-14已核验新华保险官方网站；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-ins-0176",
+      "company_name": "泰康保险集团股份有限公司",
+      "short_name": "泰康保险集团",
+      "industry": "保险与医养",
+      "official_website": "https://www.taikang.com/",
+      "career_url": "https://www.taikang.com/",
+      "career_entry_evidence": "2026-07-14已核验泰康保险集团官方网站；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-ins-0177",
+      "company_name": "阳光保险集团股份有限公司",
+      "short_name": "阳光保险",
+      "industry": "保险",
+      "official_website": "https://www.sinosig.com/",
+      "career_url": "https://www.sinosig.com/",
+      "career_entry_evidence": "阳光保险集团官方品牌域名候选；公开抓取出现站点内部错误，交由合规HTTP复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-ins-0178",
+      "company_name": "大家保险集团有限责任公司",
+      "short_name": "大家保险集团",
+      "industry": "保险",
+      "official_website": "https://www.djbx.com/",
+      "career_url": "https://www.djbx.com/",
+      "career_entry_evidence": "2026-07-14已核验大家保险集团官方网站；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-ins-0179",
+      "company_name": "富德生命人寿保险股份有限公司",
+      "short_name": "富德生命人寿",
+      "industry": "保险",
+      "official_website": "https://www.sino-life.com/",
+      "career_url": "https://www.sino-life.com/",
+      "career_entry_evidence": "2026-07-14已核验富德生命人寿官方网站；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-ins-0180",
+      "company_name": "前海人寿保险股份有限公司",
+      "short_name": "前海人寿",
+      "industry": "保险",
+      "official_website": "https://www.foresealife.com/",
+      "career_url": "https://www.foresealife.com/",
+      "career_entry_evidence": "前海人寿官方品牌域名候选；公开抓取出现站点内部错误，交由合规HTTP复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-amc-0181",
+      "company_name": "中国信达资产管理股份有限公司",
+      "short_name": "中国信达",
+      "industry": "金融资产管理",
+      "official_website": "https://www.cinda.com.cn/",
+      "career_url": "https://www.cinda.com.cn/",
+      "career_entry_evidence": "2026-07-14已核验中国信达官方网站域名；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-amc-0182",
+      "company_name": "中国东方资产管理股份有限公司",
+      "short_name": "中国东方资产",
+      "industry": "金融资产管理",
+      "official_website": "https://www.coamc.com.cn/",
+      "career_url": "https://www.coamc.com.cn/",
+      "career_entry_evidence": "2026-07-14已核验中国东方资产官方网站；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-amc-0183",
+      "company_name": "中国长城资产管理股份有限公司",
+      "short_name": "中国长城资产",
+      "industry": "金融资产管理",
+      "official_website": "https://www.gwamcc.com/",
+      "career_url": "https://www.gwamcc.com/",
+      "career_entry_evidence": "2026-07-14已核验中国长城资产官方网站；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0184",
+      "company_name": "中国光大集团股份公司",
+      "short_name": "中国光大集团",
+      "industry": "综合金融",
+      "official_website": "https://www.ebchina.com/",
+      "career_url": "https://www.ebchina.com/",
+      "career_entry_evidence": "2026-07-14已核验中国光大集团官方网站；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0185",
+      "company_name": "中国投资有限责任公司",
+      "short_name": "中投公司",
+      "industry": "主权财富投资",
+      "official_website": "https://www.china-inv.cn/",
+      "career_url": "https://www.china-inv.cn/",
+      "career_entry_evidence": "中投公司官方域名候选；公开访问返回405，交由合规HTTP复核，不绕过访问控制。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0186",
+      "company_name": "中央汇金投资有限责任公司",
+      "short_name": "中央汇金",
+      "industry": "国有金融资本投资",
+      "official_website": "https://www.huijin-inv.cn/",
+      "career_url": "https://www.huijin-inv.cn/",
+      "career_entry_evidence": "中央汇金官方域名候选；公开访问返回405，交由合规HTTP复核，不绕过访问控制。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0187",
+      "company_name": "中国证券金融股份有限公司",
+      "short_name": "中国证券金融",
+      "industry": "证券金融服务",
+      "official_website": "https://www.csf.com.cn/",
+      "career_url": "https://www.csf.com.cn/",
+      "career_entry_evidence": "中国证券金融官方域名候选；公开访问返回502，交由后续公开访问复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-amc-0188",
+      "company_name": "中国中信金融资产管理股份有限公司",
+      "short_name": "中信金融资产",
+      "industry": "金融资产管理",
+      "official_website": "https://www.famc.citic/",
+      "career_url": "https://www.famc.citic/",
+      "career_entry_evidence": "2026-07-14已核验中国中信金融资产官方网站及公开人才招聘栏目。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0189",
+      "company_name": "中信证券股份有限公司",
+      "short_name": "中信证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.citics.com/",
+      "career_url": "https://www.citics.com/",
+      "career_entry_evidence": "2026-07-14已核验中信证券官方网站；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0190",
+      "company_name": "中信建投证券股份有限公司",
+      "short_name": "中信建投证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.csc108.com/",
+      "career_url": "https://www.csc108.com/",
+      "career_entry_evidence": "2026-07-14已核验中信建投证券官方网站；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0191",
+      "company_name": "招商证券股份有限公司",
+      "short_name": "招商证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.cmschina.com/",
+      "career_url": "https://www.cmschina.com/",
+      "career_entry_evidence": "2026-07-14已核验招商证券官方网站；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0192",
+      "company_name": "广发证券股份有限公司",
+      "short_name": "广发证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.gf.com.cn/",
+      "career_url": "https://www.gf.com.cn/",
+      "career_entry_evidence": "2026-07-14已核验广发证券官方网站；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0193",
+      "company_name": "国信证券股份有限公司",
+      "short_name": "国信证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.guosen.com.cn/",
+      "career_url": "https://www.guosen.com.cn/",
+      "career_entry_evidence": "2026-07-14已核验国信证券官方网站；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0194",
+      "company_name": "东方证券股份有限公司",
+      "short_name": "东方证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.dfzq.com.cn/",
+      "career_url": "https://www.dfzq.com.cn/",
+      "career_entry_evidence": "2026-07-14已核验东方证券官方网站域名；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0195",
+      "company_name": "光大证券股份有限公司",
+      "short_name": "光大证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.ebscn.com/",
+      "career_url": "https://www.ebscn.com/",
+      "career_entry_evidence": "光大证券官方品牌域名候选；公开抓取出现站点内部错误，交由合规HTTP复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0196",
+      "company_name": "兴业证券股份有限公司",
+      "short_name": "兴业证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.xyzq.com.cn/",
+      "career_url": "https://www.xyzq.com.cn/",
+      "career_entry_evidence": "2026-07-14已核验兴业证券官方网站；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0197",
+      "company_name": "申万宏源证券有限公司",
+      "short_name": "申万宏源证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.swhysc.com/",
+      "career_url": "https://www.swhysc.com/",
+      "career_entry_evidence": "2026-07-14已核验申万宏源证券官方网站；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0198",
+      "company_name": "国泰海通证券股份有限公司",
+      "short_name": "国泰海通证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.gtht.com/",
+      "career_url": "https://www.gtht.com/",
+      "career_entry_evidence": "2026-07-14已核验国泰海通证券官方网站及当前公司名称；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0199",
+      "company_name": "平安证券股份有限公司",
+      "short_name": "平安证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://stock.pingan.com/",
+      "career_url": "https://talent.pingan.com/",
+      "career_entry_evidence": "2026-07-14平安证券官方网站公开链接“加入平安”指向平安集团人才门户。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0200",
+      "company_name": "方正证券股份有限公司",
+      "short_name": "方正证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.foundersc.com/",
+      "career_url": "https://www.foundersc.com/",
+      "career_entry_evidence": "方正证券官方品牌域名候选；公开访问超时，交由后续合规HTTP复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0201",
+      "company_name": "国金证券股份有限公司",
+      "short_name": "国金证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.gjzq.com.cn/",
+      "career_url": "https://gjzq.zhiye.com/",
+      "career_entry_evidence": "2026-07-14国金证券官方网站公开链接“加入国金”指向品牌招聘门户。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0202",
+      "company_name": "财通证券股份有限公司",
+      "short_name": "财通证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.ctsec.com/",
+      "career_url": "https://www.ctsec.com/",
+      "career_entry_evidence": "2026-07-14已核验财通证券官方网站；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0203",
+      "company_name": "浙商证券股份有限公司",
+      "short_name": "浙商证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.stocke.com.cn/",
+      "career_url": "https://www.stocke.com.cn/",
+      "career_entry_evidence": "浙商证券官方品牌域名候选；公开抓取出现站点内部错误，交由合规HTTP复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0204",
+      "company_name": "东吴证券股份有限公司",
+      "short_name": "东吴证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.dwzq.com.cn/",
+      "career_url": "https://www.dwzq.com.cn/",
+      "career_entry_evidence": "2026-07-14已核验东吴证券官方网站；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0205",
+      "company_name": "南京证券股份有限公司",
+      "short_name": "南京证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.njzq.com.cn/",
+      "career_url": "https://www.njzq.com.cn/",
+      "career_entry_evidence": "2026-07-14已核验南京证券官方网站；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0206",
+      "company_name": "长江证券股份有限公司",
+      "short_name": "长江证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.95579.com/",
+      "career_url": "https://www.95579.com/",
+      "career_entry_evidence": "2026-07-14已核验长江证券官方网站；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0207",
+      "company_name": "东北证券股份有限公司",
+      "short_name": "东北证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.nesc.cn/",
+      "career_url": "https://www.nesc.cn/",
+      "career_entry_evidence": "2026-07-14已核验东北证券官方网站域名；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0208",
+      "company_name": "西部证券股份有限公司",
+      "short_name": "西部证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.westsecu.com/",
+      "career_url": "https://www.westsecu.com/",
+      "career_entry_evidence": "西部证券官方品牌域名候选；公开抓取出现站点内部错误，交由合规HTTP复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0209",
+      "company_name": "第一创业证券股份有限公司",
+      "short_name": "第一创业证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.firstcapital.com.cn/",
+      "career_url": "https://www.firstcapital.com.cn/",
+      "career_entry_evidence": "2026-07-14已核验第一创业证券官方网站；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0210",
+      "company_name": "华安证券股份有限公司",
+      "short_name": "华安证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.hazq.com/",
+      "career_url": "https://www.hazq.com/",
+      "career_entry_evidence": "华安证券官方品牌域名候选；公开抓取出现站点内部错误，交由合规HTTP复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0211",
+      "company_name": "国元证券股份有限公司",
+      "short_name": "国元证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.gyzq.com.cn/",
+      "career_url": "https://www.gyzq.com.cn/",
+      "career_entry_evidence": "2026-07-14已核验国元证券官方网站域名；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0212",
+      "company_name": "中原证券股份有限公司",
+      "short_name": "中原证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.ccnew.com/",
+      "career_url": "https://www.ccnew.com/",
+      "career_entry_evidence": "2026-07-14已核验中原证券官方网站域名；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0213",
+      "company_name": "山西证券股份有限公司",
+      "short_name": "山西证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.i618.com.cn/",
+      "career_url": "https://www.i618.com.cn/",
+      "career_entry_evidence": "2026-07-14已核验山西证券官方网站域名；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0214",
+      "company_name": "财达证券股份有限公司",
+      "short_name": "财达证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.s10000.com/",
+      "career_url": "https://www.s10000.com/",
+      "career_entry_evidence": "财达证券官方品牌域名候选；安全抓取工具未解析该域名，交由合规HTTP复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0215",
+      "company_name": "红塔证券股份有限公司",
+      "short_name": "红塔证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.hongtastock.com/",
+      "career_url": "https://wecruit.hotjob.cn/",
+      "career_entry_evidence": "2026-07-14红塔证券官方网站公开“加入我们”链接指向招聘门户。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0216",
+      "company_name": "华林证券股份有限公司",
+      "short_name": "华林证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.chinalions.com/",
+      "career_url": "https://www.chinalions.com/",
+      "career_entry_evidence": "华林证券官方品牌域名候选；公开抓取出现站点内部错误，交由合规HTTP复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0217",
+      "company_name": "天风证券股份有限公司",
+      "short_name": "天风证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.tfzq.com/",
+      "career_url": "https://www.tfzq.com/",
+      "career_entry_evidence": "2026-07-14已核验天风证券官方网站；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0218",
+      "company_name": "湘财证券股份有限公司",
+      "short_name": "湘财证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.xcsc.com/",
+      "career_url": "https://www.xcsc.com/",
+      "career_entry_evidence": "2026-07-14已核验湘财证券官方网站域名；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0219",
+      "company_name": "国联民生证券股份有限公司",
+      "short_name": "国联民生证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.glsc.com.cn/",
+      "career_url": "https://www.glsc.com.cn/",
+      "career_entry_evidence": "2026-07-14已核验国联民生证券官方网站及当前公司名称；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-sec-0220",
+      "company_name": "信达证券股份有限公司",
+      "short_name": "信达证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.cindasc.com/",
+      "career_url": "https://www.cindasc.com/",
+      "career_entry_evidence": "2026-07-14已核验信达证券官方网站域名；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    }
+  ]
+}
