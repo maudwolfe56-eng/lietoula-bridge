@@ -1,7 +1,7 @@
 {
-  "requested_at": "2026-07-13T20:25:00Z",
-  "sequence": 1,
-  "purpose": "Continue official-source audits and bounded resolution with false-positive suppression, announcement routing, retry-aware detail handling, and classification-aware final acceptance",
+  "requested_at": "2026-07-13T20:31:00Z",
+  "sequence": 2,
+  "purpose": "Continue official-source audits and bounded resolution with false-positive suppression, announcement routing, retry-aware detail handling, deduplicated packaging, change detection, and classification-aware final acceptance",
   "target_companies": 1000,
   "policy": {
     "official_sources_only": true,
@@ -9,6 +9,9 @@
     "salary_inference_allowed": false,
     "access_control_bypass_allowed": false,
     "new_job_link_default_status": "candidate_raw",
-    "review_pending_requires_detail_validation": true
+    "review_pending_requires_detail_validation": true,
+    "transient_failures_remain_retryable": true,
+    "navigation_pages_must_not_count_as_job_details": true,
+    "official_multi_position_announcements_are_routed_separately": true
   }
 }
