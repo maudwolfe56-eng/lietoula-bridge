@@ -18,7 +18,7 @@ concurrency:
 jobs:
   run-batch:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - name: Checkout research branch
         uses: actions/checkout@v4
@@ -66,7 +66,7 @@ jobs:
             --seed-file company_seed_1000.json \
             --output-dir output \
             --state-file runtime/checkpoint.json \
-            --batch-size 20 \
+            --batch-size 50 \
             | tee logs/next_batch_auto.log
 
       - name: Expand public recruitment navigation
@@ -81,7 +81,7 @@ jobs:
             --seed-file runtime/company_seed_merged.json \
             --output-dir output \
             --state-file runtime/checkpoint.json \
-            --batch-size 100 \
+            --batch-size 200 \
             --max-workers 10 \
             --max-attempts 2 \
             | tee logs/navigation_expansion.log
@@ -96,8 +96,8 @@ jobs:
           set -o pipefail
           python resolve_job_detail_candidates_safe.py \
             --output-dir output \
-            --batch-size 20 \
-            --max-workers 6 \
+            --batch-size 60 \
+            --max-workers 8 \
             | tee logs/resolve_job_details.log
 
       - name: Extract roles from multi-position announcements
@@ -110,8 +110,8 @@ jobs:
           set -o pipefail
           python resolve_multi_position_announcements.py \
             --output-dir output \
-            --batch-size 20 \
-            --max-workers 5 \
+            --batch-size 40 \
+            --max-workers 6 \
             --max-attempts 2 \
             | tee logs/resolve_multi_position_announcements.log
 
