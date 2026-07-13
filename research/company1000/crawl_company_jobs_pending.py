@@ -3,13 +3,15 @@
 
 This wrapper scans from the checkpoint cursor, wraps once, and selects only
 companies whose current company_id/career_url audit key is absent from the
-coverage ledger. It preserves the conservative policy of crawl_company_jobs.py.
+coverage ledger. It preserves the conservative policy of crawl_company_jobs.py
+and uses bounded parallelism only for independent public HTTP requests.
 """
 from __future__ import annotations
 
 import argparse
 import hashlib
 import json
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Any
 
@@ -53,12 +55,104 @@ def select_pending(
     return selected
 
 
+def audit_one(entry: tuple[int, dict[str, Any]]) -> tuple[int, dict[str, Any], list[dict[str, Any]], list[dict[str, Any]]]:
+    index, company = entry
+    company_id = str(company.get("company_id") or "")
+    name = str(company.get("company_name") or company.get("name") or "")
+    career_url = str(company.get("career_url") or "")
+    official_site = str(company.get("official_website") or career_url)
+    audit_key = company_audit_key(company)
+    observed_at = utc_now()
+
+    if not career_url:
+        coverage = {
+            "audit_key": audit_key,
+            "company_id": company_id,
+            "company_name": name,
+            "official_entry_url": None,
+            "final_url": None,
+            "official_entry_verified": False,
+            "http_status": None,
+            "page_title": None,
+            "text_length": 0,
+            "enumeration_status": "missing_career_url",
+            "job_link_candidate_count": 0,
+            "error": "missing_career_url",
+            "observed_at": observed_at,
+            "final_acceptance_met": False,
+        }
+        failures = [{
+            "company_id": company_id,
+            "company_name": name,
+            "reason": "missing_career_url",
+            "observed_at": observed_at,
+        }]
+        return index, coverage, failures, []
+
+    session = requests.Session()
+    session.headers.update({
+        "User-Agent": USER_AGENT,
+        "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.5",
+    })
+    result = fetch_page(session, career_url, official_site, career_url)
+    verified = bool(
+        result.http_status
+        and 200 <= result.http_status < 400
+        and result.final_url
+        and same_official_family(result.final_url, official_site, career_url)
+    )
+    enumeration_status = "html_links_discovered" if result.job_links else "no_links_observed"
+    if result.blocked:
+        enumeration_status = "restricted"
+    elif result.javascript_shell:
+        enumeration_status = "pending_dynamic_js"
+    elif result.error:
+        enumeration_status = "fetch_failed"
+
+    observed_at = utc_now()
+    coverage = {
+        "audit_key": audit_key,
+        "company_id": company_id,
+        "company_name": name,
+        "official_entry_url": career_url,
+        "final_url": result.final_url,
+        "official_entry_verified": verified,
+        "http_status": result.http_status,
+        "page_title": result.title,
+        "text_length": result.text_length,
+        "enumeration_status": enumeration_status,
+        "job_link_candidate_count": len(result.job_links),
+        "error": result.error,
+        "observed_at": observed_at,
+        "final_acceptance_met": False,
+    }
+    failures: list[dict[str, Any]] = []
+    if result.error or result.blocked or result.javascript_shell:
+        failures.append({
+            "company_id": company_id,
+            "company_name": name,
+            "url": career_url,
+            "reason": enumeration_status,
+            "http_status": result.http_status,
+            "observed_at": observed_at,
+        })
+    links = [{
+        "company_id": company_id,
+        "company_name": name,
+        "source_url": job_url,
+        "review_status": "review_pending",
+        "discovered_at": observed_at,
+    } for job_url in result.job_links]
+    return index, coverage, failures, links
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--seed-file", default="runtime/company_seed_merged.json")
     parser.add_argument("--output-dir", default="output")
     parser.add_argument("--state-file", default="runtime/checkpoint.json")
     parser.add_argument("--batch-size", type=int, default=20)
+    parser.add_argument("--max-workers", type=int, default=8)
     parser.add_argument("--start-index", type=int)
     args = parser.parse_args()
 
@@ -78,95 +172,18 @@ def main() -> int:
     processed = existing_keys(coverage_file, "audit_key")
     selected = select_pending(companies, processed, start, args.batch_size)
 
-    session = requests.Session()
-    session.headers.update({"User-Agent": USER_AGENT, "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.5"})
-
     coverage_rows: list[dict[str, Any]] = []
     failure_rows: list[dict[str, Any]] = []
     link_rows: list[dict[str, Any]] = []
 
-    for _, company in selected:
-        company_id = str(company.get("company_id") or "")
-        name = str(company.get("company_name") or company.get("name") or "")
-        career_url = str(company.get("career_url") or "")
-        official_site = str(company.get("official_website") or career_url)
-        audit_key = company_audit_key(company)
-
-        if not career_url:
-            observed_at = utc_now()
-            coverage_rows.append({
-                "audit_key": audit_key,
-                "company_id": company_id,
-                "company_name": name,
-                "official_entry_url": None,
-                "final_url": None,
-                "official_entry_verified": False,
-                "http_status": None,
-                "page_title": None,
-                "text_length": 0,
-                "enumeration_status": "missing_career_url",
-                "job_link_candidate_count": 0,
-                "error": "missing_career_url",
-                "observed_at": observed_at,
-                "final_acceptance_met": False,
-            })
-            failure_rows.append({
-                "company_id": company_id,
-                "company_name": name,
-                "reason": "missing_career_url",
-                "observed_at": observed_at,
-            })
-            continue
-
-        result = fetch_page(session, career_url, official_site, career_url)
-        verified = bool(
-            result.http_status
-            and 200 <= result.http_status < 400
-            and result.final_url
-            and same_official_family(result.final_url, official_site, career_url)
-        )
-        enumeration_status = "html_links_discovered" if result.job_links else "no_links_observed"
-        if result.blocked:
-            enumeration_status = "restricted"
-        elif result.javascript_shell:
-            enumeration_status = "pending_dynamic_js"
-        elif result.error:
-            enumeration_status = "fetch_failed"
-
-        observed_at = utc_now()
-        coverage_rows.append({
-            "audit_key": audit_key,
-            "company_id": company_id,
-            "company_name": name,
-            "official_entry_url": career_url,
-            "final_url": result.final_url,
-            "official_entry_verified": verified,
-            "http_status": result.http_status,
-            "page_title": result.title,
-            "text_length": result.text_length,
-            "enumeration_status": enumeration_status,
-            "job_link_candidate_count": len(result.job_links),
-            "error": result.error,
-            "observed_at": observed_at,
-            "final_acceptance_met": False,
-        })
-        if result.error or result.blocked or result.javascript_shell:
-            failure_rows.append({
-                "company_id": company_id,
-                "company_name": name,
-                "url": career_url,
-                "reason": enumeration_status,
-                "http_status": result.http_status,
-                "observed_at": observed_at,
-            })
-        for job_url in result.job_links:
-            link_rows.append({
-                "company_id": company_id,
-                "company_name": name,
-                "source_url": job_url,
-                "review_status": "review_pending",
-                "discovered_at": observed_at,
-            })
+    worker_count = max(1, min(args.max_workers, len(selected) or 1))
+    if selected:
+        with ThreadPoolExecutor(max_workers=worker_count) as executor:
+            results = list(executor.map(audit_one, selected))
+        for _, coverage, failures, links in sorted(results, key=lambda row: row[0]):
+            coverage_rows.append(coverage)
+            failure_rows.extend(failures)
+            link_rows.extend(links)
 
     append_jsonl(coverage_file, coverage_rows)
     append_jsonl(failure_file, failure_rows)
@@ -190,6 +207,7 @@ def main() -> int:
             "selected_indices": [index for index, _ in selected],
             "selected_count": len(selected),
             "processed_count": len(coverage_rows),
+            "max_workers": worker_count,
         },
         "policy": {
             "auto_active_verified": False,
@@ -206,6 +224,7 @@ def main() -> int:
         "links": len(link_rows),
         "pending_seed_audits": pending_count,
         "next_index": next_index,
+        "max_workers": worker_count,
     }, ensure_ascii=False))
     return 0
 
