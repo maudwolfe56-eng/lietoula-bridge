@@ -1,1 +1,1 @@
-2026-07-13T14:42:00Z batch_start=80 seed_count=100 automation_turn=1 expansion=0004
+2026-07-13T15:49:00Z batch_start=46 batch_size=20 seed_count=1000 automation_turn=1
