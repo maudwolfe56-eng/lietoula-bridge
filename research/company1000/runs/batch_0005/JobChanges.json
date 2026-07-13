@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "batch_0005",
+  "generated_at_utc": "2026-07-13T12:55:03Z",
+  "changes": [],
+  "summary": {
+    "new": 0,
+    "modified": 0,
+    "closed": 0,
+    "expired": 0
+  },
+  "note": "未采集到达到岗位详情最低字段要求的新记录，因此不产生岗位状态变更。"
+}

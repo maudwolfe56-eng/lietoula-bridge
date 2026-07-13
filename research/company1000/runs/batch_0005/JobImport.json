@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "batch_0005",
+  "generated_at_utc": "2026-07-13T12:55:03Z",
+  "jobs": [],
+  "reason_empty": "本批完成10家官方招聘入口审计，但公开HTML未返回可同时满足岗位名称、公司、职责、任职要求、地点及唯一详情URL要求的岗位详情；不得以入口页代替岗位详情，不得推测缺失字段。",
+  "policy": {
+    "default_new_status": "candidate_raw",
+    "auto_active_verified": false,
+    "salary_inference_allowed": false,
+    "login_captcha_or_paywall_bypass_allowed": false
+  }
+}

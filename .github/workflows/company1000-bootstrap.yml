@@ -1,0 +1,17 @@
+name: Company1000 legacy batch 0007 archive
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  archived:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Explain archived workflow
+        run: |
+          echo 'This hard-coded batch 0007 workflow is archived.'
+          echo 'Use company1000-next-batch.yml for all subsequent seed audits.'
+          echo 'No repository files are modified by this workflow.'

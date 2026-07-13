@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "batch_0004",
+  "generated_at": "2026-07-13T12:45:00Z",
+  "records": [
+    {
+      "company_id": "cn-soe-0015",
+      "company_name": "中国航空工业集团有限公司",
+      "official_website": "https://www.avic.com.cn/",
+      "career_url": "https://www.avic.com.cn/sycd/rczp/",
+      "source_type": "official_company_talent_page",
+      "official_entry_verified": true,
+      "verification_method": "official_site_browser",
+      "verified_at": "2026-07-13T12:45:00Z",
+      "enumeration_status": "official_talent_page_no_positions_enumerated",
+      "confidence": 0.96,
+      "review_recommendation": "continue_member_unit_audit"
+    },
+    {
+      "company_id": "cn-soe-0016",
+      "company_name": "中国电子科技集团有限公司",
+      "official_website": "https://www.cetc.com.cn/",
+      "career_url": "https://www.cetc.com.cn/zgdk/1593022/1592495/index.html",
+      "source_type": "official_company_recruitment_announcements",
+      "official_entry_verified": true,
+      "verification_method": "official_site_browser_and_http_200",
+      "verified_at": "2026-07-13T12:45:00Z",
+      "enumeration_status": "official_announcements_list_requires_member_unit_followup",
+      "confidence": 0.98,
+      "review_recommendation": "continue_member_unit_and_application_entry_audit"
+    }
+  ]
+}

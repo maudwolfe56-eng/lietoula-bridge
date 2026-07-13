@@ -1,0 +1,5 @@
+requests==2.32.4
+beautifulsoup4==4.13.4
+lxml==5.4.0
+python-dateutil==2.9.0.post0
+playwright==1.53.0

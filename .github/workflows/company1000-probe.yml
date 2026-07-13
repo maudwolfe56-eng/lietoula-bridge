@@ -1,0 +1,63 @@
+name: company1000-probe
+
+on:
+  push:
+    branches:
+      - research/company1000-crawler-20260713
+    paths:
+      - '.github/workflows/company1000-probe.yml'
+      - 'research/company1000/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/company1000-crawler-20260713
+      - name: Decode crawler tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd research/company1000
+          base64 -d crawl_company_jobs.py.gz.b64 | gzip -d > crawl_company_jobs.py
+          base64 -d merge_job_results.py.gz.b64 | gzip -d > merge_job_results.py
+          python -m py_compile crawl_company_jobs.py merge_job_results.py
+      - name: Capture runtime interface
+        shell: bash
+        run: |
+          set +e
+          cd research/company1000
+          {
+            echo "generated_at=$(date -u +%FT%TZ)"
+            echo "python=$(python --version 2>&1)"
+            echo "crawler_sha256=$(sha256sum crawl_company_jobs.py | awk '{print $1}')"
+            echo "merger_sha256=$(sha256sum merge_job_results.py | awk '{print $1}')"
+            echo "crawler_bytes=$(wc -c < crawl_company_jobs.py)"
+            echo "merger_bytes=$(wc -c < merge_job_results.py)"
+            echo
+            echo '=== crawl_company_jobs.py --help ==='
+            python crawl_company_jobs.py --help 2>&1
+            echo "crawler_help_exit=$?"
+            echo
+            echo '=== merge_job_results.py --help ==='
+            python merge_job_results.py --help 2>&1
+            echo "merger_help_exit=$?"
+          } > runtime_probe.txt
+      - name: Commit probe result
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'company1000-bot'
+          git config user.email 'company1000-bot@users.noreply.github.com'
+          git add research/company1000/runtime_probe.txt
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m 'chore(company1000): probe crawler runtime interface'
+          git push origin HEAD:research/company1000-crawler-20260713

@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "batch_0004",
+  "generated_at": "2026-07-13T12:45:00Z",
+  "records": [],
+  "summary": {
+    "new": 0,
+    "modified": 0,
+    "closed": 0,
+    "expired": 0
+  },
+  "empty_reason": "No job-level records were accepted into JobImport in this batch, so no job lifecycle changes were emitted."
+}
