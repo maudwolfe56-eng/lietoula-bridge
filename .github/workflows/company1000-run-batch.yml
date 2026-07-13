@@ -49,6 +49,7 @@ jobs:
             resolve_job_detail_candidates.py \
             resolve_job_detail_candidates_safe.py \
             build_import_package.py \
+            ensure_unique_job_source_urls.py \
             assess_final_acceptance.py
 
       - name: Audit next unprocessed companies
@@ -128,6 +129,7 @@ jobs:
               state_path.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding='utf-8')
           PY
           python build_import_package.py | tee logs/build_import_package.log
+          python ensure_unique_job_source_urls.py | tee logs/ensure_unique_job_source_urls.log
           python assess_final_acceptance.py | tee logs/assess_final_acceptance.log
 
       - name: Record workflow outcome
