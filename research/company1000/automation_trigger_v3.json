@@ -1,7 +1,7 @@
 {
-  "requested_at": "2026-07-13T20:31:00Z",
-  "sequence": 2,
-  "purpose": "Continue official-source audits and bounded resolution with false-positive suppression, announcement routing, retry-aware detail handling, deduplicated packaging, change detection, and classification-aware final acceptance",
+  "requested_at": "2026-07-13T20:38:00Z",
+  "sequence": 3,
+  "purpose": "Run corrected classification-aware acceptance, suppress known non-company position directories, route search landing pages to navigation, continue official-source audits and bounded detail and announcement resolution, rebuild deliverables, and reassess completion",
   "target_companies": 1000,
   "policy": {
     "official_sources_only": true,
@@ -12,6 +12,7 @@
     "review_pending_requires_detail_validation": true,
     "transient_failures_remain_retryable": true,
     "navigation_pages_must_not_count_as_job_details": true,
-    "official_multi_position_announcements_are_routed_separately": true
+    "official_multi_position_announcements_are_routed_separately": true,
+    "resolution_scope": "company_id_plus_canonical_source_url"
   }
 }
