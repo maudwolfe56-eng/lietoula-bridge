@@ -1,15 +1,11 @@
 name: Company1000 remote incremental runner
 
 on:
-  pull_request:
+  push:
     branches:
-      - main
-    types: [opened, synchronize, reopened]
-    paths-ignore:
-      - 'research/company1000/output/**'
-      - 'research/company1000/runtime/**'
-      - 'research/company1000/logs/**'
-      - 'research/company1000/deliverables/**'
+      - research/company1000-crawler-20260713
+    paths:
+      - 'research/company1000/automation_trigger.json'
   workflow_dispatch:
 
 permissions:
@@ -21,7 +17,6 @@ concurrency:
 
 jobs:
   run-batch:
-    if: github.event_name == 'workflow_dispatch' || github.head_ref == 'research/company1000-crawler-20260713'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
