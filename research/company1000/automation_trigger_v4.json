@@ -1,9 +1,10 @@
 {
-  "requested_at": "2026-07-13T21:28:37Z",
-  "sequence": 4,
-  "purpose": "Continue the next unattended company1000 batch with two-pass candidate classification: audit uncompleted official recruitment entries, enumerate publicly accessible recruitment navigation, immediately reclassify newly discovered URLs before resolution, resolve embedded and HTML job payloads, process official multi-position announcements, rebuild deduplicated deliverables, record explicit restrictions, detect changes, and reassess final acceptance",
+  "requested_at": "2026-07-13T21:49:03Z",
+  "sequence": 5,
+  "purpose": "Continue the next unattended company1000 batch with two-pass candidate classification: prioritize uncompleted companies, audit official recruitment entries, enumerate publicly accessible recruitment navigation, reclassify newly discovered URLs before resolution, resolve embedded and HTML job payloads, process official multi-position announcements, rebuild deduplicated deliverables, record explicit restrictions and no-public-opening conclusions, detect changes, and reassess final acceptance",
   "target_companies": 1000,
   "execution": {
+    "company_audit_batch_size": 50,
     "navigation_batch_size": 800,
     "embedded_batch_size": 500,
     "html_detail_batch_size": 400,
