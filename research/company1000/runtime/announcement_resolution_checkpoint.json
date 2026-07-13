@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-07-13T22:33:33.384773+00:00",
-  "announcement_candidates": 1662,
-  "selected": 40,
-  "role_records_created": 0,
-  "explicit_failures_created": 40,
+  "updated_at": "2026-07-13T23:40:17.453319+00:00",
+  "announcement_candidates": 1688,
+  "selected": 200,
+  "role_records_created": 9,
+  "explicit_failures_created": 195,
   "policy": {
     "auto_active_verified": false,
     "missing_fields_inferred": false,

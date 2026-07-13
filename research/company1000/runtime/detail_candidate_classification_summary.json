@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-13T21:53:42.984199+00:00",
-  "candidate_count": 26138,
-  "new_classifications": 1134,
-  "new_navigation_resolutions": 1133,
-  "new_navigation_routes": 1,
+  "generated_at": "2026-07-13T23:38:41.238366+00:00",
+  "candidate_count": 27592,
+  "new_classifications": 0,
+  "new_navigation_resolutions": 0,
+  "new_navigation_routes": 0,
   "new_announcement_routes": 0,
   "classification_counts": {
     "route_announcement": 85,

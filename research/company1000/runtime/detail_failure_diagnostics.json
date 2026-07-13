@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-13T22:32:55.726404+00:00",
-  "failure_rows": 2049,
+  "generated_at": "2026-07-13T23:39:40.576007+00:00",
+  "failure_rows": 2102,
   "unique_failed_urls": 1967,
   "reason_counts_all_attempts": {
-    "detail_unparseable_or_multi_position_announcement": 1709,
+    "detail_unparseable_or_multi_position_announcement": 1762,
     "detail_http_error": 234,
     "detail_access_restricted": 75,
     "detail_fetch_failed:ConnectionError": 23,
@@ -11,15 +11,15 @@
     "detail_fetch_failed:ConnectTimeout": 1
   },
   "reason_counts_latest_by_url": {
-    "detail_unparseable_or_multi_position_announcement": 1640,
-    "detail_http_error": 234,
+    "detail_unparseable_or_multi_position_announcement": 1681,
+    "detail_http_error": 193,
     "detail_access_restricted": 75,
     "detail_fetch_failed:ConnectionError": 10,
     "detail_fetch_failed:ReadTimeout": 7,
     "detail_fetch_failed:ConnectTimeout": 1
   },
   "http_status_counts": {
-    "200": 1709,
+    "200": 1762,
     "406": 221,
     "403": 75,
     "none": 31,
@@ -34,7 +34,7 @@
     },
     {
       "host": "jobs.lenovo.com",
-      "count": 596
+      "count": 644
     },
     {
       "host": "mokahr.com",
@@ -65,12 +65,12 @@
       "count": 15
     },
     {
-      "host": "www.lifotronic.com",
-      "count": 9
+      "host": "jobs.siemens.com",
+      "count": 12
     },
     {
-      "host": "jobs.siemens.com",
-      "count": 8
+      "host": "www.lifotronic.com",
+      "count": 9
     },
     {
       "host": "www.airchina.com.cn",
@@ -101,11 +101,11 @@
       "count": 3
     },
     {
-      "host": "www.mokahr.com",
-      "count": 2
+      "host": "www.sanyre.com.cn",
+      "count": 3
     },
     {
-      "host": "www.sanyre.com.cn",
+      "host": "www.mokahr.com",
       "count": 2
     },
     {
@@ -160,11 +160,19 @@
     },
     {
       "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}",
-      "count": 45
+      "count": 54
     },
     {
       "path_shape": "/campusxq?jc&jobid&p",
       "count": 42
+    },
+    {
+      "path_shape": "/de_de/careers/jobdetail/{id}",
+      "count": 33
+    },
+    {
+      "path_shape": "/es_es/careers/jobdetail/{id}",
+      "count": 33
     },
     {
       "path_shape": "/es_es/careers/jobdetail/{id}/{id}",
@@ -195,20 +203,16 @@
       "count": 30
     },
     {
-      "path_shape": "/de_de/careers/jobdetail/{id}",
-      "count": 26
-    },
-    {
       "path_shape": "/job/{id}",
-      "count": 26
+      "count": 27
     },
     {
       "path_shape": "/overseasxq?jc&jobid&p",
       "count": 21
     },
     {
-      "path_shape": "/es_es/careers/jobdetail/{id}",
-      "count": 20
+      "path_shape": "/ja_jp/careers/jobdetail/{id}",
+      "count": 14
     },
     {
       "path_shape": "/page/positions/{id}/{id}?quickpick",
@@ -223,20 +227,16 @@
       "count": 14
     },
     {
-      "path_shape": "/ja_jp/careers/jobdetail/{id}",
-      "count": 8
-    },
-    {
-      "path_shape": "/zh_cn/externaljobs/jobdetail/{id}",
-      "count": 8
-    },
-    {
       "path_shape": "/fr_fr/careers/jobdetail/{id}",
-      "count": 7
+      "count": 13
     },
     {
       "path_shape": "/pt_br/careers/jobdetail/{id}",
-      "count": 7
+      "count": 13
+    },
+    {
+      "path_shape": "/zh_cn/externaljobs/jobdetail/{id}",
+      "count": 12
     },
     {
       "path_shape": "/go/all-jobs/{id}?sortcolumn&sortdirection",
@@ -294,49 +294,49 @@
   "samples_by_reason": {
     "detail_unparseable_or_multi_position_announcement": [
       {
-        "company_id": "cn-edu-0795",
-        "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/1/175997?department=%E6%BB%A8%E6%B5%B7%E5%8E%BF",
+        "company_id": "cn-wind-0974",
+        "company_name": "三一重能股份有限公司",
+        "source_url": "https://www.sanyre.com.cn/job/index2.html",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/page/positions/{id}/{id}?department"
+        "path_shape": "/job/{id}"
       },
       {
-        "company_id": "cn-edu-0795",
-        "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/1/175997?department=%E6%BA%A7%E9%98%B3%E5%B8%82",
+        "company_id": "cn-tech-0063",
+        "company_name": "联想集团有限公司",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Alternance-Sales-Operations-H-F/77442",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/page/positions/{id}/{id}?department"
+        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
       },
       {
-        "company_id": "cn-edu-0795",
-        "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/1/175997?department=%E6%B7%AE%E5%AE%89%E7%BB%8F%E6%B5%8E%E6%8A%80%E6%9C%AF%E5%BC%80%E5%8F%91%E5%8C%BA",
+        "company_id": "cn-tech-0063",
+        "company_name": "联想集团有限公司",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Alternance-Open-Channel-Sales/77638",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/page/positions/{id}/{id}?department"
+        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
       },
       {
-        "company_id": "cn-edu-0795",
-        "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/1/175997?department=%E6%B7%AE%E5%AE%89%E5%B8%82%E6%B8%85%E6%B1%9F%E6%B5%A6%E5%8C%BA",
+        "company_id": "cn-tech-0063",
+        "company_name": "联想集团有限公司",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Alternance-Assistant-e-Commercial-Secteur-Public/77635",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/page/positions/{id}/{id}?department"
+        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
       },
       {
-        "company_id": "cn-edu-0795",
-        "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/1/175997?department=%E6%B7%AE%E5%AE%89%E5%B8%82%E6%B7%AE%E9%98%B4%E5%8C%BA",
+        "company_id": "cn-tech-0063",
+        "company_name": "联想集团有限公司",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Alternance-Assistant-e-Commercial-Secteur-Priv/77636",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/page/positions/{id}/{id}?department"
+        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
       }
     ],
     "detail_access_restricted": [
@@ -573,29 +573,29 @@
       {
         "company_id": "cn-tech-0063",
         "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/en_US/careers/JobDetail/Evergreen-HROPs-Brasil/79057",
-        "reason": "detail_http_error",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Alternance-Sales-Operations-H-F/77442",
+        "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
-        "http_status": 406,
-        "path_shape": "/en_us/careers/jobdetail/evergreen-hrops-brasil/{id}"
+        "http_status": 200,
+        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
       },
       {
         "company_id": "cn-tech-0063",
         "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/de_DE/careers/JobDetail/79531",
-        "reason": "detail_http_error",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Alternance-Open-Channel-Sales/77638",
+        "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
-        "http_status": 406,
-        "path_shape": "/de_de/careers/jobdetail/{id}"
+        "http_status": 200,
+        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
       },
       {
         "company_id": "cn-tech-0063",
         "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/de_DE/careers/JobDetail/79504",
-        "reason": "detail_http_error",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Alternance-Assistant-e-Commercial-Secteur-Public/77635",
+        "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
-        "http_status": 406,
-        "path_shape": "/de_de/careers/jobdetail/{id}"
+        "http_status": 200,
+        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
       }
     ],
     "mokahr.com": [
@@ -801,35 +801,6 @@
         "path_shape": "/job/{id}"
       }
     ],
-    "www.lifotronic.com": [
-      {
-        "company_id": "cn-medtech-0832",
-        "company_name": "深圳普门科技股份有限公司",
-        "source_url": "https://www.lifotronic.com/job/enterprise751.html",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/job/{id}"
-      },
-      {
-        "company_id": "cn-medtech-0832",
-        "company_name": "深圳普门科技股份有限公司",
-        "source_url": "https://www.lifotronic.com/job/enterprise750.html",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/job/{id}"
-      },
-      {
-        "company_id": "cn-medtech-0832",
-        "company_name": "深圳普门科技股份有限公司",
-        "source_url": "https://www.lifotronic.com/job/enterprise3774.html",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/job/{id}"
-      }
-    ],
     "jobs.siemens.com": [
       {
         "company_id": "cn-mnc-1001",
@@ -857,6 +828,35 @@
         "detail": null,
         "http_status": 200,
         "path_shape": "/zh_cn/externaljobs/jobdetail/{id}"
+      }
+    ],
+    "www.lifotronic.com": [
+      {
+        "company_id": "cn-medtech-0832",
+        "company_name": "深圳普门科技股份有限公司",
+        "source_url": "https://www.lifotronic.com/job/enterprise751.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/job/{id}"
+      },
+      {
+        "company_id": "cn-medtech-0832",
+        "company_name": "深圳普门科技股份有限公司",
+        "source_url": "https://www.lifotronic.com/job/enterprise750.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/job/{id}"
+      },
+      {
+        "company_id": "cn-medtech-0832",
+        "company_name": "深圳普门科技股份有限公司",
+        "source_url": "https://www.lifotronic.com/job/enterprise3774.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/job/{id}"
       }
     ],
     "www.airchina.com.cn": [
@@ -1062,26 +1062,6 @@
         "path_shape": "/campus-recruitment/{id}/{id}?locale"
       }
     ],
-    "www.mokahr.com": [
-      {
-        "company_id": "cn-ins-0350",
-        "company_name": "众安在线财产保险股份有限公司",
-        "source_url": "https://www.mokahr.com/blog/39643.html",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/blog/{id}"
-      },
-      {
-        "company_id": "cn-ins-0350",
-        "company_name": "众安在线财产保险股份有限公司",
-        "source_url": "https://www.mokahr.com/blog/39551.html",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/blog/{id}"
-      }
-    ],
     "www.sanyre.com.cn": [
       {
         "company_id": "cn-wind-0974",
@@ -1100,6 +1080,35 @@
         "detail": null,
         "http_status": 200,
         "path_shape": "/job/{id}"
+      },
+      {
+        "company_id": "cn-wind-0974",
+        "company_name": "三一重能股份有限公司",
+        "source_url": "https://www.sanyre.com.cn/job/index2.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/job/{id}"
+      }
+    ],
+    "www.mokahr.com": [
+      {
+        "company_id": "cn-ins-0350",
+        "company_name": "众安在线财产保险股份有限公司",
+        "source_url": "https://www.mokahr.com/blog/39643.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/blog/{id}"
+      },
+      {
+        "company_id": "cn-ins-0350",
+        "company_name": "众安在线财产保险股份有限公司",
+        "source_url": "https://www.mokahr.com/blog/39551.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/blog/{id}"
       }
     ]
   }
