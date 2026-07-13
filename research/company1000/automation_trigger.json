@@ -1,7 +1,7 @@
 {
-  "requested_at": "2026-07-13T18:49:00Z",
-  "sequence": 16,
-  "purpose": "Continue official-entry audit, enumerate pending recruitment navigation, resolve probable job details and multi-position announcements, rebuild unique import deliverables, and reassess final acceptance",
+  "requested_at": "2026-07-13T18:56:00Z",
+  "sequence": 17,
+  "purpose": "After the latest seed audits, continue official recruitment navigation enumeration, resolve probable job details and multi-position announcements, rebuild unique import deliverables, and reassess final acceptance",
   "target_companies": 1000,
   "policy": {
     "official_sources_only": true,
