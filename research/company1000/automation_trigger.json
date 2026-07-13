@@ -1,17 +1,16 @@
 {
-  "requested_at": "2026-07-13T20:10:00Z",
-  "sequence": 28,
-  "purpose": "Generate structured diagnostics for official job-detail resolution failures, continue ATS reclassification, bounded retry-aware navigation, remaining official source audits and multi-position announcement extraction, rebuild deduplicated deliverables, and reassess final acceptance",
+  "requested_at": "2026-07-13T20:25:46Z",
+  "sequence": 29,
+  "purpose": "Continue remaining official-source company audits, bounded retry-aware recruitment navigation expansion, ATS job-detail resolution, multi-position announcement extraction, deduplication, change detection, deliverable rebuild, and final acceptance reassessment",
   "target_companies": 1000,
   "priority": {
-    "detail_failure_diagnostics": true,
+    "remaining_pending_source_audits": true,
+    "unresolved_recruitment_navigation": true,
     "strong_ats_detail_url_reclassification": true,
     "bounded_retry_aware_navigation_v4": true,
     "retry_aware_job_detail_resolution_v2": true,
-    "unresolved_recruitment_navigation": true,
-    "probable_job_detail_candidates": true,
+    "detail_failure_diagnostics": true,
     "official_public_announcements": true,
-    "remaining_pending_source_audits": true,
     "deduplicate_and_detect_job_changes": true
   },
   "policy": {
