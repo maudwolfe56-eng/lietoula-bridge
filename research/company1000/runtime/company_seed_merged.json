@@ -2,8 +2,8 @@
   "schema_version": "1.2",
   "target_count": 1000,
   "seed_status": "incrementally_expanded_auditable_seed",
-  "valid_seed_count": 638,
-  "duplicate_seed_rows_excluded": 32,
+  "valid_seed_count": 654,
+  "duplicate_seed_rows_excluded": 66,
   "company_id_collisions_resolved": 7,
   "source_files": [
     "company_seed_1000.json",
@@ -23,7 +23,8 @@
     "company_seed_expansion_0014.json",
     "company_seed_expansion_0015.json",
     "company_seed_expansion_0016.json",
-    "company_seed_expansion_0017.json"
+    "company_seed_expansion_0017.json",
+    "company_seed_expansion_0018.json"
   ],
   "companies": [
     {
@@ -6418,6 +6419,166 @@
       "official_website": "https://www.eastcom.com/",
       "career_url": "https://www.eastcom.com/",
       "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘或招聘公告栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-securities-0673",
+      "company_name": "首创证券股份有限公司",
+      "short_name": "首创证券",
+      "industry": "证券与投资银行",
+      "official_website": "https://www.sczq.com.cn/",
+      "career_url": "https://www.sczq.com.cn/",
+      "career_entry_evidence": "机构官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-securities-0677",
+      "company_name": "中泰证券股份有限公司",
+      "short_name": "中泰证券",
+      "industry": "证券与投资银行",
+      "official_website": "https://www.zts.com.cn/",
+      "career_url": "https://www.zts.com.cn/",
+      "career_entry_evidence": "机构官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-securities-0678",
+      "company_name": "开源证券股份有限公司",
+      "short_name": "开源证券",
+      "industry": "证券与投资银行",
+      "official_website": "https://www.kysec.cn/",
+      "career_url": "https://www.kysec.cn/",
+      "career_entry_evidence": "机构官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-securities-0680",
+      "company_name": "华西证券股份有限公司",
+      "short_name": "华西证券",
+      "industry": "证券与投资银行",
+      "official_website": "https://www.hx168.com.cn/",
+      "career_url": "https://www.hx168.com.cn/",
+      "career_entry_evidence": "机构官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-insurance-0689",
+      "company_name": "中信保诚人寿保险有限公司",
+      "short_name": "中信保诚人寿",
+      "industry": "人寿保险",
+      "official_website": "https://www.citic-prudential.com.cn/",
+      "career_url": "https://www.citic-prudential.com.cn/",
+      "career_entry_evidence": "机构官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-insurance-0690",
+      "company_name": "中德安联人寿保险有限公司",
+      "short_name": "中德安联人寿",
+      "industry": "人寿保险",
+      "official_website": "https://www.allianz.cn/",
+      "career_url": "https://www.allianz.cn/",
+      "career_entry_evidence": "机构官方中国主域名已登记；后续从官网公开职业机会栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fund-0691",
+      "company_name": "易方达基金管理有限公司",
+      "short_name": "易方达基金",
+      "industry": "公募基金与资产管理",
+      "official_website": "https://www.efunds.com.cn/",
+      "career_url": "https://www.efunds.com.cn/",
+      "career_entry_evidence": "机构官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fund-0692",
+      "company_name": "华夏基金管理有限公司",
+      "short_name": "华夏基金",
+      "industry": "公募基金与资产管理",
+      "official_website": "https://www.chinaamc.com/",
+      "career_url": "https://www.chinaamc.com/",
+      "career_entry_evidence": "机构官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fund-0693",
+      "company_name": "南方基金管理股份有限公司",
+      "short_name": "南方基金",
+      "industry": "公募基金与资产管理",
+      "official_website": "https://www.nffund.com/",
+      "career_url": "https://www.nffund.com/",
+      "career_entry_evidence": "机构官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fund-0694",
+      "company_name": "嘉实基金管理有限公司",
+      "short_name": "嘉实基金",
+      "industry": "公募基金与资产管理",
+      "official_website": "https://www.jsfund.cn/",
+      "career_url": "https://www.jsfund.cn/",
+      "career_entry_evidence": "机构官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fund-0695",
+      "company_name": "博时基金管理有限公司",
+      "short_name": "博时基金",
+      "industry": "公募基金与资产管理",
+      "official_website": "https://www.bosera.com/",
+      "career_url": "https://www.bosera.com/",
+      "career_entry_evidence": "机构官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fund-0696",
+      "company_name": "广发基金管理有限公司",
+      "short_name": "广发基金",
+      "industry": "公募基金与资产管理",
+      "official_website": "https://www.gffunds.com.cn/",
+      "career_url": "https://www.gffunds.com.cn/",
+      "career_entry_evidence": "机构官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fund-0697",
+      "company_name": "汇添富基金管理股份有限公司",
+      "short_name": "汇添富基金",
+      "industry": "公募基金与资产管理",
+      "official_website": "https://www.99fund.com/",
+      "career_url": "https://www.99fund.com/",
+      "career_entry_evidence": "机构官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fund-0698",
+      "company_name": "鹏华基金管理有限公司",
+      "short_name": "鹏华基金",
+      "industry": "公募基金与资产管理",
+      "official_website": "https://www.phfund.com.cn/",
+      "career_url": "https://www.phfund.com.cn/",
+      "career_entry_evidence": "机构官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fund-0699",
+      "company_name": "银华基金管理股份有限公司",
+      "short_name": "银华基金",
+      "industry": "公募基金与资产管理",
+      "official_website": "https://www.yhfund.com.cn/",
+      "career_url": "https://www.yhfund.com.cn/",
+      "career_entry_evidence": "机构官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fund-0700",
+      "company_name": "富国基金管理有限公司",
+      "short_name": "富国基金",
+      "industry": "公募基金与资产管理",
+      "official_website": "https://www.fullgoal.com.cn/",
+      "career_url": "https://www.fullgoal.com.cn/",
+      "career_entry_evidence": "机构官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
       "seed_status": "official_entry_candidate"
     }
   ]
