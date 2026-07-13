@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "duplicate_seed_rows_excluded": 88,
+  "duplicate_seed_rows_excluded": 97,
   "company_id_collisions_resolved": 7,
   "duplicates": [
     {
@@ -793,6 +793,87 @@
       "skipped_company_name": "顺丰控股股份有限公司",
       "kept_company_id": "cn-log-0059",
       "kept_company_name": "顺丰控股股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0023.json",
+      "source_row": 1,
+      "skipped_company_id": "cn-property-0901",
+      "skipped_company_name": "万科企业股份有限公司",
+      "kept_company_id": "cn-re-0251",
+      "kept_company_name": "万科企业股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0023.json",
+      "source_row": 2,
+      "skipped_company_id": "cn-property-0902",
+      "skipped_company_name": "保利发展控股集团股份有限公司",
+      "kept_company_id": "cn-re-0252",
+      "kept_company_name": "保利发展控股集团股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0023.json",
+      "source_row": 3,
+      "skipped_company_id": "cn-property-0903",
+      "skipped_company_name": "招商局蛇口工业区控股股份有限公司",
+      "kept_company_id": "cn-re-0253",
+      "kept_company_name": "招商局蛇口工业区控股股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0023.json",
+      "source_row": 4,
+      "skipped_company_id": "cn-property-0904",
+      "skipped_company_name": "华润置地有限公司",
+      "kept_company_id": "cn-re-0254",
+      "kept_company_name": "华润置地有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0023.json",
+      "source_row": 5,
+      "skipped_company_id": "cn-property-0905",
+      "skipped_company_name": "龙湖集团控股有限公司",
+      "kept_company_id": "cn-re-0255",
+      "kept_company_name": "龙湖集团控股有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0023.json",
+      "source_row": 7,
+      "skipped_company_id": "cn-property-0907",
+      "skipped_company_name": "绿城中国控股有限公司",
+      "kept_company_id": "cn-re-0257",
+      "kept_company_name": "绿城中国控股有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0023.json",
+      "source_row": 9,
+      "skipped_company_id": "cn-property-0909",
+      "skipped_company_name": "金地（集团）股份有限公司",
+      "kept_company_id": "cn-re-0258",
+      "kept_company_name": "金地（集团）股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0024.json",
+      "source_row": 2,
+      "skipped_company_id": "cn-solar-0952",
+      "skipped_company_name": "天合光能股份有限公司",
+      "kept_company_id": "cn-energy-0247",
+      "kept_company_name": "天合光能股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0024.json",
+      "source_row": 3,
+      "skipped_company_id": "cn-solar-0953",
+      "skipped_company_name": "晶科能源股份有限公司",
+      "kept_company_id": "cn-energy-0246",
+      "kept_company_name": "晶科能源股份有限公司",
       "reason": "duplicate_exact_company_name"
     }
   ],

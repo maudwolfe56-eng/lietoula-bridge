@@ -2,8 +2,8 @@
   "schema_version": "1.2",
   "target_count": 1000,
   "seed_status": "incrementally_expanded_auditable_seed",
-  "valid_seed_count": 832,
-  "duplicate_seed_rows_excluded": 88,
+  "valid_seed_count": 923,
+  "duplicate_seed_rows_excluded": 97,
   "company_id_collisions_resolved": 7,
   "source_files": [
     "company_seed_1000.json",
@@ -28,7 +28,9 @@
     "company_seed_expansion_0019.json",
     "company_seed_expansion_0020.json",
     "company_seed_expansion_0021.json",
-    "company_seed_expansion_0022.json"
+    "company_seed_expansion_0022.json",
+    "company_seed_expansion_0023.json",
+    "company_seed_expansion_0024.json"
   ],
   "companies": [
     {
@@ -8362,6 +8364,916 @@
       "industry": "高速公路运营与环保产业",
       "official_website": "https://www.s-expressway.com/",
       "career_url": "https://www.s-expressway.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-property-0906",
+      "company_name": "中国海外发展有限公司",
+      "short_name": "中国海外发展",
+      "industry": "房地产开发与城市运营",
+      "official_website": "https://www.coli.com.hk/",
+      "career_url": "https://www.coli.com.hk/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-property-0908",
+      "company_name": "新城发展控股有限公司",
+      "short_name": "新城控股集团",
+      "industry": "房地产开发与商业运营",
+      "official_website": "https://www.seazengroup.com.cn/",
+      "career_url": "https://www.seazengroup.com.cn/",
+      "career_entry_evidence": "企业官方集团主域名已登记；后续核验上市主体关联、招聘入口及岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-property-0910",
+      "company_name": "越秀地产股份有限公司",
+      "short_name": "越秀地产",
+      "industry": "房地产开发与城市运营",
+      "official_website": "https://www.yuexiuproperty.com/",
+      "career_url": "https://www.yuexiuproperty.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-property-0911",
+      "company_name": "中国金茂控股集团有限公司",
+      "short_name": "中国金茂",
+      "industry": "房地产开发与城市运营",
+      "official_website": "https://www.chinajinmao.cn/",
+      "career_url": "https://www.chinajinmao.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-property-0912",
+      "company_name": "恒隆地产有限公司",
+      "short_name": "恒隆地产",
+      "industry": "商业地产与资产运营",
+      "official_website": "https://www.hanglung.com/",
+      "career_url": "https://www.hanglung.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开职业机会栏目核验内地及香港岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-property-0913",
+      "company_name": "太古地产有限公司",
+      "short_name": "太古地产",
+      "industry": "商业地产与资产运营",
+      "official_website": "https://www.swireproperties.com/",
+      "career_url": "https://www.swireproperties.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开职业机会栏目核验内地及香港岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-property-0914",
+      "company_name": "九龙仓置业地产投资有限公司",
+      "short_name": "九龙仓置业",
+      "industry": "商业地产与资产运营",
+      "official_website": "https://www.wharfreic.com/",
+      "career_url": "https://www.wharfreic.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开职业机会栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-property-0915",
+      "company_name": "嘉里建设有限公司",
+      "short_name": "嘉里建设",
+      "industry": "房地产开发与资产运营",
+      "official_website": "https://www.kerryprops.com/",
+      "career_url": "https://www.kerryprops.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开职业机会栏目核验内地及香港岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-property-0916",
+      "company_name": "领展房地产投资信托基金",
+      "short_name": "领展房产基金",
+      "industry": "商业地产与资产管理",
+      "official_website": "https://www.linkreit.com/",
+      "career_url": "https://www.linkreit.com/",
+      "career_entry_evidence": "机构官方主域名已登记；后续从官网公开职业机会栏目核验内地及香港岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-property-0917",
+      "company_name": "信和集团",
+      "short_name": "信和集团",
+      "industry": "房地产开发与资产运营",
+      "official_website": "https://www.sino.com/",
+      "career_url": "https://www.sino.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开职业机会栏目核验香港及内地岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-property-0918",
+      "company_name": "新鸿基地产发展有限公司",
+      "short_name": "新鸿基地产",
+      "industry": "房地产开发与资产运营",
+      "official_website": "https://www.shkp.com/",
+      "career_url": "https://www.shkp.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开职业机会栏目核验香港及内地岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-property-0919",
+      "company_name": "恒基兆业地产有限公司",
+      "short_name": "恒基地产",
+      "industry": "房地产开发与资产运营",
+      "official_website": "https://www.hld.com/",
+      "career_url": "https://www.hld.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开职业机会栏目核验香港及内地岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-property-0920",
+      "company_name": "新世界发展有限公司",
+      "short_name": "新世界发展",
+      "industry": "房地产开发与综合产业",
+      "official_website": "https://www.nwd.com.hk/",
+      "career_url": "https://www.nwd.com.hk/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开职业机会栏目核验香港及内地岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-property-0921",
+      "company_name": "长江实业集团有限公司",
+      "short_name": "长实集团",
+      "industry": "房地产开发与资产运营",
+      "official_website": "https://www.ckah.com/",
+      "career_url": "https://www.ckah.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开职业机会栏目核验香港及内地岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-construction-0922",
+      "company_name": "上海建工集团股份有限公司",
+      "short_name": "上海建工",
+      "industry": "建筑工程与城市建设",
+      "official_website": "https://www.scg.com.cn/",
+      "career_url": "https://www.scg.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘或招聘公告栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-construction-0923",
+      "company_name": "北京建工集团有限责任公司",
+      "short_name": "北京建工",
+      "industry": "建筑工程与城市建设",
+      "official_website": "https://www.bcegc.com/",
+      "career_url": "https://www.bcegc.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘或招聘公告栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-construction-0924",
+      "company_name": "北京城建集团有限责任公司",
+      "short_name": "北京城建集团",
+      "industry": "建筑工程与城市建设",
+      "official_website": "https://www.bucg.com/",
+      "career_url": "https://www.bucg.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘或招聘公告栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-construction-0925",
+      "company_name": "浙江省建设投资集团股份有限公司",
+      "short_name": "浙江建投",
+      "industry": "建筑工程与城市建设",
+      "official_website": "https://www.cnzgc.com/",
+      "career_url": "https://www.cnzgc.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘或招聘公告栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-construction-0926",
+      "company_name": "安徽建工集团股份有限公司",
+      "short_name": "安徽建工",
+      "industry": "建筑工程与基础设施",
+      "official_website": "https://www.aceg.com.cn/",
+      "career_url": "https://www.aceg.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘或招聘公告栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-construction-0927",
+      "company_name": "广东省建筑工程集团控股有限公司",
+      "short_name": "广东建工控股",
+      "industry": "建筑工程与基础设施",
+      "official_website": "https://www.gdceg.com/",
+      "career_url": "https://www.gdceg.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘或成员企业入口核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-construction-0928",
+      "company_name": "上海浦东建设股份有限公司",
+      "short_name": "浦东建设",
+      "industry": "市政工程与城市建设",
+      "official_website": "https://www.pdjs.com.cn/",
+      "career_url": "https://www.pdjs.com.cn/",
+      "career_entry_evidence": "企业官方主域名候选已登记；后续核验域名归属、招聘入口及岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-construction-0929",
+      "company_name": "上海隧道工程股份有限公司",
+      "short_name": "隧道股份",
+      "industry": "地下工程与城市建设",
+      "official_website": "https://www.stec.net/",
+      "career_url": "https://www.stec.net/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-machinery-0930",
+      "company_name": "中国铁建重工集团股份有限公司",
+      "short_name": "铁建重工",
+      "industry": "高端工程装备",
+      "official_website": "https://www.crchi.com/",
+      "career_url": "https://www.crchi.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-machinery-0931",
+      "company_name": "中铁高新工业股份有限公司",
+      "short_name": "中铁工业",
+      "industry": "高端工程装备与钢结构",
+      "official_website": "https://www.crhic.cn/",
+      "career_url": "https://www.crhic.cn/",
+      "career_entry_evidence": "企业官方主域名候选已登记；后续核验域名归属、招聘入口及岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-propertyservice-0932",
+      "company_name": "万物云空间科技服务股份有限公司",
+      "short_name": "万物云",
+      "industry": "物业与空间科技服务",
+      "official_website": "https://www.onewo.com/",
+      "career_url": "https://www.onewo.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-propertyservice-0933",
+      "company_name": "碧桂园服务控股有限公司",
+      "short_name": "碧桂园服务",
+      "industry": "物业与城市服务",
+      "official_website": "https://www.bgyfw.com/",
+      "career_url": "https://www.bgyfw.com/",
+      "career_entry_evidence": "企业官方品牌主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-propertyservice-0934",
+      "company_name": "保利物业服务股份有限公司",
+      "short_name": "保利物业",
+      "industry": "物业与城市服务",
+      "official_website": "https://www.polywuye.com/",
+      "career_url": "https://www.polywuye.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-propertyservice-0935",
+      "company_name": "华润万象生活有限公司",
+      "short_name": "华润万象生活",
+      "industry": "物业与商业运营服务",
+      "official_website": "https://www.crmixclifestyle.com.cn/",
+      "career_url": "https://www.crmixclifestyle.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-propertyservice-0936",
+      "company_name": "绿城服务集团有限公司",
+      "short_name": "绿城服务",
+      "industry": "物业与生活服务",
+      "official_website": "https://www.gservice.com.cn/",
+      "career_url": "https://www.gservice.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-propertyservice-0937",
+      "company_name": "永升服务集团有限公司",
+      "short_name": "旭辉永升服务",
+      "industry": "物业与城市服务",
+      "official_website": "https://www.cifies.com/",
+      "career_url": "https://www.cifies.com/",
+      "career_entry_evidence": "企业官方品牌主域名候选已登记；后续核验主体关联、招聘入口及岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-propertyservice-0938",
+      "company_name": "金科智慧服务集团股份有限公司",
+      "short_name": "金科服务",
+      "industry": "物业与城市服务",
+      "official_website": "https://www.jinkeservice.com/",
+      "career_url": "https://www.jinkeservice.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-propertyservice-0939",
+      "company_name": "融创服务控股有限公司",
+      "short_name": "融创服务",
+      "industry": "物业与城市服务",
+      "official_website": "https://www.sunacservice.com/",
+      "career_url": "https://www.sunacservice.com/",
+      "career_entry_evidence": "企业官方主域名候选已登记；后续核验主体关联、招聘入口及岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-propertyservice-0940",
+      "company_name": "远洋服务控股有限公司",
+      "short_name": "远洋服务",
+      "industry": "物业与城市服务",
+      "official_website": "https://www.sinooceanservice.com/",
+      "career_url": "https://www.sinooceanservice.com/",
+      "career_entry_evidence": "企业官方主域名候选已登记；后续核验主体关联、招聘入口及岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-propertyservice-0941",
+      "company_name": "新希望服务控股有限公司",
+      "short_name": "新希望服务",
+      "industry": "物业与生活服务",
+      "official_website": "https://www.newhopeservice.com/",
+      "career_url": "https://www.newhopeservice.com/",
+      "career_entry_evidence": "企业官方主域名候选已登记；后续核验主体关联、招聘入口及岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-propertyservice-0942",
+      "company_name": "世茂服务控股有限公司",
+      "short_name": "世茂服务",
+      "industry": "物业与城市服务",
+      "official_website": "https://www.shimaofuwu.com/",
+      "career_url": "https://www.shimaofuwu.com/",
+      "career_entry_evidence": "企业官方品牌主域名候选已登记；后续核验主体关联、招聘入口及岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-propertyservice-0943",
+      "company_name": "雅生活智慧城市服务股份有限公司",
+      "short_name": "雅生活服务",
+      "industry": "物业与城市服务",
+      "official_website": "https://www.agileliving.com.cn/",
+      "career_url": "https://www.agileliving.com.cn/",
+      "career_entry_evidence": "企业官方主域名候选已登记；后续核验主体关联、招聘入口及岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-propertyservice-0944",
+      "company_name": "卓越商企服务集团有限公司",
+      "short_name": "卓越商企服务",
+      "industry": "商业物业与企业服务",
+      "official_website": "https://www.excegroup.com/",
+      "career_url": "https://www.excegroup.com/",
+      "career_entry_evidence": "企业官方主域名候选已登记；后续核验主体关联、招聘入口及岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-propertyservice-0945",
+      "company_name": "宝龙商业管理控股有限公司",
+      "short_name": "宝龙商业",
+      "industry": "商业运营与物业服务",
+      "official_website": "https://www.powerlongcm.com/",
+      "career_url": "https://www.powerlongcm.com/",
+      "career_entry_evidence": "企业官方主域名候选已登记；后续核验主体关联、招聘入口及岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-realestate-0946",
+      "company_name": "世邦魏理仕（上海）管理咨询有限公司",
+      "short_name": "CBRE中国",
+      "industry": "商业地产与设施管理服务",
+      "official_website": "https://www.cbre.com.cn/",
+      "career_url": "https://www.cbre.com.cn/",
+      "career_entry_evidence": "企业官方中国站已登记；后续从官网公开职业机会栏目核验中国岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-realestate-0947",
+      "company_name": "仲量联行测量师事务所（上海）有限公司",
+      "short_name": "仲量联行中国",
+      "industry": "商业地产与设施管理服务",
+      "official_website": "https://www.jll.com.cn/",
+      "career_url": "https://www.jll.com.cn/",
+      "career_entry_evidence": "企业官方中国站已登记；后续从官网公开职业机会栏目核验中国岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-realestate-0948",
+      "company_name": "戴德梁行房地产顾问（上海）有限公司",
+      "short_name": "戴德梁行中国",
+      "industry": "商业地产与设施管理服务",
+      "official_website": "https://www.cushmanwakefield.com.cn/",
+      "career_url": "https://www.cushmanwakefield.com.cn/",
+      "career_entry_evidence": "企业官方中国站已登记；后续从官网公开职业机会栏目核验中国岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-realestate-0949",
+      "company_name": "高力国际物业顾问（中国）有限公司",
+      "short_name": "高力国际中国",
+      "industry": "商业地产与设施管理服务",
+      "official_website": "https://www.colliers.com.cn/",
+      "career_url": "https://www.colliers.com.cn/",
+      "career_entry_evidence": "企业官方中国站已登记；后续从官网公开职业机会栏目核验中国岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-realestate-0950",
+      "company_name": "第一太平戴维斯物业顾问（上海）有限公司",
+      "short_name": "第一太平戴维斯中国",
+      "industry": "商业地产与设施管理服务",
+      "official_website": "https://www.savills.com.cn/",
+      "career_url": "https://www.savills.com.cn/",
+      "career_entry_evidence": "企业官方中国站已登记；后续从官网公开职业机会栏目核验中国岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-solar-0951",
+      "company_name": "阳光电源股份有限公司",
+      "short_name": "阳光电源",
+      "industry": "光伏逆变器与新能源系统",
+      "official_website": "https://www.sungrowpower.com/",
+      "career_url": "https://www.sungrowpower.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开职业机会栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-solar-0954",
+      "company_name": "晶澳太阳能科技股份有限公司",
+      "short_name": "晶澳科技",
+      "industry": "光伏组件与新能源系统",
+      "official_website": "https://www.jasolar.com/",
+      "career_url": "https://www.jasolar.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开职业机会栏目核验中国岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-solar-0955",
+      "company_name": "阿特斯阳光电力集团股份有限公司",
+      "short_name": "阿特斯",
+      "industry": "光伏组件与储能系统",
+      "official_website": "https://www.csisolar.com/",
+      "career_url": "https://www.csisolar.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开职业机会栏目核验中国岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-solar-0956",
+      "company_name": "东方日升新能源股份有限公司",
+      "short_name": "东方日升",
+      "industry": "光伏组件与新能源系统",
+      "official_website": "https://www.risenenergy.com/",
+      "career_url": "https://www.risenenergy.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开职业机会栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-solar-0957",
+      "company_name": "通威股份有限公司",
+      "short_name": "通威股份",
+      "industry": "光伏材料与农业食品",
+      "official_website": "https://www.tongwei.com/",
+      "career_url": "https://www.tongwei.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘或业务板块入口核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-solar-0958",
+      "company_name": "TCL中环新能源科技股份有限公司",
+      "short_name": "TCL中环",
+      "industry": "光伏硅片与半导体材料",
+      "official_website": "https://www.tzeco.com/",
+      "career_url": "https://www.tzeco.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-solar-0959",
+      "company_name": "上海爱旭新能源股份有限公司",
+      "short_name": "爱旭股份",
+      "industry": "光伏电池与组件",
+      "official_website": "https://www.aikosolar.com/",
+      "career_url": "https://www.aikosolar.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开职业机会栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-solar-0960",
+      "company_name": "正泰新能科技股份有限公司",
+      "short_name": "正泰新能",
+      "industry": "光伏电池与组件",
+      "official_website": "https://www.astronergy.com/",
+      "career_url": "https://www.astronergy.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开职业机会栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-solar-0961",
+      "company_name": "协鑫科技控股有限公司",
+      "short_name": "协鑫科技",
+      "industry": "光伏材料与新能源",
+      "official_website": "https://www.gcltech.com/",
+      "career_url": "https://www.gcltech.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘或集团入口核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-solar-0962",
+      "company_name": "大全新能源有限公司",
+      "short_name": "大全能源",
+      "industry": "光伏硅料与新能源材料",
+      "official_website": "https://www.daqo.com/",
+      "career_url": "https://www.daqo.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开职业机会栏目核验中国岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-solar-0963",
+      "company_name": "新特能源股份有限公司",
+      "short_name": "新特能源",
+      "industry": "光伏材料与新能源工程",
+      "official_website": "https://www.xinteenergy.com/",
+      "career_url": "https://www.xinteenergy.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-solar-0964",
+      "company_name": "福莱特玻璃集团股份有限公司",
+      "short_name": "福莱特玻璃",
+      "industry": "光伏玻璃与新材料",
+      "official_website": "https://www.flatgroup.com.cn/",
+      "career_url": "https://www.flatgroup.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-solar-0965",
+      "company_name": "杭州福斯特应用材料股份有限公司",
+      "short_name": "福斯特",
+      "industry": "光伏封装材料",
+      "official_website": "https://www.firstpvm.com/",
+      "career_url": "https://www.firstpvm.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-solar-0966",
+      "company_name": "江苏中信博新能源科技股份有限公司",
+      "short_name": "中信博",
+      "industry": "光伏支架与新能源系统",
+      "official_website": "https://www.arctechsolar.com/",
+      "career_url": "https://www.arctechsolar.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开职业机会栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-solar-0967",
+      "company_name": "固德威技术股份有限公司",
+      "short_name": "固德威",
+      "industry": "光伏逆变器与储能系统",
+      "official_website": "https://www.goodwe.com/",
+      "career_url": "https://www.goodwe.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开职业机会栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-solar-0968",
+      "company_name": "锦浪科技股份有限公司",
+      "short_name": "锦浪科技",
+      "industry": "光伏逆变器与储能系统",
+      "official_website": "https://www.ginlong.com/",
+      "career_url": "https://www.ginlong.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-solar-0969",
+      "company_name": "杭州禾迈电力电子股份有限公司",
+      "short_name": "禾迈股份",
+      "industry": "光伏微型逆变器与储能系统",
+      "official_website": "https://www.hoymiles.com/",
+      "career_url": "https://www.hoymiles.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开职业机会栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-solar-0970",
+      "company_name": "宁波德业科技股份有限公司",
+      "short_name": "德业股份",
+      "industry": "光伏逆变器与储能系统",
+      "official_website": "https://www.deye.com.cn/",
+      "career_url": "https://www.deye.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-solar-0971",
+      "company_name": "深圳古瑞瓦特新能源有限公司",
+      "short_name": "古瑞瓦特",
+      "industry": "光伏逆变器与储能系统",
+      "official_website": "https://www.growatt.com/",
+      "career_url": "https://www.growatt.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开职业机会栏目核验中国岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-wind-0972",
+      "company_name": "远景能源有限公司",
+      "short_name": "远景能源",
+      "industry": "风电、储能与能源物联网",
+      "official_website": "https://www.envision-group.com/",
+      "career_url": "https://www.envision-group.com/",
+      "career_entry_evidence": "企业官方集团主域名已登记；后续从官网公开职业机会栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-wind-0973",
+      "company_name": "运达能源科技集团股份有限公司",
+      "short_name": "运达股份",
+      "industry": "风电装备与新能源服务",
+      "official_website": "https://www.windeyenergy.com/",
+      "career_url": "https://www.windeyenergy.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-wind-0974",
+      "company_name": "三一重能股份有限公司",
+      "short_name": "三一重能",
+      "industry": "风电装备与新能源服务",
+      "official_website": "https://www.sanyre.com.cn/",
+      "career_url": "https://www.sanyre.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-hydrogen-0975",
+      "company_name": "北京亿华通科技股份有限公司",
+      "short_name": "亿华通",
+      "industry": "氢燃料电池与能源科技",
+      "official_website": "https://www.sinohytec.com/",
+      "career_url": "https://www.sinohytec.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-hydrogen-0976",
+      "company_name": "上海重塑能源集团股份有限公司",
+      "short_name": "重塑能源",
+      "industry": "氢燃料电池与能源科技",
+      "official_website": "https://www.refire.com/",
+      "career_url": "https://www.refire.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开职业机会栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-power-0977",
+      "company_name": "华润电力控股有限公司",
+      "short_name": "华润电力",
+      "industry": "电力与新能源运营",
+      "official_website": "https://www.cr-power.com/",
+      "career_url": "https://www.cr-power.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘或集团招聘入口核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-power-0978",
+      "company_name": "龙源电力集团股份有限公司",
+      "short_name": "龙源电力",
+      "industry": "风电与新能源运营",
+      "official_website": "https://www.clypg.com.cn/",
+      "career_url": "https://www.clypg.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘或控股股东招聘入口核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-power-0979",
+      "company_name": "中国大唐集团新能源股份有限公司",
+      "short_name": "大唐新能源",
+      "industry": "风电与新能源运营",
+      "official_website": "https://www.dtrn.com/",
+      "career_url": "https://www.dtrn.com/",
+      "career_entry_evidence": "企业官方主域名候选已登记；后续核验域名归属、招聘入口及岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-power-0980",
+      "company_name": "国投电力控股股份有限公司",
+      "short_name": "国投电力",
+      "industry": "电力与清洁能源运营",
+      "official_website": "https://www.sdicpower.com/",
+      "career_url": "https://www.sdicpower.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-power-0981",
+      "company_name": "中国长江电力股份有限公司",
+      "short_name": "长江电力",
+      "industry": "水电与清洁能源运营",
+      "official_website": "https://www.cypc.com.cn/",
+      "career_url": "https://www.cypc.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-power-0982",
+      "company_name": "华能澜沧江水电股份有限公司",
+      "short_name": "华能水电",
+      "industry": "水电与清洁能源运营",
+      "official_website": "https://www.hnlcj.cn/",
+      "career_url": "https://www.hnlcj.cn/",
+      "career_entry_evidence": "企业官方主域名候选已登记；后续核验域名归属、招聘入口及岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-power-0983",
+      "company_name": "广东省能源集团有限公司",
+      "short_name": "广东能源集团",
+      "industry": "电力与综合能源",
+      "official_website": "https://www.gdyd.com/",
+      "career_url": "https://www.gdyd.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘或成员企业入口核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-power-0984",
+      "company_name": "浙江省能源集团有限公司",
+      "short_name": "浙江能源集团",
+      "industry": "电力与综合能源",
+      "official_website": "https://www.zjenergy.com.cn/",
+      "career_url": "https://www.zjenergy.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘或成员企业入口核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-power-0985",
+      "company_name": "申能（集团）有限公司",
+      "short_name": "申能集团",
+      "industry": "电力、燃气与综合能源",
+      "official_website": "https://www.shenergy.com.cn/",
+      "career_url": "https://www.shenergy.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘或成员企业入口核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-power-0986",
+      "company_name": "北京能源集团有限责任公司",
+      "short_name": "京能集团",
+      "industry": "电力、供热与综合能源",
+      "official_website": "https://www.jingneng.com.cn/",
+      "career_url": "https://www.jingneng.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘或成员企业入口核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-power-0987",
+      "company_name": "深圳能源集团股份有限公司",
+      "short_name": "深圳能源",
+      "industry": "电力、环保与综合能源",
+      "official_website": "https://www.sec.com.cn/",
+      "career_url": "https://www.sec.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-power-0988",
+      "company_name": "广州发展集团股份有限公司",
+      "short_name": "广州发展",
+      "industry": "电力、燃气与综合能源",
+      "official_website": "https://www.gdg.com.cn/",
+      "career_url": "https://www.gdg.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-power-0989",
+      "company_name": "江苏省国信集团有限公司",
+      "short_name": "江苏国信集团",
+      "industry": "电力、金融与综合产业",
+      "official_website": "https://www.jsgx.net/",
+      "career_url": "https://www.jsgx.net/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘或成员企业入口核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-power-0990",
+      "company_name": "四川省投资集团有限责任公司",
+      "short_name": "四川投资集团",
+      "industry": "能源与综合投资",
+      "official_website": "https://www.scte.com.cn/",
+      "career_url": "https://www.scte.com.cn/",
+      "career_entry_evidence": "企业官方主域名候选已登记；后续核验域名归属、招聘入口及岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-power-0991",
+      "company_name": "云南省能源投资集团有限公司",
+      "short_name": "云南能投集团",
+      "industry": "能源与综合投资",
+      "official_website": "https://www.cnyeig.com/",
+      "career_url": "https://www.cnyeig.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘或成员企业入口核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-power-0992",
+      "company_name": "广西投资集团有限公司",
+      "short_name": "广西投资集团",
+      "industry": "能源、制造与金融投资",
+      "official_website": "https://www.gig.cn/",
+      "career_url": "https://www.gig.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘或成员企业入口核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-power-0993",
+      "company_name": "河南投资集团有限公司",
+      "short_name": "河南投资集团",
+      "industry": "能源、金融与产业投资",
+      "official_website": "https://www.hnic.com.cn/",
+      "career_url": "https://www.hnic.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘或成员企业入口核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-gas-0994",
+      "company_name": "新奥能源控股有限公司",
+      "short_name": "新奥能源",
+      "industry": "城市燃气与综合能源",
+      "official_website": "https://www.ennenergy.com/",
+      "career_url": "https://www.ennenergy.com/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-gas-0995",
+      "company_name": "中国燃气控股有限公司",
+      "short_name": "中国燃气",
+      "industry": "城市燃气与综合能源",
+      "official_website": "https://www.chinagasholdings.com.hk/",
+      "career_url": "https://www.chinagasholdings.com.hk/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-gas-0996",
+      "company_name": "昆仑能源有限公司",
+      "short_name": "昆仑能源",
+      "industry": "天然气与综合能源",
+      "official_website": "https://www.kunlun.com.hk/",
+      "career_url": "https://www.kunlun.com.hk/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘或控股股东招聘入口核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-gas-0997",
+      "company_name": "港华智慧能源有限公司",
+      "short_name": "港华智慧能源",
+      "industry": "城市燃气与智慧能源",
+      "official_website": "https://www.towngas.com.cn/",
+      "career_url": "https://www.towngas.com.cn/",
+      "career_entry_evidence": "企业官方中国主域名已登记；后续从官网公开职业机会栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-water-0998",
+      "company_name": "北控水务集团有限公司",
+      "short_name": "北控水务",
+      "industry": "水务与环境服务",
+      "official_website": "https://www.bewg.net/",
+      "career_url": "https://www.bewg.net/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-water-0999",
+      "company_name": "中国水务集团有限公司",
+      "short_name": "中国水务",
+      "industry": "水务与环境服务",
+      "official_website": "https://www.chinawatergroup.com.cn/",
+      "career_url": "https://www.chinawatergroup.com.cn/",
+      "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-env-1000",
+      "company_name": "粤丰环保电力有限公司",
+      "short_name": "粤丰环保",
+      "industry": "固废处理与环保运营",
+      "official_website": "https://www.canvestenvironment.com/",
+      "career_url": "https://www.canvestenvironment.com/",
       "career_entry_evidence": "企业官方主域名已登记；后续从官网公开人才招聘栏目核验岗位。",
       "seed_status": "official_entry_candidate"
     }
