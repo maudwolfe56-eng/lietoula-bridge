@@ -1,1 +1,108 @@
-__SEED_CONTENT__
+{
+  "schema_version": "1.0",
+  "target_count": 1000,
+  "seed_status": "partial_valid_seed_replacing_placeholder",
+  "generated_at": "2026-07-13T12:00:00Z",
+  "companies": [
+    {
+      "company_id": "cn-fin-0001",
+      "company_name": "中国工商银行股份有限公司",
+      "short_name": "中国工商银行",
+      "industry": "银行",
+      "official_website": "https://www.icbc.com.cn/",
+      "career_url": "https://job.icbc.com.cn/",
+      "career_entry_evidence": "2026-07-13页面标题为“中国工商银行人才招聘”",
+      "seed_status": "official_entry_verified"
+    },
+    {
+      "company_id": "cn-fin-0002",
+      "company_name": "中国建设银行股份有限公司",
+      "short_name": "中国建设银行",
+      "industry": "银行",
+      "official_website": "https://www.ccb.com/",
+      "career_url": "https://job.ccb.com/",
+      "career_entry_evidence": "2026-07-13可访问job.ccb.com招聘入口",
+      "seed_status": "official_entry_verified"
+    },
+    {
+      "company_id": "cn-fin-0003",
+      "company_name": "中国农业银行股份有限公司",
+      "short_name": "中国农业银行",
+      "industry": "银行",
+      "official_website": "https://www.abchina.com/",
+      "career_url": "https://career.abchina.com/",
+      "career_entry_evidence": "官方招聘域名候选，待下一批浏览器核验",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0004",
+      "company_name": "中国银行股份有限公司",
+      "short_name": "中国银行",
+      "industry": "银行",
+      "official_website": "https://www.boc.cn/",
+      "career_url": "https://www.boc.cn/aboutboc/bi4/",
+      "career_entry_evidence": "2026-07-13官方“关于中行-招聘公告”页面可访问并列出2026年公告",
+      "seed_status": "official_entry_verified"
+    },
+    {
+      "company_id": "cn-fin-0005",
+      "company_name": "交通银行股份有限公司",
+      "short_name": "交通银行",
+      "industry": "银行",
+      "official_website": "https://www.bankcomm.com/",
+      "career_url": "https://job.bankcomm.com/",
+      "career_entry_evidence": "2026-07-13页面标题为“交通银行人才招聘”",
+      "seed_status": "official_entry_verified"
+    },
+    {
+      "company_id": "cn-fin-0006",
+      "company_name": "招商银行股份有限公司",
+      "short_name": "招商银行",
+      "industry": "银行",
+      "official_website": "https://www.cmbchina.com/",
+      "career_url": "https://career.cmbchina.com/",
+      "career_entry_evidence": "2026-07-13页面标题为“招商银行招聘”，页面要求启用JavaScript",
+      "seed_status": "official_entry_verified"
+    },
+    {
+      "company_id": "cn-fin-0007",
+      "company_name": "中国平安保险（集团）股份有限公司",
+      "short_name": "中国平安",
+      "industry": "综合金融",
+      "official_website": "https://www.pingan.com/",
+      "career_url": "https://talent.pingan.com/",
+      "career_entry_evidence": "2026-07-13页面标题为“中国平安”人才入口",
+      "seed_status": "official_entry_verified"
+    },
+    {
+      "company_id": "cn-fin-0008",
+      "company_name": "中国人民保险集团股份有限公司",
+      "short_name": "中国人保",
+      "industry": "保险",
+      "official_website": "https://www.picc.com/",
+      "career_url": "https://picc.zhiye.com/",
+      "career_entry_evidence": "2026-07-13页面标题为“中国人民保险招聘”",
+      "seed_status": "official_entry_verified"
+    },
+    {
+      "company_id": "cn-fin-0009",
+      "company_name": "中国中信集团有限公司",
+      "short_name": "中信集团",
+      "industry": "综合金融",
+      "official_website": "https://www.citic.com/",
+      "career_url": "https://job.citic.com/recruit",
+      "career_entry_evidence": "2026-07-13job.citic.com重定向至/recruit，标题为“中信集团人才招聘系统”",
+      "seed_status": "official_entry_verified"
+    },
+    {
+      "company_id": "cn-fin-0010",
+      "company_name": "中国人寿保险（集团）公司",
+      "short_name": "中国人寿",
+      "industry": "保险",
+      "official_website": "https://www.chinalife.com.cn/",
+      "career_url": "https://www.chinalife.com.cn/chinalife/zhaopin/",
+      "career_entry_evidence": "官方招聘路径候选，2026-07-13抓取超时，待下一批复核",
+      "seed_status": "official_entry_candidate"
+    }
+  ]
+}
