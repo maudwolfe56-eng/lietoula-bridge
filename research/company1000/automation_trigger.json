@@ -1,9 +1,10 @@
 {
-  "requested_at": "2026-07-13T20:03:00Z",
-  "sequence": 27,
-  "purpose": "Reclassify strong official ATS detail URLs, run bounded retry-aware navigation and retry-aware job-detail resolution, finish remaining official source audits, process multi-position announcements, rebuild deduplicated deliverables, and reassess final acceptance",
+  "requested_at": "2026-07-13T20:10:00Z",
+  "sequence": 28,
+  "purpose": "Generate structured diagnostics for official job-detail resolution failures, continue ATS reclassification, bounded retry-aware navigation, remaining official source audits and multi-position announcement extraction, rebuild deduplicated deliverables, and reassess final acceptance",
   "target_companies": 1000,
   "priority": {
+    "detail_failure_diagnostics": true,
     "strong_ats_detail_url_reclassification": true,
     "bounded_retry_aware_navigation_v4": true,
     "retry_aware_job_detail_resolution_v2": true,
