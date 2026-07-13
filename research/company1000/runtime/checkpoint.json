@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-13T18:00:36.902138+00:00",
+  "updated_at": "2026-07-13T18:02:38.521077+00:00",
   "target_companies": 1000,
   "valid_seed_count": 300,
   "official_entries_verified": 14,
@@ -11,7 +11,7 @@
   "job_records_review_pending": 64,
   "job_records_inactive_expired": 23,
   "companies_final_acceptance_met": 0,
-  "next_batch_start_index": 135,
+  "next_batch_start_index": 228,
   "batch_progress": {
     "batch_0001": {
       "companies_reviewed": 10,
@@ -146,28 +146,28 @@
     "review_pending_requires_detail_validation": true
   },
   "last_auto_batch": {
-    "requested_start_index": 231,
+    "requested_start_index": 135,
     "selected_indices": [
-      242,
-      243,
-      251,
-      252,
-      283,
-      296,
-      41,
-      45,
-      50,
-      112,
-      114,
-      115,
-      118,
-      121,
-      123,
-      125,
-      127,
-      129,
-      132,
-      134
+      135,
+      136,
+      137,
+      138,
+      144,
+      152,
+      157,
+      161,
+      170,
+      173,
+      174,
+      175,
+      181,
+      183,
+      187,
+      191,
+      195,
+      200,
+      220,
+      227
     ],
     "selected_count": 20,
     "processed_count": 20,
@@ -188,5 +188,11 @@
     "company_seed_expansion_0010.json"
   ],
   "duplicate_seed_rows_excluded": 20,
-  "company_id_collisions_resolved": 7
+  "company_id_collisions_resolved": 7,
+  "seed_shortfall": 700,
+  "companies_without_audit": 0,
+  "pending_job_link_candidates": 106,
+  "invalid_job_records": 0,
+  "final_acceptance_met": false,
+  "notification_eligible": false
 }
