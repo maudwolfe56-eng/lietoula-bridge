@@ -1,4 +1,4 @@
-name: Company1000 remote batch runner
+name: Company1000 remote incremental runner
 
 on:
   pull_request:
@@ -9,6 +9,10 @@ on:
 
 permissions:
   contents: write
+
+concurrency:
+  group: company1000-research-writes
+  cancel-in-progress: false
 
 jobs:
   run-batch:
@@ -25,56 +29,103 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: research/company1000/requirements.txt
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4 lxml python-dateutil
 
-      - name: Run deterministic batch 0007
+      - name: Validate crawler scripts
+        working-directory: research/company1000
+        run: |
+          python -m py_compile crawl_company_jobs.py crawl_company_jobs_pending.py crawl_company_jobs_merged.py build_import_package.py
+
+      - name: Audit next unprocessed companies
         id: batch
         continue-on-error: true
-        shell: bash
+        working-directory: research/company1000
+        env:
+          PYTHONUNBUFFERED: '1'
         run: |
           set -o pipefail
-          mkdir -p research/company1000/logs research/company1000/runs/batch_0007
-          python research/company1000/run_batch_0007.py 2>&1 \
-            | tee research/company1000/logs/batch_0007_workflow.log
+          mkdir -p output runtime logs deliverables
+          python crawl_company_jobs_merged.py \
+            --seed-file company_seed_1000.json \
+            --output-dir output \
+            --state-file runtime/checkpoint.json \
+            --batch-size 20 \
+            | tee logs/next_batch_auto.log
 
-      - name: Record workflow outcome
+      - name: Reconcile checkpoint and build deliverables
         if: always()
-        shell: bash
+        working-directory: research/company1000
         run: |
           python - <<'PY'
           import json
           from datetime import datetime, timezone
           from pathlib import Path
-          path = Path('research/company1000/runs/batch_0007/workflow_outcome.json')
+
+          merged_path = Path('runtime/company_seed_merged.json')
+          state_path = Path('runtime/checkpoint.json')
+          if merged_path.exists():
+              merged = json.loads(merged_path.read_text(encoding='utf-8'))
+              state = json.loads(state_path.read_text(encoding='utf-8')) if state_path.exists() else {}
+              companies = merged.get('companies', [])
+              state['target_companies'] = 1000
+              state['valid_seed_count'] = len(companies)
+              state['merged_seed_sources'] = merged.get('source_files', [])
+              state['updated_at'] = datetime.now(timezone.utc).isoformat()
+              state.setdefault('policy', {})['auto_active_verified'] = False
+              state['policy']['salary_inference_allowed'] = False
+              state['policy']['login_captcha_or_paywall_bypass_allowed'] = False
+              state_path.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding='utf-8')
+          PY
+          python build_import_package.py | tee logs/build_import_package.log
+
+      - name: Record workflow outcome
+        if: always()
+        working-directory: research/company1000
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+          path = Path('runtime/last_workflow_manifest.json')
           path.parent.mkdir(parents=True, exist_ok=True)
           path.write_text(json.dumps({
               'generated_at_utc': datetime.now(timezone.utc).isoformat(),
               'runner_step_outcome': '${{ steps.batch.outcome }}',
-              'runner_step_conclusion': '${{ steps.batch.conclusion }}'
+              'runner_step_conclusion': '${{ steps.batch.conclusion }}',
+              'mode': 'next_unprocessed_incremental'
           }, ensure_ascii=False, indent=2), encoding='utf-8')
           PY
 
       - name: Commit results and diagnostics to research branch
         if: always()
-        shell: bash
         run: |
-          git config user.name "company1000-automation"
-          git config user.email "company1000-automation@users.noreply.github.com"
-          git add -A research/company1000/company_seed_1000.json \
-                     research/company1000/output \
-                     research/company1000/runtime \
-                     research/company1000/logs \
-                     research/company1000/runs/batch_0007
+          git config user.name 'company1000-automation'
+          git config user.email 'company1000-automation@users.noreply.github.com'
+          git add research/company1000/output \
+                  research/company1000/runtime \
+                  research/company1000/logs \
+                  research/company1000/deliverables
           if git diff --cached --quiet; then
-            echo "No generated changes to commit"
+            echo 'No generated changes to commit'
           else
-            git commit -m "research: persist company1000 batch 0007 outputs and diagnostics"
-            git push origin HEAD:research/company1000-crawler-20260713
+            git commit -m 'research: persist next company1000 incremental audit outputs'
+            for attempt in 1 2 3; do
+              if git pull --rebase origin research/company1000-crawler-20260713 && \
+                 git push origin HEAD:research/company1000-crawler-20260713; then
+                exit 0
+              fi
+              echo "Push attempt ${attempt} failed; retrying"
+              sleep 5
+            done
+            echo 'Unable to push generated outputs after retries'
+            exit 1
           fi
 
       - name: Fail workflow if runner failed
