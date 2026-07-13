@@ -1,19 +1,19 @@
 {
   "schema_version": "1.2",
-  "assessed_at": "2026-07-13T18:49:43.270405+00:00",
+  "assessed_at": "2026-07-13T18:56:23.057721+00:00",
   "target_companies": 1000,
-  "seeded_unique_companies": 442,
-  "seed_shortfall": 558,
-  "companies_with_coverage": 415,
-  "companies_with_explicit_failure_reason": 340,
+  "seeded_unique_companies": 492,
+  "seed_shortfall": 508,
+  "companies_with_coverage": 465,
+  "companies_with_explicit_failure_reason": 387,
   "companies_without_audit_count": 0,
   "companies_without_audit_sample": [],
-  "job_records": 154,
-  "all_recruitment_candidates": 2355,
-  "probable_job_detail_candidates": 719,
+  "job_records": 174,
+  "all_recruitment_candidates": 2702,
+  "probable_job_detail_candidates": 857,
   "terminal_detail_failures": 5,
-  "resolved_job_detail_candidates": 28,
-  "pending_job_detail_candidates": 691,
+  "resolved_job_detail_candidates": 48,
+  "pending_job_detail_candidates": 809,
   "pending_job_detail_sample": [
     {
       "company_id": "cn-soe-0050",
@@ -316,9 +316,9 @@
       "reason": null
     }
   ],
-  "recruitment_navigation_candidates": 1636,
-  "resolved_recruitment_navigation": 363,
-  "pending_recruitment_navigation": 1273,
+  "recruitment_navigation_candidates": 1845,
+  "resolved_recruitment_navigation": 403,
+  "pending_recruitment_navigation": 1442,
   "pending_recruitment_navigation_sample": [
     {
       "company_id": "cn-soe-0020",
@@ -331,12 +331,6 @@
       "company_name": "中国东方航空股份有限公司",
       "source_url": "https://job.ceair.com/campus/campusJobList.html",
       "reason": "public_page_reached_but_no_enumerable_links_observed"
-    },
-    {
-      "company_id": "cn-soe-0050",
-      "company_name": "中国东方航空股份有限公司",
-      "source_url": "https://job.ceair.com/Internal/internalJobList.html",
-      "reason": null
     },
     {
       "company_id": "cn-soe-0050",
@@ -618,6 +612,12 @@
       "company_id": "cn-hotel-0285",
       "company_name": "北京首旅酒店（集团）股份有限公司",
       "source_url": "https://www.bthhotels.com/culture/TalentDevelopment",
+      "reason": null
+    },
+    {
+      "company_id": "cn-software-0300",
+      "company_name": "用友网络科技股份有限公司",
+      "source_url": "http://career.yonyou.com/",
       "reason": null
     }
   ],
