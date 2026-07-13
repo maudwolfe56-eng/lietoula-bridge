@@ -1,23 +1,44 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-13T12:03:12.114115+00:00",
+  "updated_at": "2026-07-13T12:35:00Z",
   "target_companies": 1000,
-  "valid_seed_count": 10,
-  "official_entries_verified": 8,
+  "valid_seed_count": 12,
+  "official_entries_verified": 10,
   "official_entry_candidates_pending": 2,
-  "companies_with_job_records": 1,
-  "job_records_total": 22,
-  "job_records_candidate_raw": 0,
+  "companies_with_job_records": 3,
+  "job_records_total": 42,
+  "job_records_candidate_raw": 20,
   "job_records_review_pending": 0,
   "job_records_inactive_expired": 22,
   "companies_final_acceptance_met": 0,
-  "next_batch_start_index": 10,
+  "next_batch_start_index": 12,
+  "batch_progress": {
+    "batch_0001": {
+      "companies_reviewed": 10,
+      "records": 22,
+      "status": "partial"
+    },
+    "batch_0002": {
+      "companies_reviewed": 2,
+      "records": 20,
+      "status": "partial",
+      "cnnc_social_pages_completed": 1,
+      "cnnc_social_pages_observed": 40,
+      "casic_social_pages_completed": 1,
+      "casic_social_pages_observed": 4,
+      "casic_headquarters_channel_reviewed": true,
+      "casic_headquarters_openings_observed": 0,
+      "casic_overseas_channel_reviewed": true,
+      "casic_overseas_records_pending_normalization": 1
+    }
+  },
   "next_actions": [
-    "扩展真实企业种子名单，不得用占位符凑数",
-    "优先解析8个已核验动态招聘站点的公开API或浏览器渲染结果",
-    "解析中国银行2026年高层次海外人才招聘附件PDF，补齐职责、学历和经验要求",
+    "继续结构化中核集团社会招聘第2-40页，并核验校园招聘与实习招聘渠道",
+    "继续结构化航天科工社会招聘剩余页及海外专项岗位，并核验校园招聘渠道",
+    "新增并核验中国航天科技集团、中国航空工业集团、中国船舶集团等中央企业招聘入口",
     "复核农业银行和中国人寿招聘入口",
-    "只将当前仍在截止期内且详情完整的记录标记为candidate_raw或review_pending"
+    "解析中国银行2026年高层次海外人才招聘附件PDF，补齐已过期记录的职责、学历和经验要求",
+    "仅在公开页面仍提供申请入口且岗位详情完整时保留candidate_raw；不得自动设置active_verified"
   ],
   "policy": {
     "auto_active_verified": false,
@@ -25,7 +46,8 @@
     "login_captcha_or_paywall_bypass_allowed": false
   },
   "last_auto_batch": {
-    "start_index": 0,
-    "count": 10
+    "start_index": 10,
+    "count": 2,
+    "job_records_added": 20
   }
 }
