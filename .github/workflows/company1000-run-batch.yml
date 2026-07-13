@@ -41,7 +41,7 @@ jobs:
       - name: Validate crawler scripts
         working-directory: research/company1000
         run: |
-          python -m py_compile crawl_company_jobs.py crawl_company_jobs_pending.py crawl_company_jobs_merged.py build_import_package.py
+          python -m py_compile crawl_company_jobs.py crawl_company_jobs_pending.py crawl_company_jobs_merged.py build_import_package.py assess_final_acceptance.py
 
       - name: Audit next unprocessed companies
         id: batch
@@ -83,9 +83,12 @@ jobs:
               state.setdefault('policy', {})['auto_active_verified'] = False
               state['policy']['salary_inference_allowed'] = False
               state['policy']['login_captcha_or_paywall_bypass_allowed'] = False
+              state['policy']['new_job_link_default_status'] = 'candidate_raw'
+              state['policy']['review_pending_requires_detail_validation'] = True
               state_path.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding='utf-8')
           PY
           python build_import_package.py | tee logs/build_import_package.log
+          python assess_final_acceptance.py | tee logs/assess_final_acceptance.log
 
       - name: Record workflow outcome
         if: always()
