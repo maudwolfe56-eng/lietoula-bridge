@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 import subprocess
 import sys
+import traceback
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -176,5 +177,27 @@ def main() -> int:
     return 0
 
 
+def run_with_diagnostics() -> int:
+    try:
+        return main()
+    except Exception as exc:
+        run_dir = ROOT / "runs" / BATCH_ID
+        logs = ROOT / "logs"
+        run_dir.mkdir(parents=True, exist_ok=True)
+        logs.mkdir(parents=True, exist_ok=True)
+        details = {
+            "batch_id": BATCH_ID,
+            "generated_at_utc": now(),
+            "exception_type": type(exc).__name__,
+            "exception_message": str(exc),
+            "traceback": traceback.format_exc(),
+            "final_acceptance_met": False,
+        }
+        write_json(run_dir / "failure.json", details)
+        (logs / f"{BATCH_ID}_runner_failure.log").write_text(details["traceback"], encoding="utf-8")
+        print(details["traceback"], file=sys.stderr)
+        return 1
+
+
 if __name__ == "__main__":
-    raise SystemExit(main())
+    raise SystemExit(run_with_diagnostics())
