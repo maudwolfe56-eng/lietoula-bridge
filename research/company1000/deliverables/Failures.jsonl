@@ -116,15 +116,15 @@
 {"company_id": "cn-fin-0105", "company_name": "兴业银行股份有限公司", "http_status": 200, "observed_at": "2026-07-13T16:44:04.482575+00:00", "reason": "pending_dynamic_js", "url": "https://job.cib.com.cn/"}
 {"company_id": "cn-fin-0106", "company_name": "上海浦东发展银行股份有限公司", "http_status": 200, "observed_at": "2026-07-13T16:44:06.112533+00:00", "reason": "restricted", "url": "https://job.spdb.com.cn/"}
 {"company_id": "cn-fin-0107", "company_name": "华夏银行股份有限公司", "http_status": null, "observed_at": "2026-07-13T16:44:06.760687+00:00", "reason": "fetch_failed", "url": "https://zhaopin.hxb.com.cn/"}
-{"company_id": "cn-fin-0110", "company_name": "北京银行股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:35:54.166123+00:00", "reason": "restricted", "url": "https://bankofbeijing.zhiye.com/"}
-{"company_id": "cn-fin-0111", "company_name": "上海银行股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:35:54.701637+00:00", "reason": "restricted", "url": "https://bosc.zhiye.com/"}
-{"company_id": "cn-fin-0112", "company_name": "江苏银行股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:35:54.845854+00:00", "reason": "restricted", "url": "https://jsbchina.zhiye.com/"}
-{"company_id": "cn-fin-0113", "company_name": "南京银行股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:35:55.081825+00:00", "reason": "restricted", "url": "https://njcb.zhiye.com/"}
+{"company_id": "cn-fin-0110", "company_name": "北京银行股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:45:03.548055+00:00", "reason": "restricted", "url": "https://bankofbeijing.zhiye.com/"}
+{"company_id": "cn-fin-0111", "company_name": "上海银行股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:45:03.631067+00:00", "reason": "restricted", "url": "https://bosc.zhiye.com/"}
+{"company_id": "cn-fin-0112", "company_name": "江苏银行股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:45:03.770235+00:00", "reason": "restricted", "url": "https://jsbchina.zhiye.com/"}
+{"company_id": "cn-fin-0113", "company_name": "南京银行股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:45:03.504591+00:00", "reason": "restricted", "url": "https://njcb.zhiye.com/"}
 {"company_id": "cn-fin-0115", "company_name": "杭州银行股份有限公司", "http_status": 403, "observed_at": "2026-07-13T16:59:33.574282+00:00", "reason": "restricted", "url": "https://hzb.zhiye.com/"}
-{"company_id": "cn-fin-0116", "company_name": "徽商银行股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:35:55.097636+00:00", "reason": "restricted", "url": "https://hsbank.zhiye.com/"}
+{"company_id": "cn-fin-0116", "company_name": "徽商银行股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:45:04.177741+00:00", "reason": "restricted", "url": "https://hsbank.zhiye.com/"}
 {"company_id": "cn-fin-0117", "company_name": "中信银行股份有限公司", "http_status": 403, "observed_at": "2026-07-13T16:44:19.605542+00:00", "reason": "restricted", "url": "https://job.citicbank.com/"}
-{"company_id": "cn-fin-0118", "company_name": "中国银河证券股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:35:55.614867+00:00", "reason": "restricted", "url": "https://chinastock.zhiye.com/"}
-{"company_id": "cn-fin-0119", "company_name": "华泰证券股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:09:16.206991+00:00", "reason": "restricted", "url": "https://htsc.zhiye.com/"}
+{"company_id": "cn-fin-0118", "company_name": "中国银河证券股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:45:04.688444+00:00", "reason": "restricted", "url": "https://chinastock.zhiye.com/"}
+{"company_id": "cn-fin-0119", "company_name": "华泰证券股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:45:06.079447+00:00", "reason": "restricted", "url": "https://htsc.zhiye.com/"}
 {"company_id": "cn-fin-0120", "company_name": "中国国际金融股份有限公司", "http_status": null, "observed_at": "2026-07-13T16:44:22.186729+00:00", "reason": "fetch_failed", "url": "https://career.cicc.com.cn/"}
 {"company_id": "cn-soe-0011", "company_name": "中国核工业集团有限公司", "http_status": 403, "observed_at": "2026-07-13T16:44:38.064704+00:00", "reason": "restricted", "url": "https://cnnc.zhiye.com/"}
 {"company_id": "cn-soe-0012", "company_name": "中国航天科工集团有限公司", "http_status": 403, "observed_at": "2026-07-13T16:47:51.169557+00:00", "reason": "restricted", "url": "https://casic.zhiye.com/"}
@@ -132,21 +132,21 @@
 {"company_id": "cn-soe-0041", "company_name": "华润（集团）有限公司", "http_status": null, "observed_at": "2026-07-13T16:47:49.680708+00:00", "reason": "fetch_failed", "url": "https://crc.zhiye.com/"}
 {"company_id": "cn-soe-0040", "company_name": "招商局集团有限公司", "http_status": null, "observed_at": "2026-07-13T16:48:38.670072+00:00", "reason": "fetch_failed", "url": "https://cmhk.zhiye.com/"}
 {"company_id": "cn-soe-0043", "company_name": "中国通用技术（集团）控股有限责任公司", "http_status": null, "observed_at": "2026-07-13T16:48:38.662053+00:00", "reason": "fetch_failed", "url": "https://genertec.zhiye.com/"}
-{"company_id": "cn-soe-0121", "company_name": "中国航天科技集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:09:16.431605+00:00", "reason": "restricted", "url": "https://casc.zhiye.com/"}
+{"company_id": "cn-soe-0121", "company_name": "中国航天科技集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:45:04.787734+00:00", "reason": "restricted", "url": "https://casc.zhiye.com/"}
 {"company_id": "cn-soe-0122", "company_name": "中国兵器工业集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:02:21.842239+00:00", "reason": "restricted", "url": "https://norincogroup.zhiye.com/"}
-{"company_id": "cn-soe-0123", "company_name": "中国兵器装备集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:38:42.090662+00:00", "reason": "restricted", "url": "https://csgc.zhiye.com/"}
+{"company_id": "cn-soe-0123", "company_name": "中国兵器装备集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:45:04.733619+00:00", "reason": "restricted", "url": "https://csgc.zhiye.com/"}
 {"company_id": "cn-soe-0124", "company_name": "中国电子信息产业集团有限公司", "http_status": null, "observed_at": "2026-07-13T16:53:01.704832+00:00", "reason": "fetch_failed", "url": "https://cec.zhiye.com/"}
-{"company_id": "cn-soe-0125", "company_name": "中国广核集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:38:42.198415+00:00", "reason": "restricted", "url": "https://cgnpc.zhiye.com/"}
+{"company_id": "cn-soe-0125", "company_name": "中国广核集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:45:04.727886+00:00", "reason": "restricted", "url": "https://cgnpc.zhiye.com/"}
 {"company_id": "cn-soe-0126", "company_name": "中国中化控股有限责任公司", "http_status": 403, "observed_at": "2026-07-13T17:02:16.198646+00:00", "reason": "restricted", "url": "https://sinochem.zhiye.com/"}
-{"company_id": "cn-soe-0127", "company_name": "中国化学工程集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:38:44.411989+00:00", "reason": "restricted", "url": "https://cncec.zhiye.com/"}
+{"company_id": "cn-soe-0127", "company_name": "中国化学工程集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:45:04.831646+00:00", "reason": "restricted", "url": "https://cncec.zhiye.com/"}
 {"company_id": "cn-soe-0128", "company_name": "中国保利集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:38:42.114940+00:00", "reason": "restricted", "url": "https://polygroup.zhiye.com/"}
 {"company_id": "cn-soe-0130", "company_name": "华侨城集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:06:02.371741+00:00", "reason": "restricted", "url": "https://oct.zhiye.com/"}
-{"company_id": "cn-soe-0131", "company_name": "中国节能环保集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:38:42.189580+00:00", "reason": "restricted", "url": "https://cecep.zhiye.com/"}
+{"company_id": "cn-soe-0131", "company_name": "中国节能环保集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:45:04.942384+00:00", "reason": "restricted", "url": "https://cecep.zhiye.com/"}
 {"company_id": "cn-soe-0132", "company_name": "中国煤炭科工集团有限公司", "http_status": null, "observed_at": "2026-07-13T16:53:02.724658+00:00", "reason": "fetch_failed", "url": "https://ccteg.zhiye.com/"}
-{"company_id": "cn-soe-0133", "company_name": "中国中煤能源集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:38:43.704152+00:00", "reason": "restricted", "url": "https://chinacoal.zhiye.com/"}
-{"company_id": "cn-soe-0134", "company_name": "中国黄金集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:38:42.196238+00:00", "reason": "restricted", "url": "https://chinagoldgroup.zhiye.com/"}
-{"company_id": "cn-soe-0135", "company_name": "中国盐业集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:38:42.125195+00:00", "reason": "restricted", "url": "https://chinasalt.zhiye.com/"}
-{"company_id": "cn-soe-0136", "company_name": "中国林业集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:38:43.330424+00:00", "reason": "restricted", "url": "https://cfgc.zhiye.com/"}
+{"company_id": "cn-soe-0133", "company_name": "中国中煤能源集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:45:05.368210+00:00", "reason": "restricted", "url": "https://chinacoal.zhiye.com/"}
+{"company_id": "cn-soe-0134", "company_name": "中国黄金集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:45:05.947333+00:00", "reason": "restricted", "url": "https://chinagoldgroup.zhiye.com/"}
+{"company_id": "cn-soe-0135", "company_name": "中国盐业集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:45:06.055597+00:00", "reason": "restricted", "url": "https://chinasalt.zhiye.com/"}
+{"company_id": "cn-soe-0136", "company_name": "中国林业集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:45:05.923569+00:00", "reason": "restricted", "url": "https://cfgc.zhiye.com/"}
 {"company_id": "cn-soe-0137", "company_name": "中国医药集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:38:43.387534+00:00", "reason": "restricted", "url": "https://sinopharm.zhiye.com/"}
 {"company_id": "cn-soe-0138", "company_name": "中国诚通控股集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:38:43.269387+00:00", "reason": "restricted", "url": "https://cctgroup.zhiye.com/"}
 {"company_id": "cn-soe-0139", "company_name": "中国国新控股有限责任公司", "http_status": 403, "observed_at": "2026-07-13T17:38:43.626397+00:00", "reason": "restricted", "url": "https://crhc.zhiye.com/"}
@@ -214,6 +214,10 @@
 {"company_id": "cn-soe-0030-e0001", "company_name": "中国邮政集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:41:26.789084+00:00", "reason": "restricted", "url": "https://chinapost.zhaopin.com/"}
 {"company_id": "cn-soe-0032-e0001", "company_name": "中国中铁股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:41:27.328690+00:00", "reason": "restricted", "url": "https://crec.zhiye.com/"}
 {"company_id": "cn-soe-0153", "company_name": "新兴际华集团有限公司", "http_status": null, "observed_at": "2026-07-13T17:41:24.077853+00:00", "reason": "fetch_failed", "url": "https://xxcig.zhiye.com/"}
+{"company_id": "cn-soe-0033-e0001", "company_name": "中国铁建股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:45:03.511918+00:00", "reason": "restricted", "url": "https://crcc.zhiye.com/"}
+{"company_id": "cn-soe-0035-e0001", "company_name": "中国中车集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:45:03.482256+00:00", "reason": "restricted", "url": "https://crrc.zhiye.com/"}
+{"company_id": "cn-soe-0045-e0001", "company_name": "中国保利集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:45:03.544892+00:00", "reason": "restricted", "url": "https://poly.zhiye.com/"}
+{"company_id": "cn-soe-0046-e0001", "company_name": "中国医药集团有限公司", "http_status": null, "observed_at": "2026-07-13T17:45:02.943328+00:00", "reason": "fetch_failed", "url": "https://sinopharm.zhiye.com/"}
 {"company_id": "cn-soe-0011", "company_name": "中国核工业集团有限公司", "details": "官方社会招聘页显示40页；本批仅结构化第1页10条，不能据此宣称完整枚举。", "observed_at": "2026-07-13T12:30:00Z", "reason": "pagination_remaining", "remaining_scope": "社会招聘第2-40页、校园招聘、实习招聘", "retryable": true, "stage": "complete_enumeration"}
 {"company_id": "cn-soe-0011", "company_name": "中国核工业集团有限公司", "details": "公开页面以列表内展开方式展示岗位，未暴露可核验的独立详情链接；本批使用官方列表页加岗位编号片段作为唯一审计定位符，并保留source_listing_url与source_record_key。", "observed_at": "2026-07-13T12:30:00Z", "reason": "listing_page_expands_jobs_inline", "retryable": true, "stage": "unique_source_url"}
 {"company_id": "cn-soe-0012", "company_name": "中国航天科工集团有限公司", "details": "社会招聘第1至3页已结构化，共36条唯一岗位；第4页访问出现临时缓存错误，尚未形成可审计结论。总部招聘已核验为0条，海外专项1条已结构化。", "observed_at": "2026-07-13T13:20:00Z", "reason": "social_page_4_and_campus_channel_remaining", "remaining_scope": "社会招聘第4页、校园招聘渠道", "retryable": true, "stage": "complete_enumeration"}
