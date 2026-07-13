@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "target_count": 1000,
   "seed_status": "partial_valid_seed_replacing_placeholder",
-  "generated_at": "2026-07-13T12:30:00Z",
+  "generated_at": "2026-07-13T12:50:00Z",
   "companies": [
     {
       "company_id": "cn-fin-0001",
@@ -123,7 +123,27 @@
       "career_url": "https://casic.zhiye.com/",
       "career_entry_evidence": "2026-07-13集团网申系统可访问；社会招聘页展示4页公开岗位，总部招聘页明确无在招职位，海外专项页展示1个岗位。",
       "seed_status": "official_entry_verified"
+    },
+    {
+      "company_id": "cn-soe-0013",
+      "company_name": "中国船舶集团有限公司",
+      "short_name": "中国船舶集团",
+      "industry": "船舶与海洋工程",
+      "official_website": "https://www.cssc.net.cn/",
+      "career_url": "https://cssc.zhiye.com/",
+      "career_entry_evidence": "2026-07-13官方集团网申系统可访问，首页列出热招和长招职位；社会招聘页有公开岗位，校园招聘显示59条记录共4页，实习生招聘明确无在招职位。",
+      "seed_status": "official_entry_verified"
+    },
+    {
+      "company_id": "cn-soe-0014",
+      "company_name": "国家电网有限公司",
+      "short_name": "国家电网",
+      "industry": "电力与电网",
+      "official_website": "https://www.sgcc.com.cn/",
+      "career_url": "https://zhaopin.sgcc.com.cn/",
+      "career_entry_evidence": "2026-07-13官方招聘平台可访问，页面链接国家电网官网并提供单位一览、搜索职位和招聘公告等公开入口。",
+      "seed_status": "official_entry_verified"
     }
   ],
-  "valid_seed_count": 12
+  "valid_seed_count": 14
 }
