@@ -1,7 +1,7 @@
 {
-  "requested_at": "2026-07-13T18:02:00Z",
-  "sequence": 6,
-  "purpose": "Run next incremental official-source recruitment audit batch; continue from runtime checkpoint and process next unobserved companies",
+  "requested_at": "2026-07-13T18:05:00Z",
+  "sequence": 7,
+  "purpose": "Run next incremental official-source recruitment audit batch; reduce remaining pending seed audits and regenerate acceptance report",
   "target_companies": 1000,
   "policy": {
     "official_sources_only": true,
