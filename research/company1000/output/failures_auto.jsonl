@@ -6,3 +6,4 @@
 {"company_id": "cn-fin-0008", "company_name": "中国人民保险集团股份有限公司", "http_status": 403, "observed_at": "2026-07-13T12:03:09.673513+00:00", "reason": "restricted", "url": "https://picc.zhiye.com/"}
 {"company_id": "cn-fin-0009", "company_name": "中国中信集团有限公司", "http_status": null, "observed_at": "2026-07-13T12:03:11.135830+00:00", "reason": "fetch_failed", "url": "https://job.citic.com/recruit"}
 {"company_id": "cn-fin-0010", "company_name": "中国人寿保险（集团）公司", "http_status": null, "observed_at": "2026-07-13T12:03:12.113526+00:00", "reason": "fetch_failed", "url": "https://www.chinalife.com.cn/chinalife/zhaopin/"}
+{"company_id": "cn-soe-0013", "company_name": "中国船舶集团有限公司", "http_status": 403, "observed_at": "2026-07-13T12:27:35.556814+00:00", "reason": "restricted", "url": "https://cssc.zhiye.com/"}

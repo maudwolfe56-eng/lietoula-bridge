@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-13T13:25:00Z",
+  "updated_at": "2026-07-13T12:27:38.218096+00:00",
   "target_companies": 1000,
-  "valid_seed_count": 12,
+  "valid_seed_count": 14,
   "official_entries_verified": 10,
   "official_entry_candidates_pending": 2,
   "companies_with_job_records": 3,
@@ -11,7 +11,7 @@
   "job_records_review_pending": 14,
   "job_records_inactive_expired": 23,
   "companies_final_acceptance_met": 0,
-  "next_batch_start_index": 12,
+  "next_batch_start_index": 14,
   "batch_progress": {
     "batch_0001": {
       "companies_reviewed": 10,
@@ -55,8 +55,7 @@
     "login_captcha_or_paywall_bypass_allowed": false
   },
   "last_auto_batch": {
-    "start_index": 10,
-    "count": 2,
-    "job_records_added": 47
+    "start_index": 12,
+    "count": 2
   }
 }
