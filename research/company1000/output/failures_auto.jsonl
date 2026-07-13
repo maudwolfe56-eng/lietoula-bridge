@@ -749,3 +749,15 @@
 {"company_id": "cn-soe-0134", "company_name": "中国黄金集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:54:08.282853+00:00", "reason": "restricted", "url": "https://chinagoldgroup.zhiye.com/"}
 {"company_id": "cn-soe-0135", "company_name": "中国盐业集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:54:08.243719+00:00", "reason": "restricted", "url": "https://chinasalt.zhiye.com/"}
 {"company_id": "cn-soe-0136", "company_name": "中国林业集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:54:09.565360+00:00", "reason": "restricted", "url": "https://cfgc.zhiye.com/"}
+{"company_id": "cn-soe-0138", "company_name": "中国诚通控股集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:54:27.715081+00:00", "reason": "restricted", "url": "https://cctgroup.zhiye.com/"}
+{"company_id": "cn-soe-0144", "company_name": "中国民航信息集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:54:27.785822+00:00", "reason": "restricted", "url": "https://travelsky.zhiye.com/"}
+{"company_id": "cn-soe-0150", "company_name": "中国一重集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:54:27.665065+00:00", "reason": "restricted", "url": "https://cfhi.zhiye.com/"}
+{"company_id": "cn-soe-0152", "company_name": "中国东方电气集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:54:27.685805+00:00", "reason": "restricted", "url": "https://dongfang.zhiye.com/"}
+{"company_id": "cn-soe-0157", "company_name": "中国检验认证（集团）有限公司", "http_status": 403, "observed_at": "2026-07-13T17:54:27.713176+00:00", "reason": "restricted", "url": "https://ccic.zhiye.com/"}
+{"company_id": "cn-soe-0160", "company_name": "中国有研科技集团有限公司", "http_status": null, "observed_at": "2026-07-13T17:54:27.182281+00:00", "reason": "fetch_failed", "url": "https://grinm.zhiye.com/"}
+{"company_id": "cn-soe-0161", "company_name": "中国钢研科技集团有限公司", "http_status": 403, "observed_at": "2026-07-13T17:54:27.875766+00:00", "reason": "restricted", "url": "https://cisri.zhiye.com/"}
+{"company_id": "cn-sec-0192", "company_name": "广发证券股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:54:29.890280+00:00", "reason": "restricted", "url": "https://www.gf.com.cn/"}
+{"company_id": "cn-sec-0201", "company_name": "国金证券股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:54:30.345223+00:00", "reason": "restricted", "url": "https://gjzq.zhiye.com/"}
+{"company_id": "cn-health-0221", "company_name": "上海复星医药（集团）股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:54:30.155300+00:00", "reason": "restricted", "url": "https://fosunpharma.zhiye.com/index"}
+{"company_id": "cn-food-0228", "company_name": "泸州老窖股份有限公司", "http_status": 403, "observed_at": "2026-07-13T17:54:32.041402+00:00", "reason": "restricted", "url": "http://job.lzlj.com/"}
+{"company_id": "cn-food-0231", "company_name": "中国蒙牛乳业有限公司", "http_status": 403, "observed_at": "2026-07-13T17:54:31.371796+00:00", "reason": "restricted", "url": "https://mengniu.zhiye.com/"}
