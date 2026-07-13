@@ -1,5 +1,6 @@
 {
-  "requested_at": "2026-07-13T17:33:29Z",
+  "requested_at": "2026-07-13T17:36:15Z",
+  "sequence": 2,
   "purpose": "Trigger next incremental public-source recruitment audit batch",
   "target_companies": 1000,
   "policy": {
