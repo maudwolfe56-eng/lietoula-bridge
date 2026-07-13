@@ -41,7 +41,13 @@ jobs:
       - name: Validate crawler scripts
         working-directory: research/company1000
         run: |
-          python -m py_compile crawl_company_jobs.py crawl_company_jobs_pending.py crawl_company_jobs_merged.py build_import_package.py assess_final_acceptance.py
+          python -m py_compile \
+            crawl_company_jobs.py \
+            crawl_company_jobs_pending.py \
+            crawl_company_jobs_merged.py \
+            resolve_job_detail_candidates.py \
+            build_import_package.py \
+            assess_final_acceptance.py
 
       - name: Audit next unprocessed companies
         id: batch
@@ -58,6 +64,20 @@ jobs:
             --state-file runtime/checkpoint.json \
             --batch-size 20 \
             | tee logs/next_batch_auto.log
+
+      - name: Resolve probable job detail candidates
+        id: detail
+        continue-on-error: true
+        working-directory: research/company1000
+        env:
+          PYTHONUNBUFFERED: '1'
+        run: |
+          set -o pipefail
+          python resolve_job_detail_candidates.py \
+            --output-dir output \
+            --batch-size 20 \
+            --max-workers 6 \
+            | tee logs/resolve_job_details.log
 
       - name: Reconcile checkpoint and build deliverables
         if: always()
@@ -85,6 +105,7 @@ jobs:
               state['policy']['login_captcha_or_paywall_bypass_allowed'] = False
               state['policy']['new_job_link_default_status'] = 'candidate_raw'
               state['policy']['review_pending_requires_detail_validation'] = True
+              state['policy']['recruitment_navigation_requires_site_specific_resolution'] = True
               state_path.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding='utf-8')
           PY
           python build_import_package.py | tee logs/build_import_package.log
@@ -104,7 +125,9 @@ jobs:
               'generated_at_utc': datetime.now(timezone.utc).isoformat(),
               'runner_step_outcome': '${{ steps.batch.outcome }}',
               'runner_step_conclusion': '${{ steps.batch.conclusion }}',
-              'mode': 'next_unprocessed_incremental'
+              'detail_step_outcome': '${{ steps.detail.outcome }}',
+              'detail_step_conclusion': '${{ steps.detail.conclusion }}',
+              'mode': 'next_unprocessed_incremental_with_detail_resolution'
           }, ensure_ascii=False, indent=2), encoding='utf-8')
           PY
 
@@ -120,7 +143,7 @@ jobs:
           if git diff --cached --quiet; then
             echo 'No generated changes to commit'
           else
-            git commit -m 'research: persist next company1000 incremental audit outputs'
+            git commit -m 'research: persist next company1000 audit and detail outputs'
             for attempt in 1 2 3; do
               if git pull --rebase origin research/company1000-crawler-20260713 && \
                  git push origin HEAD:research/company1000-crawler-20260713; then
@@ -133,6 +156,6 @@ jobs:
             exit 1
           fi
 
-      - name: Fail workflow if runner failed
-        if: steps.batch.outcome == 'failure'
+      - name: Fail workflow if an audit stage failed
+        if: steps.batch.outcome == 'failure' || steps.detail.outcome == 'failure'
         run: exit 1
