@@ -1,0 +1,306 @@
+{
+  "schema_version": "1.0",
+  "source_note": "2026-07-14增量种子（第271-300家）。本批补齐航空航运港口、酒店旅游、教育服务、数字媒体与企业软件重点企业。仅登记企业官方主站或官方品牌招聘入口；所有岗位仍须在公开页面逐条核验，不绕过任何访问控制。",
+  "companies": [
+    {
+      "company_id": "cn-air-0271",
+      "company_name": "海南航空控股股份有限公司",
+      "short_name": "海南航空",
+      "industry": "航空运输",
+      "official_website": "https://www.hnair.com/",
+      "career_url": "https://www.hnair.com/",
+      "career_entry_evidence": "海南航空官方旅客服务主域名已登记；从官网公开人才及招聘公告入口继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-air-0272",
+      "company_name": "春秋航空股份有限公司",
+      "short_name": "春秋航空",
+      "industry": "航空运输",
+      "official_website": "https://www.ch.com/",
+      "career_url": "https://www.ch.com/",
+      "career_entry_evidence": "春秋航空官方主域名已登记；从官网招聘栏目继续核验飞行、乘务、机务和职能岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-air-0273",
+      "company_name": "上海吉祥航空股份有限公司",
+      "short_name": "吉祥航空",
+      "industry": "航空运输",
+      "official_website": "https://www.juneyaoair.com/",
+      "career_url": "https://www.juneyaoair.com/",
+      "career_entry_evidence": "吉祥航空官方主域名已登记；从官网公开人才入口继续核验当前岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-air-0274",
+      "company_name": "厦门航空有限公司",
+      "short_name": "厦门航空",
+      "industry": "航空运输",
+      "official_website": "https://www.xiamenair.com/",
+      "career_url": "https://www.xiamenair.com/",
+      "career_entry_evidence": "厦门航空官方主域名已登记；从官网招聘公告和人才入口继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-air-0275",
+      "company_name": "深圳航空有限责任公司",
+      "short_name": "深圳航空",
+      "industry": "航空运输",
+      "official_website": "https://www.shenzhenair.com/",
+      "career_url": "https://www.shenzhenair.com/",
+      "career_entry_evidence": "深圳航空官方主域名已登记；从官网公开招聘栏目继续核验岗位详情。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-port-0276",
+      "company_name": "上海国际港务（集团）股份有限公司",
+      "short_name": "上港集团",
+      "industry": "港口与综合物流",
+      "official_website": "https://www.portshanghai.com.cn/",
+      "career_url": "https://www.portshanghai.com.cn/",
+      "career_entry_evidence": "上港集团官方主域名已登记；从官网人才招聘及公开公告继续核验当前岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-port-0277",
+      "company_name": "宁波舟山港股份有限公司",
+      "short_name": "宁波舟山港",
+      "industry": "港口与综合物流",
+      "official_website": "https://www.nbport.com.cn/",
+      "career_url": "https://www.nbport.com.cn/",
+      "career_entry_evidence": "宁波舟山港官方主域名已登记；从官方网站继续核验招聘公告和申请入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-port-0278",
+      "company_name": "青岛港国际股份有限公司",
+      "short_name": "青岛港",
+      "industry": "港口与综合物流",
+      "official_website": "https://www.qingdao-port.com/",
+      "career_url": "https://www.qingdao-port.com/",
+      "career_entry_evidence": "青岛港官方主域名已登记；从官网公开人力资源与招聘公告继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-port-0279",
+      "company_name": "广州港股份有限公司",
+      "short_name": "广州港",
+      "industry": "港口与综合物流",
+      "official_website": "https://www.gzport.com/",
+      "career_url": "https://www.gzport.com/",
+      "career_entry_evidence": "广州港官方主域名已登记；从官网人才招聘和信息公开栏目继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-ship-0280",
+      "company_name": "招商局能源运输股份有限公司",
+      "short_name": "招商轮船",
+      "industry": "航运与能源运输",
+      "official_website": "https://www.cmenergyshipping.com/",
+      "career_url": "https://www.cmenergyshipping.com/",
+      "career_entry_evidence": "招商轮船官方网站已登记，并可由招商局集团网站群关联；继续核验人才招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-ship-0281",
+      "company_name": "中远海运控股股份有限公司",
+      "short_name": "中远海控",
+      "industry": "集装箱航运与码头",
+      "official_website": "https://hold.coscoshipping.com/",
+      "career_url": "https://hold.coscoshipping.com/",
+      "career_entry_evidence": "中远海控官方主域名已登记；从中远海运集团及公司官网公开入口继续核验招聘信息。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-ship-0282",
+      "company_name": "中谷海运集团有限公司",
+      "short_name": "中谷海运",
+      "industry": "集装箱航运与物流",
+      "official_website": "https://www.zhonggushipping.com/",
+      "career_url": "https://www.zhonggushipping.com/",
+      "career_entry_evidence": "中谷海运集团官方主域名已登记；从官网人才栏目继续核验当前岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-hotel-0283",
+      "company_name": "华住集团有限公司",
+      "short_name": "华住集团",
+      "industry": "酒店与住宿服务",
+      "official_website": "https://www.hworld.com/",
+      "career_url": "https://www.hworld.com/",
+      "career_entry_evidence": "华住集团官方品牌主域名已登记；从集团官网职业入口继续核验总部、区域及酒店岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-hotel-0284",
+      "company_name": "上海锦江国际酒店股份有限公司",
+      "short_name": "锦江酒店",
+      "industry": "酒店与住宿服务",
+      "official_website": "https://www.jinjianghotels.com/",
+      "career_url": "https://www.jinjianghotels.com/",
+      "career_entry_evidence": "锦江酒店官方主域名已登记；从官网人才及成员品牌公开入口继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-hotel-0285",
+      "company_name": "北京首旅酒店（集团）股份有限公司",
+      "short_name": "首旅酒店",
+      "industry": "酒店与住宿服务",
+      "official_website": "https://www.bthhotels.com/",
+      "career_url": "https://www.bthhotels.com/",
+      "career_entry_evidence": "首旅酒店集团官方主域名已登记；从官网招聘及成员酒店公开页面继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-hotel-0286",
+      "company_name": "亚朵生活控股有限公司",
+      "short_name": "亚朵集团",
+      "industry": "酒店与生活方式服务",
+      "official_website": "https://www.yaduo.com/",
+      "career_url": "https://www.yaduo.com/",
+      "career_entry_evidence": "亚朵官方品牌主域名已登记；从官网公开入口继续核验总部与门店招聘信息。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-travel-0287",
+      "company_name": "中国旅游集团中免股份有限公司",
+      "short_name": "中国中免",
+      "industry": "旅游零售与免税",
+      "official_website": "https://www.ctgdutyfree.com.cn/",
+      "career_url": "https://www.ctgdutyfree.com.cn/",
+      "career_entry_evidence": "中国中免官方主域名已登记；从官网人才招聘及中国旅游集团公开入口继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-travel-0288",
+      "company_name": "同程旅行控股有限公司",
+      "short_name": "同程旅行",
+      "industry": "在线旅游与数字服务",
+      "official_website": "https://www.tongchengir.com/",
+      "career_url": "https://www.tongchengir.com/",
+      "career_entry_evidence": "同程旅行企业官方网站已登记；从集团官网及官方招聘入口继续核验当前岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-edu-0289",
+      "company_name": "新东方教育科技集团有限公司",
+      "short_name": "新东方",
+      "industry": "教育与学习服务",
+      "official_website": "https://www.neworiental.org/",
+      "career_url": "https://www.neworiental.org/",
+      "career_entry_evidence": "新东方教育科技集团官方主域名已登记；从集团官网公开招聘入口继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-edu-0290",
+      "company_name": "好未来教育集团",
+      "short_name": "好未来",
+      "industry": "教育科技与学习服务",
+      "official_website": "https://www.100tal.com/",
+      "career_url": "https://www.100tal.com/",
+      "career_entry_evidence": "好未来集团官方主域名已登记；从官网人才入口继续核验技术、产品、教研与职能岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-edu-0291",
+      "company_name": "中公教育科技股份有限公司",
+      "short_name": "中公教育",
+      "industry": "职业教育与培训服务",
+      "official_website": "https://www.offcn.com/",
+      "career_url": "https://www.offcn.com/",
+      "career_entry_evidence": "中公教育官方主域名已登记；从官网招聘栏目继续核验总部与区域岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-edu-0292",
+      "company_name": "北京猿力教育科技有限公司",
+      "short_name": "猿辅导",
+      "industry": "教育科技",
+      "official_website": "https://www.yuanfudao.com/",
+      "career_url": "https://www.yuanfudao.com/",
+      "career_entry_evidence": "猿辅导官方主域名已登记；从官网公开职业入口继续核验当前岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-edu-0293",
+      "company_name": "北京作业帮教育科技有限公司",
+      "short_name": "作业帮",
+      "industry": "教育科技",
+      "official_website": "https://www.zuoyebang.com/",
+      "career_url": "https://www.zuoyebang.com/",
+      "career_entry_evidence": "作业帮官方主域名已登记；从官网公开人才入口继续核验技术、产品、教研及运营岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-media-0294",
+      "company_name": "分众传媒信息技术股份有限公司",
+      "short_name": "分众传媒",
+      "industry": "广告与数字媒体",
+      "official_website": "https://www.focusmedia.cn/",
+      "career_url": "https://www.focusmedia.cn/",
+      "career_entry_evidence": "分众传媒官方主域名已登记；从官网公开招聘入口继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-media-0295",
+      "company_name": "芒果超媒股份有限公司",
+      "short_name": "芒果超媒",
+      "industry": "数字媒体与内容娱乐",
+      "official_website": "https://www.mangocm.com/",
+      "career_url": "https://www.mangocm.com/",
+      "career_entry_evidence": "芒果超媒企业官方主域名已登记；从官网及官方招聘公告继续核验当前岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-media-0296",
+      "company_name": "北京爱奇艺科技有限公司",
+      "short_name": "爱奇艺",
+      "industry": "数字媒体与内容娱乐",
+      "official_website": "https://www.iqiyi.com/",
+      "career_url": "https://www.iqiyi.com/",
+      "career_entry_evidence": "爱奇艺官方主域名已登记；从企业公开招聘入口继续核验技术、内容、产品和职能岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-software-0297",
+      "company_name": "三六零安全科技股份有限公司",
+      "short_name": "三六零",
+      "industry": "网络安全与互联网服务",
+      "official_website": "https://www.360.cn/",
+      "career_url": "https://www.360.cn/",
+      "career_entry_evidence": "三六零官方主域名已登记；从官网人才招聘入口继续核验当前岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-software-0298",
+      "company_name": "金山软件有限公司",
+      "short_name": "金山软件",
+      "industry": "软件与互联网服务",
+      "official_website": "https://www.kingsoft.com/",
+      "career_url": "https://www.kingsoft.com/",
+      "career_entry_evidence": "金山软件官方主域名已登记；从集团官网及成员企业公开招聘入口继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-software-0299",
+      "company_name": "北京金山办公软件股份有限公司",
+      "short_name": "金山办公",
+      "industry": "办公软件与云服务",
+      "official_website": "https://www.wps.cn/",
+      "career_url": "https://www.wps.cn/",
+      "career_entry_evidence": "金山办公官方产品与企业主域名已登记；从官方人才入口继续核验研发、产品、销售及职能岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-software-0300",
+      "company_name": "用友网络科技股份有限公司",
+      "short_name": "用友网络",
+      "industry": "企业软件与云服务",
+      "official_website": "https://www.yonyou.com/",
+      "career_url": "https://www.yonyou.com/",
+      "career_entry_evidence": "用友网络官方主域名已登记；从官网加入我们与人才招聘入口继续核验当前岗位。",
+      "seed_status": "official_entry_candidate"
+    }
+  ]
+}
