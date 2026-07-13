@@ -1,0 +1,832 @@
+{
+  "generated_at": "2026-07-13T20:13:21.260519+00:00",
+  "failure_rows": 920,
+  "unique_failed_urls": 920,
+  "reason_counts_all_attempts": {
+    "detail_unparseable_or_multi_position_announcement": 890,
+    "detail_access_restricted": 10,
+    "detail_http_error": 9,
+    "detail_fetch_failed:ReadTimeout": 7,
+    "detail_fetch_failed:ConnectionError": 4
+  },
+  "reason_counts_latest_by_url": {
+    "detail_unparseable_or_multi_position_announcement": 890,
+    "detail_access_restricted": 10,
+    "detail_http_error": 9,
+    "detail_fetch_failed:ReadTimeout": 7,
+    "detail_fetch_failed:ConnectionError": 4
+  },
+  "http_status_counts": {
+    "200": 890,
+    "none": 11,
+    "403": 10,
+    "404": 5,
+    "502": 2,
+    "504": 2
+  },
+  "top_hosts": [
+    {
+      "host": "jobs.lenovo.com",
+      "count": 331
+    },
+    {
+      "host": "mokahr.com",
+      "count": 326
+    },
+    {
+      "host": "www.gdnybank.com",
+      "count": 90
+    },
+    {
+      "host": "www.stec.net",
+      "count": 86
+    },
+    {
+      "host": "www.fenbi.com",
+      "count": 58
+    },
+    {
+      "host": "smics.zhiye.com",
+      "count": 10
+    },
+    {
+      "host": "www.airchina.com.cn",
+      "count": 5
+    },
+    {
+      "host": "job.zte.com.cn",
+      "count": 3
+    },
+    {
+      "host": "fotile.zhiye.com",
+      "count": 3
+    },
+    {
+      "host": "career.brgroup.com",
+      "count": 2
+    },
+    {
+      "host": "job.ceair.com",
+      "count": 1
+    },
+    {
+      "host": "www.shuanghui.net",
+      "count": 1
+    },
+    {
+      "host": "www.cqrcb.com",
+      "count": 1
+    },
+    {
+      "host": "www.zhifeishengwu.com",
+      "count": 1
+    },
+    {
+      "host": "careers.hanglung.com",
+      "count": 1
+    },
+    {
+      "host": "www.aptiv.com",
+      "count": 1
+    }
+  ],
+  "top_path_shapes": [
+    {
+      "path_shape": "/blog/{id}",
+      "count": 326
+    },
+    {
+      "path_shape": "/site/productcompositiondetail/{id}",
+      "count": 86
+    },
+    {
+      "path_shape": "/jobnews/{id}/{id}",
+      "count": 85
+    },
+    {
+      "path_shape": "/es_es/careers/jobdetail/{id}/{id}",
+      "count": 32
+    },
+    {
+      "path_shape": "/pt_br/careers/jobdetail/{id}/{id}",
+      "count": 32
+    },
+    {
+      "path_shape": "/zh_tw/careers/jobdetail/{id}/{id}",
+      "count": 32
+    },
+    {
+      "path_shape": "/ja_jp/careers/jobdetail/{id}/{id}",
+      "count": 32
+    },
+    {
+      "path_shape": "/de_de/careers/jobdetail/{id}/{id}",
+      "count": 31
+    },
+    {
+      "path_shape": "/fr_fr/careers/jobdetail/{id}/{id}",
+      "count": 31
+    },
+    {
+      "path_shape": "/page/positions/{id}/{id}?region",
+      "count": 31
+    },
+    {
+      "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}",
+      "count": 27
+    },
+    {
+      "path_shape": "/page/positions/{id}/{id}?quickpick",
+      "count": 14
+    },
+    {
+      "path_shape": "/page/positions/{id}/{id}?department&institution",
+      "count": 13
+    },
+    {
+      "path_shape": "/socialxq?jc&jobid&p",
+      "count": 10
+    },
+    {
+      "path_shape": "/sojob/{id}/{id}",
+      "count": 5
+    },
+    {
+      "path_shape": "/cn/about_us/recruitment/{id}",
+      "count": 4
+    },
+    {
+      "path_shape": "/job_show?jobid",
+      "count": 3
+    },
+    {
+      "path_shape": "/content/zte-job/cn/campus-recruitment/{id}/news/{id}",
+      "count": 2
+    },
+    {
+      "path_shape": "/{id}?cateid&positionid",
+      "count": 1
+    },
+    {
+      "path_shape": "/{id}",
+      "count": 1
+    },
+    {
+      "path_shape": "/cqrcb/aboutus/job/{id}",
+      "count": 1
+    },
+    {
+      "path_shape": "/cn/about_us/recruitment/ground_crew_info/{id}",
+      "count": 1
+    },
+    {
+      "path_shape": "/content/zte-job/cn/campus-recruitment/{id}",
+      "count": 1
+    },
+    {
+      "path_shape": "/de_de/careers/jobdetail/server-test-engineer/{id}",
+      "count": 1
+    },
+    {
+      "path_shape": "/de_de/careers/jobdetail/firmware-engineer-i-uefi/{id}",
+      "count": 1
+    },
+    {
+      "path_shape": "/de_de/careers/jobdetail/isg-sales-specialist/{id}",
+      "count": 1
+    },
+    {
+      "path_shape": "/es_es/careers/jobdetail/server-test-engineer/{id}",
+      "count": 1
+    },
+    {
+      "path_shape": "/es_es/careers/jobdetail/firmware-engineer-i-uefi/{id}",
+      "count": 1
+    },
+    {
+      "path_shape": "/es_es/careers/jobdetail/isg-sales-specialist/{id}",
+      "count": 1
+    },
+    {
+      "path_shape": "/fr_fr/careers/jobdetail/server-test-engineer/{id}",
+      "count": 1
+    },
+    {
+      "path_shape": "/fr_fr/careers/jobdetail/firmware-engineer-i-uefi/{id}",
+      "count": 1
+    },
+    {
+      "path_shape": "/fr_fr/careers/jobdetail/isg-sales-specialist/{id}",
+      "count": 1
+    },
+    {
+      "path_shape": "/pt_br/careers/jobdetail/server-test-engineer/{id}",
+      "count": 1
+    },
+    {
+      "path_shape": "/pt_br/careers/jobdetail/firmware-engineer-i-uefi/{id}",
+      "count": 1
+    },
+    {
+      "path_shape": "/pt_br/careers/jobdetail/isg-sales-specialist/{id}",
+      "count": 1
+    },
+    {
+      "path_shape": "/zh_cn/careers/jobdetail/server-test-engineer/{id}",
+      "count": 1
+    },
+    {
+      "path_shape": "/zh_cn/careers/jobdetail/firmware-engineer-i-uefi/{id}",
+      "count": 1
+    },
+    {
+      "path_shape": "/zh_cn/careers/jobdetail/isg-sales-specialist/{id}",
+      "count": 1
+    },
+    {
+      "path_shape": "/zh_tw/careers/jobdetail/server-test-engineer/{id}",
+      "count": 1
+    },
+    {
+      "path_shape": "/zh_tw/careers/jobdetail/firmware-engineer-i-uefi/{id}",
+      "count": 1
+    }
+  ],
+  "samples_by_reason": {
+    "detail_unparseable_or_multi_position_announcement": [
+      {
+        "company_id": "cn-ins-0350",
+        "company_name": "众安在线财产保险股份有限公司",
+        "source_url": "https://mokahr.com/blog/18454.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/blog/{id}"
+      },
+      {
+        "company_id": "cn-ins-0350",
+        "company_name": "众安在线财产保险股份有限公司",
+        "source_url": "https://mokahr.com/blog/18440.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/blog/{id}"
+      },
+      {
+        "company_id": "cn-ins-0350",
+        "company_name": "众安在线财产保险股份有限公司",
+        "source_url": "https://mokahr.com/blog/18427.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/blog/{id}"
+      },
+      {
+        "company_id": "cn-ins-0350",
+        "company_name": "众安在线财产保险股份有限公司",
+        "source_url": "https://mokahr.com/blog/18420.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/blog/{id}"
+      },
+      {
+        "company_id": "cn-ins-0350",
+        "company_name": "众安在线财产保险股份有限公司",
+        "source_url": "https://mokahr.com/blog/18392.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/blog/{id}"
+      }
+    ],
+    "detail_access_restricted": [
+      {
+        "company_id": "cn-indtech-0410",
+        "company_name": "宁波方太厨具有限公司",
+        "source_url": "http://fotile.zhiye.com/job_show?jobId=560976221",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/job_show?jobid"
+      },
+      {
+        "company_id": "cn-indtech-0410",
+        "company_name": "宁波方太厨具有限公司",
+        "source_url": "http://fotile.zhiye.com/job_show?jobId=560945782",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/job_show?jobid"
+      },
+      {
+        "company_id": "cn-indtech-0410",
+        "company_name": "宁波方太厨具有限公司",
+        "source_url": "http://fotile.zhiye.com/job_show?jobId=560939882",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/job_show?jobid"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/socialxq?jobId=390843405&jc=1&c=&p=1^-1,3^-1&ky=",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/socialxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/socialxq?jobId=390842482&jc=1&c=&p=1^-1,3^-1&ky=",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/socialxq?jc&jobid&p"
+      }
+    ],
+    "detail_fetch_failed:ReadTimeout": [
+      {
+        "company_id": "cn-construction-0929",
+        "company_name": "上海隧道工程股份有限公司",
+        "source_url": "https://www.stec.net/site/productcompositiondetail/6272",
+        "reason": "detail_fetch_failed:ReadTimeout",
+        "detail": null,
+        "http_status": null,
+        "path_shape": "/site/productcompositiondetail/{id}"
+      },
+      {
+        "company_id": "cn-construction-0929",
+        "company_name": "上海隧道工程股份有限公司",
+        "source_url": "https://www.stec.net/site/productcompositiondetail/6267",
+        "reason": "detail_fetch_failed:ReadTimeout",
+        "detail": null,
+        "http_status": null,
+        "path_shape": "/site/productcompositiondetail/{id}"
+      },
+      {
+        "company_id": "cn-construction-0929",
+        "company_name": "上海隧道工程股份有限公司",
+        "source_url": "https://www.stec.net/site/productcompositiondetail/5818",
+        "reason": "detail_fetch_failed:ReadTimeout",
+        "detail": null,
+        "http_status": null,
+        "path_shape": "/site/productcompositiondetail/{id}"
+      },
+      {
+        "company_id": "cn-construction-0929",
+        "company_name": "上海隧道工程股份有限公司",
+        "source_url": "https://www.stec.net/site/productcompositiondetail/5805",
+        "reason": "detail_fetch_failed:ReadTimeout",
+        "detail": null,
+        "http_status": null,
+        "path_shape": "/site/productcompositiondetail/{id}"
+      },
+      {
+        "company_id": "cn-construction-0929",
+        "company_name": "上海隧道工程股份有限公司",
+        "source_url": "https://www.stec.net/site/productcompositiondetail/5789",
+        "reason": "detail_fetch_failed:ReadTimeout",
+        "detail": null,
+        "http_status": null,
+        "path_shape": "/site/productcompositiondetail/{id}"
+      }
+    ],
+    "detail_http_error": [
+      {
+        "company_id": "cn-construction-0929",
+        "company_name": "上海隧道工程股份有限公司",
+        "source_url": "https://www.stec.net/site/productcompositiondetail/6265",
+        "reason": "detail_http_error",
+        "detail": null,
+        "http_status": 504,
+        "path_shape": "/site/productcompositiondetail/{id}"
+      },
+      {
+        "company_id": "cn-construction-0929",
+        "company_name": "上海隧道工程股份有限公司",
+        "source_url": "https://www.stec.net/site/productcompositiondetail/4512",
+        "reason": "detail_http_error",
+        "detail": null,
+        "http_status": 502,
+        "path_shape": "/site/productcompositiondetail/{id}"
+      },
+      {
+        "company_id": "cn-construction-0929",
+        "company_name": "上海隧道工程股份有限公司",
+        "source_url": "https://www.stec.net/site/productcompositiondetail/6044",
+        "reason": "detail_http_error",
+        "detail": null,
+        "http_status": 504,
+        "path_shape": "/site/productcompositiondetail/{id}"
+      },
+      {
+        "company_id": "cn-construction-0929",
+        "company_name": "上海隧道工程股份有限公司",
+        "source_url": "https://www.stec.net/site/productcompositiondetail/5837",
+        "reason": "detail_http_error",
+        "detail": null,
+        "http_status": 502,
+        "path_shape": "/site/productcompositiondetail/{id}"
+      },
+      {
+        "company_id": "cn-soe-0049",
+        "company_name": "中国国际航空股份有限公司",
+        "source_url": "http://www.airchina.com.cn/cn/about_us/recruitment/ground_crew_info/185165.shtml",
+        "reason": "detail_http_error",
+        "detail": null,
+        "http_status": 404,
+        "path_shape": "/cn/about_us/recruitment/ground_crew_info/{id}"
+      }
+    ],
+    "detail_fetch_failed:ConnectionError": [
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/socialxq?jobId=390841785&jc=1&c=&p=1^-1,3^-1&ky=",
+        "reason": "detail_fetch_failed:ConnectionError",
+        "detail": null,
+        "http_status": null,
+        "path_shape": "/socialxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/socialxq?jobId=390841277&jc=1&c=&p=1^-1,3^-1&ky=",
+        "reason": "detail_fetch_failed:ConnectionError",
+        "detail": null,
+        "http_status": null,
+        "path_shape": "/socialxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/socialxq?jobId=390625692&jc=1&c=&p=1^-1,3^-1&ky=",
+        "reason": "detail_fetch_failed:ConnectionError",
+        "detail": null,
+        "http_status": null,
+        "path_shape": "/socialxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/socialxq?jobId=390609112&jc=1&c=&p=1^-1,3^-1&ky=",
+        "reason": "detail_fetch_failed:ConnectionError",
+        "detail": null,
+        "http_status": null,
+        "path_shape": "/socialxq?jc&jobid&p"
+      }
+    ]
+  },
+  "samples_by_top_host": {
+    "jobs.lenovo.com": [
+      {
+        "company_id": "cn-tech-0063",
+        "company_name": "联想集团有限公司",
+        "source_url": "https://jobs.lenovo.com/ja_JP/careers/JobDetail/Global-Procurement-Commodity-Specialist/79496",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/ja_jp/careers/jobdetail/{id}/{id}"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "company_name": "联想集团有限公司",
+        "source_url": "https://jobs.lenovo.com/ja_JP/careers/JobDetail/Sr-Strategic-Sales-Exec/79593",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/ja_jp/careers/jobdetail/sr-strategic-sales-exec/{id}"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "company_name": "联想集团有限公司",
+        "source_url": "https://jobs.lenovo.com/ja_JP/careers/JobDetail/Executive-Assistant/79761",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/ja_jp/careers/jobdetail/executive-assistant/{id}"
+      }
+    ],
+    "mokahr.com": [
+      {
+        "company_id": "cn-ins-0350",
+        "company_name": "众安在线财产保险股份有限公司",
+        "source_url": "https://mokahr.com/blog/18454.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/blog/{id}"
+      },
+      {
+        "company_id": "cn-ins-0350",
+        "company_name": "众安在线财产保险股份有限公司",
+        "source_url": "https://mokahr.com/blog/18440.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/blog/{id}"
+      },
+      {
+        "company_id": "cn-ins-0350",
+        "company_name": "众安在线财产保险股份有限公司",
+        "source_url": "https://mokahr.com/blog/18427.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/blog/{id}"
+      }
+    ],
+    "www.gdnybank.com": [
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/sojob/20220317/26704.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/sojob/{id}/{id}"
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/sojob/20250811/36623.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/sojob/{id}/{id}"
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/sojob/20250909/36783.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/sojob/{id}/{id}"
+      }
+    ],
+    "www.stec.net": [
+      {
+        "company_id": "cn-construction-0929",
+        "company_name": "上海隧道工程股份有限公司",
+        "source_url": "https://www.stec.net/site/productcompositiondetail/6309",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/site/productcompositiondetail/{id}"
+      },
+      {
+        "company_id": "cn-construction-0929",
+        "company_name": "上海隧道工程股份有限公司",
+        "source_url": "https://www.stec.net/site/productcompositiondetail/6308",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/site/productcompositiondetail/{id}"
+      },
+      {
+        "company_id": "cn-construction-0929",
+        "company_name": "上海隧道工程股份有限公司",
+        "source_url": "https://www.stec.net/site/productcompositiondetail/6307",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/site/productcompositiondetail/{id}"
+      }
+    ],
+    "www.fenbi.com": [
+      {
+        "company_id": "cn-edu-0795",
+        "company_name": "北京粉笔蓝天科技有限公司",
+        "source_url": "https://www.fenbi.com/page/positions/3/730919?quickPick=%7B%22examId%22:730919%7D",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/page/positions/{id}/{id}?quickpick"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "company_name": "北京粉笔蓝天科技有限公司",
+        "source_url": "https://www.fenbi.com/page/positions/3/730627?quickPick=%7B%22examId%22:730627%7D",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/page/positions/{id}/{id}?quickpick"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "company_name": "北京粉笔蓝天科技有限公司",
+        "source_url": "https://www.fenbi.com/page/positions/3/730253?quickPick=%7B%22examId%22:730253%7D",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/page/positions/{id}/{id}?quickpick"
+      }
+    ],
+    "smics.zhiye.com": [
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/socialxq?jobId=390843405&jc=1&c=&p=1^-1,3^-1&ky=",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/socialxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/socialxq?jobId=390842482&jc=1&c=&p=1^-1,3^-1&ky=",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/socialxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/socialxq?jobId=390842475&jc=1&c=&p=1^-1,3^-1&ky=",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/socialxq?jc&jobid&p"
+      }
+    ],
+    "www.airchina.com.cn": [
+      {
+        "company_id": "cn-soe-0049",
+        "company_name": "中国国际航空股份有限公司",
+        "source_url": "http://www.airchina.com.cn/cn/about_us/recruitment/ground_crew_info/185165.shtml",
+        "reason": "detail_http_error",
+        "detail": null,
+        "http_status": 404,
+        "path_shape": "/cn/about_us/recruitment/ground_crew_info/{id}"
+      },
+      {
+        "company_id": "cn-soe-0049",
+        "company_name": "中国国际航空股份有限公司",
+        "source_url": "http://www.airchina.com.cn/cn/about_us/recruitment/185216.shtml",
+        "reason": "detail_http_error",
+        "detail": null,
+        "http_status": 404,
+        "path_shape": "/cn/about_us/recruitment/{id}"
+      },
+      {
+        "company_id": "cn-soe-0049",
+        "company_name": "中国国际航空股份有限公司",
+        "source_url": "http://www.airchina.com.cn/cn/about_us/recruitment/185219.shtml",
+        "reason": "detail_http_error",
+        "detail": null,
+        "http_status": 404,
+        "path_shape": "/cn/about_us/recruitment/{id}"
+      }
+    ],
+    "job.zte.com.cn": [
+      {
+        "company_id": "cn-tech-0066",
+        "company_name": "中兴通讯股份有限公司",
+        "source_url": "https://job.zte.com.cn/content/zte-job/cn/campus-recruitment/buyue2.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/content/zte-job/cn/campus-recruitment/{id}"
+      },
+      {
+        "company_id": "cn-tech-0066",
+        "company_name": "中兴通讯股份有限公司",
+        "source_url": "https://job.zte.com.cn/content/zte-job/cn/campus-recruitment/School_Recruitment_Announcement/news/10011.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/content/zte-job/cn/campus-recruitment/{id}/news/{id}"
+      },
+      {
+        "company_id": "cn-tech-0066",
+        "company_name": "中兴通讯股份有限公司",
+        "source_url": "https://job.zte.com.cn/content/zte-job/cn/campus-recruitment/School_Recruitment_Announcement/news/202406061.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/content/zte-job/cn/campus-recruitment/{id}/news/{id}"
+      }
+    ],
+    "fotile.zhiye.com": [
+      {
+        "company_id": "cn-indtech-0410",
+        "company_name": "宁波方太厨具有限公司",
+        "source_url": "http://fotile.zhiye.com/job_show?jobId=560976221",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/job_show?jobid"
+      },
+      {
+        "company_id": "cn-indtech-0410",
+        "company_name": "宁波方太厨具有限公司",
+        "source_url": "http://fotile.zhiye.com/job_show?jobId=560945782",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/job_show?jobid"
+      },
+      {
+        "company_id": "cn-indtech-0410",
+        "company_name": "宁波方太厨具有限公司",
+        "source_url": "http://fotile.zhiye.com/job_show?jobId=560939882",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/job_show?jobid"
+      }
+    ],
+    "career.brgroup.com": [
+      {
+        "company_id": "cn-fintech-0642",
+        "company_name": "百融云创科技股份有限公司",
+        "source_url": "https://career.brgroup.com/social-recruitment/100credit/92460",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/social-recruitment/{id}/{id}"
+      },
+      {
+        "company_id": "cn-fintech-0642",
+        "company_name": "百融云创科技股份有限公司",
+        "source_url": "https://career.brgroup.com/campus-recruitment/100credit/102451",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/campus-recruitment/{id}/{id}"
+      }
+    ],
+    "job.ceair.com": [
+      {
+        "company_id": "cn-soe-0050",
+        "company_name": "中国东方航空股份有限公司",
+        "source_url": "https://job.ceair.com/pilotJobDetail1.html?positionId=NTQzNg==&cateId=MTAwMA==",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/{id}?cateid&positionid"
+      }
+    ],
+    "www.shuanghui.net": [
+      {
+        "company_id": "cn-food-0232",
+        "company_name": "河南双汇投资发展股份有限公司",
+        "source_url": "https://www.shuanghui.net/job-50.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/{id}"
+      }
+    ],
+    "www.cqrcb.com": [
+      {
+        "company_id": "cn-bank-0304",
+        "company_name": "重庆农村商业银行股份有限公司",
+        "source_url": "https://www.cqrcb.com/cqrcb/aboutus/job/334094.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/cqrcb/aboutus/job/{id}"
+      }
+    ],
+    "www.zhifeishengwu.com": [
+      {
+        "company_id": "cn-vaccine-0815",
+        "company_name": "重庆智飞生物制品股份有限公司",
+        "source_url": "https://www.zhifeishengwu.com/zh_CN/recruitment/42.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/zh_cn/recruitment/{id}"
+      }
+    ],
+    "careers.hanglung.com": [
+      {
+        "company_id": "cn-property-0912",
+        "company_name": "恒隆地产有限公司",
+        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/go/all-jobs/{id}"
+      }
+    ],
+    "www.aptiv.com": [
+      {
+        "company_id": "cn-autoparts-0748",
+        "company_name": "安波福（中国）投资有限公司",
+        "source_url": "https://www.aptiv.com/en/jobs/25for25",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/en/jobs/{id}"
+      }
+    ]
+  }
+}
