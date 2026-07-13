@@ -1,13 +1,14 @@
 {
-  "requested_at": "2026-07-13T19:31:00Z",
-  "sequence": 21,
-  "purpose": "Continue auditing the next unprocessed official company sources from index 800 onward; resolve official recruitment navigation and probable job detail candidates; rebuild deduplicated deliverables and reassess final acceptance",
+  "requested_at": "2026-07-13T19:42:00Z",
+  "sequence": 22,
+  "purpose": "Merge the final seed buffer, verify that at least 1000 unique official company sources are available, audit the next unprocessed sources, resolve official recruitment navigation and probable job detail candidates, rebuild deduplicated deliverables, and reassess final acceptance",
   "target_companies": 1000,
   "priority": {
     "unresolved_recruitment_navigation": true,
     "probable_job_detail_candidates": true,
     "untouched_official_company_sources": true,
-    "seed_shortfall_tracking": true
+    "seed_shortfall_tracking": true,
+    "valid_seed_count_at_least_1000": true
   },
   "policy": {
     "official_sources_only": true,
