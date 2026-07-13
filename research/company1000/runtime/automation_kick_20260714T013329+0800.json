@@ -1,0 +1,11 @@
+{
+  "requested_at": "2026-07-13T17:33:29Z",
+  "purpose": "Trigger next incremental public-source recruitment audit batch",
+  "target_companies": 1000,
+  "policy": {
+    "official_sources_only": true,
+    "auto_active_verified": false,
+    "salary_inference_allowed": false,
+    "access_control_bypass_allowed": false
+  }
+}
