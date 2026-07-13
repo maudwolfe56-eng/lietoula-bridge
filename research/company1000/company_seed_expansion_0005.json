@@ -1,0 +1,206 @@
+{
+  "schema_version": "1.0",
+  "source_note": "2026-07-14增量种子（第101-120家）。仅登记企业官方主域名、官方招聘子域名或品牌ATS候选；所有入口仍须经公开HTTP、页面标题、官方主站链接关系或官方招聘公告复核。未核验前不认定为最终官方来源，不绕过登录、验证码或访问控制。",
+  "companies": [
+    {
+      "company_id": "cn-fin-0101",
+      "company_name": "中国邮政集团有限公司",
+      "short_name": "中国邮政",
+      "industry": "邮政、快递与综合物流",
+      "official_website": "https://www.chinapost.com.cn/",
+      "career_url": "https://job.chinapost.com.cn/",
+      "career_entry_evidence": "中国邮政品牌招聘子域名候选，须由集团官方主站链接或官方招聘公告复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0102",
+      "company_name": "中国邮政储蓄银行股份有限公司",
+      "short_name": "邮储银行",
+      "industry": "银行",
+      "official_website": "https://www.psbc.com/",
+      "career_url": "https://www.psbc.com/cn/gyyc/rczp/",
+      "career_entry_evidence": "邮储银行官方主站人才招聘栏目候选，交由公开访问审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0103",
+      "company_name": "中国光大银行股份有限公司",
+      "short_name": "中国光大银行",
+      "industry": "银行",
+      "official_website": "https://www.cebbank.com/",
+      "career_url": "https://career.cebbank.com/",
+      "career_entry_evidence": "光大银行官方主域名下招聘子域名候选，交由公开访问审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0104",
+      "company_name": "中国民生银行股份有限公司",
+      "short_name": "中国民生银行",
+      "industry": "银行",
+      "official_website": "https://www.cmbc.com.cn/",
+      "career_url": "https://career.cmbc.com.cn/",
+      "career_entry_evidence": "民生银行官方主域名下招聘子域名候选，公开页面为动态加载系统，须继续核验职位入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0105",
+      "company_name": "兴业银行股份有限公司",
+      "short_name": "兴业银行",
+      "industry": "银行",
+      "official_website": "https://www.cib.com.cn/",
+      "career_url": "https://job.cib.com.cn/",
+      "career_entry_evidence": "兴业银行官方主域名下招聘入口候选；公开页面可重定向至招聘门户，仍须枚举岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0106",
+      "company_name": "上海浦东发展银行股份有限公司",
+      "short_name": "浦发银行",
+      "industry": "银行",
+      "official_website": "https://www.spdb.com.cn/",
+      "career_url": "https://job.spdb.com.cn/",
+      "career_entry_evidence": "浦发银行官方主域名下招聘门户候选，公开页面提供社会招聘、校园招聘和实习生招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0107",
+      "company_name": "华夏银行股份有限公司",
+      "short_name": "华夏银行",
+      "industry": "银行",
+      "official_website": "https://www.hxb.com.cn/",
+      "career_url": "https://zhaopin.hxb.com.cn/",
+      "career_entry_evidence": "华夏银行官方主域名下招聘子域名候选，交由公开访问审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0108",
+      "company_name": "浙商银行股份有限公司",
+      "short_name": "浙商银行",
+      "industry": "银行",
+      "official_website": "https://www.czbank.com/",
+      "career_url": "https://zp.czbank.com.cn/",
+      "career_entry_evidence": "浙商银行官方主域名下招聘子域名候选，交由公开访问审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0109",
+      "company_name": "渤海银行股份有限公司",
+      "short_name": "渤海银行",
+      "industry": "银行",
+      "official_website": "https://www.cbhb.com.cn/",
+      "career_url": "https://www.cbhb.com.cn/gywm/rczp/",
+      "career_entry_evidence": "渤海银行官方主站人才招聘栏目候选，交由公开访问审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0110",
+      "company_name": "北京银行股份有限公司",
+      "short_name": "北京银行",
+      "industry": "银行",
+      "official_website": "https://www.bankofbeijing.com.cn/",
+      "career_url": "https://bankofbeijing.zhiye.com/",
+      "career_entry_evidence": "北京银行品牌招聘ATS候选，公开页面标题显示北京银行；仍须由官方主站链接或公告复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0111",
+      "company_name": "上海银行股份有限公司",
+      "short_name": "上海银行",
+      "industry": "银行",
+      "official_website": "https://www.bosc.cn/",
+      "career_url": "https://bosc.zhiye.com/",
+      "career_entry_evidence": "上海银行品牌招聘ATS候选，须由官方主站链接或官方招聘公告复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0112",
+      "company_name": "江苏银行股份有限公司",
+      "short_name": "江苏银行",
+      "industry": "银行",
+      "official_website": "https://www.jsbchina.cn/",
+      "career_url": "https://jsbchina.zhiye.com/",
+      "career_entry_evidence": "江苏银行品牌招聘ATS候选，须由官方主站链接或官方招聘公告复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0113",
+      "company_name": "南京银行股份有限公司",
+      "short_name": "南京银行",
+      "industry": "银行",
+      "official_website": "https://www.njcb.com.cn/",
+      "career_url": "https://njcb.zhiye.com/",
+      "career_entry_evidence": "南京银行品牌招聘ATS候选，须由官方主站链接或官方招聘公告复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0114",
+      "company_name": "宁波银行股份有限公司",
+      "short_name": "宁波银行",
+      "industry": "银行",
+      "official_website": "https://www.nbcb.com.cn/",
+      "career_url": "https://zhaopin.nbcb.com.cn/",
+      "career_entry_evidence": "宁波银行官方主域名下招聘子域名候选，交由公开访问审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0115",
+      "company_name": "杭州银行股份有限公司",
+      "short_name": "杭州银行",
+      "industry": "银行",
+      "official_website": "https://www.hzbank.com.cn/",
+      "career_url": "https://hzb.zhiye.com/",
+      "career_entry_evidence": "杭州银行品牌招聘ATS候选，须由官方主站链接或官方招聘公告复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0116",
+      "company_name": "徽商银行股份有限公司",
+      "short_name": "徽商银行",
+      "industry": "银行",
+      "official_website": "https://www.hsbank.com.cn/",
+      "career_url": "https://hsbank.zhiye.com/",
+      "career_entry_evidence": "徽商银行品牌招聘ATS候选，须由官方主站链接或官方招聘公告复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0117",
+      "company_name": "中信银行股份有限公司",
+      "short_name": "中信银行",
+      "industry": "银行",
+      "official_website": "https://www.citicbank.com/",
+      "career_url": "https://job.citicbank.com/",
+      "career_entry_evidence": "中信银行官方主域名下招聘子域名候选，交由公开访问审计。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0118",
+      "company_name": "中国银河证券股份有限公司",
+      "short_name": "中国银河证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.chinastock.com.cn/",
+      "career_url": "https://chinastock.zhiye.com/",
+      "career_entry_evidence": "中国银河证券品牌招聘ATS候选，须由官方主站链接或官方招聘公告复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0119",
+      "company_name": "华泰证券股份有限公司",
+      "short_name": "华泰证券",
+      "industry": "证券与资本市场",
+      "official_website": "https://www.htsc.com.cn/",
+      "career_url": "https://htsc.zhiye.com/",
+      "career_entry_evidence": "华泰证券品牌招聘ATS候选，须由官方主站链接或官方招聘公告复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-fin-0120",
+      "company_name": "中国国际金融股份有限公司",
+      "short_name": "中金公司",
+      "industry": "投资银行与资本市场",
+      "official_website": "https://www.cicc.com/",
+      "career_url": "https://career.cicc.com.cn/",
+      "career_entry_evidence": "中金公司官方主域名下招聘子域名候选，交由公开访问审计。",
+      "seed_status": "official_entry_candidate"
+    }
+  ]
+}
