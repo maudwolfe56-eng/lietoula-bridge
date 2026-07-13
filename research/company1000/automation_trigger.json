@@ -1,12 +1,14 @@
 {
-  "requested_at": "2026-07-13T17:54:30Z",
-  "sequence": 5,
-  "purpose": "Run next incremental official-source recruitment audit batch after seed expansion 0010",
+  "requested_at": "2026-07-13T18:02:00Z",
+  "sequence": 6,
+  "purpose": "Run next incremental official-source recruitment audit batch; continue from runtime checkpoint and process next unobserved companies",
   "target_companies": 1000,
   "policy": {
     "official_sources_only": true,
     "auto_active_verified": false,
     "salary_inference_allowed": false,
-    "access_control_bypass_allowed": false
+    "access_control_bypass_allowed": false,
+    "new_job_link_default_status": "candidate_raw",
+    "review_pending_requires_detail_validation": true
   }
 }
