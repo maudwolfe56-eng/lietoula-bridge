@@ -2,7 +2,7 @@
   "schema_version": "1.2",
   "target_count": 1000,
   "seed_status": "incrementally_expanded_auditable_seed",
-  "valid_seed_count": 220,
+  "valid_seed_count": 250,
   "duplicate_seed_rows_excluded": 20,
   "company_id_collisions_resolved": 7,
   "source_files": [
@@ -13,7 +13,8 @@
     "company_seed_expansion_0004.json",
     "company_seed_expansion_0005.json",
     "company_seed_expansion_0006.json",
-    "company_seed_expansion_0007.json"
+    "company_seed_expansion_0007.json",
+    "company_seed_expansion_0008.json"
   ],
   "companies": [
     {
@@ -2228,6 +2229,306 @@
       "official_website": "https://www.cindasc.com/",
       "career_url": "https://www.cindasc.com/",
       "career_entry_evidence": "2026-07-14已核验信达证券官方网站域名；从官方主站公开链接继续审计招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-health-0221",
+      "company_name": "上海复星医药（集团）股份有限公司",
+      "short_name": "复星医药",
+      "industry": "医药健康",
+      "official_website": "https://www.fosunpharma.com/",
+      "career_url": "https://fosunpharma.zhiye.com/index",
+      "career_entry_evidence": "2026-07-14复星医药官方网站明确设置职业发展与加入我们入口，并直接链接集团招聘门户；继续审计当前社会、校园及实习岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-health-0222",
+      "company_name": "华润三九医药股份有限公司",
+      "short_name": "华润三九",
+      "industry": "医药制造",
+      "official_website": "https://www.999.com.cn/",
+      "career_url": "https://wecruit.hotjob.cn/SU613834ecbef57c3b6383b50e/pb/school.html",
+      "career_entry_evidence": "2026-07-14华润三九官方网站人力资源栏目直接链接人才招聘系统；页面为公开JavaScript应用，交由后续岗位枚举。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-health-0223",
+      "company_name": "云南白药集团股份有限公司",
+      "short_name": "云南白药",
+      "industry": "医药健康",
+      "official_website": "https://www.yunnanbaiyao.com.cn/",
+      "career_url": "https://www.yunnanbaiyao.com.cn/",
+      "career_entry_evidence": "云南白药集团官方主域名已登记；从官方主站公开栏目继续核验统一招聘入口及当前岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-health-0224",
+      "company_name": "上海医药集团股份有限公司",
+      "short_name": "上海医药",
+      "industry": "医药制造与流通",
+      "official_website": "https://www.sphchina.com/",
+      "career_url": "https://www.sphchina.com/",
+      "career_entry_evidence": "2026-07-14上海医药官方网站可公开访问；从官方主站继续核验集团及成员企业招聘入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-health-0225",
+      "company_name": "国药控股股份有限公司",
+      "short_name": "国药控股",
+      "industry": "医药流通与服务",
+      "official_website": "https://www.sinopharmgroup.com.cn/",
+      "career_url": "https://www.sinopharmgroup.com.cn/",
+      "career_entry_evidence": "国药控股官方主域名已登记；从官网人才及成员企业公开页面继续核验当前招聘信息。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-food-0226",
+      "company_name": "贵州茅台酒股份有限公司",
+      "short_name": "贵州茅台",
+      "industry": "食品饮料与白酒",
+      "official_website": "https://www.moutaichina.com/",
+      "career_url": "https://www.moutaichina.com/",
+      "career_entry_evidence": "2026-07-14贵州茅台股份官方网站可访问并设置成年人确认入口；从官方公开栏目继续核验招聘公告和申请入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-food-0227",
+      "company_name": "宜宾五粮液股份有限公司",
+      "short_name": "五粮液",
+      "industry": "食品饮料与白酒",
+      "official_website": "https://www.wuliangye.com.cn/",
+      "career_url": "https://www.wuliangye.com.cn/",
+      "career_entry_evidence": "五粮液股份官方主域名已登记；从官网公开栏目继续核验社会招聘、校园招聘及招聘公告。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-food-0228",
+      "company_name": "泸州老窖股份有限公司",
+      "short_name": "泸州老窖",
+      "industry": "食品饮料与白酒",
+      "official_website": "https://www.lzlj.com/",
+      "career_url": "http://job.lzlj.com/",
+      "career_entry_evidence": "2026-07-14泸州老窖官方网站底部直接提供招聘信息入口job.lzlj.com；继续核验当前可申请岗位详情。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-food-0229",
+      "company_name": "青岛啤酒股份有限公司",
+      "short_name": "青岛啤酒",
+      "industry": "食品饮料与啤酒",
+      "official_website": "https://www.tsingtao.com.cn/",
+      "career_url": "https://www.tsingtao.com.cn/",
+      "career_entry_evidence": "2026-07-14青岛啤酒官方网站可访问并设置成年人确认入口；从官方站点继续核验招聘栏目。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-food-0230",
+      "company_name": "内蒙古伊利实业集团股份有限公司",
+      "short_name": "伊利集团",
+      "industry": "乳制品与健康食品",
+      "official_website": "https://www.yili.com/",
+      "career_url": "https://www.yili.com/joinus",
+      "career_entry_evidence": "2026-07-14伊利官方网站加入我们页面公开展示校园招聘、社会招聘与全部岗位入口；继续结构化岗位详情。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-food-0231",
+      "company_name": "中国蒙牛乳业有限公司",
+      "short_name": "蒙牛乳业",
+      "industry": "乳制品与健康食品",
+      "official_website": "https://www.mengniu.com.cn/",
+      "career_url": "https://mengniu.zhiye.com/",
+      "career_entry_evidence": "2026-07-14蒙牛官方网站加入我们页面直接链接社会招聘和校园招聘门户；继续枚举当前岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-food-0232",
+      "company_name": "河南双汇投资发展股份有限公司",
+      "short_name": "双汇发展",
+      "industry": "肉类食品与供应链",
+      "official_website": "https://www.shuanghui.net/",
+      "career_url": "https://www.shuanghui.net/",
+      "career_entry_evidence": "2026-07-14双汇官方网站公开设置诚聘英才、社会招聘和大学生招聘栏目，并展示具体招聘启事；继续采集岗位详情。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-food-0233",
+      "company_name": "佛山市海天调味食品股份有限公司",
+      "short_name": "海天味业",
+      "industry": "调味品与食品制造",
+      "official_website": "https://www.haday.com/",
+      "career_url": "https://www.haday.com/",
+      "career_entry_evidence": "2026-07-14海天味业官方网站可访问；从官方主站继续核验人才招聘入口和当前岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-food-0234",
+      "company_name": "农夫山泉股份有限公司",
+      "short_name": "农夫山泉",
+      "industry": "饮料与包装饮用水",
+      "official_website": "https://www.nongfuspring.com/",
+      "career_url": "https://www.nongfuspring.com/",
+      "career_entry_evidence": "农夫山泉官方品牌主域名已登记；从官网公开栏目继续核验社会招聘、校园招聘及职位详情。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-food-0235",
+      "company_name": "达利食品集团有限公司",
+      "short_name": "达利食品",
+      "industry": "食品饮料",
+      "official_website": "https://www.dali-group.com/",
+      "career_url": "https://www.dali-group.com/",
+      "career_entry_evidence": "达利食品集团官方主域名已登记；从官方公开页面继续核验集团招聘入口和岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-chip-0236",
+      "company_name": "中芯国际集成电路制造有限公司",
+      "short_name": "中芯国际",
+      "industry": "集成电路制造",
+      "official_website": "https://www.smics.com/",
+      "career_url": "https://www.smics.com/",
+      "career_entry_evidence": "中芯国际官方主域名已登记；本轮公开抓取返回403，后续仅做合规浏览器复核，不绕过访问控制。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-chip-0237",
+      "company_name": "华虹半导体有限公司",
+      "short_name": "华虹半导体",
+      "industry": "集成电路制造",
+      "official_website": "https://www.huahonggrace.com/",
+      "career_url": "https://www.huahonggrace.com/",
+      "career_entry_evidence": "华虹半导体官方主域名已登记；本轮公开抓取返回403，后续仅做合规公开页面复核。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-chip-0238",
+      "company_name": "长鑫科技集团股份有限公司",
+      "short_name": "长鑫存储",
+      "industry": "存储芯片与半导体制造",
+      "official_website": "https://www.cxmt.com/",
+      "career_url": "https://jobs.cxmt.com/",
+      "career_entry_evidence": "2026-07-14长鑫存储官方网站加入我们栏目直接链接社会招聘、校园招聘及实习招聘入口；继续枚举岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-chip-0239",
+      "company_name": "长江存储科技有限责任公司",
+      "short_name": "长江存储",
+      "industry": "存储芯片与半导体制造",
+      "official_website": "https://www.ymtc.com/",
+      "career_url": "https://www.ymtc.com/",
+      "career_entry_evidence": "2026-07-14长江存储官方网站公开设置工作机会和加入我们栏目；继续核验岗位列表及详情入口。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-elec-0240",
+      "company_name": "闻泰科技股份有限公司",
+      "short_name": "闻泰科技",
+      "industry": "半导体与产品集成",
+      "official_website": "https://www.wingtech.com/",
+      "career_url": "https://jobs.wingtech.com/",
+      "career_entry_evidence": "2026-07-14闻泰科技官方网站人才中心直接链接社会招聘和校园招聘门户；继续枚举当前岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-elec-0241",
+      "company_name": "立讯精密工业股份有限公司",
+      "short_name": "立讯精密",
+      "industry": "精密制造与电子连接",
+      "official_website": "https://www.luxshare-ict.com/",
+      "career_url": "https://www.luxshare-ict.com/",
+      "career_entry_evidence": "2026-07-14立讯精密官方网站公开设置加入我们栏目并提供2026校园招聘入口；继续核验社会招聘及职位详情。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-elec-0242",
+      "company_name": "歌尔股份有限公司",
+      "short_name": "歌尔股份",
+      "industry": "智能硬件与精密制造",
+      "official_website": "https://www.goertek.com/",
+      "career_url": "https://www.goertek.com/",
+      "career_entry_evidence": "歌尔股份官方主域名已登记；从官方公开栏目继续核验招聘入口及岗位详情。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-elec-0243",
+      "company_name": "舜宇光学科技（集团）有限公司",
+      "short_name": "舜宇光学",
+      "industry": "光学与光电制造",
+      "official_website": "https://www.sunnyoptical.com/",
+      "career_url": "https://www.sunnyoptical.com/",
+      "career_entry_evidence": "舜宇光学官方主域名已登记；从集团公开页面继续核验招聘栏目和当前岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-energy-0244",
+      "company_name": "隆基绿能科技股份有限公司",
+      "short_name": "隆基绿能",
+      "industry": "光伏与新能源",
+      "official_website": "https://www.longi.com/cn/",
+      "career_url": "https://www.longi.com/cn/",
+      "career_entry_evidence": "隆基绿能官方主域名已登记；从官网公开人才栏目继续核验当前社会及校园岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-energy-0245",
+      "company_name": "通威集团有限公司",
+      "short_name": "通威集团",
+      "industry": "新能源与农业",
+      "official_website": "https://www.tongwei.com.cn/",
+      "career_url": "https://www.tongwei.com.cn/",
+      "career_entry_evidence": "通威集团官方主域名已登记；从官网招聘及成员企业公开入口继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-energy-0246",
+      "company_name": "晶科能源股份有限公司",
+      "short_name": "晶科能源",
+      "industry": "光伏与新能源",
+      "official_website": "https://www.jinkosolar.com/",
+      "career_url": "https://www.jinkosolar.com/",
+      "career_entry_evidence": "晶科能源官方主域名已登记；从官网公开职业入口继续核验当前岗位和详情。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-energy-0247",
+      "company_name": "天合光能股份有限公司",
+      "short_name": "天合光能",
+      "industry": "光伏与新能源",
+      "official_website": "https://www.trinasolar.com/cn",
+      "career_url": "https://www.trinasolar.com/cn",
+      "career_entry_evidence": "天合光能中国官方网站已登记；从官方公开职业栏目继续核验社会招聘与校园招聘。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-mining-0248",
+      "company_name": "紫金矿业集团股份有限公司",
+      "short_name": "紫金矿业",
+      "industry": "有色金属与矿业",
+      "official_website": "https://www.zijinmining.com/",
+      "career_url": "https://www.zijinmining.com/",
+      "career_entry_evidence": "紫金矿业官方主域名已登记；从官网人才招聘及成员企业公开页面继续核验岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-mining-0249",
+      "company_name": "洛阳栾川钼业集团股份有限公司",
+      "short_name": "洛阳钼业",
+      "industry": "有色金属与矿业",
+      "official_website": "https://www.cmoc.com/",
+      "career_url": "https://www.cmoc.com/",
+      "career_entry_evidence": "洛阳钼业官方主域名已登记；从官方网站公开职业栏目继续核验国内外岗位。",
+      "seed_status": "official_entry_candidate"
+    },
+    {
+      "company_id": "cn-mining-0250",
+      "company_name": "天齐锂业股份有限公司",
+      "short_name": "天齐锂业",
+      "industry": "锂资源与新能源材料",
+      "official_website": "https://www.tianqilithium.com/",
+      "career_url": "https://www.tianqilithium.com/",
+      "career_entry_evidence": "天齐锂业官方主域名已登记；从官网人才招聘栏目继续核验当前岗位和申请入口。",
       "seed_status": "official_entry_candidate"
     }
   ]
