@@ -1,22 +1,29 @@
 {
   "schema_version": "1.1",
-  "assessed_at": "2026-07-13T18:19:06.457656+00:00",
+  "assessed_at": "2026-07-13T18:22:10.062934+00:00",
   "target_companies": 1000,
   "seeded_unique_companies": 350,
   "seed_shortfall": 650,
   "companies_with_coverage": 323,
-  "companies_with_explicit_failure_reason": 250,
+  "companies_with_explicit_failure_reason": 257,
   "companies_without_audit_count": 0,
   "companies_without_audit_sample": [],
   "job_records": 122,
-  "all_recruitment_candidates": 121,
-  "probable_job_detail_candidates": 9,
-  "resolved_job_detail_candidates": 9,
-  "pending_job_detail_candidates": 0,
-  "pending_job_detail_sample": [],
-  "recruitment_navigation_candidates": 112,
-  "resolved_recruitment_navigation": 2,
-  "pending_recruitment_navigation": 110,
+  "all_recruitment_candidates": 173,
+  "probable_job_detail_candidates": 30,
+  "resolved_job_detail_candidates": 29,
+  "pending_job_detail_candidates": 1,
+  "pending_job_detail_sample": [
+    {
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
+      "source_url": "https://www.gdnybank.com/jobnews/20251201/37312.html",
+      "reason": null
+    }
+  ],
+  "recruitment_navigation_candidates": 143,
+  "resolved_recruitment_navigation": 16,
+  "pending_recruitment_navigation": 127,
   "pending_recruitment_navigation_sample": [
     {
       "company_id": "cn-soe-0049",
@@ -325,7 +332,7 @@
   "conditions": {
     "seed_target_reached": false,
     "all_seed_companies_accounted_for": true,
-    "all_discovered_job_detail_links_resolved": true,
+    "all_discovered_job_detail_links_resolved": false,
     "all_recruitment_navigation_enumerated": false,
     "all_jobs_have_identity_title_and_source": true,
     "job_source_urls_unique": false,

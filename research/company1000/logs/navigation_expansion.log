@@ -1,0 +1,1 @@
+{"selected_count": 14, "processed_count": 14, "detail_candidates_discovered": 21, "child_navigation_discovered": 36, "resolution_status_counts": {"enumerated": 6, "requires_manual_review_no_links": 3, "requires_site_specific_dynamic_enumerator": 3, "restricted_with_explicit_reason": 2}, "max_workers": 10}
