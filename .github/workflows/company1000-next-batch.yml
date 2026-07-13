@@ -43,7 +43,7 @@ jobs:
       - name: Validate crawler scripts
         working-directory: research/company1000
         run: |
-          python -m py_compile crawl_company_jobs.py crawl_company_jobs_pending.py crawl_company_jobs_merged.py build_import_package.py
+          python -m py_compile crawl_company_jobs.py crawl_company_jobs_pending.py crawl_company_jobs_merged.py reconcile_coverage.py build_import_package.py
 
       - name: Audit next truly unprocessed seed entries
         working-directory: research/company1000
@@ -83,6 +83,11 @@ jobs:
           print(json.dumps({'valid_seed_count': len(companies), 'next_batch_start_index': state.get('next_batch_start_index')}, ensure_ascii=False))
           PY
 
+      - name: Reconcile coverage ledgers
+        working-directory: research/company1000
+        run: |
+          python reconcile_coverage.py | tee logs/reconcile_coverage.log
+
       - name: Build import and audit package
         working-directory: research/company1000
         env:
@@ -101,7 +106,7 @@ jobs:
           if git diff --cached --quiet; then
             echo 'No generated changes to commit'
           else
-            git commit -m 'research: audit next unprocessed official career entries and rebuild import package'
+            git commit -m 'research: audit and reconcile official career coverage'
             for attempt in 1 2 3; do
               if git pull --rebase origin research/company1000-crawler-20260713 && \
                  git push origin HEAD:research/company1000-crawler-20260713; then
