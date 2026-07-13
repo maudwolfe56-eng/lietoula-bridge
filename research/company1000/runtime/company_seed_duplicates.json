@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "duplicate_seed_rows_excluded": 66,
+  "duplicate_seed_rows_excluded": 76,
   "company_id_collisions_resolved": 7,
   "duplicates": [
     {
@@ -595,6 +595,96 @@
       "skipped_company_name": "友邦人寿保险有限公司",
       "kept_company_id": "cn-ins-0349",
       "kept_company_name": "友邦人寿保险有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0020.json",
+      "source_row": 16,
+      "skipped_company_id": "cn-hotel-0766",
+      "skipped_company_name": "上海锦江国际酒店股份有限公司",
+      "kept_company_id": "cn-hotel-0284",
+      "kept_company_name": "上海锦江国际酒店股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0020.json",
+      "source_row": 17,
+      "skipped_company_id": "cn-hotel-0767",
+      "skipped_company_name": "北京首旅酒店（集团）股份有限公司",
+      "kept_company_id": "cn-hotel-0285",
+      "kept_company_name": "北京首旅酒店（集团）股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0020.json",
+      "source_row": 18,
+      "skipped_company_id": "cn-hotel-0768",
+      "skipped_company_name": "华住集团有限公司",
+      "kept_company_id": "cn-hotel-0283",
+      "kept_company_name": "华住集团有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0020.json",
+      "source_row": 19,
+      "skipped_company_id": "cn-hotel-0769",
+      "skipped_company_name": "亚朵生活控股有限公司",
+      "kept_company_id": "cn-hotel-0286",
+      "kept_company_name": "亚朵生活控股有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0020.json",
+      "source_row": 28,
+      "skipped_company_id": "cn-retail-0778",
+      "skipped_company_name": "永辉超市股份有限公司",
+      "kept_company_id": "cn-retail-0262",
+      "kept_company_name": "永辉超市股份有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0020.json",
+      "source_row": 30,
+      "skipped_company_id": "cn-retail-0780",
+      "skipped_company_name": "物美科技集团有限公司",
+      "kept_company_id": "cn-retail-0263",
+      "kept_company_name": "物美科技集团有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0020.json",
+      "source_row": 33,
+      "skipped_company_id": "cn-retail-0783",
+      "skipped_company_name": "华润万家有限公司",
+      "kept_company_id": "cn-retail-0264",
+      "kept_company_name": "华润万家有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0020.json",
+      "source_row": 41,
+      "skipped_company_id": "cn-edu-0791",
+      "skipped_company_name": "新东方教育科技集团有限公司",
+      "kept_company_id": "cn-edu-0289",
+      "kept_company_name": "新东方教育科技集团有限公司",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0020.json",
+      "source_row": 42,
+      "skipped_company_id": "cn-edu-0792",
+      "skipped_company_name": "好未来教育集团",
+      "kept_company_id": "cn-edu-0290",
+      "kept_company_name": "好未来教育集团",
+      "reason": "duplicate_exact_company_name"
+    },
+    {
+      "source_file": "company_seed_expansion_0020.json",
+      "source_row": 44,
+      "skipped_company_id": "cn-edu-0794",
+      "skipped_company_name": "中公教育科技股份有限公司",
+      "kept_company_id": "cn-edu-0291",
+      "kept_company_name": "中公教育科技股份有限公司",
       "reason": "duplicate_exact_company_name"
     }
   ],
