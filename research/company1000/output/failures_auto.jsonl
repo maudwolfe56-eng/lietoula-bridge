@@ -36,3 +36,5 @@
 {"company_id": "cn-soe-0044", "company_name": "招商局集团有限公司", "http_status": 403, "observed_at": "2026-07-13T13:40:41.520629+00:00", "reason": "restricted", "url": "https://cmhk.zhiye.com/"}
 {"company_id": "cn-soe-0045", "company_name": "中国保利集团有限公司", "http_status": 403, "observed_at": "2026-07-13T13:40:42.666143+00:00", "reason": "restricted", "url": "https://poly.zhiye.com/"}
 {"company_id": "cn-soe-0046", "company_name": "中国医药集团有限公司", "http_status": 403, "observed_at": "2026-07-13T13:40:43.886712+00:00", "reason": "restricted", "url": "https://sinopharm.zhiye.com/"}
+{"company_id": "cn-soe-0047", "company_name": "中粮集团有限公司", "http_status": 403, "observed_at": "2026-07-13T13:41:15.419677+00:00", "reason": "restricted", "url": "https://cofco.zhiye.com/"}
+{"company_id": "cn-soe-0048", "company_name": "中国远洋海运集团有限公司", "http_status": 403, "observed_at": "2026-07-13T13:41:16.549716+00:00", "reason": "restricted", "url": "https://coscoshipping.zhiye.com/"}
