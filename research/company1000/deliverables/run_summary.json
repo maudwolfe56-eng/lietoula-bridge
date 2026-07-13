@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-13T18:32:40.664175+00:00",
+  "generated_at": "2026-07-13T18:34:16.555086+00:00",
   "target_companies": 1000,
   "seeded_companies": 350,
   "coverage_records": 391,
   "companies_with_coverage": 357,
-  "job_records": 122,
+  "job_records": 140,
   "job_status_counts": {
-    "inactive_expired": 23,
+    "inactive_expired": 31,
     "review_pending": 56,
-    "candidate_raw": 43
+    "candidate_raw": 53
   },
-  "failure_records": 533,
-  "job_change_records": 122,
+  "failure_records": 593,
+  "job_change_records": 140,
   "active_verified_records": 0,
   "final_acceptance_met": false,
   "checkpoint": {
     "schema_version": "1.0",
-    "updated_at": "2026-07-13T18:32:40.461288+00:00",
+    "updated_at": "2026-07-13T18:34:16.428369+00:00",
     "target_companies": 1000,
     "valid_seed_count": 350,
     "official_entries_verified": 14,
@@ -28,7 +28,7 @@
     "job_records_review_pending": 64,
     "job_records_inactive_expired": 23,
     "companies_final_acceptance_met": 0,
-    "next_batch_start_index": 174,
+    "next_batch_start_index": 330,
     "batch_progress": {
       "batch_0001": {
         "companies_reviewed": 10,
@@ -162,7 +162,8 @@
       "new_job_link_default_status": "candidate_raw",
       "review_pending_requires_detail_validation": true,
       "official_entry_verification_requires_recruitment_signal": true,
-      "cross_domain_candidate_requires_verified_seed_association": true
+      "cross_domain_candidate_requires_verified_seed_association": true,
+      "recruitment_navigation_requires_site_specific_resolution": true
     },
     "last_auto_batch": {
       "requested_start_index": 174,
@@ -186,33 +187,15 @@
         296,
         305,
         327,
-        329,
-        114,
-        118,
-        121,
-        123,
-        125,
-        127,
-        129,
-        132,
-        134,
-        136,
-        137,
-        138,
-        144,
-        152,
-        157,
-        161,
-        170,
-        173
+        329
       ],
-      "selected_count": 38,
-      "processed_count": 38,
+      "selected_count": 20,
+      "processed_count": 20,
       "job_detail_candidates": 0,
       "recruitment_navigation_links": 3,
-      "max_workers": 10
+      "max_workers": 8
     },
-    "pending_seed_audits": 0,
+    "pending_seed_audits": 18,
     "merged_seed_sources": [
       "company_seed_1000.json",
       "company_seed_expansion_0001.json",
@@ -238,18 +221,15 @@
     "pending_recruitment_navigation": 405,
     "duplicate_job_source_urls": 0,
     "navigation_expansion_last_batch": {
-      "candidate_count": 468,
+      "candidate_count": 655,
       "legacy_candidates_reclassified": 102,
       "selected_count": 100,
       "processed_count": 100,
-      "detail_candidates_discovered": 178,
-      "child_navigation_discovered": 1244,
+      "detail_candidates_discovered": 550,
+      "child_navigation_discovered": 1877,
       "resolution_status_counts": {
-        "enumerated": 69,
-        "requires_manual_review_no_links": 19,
-        "restricted_with_explicit_reason": 10,
-        "superseded": 1,
-        "requires_site_specific_dynamic_enumerator": 1
+        "enumerated": 56,
+        "requires_manual_review_no_links": 44
       },
       "max_workers": 10
     }
@@ -258,5 +238,645 @@
     "auto_active_verified": false,
     "salary_inference_allowed": false,
     "login_captcha_or_paywall_bypass_allowed": false
+  },
+  "notification_eligible": false,
+  "final_acceptance_report": {
+    "schema_version": "1.2",
+    "assessed_at": "2026-07-13T18:34:16.874823+00:00",
+    "target_companies": 1000,
+    "seeded_unique_companies": 350,
+    "seed_shortfall": 650,
+    "companies_with_coverage": 323,
+    "companies_with_explicit_failure_reason": 260,
+    "companies_without_audit_count": 0,
+    "companies_without_audit_sample": [],
+    "job_records": 140,
+    "all_recruitment_candidates": 2060,
+    "probable_job_detail_candidates": 709,
+    "terminal_detail_failures": 5,
+    "resolved_job_detail_candidates": 14,
+    "pending_job_detail_candidates": 695,
+    "pending_job_detail_sample": [
+      {
+        "company_id": "cn-soe-0050",
+        "company_name": "中国东方航空股份有限公司",
+        "source_url": "https://job.ceair.com/pilotJobDetail1.html?positionId=NTQzNg==&cateId=MTAwMA==",
+        "reason": null
+      },
+      {
+        "company_id": "cn-tech-0066",
+        "company_name": "中兴通讯股份有限公司",
+        "source_url": "https://job.zte.com.cn/content/zte-job/cn/campus-recruitment/School_Recruitment_Announcement/news/202406061.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-tech-0066",
+        "company_name": "中兴通讯股份有限公司",
+        "source_url": "https://job.zte.com.cn/content/zte-job/cn/campus-recruitment/School_Recruitment_Announcement/news/10011.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0304",
+        "company_name": "重庆农村商业银行股份有限公司",
+        "source_url": "https://www.cqrcb.com/cqrcb/aboutus/job/334094.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20260630/40722.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20260604/39941.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20260515/39787.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20260511/39760.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20260429/39657.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20260311/38107.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20260311/38106.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20260309/38092.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20260213/38009.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20260203/37839.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20260120/37629.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251201/37320.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251201/37319.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251201/37318.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251201/37317.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251201/37316.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251201/37315.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251201/37314.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251201/37313.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251201/37312.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251201/37311.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251201/37310.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251201/37309.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251201/37308.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251201/37307.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251126/37288.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251111/37151.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251104/37116.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251104/37115.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251104/37114.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251104/37113.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251104/37112.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251104/37111.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251104/37110.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251104/37109.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251104/37108.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251104/37107.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251104/37106.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251104/37105.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251013/36970.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251013/36969.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251013/36968.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251013/36967.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251013/36966.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251013/36965.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-bank-0344",
+        "company_name": "广东南粤银行股份有限公司",
+        "source_url": "https://www.gdnybank.com/jobnews/20251013/36964.html",
+        "reason": null
+      }
+    ],
+    "recruitment_navigation_candidates": 1351,
+    "resolved_recruitment_navigation": 322,
+    "pending_recruitment_navigation": 1029,
+    "pending_recruitment_navigation_sample": [
+      {
+        "company_id": "cn-soe-0020",
+        "company_name": "国家能源投资集团有限责任公司",
+        "source_url": "https://zhaopin.chnenergy.com.cn/",
+        "reason": "javascript_shell_no_public_html_job_enumeration"
+      },
+      {
+        "company_id": "cn-soe-0050",
+        "company_name": "中国东方航空股份有限公司",
+        "source_url": "https://job.ceair.com/campus/campusJobList.html",
+        "reason": "public_page_reached_but_no_enumerable_links_observed"
+      },
+      {
+        "company_id": "cn-soe-0050",
+        "company_name": "中国东方航空股份有限公司",
+        "source_url": "https://job.ceair.com/Internal/internalJobList.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-soe-0050",
+        "company_name": "中国东方航空股份有限公司",
+        "source_url": "https://job.ceair.com/about/culture.html",
+        "reason": "public_page_reached_but_no_enumerable_links_observed"
+      },
+      {
+        "company_id": "cn-tech-0053",
+        "company_name": "京东集团股份有限公司",
+        "source_url": "http://campus.jd.com/home",
+        "reason": "javascript_shell_no_public_html_job_enumeration"
+      },
+      {
+        "company_id": "cn-tech-0053",
+        "company_name": "京东集团股份有限公司",
+        "source_url": "https://campus.jd.com/",
+        "reason": "javascript_shell_no_public_html_job_enumeration"
+      },
+      {
+        "company_id": "cn-tech-0056",
+        "company_name": "百度在线网络技术（北京）有限公司",
+        "source_url": "https://talent.baidu.com/static/index.html",
+        "reason": "javascript_shell_no_public_html_job_enumeration"
+      },
+      {
+        "company_id": "cn-tech-0066",
+        "company_name": "中兴通讯股份有限公司",
+        "source_url": "https://app.mokahr.com/social-recruitment/zte/47588",
+        "reason": "javascript_shell_no_public_html_job_enumeration"
+      },
+      {
+        "company_id": "cn-tech-0094",
+        "company_name": "深圳市大疆创新科技有限公司",
+        "source_url": "https://we.dji.com/jobs_en.html",
+        "reason": "public_page_reached_but_no_enumerable_links_observed"
+      },
+      {
+        "company_id": "cn-fin-0106",
+        "company_name": "上海浦东发展银行股份有限公司",
+        "source_url": "https://job.spdb.com.cn/outInterviewer",
+        "reason": "public_page_reached_but_no_enumerable_links_observed"
+      },
+      {
+        "company_id": "cn-fin-0106",
+        "company_name": "上海浦东发展银行股份有限公司",
+        "source_url": "https://job.spdb.com.cn/loginOut",
+        "reason": "public_page_reached_but_no_enumerable_links_observed"
+      },
+      {
+        "company_id": "cn-soe-0011",
+        "company_name": "中国核工业集团有限公司",
+        "source_url": "https://cnnc.zhiye.com/xiaoyuan",
+        "reason": null
+      },
+      {
+        "company_id": "cn-soe-0011",
+        "company_name": "中国核工业集团有限公司",
+        "source_url": "https://cnnc.zhiye.com/shehui2025",
+        "reason": null
+      },
+      {
+        "company_id": "cn-soe-0011",
+        "company_name": "中国核工业集团有限公司",
+        "source_url": "https://cnnc.zhiye.com/sxs2025",
+        "reason": null
+      },
+      {
+        "company_id": "cn-soe-0012",
+        "company_name": "中国航天科工集团有限公司",
+        "source_url": "https://casic.zhiye.com/xzlist",
+        "reason": null
+      },
+      {
+        "company_id": "cn-soe-0012",
+        "company_name": "中国航天科工集团有限公司",
+        "source_url": "https://casic.zhiye.com/szlist",
+        "reason": null
+      },
+      {
+        "company_id": "cn-soe-0012",
+        "company_name": "中国航天科工集团有限公司",
+        "source_url": "https://casic.zhiye.com/zblist",
+        "reason": null
+      },
+      {
+        "company_id": "cn-soe-0012",
+        "company_name": "中国航天科工集团有限公司",
+        "source_url": "https://casic.zhiye.com/Overseaslist",
+        "reason": null
+      },
+      {
+        "company_id": "cn-soe-0129",
+        "company_name": "中国旅游集团有限公司",
+        "source_url": "https://www.ctg.cn/careers-t46",
+        "reason": null
+      },
+      {
+        "company_id": "cn-soe-0129",
+        "company_name": "中国旅游集团有限公司",
+        "source_url": "https://www.ctg.cn/article/19926",
+        "reason": null
+      },
+      {
+        "company_id": "cn-soe-0143",
+        "company_name": "中国物流集团有限公司",
+        "source_url": "https://www.chinalogisticsgroup.com.cn/zh-cn/join/hotjob.shtml",
+        "reason": null
+      },
+      {
+        "company_id": "cn-soe-0164",
+        "company_name": "中国轻工集团有限公司",
+        "source_url": "https://www.sinolight.cn/1303.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-ins-0179",
+        "company_name": "富德生命人寿保险股份有限公司",
+        "source_url": "https://www.sino-life.com/job/",
+        "reason": null
+      },
+      {
+        "company_id": "cn-amc-0183",
+        "company_name": "中国长城资产管理股份有限公司",
+        "source_url": "https://www.gwamcc.com/JobInfo.aspx?liName=129",
+        "reason": null
+      },
+      {
+        "company_id": "cn-amc-0183",
+        "company_name": "中国长城资产管理股份有限公司",
+        "source_url": "https://www.gwamcc.com/JobInfo.aspx?liName=85",
+        "reason": null
+      },
+      {
+        "company_id": "cn-sec-0189",
+        "company_name": "中信证券股份有限公司",
+        "source_url": "https://careers.citics.com",
+        "reason": null
+      },
+      {
+        "company_id": "cn-sec-0189",
+        "company_name": "中信证券股份有限公司",
+        "source_url": "https://careers.citics.com/campus/headquarters",
+        "reason": null
+      },
+      {
+        "company_id": "cn-sec-0189",
+        "company_name": "中信证券股份有限公司",
+        "source_url": "https://careers.citics.com/headquarters/interns",
+        "reason": null
+      },
+      {
+        "company_id": "cn-sec-0189",
+        "company_name": "中信证券股份有限公司",
+        "source_url": "https://careers.citics.com/campus/branch",
+        "reason": null
+      },
+      {
+        "company_id": "cn-sec-0189",
+        "company_name": "中信证券股份有限公司",
+        "source_url": "https://careers.citics.com/social/headquarters/",
+        "reason": null
+      },
+      {
+        "company_id": "cn-sec-0189",
+        "company_name": "中信证券股份有限公司",
+        "source_url": "https://careers.citics.com/social/branch",
+        "reason": null
+      },
+      {
+        "company_id": "cn-sec-0189",
+        "company_name": "中信证券股份有限公司",
+        "source_url": "https://careers.citics.com/",
+        "reason": null
+      },
+      {
+        "company_id": "cn-sec-0189",
+        "company_name": "中信证券股份有限公司",
+        "source_url": "https://careers.citics.com/campus/headquarters/",
+        "reason": null
+      },
+      {
+        "company_id": "cn-sec-0189",
+        "company_name": "中信证券股份有限公司",
+        "source_url": "https://careers.citics.com/headquarters/interns/",
+        "reason": null
+      },
+      {
+        "company_id": "cn-sec-0189",
+        "company_name": "中信证券股份有限公司",
+        "source_url": "https://careers.citics.com/campus/branch/",
+        "reason": null
+      },
+      {
+        "company_id": "cn-health-0225",
+        "company_name": "国药控股股份有限公司",
+        "source_url": "https://www.sinopharmgroup.com.cn/gykg/rcfz/rczp/A006008002Gone1.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-food-0232",
+        "company_name": "河南双汇投资发展股份有限公司",
+        "source_url": "https://www.shuanghui.net/job-50.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-food-0232",
+        "company_name": "河南双汇投资发展股份有限公司",
+        "source_url": "https://www.shuanghui.net/job-51.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/social",
+        "reason": null
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campus",
+        "reason": null
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/overseas",
+        "reason": null
+      },
+      {
+        "company_id": "cn-elec-0241",
+        "company_name": "立讯精密工业股份有限公司",
+        "source_url": "https://www.luxshare-ict.com/careers.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-energy-0246",
+        "company_name": "晶科能源股份有限公司",
+        "source_url": "https://www.jinkosolar.com/en/site/brand",
+        "reason": null
+      },
+      {
+        "company_id": "cn-mining-0248",
+        "company_name": "紫金矿业集团股份有限公司",
+        "source_url": "https://www.zijinmining.com/join/join-us.htm",
+        "reason": null
+      },
+      {
+        "company_id": "cn-re-0255",
+        "company_name": "龙湖集团控股有限公司",
+        "source_url": "https://www.longfor.com/join/job.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-re-0256",
+        "company_name": "新城控股集团股份有限公司",
+        "source_url": "https://www.seazen.com.cn/join/career.html",
+        "reason": null
+      },
+      {
+        "company_id": "cn-retail-0261",
+        "company_name": "苏宁易购集团股份有限公司",
+        "source_url": "http://careers.suning.cn/",
+        "reason": null
+      },
+      {
+        "company_id": "cn-log-0268",
+        "company_name": "韵达控股股份有限公司",
+        "source_url": "https://www.yundaex.com/cn/hr_online.php",
+        "reason": null
+      },
+      {
+        "company_id": "cn-air-0272",
+        "company_name": "春秋航空股份有限公司",
+        "source_url": "https://job.ch.com",
+        "reason": null
+      },
+      {
+        "company_id": "cn-hotel-0285",
+        "company_name": "北京首旅酒店（集团）股份有限公司",
+        "source_url": "https://www.bthhotels.com/culture/TalentDevelopment",
+        "reason": null
+      }
+    ],
+    "invalid_job_records": 0,
+    "duplicate_job_source_urls": 0,
+    "active_verified_records": 0,
+    "conditions": {
+      "seed_target_reached": false,
+      "all_seed_companies_accounted_for": true,
+      "all_discovered_job_detail_links_resolved": false,
+      "all_recruitment_navigation_enumerated": false,
+      "all_jobs_have_identity_title_and_source": true,
+      "job_source_urls_unique": true,
+      "no_auto_active_verified_records": true,
+      "deliverable_set_present": true
+    },
+    "final_acceptance_met": false,
+    "notification_eligible": false
   }
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-13T18:32:40.461288+00:00",
+  "updated_at": "2026-07-13T18:34:16.876810+00:00",
   "target_companies": 1000,
   "valid_seed_count": 350,
   "official_entries_verified": 14,
@@ -11,7 +11,7 @@
   "job_records_review_pending": 64,
   "job_records_inactive_expired": 23,
   "companies_final_acceptance_met": 0,
-  "next_batch_start_index": 174,
+  "next_batch_start_index": 330,
   "batch_progress": {
     "batch_0001": {
       "companies_reviewed": 10,
@@ -145,7 +145,8 @@
     "new_job_link_default_status": "candidate_raw",
     "review_pending_requires_detail_validation": true,
     "official_entry_verification_requires_recruitment_signal": true,
-    "cross_domain_candidate_requires_verified_seed_association": true
+    "cross_domain_candidate_requires_verified_seed_association": true,
+    "recruitment_navigation_requires_site_specific_resolution": true
   },
   "last_auto_batch": {
     "requested_start_index": 174,
@@ -169,33 +170,15 @@
       296,
       305,
       327,
-      329,
-      114,
-      118,
-      121,
-      123,
-      125,
-      127,
-      129,
-      132,
-      134,
-      136,
-      137,
-      138,
-      144,
-      152,
-      157,
-      161,
-      170,
-      173
+      329
     ],
-    "selected_count": 38,
-    "processed_count": 38,
+    "selected_count": 20,
+    "processed_count": 20,
     "job_detail_candidates": 0,
     "recruitment_navigation_links": 3,
-    "max_workers": 10
+    "max_workers": 8
   },
-  "pending_seed_audits": 0,
+  "pending_seed_audits": 18,
   "merged_seed_sources": [
     "company_seed_1000.json",
     "company_seed_expansion_0001.json",
@@ -214,25 +197,22 @@
   "company_id_collisions_resolved": 7,
   "seed_shortfall": 650,
   "companies_without_audit": 0,
-  "pending_job_link_candidates": 225,
+  "pending_job_link_candidates": 695,
   "invalid_job_records": 0,
   "final_acceptance_met": false,
   "notification_eligible": false,
-  "pending_recruitment_navigation": 405,
+  "pending_recruitment_navigation": 1029,
   "duplicate_job_source_urls": 0,
   "navigation_expansion_last_batch": {
-    "candidate_count": 468,
+    "candidate_count": 655,
     "legacy_candidates_reclassified": 102,
     "selected_count": 100,
     "processed_count": 100,
-    "detail_candidates_discovered": 178,
-    "child_navigation_discovered": 1244,
+    "detail_candidates_discovered": 550,
+    "child_navigation_discovered": 1877,
     "resolution_status_counts": {
-      "enumerated": 69,
-      "requires_manual_review_no_links": 19,
-      "restricted_with_explicit_reason": 10,
-      "superseded": 1,
-      "requires_site_specific_dynamic_enumerator": 1
+      "enumerated": 56,
+      "requires_manual_review_no_links": 44
     },
     "max_workers": 10
   }
