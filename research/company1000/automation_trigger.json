@@ -1,7 +1,7 @@
 {
-  "requested_at": "2026-07-13T19:10:00Z",
-  "sequence": 20,
-  "purpose": "Merge and audit the latest building-materials, machinery and environmental company seeds; continue resolving official recruitment navigation, probable job details and multi-position announcements; rebuild deduplicated deliverables and reassess final acceptance",
+  "requested_at": "2026-07-13T19:31:00Z",
+  "sequence": 21,
+  "purpose": "Continue auditing the next unprocessed official company sources from index 800 onward; resolve official recruitment navigation and probable job detail candidates; rebuild deduplicated deliverables and reassess final acceptance",
   "target_companies": 1000,
   "priority": {
     "unresolved_recruitment_navigation": true,
