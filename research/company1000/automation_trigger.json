@@ -1,11 +1,14 @@
 {
-  "requested_at": "2026-07-14T01:34:40Z",
-  "sequence": 31,
-  "purpose": "Continue remaining official-source company audits, bounded retry-aware recruitment navigation expansion, ATS job-detail resolution, multi-position announcement extraction, deduplication, change detection, deliverable rebuild, and final acceptance reassessment",
+  "requested_at": "2026-07-14T01:45:00Z",
+  "sequence": 32,
+  "purpose": "Continue remaining official-source company audits, curate high-recall job candidates, expand unresolved recruitment navigation, resolve ATS job details, extract multi-position announcements, deduplicate, detect changes, rebuild deliverables, and reassess final acceptance",
   "target_companies": 1000,
   "priority": {
     "remaining_pending_source_audits": true,
     "unresolved_recruitment_navigation": true,
+    "high_confidence_false_positive_candidate_pruning": true,
+    "official_share_url_unwrapping": true,
+    "multilingual_ats_job_deduplication": true,
     "strong_ats_detail_url_reclassification": true,
     "bounded_retry_aware_navigation_v4": true,
     "retry_aware_job_detail_resolution_v2": true,
