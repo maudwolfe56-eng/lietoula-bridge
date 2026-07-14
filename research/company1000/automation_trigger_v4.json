@@ -1,6 +1,6 @@
 {
-  "requested_at": "2026-07-14T04:32:00Z",
-  "sequence": 12,
+  "requested_at": "2026-07-14T05:32:52Z",
+  "sequence": 13,
   "purpose": "Continue unattended company1000 processing from the persisted checkpoint: prioritize unresolved and not-yet-touched official recruitment entries, advance the next company audit batch, perform two-pass detail classification, resolve only publicly accessible embedded and HTML job payloads, route official multi-position announcements separately, deduplicate by company_id plus canonical detail URL, detect new/modified/closed/expired records, rebuild CompanySource/JobImport/Coverage/Failures/JobChanges/run_summary, and reassess final acceptance without auto-verifying any job",
   "target_companies": 1000,
   "execution": {
