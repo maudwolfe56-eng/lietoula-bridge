@@ -1,6 +1,6 @@
 {
   "schema_version": "1.2",
-  "assessed_at": "2026-07-13T23:52:29.786099+00:00",
+  "assessed_at": "2026-07-14T00:38:48.391786+00:00",
   "target_companies": 1000,
   "seeded_unique_companies": 1020,
   "seed_shortfall": 0,
@@ -9,9 +9,9 @@
   "companies_without_audit_count": 0,
   "companies_without_audit_sample": [],
   "job_records": 726,
-  "all_recruitment_candidates": 48904,
+  "all_recruitment_candidates": 49182,
   "probable_job_detail_candidates": 20854,
-  "terminal_detail_failures": 512,
+  "terminal_detail_failures": 522,
   "resolved_job_detail_candidates": 634,
   "pending_job_detail_candidates": 20220,
   "pending_job_detail_sample": [
@@ -316,9 +316,9 @@
       "reason": "official_multi_position_announcement"
     }
   ],
-  "recruitment_navigation_candidates": 28050,
-  "resolved_recruitment_navigation": 9367,
-  "pending_recruitment_navigation": 18683,
+  "recruitment_navigation_candidates": 28328,
+  "resolved_recruitment_navigation": 10002,
+  "pending_recruitment_navigation": 18326,
   "pending_recruitment_navigation_sample": [
     {
       "company_id": "cn-soe-0020",
@@ -648,9 +648,9 @@
     "resolved_routed_announcements": 0,
     "pending_routed_announcements": 85,
     "pending_job_detail_candidates": 139,
-    "recruitment_navigation_candidates": 28048,
-    "terminal_latest_navigation_resolutions": 29358,
-    "pending_recruitment_navigation": 18757
+    "recruitment_navigation_candidates": 28326,
+    "terminal_latest_navigation_resolutions": 29993,
+    "pending_recruitment_navigation": 18400
   },
   "pending_samples": {
     "job_details": [
