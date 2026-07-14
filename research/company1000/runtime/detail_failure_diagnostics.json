@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-07-14T03:38:09.421025+00:00",
-  "failure_rows": 4024,
-  "unique_failed_urls": 2590,
+  "generated_at": "2026-07-14T04:37:22.064812+00:00",
+  "failure_rows": 4424,
+  "unique_failed_urls": 2610,
   "reason_counts_all_attempts": {
-    "detail_unparseable_or_multi_position_announcement": 3429,
+    "detail_unparseable_or_multi_position_announcement": 3806,
     "detail_http_error": 369,
-    "detail_access_restricted": 186,
-    "detail_fetch_failed:ConnectionError": 32,
+    "detail_access_restricted": 206,
+    "detail_fetch_failed:ConnectionError": 35,
     "detail_fetch_failed:ReadTimeout": 7,
     "detail_fetch_failed:ConnectTimeout": 1
   },
   "reason_counts_latest_by_url": {
-    "detail_unparseable_or_multi_position_announcement": 2111,
+    "detail_unparseable_or_multi_position_announcement": 2110,
     "detail_http_error": 272,
-    "detail_access_restricted": 186,
-    "detail_fetch_failed:ConnectionError": 13,
+    "detail_access_restricted": 206,
+    "detail_fetch_failed:ConnectionError": 14,
     "detail_fetch_failed:ReadTimeout": 7,
     "detail_fetch_failed:ConnectTimeout": 1
   },
   "http_status_counts": {
-    "200": 3429,
+    "200": 3806,
     "406": 351,
-    "403": 186,
-    "none": 40,
+    "403": 206,
+    "none": 43,
     "404": 14,
     "502": 2,
     "504": 2
@@ -30,7 +30,7 @@
   "top_hosts": [
     {
       "host": "jobs.lenovo.com",
-      "count": 1733
+      "count": 1948
     },
     {
       "host": "www.fenbi.com",
@@ -38,7 +38,7 @@
     },
     {
       "host": "jobs.sanofi.cn",
-      "count": 452
+      "count": 601
     },
     {
       "host": "mokahr.com",
@@ -46,7 +46,7 @@
     },
     {
       "host": "smics.zhiye.com",
-      "count": 183
+      "count": 205
     },
     {
       "host": "www.gdnybank.com",
@@ -61,16 +61,16 @@
       "count": 69
     },
     {
+      "host": "jobs.lear.com",
+      "count": 44
+    },
+    {
       "host": "www.helichina.com",
       "count": 40
     },
     {
-      "host": "jobs.lear.com",
-      "count": 33
-    },
-    {
       "host": "jobs.siemens.com",
-      "count": 28
+      "count": 30
     },
     {
       "host": "www.ctny.com.cn",
@@ -94,7 +94,7 @@
     },
     {
       "host": "job.ceair.com",
-      "count": 6
+      "count": 7
     },
     {
       "host": "career.brgroup.com",
@@ -140,7 +140,7 @@
   "top_path_shapes": [
     {
       "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}",
-      "count": 829
+      "count": 993
     },
     {
       "path_shape": "/page/positions/{id}/{id}?department",
@@ -152,7 +152,7 @@
     },
     {
       "path_shape": "/{id}/{id}/{id}/{id}/{id}",
-      "count": 222
+      "count": 296
     },
     {
       "path_shape": "/page/positions/{id}/{id}?region",
@@ -160,11 +160,15 @@
     },
     {
       "path_shape": "/campusxq?jc&jobid&p",
-      "count": 127
+      "count": 149
     },
     {
       "path_shape": "/en_us/careers/jobdetail/{id}/{id}",
       "count": 127
+    },
+    {
+      "path_shape": "/{id}/{id}/{id}/{id}/{id}/{id}",
+      "count": 120
     },
     {
       "path_shape": "/page/positions/{id}/{id}?department&institution",
@@ -172,10 +176,6 @@
     },
     {
       "path_shape": "/site/productcompositiondetail/{id}",
-      "count": 90
-    },
-    {
-      "path_shape": "/{id}/{id}/{id}/{id}/{id}/{id}",
       "count": 90
     },
     {
@@ -195,16 +195,16 @@
       "count": 45
     },
     {
+      "path_shape": "/viewalljobs/{id}",
+      "count": 44
+    },
+    {
       "path_shape": "/go/all-jobs/{id}/{id}?sortcolumn&sortdirection",
       "count": 42
     },
     {
       "path_shape": "/contact/job/{id}/{id}",
       "count": 40
-    },
-    {
-      "path_shape": "/viewalljobs/{id}",
-      "count": 33
     },
     {
       "path_shape": "/es_es/careers/jobdetail/{id}/{id}",
@@ -267,6 +267,18 @@
       "count": 14
     },
     {
+      "path_shape": "/en_us/externaljobs/jobdetail/{id}",
+      "count": 10
+    },
+    {
+      "path_shape": "/zh_cn/careers/jobdetail/platform-test-engineer/{id}",
+      "count": 10
+    },
+    {
+      "path_shape": "/zh_cn/careers/jobdetail/senior-software-engineer/{id}",
+      "count": 10
+    },
+    {
       "path_shape": "/socialxq?jobid",
       "count": 10
     },
@@ -275,20 +287,8 @@
       "count": 8
     },
     {
-      "path_shape": "/en_us/externaljobs/jobdetail/{id}",
-      "count": 8
-    },
-    {
-      "path_shape": "/zh_cn/careers/jobdetail/platform-test-engineer/{id}",
-      "count": 8
-    },
-    {
-      "path_shape": "/zh_cn/careers/jobdetail/senior-software-engineer/{id}",
-      "count": 8
-    },
-    {
       "path_shape": "/{id}?cateid&positionid",
-      "count": 6
+      "count": 7
     },
     {
       "path_shape": "/content/zte-job/cn/campus-recruitment/{id}/news/{id}",
@@ -304,7 +304,16 @@
       {
         "company_id": "cn-tech-0063",
         "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Strategic-Account-Executive-AI-Infrastructure/79300",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Sr-Engineer-AI-Hardware/79635",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/zh_cn/careers/jobdetail/sr-engineer-ai-hardware/{id}"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "company_name": "联想集团有限公司",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Solutions-Services-Executive/79343",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
@@ -313,7 +322,7 @@
       {
         "company_id": "cn-tech-0063",
         "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Staff-Tech-Project-Management/79194",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Solutions-Services-Executive/79197",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
@@ -322,7 +331,7 @@
       {
         "company_id": "cn-tech-0063",
         "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Staff-Mechanical-Engineer/79165",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Solutions-Services-Executive/79100",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
@@ -331,70 +340,41 @@
       {
         "company_id": "cn-tech-0063",
         "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Staff-Data-Engineer/79111",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/zh_cn/careers/jobdetail/staff-data-engineer/{id}"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Sr-Specialist-Marketing-Data-Analytics/78731",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Solutions-Services-Executive-Sports-Vertical/79115",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
         "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
-      }
-    ],
-    "detail_access_restricted": [
-      {
-        "company_id": "cn-health-0221",
-        "company_name": "上海复星医药（集团）股份有限公司",
-        "source_url": "https://fosunpharma.zhiye.com/socialxq?jobId=561274128",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/socialxq?jobid"
-      },
-      {
-        "company_id": "cn-health-0221",
-        "company_name": "上海复星医药（集团）股份有限公司",
-        "source_url": "https://fosunpharma.zhiye.com/socialxq?jobId=561273389",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/socialxq?jobid"
-      },
-      {
-        "company_id": "cn-health-0221",
-        "company_name": "上海复星医药（集团）股份有限公司",
-        "source_url": "https://fosunpharma.zhiye.com/socialxq?jobId=561273190",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/socialxq?jobid"
-      },
-      {
-        "company_id": "cn-health-0221",
-        "company_name": "上海复星医药（集团）股份有限公司",
-        "source_url": "https://fosunpharma.zhiye.com/socialxq?jobId=561273187",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/socialxq?jobid"
-      },
-      {
-        "company_id": "cn-health-0221",
-        "company_name": "上海复星医药（集团）股份有限公司",
-        "source_url": "https://fosunpharma.zhiye.com/socialxq?jobId=561273181",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/socialxq?jobid"
       }
     ],
     "detail_fetch_failed:ConnectionError": [
+      {
+        "company_id": "cn-soe-0050",
+        "company_name": "中国东方航空股份有限公司",
+        "source_url": "https://job.ceair.com/pilotJobDetail1.html?cateId=MTAwMA%3D%3D&positionId=NTQzNg%3D%3D",
+        "reason": "detail_fetch_failed:ConnectionError",
+        "detail": null,
+        "http_status": null,
+        "path_shape": "/{id}?cateid&positionid"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390776960&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "reason": "detail_fetch_failed:ConnectionError",
+        "detail": null,
+        "http_status": null,
+        "path_shape": "/campusxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390776890&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "reason": "detail_fetch_failed:ConnectionError",
+        "detail": null,
+        "http_status": null,
+        "path_shape": "/campusxq?jc&jobid&p"
+      },
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
@@ -412,32 +392,52 @@
         "detail": null,
         "http_status": null,
         "path_shape": "/campusxq?jc&jobid&p"
-      },
+      }
+    ],
+    "detail_access_restricted": [
       {
-        "company_id": "cn-soe-0050",
-        "company_name": "中国东方航空股份有限公司",
-        "source_url": "https://job.ceair.com/pilotJobDetail1.html?cateId=MTAwMA%3D%3D&positionId=NTQzNg%3D%3D",
-        "reason": "detail_fetch_failed:ConnectionError",
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390776948&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "reason": "detail_access_restricted",
         "detail": null,
-        "http_status": null,
-        "path_shape": "/{id}?cateid&positionid"
+        "http_status": 403,
+        "path_shape": "/campusxq?jc&jobid&p"
       },
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/overseasxq?c=&jc=3&jobId=390472402&ky=&p=1%5E-1%2C3%5E-1",
-        "reason": "detail_fetch_failed:ConnectionError",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390776895&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "reason": "detail_access_restricted",
         "detail": null,
-        "http_status": null,
-        "path_shape": "/overseasxq?jc&jobid&p"
+        "http_status": 403,
+        "path_shape": "/campusxq?jc&jobid&p"
       },
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390777652&ky=&p=1%5E-1%2C3%5E-1",
-        "reason": "detail_fetch_failed:ConnectionError",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390776894&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "reason": "detail_access_restricted",
         "detail": null,
-        "http_status": null,
+        "http_status": 403,
+        "path_shape": "/campusxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390776893&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/campusxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390776892&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
         "path_shape": "/campusxq?jc&jobid&p"
       }
     ],
@@ -552,7 +552,16 @@
       {
         "company_id": "cn-tech-0063",
         "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Strategic-Account-Executive-AI-Infrastructure/79300",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Sr-Engineer-AI-Hardware/79635",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/zh_cn/careers/jobdetail/sr-engineer-ai-hardware/{id}"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "company_name": "联想集团有限公司",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Solutions-Services-Executive/79343",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
@@ -561,16 +570,7 @@
       {
         "company_id": "cn-tech-0063",
         "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Staff-Tech-Project-Management/79194",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Staff-Mechanical-Engineer/79165",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Solutions-Services-Executive/79197",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
@@ -668,15 +668,6 @@
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?jobId=390776961&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/campusxq?jc&jobid&p"
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "company_name": "中芯国际集成电路制造有限公司",
         "source_url": "https://smics.zhiye.com/campusxq?jobId=390776960&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
         "reason": "detail_fetch_failed:ConnectionError",
         "detail": null,
@@ -686,7 +677,16 @@
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?jobId=390776958&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390776948&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/campusxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390776895&jc=2&c=&p=1%5E-1%2C3%5E-1&ky=",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,
@@ -780,35 +780,6 @@
         "path_shape": "/go/all-jobs/{id}?sortcolumn&sortdirection"
       }
     ],
-    "www.helichina.com": [
-      {
-        "company_id": "cn-machinery-0583",
-        "company_name": "安徽合力股份有限公司",
-        "source_url": "https://www.helichina.com/contact/job/202606/t20260626_9351698.html",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/contact/job/{id}/{id}"
-      },
-      {
-        "company_id": "cn-machinery-0583",
-        "company_name": "安徽合力股份有限公司",
-        "source_url": "https://www.helichina.com/contact/job/202606/t20260615_9329811.html",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/contact/job/{id}/{id}"
-      },
-      {
-        "company_id": "cn-machinery-0583",
-        "company_name": "安徽合力股份有限公司",
-        "source_url": "https://www.helichina.com/contact/job/202606/t20260610_9321319.html",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/contact/job/{id}/{id}"
-      }
-    ],
     "jobs.lear.com": [
       {
         "company_id": "cn-autoparts-0750",
@@ -836,6 +807,35 @@
         "detail": null,
         "http_status": 200,
         "path_shape": "/viewalljobs/{id}"
+      }
+    ],
+    "www.helichina.com": [
+      {
+        "company_id": "cn-machinery-0583",
+        "company_name": "安徽合力股份有限公司",
+        "source_url": "https://www.helichina.com/contact/job/202606/t20260626_9351698.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/contact/job/{id}/{id}"
+      },
+      {
+        "company_id": "cn-machinery-0583",
+        "company_name": "安徽合力股份有限公司",
+        "source_url": "https://www.helichina.com/contact/job/202606/t20260615_9329811.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/contact/job/{id}/{id}"
+      },
+      {
+        "company_id": "cn-machinery-0583",
+        "company_name": "安徽合力股份有限公司",
+        "source_url": "https://www.helichina.com/contact/job/202606/t20260610_9321319.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/contact/job/{id}/{id}"
       }
     ],
     "jobs.siemens.com": [
@@ -1017,27 +1017,27 @@
         "company_id": "cn-soe-0050",
         "company_name": "中国东方航空股份有限公司",
         "source_url": "https://job.ceair.com/pilotJobDetail1.html?cateId=MTAwMA%3D%3D&positionId=NTQzNg%3D%3D",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/{id}?cateid&positionid"
-      },
-      {
-        "company_id": "cn-soe-0050",
-        "company_name": "中国东方航空股份有限公司",
-        "source_url": "https://job.ceair.com/pilotJobDetail1.html?cateId=MTAwMA%3D%3D&positionId=NTQzNg%3D%3D",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/{id}?cateid&positionid"
-      },
-      {
-        "company_id": "cn-soe-0050",
-        "company_name": "中国东方航空股份有限公司",
-        "source_url": "https://job.ceair.com/pilotJobDetail1.html?cateId=MTAwMA%3D%3D&positionId=NTQzNg%3D%3D",
         "reason": "detail_fetch_failed:ConnectionError",
         "detail": null,
         "http_status": null,
+        "path_shape": "/{id}?cateid&positionid"
+      },
+      {
+        "company_id": "cn-soe-0050",
+        "company_name": "中国东方航空股份有限公司",
+        "source_url": "https://job.ceair.com/pilotJobDetail1.html?cateId=MTAwMA%3D%3D&positionId=NTQzNg%3D%3D",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/{id}?cateid&positionid"
+      },
+      {
+        "company_id": "cn-soe-0050",
+        "company_name": "中国东方航空股份有限公司",
+        "source_url": "https://job.ceair.com/pilotJobDetail1.html?cateId=MTAwMA%3D%3D&positionId=NTQzNg%3D%3D",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
         "path_shape": "/{id}?cateid&positionid"
       }
     ],

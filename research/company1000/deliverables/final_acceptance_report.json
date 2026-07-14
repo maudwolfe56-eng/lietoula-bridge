@@ -1,6 +1,6 @@
 {
   "schema_version": "1.2",
-  "assessed_at": "2026-07-14T03:38:47.613843+00:00",
+  "assessed_at": "2026-07-14T04:37:58.982748+00:00",
   "target_companies": 1000,
   "seeded_unique_companies": 1020,
   "seed_shortfall": 0,
@@ -8,12 +8,12 @@
   "companies_with_explicit_failure_reason": 852,
   "companies_without_audit_count": 0,
   "companies_without_audit_sample": [],
-  "job_records": 794,
-  "all_recruitment_candidates": 70069,
-  "probable_job_detail_candidates": 36914,
-  "terminal_detail_failures": 665,
-  "resolved_job_detail_candidates": 485,
-  "pending_job_detail_candidates": 36429,
+  "job_records": 800,
+  "all_recruitment_candidates": 76667,
+  "probable_job_detail_candidates": 43489,
+  "terminal_detail_failures": 696,
+  "resolved_job_detail_candidates": 491,
+  "pending_job_detail_candidates": 42998,
   "pending_job_detail_sample": [
     {
       "company_id": "cn-autoparts-0748",
@@ -316,9 +316,9 @@
       "reason": "official_multi_position_announcement"
     }
   ],
-  "recruitment_navigation_candidates": 33155,
-  "resolved_recruitment_navigation": 13834,
-  "pending_recruitment_navigation": 19321,
+  "recruitment_navigation_candidates": 33178,
+  "resolved_recruitment_navigation": 14555,
+  "pending_recruitment_navigation": 18623,
   "pending_recruitment_navigation_sample": [
     {
       "company_id": "cn-agri-0497",
@@ -642,15 +642,15 @@
   "final_acceptance": false,
   "assessment_version": "2.1-classification-aware-latest-ledger-announcement-gate",
   "counts": {
-    "probable_job_detail_candidates": 16752,
-    "classified_detail_urls_excluded": 37573,
+    "probable_job_detail_candidates": 23253,
+    "classified_detail_urls_excluded": 44054,
     "routed_announcement_urls": 85,
     "resolved_routed_announcements": 0,
     "pending_routed_announcements": 85,
     "pending_job_detail_candidates": 472,
-    "recruitment_navigation_candidates": 29976,
-    "terminal_latest_navigation_resolutions": 49221,
-    "pending_recruitment_navigation": 18538
+    "recruitment_navigation_candidates": 29999,
+    "terminal_latest_navigation_resolutions": 56423,
+    "pending_recruitment_navigation": 17840
   },
   "pending_samples": {
     "job_details": [
@@ -724,7 +724,7 @@
       },
       {
         "company_id": "cn-chip-0236",
-        "source_url": "https://smics.zhiye.com/campusxq?jobId=390776948&jc=2&c=&p=1%5E-1%2C3%5E-1&ky="
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390776890&jc=2&c=&p=1%5E-1%2C3%5E-1&ky="
       },
       {
         "company_id": "cn-chip-0236",
