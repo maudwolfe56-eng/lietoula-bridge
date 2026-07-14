@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-14T06:35:30.776400+00:00",
-  "failure_rows": 4854,
-  "unique_failed_urls": 2640,
+  "generated_at": "2026-07-14T09:34:28.872835+00:00",
+  "failure_rows": 4864,
+  "unique_failed_urls": 2650,
   "reason_counts_all_attempts": {
     "detail_unparseable_or_multi_position_announcement": 4204,
     "detail_http_error": 369,
-    "detail_access_restricted": 236,
+    "detail_access_restricted": 246,
     "detail_fetch_failed:ConnectionError": 37,
     "detail_fetch_failed:ReadTimeout": 7,
     "detail_fetch_failed:ConnectTimeout": 1
@@ -13,7 +13,7 @@
   "reason_counts_latest_by_url": {
     "detail_unparseable_or_multi_position_announcement": 2111,
     "detail_http_error": 272,
-    "detail_access_restricted": 236,
+    "detail_access_restricted": 246,
     "detail_fetch_failed:ConnectionError": 13,
     "detail_fetch_failed:ReadTimeout": 7,
     "detail_fetch_failed:ConnectTimeout": 1
@@ -21,7 +21,7 @@
   "http_status_counts": {
     "200": 4204,
     "406": 351,
-    "403": 236,
+    "403": 246,
     "none": 45,
     "404": 14,
     "502": 2,
@@ -46,7 +46,7 @@
     },
     {
       "host": "smics.zhiye.com",
-      "count": 237
+      "count": 247
     },
     {
       "host": "www.gdnybank.com",
@@ -160,7 +160,7 @@
     },
     {
       "path_shape": "/campusxq?jc&jobid&p",
-      "count": 181
+      "count": 191
     },
     {
       "path_shape": "/{id}/{id}/{id}/{id}/{id}/{id}",
@@ -300,6 +300,53 @@
     }
   ],
   "samples_by_reason": {
+    "detail_access_restricted": [
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776944&ky=&p=1%5E-1%2C3%5E-1",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/campusxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776942&ky=&p=1%5E-1%2C3%5E-1",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/campusxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776940&ky=&p=1%5E-1%2C3%5E-1",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/campusxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776939&ky=&p=1%5E-1%2C3%5E-1",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/campusxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776938&ky=&p=1%5E-1%2C3%5E-1",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/campusxq?jc&jobid&p"
+      }
+    ],
     "detail_unparseable_or_multi_position_announcement": [
       {
         "company_id": "cn-tech-0063",
@@ -345,53 +392,6 @@
         "detail": null,
         "http_status": 200,
         "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
-      }
-    ],
-    "detail_access_restricted": [
-      {
-        "company_id": "cn-chip-0236",
-        "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776883&ky=&p=1%5E-1%2C3%5E-1",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/campusxq?jc&jobid&p"
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776878&ky=&p=1%5E-1%2C3%5E-1",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/campusxq?jc&jobid&p"
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776961&ky=&p=1%5E-1%2C3%5E-1",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/campusxq?jc&jobid&p"
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776960&ky=&p=1%5E-1%2C3%5E-1",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/campusxq?jc&jobid&p"
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776958&ky=&p=1%5E-1%2C3%5E-1",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/campusxq?jc&jobid&p"
       }
     ],
     "detail_fetch_failed:ConnectionError": [
@@ -668,7 +668,7 @@
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776883&ky=&p=1%5E-1%2C3%5E-1",
+        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776944&ky=&p=1%5E-1%2C3%5E-1",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,
@@ -677,7 +677,7 @@
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776878&ky=&p=1%5E-1%2C3%5E-1",
+        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776942&ky=&p=1%5E-1%2C3%5E-1",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,
@@ -686,7 +686,7 @@
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776961&ky=&p=1%5E-1%2C3%5E-1",
+        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776940&ky=&p=1%5E-1%2C3%5E-1",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,

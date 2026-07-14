@@ -1,6 +1,6 @@
 {
   "schema_version": "1.2",
-  "assessed_at": "2026-07-14T06:35:51.123358+00:00",
+  "assessed_at": "2026-07-14T09:34:50.617363+00:00",
   "target_companies": 1000,
   "seeded_unique_companies": 1020,
   "seed_shortfall": 0,
@@ -9,10 +9,10 @@
   "companies_without_audit_count": 0,
   "companies_without_audit_sample": [],
   "job_records": 801,
-  "all_recruitment_candidates": 90462,
-  "probable_job_detail_candidates": 57284,
-  "terminal_detail_failures": 728,
-  "resolved_job_detail_candidates": 514,
+  "all_recruitment_candidates": 90474,
+  "probable_job_detail_candidates": 57294,
+  "terminal_detail_failures": 738,
+  "resolved_job_detail_candidates": 524,
   "pending_job_detail_candidates": 56770,
   "pending_job_detail_sample": [
     {
@@ -316,9 +316,9 @@
       "reason": "official_multi_position_announcement"
     }
   ],
-  "recruitment_navigation_candidates": 33178,
-  "resolved_recruitment_navigation": 16595,
-  "pending_recruitment_navigation": 16583,
+  "recruitment_navigation_candidates": 33180,
+  "resolved_recruitment_navigation": 17036,
+  "pending_recruitment_navigation": 16144,
   "pending_recruitment_navigation_sample": [
     {
       "company_id": "cn-agri-0497",
@@ -354,7 +354,7 @@
       "company_id": "cn-elec-0241",
       "company_name": "立讯精密工业股份有限公司",
       "source_url": "https://www.luxshare-ict.com/careers.html",
-      "reason": null
+      "reason": "ConnectionError"
     },
     {
       "company_id": "cn-env-0599",
