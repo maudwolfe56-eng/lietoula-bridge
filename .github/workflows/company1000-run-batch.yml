@@ -50,6 +50,7 @@ jobs:
             enumerate_recruitment_navigation_v3.py \
             enumerate_recruitment_navigation_v4.py \
             reclassify_navigation_detail_urls.py \
+            curate_job_candidates.py \
             resolve_job_detail_candidates.py \
             resolve_job_detail_candidates_safe.py \
             resolve_job_detail_candidates_v2.py \
@@ -99,12 +100,24 @@ jobs:
             --seed-file runtime/company_seed_merged.json \
             --output-dir output \
             --state-file runtime/checkpoint.json \
-            --batch-size 300 \
-            --max-workers 12 \
+            --batch-size 500 \
+            --max-workers 16 \
             --max-attempts 4 \
             --max-children-per-page 60 \
             --timeout-seconds 18 \
             | tee logs/navigation_expansion.log
+
+      - name: Curate candidate URLs and remove high-confidence false positives
+        id: curate
+        continue-on-error: true
+        working-directory: research/company1000
+        env:
+          PYTHONUNBUFFERED: '1'
+        run: |
+          set -o pipefail
+          python curate_job_candidates.py \
+            --output-dir output \
+            | tee logs/curate_job_candidates.log
 
       - name: Resolve probable job detail candidates with bounded retries
         id: detail
@@ -116,8 +129,8 @@ jobs:
           set -o pipefail
           python resolve_job_detail_candidates_v2.py \
             --output-dir output \
-            --batch-size 120 \
-            --max-workers 12 \
+            --batch-size 500 \
+            --max-workers 20 \
             --max-attempts 3 \
             | tee logs/resolve_job_details.log
 
@@ -138,8 +151,8 @@ jobs:
           set -o pipefail
           python resolve_multi_position_announcements.py \
             --output-dir output \
-            --batch-size 40 \
-            --max-workers 6 \
+            --batch-size 80 \
+            --max-workers 10 \
             --max-attempts 2 \
             | tee logs/resolve_multi_position_announcements.log
 
@@ -170,6 +183,7 @@ jobs:
               state['policy']['new_job_link_default_status'] = 'candidate_raw'
               state['policy']['review_pending_requires_detail_validation'] = True
               state['policy']['recruitment_navigation_requires_site_specific_resolution'] = True
+              state['policy']['high_confidence_false_positive_candidate_pruning'] = True
               state_path.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding='utf-8')
           PY
           python build_import_package.py | tee logs/build_import_package.log
@@ -194,11 +208,13 @@ jobs:
               'reclassification_step_conclusion': '${{ steps.reclassify.conclusion }}',
               'navigation_step_outcome': '${{ steps.navigation.outcome }}',
               'navigation_step_conclusion': '${{ steps.navigation.conclusion }}',
+              'curation_step_outcome': '${{ steps.curate.outcome }}',
+              'curation_step_conclusion': '${{ steps.curate.conclusion }}',
               'detail_step_outcome': '${{ steps.detail.outcome }}',
               'detail_step_conclusion': '${{ steps.detail.conclusion }}',
               'announcement_step_outcome': '${{ steps.announcement.outcome }}',
               'announcement_step_conclusion': '${{ steps.announcement.conclusion }}',
-              'mode': 'entry_audit_ats_reclassification_bounded_navigation_retry_detail_diagnostics_and_announcement_resolution'
+              'mode': 'entry_audit_navigation_candidate_curation_retry_detail_and_announcement_resolution'
           }, ensure_ascii=False, indent=2), encoding='utf-8')
           PY
 
@@ -214,7 +230,7 @@ jobs:
           if git diff --cached --quiet; then
             echo 'No generated changes to commit'
           else
-            git commit -m 'research: persist company1000 navigation and detail outputs'
+            git commit -m 'research: persist curated company1000 navigation and detail outputs'
             for attempt in 1 2 3; do
               if git pull --rebase origin research/company1000-crawler-20260713 && \
                  git push origin HEAD:research/company1000-crawler-20260713; then
@@ -228,5 +244,5 @@ jobs:
           fi
 
       - name: Fail workflow if an audit stage failed
-        if: steps.batch.outcome == 'failure' || steps.reclassify.outcome == 'failure' || steps.navigation.outcome == 'failure' || steps.detail.outcome == 'failure' || steps.announcement.outcome == 'failure'
+        if: steps.batch.outcome == 'failure' || steps.reclassify.outcome == 'failure' || steps.navigation.outcome == 'failure' || steps.curate.outcome == 'failure' || steps.detail.outcome == 'failure' || steps.announcement.outcome == 'failure'
         run: exit 1
