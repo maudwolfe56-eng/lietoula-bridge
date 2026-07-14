@@ -1,7 +1,7 @@
 {
-  "requested_at": "2026-07-14T08:44:36Z",
-  "sequence": 16,
-  "purpose": "Continue unattended company1000 processing from the persisted checkpoint: prioritize unresolved and not-yet-touched official recruitment entries, advance the next company audit batch, perform two-pass detail classification, resolve only publicly accessible embedded and HTML job payloads, route official multi-position announcements separately, deduplicate by company_id plus canonical detail URL, detect new/modified/closed/expired records, rebuild CompanySource/JobImport/Coverage/Failures/JobChanges/run_summary, and reassess final acceptance without auto-verifying any job",
+  "requested_at": "2026-07-14T09:51:20Z",
+  "sequence": 17,
+  "purpose": "Continue unattended company1000 processing from the persisted checkpoint: prioritize unresolved and not-yet-touched official recruitment entries, advance the next company audit batch from next_batch_start_index, perform two-pass detail classification, resolve only publicly accessible embedded and HTML job payloads, route official multi-position announcements separately, deduplicate by company_id plus canonical detail URL, detect new/modified/closed/expired records, rebuild CompanySource/JobImport/Coverage/Failures/JobChanges/run_summary, and reassess final acceptance without auto-verifying any job",
   "target_companies": 1000,
   "execution": {
     "company_audit_batch_size": 50,
