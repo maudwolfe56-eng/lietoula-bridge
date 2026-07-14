@@ -1,20 +1,24 @@
 {
-  "updated_at": "2026-07-14T01:46:12.162805+00:00",
-  "resolver_version": "2.0-retry-aware",
-  "probable_detail_candidates": 815,
-  "resolved_job_urls_before_batch": 707,
-  "terminal_failure_urls_before_batch": 531,
-  "selected": 407,
-  "job_records_created": 64,
-  "terminal_failures_created": 84,
-  "retryable_failures_created": 259,
-  "remaining_unresolved_before_new_results": 571,
-  "max_attempts": 3,
-  "max_workers": 20,
+  "updated_at": "2026-07-14T01:51:25.809970+00:00",
+  "resolver_version": "3.1-retry-aware-company-url-scoped-classification-ledger",
+  "probable_detail_candidates": 1717,
+  "suppressed_detail_pairs": 21884,
+  "routed_announcement_pairs": 85,
+  "resolved_job_pairs_before_batch": 718,
+  "terminal_failure_pairs_before_batch": 605,
+  "selected": 313,
+  "job_records_created": 0,
+  "terminal_failures_created": 5,
+  "retryable_failures_created": 308,
+  "max_attempts": 6,
+  "max_workers": 12,
   "policy": {
     "auto_active_verified": false,
     "salary_inference_allowed": false,
     "access_control_bypass_allowed": false,
-    "nonterminal_failures_remain_pending": true
+    "nonterminal_failures_remain_pending": true,
+    "classified_non_jobs_are_not_fetched_as_job_details": true,
+    "official_announcements_are_resolved_separately": true,
+    "resolution_scope": "company_id_plus_canonical_source_url"
   }
 }

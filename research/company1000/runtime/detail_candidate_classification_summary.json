@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-14T00:54:54.988669+00:00",
-  "candidate_count": 28425,
-  "new_classifications": 0,
-  "new_navigation_resolutions": 0,
+  "generated_at": "2026-07-14T01:50:26.715449+00:00",
+  "candidate_count": 6854,
+  "new_classifications": 298,
+  "new_navigation_resolutions": 298,
   "new_navigation_routes": 0,
   "new_announcement_routes": 0,
   "classification_counts": {
     "route_announcement": 85,
     "route_navigation": 27,
-    "suppress_locale_duplicate": 1937,
-    "suppress_non_job": 19537
+    "suppress_locale_duplicate": 1938,
+    "suppress_non_job": 19834
   },
   "policy": {
     "source_evidence_deleted": false,

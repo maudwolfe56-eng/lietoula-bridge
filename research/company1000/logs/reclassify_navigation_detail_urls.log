@@ -1,1 +1,1 @@
-{"observed_at": "2026-07-14T01:44:51.407388+00:00", "navigation_rows_scanned": 143084, "strong_detail_urls_identified": 1659, "new_detail_candidates_created": 0, "navigation_resolutions_created": 1659, "review_status": "candidate_raw", "content_validation_completed": false}
+{"observed_at": "2026-07-14T01:48:23.602224+00:00", "navigation_rows_scanned": 148733, "strong_detail_urls_identified": 1659, "new_detail_candidates_created": 1179, "navigation_resolutions_created": 1659, "review_status": "candidate_raw", "content_validation_completed": false}
