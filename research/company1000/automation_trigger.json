@@ -1,10 +1,11 @@
 {
-  "requested_at": "2026-07-14T05:52:38Z",
-  "sequence": 36,
-  "purpose": "Continue remaining official-source company audits, curate high-recall job candidates, expand unresolved recruitment navigation, resolve ATS job details, extract multi-position announcements, deduplicate, detect changes, rebuild deliverables, and reassess final acceptance",
+  "requested_at": "2026-07-14T06:32:29Z",
+  "sequence": 37,
+  "purpose": "Continue remaining official-source company audits, prioritize unverified or unreached enterprises, curate high-recall job candidates, expand unresolved recruitment navigation, resolve ATS job details, extract multi-position announcements, deduplicate, detect additions modifications closures and expiry, rebuild deliverables, and reassess final acceptance",
   "target_companies": 1000,
   "priority": {
     "remaining_pending_source_audits": true,
+    "unreached_enterprises_first": true,
     "unresolved_recruitment_navigation": true,
     "high_confidence_false_positive_candidate_pruning": true,
     "official_share_url_unwrapping": true,
@@ -18,6 +19,7 @@
   },
   "policy": {
     "official_sources_only": true,
+    "third_party_repost_as_sole_source_allowed": false,
     "auto_active_verified": false,
     "salary_inference_allowed": false,
     "access_control_bypass_allowed": false,
