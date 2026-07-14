@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-07-14T04:55:09.990920+00:00",
-  "failure_rows": 4454,
+  "generated_at": "2026-07-14T05:38:07.660281+00:00",
+  "failure_rows": 4854,
   "unique_failed_urls": 2640,
   "reason_counts_all_attempts": {
-    "detail_unparseable_or_multi_position_announcement": 3806,
+    "detail_unparseable_or_multi_position_announcement": 4204,
     "detail_http_error": 369,
-    "detail_access_restricted": 234,
+    "detail_access_restricted": 236,
     "detail_fetch_failed:ConnectionError": 37,
     "detail_fetch_failed:ReadTimeout": 7,
     "detail_fetch_failed:ConnectTimeout": 1
   },
   "reason_counts_latest_by_url": {
-    "detail_unparseable_or_multi_position_announcement": 2110,
+    "detail_unparseable_or_multi_position_announcement": 2111,
     "detail_http_error": 272,
-    "detail_access_restricted": 234,
-    "detail_fetch_failed:ConnectionError": 16,
+    "detail_access_restricted": 236,
+    "detail_fetch_failed:ConnectionError": 13,
     "detail_fetch_failed:ReadTimeout": 7,
     "detail_fetch_failed:ConnectTimeout": 1
   },
   "http_status_counts": {
-    "200": 3806,
+    "200": 4204,
     "406": 351,
-    "403": 234,
+    "403": 236,
     "none": 45,
     "404": 14,
     "502": 2,
@@ -30,7 +30,7 @@
   "top_hosts": [
     {
       "host": "jobs.lenovo.com",
-      "count": 1948
+      "count": 2168
     },
     {
       "host": "www.fenbi.com",
@@ -38,7 +38,7 @@
     },
     {
       "host": "jobs.sanofi.cn",
-      "count": 601
+      "count": 751
     },
     {
       "host": "mokahr.com",
@@ -46,7 +46,7 @@
     },
     {
       "host": "smics.zhiye.com",
-      "count": 235
+      "count": 237
     },
     {
       "host": "www.gdnybank.com",
@@ -58,11 +58,11 @@
     },
     {
       "host": "careers.hanglung.com",
-      "count": 69
+      "count": 70
     },
     {
       "host": "jobs.lear.com",
-      "count": 44
+      "count": 55
     },
     {
       "host": "www.helichina.com",
@@ -70,15 +70,15 @@
     },
     {
       "host": "jobs.siemens.com",
-      "count": 30
+      "count": 36
     },
     {
       "host": "www.ctny.com.cn",
-      "count": 25
+      "count": 30
     },
     {
       "host": "www.lifotronic.com",
-      "count": 15
+      "count": 18
     },
     {
       "host": "www.airchina.com.cn",
@@ -94,7 +94,7 @@
     },
     {
       "host": "job.ceair.com",
-      "count": 7
+      "count": 8
     },
     {
       "host": "career.brgroup.com",
@@ -106,7 +106,7 @@
     },
     {
       "host": "app.mokahr.com",
-      "count": 5
+      "count": 6
     },
     {
       "host": "www.sanyre.com.cn",
@@ -140,19 +140,19 @@
   "top_path_shapes": [
     {
       "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}",
-      "count": 993
+      "count": 1166
     },
     {
       "path_shape": "/page/positions/{id}/{id}?department",
       "count": 527
     },
     {
-      "path_shape": "/blog/{id}",
-      "count": 328
+      "path_shape": "/{id}/{id}/{id}/{id}/{id}",
+      "count": 370
     },
     {
-      "path_shape": "/{id}/{id}/{id}/{id}/{id}",
-      "count": 296
+      "path_shape": "/blog/{id}",
+      "count": 328
     },
     {
       "path_shape": "/page/positions/{id}/{id}?region",
@@ -160,15 +160,15 @@
     },
     {
       "path_shape": "/campusxq?jc&jobid&p",
-      "count": 179
+      "count": 181
+    },
+    {
+      "path_shape": "/{id}/{id}/{id}/{id}/{id}/{id}",
+      "count": 150
     },
     {
       "path_shape": "/en_us/careers/jobdetail/{id}/{id}",
       "count": 127
-    },
-    {
-      "path_shape": "/{id}/{id}/{id}/{id}/{id}/{id}",
-      "count": 120
     },
     {
       "path_shape": "/page/positions/{id}/{id}?department&institution",
@@ -183,6 +183,10 @@
       "count": 85
     },
     {
+      "path_shape": "/viewalljobs/{id}",
+      "count": 55
+    },
+    {
       "path_shape": "/de_de/careers/jobdetail/{id}",
       "count": 54
     },
@@ -192,11 +196,7 @@
     },
     {
       "path_shape": "/job/{id}",
-      "count": 45
-    },
-    {
-      "path_shape": "/viewalljobs/{id}",
-      "count": 44
+      "count": 53
     },
     {
       "path_shape": "/go/all-jobs/{id}/{id}?sortcolumn&sortdirection",
@@ -251,12 +251,12 @@
       "count": 24
     },
     {
-      "path_shape": "/go/all-jobs/{id}?sortcolumn&sortdirection",
-      "count": 21
+      "path_shape": "/zh_cn/externaljobs/jobdetail/{id}",
+      "count": 24
     },
     {
-      "path_shape": "/zh_cn/externaljobs/jobdetail/{id}",
-      "count": 20
+      "path_shape": "/go/all-jobs/{id}?sortcolumn&sortdirection",
+      "count": 21
     },
     {
       "path_shape": "/sojob/{id}/{id}",
@@ -268,11 +268,11 @@
     },
     {
       "path_shape": "/en_us/externaljobs/jobdetail/{id}",
-      "count": 10
+      "count": 12
     },
     {
       "path_shape": "/zh_cn/careers/jobdetail/platform-test-engineer/{id}",
-      "count": 10
+      "count": 12
     },
     {
       "path_shape": "/zh_cn/careers/jobdetail/senior-software-engineer/{id}",
@@ -288,7 +288,7 @@
     },
     {
       "path_shape": "/{id}?cateid&positionid",
-      "count": 7
+      "count": 8
     },
     {
       "path_shape": "/content/zte-job/cn/campus-recruitment/{id}/news/{id}",
@@ -300,7 +300,72 @@
     }
   ],
   "samples_by_reason": {
+    "detail_unparseable_or_multi_position_announcement": [
+      {
+        "company_id": "cn-tech-0063",
+        "company_name": "联想集团有限公司",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Senior-Product-Specialist/77564",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "company_name": "联想集团有限公司",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Senior-Pre-Sales-Solution-Architect-Hybrid-Cloud-AI/79312",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "company_name": "联想集团有限公司",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Senior-Pre-Sales-Solution-Architect-Hybrid-Cloud-AI/78923",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "company_name": "联想集团有限公司",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Senior-Manager-Sales-Operations-AP-SSG/79307",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "company_name": "联想集团有限公司",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Senior-Inside-Sales-Representative/79563",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
+      }
+    ],
     "detail_access_restricted": [
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776883&ky=&p=1%5E-1%2C3%5E-1",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/campusxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776878&ky=&p=1%5E-1%2C3%5E-1",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/campusxq?jc&jobid&p"
+      },
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
@@ -323,24 +388,6 @@
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
         "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776958&ky=&p=1%5E-1%2C3%5E-1",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/campusxq?jc&jobid&p"
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776957&ky=&p=1%5E-1%2C3%5E-1",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/campusxq?jc&jobid&p"
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776955&ky=&p=1%5E-1%2C3%5E-1",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,
@@ -392,53 +439,6 @@
         "detail": null,
         "http_status": null,
         "path_shape": "/campusxq?jc&jobid&p"
-      }
-    ],
-    "detail_unparseable_or_multi_position_announcement": [
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Sr-Engineer-AI-Hardware/79635",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/zh_cn/careers/jobdetail/sr-engineer-ai-hardware/{id}"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Solutions-Services-Executive/79343",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Solutions-Services-Executive/79197",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Solutions-Services-Executive/79100",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Solutions-Services-Executive-Sports-Vertical/79115",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
       }
     ],
     "detail_http_error": [
@@ -552,16 +552,7 @@
       {
         "company_id": "cn-tech-0063",
         "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Sr-Engineer-AI-Hardware/79635",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/zh_cn/careers/jobdetail/sr-engineer-ai-hardware/{id}"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Solutions-Services-Executive/79343",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Senior-Product-Specialist/77564",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
@@ -570,7 +561,16 @@
       {
         "company_id": "cn-tech-0063",
         "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Solutions-Services-Executive/79197",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Senior-Pre-Sales-Solution-Architect-Hybrid-Cloud-AI/79312",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "company_name": "联想集团有限公司",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Senior-Pre-Sales-Solution-Architect-Hybrid-Cloud-AI/78923",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
@@ -610,6 +610,15 @@
       {
         "company_id": "cn-mnc-1046",
         "company_name": "赛诺菲（中国）投资有限公司",
+        "source_url": "https://jobs.sanofi.cn/zh-hans/%e4%bd%8d%e7%bd%ae/china-country-jobs/2649/1814991/2",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/zh-hans/{id}/china-country-jobs/{id}/{id}/{id}"
+      },
+      {
+        "company_id": "cn-mnc-1046",
+        "company_name": "赛诺菲（中国）投资有限公司",
         "source_url": "https://jobs.sanofi.cn/%e9%9b%87%e7%94%a8/toronto-ontario-canada-digital-data-and-technology-jobs/2649/32115968/6251999-6093943-6167865/4",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
@@ -620,15 +629,6 @@
         "company_id": "cn-mnc-1046",
         "company_name": "赛诺菲（中国）投资有限公司",
         "source_url": "https://jobs.sanofi.cn/%e9%9b%87%e7%94%a8/tokyo-tokyo-japan-sales-jobs/2649/32102208/1861060-1850144-1850147/4",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/{id}/{id}/{id}/{id}/{id}/{id}"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/%e9%9b%87%e7%94%a8/tianjin-tianjin-municipality-china-sales-jobs/2649/32102208/1814991-1792943-1792947/4",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
@@ -668,25 +668,25 @@
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776883&ky=&p=1%5E-1%2C3%5E-1",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/campusxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776878&ky=&p=1%5E-1%2C3%5E-1",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/campusxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
         "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776961&ky=&p=1%5E-1%2C3%5E-1",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/campusxq?jc&jobid&p"
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776960&ky=&p=1%5E-1%2C3%5E-1",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/campusxq?jc&jobid&p"
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390776958&ky=&p=1%5E-1%2C3%5E-1",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,
@@ -755,6 +755,15 @@
       {
         "company_id": "cn-property-0912",
         "company_name": "恒隆地产有限公司",
+        "source_url": "https://careers.hanglung.com/go/Management-Trainee-Jobs/9356901/",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/go/management-trainee-jobs/{id}"
+      },
+      {
+        "company_id": "cn-property-0912",
+        "company_name": "恒隆地产有限公司",
         "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/?q=&sortColumn=sort_title&sortDirection=desc",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
@@ -765,15 +774,6 @@
         "company_id": "cn-property-0912",
         "company_name": "恒隆地产有限公司",
         "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/?q=&sortColumn=sort_title&sortDirection=asc",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/go/all-jobs/{id}?sortcolumn&sortdirection"
-      },
-      {
-        "company_id": "cn-property-0912",
-        "company_name": "恒隆地产有限公司",
-        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/?q=&sortColumn=sort_facility&sortDirection=desc",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
@@ -842,29 +842,29 @@
       {
         "company_id": "cn-mnc-1001",
         "company_name": "西门子（中国）有限公司",
-        "source_url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/513702",
+        "source_url": "https://jobs.siemens.com/zh_CN/externaljobs/JobDetail/513058",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/en_us/externaljobs/jobdetail/{id}"
+        "path_shape": "/zh_cn/externaljobs/jobdetail/{id}"
       },
       {
         "company_id": "cn-mnc-1001",
         "company_name": "西门子（中国）有限公司",
-        "source_url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/486145",
+        "source_url": "https://jobs.siemens.com/zh_CN/externaljobs/JobDetail/512998",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/en_us/externaljobs/jobdetail/{id}"
+        "path_shape": "/zh_cn/externaljobs/jobdetail/{id}"
       },
       {
         "company_id": "cn-mnc-1001",
         "company_name": "西门子（中国）有限公司",
-        "source_url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/513702",
+        "source_url": "https://jobs.siemens.com/zh_CN/externaljobs/JobDetail/512669",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/en_us/externaljobs/jobdetail/{id}"
+        "path_shape": "/zh_cn/externaljobs/jobdetail/{id}"
       }
     ],
     "www.ctny.com.cn": [
@@ -1017,18 +1017,18 @@
         "company_id": "cn-soe-0050",
         "company_name": "中国东方航空股份有限公司",
         "source_url": "https://job.ceair.com/pilotJobDetail1.html?cateId=MTAwMA%3D%3D&positionId=NTQzNg%3D%3D",
-        "reason": "detail_fetch_failed:ConnectionError",
+        "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
-        "http_status": null,
+        "http_status": 200,
         "path_shape": "/{id}?cateid&positionid"
       },
       {
         "company_id": "cn-soe-0050",
         "company_name": "中国东方航空股份有限公司",
         "source_url": "https://job.ceair.com/pilotJobDetail1.html?cateId=MTAwMA%3D%3D&positionId=NTQzNg%3D%3D",
-        "reason": "detail_unparseable_or_multi_position_announcement",
+        "reason": "detail_fetch_failed:ConnectionError",
         "detail": null,
-        "http_status": 200,
+        "http_status": null,
         "path_shape": "/{id}?cateid&positionid"
       },
       {
