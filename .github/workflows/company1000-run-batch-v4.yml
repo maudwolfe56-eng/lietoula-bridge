@@ -100,7 +100,7 @@ jobs:
         working-directory: research/company1000
         run: |
           set -o pipefail
-          python resolve_job_detail_candidates_v3.py --output-dir output --batch-size 400 --max-workers 12 --max-attempts 3 | tee logs/resolve_job_details.log
+          python resolve_job_detail_candidates_v3.py --output-dir output --batch-size 400 --max-workers 12 --max-attempts 6 | tee logs/resolve_job_details.log
       - name: Summarize detail failures
         if: always()
         working-directory: research/company1000
@@ -139,7 +139,7 @@ jobs:
             'embedded': '${{ steps.embedded.outcome }}',
             'detail': '${{ steps.detail.outcome }}',
             'announcement': '${{ steps.announcement.outcome }}',
-            'mode': 'two_pass_classification_and_accelerated_detail_resolution'
+            'mode': 'two_pass_classification_and_accelerated_detail_resolution_retry6'
           }, ensure_ascii=False, indent=2), encoding='utf-8')
           PY
       - name: Commit generated outputs
