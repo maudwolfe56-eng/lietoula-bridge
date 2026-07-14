@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-14T00:52:56.530208+00:00",
-  "failure_rows": 2135,
-  "unique_failed_urls": 1967,
+  "generated_at": "2026-07-14T00:55:26.108483+00:00",
+  "failure_rows": 2274,
+  "unique_failed_urls": 1968,
   "reason_counts_all_attempts": {
-    "detail_unparseable_or_multi_position_announcement": 1795,
-    "detail_http_error": 234,
+    "detail_unparseable_or_multi_position_announcement": 1834,
+    "detail_http_error": 334,
     "detail_access_restricted": 75,
     "detail_fetch_failed:ConnectionError": 23,
     "detail_fetch_failed:ReadTimeout": 7,
     "detail_fetch_failed:ConnectTimeout": 1
   },
   "reason_counts_latest_by_url": {
-    "detail_unparseable_or_multi_position_announcement": 1681,
-    "detail_http_error": 193,
+    "detail_unparseable_or_multi_position_announcement": 1589,
+    "detail_http_error": 286,
     "detail_access_restricted": 75,
     "detail_fetch_failed:ConnectionError": 10,
     "detail_fetch_failed:ReadTimeout": 7,
     "detail_fetch_failed:ConnectTimeout": 1
   },
   "http_status_counts": {
-    "200": 1795,
-    "406": 221,
+    "200": 1834,
+    "406": 321,
     "403": 75,
     "none": 31,
     "404": 9,
@@ -29,12 +29,12 @@
   },
   "top_hosts": [
     {
-      "host": "www.fenbi.com",
-      "count": 749
+      "host": "jobs.lenovo.com",
+      "count": 777
     },
     {
-      "host": "jobs.lenovo.com",
-      "count": 677
+      "host": "www.fenbi.com",
+      "count": 749
     },
     {
       "host": "mokahr.com",
@@ -42,7 +42,7 @@
     },
     {
       "host": "www.gdnybank.com",
-      "count": 90
+      "count": 95
     },
     {
       "host": "www.stec.net",
@@ -54,30 +54,42 @@
     },
     {
       "host": "www.helichina.com",
-      "count": 30
+      "count": 40
     },
     {
       "host": "careers.hanglung.com",
-      "count": 25
+      "count": 26
     },
     {
       "host": "www.ctny.com.cn",
-      "count": 15
+      "count": 20
     },
     {
       "host": "jobs.siemens.com",
-      "count": 12
+      "count": 16
     },
     {
       "host": "www.lifotronic.com",
-      "count": 9
+      "count": 12
+    },
+    {
+      "host": "job.zte.com.cn",
+      "count": 6
+    },
+    {
+      "host": "career.brgroup.com",
+      "count": 6
     },
     {
       "host": "www.airchina.com.cn",
       "count": 5
     },
     {
-      "host": "career.brgroup.com",
+      "host": "jobs.sanofi.cn",
+      "count": 4
+    },
+    {
+      "host": "app.mokahr.com",
       "count": 4
     },
     {
@@ -85,43 +97,31 @@
       "count": 4
     },
     {
-      "host": "job.zte.com.cn",
-      "count": 3
+      "host": "www.sanyre.com.cn",
+      "count": 4
     },
     {
       "host": "fotile.zhiye.com",
       "count": 3
     },
     {
-      "host": "jobs.sanofi.cn",
-      "count": 3
+      "host": "job.ceair.com",
+      "count": 2
     },
     {
-      "host": "app.mokahr.com",
-      "count": 3
+      "host": "www.cqrcb.com",
+      "count": 2
     },
     {
-      "host": "www.sanyre.com.cn",
-      "count": 3
+      "host": "www.zhifeishengwu.com",
+      "count": 2
     },
     {
       "host": "www.mokahr.com",
       "count": 2
     },
     {
-      "host": "job.ceair.com",
-      "count": 1
-    },
-    {
       "host": "www.shuanghui.net",
-      "count": 1
-    },
-    {
-      "host": "www.cqrcb.com",
-      "count": 1
-    },
-    {
-      "host": "www.zhifeishengwu.com",
       "count": 1
     },
     {
@@ -151,6 +151,10 @@
       "count": 106
     },
     {
+      "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}",
+      "count": 90
+    },
+    {
       "path_shape": "/site/productcompositiondetail/{id}",
       "count": 90
     },
@@ -159,7 +163,11 @@
       "count": 85
     },
     {
-      "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}",
+      "path_shape": "/de_de/careers/jobdetail/{id}",
+      "count": 54
+    },
+    {
+      "path_shape": "/es_es/careers/jobdetail/{id}",
       "count": 54
     },
     {
@@ -167,12 +175,12 @@
       "count": 42
     },
     {
-      "path_shape": "/de_de/careers/jobdetail/{id}",
+      "path_shape": "/contact/job/{id}/{id}",
       "count": 40
     },
     {
-      "path_shape": "/es_es/careers/jobdetail/{id}",
-      "count": 40
+      "path_shape": "/job/{id}",
+      "count": 36
     },
     {
       "path_shape": "/es_es/careers/jobdetail/{id}/{id}",
@@ -199,28 +207,24 @@
       "count": 31
     },
     {
-      "path_shape": "/contact/job/{id}/{id}",
-      "count": 30
+      "path_shape": "/ja_jp/careers/jobdetail/{id}",
+      "count": 27
     },
     {
-      "path_shape": "/job/{id}",
-      "count": 27
+      "path_shape": "/fr_fr/careers/jobdetail/{id}",
+      "count": 26
+    },
+    {
+      "path_shape": "/pt_br/careers/jobdetail/{id}",
+      "count": 26
     },
     {
       "path_shape": "/overseasxq?jc&jobid&p",
       "count": 21
     },
     {
-      "path_shape": "/ja_jp/careers/jobdetail/{id}",
-      "count": 20
-    },
-    {
-      "path_shape": "/fr_fr/careers/jobdetail/{id}",
-      "count": 19
-    },
-    {
-      "path_shape": "/pt_br/careers/jobdetail/{id}",
-      "count": 19
+      "path_shape": "/zh_cn/externaljobs/jobdetail/{id}",
+      "count": 16
     },
     {
       "path_shape": "/page/positions/{id}/{id}?quickpick",
@@ -235,19 +239,35 @@
       "count": 14
     },
     {
-      "path_shape": "/zh_cn/externaljobs/jobdetail/{id}",
-      "count": 12
+      "path_shape": "/sojob/{id}/{id}",
+      "count": 10
     },
     {
       "path_shape": "/go/all-jobs/{id}?sortcolumn&sortdirection",
       "count": 7
     },
     {
-      "path_shape": "/sojob/{id}/{id}",
-      "count": 5
+      "path_shape": "/cn/about_us/recruitment/{id}",
+      "count": 4
     },
     {
-      "path_shape": "/cn/about_us/recruitment/{id}",
+      "path_shape": "/content/zte-job/cn/campus-recruitment/{id}/news/{id}",
+      "count": 4
+    },
+    {
+      "path_shape": "/zh-hans/{id}/china-country-jobs/{id}/{id}/{id}",
+      "count": 4
+    },
+    {
+      "path_shape": "/go/management-trainee-jobs/{id}",
+      "count": 4
+    },
+    {
+      "path_shape": "/campus-recruitment/{id}/{id}?locale",
+      "count": 4
+    },
+    {
+      "path_shape": "/en_us/careers/jobdetail/evergreen-hrops-brasil/{id}",
       "count": 4
     },
     {
@@ -255,88 +275,115 @@
       "count": 4
     },
     {
+      "path_shape": "/en_us/careers/jobdetail/nec/{id}",
+      "count": 4
+    },
+    {
       "path_shape": "/en_us/careers/jobdetail/server-fw-test-engineer/{id}",
       "count": 4
     },
     {
-      "path_shape": "/job_show?jobid",
-      "count": 3
-    },
-    {
-      "path_shape": "/zh-hans/{id}/china-country-jobs/{id}/{id}/{id}",
-      "count": 3
-    },
-    {
-      "path_shape": "/go/management-trainee-jobs/{id}",
-      "count": 3
-    },
-    {
-      "path_shape": "/campus-recruitment/{id}/{id}?locale",
-      "count": 3
-    },
-    {
-      "path_shape": "/en_us/careers/jobdetail/evergreen-hrops-brasil/{id}",
-      "count": 3
-    },
-    {
-      "path_shape": "/en_us/careers/jobdetail/nec/{id}",
-      "count": 3
-    },
-    {
-      "path_shape": "/content/zte-job/cn/campus-recruitment/{id}/news/{id}",
-      "count": 2
-    },
-    {
       "path_shape": "/campus-recruitment/{id}/{id}",
-      "count": 2
+      "count": 3
+    },
+    {
+      "path_shape": "/social-recruitment/{id}/{id}",
+      "count": 3
     }
   ],
   "samples_by_reason": {
+    "detail_http_error": [
+      {
+        "company_id": "cn-tech-0063",
+        "company_name": "联想集团有限公司",
+        "source_url": "https://jobs.lenovo.com/ja_JP/careers/JobDetail/79698",
+        "reason": "detail_http_error",
+        "detail": null,
+        "http_status": 406,
+        "path_shape": "/ja_jp/careers/jobdetail/{id}"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "company_name": "联想集团有限公司",
+        "source_url": "https://jobs.lenovo.com/zh_TW/careers/JobDetail/79698",
+        "reason": "detail_http_error",
+        "detail": null,
+        "http_status": 406,
+        "path_shape": "/zh_tw/careers/jobdetail/{id}"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "company_name": "联想集团有限公司",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Turkiye-4P-Adjacencies/79415",
+        "reason": "detail_http_error",
+        "detail": null,
+        "http_status": 406,
+        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "company_name": "联想集团有限公司",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/TruScale-Channel-Development-Manager-GTP/79431",
+        "reason": "detail_http_error",
+        "detail": null,
+        "http_status": 406,
+        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "company_name": "联想集团有限公司",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Travel-Manager-US/79659",
+        "reason": "detail_http_error",
+        "detail": null,
+        "http_status": 406,
+        "path_shape": "/zh_cn/careers/jobdetail/travel-manager-us/{id}"
+      }
+    ],
     "detail_unparseable_or_multi_position_announcement": [
       {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/pt_BR/careers/JobDetail/79531",
+        "company_id": "cn-fintech-0642",
+        "company_name": "百融云创科技股份有限公司",
+        "source_url": "https://career.brgroup.com/social-recruitment/100credit/92460",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/pt_br/careers/jobdetail/{id}"
+        "path_shape": "/social-recruitment/{id}/{id}"
       },
       {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/pt_BR/careers/JobDetail/79504",
+        "company_id": "cn-fintech-0642",
+        "company_name": "百融云创科技股份有限公司",
+        "source_url": "https://career.brgroup.com/campus-recruitment/100credit/102451",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/pt_br/careers/jobdetail/{id}"
+        "path_shape": "/campus-recruitment/{id}/{id}"
       },
       {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/pt_BR/careers/JobDetail/79267",
+        "company_id": "cn-vaccine-0815",
+        "company_name": "重庆智飞生物制品股份有限公司",
+        "source_url": "https://www.zhifeishengwu.com/zh_CN/recruitment/42.html",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/pt_br/careers/jobdetail/{id}"
+        "path_shape": "/zh_cn/recruitment/{id}"
       },
       {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/pt_BR/careers/JobDetail/79245",
+        "company_id": "cn-tech-0066",
+        "company_name": "中兴通讯股份有限公司",
+        "source_url": "https://job.zte.com.cn/content/zte-job/cn/campus-recruitment/buyue2.html",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/pt_br/careers/jobdetail/{id}"
+        "path_shape": "/content/zte-job/cn/campus-recruitment/{id}"
       },
       {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/pt_BR/careers/JobDetail/79160",
+        "company_id": "cn-tech-0066",
+        "company_name": "中兴通讯股份有限公司",
+        "source_url": "https://job.zte.com.cn/content/zte-job/cn/campus-recruitment/School_Recruitment_Announcement/news/202406061.html",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/pt_br/careers/jobdetail/{id}"
+        "path_shape": "/content/zte-job/cn/campus-recruitment/{id}/news/{id}"
       }
     ],
     "detail_access_restricted": [
@@ -433,53 +480,6 @@
         "path_shape": "/contact/job/{id}/{id}"
       }
     ],
-    "detail_http_error": [
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/en_US/careers/JobDetail/Evergreen-HROPs-Brasil/79057",
-        "reason": "detail_http_error",
-        "detail": null,
-        "http_status": 406,
-        "path_shape": "/en_us/careers/jobdetail/evergreen-hrops-brasil/{id}"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/de_DE/careers/JobDetail/79531",
-        "reason": "detail_http_error",
-        "detail": null,
-        "http_status": 406,
-        "path_shape": "/de_de/careers/jobdetail/{id}"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/de_DE/careers/JobDetail/79504",
-        "reason": "detail_http_error",
-        "detail": null,
-        "http_status": 406,
-        "path_shape": "/de_de/careers/jobdetail/{id}"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/de_DE/careers/JobDetail/79267",
-        "reason": "detail_http_error",
-        "detail": null,
-        "http_status": 406,
-        "path_shape": "/de_de/careers/jobdetail/{id}"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/de_DE/careers/JobDetail/79245",
-        "reason": "detail_http_error",
-        "detail": null,
-        "http_status": 406,
-        "path_shape": "/de_de/careers/jobdetail/{id}"
-      }
-    ],
     "detail_fetch_failed:ConnectTimeout": [
       {
         "company_id": "cn-edu-0795",
@@ -540,6 +540,35 @@
     ]
   },
   "samples_by_top_host": {
+    "jobs.lenovo.com": [
+      {
+        "company_id": "cn-tech-0063",
+        "company_name": "联想集团有限公司",
+        "source_url": "https://jobs.lenovo.com/ja_JP/careers/JobDetail/79698",
+        "reason": "detail_http_error",
+        "detail": null,
+        "http_status": 406,
+        "path_shape": "/ja_jp/careers/jobdetail/{id}"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "company_name": "联想集团有限公司",
+        "source_url": "https://jobs.lenovo.com/zh_TW/careers/JobDetail/79698",
+        "reason": "detail_http_error",
+        "detail": null,
+        "http_status": 406,
+        "path_shape": "/zh_tw/careers/jobdetail/{id}"
+      },
+      {
+        "company_id": "cn-tech-0063",
+        "company_name": "联想集团有限公司",
+        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Turkiye-4P-Adjacencies/79415",
+        "reason": "detail_http_error",
+        "detail": null,
+        "http_status": 406,
+        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
+      }
+    ],
     "www.fenbi.com": [
       {
         "company_id": "cn-edu-0795",
@@ -567,35 +596,6 @@
         "detail": null,
         "http_status": 200,
         "path_shape": "/page/positions/{id}/{id}?department"
-      }
-    ],
-    "jobs.lenovo.com": [
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/pt_BR/careers/JobDetail/79531",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/pt_br/careers/jobdetail/{id}"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/pt_BR/careers/JobDetail/79504",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/pt_br/careers/jobdetail/{id}"
-      },
-      {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/pt_BR/careers/JobDetail/79267",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/pt_br/careers/jobdetail/{id}"
       }
     ],
     "mokahr.com": [
@@ -631,7 +631,7 @@
       {
         "company_id": "cn-bank-0344",
         "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/sojob/20220317/26704.html",
+        "source_url": "https://www.gdnybank.com/sojob/20260120/37629.html",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
@@ -640,7 +640,7 @@
       {
         "company_id": "cn-bank-0344",
         "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/sojob/20250811/36623.html",
+        "source_url": "https://www.gdnybank.com/sojob/20250916/36829.html",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
@@ -765,11 +765,11 @@
       {
         "company_id": "cn-property-0912",
         "company_name": "恒隆地产有限公司",
-        "source_url": "https://careers.hanglung.com/go/All-Jobs/9154401/50/?q=&sortColumn=sort_title&sortDirection=asc",
+        "source_url": "https://careers.hanglung.com/go/Management-Trainee-Jobs/9356901/",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/go/all-jobs/{id}/{id}?sortcolumn&sortdirection"
+        "path_shape": "/go/management-trainee-jobs/{id}"
       }
     ],
     "www.ctny.com.cn": [
@@ -859,33 +859,33 @@
         "path_shape": "/job/{id}"
       }
     ],
-    "www.airchina.com.cn": [
+    "job.zte.com.cn": [
       {
-        "company_id": "cn-soe-0049",
-        "company_name": "中国国际航空股份有限公司",
-        "source_url": "http://www.airchina.com.cn/cn/about_us/recruitment/ground_crew_info/185165.shtml",
-        "reason": "detail_http_error",
+        "company_id": "cn-tech-0066",
+        "company_name": "中兴通讯股份有限公司",
+        "source_url": "https://job.zte.com.cn/content/zte-job/cn/campus-recruitment/buyue2.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
-        "http_status": 404,
-        "path_shape": "/cn/about_us/recruitment/ground_crew_info/{id}"
+        "http_status": 200,
+        "path_shape": "/content/zte-job/cn/campus-recruitment/{id}"
       },
       {
-        "company_id": "cn-soe-0049",
-        "company_name": "中国国际航空股份有限公司",
-        "source_url": "http://www.airchina.com.cn/cn/about_us/recruitment/185216.shtml",
-        "reason": "detail_http_error",
+        "company_id": "cn-tech-0066",
+        "company_name": "中兴通讯股份有限公司",
+        "source_url": "https://job.zte.com.cn/content/zte-job/cn/campus-recruitment/School_Recruitment_Announcement/news/202406061.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
-        "http_status": 404,
-        "path_shape": "/cn/about_us/recruitment/{id}"
+        "http_status": 200,
+        "path_shape": "/content/zte-job/cn/campus-recruitment/{id}/news/{id}"
       },
       {
-        "company_id": "cn-soe-0049",
-        "company_name": "中国国际航空股份有限公司",
-        "source_url": "http://www.airchina.com.cn/cn/about_us/recruitment/185219.shtml",
-        "reason": "detail_http_error",
+        "company_id": "cn-tech-0066",
+        "company_name": "中兴通讯股份有限公司",
+        "source_url": "https://job.zte.com.cn/content/zte-job/cn/campus-recruitment/School_Recruitment_Announcement/news/10011.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
-        "http_status": 404,
-        "path_shape": "/cn/about_us/recruitment/{id}"
+        "http_status": 200,
+        "path_shape": "/content/zte-job/cn/campus-recruitment/{id}/news/{id}"
       }
     ],
     "career.brgroup.com": [
@@ -917,91 +917,33 @@
         "path_shape": "/social-recruitment/{id}/{id}"
       }
     ],
-    "www.sinovac.com": [
+    "www.airchina.com.cn": [
       {
-        "company_id": "cn-vaccine-0818",
-        "company_name": "北京科兴中维生物技术有限公司",
-        "source_url": "https://www.sinovac.com/zh-cn/job/job4",
+        "company_id": "cn-soe-0049",
+        "company_name": "中国国际航空股份有限公司",
+        "source_url": "http://www.airchina.com.cn/cn/about_us/recruitment/ground_crew_info/185165.shtml",
         "reason": "detail_http_error",
         "detail": null,
         "http_status": 404,
-        "path_shape": "/zh-cn/job/{id}"
+        "path_shape": "/cn/about_us/recruitment/ground_crew_info/{id}"
       },
       {
-        "company_id": "cn-vaccine-0818",
-        "company_name": "北京科兴中维生物技术有限公司",
-        "source_url": "https://www.sinovac.com/zh-cn/job/job3",
+        "company_id": "cn-soe-0049",
+        "company_name": "中国国际航空股份有限公司",
+        "source_url": "http://www.airchina.com.cn/cn/about_us/recruitment/185216.shtml",
         "reason": "detail_http_error",
         "detail": null,
         "http_status": 404,
-        "path_shape": "/zh-cn/job/{id}"
+        "path_shape": "/cn/about_us/recruitment/{id}"
       },
       {
-        "company_id": "cn-vaccine-0818",
-        "company_name": "北京科兴中维生物技术有限公司",
-        "source_url": "https://www.sinovac.com/zh-cn/job/job2",
+        "company_id": "cn-soe-0049",
+        "company_name": "中国国际航空股份有限公司",
+        "source_url": "http://www.airchina.com.cn/cn/about_us/recruitment/185219.shtml",
         "reason": "detail_http_error",
         "detail": null,
         "http_status": 404,
-        "path_shape": "/zh-cn/job/{id}"
-      }
-    ],
-    "job.zte.com.cn": [
-      {
-        "company_id": "cn-tech-0066",
-        "company_name": "中兴通讯股份有限公司",
-        "source_url": "https://job.zte.com.cn/content/zte-job/cn/campus-recruitment/buyue2.html",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/content/zte-job/cn/campus-recruitment/{id}"
-      },
-      {
-        "company_id": "cn-tech-0066",
-        "company_name": "中兴通讯股份有限公司",
-        "source_url": "https://job.zte.com.cn/content/zte-job/cn/campus-recruitment/School_Recruitment_Announcement/news/10011.html",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/content/zte-job/cn/campus-recruitment/{id}/news/{id}"
-      },
-      {
-        "company_id": "cn-tech-0066",
-        "company_name": "中兴通讯股份有限公司",
-        "source_url": "https://job.zte.com.cn/content/zte-job/cn/campus-recruitment/School_Recruitment_Announcement/news/202406061.html",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/content/zte-job/cn/campus-recruitment/{id}/news/{id}"
-      }
-    ],
-    "fotile.zhiye.com": [
-      {
-        "company_id": "cn-indtech-0410",
-        "company_name": "宁波方太厨具有限公司",
-        "source_url": "http://fotile.zhiye.com/job_show?jobId=560976221",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/job_show?jobid"
-      },
-      {
-        "company_id": "cn-indtech-0410",
-        "company_name": "宁波方太厨具有限公司",
-        "source_url": "http://fotile.zhiye.com/job_show?jobId=560945782",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/job_show?jobid"
-      },
-      {
-        "company_id": "cn-indtech-0410",
-        "company_name": "宁波方太厨具有限公司",
-        "source_url": "http://fotile.zhiye.com/job_show?jobId=560939882",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/job_show?jobid"
+        "path_shape": "/cn/about_us/recruitment/{id}"
       }
     ],
     "jobs.sanofi.cn": [
@@ -1062,6 +1004,35 @@
         "path_shape": "/campus-recruitment/{id}/{id}?locale"
       }
     ],
+    "www.sinovac.com": [
+      {
+        "company_id": "cn-vaccine-0818",
+        "company_name": "北京科兴中维生物技术有限公司",
+        "source_url": "https://www.sinovac.com/zh-cn/job/job4",
+        "reason": "detail_http_error",
+        "detail": null,
+        "http_status": 404,
+        "path_shape": "/zh-cn/job/{id}"
+      },
+      {
+        "company_id": "cn-vaccine-0818",
+        "company_name": "北京科兴中维生物技术有限公司",
+        "source_url": "https://www.sinovac.com/zh-cn/job/job3",
+        "reason": "detail_http_error",
+        "detail": null,
+        "http_status": 404,
+        "path_shape": "/zh-cn/job/{id}"
+      },
+      {
+        "company_id": "cn-vaccine-0818",
+        "company_name": "北京科兴中维生物技术有限公司",
+        "source_url": "https://www.sinovac.com/zh-cn/job/job2",
+        "reason": "detail_http_error",
+        "detail": null,
+        "http_status": 404,
+        "path_shape": "/zh-cn/job/{id}"
+      }
+    ],
     "www.sanyre.com.cn": [
       {
         "company_id": "cn-wind-0974",
@@ -1091,24 +1062,53 @@
         "path_shape": "/job/{id}"
       }
     ],
-    "www.mokahr.com": [
+    "fotile.zhiye.com": [
       {
-        "company_id": "cn-ins-0350",
-        "company_name": "众安在线财产保险股份有限公司",
-        "source_url": "https://www.mokahr.com/blog/39643.html",
-        "reason": "detail_unparseable_or_multi_position_announcement",
+        "company_id": "cn-indtech-0410",
+        "company_name": "宁波方太厨具有限公司",
+        "source_url": "http://fotile.zhiye.com/job_show?jobId=560976221",
+        "reason": "detail_access_restricted",
         "detail": null,
-        "http_status": 200,
-        "path_shape": "/blog/{id}"
+        "http_status": 403,
+        "path_shape": "/job_show?jobid"
       },
       {
-        "company_id": "cn-ins-0350",
-        "company_name": "众安在线财产保险股份有限公司",
-        "source_url": "https://www.mokahr.com/blog/39551.html",
+        "company_id": "cn-indtech-0410",
+        "company_name": "宁波方太厨具有限公司",
+        "source_url": "http://fotile.zhiye.com/job_show?jobId=560945782",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/job_show?jobid"
+      },
+      {
+        "company_id": "cn-indtech-0410",
+        "company_name": "宁波方太厨具有限公司",
+        "source_url": "http://fotile.zhiye.com/job_show?jobId=560939882",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/job_show?jobid"
+      }
+    ],
+    "job.ceair.com": [
+      {
+        "company_id": "cn-soe-0050",
+        "company_name": "中国东方航空股份有限公司",
+        "source_url": "https://job.ceair.com/pilotJobDetail1.html?positionId=NTQzNg%3D%3D&cateId=MTAwMA%3D%3D",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/blog/{id}"
+        "path_shape": "/{id}?cateid&positionid"
+      },
+      {
+        "company_id": "cn-soe-0050",
+        "company_name": "中国东方航空股份有限公司",
+        "source_url": "https://job.ceair.com/pilotJobDetail1.html?positionId=NTQzNg==&cateId=MTAwMA==",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/{id}?cateid&positionid"
       }
     ]
   }
