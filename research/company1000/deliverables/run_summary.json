@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-14T05:38:36.292310+00:00",
+  "generated_at": "2026-07-14T05:56:16.067052+00:00",
   "target_companies": 1000,
   "seeded_companies": 1020,
   "coverage_records": 1061,
@@ -11,13 +11,13 @@
     "candidate_raw": 691,
     "review_pending": 61
   },
-  "failure_records": 8495,
+  "failure_records": 8496,
   "job_change_records": 801,
   "active_verified_records": 0,
   "final_acceptance_met": false,
   "checkpoint": {
     "schema_version": "1.0",
-    "updated_at": "2026-07-14T05:36:47.629904+00:00",
+    "updated_at": "2026-07-14T05:56:15.426936+00:00",
     "target_companies": 1000,
     "valid_seed_count": 1020,
     "official_entries_verified": 14,
@@ -28,7 +28,7 @@
     "job_records_review_pending": 64,
     "job_records_inactive_expired": 23,
     "companies_final_acceptance_met": 0,
-    "next_batch_start_index": 124,
+    "next_batch_start_index": 647,
     "batch_progress": {
       "batch_0001": {
         "companies_reviewed": 10,
@@ -162,11 +162,33 @@
       "new_job_link_default_status": "candidate_raw",
       "review_pending_requires_detail_validation": true,
       "official_entry_verification_requires_recruitment_signal": true,
-      "cross_domain_candidate_requires_verified_seed_association": true
+      "cross_domain_candidate_requires_verified_seed_association": true,
+      "recruitment_navigation_requires_site_specific_resolution": true,
+      "high_confidence_false_positive_candidate_pruning": true
     },
     "last_auto_batch": {
-      "requested_start_index": 306,
+      "requested_start_index": 124,
       "selected_indices": [
+        132,
+        136,
+        137,
+        152,
+        161,
+        170,
+        173,
+        175,
+        181,
+        183,
+        187,
+        195,
+        227,
+        230,
+        242,
+        243,
+        252,
+        283,
+        296,
+        305,
         327,
         329,
         369,
@@ -196,32 +218,12 @@
         639,
         642,
         644,
-        646,
-        649,
-        651,
-        687,
-        692,
-        706,
-        773,
-        799,
-        806,
-        829,
-        856,
-        863,
-        867,
-        886,
-        902,
-        903,
-        969,
-        986,
-        987,
-        118,
-        123
+        646
       ],
       "selected_count": 50,
       "processed_count": 50,
       "job_detail_candidates": 0,
-      "recruitment_navigation_links": 16,
+      "recruitment_navigation_links": 10,
       "max_workers": 8
     },
     "pending_seed_audits": 20,
@@ -258,35 +260,35 @@
     "company_id_collisions_resolved": 7,
     "seed_shortfall": 0,
     "companies_without_audit": 0,
-    "pending_job_link_candidates": 42649,
+    "pending_job_link_candidates": 470,
     "invalid_job_records": 0,
     "final_acceptance_met": false,
     "notification_eligible": false,
-    "pending_recruitment_navigation": 18195,
+    "pending_recruitment_navigation": 16673,
     "duplicate_job_source_urls": 0,
     "navigation_expansion_last_batch": {
       "enumerator_version": "3.0-bounded-retry-aware",
       "candidate_count": 30041,
-      "legacy_candidates_reclassified": 5416,
-      "selected_count": 800,
-      "processed_count": 800,
-      "detail_candidates_discovered": 14132,
-      "child_navigation_discovered": 2268,
-      "filtered_non_recruitment_links": 13305,
+      "legacy_candidates_reclassified": 5421,
+      "selected_count": 500,
+      "processed_count": 500,
+      "detail_candidates_discovered": 9501,
+      "child_navigation_discovered": 1365,
+      "filtered_non_recruitment_links": 8182,
       "resolution_status_counts": {
-        "enumerated": 747,
+        "enumerated": 446,
         "requires_site_specific_dynamic_enumerator": 1,
         "requires_manual_review_no_links": 2,
-        "restricted_with_explicit_reason": 48,
+        "restricted_with_explicit_reason": 49,
         "superseded": 1,
         "not_job_navigation": 1
       },
-      "terminal_latest_resolution_count": 56868,
-      "max_workers": 12,
+      "terminal_latest_resolution_count": 71730,
+      "max_workers": 16,
       "max_children_per_page": 60,
       "max_attempts": 4
     },
-    "classified_detail_urls_excluded": 44054,
+    "classified_detail_urls_excluded": 58178,
     "routed_announcement_urls": 85,
     "final_acceptance": false,
     "pending_routed_announcements": 85
@@ -299,7 +301,7 @@
   "notification_eligible": false,
   "final_acceptance_report": {
     "schema_version": "1.2",
-    "assessed_at": "2026-07-14T05:38:43.358556+00:00",
+    "assessed_at": "2026-07-14T05:56:25.035342+00:00",
     "target_companies": 1000,
     "seeded_unique_companies": 1020,
     "seed_shortfall": 0,
@@ -308,11 +310,11 @@
     "companies_without_audit_count": 0,
     "companies_without_audit_sample": [],
     "job_records": 801,
-    "all_recruitment_candidates": 90633,
-    "probable_job_detail_candidates": 57455,
+    "all_recruitment_candidates": 90462,
+    "probable_job_detail_candidates": 57284,
     "terminal_detail_failures": 728,
     "resolved_job_detail_candidates": 514,
-    "pending_job_detail_candidates": 56941,
+    "pending_job_detail_candidates": 56770,
     "pending_job_detail_sample": [
       {
         "company_id": "cn-autoparts-0748",
@@ -616,8 +618,8 @@
       }
     ],
     "recruitment_navigation_candidates": 33178,
-    "resolved_recruitment_navigation": 15721,
-    "pending_recruitment_navigation": 17457,
+    "resolved_recruitment_navigation": 16158,
+    "pending_recruitment_navigation": 17020,
     "pending_recruitment_navigation_sample": [
       {
         "company_id": "cn-agri-0497",
@@ -931,634 +933,9 @@
       "all_jobs_have_identity_title_and_source": true,
       "job_source_urls_unique": true,
       "no_auto_active_verified_records": true,
-      "deliverable_set_present": true,
-      "all_probable_job_details_resolved": false,
-      "all_recruitment_navigation_resolved": false,
-      "all_routed_announcements_resolved": false
+      "deliverable_set_present": true
     },
     "final_acceptance_met": false,
-    "notification_eligible": false,
-    "final_acceptance": false,
-    "assessment_version": "2.1-classification-aware-latest-ledger-announcement-gate",
-    "counts": {
-      "probable_job_detail_candidates": 15138,
-      "classified_detail_urls_excluded": 58178,
-      "routed_announcement_urls": 85,
-      "resolved_routed_announcements": 0,
-      "pending_routed_announcements": 85,
-      "pending_job_detail_candidates": 470,
-      "recruitment_navigation_candidates": 29993,
-      "terminal_latest_navigation_resolutions": 71713,
-      "pending_recruitment_navigation": 16673
-    },
-    "pending_samples": {
-      "job_details": [
-        {
-          "company_id": "cn-autoparts-0750",
-          "source_url": "https://jobs.lear.com/viewalljobs/100/"
-        },
-        {
-          "company_id": "cn-autoparts-0750",
-          "source_url": "https://jobs.lear.com/viewalljobs/150/"
-        },
-        {
-          "company_id": "cn-autoparts-0750",
-          "source_url": "https://jobs.lear.com/viewalljobs/200/"
-        },
-        {
-          "company_id": "cn-autoparts-0750",
-          "source_url": "https://jobs.lear.com/viewalljobs/250/"
-        },
-        {
-          "company_id": "cn-autoparts-0750",
-          "source_url": "https://jobs.lear.com/viewalljobs/300/"
-        },
-        {
-          "company_id": "cn-autoparts-0750",
-          "source_url": "https://jobs.lear.com/viewalljobs/350/"
-        },
-        {
-          "company_id": "cn-autoparts-0750",
-          "source_url": "https://jobs.lear.com/viewalljobs/400/"
-        },
-        {
-          "company_id": "cn-autoparts-0750",
-          "source_url": "https://jobs.lear.com/viewalljobs/450/"
-        },
-        {
-          "company_id": "cn-autoparts-0750",
-          "source_url": "https://jobs.lear.com/viewalljobs/50/"
-        },
-        {
-          "company_id": "cn-autoparts-0750",
-          "source_url": "https://jobs.lear.com/viewalljobs/500/"
-        },
-        {
-          "company_id": "cn-autoparts-0750",
-          "source_url": "https://jobs.lear.com/viewalljobs/900/"
-        },
-        {
-          "company_id": "cn-bank-0304",
-          "source_url": "https://www.cqrcb.com/cqrcb/aboutus/job/334094.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/sojob/20220317/26704.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/sojob/20250811/36623.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/sojob/20250909/36783.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/sojob/20250916/36829.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/sojob/20260120/37629.html"
-        },
-        {
-          "company_id": "cn-fintech-0642",
-          "source_url": "https://career.brgroup.com/campus-recruitment/100credit/102451"
-        },
-        {
-          "company_id": "cn-fintech-0642",
-          "source_url": "https://career.brgroup.com/social-recruitment/100credit/92460"
-        },
-        {
-          "company_id": "cn-game-0620",
-          "source_url": "https://app.mokahr.com/campus-recruitment/37/58016?locale=zh-CN"
-        },
-        {
-          "company_id": "cn-medtech-0832",
-          "source_url": "https://www.lifotronic.com/job/enterprise3774.html"
-        },
-        {
-          "company_id": "cn-medtech-0832",
-          "source_url": "https://www.lifotronic.com/job/enterprise750.html"
-        },
-        {
-          "company_id": "cn-medtech-0832",
-          "source_url": "https://www.lifotronic.com/job/enterprise751.html"
-        },
-        {
-          "company_id": "cn-mnc-1001",
-          "source_url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/486145"
-        },
-        {
-          "company_id": "cn-mnc-1001",
-          "source_url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/513702"
-        },
-        {
-          "company_id": "cn-mnc-1001",
-          "source_url": "https://jobs.siemens.com/zh_CN/externaljobs/JobDetail/511843"
-        },
-        {
-          "company_id": "cn-mnc-1001",
-          "source_url": "https://jobs.siemens.com/zh_CN/externaljobs/JobDetail/512669"
-        },
-        {
-          "company_id": "cn-mnc-1001",
-          "source_url": "https://jobs.siemens.com/zh_CN/externaljobs/JobDetail/512998"
-        },
-        {
-          "company_id": "cn-mnc-1001",
-          "source_url": "https://jobs.siemens.com/zh_CN/externaljobs/JobDetail/513058"
-        },
-        {
-          "company_id": "cn-mnc-1046",
-          "source_url": "https://jobs.sanofi.cn/%e4%bd%8d%e7%bd%ae/%c3%b8sterbro-jobs/2649/2623032-6418538-6615303/4"
-        },
-        {
-          "company_id": "cn-mnc-1046",
-          "source_url": "https://jobs.sanofi.cn/%e4%bd%8d%e7%bd%ae/%e4%b8%8a%e6%b5%b7-jobs/2649/1814991-1796231-1796236/4"
-        },
-        {
-          "company_id": "cn-mnc-1046",
-          "source_url": "https://jobs.sanofi.cn/%e4%bd%8d%e7%bd%ae/%e4%b8%9c%e4%ba%ac-jobs/2649/1861060-1850144-1850147/4"
-        },
-        {
-          "company_id": "cn-mnc-1046",
-          "source_url": "https://jobs.sanofi.cn/%e4%bd%8d%e7%bd%ae/%e4%bc%8a%e6%96%af%e5%9d%a6%e5%b8%83%e5%b0%94-jobs/2649/298795-745042-745044/4"
-        },
-        {
-          "company_id": "cn-mnc-1046",
-          "source_url": "https://jobs.sanofi.cn/%e4%bd%8d%e7%bd%ae/%e5%85%ab%e6%89%93%e7%81%b5%e5%86%8d%e4%b9%9f-jobs/2649/1733045-1733037-1735158/4"
-        },
-        {
-          "company_id": "cn-mnc-1046",
-          "source_url": "https://jobs.sanofi.cn/%e4%bd%8d%e7%bd%ae/%e5%88%a9%e9%9b%85%e5%be%b7-jobs/2649/102358-108411-108410/4"
-        },
-        {
-          "company_id": "cn-mnc-1046",
-          "source_url": "https://jobs.sanofi.cn/%e4%bd%8d%e7%bd%ae/%e5%89%91%e6%a1%a5-jobs/2649/6252001-6254926-4931972/4"
-        },
-        {
-          "company_id": "cn-mnc-1046",
-          "source_url": "https://jobs.sanofi.cn/%e4%bd%8d%e7%bd%ae/%e5%8a%a0%e5%b0%94%e5%90%84%e7%ad%94-jobs/2649/1269750-1252881-1275004/4"
-        },
-        {
-          "company_id": "cn-mnc-1046",
-          "source_url": "https://jobs.sanofi.cn/%e4%bd%8d%e7%bd%ae/%e5%8c%97%e4%ba%ac-jobs/2649/1814991-2038349-1816670/4"
-        },
-        {
-          "company_id": "cn-mnc-1046",
-          "source_url": "https://jobs.sanofi.cn/%e4%bd%8d%e7%bd%ae/%e5%8d%8e%e6%b2%99-jobs/2649/798544-858787-756135/4"
-        },
-        {
-          "company_id": "cn-mnc-1046",
-          "source_url": "https://jobs.sanofi.cn/%e4%bd%8d%e7%bd%ae/%e5%8d%8e%e7%9b%9b%e9%a1%bf%e7%89%b9%e5%8c%ba-jobs/2649/6252001-4138106-4140963/4"
-        },
-        {
-          "company_id": "cn-mnc-1046",
-          "source_url": "https://jobs.sanofi.cn/%e4%bd%8d%e7%bd%ae/%e5%8d%97%e4%ba%ac-jobs/2649/1814991-1806260-1799962/4"
-        },
-        {
-          "company_id": "cn-mnc-1046",
-          "source_url": "https://jobs.sanofi.cn/%e4%bd%8d%e7%bd%ae/%e5%8f%b0%e5%8c%97%e5%b8%82-jobs/2649/1668284-7280291-1668341/4"
-        },
-        {
-          "company_id": "cn-mnc-1046",
-          "source_url": "https://jobs.sanofi.cn/%e4%bd%8d%e7%bd%ae/%e5%9b%be%e5%b0%94-jobs/2649/3017382-3027939-2972191/4"
-        },
-        {
-          "company_id": "cn-mnc-1046",
-          "source_url": "https://jobs.sanofi.cn/%e4%bd%8d%e7%bd%ae/%e5%9f%83%e6%96%af%e6%b3%a2-jobs/2649/660013-830709-660158/4"
-        },
-        {
-          "company_id": "cn-mnc-1046",
-          "source_url": "https://jobs.sanofi.cn/%e4%bd%8d%e7%bd%ae/%e5%a1%9e%e7%ba%b3%e6%b2%b3%e7%95%94%e7%bb%b4%e6%8f%90-jobs/2649/3017382-3012874-2967849/4"
-        },
-        {
-          "company_id": "cn-mnc-1046",
-          "source_url": "https://jobs.sanofi.cn/%e4%bd%8d%e7%bd%ae/%e5%a2%a8%e8%a5%bf%e5%93%a5%e5%9f%8e-jobs/2649/3996063-3527646-3530597/4"
-        },
-        {
-          "company_id": "cn-mnc-1046",
-          "source_url": "https://jobs.sanofi.cn/%e4%bd%8d%e7%bd%ae/%e5%a4%9a%e4%bc%a6%e5%a4%9a-jobs/2649/6251999-6093943-6167865/4"
-        },
-        {
-          "company_id": "cn-mnc-1046",
-          "source_url": "https://jobs.sanofi.cn/%e4%bd%8d%e7%bd%ae/%e5%a4%a9%e6%b4%a5-jobs/2649/1814991-1792943-1792947/4"
-        },
-        {
-          "company_id": "cn-mnc-1046",
-          "source_url": "https://jobs.sanofi.cn/%e4%bd%8d%e7%bd%ae/%e5%ad%9f%e4%b9%b0-jobs/2649/1269750-1264418-1275339/4"
-        },
-        {
-          "company_id": "cn-mnc-1046",
-          "source_url": "https://jobs.sanofi.cn/%e4%bd%8d%e7%bd%ae/%e5%ae%89%e5%8d%a1%e6%8b%89-jobs/2649/298795-323784-323786/4"
-        }
-      ],
-      "routed_announcements": [
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250106/35171.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250106/35172.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250106/35173.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250106/35174.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250106/35175.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250113/35219.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250113/35220.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250120/35311.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250214/35452.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250417/35917.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250417/35918.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250523/36131.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250523/36132.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250611/36244.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250703/36400.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250901/36730.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250901/36731.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250901/36732.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250901/36733.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250901/36734.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250901/36735.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250901/36736.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250901/36737.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250901/36738.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250901/36739.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250901/36740.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250901/36741.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250901/36742.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250901/36743.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250901/36744.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20250901/36745.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20251013/36956.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20251013/36957.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20251013/36958.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20251013/36959.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20251013/36960.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20251013/36961.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20251013/36962.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20251013/36963.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20251013/36964.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20251013/36965.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20251013/36966.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20251013/36967.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20251013/36968.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20251013/36969.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20251013/36970.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20251104/37105.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20251104/37106.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20251104/37107.html"
-        },
-        {
-          "company_id": "cn-bank-0344",
-          "source_url": "https://www.gdnybank.com/jobnews/20251104/37108.html"
-        }
-      ],
-      "recruitment_navigation": [
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/ats"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/blog/2775.html"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/blog/2813.html"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/blog/2857.html"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/blog/3152.html"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/blog/3612.html"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/blog/39546.html"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/blog/39548.html"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/blog/39723.html"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/blog/39724.html"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/blog/39754.html"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/blog/39794.html"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/blog/5461.html"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/blog/7544.html"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/blog/7617.html"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/eva"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/features/data"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/features/personnel"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/features/pipeline"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/solution/artificialIntelligence"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/solution/automation"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/solution/biomedicine"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/solution/ecommerce"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/solution/education"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/solution/finance"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/solution/manufacture"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/solution/onboarding"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/solution/recommend"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/solution/retail"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/solution/social"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/trial"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://mokahr.com/videoInterview"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://post.mokahr.com/service/extcontent/page/2d9b68f00b0d45f99cb45442990c2cc3/home/3145?cl_source1=%E5%AE%98%E7%BD%91&cl_track=49494&tab=8060"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://public-cdn.mokahr.com/paladin/Moka 招聘产品和服务 个人信息保护政策 (面向用户授权人士).html"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://public-cdn.mokahr.com/paladin/Moka校招产品和服务 个人信息保护政策.html"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://public-cdn.mokahr.com/paladin/Moka社招产品和服务 个人信息保护政策.html"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://public-cdn.mokahr.com/privacyPolicySharedInfoList.html"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://www.mokahr.com/academy/"
-        },
-        {
-          "company_id": "cn-agri-0497",
-          "source_url": "https://www.mokahr.io"
-        },
-        {
-          "company_id": "cn-ai-0630",
-          "source_url": "https://mokahr.com/"
-        },
-        {
-          "company_id": "cn-ai-0630",
-          "source_url": "https://mokahr.com/ats"
-        },
-        {
-          "company_id": "cn-ai-0630",
-          "source_url": "https://mokahr.com/blog/2775.html"
-        },
-        {
-          "company_id": "cn-ai-0630",
-          "source_url": "https://mokahr.com/blog/2813.html"
-        },
-        {
-          "company_id": "cn-ai-0630",
-          "source_url": "https://mokahr.com/blog/2857.html"
-        },
-        {
-          "company_id": "cn-ai-0630",
-          "source_url": "https://mokahr.com/blog/3152.html"
-        },
-        {
-          "company_id": "cn-ai-0630",
-          "source_url": "https://mokahr.com/blog/3612.html"
-        },
-        {
-          "company_id": "cn-ai-0630",
-          "source_url": "https://mokahr.com/blog/39546.html"
-        },
-        {
-          "company_id": "cn-ai-0630",
-          "source_url": "https://mokahr.com/blog/39548.html"
-        },
-        {
-          "company_id": "cn-ai-0630",
-          "source_url": "https://mokahr.com/blog/39723.html"
-        }
-      ]
-    }
-  },
-  "final_acceptance": false
+    "notification_eligible": false
+  }
 }
