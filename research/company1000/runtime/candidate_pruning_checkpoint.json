@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-14T09:34:26.578127+00:00",
-  "input_candidate_rows": 9993,
-  "curated_candidate_rows": 5264,
-  "excluded_this_run": 4729,
+  "generated_at": "2026-07-14T10:53:15.332942+00:00",
+  "input_candidate_rows": 9793,
+  "curated_candidate_rows": 5267,
+  "excluded_this_run": 4526,
   "share_wrappers_unwrapped": 1156,
   "multilingual_or_equivalent_duplicates_removed": 1183,
   "exclusion_reason_counts": {
-    "third_party_exam_position_not_employer_recruitment": 3546,
+    "third_party_exam_position_not_employer_recruitment": 3343,
     "duplicate_multilingual_or_equivalent_job_url": 1183
   },
   "policy": {

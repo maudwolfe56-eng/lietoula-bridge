@@ -1,6 +1,6 @@
 {
   "schema_version": "1.2",
-  "assessed_at": "2026-07-14T09:34:50.617363+00:00",
+  "assessed_at": "2026-07-14T10:53:34.747883+00:00",
   "target_companies": 1000,
   "seeded_unique_companies": 1020,
   "seed_shortfall": 0,
@@ -8,12 +8,12 @@
   "companies_with_explicit_failure_reason": 852,
   "companies_without_audit_count": 0,
   "companies_without_audit_sample": [],
-  "job_records": 801,
+  "job_records": 804,
   "all_recruitment_candidates": 90474,
   "probable_job_detail_candidates": 57294,
   "terminal_detail_failures": 738,
-  "resolved_job_detail_candidates": 524,
-  "pending_job_detail_candidates": 56770,
+  "resolved_job_detail_candidates": 527,
+  "pending_job_detail_candidates": 56767,
   "pending_job_detail_sample": [
     {
       "company_id": "cn-autoparts-0748",
@@ -317,8 +317,8 @@
     }
   ],
   "recruitment_navigation_candidates": 33180,
-  "resolved_recruitment_navigation": 17036,
-  "pending_recruitment_navigation": 16144,
+  "resolved_recruitment_navigation": 17479,
+  "pending_recruitment_navigation": 15701,
   "pending_recruitment_navigation_sample": [
     {
       "company_id": "cn-agri-0497",
