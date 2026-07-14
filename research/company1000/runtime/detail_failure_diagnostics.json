@@ -1,40 +1,40 @@
 {
-  "generated_at": "2026-07-14T00:55:26.108483+00:00",
-  "failure_rows": 2274,
-  "unique_failed_urls": 1968,
+  "generated_at": "2026-07-14T01:38:05.525463+00:00",
+  "failure_rows": 2394,
+  "unique_failed_urls": 2088,
   "reason_counts_all_attempts": {
-    "detail_unparseable_or_multi_position_announcement": 1834,
+    "detail_unparseable_or_multi_position_announcement": 1944,
     "detail_http_error": 334,
-    "detail_access_restricted": 75,
-    "detail_fetch_failed:ConnectionError": 23,
+    "detail_access_restricted": 84,
+    "detail_fetch_failed:ConnectionError": 24,
     "detail_fetch_failed:ReadTimeout": 7,
     "detail_fetch_failed:ConnectTimeout": 1
   },
   "reason_counts_latest_by_url": {
-    "detail_unparseable_or_multi_position_announcement": 1589,
+    "detail_unparseable_or_multi_position_announcement": 1699,
     "detail_http_error": 286,
-    "detail_access_restricted": 75,
-    "detail_fetch_failed:ConnectionError": 10,
+    "detail_access_restricted": 84,
+    "detail_fetch_failed:ConnectionError": 11,
     "detail_fetch_failed:ReadTimeout": 7,
     "detail_fetch_failed:ConnectTimeout": 1
   },
   "http_status_counts": {
-    "200": 1834,
+    "200": 1944,
     "406": 321,
-    "403": 75,
-    "none": 31,
+    "403": 84,
+    "none": 32,
     "404": 9,
     "502": 2,
     "504": 2
   },
   "top_hosts": [
     {
-      "host": "jobs.lenovo.com",
-      "count": 777
+      "host": "www.fenbi.com",
+      "count": 859
     },
     {
-      "host": "www.fenbi.com",
-      "count": 749
+      "host": "jobs.lenovo.com",
+      "count": 777
     },
     {
       "host": "mokahr.com",
@@ -50,7 +50,7 @@
     },
     {
       "host": "smics.zhiye.com",
-      "count": 77
+      "count": 87
     },
     {
       "host": "www.helichina.com",
@@ -132,7 +132,7 @@
   "top_path_shapes": [
     {
       "path_shape": "/page/positions/{id}/{id}?department",
-      "count": 430
+      "count": 527
     },
     {
       "path_shape": "/blog/{id}",
@@ -140,7 +140,7 @@
     },
     {
       "path_shape": "/page/positions/{id}/{id}?region",
-      "count": 199
+      "count": 212
     },
     {
       "path_shape": "/en_us/careers/jobdetail/{id}/{id}",
@@ -172,7 +172,7 @@
     },
     {
       "path_shape": "/campusxq?jc&jobid&p",
-      "count": 42
+      "count": 52
     },
     {
       "path_shape": "/contact/job/{id}/{id}",
@@ -292,6 +292,147 @@
     }
   ],
   "samples_by_reason": {
+    "detail_unparseable_or_multi_position_announcement": [
+      {
+        "company_id": "cn-edu-0795",
+        "company_name": "北京粉笔蓝天科技有限公司",
+        "source_url": "https://www.fenbi.com/page/positions/1/176001?department=%E6%96%87%E6%88%90%E5%8E%BF%E5%B8%82%E5%9C%BA%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%B1%80%E5%9F%BA%E5%B1%82%E6%89%80",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/page/positions/{id}/{id}?department"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "company_name": "北京粉笔蓝天科技有限公司",
+        "source_url": "https://www.fenbi.com/page/positions/1/176001?department=%E6%96%87%E6%88%90%E5%8E%BF%E4%B9%A1%E9%95%87%E6%9C%BA%E5%85%B3",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/page/positions/{id}/{id}?department"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "company_name": "北京粉笔蓝天科技有限公司",
+        "source_url": "https://www.fenbi.com/page/positions/1/176001?department=%E6%85%88%E6%BA%AA%E5%B8%82%E7%BB%BC%E5%90%88%E8%A1%8C%E6%94%BF%E6%89%A7%E6%B3%95%E9%98%9F",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/page/positions/{id}/{id}?department"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "company_name": "北京粉笔蓝天科技有限公司",
+        "source_url": "https://www.fenbi.com/page/positions/1/176001?department=%E6%85%88%E6%BA%AA%E5%B8%82%E7%BB%BC%E5%90%88%E6%89%A7%E6%B3%95%E5%B1%80",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/page/positions/{id}/{id}?department"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "company_name": "北京粉笔蓝天科技有限公司",
+        "source_url": "https://www.fenbi.com/page/positions/1/176001?department=%E6%85%88%E6%BA%AA%E5%B8%82%E5%B8%82%E5%9C%BA%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%B1%80",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/page/positions/{id}/{id}?department"
+      }
+    ],
+    "detail_access_restricted": [
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390808679&jc=2&c=&p=1^-1,3^-1&ky=",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/campusxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390808670&jc=2&c=&p=1^-1,3^-1&ky=",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/campusxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390808653&jc=2&c=&p=1^-1,3^-1&ky=",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/campusxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390807247&jc=2&c=&p=1^-1,3^-1&ky=",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/campusxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390807244&jc=2&c=&p=1^-1,3^-1&ky=",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/campusxq?jc&jobid&p"
+      }
+    ],
+    "detail_fetch_failed:ConnectionError": [
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390806983&jc=2&c=&p=1^-1,3^-1&ky=",
+        "reason": "detail_fetch_failed:ConnectionError",
+        "detail": null,
+        "http_status": null,
+        "path_shape": "/campusxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/overseasxq?jobId=390472404&jc=3&c=&p=1^-1,3^-1&ky=",
+        "reason": "detail_fetch_failed:ConnectionError",
+        "detail": null,
+        "http_status": null,
+        "path_shape": "/overseasxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390786029&jc=2&c=&p=1^-1,3^-1&ky=",
+        "reason": "detail_fetch_failed:ConnectionError",
+        "detail": null,
+        "http_status": null,
+        "path_shape": "/campusxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-machinery-0583",
+        "company_name": "安徽合力股份有限公司",
+        "source_url": "https://www.helichina.com/contact/job/202606/t20260626_9351698.html",
+        "reason": "detail_fetch_failed:ConnectionError",
+        "detail": null,
+        "http_status": null,
+        "path_shape": "/contact/job/{id}/{id}"
+      },
+      {
+        "company_id": "cn-machinery-0583",
+        "company_name": "安徽合力股份有限公司",
+        "source_url": "https://www.helichina.com/contact/job/202606/t20260615_9329811.html",
+        "reason": "detail_fetch_failed:ConnectionError",
+        "detail": null,
+        "http_status": null,
+        "path_shape": "/contact/job/{id}/{id}"
+      }
+    ],
     "detail_http_error": [
       {
         "company_id": "cn-tech-0063",
@@ -337,147 +478,6 @@
         "detail": null,
         "http_status": 406,
         "path_shape": "/zh_cn/careers/jobdetail/travel-manager-us/{id}"
-      }
-    ],
-    "detail_unparseable_or_multi_position_announcement": [
-      {
-        "company_id": "cn-fintech-0642",
-        "company_name": "百融云创科技股份有限公司",
-        "source_url": "https://career.brgroup.com/social-recruitment/100credit/92460",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/social-recruitment/{id}/{id}"
-      },
-      {
-        "company_id": "cn-fintech-0642",
-        "company_name": "百融云创科技股份有限公司",
-        "source_url": "https://career.brgroup.com/campus-recruitment/100credit/102451",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/campus-recruitment/{id}/{id}"
-      },
-      {
-        "company_id": "cn-vaccine-0815",
-        "company_name": "重庆智飞生物制品股份有限公司",
-        "source_url": "https://www.zhifeishengwu.com/zh_CN/recruitment/42.html",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/zh_cn/recruitment/{id}"
-      },
-      {
-        "company_id": "cn-tech-0066",
-        "company_name": "中兴通讯股份有限公司",
-        "source_url": "https://job.zte.com.cn/content/zte-job/cn/campus-recruitment/buyue2.html",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/content/zte-job/cn/campus-recruitment/{id}"
-      },
-      {
-        "company_id": "cn-tech-0066",
-        "company_name": "中兴通讯股份有限公司",
-        "source_url": "https://job.zte.com.cn/content/zte-job/cn/campus-recruitment/School_Recruitment_Announcement/news/202406061.html",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/content/zte-job/cn/campus-recruitment/{id}/news/{id}"
-      }
-    ],
-    "detail_access_restricted": [
-      {
-        "company_id": "cn-chip-0236",
-        "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/overseasxq?jobId=390472652&jc=3&c=&p=1^-1,3^-1&ky=",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/overseasxq?jc&jobid&p"
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/overseasxq?jobId=390472643&jc=3&c=&p=1^-1,3^-1&ky=",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/overseasxq?jc&jobid&p"
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/overseasxq?jobId=390472631&jc=3&c=&p=1^-1,3^-1&ky=",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/overseasxq?jc&jobid&p"
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/overseasxq?jobId=390472405&jc=3&c=&p=1^-1,3^-1&ky=",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/overseasxq?jc&jobid&p"
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/overseasxq?jobId=390472402&jc=3&c=&p=1^-1,3^-1&ky=",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/overseasxq?jc&jobid&p"
-      }
-    ],
-    "detail_fetch_failed:ConnectionError": [
-      {
-        "company_id": "cn-chip-0236",
-        "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/overseasxq?jobId=390472404&jc=3&c=&p=1^-1,3^-1&ky=",
-        "reason": "detail_fetch_failed:ConnectionError",
-        "detail": null,
-        "http_status": null,
-        "path_shape": "/overseasxq?jc&jobid&p"
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?jobId=390786029&jc=2&c=&p=1^-1,3^-1&ky=",
-        "reason": "detail_fetch_failed:ConnectionError",
-        "detail": null,
-        "http_status": null,
-        "path_shape": "/campusxq?jc&jobid&p"
-      },
-      {
-        "company_id": "cn-machinery-0583",
-        "company_name": "安徽合力股份有限公司",
-        "source_url": "https://www.helichina.com/contact/job/202606/t20260626_9351698.html",
-        "reason": "detail_fetch_failed:ConnectionError",
-        "detail": null,
-        "http_status": null,
-        "path_shape": "/contact/job/{id}/{id}"
-      },
-      {
-        "company_id": "cn-machinery-0583",
-        "company_name": "安徽合力股份有限公司",
-        "source_url": "https://www.helichina.com/contact/job/202606/t20260615_9329811.html",
-        "reason": "detail_fetch_failed:ConnectionError",
-        "detail": null,
-        "http_status": null,
-        "path_shape": "/contact/job/{id}/{id}"
-      },
-      {
-        "company_id": "cn-machinery-0583",
-        "company_name": "安徽合力股份有限公司",
-        "source_url": "https://www.helichina.com/contact/job/202606/t20260610_9321319.html",
-        "reason": "detail_fetch_failed:ConnectionError",
-        "detail": null,
-        "http_status": null,
-        "path_shape": "/contact/job/{id}/{id}"
       }
     ],
     "detail_fetch_failed:ConnectTimeout": [
@@ -540,6 +540,35 @@
     ]
   },
   "samples_by_top_host": {
+    "www.fenbi.com": [
+      {
+        "company_id": "cn-edu-0795",
+        "company_name": "北京粉笔蓝天科技有限公司",
+        "source_url": "https://www.fenbi.com/page/positions/1/176001?department=%E6%96%87%E6%88%90%E5%8E%BF%E5%B8%82%E5%9C%BA%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%B1%80%E5%9F%BA%E5%B1%82%E6%89%80",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/page/positions/{id}/{id}?department"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "company_name": "北京粉笔蓝天科技有限公司",
+        "source_url": "https://www.fenbi.com/page/positions/1/176001?department=%E6%96%87%E6%88%90%E5%8E%BF%E4%B9%A1%E9%95%87%E6%9C%BA%E5%85%B3",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/page/positions/{id}/{id}?department"
+      },
+      {
+        "company_id": "cn-edu-0795",
+        "company_name": "北京粉笔蓝天科技有限公司",
+        "source_url": "https://www.fenbi.com/page/positions/1/176001?department=%E6%85%88%E6%BA%AA%E5%B8%82%E7%BB%BC%E5%90%88%E8%A1%8C%E6%94%BF%E6%89%A7%E6%B3%95%E9%98%9F",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/page/positions/{id}/{id}?department"
+      }
+    ],
     "jobs.lenovo.com": [
       {
         "company_id": "cn-tech-0063",
@@ -567,35 +596,6 @@
         "detail": null,
         "http_status": 406,
         "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
-      }
-    ],
-    "www.fenbi.com": [
-      {
-        "company_id": "cn-edu-0795",
-        "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/1/175997?department=%E6%BB%A8%E6%B5%B7%E5%8E%BF",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/page/positions/{id}/{id}?department"
-      },
-      {
-        "company_id": "cn-edu-0795",
-        "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/1/175997?department=%E6%BA%A7%E9%98%B3%E5%B8%82",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/page/positions/{id}/{id}?department"
-      },
-      {
-        "company_id": "cn-edu-0795",
-        "company_name": "北京粉笔蓝天科技有限公司",
-        "source_url": "https://www.fenbi.com/page/positions/1/175997?department=%E6%B7%AE%E5%AE%89%E7%BB%8F%E6%B5%8E%E6%8A%80%E6%9C%AF%E5%BC%80%E5%8F%91%E5%8C%BA",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/page/positions/{id}/{id}?department"
       }
     ],
     "mokahr.com": [
@@ -689,29 +689,29 @@
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/overseasxq?jobId=390472652&jc=3&c=&p=1^-1,3^-1&ky=",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390808679&jc=2&c=&p=1^-1,3^-1&ky=",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,
-        "path_shape": "/overseasxq?jc&jobid&p"
+        "path_shape": "/campusxq?jc&jobid&p"
       },
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/overseasxq?jobId=390472643&jc=3&c=&p=1^-1,3^-1&ky=",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390808670&jc=2&c=&p=1^-1,3^-1&ky=",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,
-        "path_shape": "/overseasxq?jc&jobid&p"
+        "path_shape": "/campusxq?jc&jobid&p"
       },
       {
         "company_id": "cn-chip-0236",
         "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/overseasxq?jobId=390472631&jc=3&c=&p=1^-1,3^-1&ky=",
+        "source_url": "https://smics.zhiye.com/campusxq?jobId=390808653&jc=2&c=&p=1^-1,3^-1&ky=",
         "reason": "detail_access_restricted",
         "detail": null,
         "http_status": 403,
-        "path_shape": "/overseasxq?jc&jobid&p"
+        "path_shape": "/campusxq?jc&jobid&p"
       }
     ],
     "www.helichina.com": [
