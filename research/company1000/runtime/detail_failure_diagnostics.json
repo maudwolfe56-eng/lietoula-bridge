@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-14T02:30:46.639268+00:00",
-  "failure_rows": 3464,
+  "generated_at": "2026-07-14T02:54:54.269850+00:00",
+  "failure_rows": 3624,
   "unique_failed_urls": 2570,
   "reason_counts_all_attempts": {
-    "detail_unparseable_or_multi_position_announcement": 2889,
+    "detail_unparseable_or_multi_position_announcement": 3049,
     "detail_http_error": 369,
     "detail_access_restricted": 168,
     "detail_fetch_failed:ConnectionError": 30,
@@ -19,7 +19,7 @@
     "detail_fetch_failed:ConnectTimeout": 1
   },
   "http_status_counts": {
-    "200": 2889,
+    "200": 3049,
     "406": 351,
     "403": 168,
     "none": 38,
@@ -41,12 +41,12 @@
       "count": 326
     },
     {
-      "host": "smics.zhiye.com",
-      "count": 173
+      "host": "jobs.sanofi.cn",
+      "count": 303
     },
     {
-      "host": "jobs.sanofi.cn",
-      "count": 154
+      "host": "smics.zhiye.com",
+      "count": 173
     },
     {
       "host": "www.gdnybank.com",
@@ -73,12 +73,12 @@
       "count": 25
     },
     {
-      "host": "www.lifotronic.com",
-      "count": 15
+      "host": "jobs.lear.com",
+      "count": 22
     },
     {
-      "host": "jobs.lear.com",
-      "count": 11
+      "host": "www.lifotronic.com",
+      "count": 15
     },
     {
       "host": "www.airchina.com.cn",
@@ -151,6 +151,10 @@
       "count": 212
     },
     {
+      "path_shape": "/{id}/{id}/{id}/{id}/{id}",
+      "count": 148
+    },
+    {
       "path_shape": "/en_us/careers/jobdetail/{id}/{id}",
       "count": 127
     },
@@ -171,8 +175,8 @@
       "count": 85
     },
     {
-      "path_shape": "/{id}/{id}/{id}/{id}/{id}",
-      "count": 74
+      "path_shape": "/{id}/{id}/{id}/{id}/{id}/{id}",
+      "count": 60
     },
     {
       "path_shape": "/de_de/careers/jobdetail/{id}",
@@ -223,10 +227,6 @@
       "count": 31
     },
     {
-      "path_shape": "/{id}/{id}/{id}/{id}/{id}/{id}",
-      "count": 30
-    },
-    {
       "path_shape": "/ja_jp/careers/jobdetail/{id}",
       "count": 27
     },
@@ -243,6 +243,10 @@
       "count": 24
     },
     {
+      "path_shape": "/viewalljobs/{id}",
+      "count": 22
+    },
+    {
       "path_shape": "/go/all-jobs/{id}?sortcolumn&sortdirection",
       "count": 21
     },
@@ -257,10 +261,6 @@
     {
       "path_shape": "/page/positions/{id}/{id}?quickpick",
       "count": 14
-    },
-    {
-      "path_shape": "/viewalljobs/{id}",
-      "count": 11
     },
     {
       "path_shape": "/cn/about_us/recruitment/{id}",
@@ -298,49 +298,49 @@
   "samples_by_reason": {
     "detail_unparseable_or_multi_position_announcement": [
       {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/eCommerce-Inside-sales-Account-Rep-SMB-Dutch-Nordics/76870",
+        "company_id": "cn-mnc-1046",
+        "company_name": "赛诺菲（中国）投资有限公司",
+        "source_url": "https://jobs.sanofi.cn/%e9%9b%87%e7%94%a8/toronto-ontario-canada-digital-data-and-technology-jobs/2649/32115968/6251999-6093943-6167865/4",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
+        "path_shape": "/{id}/{id}/{id}/{id}/{id}/{id}"
       },
       {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Workstations-Category-Specialist/79299",
+        "company_id": "cn-mnc-1046",
+        "company_name": "赛诺菲（中国）投资有限公司",
+        "source_url": "https://jobs.sanofi.cn/%e9%9b%87%e7%94%a8/tokyo-tokyo-japan-sales-jobs/2649/32102208/1861060-1850144-1850147/4",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
+        "path_shape": "/{id}/{id}/{id}/{id}/{id}/{id}"
       },
       {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/WW-Cyber-Security-Services-Offering-Development-Manager/79249",
+        "company_id": "cn-mnc-1046",
+        "company_name": "赛诺菲（中国）投资有限公司",
+        "source_url": "https://jobs.sanofi.cn/%e9%9b%87%e7%94%a8/tianjin-tianjin-municipality-china-sales-jobs/2649/32102208/1814991-1792943-1792947/4",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
+        "path_shape": "/{id}/{id}/{id}/{id}/{id}/{id}"
       },
       {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/WW-Cyber-Security-Services-Offering-Development-Manager/79248",
+        "company_id": "cn-mnc-1046",
+        "company_name": "赛诺菲（中国）投资有限公司",
+        "source_url": "https://jobs.sanofi.cn/%e9%9b%87%e7%94%a8/shanghai-shanghai-municipality-china-sales-jobs/2649/32102208/1814991-1796231-1796236/4",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/zh_cn/careers/jobdetail/{id}/{id}"
+        "path_shape": "/{id}/{id}/{id}/{id}/{id}/{id}"
       },
       {
-        "company_id": "cn-tech-0063",
-        "company_name": "联想集团有限公司",
-        "source_url": "https://jobs.lenovo.com/zh_CN/careers/JobDetail/Test-Engineer/79389",
+        "company_id": "cn-mnc-1046",
+        "company_name": "赛诺菲（中国）投资有限公司",
+        "source_url": "https://jobs.sanofi.cn/%e9%9b%87%e7%94%a8/paris-ile-de-france-region-france-digital-data-and-technology-jobs/2649/32115968/3017382-3012874-2968815-2988507/4",
         "reason": "detail_unparseable_or_multi_position_announcement",
         "detail": null,
         "http_status": 200,
-        "path_shape": "/zh_cn/careers/jobdetail/test-engineer/{id}"
+        "path_shape": "/{id}/{id}/{id}/{id}/{id}/{id}"
       }
     ],
     "detail_http_error": [
@@ -631,35 +631,6 @@
         "path_shape": "/blog/{id}"
       }
     ],
-    "smics.zhiye.com": [
-      {
-        "company_id": "cn-chip-0236",
-        "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/overseasxq?c=&jc=3&jobId=390472402&ky=&p=1%5E-1%2C3%5E-1",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/overseasxq?jc&jobid&p"
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390777652&ky=&p=1%5E-1%2C3%5E-1",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/campusxq?jc&jobid&p"
-      },
-      {
-        "company_id": "cn-chip-0236",
-        "company_name": "中芯国际集成电路制造有限公司",
-        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390777117&ky=&p=1%5E-1%2C3%5E-1",
-        "reason": "detail_access_restricted",
-        "detail": null,
-        "http_status": 403,
-        "path_shape": "/campusxq?jc&jobid&p"
-      }
-    ],
     "jobs.sanofi.cn": [
       {
         "company_id": "cn-mnc-1046",
@@ -687,6 +658,35 @@
         "detail": null,
         "http_status": 200,
         "path_shape": "/{id}/{id}/{id}/{id}/{id}/{id}"
+      }
+    ],
+    "smics.zhiye.com": [
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/overseasxq?c=&jc=3&jobId=390472402&ky=&p=1%5E-1%2C3%5E-1",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/overseasxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390777652&ky=&p=1%5E-1%2C3%5E-1",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/campusxq?jc&jobid&p"
+      },
+      {
+        "company_id": "cn-chip-0236",
+        "company_name": "中芯国际集成电路制造有限公司",
+        "source_url": "https://smics.zhiye.com/campusxq?c=&jc=2&jobId=390777117&ky=&p=1%5E-1%2C3%5E-1",
+        "reason": "detail_access_restricted",
+        "detail": null,
+        "http_status": 403,
+        "path_shape": "/campusxq?jc&jobid&p"
       }
     ],
     "www.gdnybank.com": [
@@ -863,35 +863,6 @@
         "path_shape": "/job/{id}"
       }
     ],
-    "www.lifotronic.com": [
-      {
-        "company_id": "cn-medtech-0832",
-        "company_name": "深圳普门科技股份有限公司",
-        "source_url": "https://www.lifotronic.com/job/enterprise751.html",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/job/{id}"
-      },
-      {
-        "company_id": "cn-medtech-0832",
-        "company_name": "深圳普门科技股份有限公司",
-        "source_url": "https://www.lifotronic.com/job/enterprise750.html",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/job/{id}"
-      },
-      {
-        "company_id": "cn-medtech-0832",
-        "company_name": "深圳普门科技股份有限公司",
-        "source_url": "https://www.lifotronic.com/job/enterprise3774.html",
-        "reason": "detail_unparseable_or_multi_position_announcement",
-        "detail": null,
-        "http_status": 200,
-        "path_shape": "/job/{id}"
-      }
-    ],
     "jobs.lear.com": [
       {
         "company_id": "cn-autoparts-0750",
@@ -919,6 +890,35 @@
         "detail": null,
         "http_status": 200,
         "path_shape": "/viewalljobs/{id}"
+      }
+    ],
+    "www.lifotronic.com": [
+      {
+        "company_id": "cn-medtech-0832",
+        "company_name": "深圳普门科技股份有限公司",
+        "source_url": "https://www.lifotronic.com/job/enterprise751.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/job/{id}"
+      },
+      {
+        "company_id": "cn-medtech-0832",
+        "company_name": "深圳普门科技股份有限公司",
+        "source_url": "https://www.lifotronic.com/job/enterprise750.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/job/{id}"
+      },
+      {
+        "company_id": "cn-medtech-0832",
+        "company_name": "深圳普门科技股份有限公司",
+        "source_url": "https://www.lifotronic.com/job/enterprise3774.html",
+        "reason": "detail_unparseable_or_multi_position_announcement",
+        "detail": null,
+        "http_status": 200,
+        "path_shape": "/job/{id}"
       }
     ],
     "www.airchina.com.cn": [

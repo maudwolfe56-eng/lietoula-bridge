@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-14T02:30:57.799846+00:00",
+  "generated_at": "2026-07-14T02:55:06.487212+00:00",
   "target_companies": 1000,
   "seeded_companies": 1020,
   "coverage_records": 1061,
   "companies_with_coverage": 1027,
-  "job_records": 792,
+  "job_records": 794,
   "job_status_counts": {
     "inactive_expired": 49,
-    "candidate_raw": 682,
+    "candidate_raw": 684,
     "review_pending": 61
   },
-  "failure_records": 7976,
-  "job_change_records": 792,
+  "failure_records": 8102,
+  "job_change_records": 794,
   "active_verified_records": 0,
   "final_acceptance_met": false,
   "checkpoint": {
     "schema_version": "1.0",
-    "updated_at": "2026-07-14T02:30:57.297853+00:00",
+    "updated_at": "2026-07-14T02:55:05.909653+00:00",
     "target_companies": 1000,
     "valid_seed_count": 1020,
     "official_entries_verified": 14,
@@ -28,7 +28,7 @@
     "job_records_review_pending": 64,
     "job_records_inactive_expired": 23,
     "companies_final_acceptance_met": 0,
-    "next_batch_start_index": 800,
+    "next_batch_start_index": 486,
     "batch_progress": {
       "batch_0001": {
         "companies_reviewed": 10,
@@ -167,12 +167,35 @@
       "high_confidence_false_positive_candidate_pruning": true
     },
     "last_auto_batch": {
-      "requested_start_index": 182,
+      "requested_start_index": 800,
       "selected_indices": [
+        806,
+        829,
+        856,
+        863,
+        867,
+        886,
+        902,
+        903,
+        906,
+        969,
+        986,
+        987,
+        118,
+        123,
+        125,
+        132,
+        136,
+        137,
+        152,
+        161,
+        170,
+        173,
+        175,
+        181,
         183,
         187,
         195,
-        220,
         227,
         230,
         242,
@@ -195,38 +218,15 @@
         439,
         468,
         483,
-        485,
-        487,
-        500,
-        525,
-        537,
-        542,
-        558,
-        565,
-        574,
-        584,
-        588,
-        602,
-        639,
-        642,
-        644,
-        646,
-        649,
-        651,
-        687,
-        692,
-        706,
-        709,
-        773,
-        799
+        485
       ],
       "selected_count": 50,
       "processed_count": 50,
       "job_detail_candidates": 0,
-      "recruitment_navigation_links": 18,
+      "recruitment_navigation_links": 11,
       "max_workers": 8
     },
-    "pending_seed_audits": 24,
+    "pending_seed_audits": 23,
     "merged_seed_sources": [
       "company_seed_1000.json",
       "company_seed_expansion_0001.json",
@@ -260,31 +260,31 @@
     "company_id_collisions_resolved": 7,
     "seed_shortfall": 0,
     "companies_without_audit": 0,
-    "pending_job_link_candidates": 310,
+    "pending_job_link_candidates": 20490,
     "invalid_job_records": 0,
     "final_acceptance_met": false,
     "notification_eligible": false,
-    "pending_recruitment_navigation": 17473,
+    "pending_recruitment_navigation": 18310,
     "duplicate_job_source_urls": 0,
     "navigation_expansion_last_batch": {
       "enumerator_version": "3.0-bounded-retry-aware",
-      "candidate_count": 28291,
-      "legacy_candidates_reclassified": 6841,
+      "candidate_count": 27837,
+      "legacy_candidates_reclassified": 5205,
       "selected_count": 500,
       "processed_count": 500,
-      "detail_candidates_discovered": 921,
-      "child_navigation_discovered": 8047,
-      "filtered_non_recruitment_links": 37096,
+      "detail_candidates_discovered": 3183,
+      "child_navigation_discovered": 6827,
+      "filtered_non_recruitment_links": 32979,
       "resolution_status_counts": {
-        "enumerated": 420,
-        "requires_site_specific_dynamic_enumerator": 4,
-        "requires_manual_review_no_links": 2,
-        "restricted_with_explicit_reason": 58,
-        "requires_retry_transient_fetch": 5,
-        "superseded": 3,
-        "not_job_navigation": 8
+        "enumerated": 383,
+        "requires_site_specific_dynamic_enumerator": 3,
+        "requires_manual_review_no_links": 47,
+        "restricted_with_explicit_reason": 49,
+        "superseded": 10,
+        "not_job_navigation": 5,
+        "requires_retry_transient_fetch": 3
       },
-      "terminal_latest_resolution_count": 32020,
+      "terminal_latest_resolution_count": 32455,
       "max_workers": 16,
       "max_children_per_page": 60,
       "max_attempts": 4
@@ -302,7 +302,7 @@
   "notification_eligible": false,
   "final_acceptance_report": {
     "schema_version": "1.2",
-    "assessed_at": "2026-07-14T02:31:02.371845+00:00",
+    "assessed_at": "2026-07-14T02:55:11.992354+00:00",
     "target_companies": 1000,
     "seeded_unique_companies": 1020,
     "seed_shortfall": 0,
@@ -310,12 +310,12 @@
     "companies_with_explicit_failure_reason": 852,
     "companies_without_audit_count": 0,
     "companies_without_audit_sample": [],
-    "job_records": 792,
-    "all_recruitment_candidates": 51923,
+    "job_records": 794,
+    "all_recruitment_candidates": 53046,
     "probable_job_detail_candidates": 20955,
     "terminal_detail_failures": 634,
-    "resolved_job_detail_candidates": 465,
-    "pending_job_detail_candidates": 20490,
+    "resolved_job_detail_candidates": 467,
+    "pending_job_detail_candidates": 20488,
     "pending_job_detail_sample": [
       {
         "company_id": "cn-autoparts-0748",
@@ -618,9 +618,9 @@
         "reason": "official_multi_position_announcement"
       }
     ],
-    "recruitment_navigation_candidates": 30968,
-    "resolved_recruitment_navigation": 12658,
-    "pending_recruitment_navigation": 18310,
+    "recruitment_navigation_candidates": 32091,
+    "resolved_recruitment_navigation": 13117,
+    "pending_recruitment_navigation": 18974,
     "pending_recruitment_navigation_sample": [
       {
         "company_id": "cn-agri-0497",
@@ -649,278 +649,278 @@
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/Auburn-Hills-Assistant-Quality-Manager-MI-48326/1380035933/",
+        "source_url": "https://jobs.lear.com/job/Auburn-Hills-0990-Maintenance-Team-Leader-MI-48326/1401457633/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/Auburn-Hills-Controls-Engineer-Manager-MI-48326/1374820533/",
+        "source_url": "https://jobs.lear.com/job/Auburn-Hills-Maintenance-Supervisor-MI-48326/1381820933/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/Hammond-Industrial-Engineer-IN-46320/1235358101/",
+        "source_url": "https://jobs.lear.com/job/Auburn-Hills-Plant-Technical-Engineering-Manager-MI-48326/1379014233/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/Kolin-Vedouc%C3%AD-%C3%BAdr%C5%BEby-Cent-28002/1377047433/",
+        "source_url": "https://jobs.lear.com/job/Auburn-Hills-Production-Manager-MI-48326/1394714333/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/Louisville-Accounting-Specialist-KY-40208/1404784733/",
+        "source_url": "https://jobs.lear.com/job/Auburn-Hills-Production-Superintendent-MI-48326/1408532133/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/Montgomery-Industrial-Engineer-AL-36105/1245739601/",
+        "source_url": "https://jobs.lear.com/job/Columbia-City-Production-Operator-Team-Member-IN-46725/1265892601/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/PACHECO-Production-Supervisor-II-B-1617/1292808401/Argentina_PT?locale=bg_BG",
+        "source_url": "https://jobs.lear.com/job/Comstock-Park-CNC-Machinist-MI-49321/1395161533/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/PACHECO-Production-Supervisor-II-B-1617/1292808401/Argentina_PT?locale=bs_BS",
+        "source_url": "https://jobs.lear.com/job/Comstock-Park-Controls-&-Automation-Engineer-Specialist-II-MI-49321/1402538233/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/PACHECO-Production-Supervisor-II-B-1617/1292808401/Argentina_PT?locale=bs_ID",
+        "source_url": "https://jobs.lear.com/job/Comstock-Park-Controls-&-Automation-Engineer-Sr_-Specialist-MI-49321/1400990333/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/PACHECO-Production-Supervisor-II-B-1617/1292808401/Argentina_PT?locale=cs_CZ",
+        "source_url": "https://jobs.lear.com/job/Comstock-Park-Controls-Engineer-MI-49321/1369564633/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/PACHECO-Production-Supervisor-II-B-1617/1292808401/Argentina_PT?locale=de_DE",
+        "source_url": "https://jobs.lear.com/job/Comstock-Park-Senior-Ignition-Developer-MI-49321/1394682133/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/PACHECO-Production-Supervisor-II-B-1617/1292808401/Argentina_PT?locale=en_US",
+        "source_url": "https://jobs.lear.com/job/Duncan-Component-Based-Release-%28CBR%29-Analyst-SC-29334/1400935133/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/PACHECO-Production-Supervisor-II-B-1617/1292808401/Argentina_PT?locale=es_ES",
+        "source_url": "https://jobs.lear.com/job/Farwell-Materials-Planner-MI-48622/1402435633/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/PACHECO-Production-Supervisor-II-B-1617/1292808401/Argentina_PT?locale=es_MX",
+        "source_url": "https://jobs.lear.com/job/Farwell-Part-time-Blasting-Crew-MI-48622/1405285433/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/PACHECO-Production-Supervisor-II-B-1617/1292808401/Argentina_PT?locale=fr_FR",
+        "source_url": "https://jobs.lear.com/job/Grand-Prairie-Maintenance-Supervisor-TX-75050/1412311933/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/PACHECO-Production-Supervisor-II-B-1617/1292808401/Argentina_PT?locale=hu_HU",
+        "source_url": "https://jobs.lear.com/job/Grand-Rapids-Production-Supervisor-I-MI-49525/1380602233/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/PACHECO-Production-Supervisor-II-B-1617/1292808401/Argentina_PT?locale=it_IT",
+        "source_url": "https://jobs.lear.com/job/Hammond-Materials-Specialist-I-IN-46320/1388586733/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/PACHECO-Production-Supervisor-II-B-1617/1292808401/Argentina_PT?locale=ja_JP",
+        "source_url": "https://jobs.lear.com/job/Hammond-Process-Controls-Engineer-IN-46320/1390514833/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/PACHECO-Production-Supervisor-II-B-1617/1292808401/Argentina_PT?locale=ko_KR",
+        "source_url": "https://jobs.lear.com/job/Hammond-Production-Assembly-Team-Member-IN-46320/1401492033/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/PACHECO-Production-Supervisor-II-B-1617/1292808401/Argentina_PT?locale=pl_PL",
+        "source_url": "https://jobs.lear.com/job/Hammond-Vision-Controls-Engineer-II-IN-46320/1287144501/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/PACHECO-Production-Supervisor-II-B-1617/1292808401/Argentina_PT?locale=pt_BR",
+        "source_url": "https://jobs.lear.com/job/Hebron-Production-Team-Member-OH-43055/1399486433/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/PACHECO-Production-Supervisor-II-B-1617/1292808401/Argentina_PT?locale=pt_PT",
+        "source_url": "https://jobs.lear.com/job/Kenansville-0781-Inspector-Direct-NC-28349/1405736233/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/PACHECO-Production-Supervisor-II-B-1617/1292808401/Argentina_PT?locale=ro_RO",
+        "source_url": "https://jobs.lear.com/job/Kenansville-0781-Technician-Indirect-NC-28349/1369771133/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/PACHECO-Production-Supervisor-II-B-1617/1292808401/Argentina_PT?locale=sr_RS",
+        "source_url": "https://jobs.lear.com/job/McCalla-Plant-Financial-Analyst-I-AL-35111/1390525233/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/PACHECO-Production-Supervisor-II-B-1617/1292808401/Argentina_PT?locale=th_TH",
+        "source_url": "https://jobs.lear.com/job/Meknes-HR-coordinator-Meknes/1380734333/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/PACHECO-Production-Supervisor-II-B-1617/1292808401/Argentina_PT?locale=vi_VN",
+        "source_url": "https://jobs.lear.com/job/Montgomery-Production-Assembly-Team-Member-AL-36105/1397818533/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/PACHECO-Production-Supervisor-II-B-1617/1292808401/Argentina_PT?locale=zh_CN",
+        "source_url": "https://jobs.lear.com/job/Montgomery-Production-Supervisor-I-AL-36105/1402604733/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/Pilsen-Quality-Supervisor-%C2%A0Plz/1365479533/",
+        "source_url": "https://jobs.lear.com/job/Montgomery-Senior-Controls-&-Automation-Engineer-AL-36105/1288675701/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/Rabat-Plant-Manager-Rabat-Electronics-Plant-11103/1404442433/",
+        "source_url": "https://jobs.lear.com/job/Pilsen-Price-MatrixCosting-Specialist-%C2%A0Plz/1406978433/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/Southfield-Senior-Advanced-Manufacturing-Engineer-Electronics-MI-48033/1365640233/",
+        "source_url": "https://jobs.lear.com/job/Rochester-Hills-Automation-Applications-Engineer-MI-48309/1399968233/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/Southfield-Senior-Industrial-Engineer-MI-48033/1376136333/",
+        "source_url": "https://jobs.lear.com/job/Roscommon-Machine-Operator-MI-48653/1410507733/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/Southfield-Senior-Manufacturing-Cost-Engineer-MI-48033/1404779433/",
+        "source_url": "https://jobs.lear.com/job/Selma-Maintenance-Planner-AL-36701/1253992701/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/Valls-Supplier-Quality-Assurance-T-43800/1375527633/",
+        "source_url": "https://jobs.lear.com/job/Selma-Plant-Superintendent-AL-36701/1276499501/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/Vance-Site-IT-Support-Analyst-I-AL-35490/1404424733/",
+        "source_url": "https://jobs.lear.com/job/Selma-Production-Operator-1-AL-36701/1380989933/",
         "reason": null
       },
       {
         "company_id": "cn-autoparts-0750",
         "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/job/Vigo-Manufacturing-Quality-Engineer-PO-36312/1365713533/",
+        "source_url": "https://jobs.lear.com/job/Selma-Shift-1-Weekend-Mold-Crew-AL-36701/1408565333/",
         "reason": null
       },
       {
-        "company_id": "cn-battery-0732",
-        "company_name": "浙江南都电源动力股份有限公司",
-        "source_url": "https://post.mokahr.com/service/extcontent/page/2d9b68f00b0d45f99cb45442990c2cc3/home/3145?cl_source1=%E5%AE%98%E7%BD%91&cl_track=49494&tab=8060",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-elec-0241",
-        "company_name": "立讯精密工业股份有限公司",
-        "source_url": "https://www.luxshare-ict.com/careers.html",
+        "company_id": "cn-autoparts-0750",
+        "company_name": "李尔（中国）投资有限公司",
+        "source_url": "https://jobs.lear.com/job/Southfield-AIP-Innovation-Engineer-iDEA-by-Lear-MI-48033/1381313133/",
         "reason": null
       },
       {
-        "company_id": "cn-env-0599",
-        "company_name": "瀚蓝环境股份有限公司",
-        "source_url": "https://www.grandblue.cn/hanbluedynamic/info.aspx?itemid=9906",
-        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
-      },
-      {
-        "company_id": "cn-fin-0106",
-        "company_name": "上海浦东发展银行股份有限公司",
-        "source_url": "https://job.spdb.com.cn/loginOut",
-        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
-      },
-      {
-        "company_id": "cn-fin-0106",
-        "company_name": "上海浦东发展银行股份有限公司",
-        "source_url": "https://job.spdb.com.cn/outInterviewer",
-        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
-      },
-      {
-        "company_id": "cn-fintech-0642",
-        "company_name": "百融云创科技股份有限公司",
-        "source_url": "https://post.mokahr.com/service/extcontent/page/2d9b68f00b0d45f99cb45442990c2cc3/home/3145?cl_source1=%E5%AE%98%E7%BD%91&cl_track=49494&tab=8060",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-food-0232",
-        "company_name": "河南双汇投资发展股份有限公司",
-        "source_url": "https://www.shuanghui.net/job-50.html",
+        "company_id": "cn-autoparts-0750",
+        "company_name": "李尔（中国）投资有限公司",
+        "source_url": "https://jobs.lear.com/job/Southfield-Advanced-Manufacturing-Engineer-II-MI-48033/1287142901/",
         "reason": null
       },
       {
-        "company_id": "cn-food-0232",
-        "company_name": "河南双汇投资发展股份有限公司",
-        "source_url": "https://www.shuanghui.net/job-51.html",
+        "company_id": "cn-autoparts-0750",
+        "company_name": "李尔（中国）投资有限公司",
+        "source_url": "https://jobs.lear.com/job/Southfield-Director-Risk-Management%2C-Electronics-MI-48033/1400014033/",
         "reason": null
       },
       {
-        "company_id": "cn-game-0619",
-        "company_name": "巨人网络集团股份有限公司",
-        "source_url": "https://post.mokahr.com/service/extcontent/page/2d9b68f00b0d45f99cb45442990c2cc3/home/3145?cl_source1=%E5%AE%98%E7%BD%91&cl_track=49494&tab=8060",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
+        "company_id": "cn-autoparts-0750",
+        "company_name": "李尔（中国）投资有限公司",
+        "source_url": "https://jobs.lear.com/job/Southfield-Enterprise-Ontology-Leader-IDEA-by-Lear-MI-48033/1373318333/",
+        "reason": null
       },
       {
-        "company_id": "cn-game-0622",
-        "company_name": "浙江世纪华通集团股份有限公司",
-        "source_url": "https://post.mokahr.com/service/extcontent/page/2d9b68f00b0d45f99cb45442990c2cc3/home/3145?cl_source1=%E5%AE%98%E7%BD%91&cl_track=49494&tab=8060",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
+        "company_id": "cn-autoparts-0750",
+        "company_name": "李尔（中国）投资有限公司",
+        "source_url": "https://jobs.lear.com/job/Southfield-Fastening-Engineer-Lead-SME-MI-48033/1411955833/",
+        "reason": null
       },
       {
-        "company_id": "cn-health-0361",
-        "company_name": "北京同仁堂股份有限公司",
-        "source_url": "https://www.tongrentang.com/file/upload/2026/05/26/1779786047457.xlsx",
-        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
+        "company_id": "cn-autoparts-0750",
+        "company_name": "李尔（中国）投资有限公司",
+        "source_url": "https://jobs.lear.com/job/Southfield-Human-Resources-Intern-USC-MI/1410370333/",
+        "reason": null
+      },
+      {
+        "company_id": "cn-autoparts-0750",
+        "company_name": "李尔（中国）投资有限公司",
+        "source_url": "https://jobs.lear.com/job/Southfield-Program-Manager-MI-48033/1379154633/",
+        "reason": null
+      },
+      {
+        "company_id": "cn-autoparts-0750",
+        "company_name": "李尔（中国）投资有限公司",
+        "source_url": "https://jobs.lear.com/job/Southfield-Project-Launch-Manager-MI-48033/1392484133/",
+        "reason": null
+      },
+      {
+        "company_id": "cn-autoparts-0750",
+        "company_name": "李尔（中国）投资有限公司",
+        "source_url": "https://jobs.lear.com/job/Southfield-Purchasing-Buyer-TCS-Components-MI-48033/1402056133/",
+        "reason": null
+      },
+      {
+        "company_id": "cn-autoparts-0750",
+        "company_name": "李尔（中国）投资有限公司",
+        "source_url": "https://jobs.lear.com/job/Southfield-Purchasing-Manager-MI-48033/1400917033/",
+        "reason": null
+      },
+      {
+        "company_id": "cn-autoparts-0750",
+        "company_name": "李尔（中国）投资有限公司",
+        "source_url": "https://jobs.lear.com/job/Southfield-Purchasing-Manager-Program-MI-48033/1409502833/",
+        "reason": null
       }
     ],
     "invalid_job_records": 0,
