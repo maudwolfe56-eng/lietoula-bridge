@@ -1,13 +1,15 @@
 {
-  "generated_at": "2026-07-14T02:54:34.738896+00:00",
-  "input_candidate_rows": 9362,
-  "curated_candidate_rows": 5125,
-  "excluded_this_run": 4237,
+  "generated_at": "2026-07-14T04:55:07.058388+00:00",
+  "input_candidate_rows": 32790,
+  "curated_candidate_rows": 5251,
+  "excluded_this_run": 27539,
   "share_wrappers_unwrapped": 1156,
-  "multilingual_or_equivalent_duplicates_removed": 4099,
+  "multilingual_or_equivalent_duplicates_removed": 1356,
   "exclusion_reason_counts": {
-    "ats_vendor_blog_not_employer_job_detail": 138,
-    "duplicate_multilingual_or_equivalent_job_url": 4099
+    "ats_vendor_blog_not_employer_job_detail": 6,
+    "product_or_project_content_not_recruitment": 246,
+    "third_party_exam_position_not_employer_recruitment": 25931,
+    "duplicate_multilingual_or_equivalent_job_url": 1356
   },
   "policy": {
     "official_sources_only": true,
