@@ -1,7 +1,7 @@
 {
-  "requested_at": "2026-07-13T20:18:00Z",
-  "sequence": 1,
-  "purpose": "Classify false-positive and duplicate official detail candidates, route official recruitment announcements, continue bounded navigation and retry-aware detail resolution, rebuild deliverables, and reassess final acceptance",
+  "requested_at": "2026-07-14T00:49:19Z",
+  "sequence": 2,
+  "purpose": "Continue the next bounded official-source audit cycle: process the next uncompleted company entries, classify official recruitment detail candidates, expand recruitment navigation conservatively, resolve public job details and multi-position announcements, rebuild deliverables, and reassess final acceptance",
   "target_companies": 1000,
   "policy": {
     "official_sources_only": true,
