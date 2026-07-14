@@ -1,6 +1,6 @@
 {
   "schema_version": "1.2",
-  "assessed_at": "2026-07-14T05:56:25.035342+00:00",
+  "assessed_at": "2026-07-14T06:35:51.123358+00:00",
   "target_companies": 1000,
   "seeded_unique_companies": 1020,
   "seed_shortfall": 0,
@@ -317,8 +317,8 @@
     }
   ],
   "recruitment_navigation_candidates": 33178,
-  "resolved_recruitment_navigation": 16158,
-  "pending_recruitment_navigation": 17020,
+  "resolved_recruitment_navigation": 16595,
+  "pending_recruitment_navigation": 16583,
   "pending_recruitment_navigation_sample": [
     {
       "company_id": "cn-agri-0497",
