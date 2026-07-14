@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-14T06:35:41.702447+00:00",
+  "generated_at": "2026-07-14T06:48:57.777133+00:00",
   "target_companies": 1000,
   "seeded_companies": 1020,
   "coverage_records": 1061,
@@ -11,13 +11,13 @@
     "candidate_raw": 691,
     "review_pending": 61
   },
-  "failure_records": 8575,
+  "failure_records": 8572,
   "job_change_records": 801,
   "active_verified_records": 0,
   "final_acceptance_met": false,
   "checkpoint": {
     "schema_version": "1.0",
-    "updated_at": "2026-07-14T06:35:41.060403+00:00",
+    "updated_at": "2026-07-14T06:48:57.009233+00:00",
     "target_companies": 1000,
     "valid_seed_count": 1020,
     "official_entries_verified": 14,
@@ -28,7 +28,7 @@
     "job_records_review_pending": 64,
     "job_records_inactive_expired": 23,
     "companies_final_acceptance_met": 0,
-    "next_batch_start_index": 421,
+    "next_batch_start_index": 188,
     "batch_progress": {
       "batch_0001": {
         "companies_reviewed": 10,
@@ -162,13 +162,30 @@
       "new_job_link_default_status": "candidate_raw",
       "review_pending_requires_detail_validation": true,
       "official_entry_verification_requires_recruitment_signal": true,
-      "cross_domain_candidate_requires_verified_seed_association": true,
-      "recruitment_navigation_requires_site_specific_resolution": true,
-      "high_confidence_false_positive_candidate_pruning": true
+      "cross_domain_candidate_requires_verified_seed_association": true
     },
     "last_auto_batch": {
-      "requested_start_index": 647,
+      "requested_start_index": 421,
       "selected_indices": [
+        439,
+        468,
+        483,
+        485,
+        487,
+        500,
+        525,
+        537,
+        542,
+        558,
+        565,
+        574,
+        584,
+        588,
+        602,
+        639,
+        642,
+        644,
+        646,
         649,
         651,
         687,
@@ -199,32 +216,13 @@
         175,
         181,
         183,
-        187,
-        195,
-        227,
-        230,
-        242,
-        243,
-        252,
-        283,
-        296,
-        305,
-        327,
-        329,
-        369,
-        388,
-        393,
-        395,
-        403,
-        416,
-        417,
-        420
+        187
       ],
       "selected_count": 50,
       "processed_count": 50,
       "job_detail_candidates": 0,
-      "recruitment_navigation_links": 16,
-      "max_workers": 8
+      "recruitment_navigation_links": 12,
+      "max_workers": 10
     },
     "pending_seed_audits": 19,
     "merged_seed_sources": [
@@ -264,7 +262,7 @@
     "invalid_job_records": 0,
     "final_acceptance_met": false,
     "notification_eligible": false,
-    "pending_recruitment_navigation": 17020,
+    "pending_recruitment_navigation": 16583,
     "duplicate_job_source_urls": 0,
     "navigation_expansion_last_batch": {
       "enumerator_version": "3.0-bounded-retry-aware",
@@ -298,645 +296,5 @@
     "auto_active_verified": false,
     "salary_inference_allowed": false,
     "login_captcha_or_paywall_bypass_allowed": false
-  },
-  "notification_eligible": false,
-  "final_acceptance_report": {
-    "schema_version": "1.2",
-    "assessed_at": "2026-07-14T06:35:51.123358+00:00",
-    "target_companies": 1000,
-    "seeded_unique_companies": 1020,
-    "seed_shortfall": 0,
-    "companies_with_coverage": 993,
-    "companies_with_explicit_failure_reason": 852,
-    "companies_without_audit_count": 0,
-    "companies_without_audit_sample": [],
-    "job_records": 801,
-    "all_recruitment_candidates": 90462,
-    "probable_job_detail_candidates": 57284,
-    "terminal_detail_failures": 728,
-    "resolved_job_detail_candidates": 514,
-    "pending_job_detail_candidates": 56770,
-    "pending_job_detail_sample": [
-      {
-        "company_id": "cn-autoparts-0748",
-        "company_name": "安波福（中国）投资有限公司",
-        "source_url": "https://www.aptiv.com/en/jobs/25for25",
-        "reason": "strong_detail_url_reclassified_without_content_claim"
-      },
-      {
-        "company_id": "cn-autoparts-0750",
-        "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/viewalljobs/100/",
-        "reason": null
-      },
-      {
-        "company_id": "cn-autoparts-0750",
-        "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/viewalljobs/150/",
-        "reason": null
-      },
-      {
-        "company_id": "cn-autoparts-0750",
-        "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/viewalljobs/200/",
-        "reason": null
-      },
-      {
-        "company_id": "cn-autoparts-0750",
-        "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/viewalljobs/250/",
-        "reason": null
-      },
-      {
-        "company_id": "cn-autoparts-0750",
-        "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/viewalljobs/300/",
-        "reason": null
-      },
-      {
-        "company_id": "cn-autoparts-0750",
-        "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/viewalljobs/350/",
-        "reason": null
-      },
-      {
-        "company_id": "cn-autoparts-0750",
-        "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/viewalljobs/400/",
-        "reason": null
-      },
-      {
-        "company_id": "cn-autoparts-0750",
-        "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/viewalljobs/450/",
-        "reason": null
-      },
-      {
-        "company_id": "cn-autoparts-0750",
-        "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/viewalljobs/50/",
-        "reason": null
-      },
-      {
-        "company_id": "cn-autoparts-0750",
-        "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/viewalljobs/500/",
-        "reason": null
-      },
-      {
-        "company_id": "cn-autoparts-0750",
-        "company_name": "李尔（中国）投资有限公司",
-        "source_url": "https://jobs.lear.com/viewalljobs/900/",
-        "reason": null
-      },
-      {
-        "company_id": "cn-bank-0304",
-        "company_name": "重庆农村商业银行股份有限公司",
-        "source_url": "https://www.cqrcb.com/cqrcb/aboutus/job/334094.html",
-        "reason": null
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250106/35171.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250106/35172.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250106/35173.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250106/35174.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250106/35175.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250113/35219.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250113/35220.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250120/35311.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250214/35452.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250417/35917.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250417/35918.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250523/36131.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250523/36132.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250611/36244.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250703/36400.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250901/36730.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250901/36731.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250901/36732.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250901/36733.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250901/36734.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250901/36735.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250901/36736.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250901/36737.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250901/36738.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250901/36739.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250901/36740.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250901/36741.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250901/36742.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250901/36743.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250901/36744.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20250901/36745.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20251013/36956.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20251013/36957.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20251013/36958.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20251013/36959.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20251013/36960.html",
-        "reason": "official_multi_position_announcement"
-      },
-      {
-        "company_id": "cn-bank-0344",
-        "company_name": "广东南粤银行股份有限公司",
-        "source_url": "https://www.gdnybank.com/jobnews/20251013/36961.html",
-        "reason": "official_multi_position_announcement"
-      }
-    ],
-    "recruitment_navigation_candidates": 33178,
-    "resolved_recruitment_navigation": 16595,
-    "pending_recruitment_navigation": 16583,
-    "pending_recruitment_navigation_sample": [
-      {
-        "company_id": "cn-agri-0497",
-        "company_name": "温氏食品集团股份有限公司",
-        "source_url": "https://post.mokahr.com/service/extcontent/page/2d9b68f00b0d45f99cb45442990c2cc3/home/3145?cl_source1=%E5%AE%98%E7%BD%91&cl_track=49494&tab=8060",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-ai-0630",
-        "company_name": "中科寒武纪科技股份有限公司",
-        "source_url": "https://post.mokahr.com/service/extcontent/page/2d9b68f00b0d45f99cb45442990c2cc3/home/3145?cl_source1=%E5%AE%98%E7%BD%91&cl_track=49494&tab=8060",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-air-0272",
-        "company_name": "春秋航空股份有限公司",
-        "source_url": "https://job.ch.com/",
-        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
-      },
-      {
-        "company_id": "cn-autoparts-0702",
-        "company_name": "宁波均胜电子股份有限公司",
-        "source_url": "https://post.mokahr.com/service/extcontent/page/2d9b68f00b0d45f99cb45442990c2cc3/home/3145?cl_source1=%E5%AE%98%E7%BD%91&cl_track=49494&tab=8060",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-battery-0732",
-        "company_name": "浙江南都电源动力股份有限公司",
-        "source_url": "https://post.mokahr.com/service/extcontent/page/2d9b68f00b0d45f99cb45442990c2cc3/home/3145?cl_source1=%E5%AE%98%E7%BD%91&cl_track=49494&tab=8060",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-elec-0241",
-        "company_name": "立讯精密工业股份有限公司",
-        "source_url": "https://www.luxshare-ict.com/careers.html",
-        "reason": null
-      },
-      {
-        "company_id": "cn-env-0599",
-        "company_name": "瀚蓝环境股份有限公司",
-        "source_url": "https://www.grandblue.cn/hanbluedynamic/info.aspx?itemid=9906",
-        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
-      },
-      {
-        "company_id": "cn-fin-0106",
-        "company_name": "上海浦东发展银行股份有限公司",
-        "source_url": "https://job.spdb.com.cn/loginOut",
-        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
-      },
-      {
-        "company_id": "cn-fin-0106",
-        "company_name": "上海浦东发展银行股份有限公司",
-        "source_url": "https://job.spdb.com.cn/outInterviewer",
-        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
-      },
-      {
-        "company_id": "cn-fintech-0642",
-        "company_name": "百融云创科技股份有限公司",
-        "source_url": "https://post.mokahr.com/service/extcontent/page/2d9b68f00b0d45f99cb45442990c2cc3/home/3145?cl_source1=%E5%AE%98%E7%BD%91&cl_track=49494&tab=8060",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-food-0232",
-        "company_name": "河南双汇投资发展股份有限公司",
-        "source_url": "https://www.shuanghui.net/job-50.html",
-        "reason": null
-      },
-      {
-        "company_id": "cn-food-0232",
-        "company_name": "河南双汇投资发展股份有限公司",
-        "source_url": "https://www.shuanghui.net/job-51.html",
-        "reason": null
-      },
-      {
-        "company_id": "cn-game-0619",
-        "company_name": "巨人网络集团股份有限公司",
-        "source_url": "https://post.mokahr.com/service/extcontent/page/2d9b68f00b0d45f99cb45442990c2cc3/home/3145?cl_source1=%E5%AE%98%E7%BD%91&cl_track=49494&tab=8060",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-game-0622",
-        "company_name": "浙江世纪华通集团股份有限公司",
-        "source_url": "https://post.mokahr.com/service/extcontent/page/2d9b68f00b0d45f99cb45442990c2cc3/home/3145?cl_source1=%E5%AE%98%E7%BD%91&cl_track=49494&tab=8060",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-health-0361",
-        "company_name": "北京同仁堂股份有限公司",
-        "source_url": "https://www.tongrentang.com/file/upload/2026/05/26/1779786047457.xlsx",
-        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
-      },
-      {
-        "company_id": "cn-health-0361",
-        "company_name": "北京同仁堂股份有限公司",
-        "source_url": "https://www.tongrentang.com/file/upload/2026/05/26/1779786059287.doc",
-        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
-      },
-      {
-        "company_id": "cn-health-0369",
-        "company_name": "浙江海正药业股份有限公司",
-        "source_url": "https://www.hisunpharm.com/main/file/2026-02-06/1770361631551000000009b54440e524019c31c6b33f246b.pdf",
-        "reason": "public_page_reached_but_no_enumerable_links_or_explicit_no_openings_text_observed"
-      },
-      {
-        "company_id": "cn-ins-0350",
-        "company_name": "众安在线财产保险股份有限公司",
-        "source_url": "https://post.mokahr.com/service/extcontent/page/2d9b68f00b0d45f99cb45442990c2cc3/home/3145?cl_source1=%E5%AE%98%E7%BD%91&cl_track=49494&tab=8060",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-logistics-0891",
-        "company_name": "满帮集团有限公司",
-        "source_url": "https://post.mokahr.com/service/extcontent/page/2d9b68f00b0d45f99cb45442990c2cc3/home/3145?cl_source1=%E5%AE%98%E7%BD%91&cl_track=49494&tab=8060",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-machinery-0579",
-        "company_name": "广西玉柴机器集团有限公司",
-        "source_url": "https://post.mokahr.com/service/extcontent/page/2d9b68f00b0d45f99cb45442990c2cc3/home/3145?cl_source1=%E5%AE%98%E7%BD%91&cl_track=49494&tab=8060",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/31431646656",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/31431646656?languageCode=zh-hans",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/32220883712",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/32221056448",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/33302268928",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/37057165952",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/37057165952?languageCode=zh-hans",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/38904656576",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/38904656576?languageCode=zh-hans",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/39390346752",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/39390347072",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/39421429248",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/39560148672",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/39560148672?languageCode=zh-hans",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/39985213952",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/39985213952?languageCode=zh-hans",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/40706917184",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/40725348288",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/40761080896",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/40761080896?languageCode=zh-hans",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/40786875968",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/40801316352",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/40837915712",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/40837915840",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/40860673600",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/40879450880",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/40969594112",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/40969594112?languageCode=zh-hans",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/41120766592",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      },
-      {
-        "company_id": "cn-mnc-1046",
-        "company_name": "赛诺菲（中国）投资有限公司",
-        "source_url": "https://jobs.sanofi.cn/sys/apply/job/application/2649/41129419136",
-        "reason": "javascript_shell_no_public_html_job_enumeration"
-      }
-    ],
-    "invalid_job_records": 0,
-    "duplicate_job_source_urls": 0,
-    "active_verified_records": 0,
-    "conditions": {
-      "seed_target_reached": true,
-      "all_seed_companies_accounted_for": true,
-      "all_discovered_job_detail_links_resolved": false,
-      "all_recruitment_navigation_enumerated": false,
-      "all_jobs_have_identity_title_and_source": true,
-      "job_source_urls_unique": true,
-      "no_auto_active_verified_records": true,
-      "deliverable_set_present": true
-    },
-    "final_acceptance_met": false,
-    "notification_eligible": false
   }
 }
