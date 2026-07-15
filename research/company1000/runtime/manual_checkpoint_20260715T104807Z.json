@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "manual_batch_0585_0588_20260715T104807Z",
+  "generated_at_utc": "2026-07-15T10:48:07+00:00",
+  "source_branch": "research/company1000-crawler-20260713",
+  "seed_index_range": {
+    "start_inclusive": 585,
+    "end_exclusive": 589
+  },
+  "companies_audited": 4,
+  "company_ids": [
+    "cn-machinery-0585",
+    "cn-machinery-0586",
+    "cn-electric-0587",
+    "cn-electric-0588"
+  ],
+  "official_entries_verified_this_run": 1,
+  "official_sites_reached_without_recruitment_signal": 1,
+  "restricted_or_transient_failures": 2,
+  "job_records_created": 0,
+  "active_verified_created": 0,
+  "final_acceptance_met_this_run": 0,
+  "canonical_checkpoint_advanced": false,
+  "reason_canonical_checkpoint_not_advanced": "None of the four companies reached a complete enumerable-job or explicit auditable restricted/no-openings terminal conclusion. Each remains in the retry or site-specific follow-up queue.",
+  "next_actions": [
+    "Resolve the public social-recruitment CTA or official ATS endpoint linked from https://www.hangyang.com/personnel.html without bypassing access controls, then enumerate all open roles or capture explicit no-openings evidence.",
+    "Retry https://www.shaangu.com/ and identify an official recruitment entry; preserve a timeout/restriction conclusion if the public site remains unavailable.",
+    "Search official Wolong group/member-company public pages for a recruitment entry because the corporate homepage exposes no recruitment signal.",
+    "Retry the official CHINT site or an official first-party recruitment subdomain; do not use third-party job listings as the unique source URL.",
+    "Rebuild coverage, failures, import package and final acceptance report after terminal evidence or job records are obtained."
+  ],
+  "artifacts": {
+    "coverage": "output/coverage_manual_batch_0585_0588_20260715.jsonl",
+    "failures": "output/failures_manual_batch_0585_0588_20260715.jsonl"
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false,
+    "new_job_default_status": "candidate_raw"
+  }
+}
