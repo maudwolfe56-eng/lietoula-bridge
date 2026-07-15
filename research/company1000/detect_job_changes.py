@@ -26,6 +26,7 @@ CURRENT = DELIVERABLES / "JobImport.jsonl"
 BEFORE = RUNTIME / "job_snapshot_before_run.jsonl"
 CHANGES_JSONL = DELIVERABLES / "JobChanges.jsonl"
 CHANGES_CSV = DELIVERABLES / "JobChanges.csv"
+CHANGES_BEFORE = RUNTIME / "job_changes_before_run.jsonl"
 
 MATERIAL_FIELDS = (
     "company_id",
@@ -129,11 +130,24 @@ def capture() -> int:
     RUNTIME.mkdir(parents=True, exist_ok=True)
     if CURRENT.exists():
         shutil.copyfile(CURRENT, BEFORE)
-        count = len(read_jsonl(BEFORE))
+        job_count = len(read_jsonl(BEFORE))
     else:
         BEFORE.write_text("", encoding="utf-8")
-        count = 0
-    print(json.dumps({"captured_previous_jobs": count, "snapshot": str(BEFORE)}, ensure_ascii=False))
+        job_count = 0
+
+    if CHANGES_JSONL.exists():
+        shutil.copyfile(CHANGES_JSONL, CHANGES_BEFORE)
+        change_count = len(read_jsonl(CHANGES_BEFORE))
+    else:
+        CHANGES_BEFORE.write_text("", encoding="utf-8")
+        change_count = 0
+
+    print(json.dumps({
+        "captured_previous_jobs": job_count,
+        "captured_change_history": change_count,
+        "job_snapshot": str(BEFORE),
+        "change_snapshot": str(CHANGES_BEFORE),
+    }, ensure_ascii=False))
     return 0
 
 
@@ -166,7 +180,7 @@ def change_record(
 def detect() -> int:
     previous_rows = read_jsonl(BEFORE)
     current_rows = read_jsonl(CURRENT)
-    history = read_jsonl(CHANGES_JSONL)
+    history = read_jsonl(CHANGES_BEFORE) if CHANGES_BEFORE.exists() else read_jsonl(CHANGES_JSONL)
 
     previous = {identity(row): row for row in previous_rows}
     current = {identity(row): row for row in current_rows}
@@ -217,6 +231,7 @@ def detect() -> int:
     print(json.dumps({
         "previous_jobs": len(previous_rows),
         "current_jobs": len(current_rows),
+        "prior_change_history": len(history),
         "detected_changes": len(detected),
         "appended_changes": appended,
         "total_change_history": len(merged),
