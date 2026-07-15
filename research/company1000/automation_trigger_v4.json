@@ -1,27 +1,6 @@
 {
-  "requested_at": "2026-07-15T01:31:56Z",
-  "sequence": 28,
-  "purpose": "Continue unattended company1000 processing from the persisted checkpoint: prioritize unresolved and not-yet-touched official recruitment entries, advance the next company audit batch from next_batch_start_index, perform two-pass detail classification, resolve only publicly accessible embedded and HTML job payloads, route official multi-position announcements separately, deduplicate by company_id plus canonical detail URL, detect new/modified/closed/expired records, rebuild CompanySource/JobImport/Coverage/Failures/JobChanges/run_summary, and reassess final acceptance without auto-verifying any job",
+  "requested_at": "2026-07-15T02:27:35Z",
+  "sequence": 29,
   "target_companies": 1000,
-  "execution": {
-    "company_audit_batch_size": 50,
-    "navigation_batch_size": 800,
-    "embedded_batch_size": 500,
-    "html_detail_batch_size": 400,
-    "announcement_batch_size": 200,
-    "classification_passes": 2
-  },
-  "policy": {
-    "official_sources_only": true,
-    "public_bytes_only": true,
-    "auto_active_verified": false,
-    "salary_inference_allowed": false,
-    "access_control_bypass_allowed": false,
-    "new_job_link_default_status": "candidate_raw",
-    "review_pending_requires_detail_validation": true,
-    "transient_failures_remain_retryable": true,
-    "navigation_pages_must_not_count_as_job_details": true,
-    "official_multi_position_announcements_are_routed_separately": true,
-    "resolution_scope": "company_id_plus_canonical_source_url"
-  }
+  "mode": "continue_from_persisted_checkpoint"
 }
