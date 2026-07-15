@@ -43,14 +43,19 @@ jobs:
             resolve_embedded_job_data.py \
             resolve_job_detail_candidates.py resolve_job_detail_candidates_safe.py resolve_job_detail_candidates_v3.py \
             summarize_detail_failures.py resolve_multi_position_announcements.py \
+            materialize_manual_gdny_20260715_pass2.py detect_job_changes.py \
             build_import_package.py ensure_unique_job_source_urls.py assess_final_acceptance.py assess_final_acceptance_v2.py
+      - name: Capture prior job and change snapshots
+        working-directory: research/company1000
+        run: |
+          mkdir -p output runtime logs deliverables
+          python detect_job_changes.py capture | tee logs/capture_job_snapshot.log
       - name: Audit remaining sources
         id: batch
         continue-on-error: true
         working-directory: research/company1000
         run: |
           set -o pipefail
-          mkdir -p output runtime logs deliverables
           python crawl_company_jobs_merged.py --seed-file company_seed_1000.json --output-dir output --state-file runtime/checkpoint.json --batch-size 50 | tee logs/next_batch_auto.log
       - name: Reclassify existing ATS URLs
         id: reclassify
@@ -112,11 +117,28 @@ jobs:
         run: |
           set -o pipefail
           python resolve_multi_position_announcements.py --output-dir output --batch-size 200 --max-workers 8 --max-attempts 3 | tee logs/resolve_multi_position_announcements.log
-      - name: Build package and acceptance
+      - name: Materialize verified manual official-source observations
+        if: always()
+        working-directory: research/company1000
+        run: python materialize_manual_gdny_20260715_pass2.py | tee logs/materialize_manual_gdny_20260715_pass2.log
+      - name: Build package, detect changes and assess acceptance
         if: always()
         working-directory: research/company1000
         run: |
           python build_import_package.py | tee logs/build_import_package.log
+          python detect_job_changes.py detect | tee logs/detect_job_changes.log
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          summary_path = Path('deliverables/run_summary.json')
+          changes_path = Path('deliverables/JobChanges.jsonl')
+          if summary_path.exists():
+              summary = json.loads(summary_path.read_text(encoding='utf-8'))
+              count = sum(1 for line in changes_path.read_text(encoding='utf-8', errors='replace').splitlines() if line.strip()) if changes_path.exists() else 0
+              summary['job_change_records'] = count
+              summary['job_change_detection'] = {'mode': 'persistent_snapshot_comparison', 'history_preserved': True, 'active_verified_created': 0}
+              summary_path.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding='utf-8')
+          PY
           python ensure_unique_job_source_urls.py | tee logs/ensure_unique_job_source_urls.log
           python assess_final_acceptance_v2.py | tee logs/assess_final_acceptance.log
       - name: Record outcome
@@ -139,6 +161,8 @@ jobs:
             'embedded': '${{ steps.embedded.outcome }}',
             'detail': '${{ steps.detail.outcome }}',
             'announcement': '${{ steps.announcement.outcome }}',
+            'manual_official_observations': 'materialize_manual_gdny_20260715_pass2.py',
+            'job_change_detection': 'detect_job_changes.py',
             'mode': 'two_pass_classification_and_accelerated_detail_resolution_retry6'
           }, ensure_ascii=False, indent=2), encoding='utf-8')
           PY
