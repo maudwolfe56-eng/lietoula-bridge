@@ -1,6 +1,6 @@
 {
-  "requested_at": "2026-07-15T06:29:53Z",
-  "sequence": 1,
+  "requested_at": "2026-07-15T06:44:27Z",
+  "sequence": 2,
   "target_branch": "research/company1000-crawler-20260713",
   "mode": "continue_from_persisted_checkpoint",
   "policy": {
