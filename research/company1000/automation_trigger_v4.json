@@ -1,6 +1,6 @@
 {
-  "requested_at": "2026-07-15T10:35:04Z",
-  "sequence": 34,
+  "requested_at": "2026-07-15T10:48:07Z",
+  "sequence": 35,
   "target_companies": 1000,
   "mode": "continue_from_persisted_checkpoint"
 }
