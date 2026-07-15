@@ -47,6 +47,7 @@ jobs:
             enumerate_recruitment_navigation_v4.py \
             resolve_embedded_job_data.py resolve_job_detail_candidates_v3.py \
             summarize_detail_failures.py resolve_multi_position_announcements.py \
+            materialize_manual_gdny_20260715_pass2.py \
             build_import_package.py ensure_unique_job_source_urls.py assess_final_acceptance_v2.py
 
       - name: Audit next unresolved company-source batch
@@ -119,6 +120,12 @@ jobs:
             --output-dir output --batch-size 200 --max-workers 8 --max-attempts 3 \
             | tee logs/resolve_multi_position_announcements.log
 
+      - name: Materialize verified manual official-source observations
+        if: always()
+        working-directory: research/company1000
+        run: |
+          python materialize_manual_gdny_20260715_pass2.py | tee logs/materialize_manual_gdny_20260715_pass2.log
+
       - name: Build auditable package and final acceptance report
         if: always()
         working-directory: research/company1000
@@ -145,6 +152,7 @@ jobs:
             'classify_post_navigation': '${{ steps.classify_post.outcome }}',
             'details': '${{ steps.details.outcome }}',
             'announcements': '${{ steps.announcements.outcome }}',
+            'manual_official_observations': 'materialize_manual_gdny_20260715_pass2.py',
             'policy': {
               'official_sources_only': True,
               'bypass_access_controls': False,
