@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-16T20:45:53+00:00",
+  "batch": "0184_0187",
+  "updates": [
+    {
+      "company_id": "cn-fin-0184",
+      "official_entry_status": "verified",
+      "public_inventory_status": "2026_fixed_deadline_announcements_expired_group_search_and_member_inventory_pending",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "group_member_current_inventory_and_job_search_payload_not_fully_enumerated"
+    },
+    {
+      "company_id": "cn-fin-0185",
+      "official_entry_status": "verified_officially_linked_moka",
+      "public_inventory_status": "dynamic_portal_redirect_loop_inventory_pending",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_moka_portal_redirect_loop_public_inventory_not_enumerated"
+    },
+    {
+      "company_id": "cn-fin-0186",
+      "official_entry_status": "verified",
+      "public_inventory_status": "recruitment_platform_reference_present_target_and_inventory_pending",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_join_page_does_not_expose_recruitment_platform_target_or_current_inventory"
+    },
+    {
+      "company_id": "cn-fin-0187",
+      "official_entry_status": "verified_current_fetch_http_502",
+      "public_inventory_status": "latest_2025_notice_expired_current_inventory_not_revalidated",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_career_site_http_502_current_inventory_not_revalidated"
+    }
+  ],
+  "totals": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "roles_added": 0,
+    "final_acceptance_met": 0,
+    "active_verified_created": 0
+  }
+}
