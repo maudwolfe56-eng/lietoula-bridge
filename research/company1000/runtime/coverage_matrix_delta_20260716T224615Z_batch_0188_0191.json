@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-16T22:46:15+00:00",
+  "batch": "0188_0191",
+  "updates": [
+    {
+      "company_id": "cn-amc-0188",
+      "official_entry_status": "verified",
+      "public_inventory_status": "long_term_and_recent_official_announcements_partially_normalized_application_endpoints_and_older_pages_pending",
+      "final_acceptance_met": false,
+      "roles_added": 5,
+      "failure_reason": "official_short_link_targets_and_older_no_deadline_announcements_not_fully_revalidated"
+    },
+    {
+      "company_id": "cn-sec-0189",
+      "official_entry_status": "verified",
+      "public_inventory_status": "headquarters_empty_states_observed_branch_dynamic_inventory_pending",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "branch_social_and_internship_dynamic_payload_not_fully_enumerated"
+    },
+    {
+      "company_id": "cn-sec-0190",
+      "official_entry_status": "verified_official_zhiye",
+      "public_inventory_status": "dynamic_zhiye_inventory_pending",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_zhiye_dynamic_job_inventory_not_exposed_in_public_static_response"
+    },
+    {
+      "company_id": "cn-sec-0191",
+      "official_entry_status": "verified_official_hotjob",
+      "public_inventory_status": "dynamic_hotjob_inventory_pending",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_hotjob_dynamic_job_inventory_not_exposed_in_public_static_response"
+    }
+  ],
+  "totals": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "roles_added": 5,
+    "candidate_raw_added": 5,
+    "final_acceptance_met": 0,
+    "active_verified_created": 0
+  }
+}
