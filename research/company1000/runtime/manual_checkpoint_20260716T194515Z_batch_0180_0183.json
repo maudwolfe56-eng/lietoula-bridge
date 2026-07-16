@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-16T19:45:15+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "batch": "0180_0183",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-ins-0180",
+      "company_name": "前海人寿保险股份有限公司",
+      "official_entry_verified": false,
+      "official_entry_url": "https://www.foresealife.com/",
+      "roles_normalized": 0,
+      "final_acceptance_met": false,
+      "next_action": "使用合规浏览器渲染或官方公开链接复核官网招聘入口，并确认第三方招聘专题是否由官方域名直接链接；不得绕过HTTP方法限制、登录或验证码。"
+    },
+    {
+      "company_id": "cn-amc-0181",
+      "company_name": "中国信达资产管理股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.cinda.com.cn/home/pc/cn/xdjt/xdjtpd/rczp/20181228/223004.shtml",
+      "roles_normalized": 0,
+      "final_acceptance_met": false,
+      "next_action": "逐一审计33家分公司和子公司招聘页的当前申请状态、截止日期和唯一来源URL；过期公告保留审计证据但不得作为当前岗位导入。"
+    },
+    {
+      "company_id": "cn-amc-0182",
+      "company_name": "中国东方资产管理股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.coamc.com.cn/rlzy_1816/xxgk/",
+      "roles_normalized": 1,
+      "final_acceptance_met": false,
+      "next_action": "完整枚举官方Zhiye社会招聘门户及集团成员招聘渠道，确认常态化分公司副职的具体机构库存和独立详情URL；所有记录保持candidate_raw或review_pending。"
+    },
+    {
+      "company_id": "cn-amc-0183",
+      "company_name": "中国长城资产管理股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.gwamcc.com/JobInfo.aspx?liName=129",
+      "roles_normalized": 0,
+      "final_acceptance_met": false,
+      "next_action": "使用合规公开渲染或站点适配器核验集团Zhiye门户，并继续审计长城国瑞证券、长城新盛信托、长城国富置业等成员招聘入口；静态空白页不得解释为无岗位。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 3,
+    "public_roles_normalized": 1,
+    "final_acceptance_met": 0,
+    "retry_required": 4,
+    "active_verified_created": 0
+  },
+  "next_batch": {
+    "start_index": 184,
+    "end_index_inclusive": 187,
+    "expected_company_ids": [
+      "cn-fin-0184",
+      "cn-fin-0185",
+      "cn-fin-0186",
+      "cn-fin-0187"
+    ]
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
