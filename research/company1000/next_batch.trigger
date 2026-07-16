@@ -1,1 +1,1 @@
-2026-07-17T06:31:04+08:00 mode=next_unprocessed batch_size=50 max_workers=10 automation_turn=1 purpose=continue_remaining_incomplete_company_audits_rebuild_coverage_failures_checkpoint_and_import_package
+2026-07-17T07:31:00+08:00 mode=next_unprocessed batch_size=50 max_workers=10 automation_turn=1 purpose=continue_remaining_incomplete_company_audits_rebuild_coverage_failures_checkpoint_jobchanges_and_import_package
