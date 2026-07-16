@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "manual_batch_0997_1000_20260716",
+  "observed_at": "2026-07-16T03:44:57+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "seed_start_index": 996,
+  "seed_end_index_exclusive": 1000,
+  "company_ids": [
+    "cn-gas-0997",
+    "cn-water-0998",
+    "cn-water-0999",
+    "cn-env-1000"
+  ],
+  "processed_count": 4,
+  "official_recruitment_entries_verified": 1,
+  "official_corporate_sites_verified_without_recruitment_entry": 1,
+  "roles_normalized_this_run": 0,
+  "final_acceptance_met_count": 0,
+  "retryable_unresolved_count": 4,
+  "next_manual_batch_start_index": 1000,
+  "target_1000_sequential_seed_tail_audited": true,
+  "global_runtime_checkpoint_mutated": false,
+  "reason_global_checkpoint_preserved": "All four observations remain unresolved or incomplete; the automated crawler must retain them in its retry set. Auditing the sequential seed tail does not satisfy global acceptance because unresolved coverage, navigation and detail queues remain.",
+  "output_files": {
+    "coverage": "output/coverage_manual_batch_0997_1000_20260716.jsonl",
+    "failures": "output/failures_manual_batch_0997_1000_20260716.jsonl",
+    "jobs": null
+  },
+  "policy": {
+    "official_sources_only": true,
+    "access_control_bypassed": false,
+    "salary_inference": false,
+    "auto_active_verified": false,
+    "third_party_listing_promoted_to_official": false
+  }
+}
