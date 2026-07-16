@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "manual_batch_0017_0020_20260716T073045Z",
+  "observed_at": "2026-07-16T07:30:45+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "seed_start_index": 16,
+  "seed_end_index_exclusive": 20,
+  "company_ids": [
+    "cn-soe-0017",
+    "cn-soe-0018",
+    "cn-soe-0019",
+    "cn-soe-0020"
+  ],
+  "processed_count": 4,
+  "official_recruitment_entries_verified": 2,
+  "official_recruitment_entries_pending": 2,
+  "roles_normalized_this_run": 0,
+  "candidate_raw_created": 0,
+  "review_pending_created": 0,
+  "active_verified_created": 0,
+  "final_acceptance_met_count": 0,
+  "retryable_unresolved_count": 4,
+  "next_manual_priority": [
+    "cn-soe-0017: recheck the official recruitment domain with a compliant public browser or documented official endpoint without bypassing HTTP 412, login or CAPTCHA",
+    "cn-soe-0018: identify the portal's documented public listing mechanism or use compliant rendered-browser enumeration, then capture unique official detail URLs",
+    "cn-soe-0019: verify the ATS association from an official CNOOC page and enumerate only publicly reachable official openings without bypassing HTTP 403",
+    "cn-soe-0020: enumerate public recruitment announcements and role lists through official navigation while avoiding registration or login; discard login links as job candidates"
+  ],
+  "global_runtime_checkpoint_mutated": false,
+  "reason_global_checkpoint_preserved": "All four companies remain incomplete under final acceptance and must stay in automated or manual retry queues. No auditable public role detail met the minimum JobImport field threshold in this run.",
+  "output_files": {
+    "coverage": "output/coverage_manual_batch_0017_0020_20260716T073045Z.jsonl",
+    "failures": "output/failures_manual_batch_0017_0020_20260716T073045Z.jsonl",
+    "jobs": null
+  },
+  "source_observations": {
+    "cnpc_recruitment_http_status": 412,
+    "cnpc_corporate_http_status": 412,
+    "sinopec_recruitment_http_status": 200,
+    "sinopec_page_title": "中国石化招聘网站",
+    "sinopec_enumerable_role_count": 0,
+    "cnooc_current_association_verified": false,
+    "cnooc_prior_automated_http_status": 403,
+    "chnenergy_corporate_direct_recruitment_link_verified": true,
+    "chnenergy_recruitment_http_status": 200,
+    "chnenergy_public_navigation_observed": [
+      "招聘公告",
+      "校园招聘",
+      "春招统招",
+      "社会招聘"
+    ],
+    "chnenergy_enumerable_role_count": 0
+  },
+  "policy": {
+    "official_sources_only": true,
+    "access_control_bypassed": false,
+    "salary_inference": false,
+    "auto_active_verified": false,
+    "third_party_listing_promoted_to_official": false
+  }
+}
