@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-16T20:45:53+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "batch": "0184_0187",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-fin-0184",
+      "company_name": "中国光大集团股份公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.ebchina.com/ebchina/jrgd/index.html",
+      "roles_normalized": 0,
+      "final_acceptance_met": false,
+      "next_action": "使用官方岗位搜索页面的合规公开接口或浏览器渲染完整枚举集团当前岗位，并逐一审计光大银行、光大证券、光大永明、光大金瓯等成员企业的当前库存；已过期公告仅保留审计证据。"
+    },
+    {
+      "company_id": "cn-fin-0185",
+      "company_name": "中国投资有限责任公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.china-inv.cn/china_inv/Careers/Join_Us.shtml",
+      "roles_normalized": 0,
+      "final_acceptance_met": false,
+      "next_action": "通过合规浏览器渲染或官方公开数据请求复核由官网直接链接的Moka招聘门户，完整枚举当前岗位；不得绕过登录、验证码、Cookie限制或其他访问控制。"
+    },
+    {
+      "company_id": "cn-fin-0186",
+      "company_name": "中央汇金投资有限责任公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.huijin-inv.cn/huijin-inv/Join_Us/index.shtml",
+      "roles_normalized": 0,
+      "final_acceptance_met": false,
+      "next_action": "从官方页面脚本、可公开访问的导航或中投招聘系统中取得可审计的平台目标，并按中央汇金雇主筛选完整枚举当前岗位；不能以历史系统链接替代当前库存核验。"
+    },
+    {
+      "company_id": "cn-fin-0187",
+      "company_name": "中国证券金融股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.csf.com.cn/",
+      "roles_normalized": 0,
+      "final_acceptance_met": false,
+      "next_action": "在官方站点恢复公开访问后重新审计工作机会栏目和全部招聘公告，确认是否存在2026当前岗位或取得明确无公开岗位证据；HTTP 502期间不得推定无岗位。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "public_roles_normalized": 0,
+    "final_acceptance_met": 0,
+    "retry_required": 4,
+    "active_verified_created": 0
+  },
+  "next_batch": {
+    "start_index": 188,
+    "end_index_inclusive": 191,
+    "expected_company_ids": [
+      "cn-amc-0188",
+      "cn-sec-0189",
+      "cn-sec-0190",
+      "cn-sec-0191"
+    ]
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
