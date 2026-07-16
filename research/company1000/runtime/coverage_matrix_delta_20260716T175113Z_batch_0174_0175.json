@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-16T17:51:13+00:00",
+  "batch": "0174_0175",
+  "summary": {
+    "companies_reviewed": 2,
+    "official_entries_verified": 2,
+    "public_roles_normalized": 0,
+    "final_acceptance_met": 0,
+    "retry_required": 2,
+    "active_verified_created": 0
+  },
+  "companies": [
+    {
+      "company_id": "cn-ins-0174",
+      "company_name": "中国太平洋保险（集团）股份有限公司",
+      "official_entry_status": "verified",
+      "enumeration_status": "pending_subsidiary_dynamic_portal_enumeration",
+      "career_url": "https://www.cpic.com.cn/aboutUs/rlzy/ygzp/",
+      "last_checked_at": "2026-07-16T17:51:13+00:00",
+      "active_job_count_captured": 0,
+      "evidence": "Official group 员工招聘 page was reachable but exposed no role rows. An official Pacific Health Insurance page linked a Moka application portal; the public fetch encountered a redirect loop, so the subsidiary role inventory remains pending."
+    },
+    {
+      "company_id": "cn-ins-0175",
+      "company_name": "新华人寿保险股份有限公司",
+      "official_entry_status": "verified",
+      "enumeration_status": "pending_official_wechat_recruitment_detail_access",
+      "career_url": "https://www.newchinalife.com/node/880_4",
+      "last_checked_at": "2026-07-16T17:51:13+00:00",
+      "active_job_count_captured": 0,
+      "recruitment_announcements_observed": 2,
+      "evidence": "Official corporate news index listed 2026 spring campus recruitment dated 2026-03-25 and system-wide social recruitment dated 2026-04-19. Both role-detail publications were on the official WeChat account and were unavailable to the current public fetch environment."
+    }
+  ]
+}
