@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-16T18:47:41+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "automation_sequence_requested": 62,
+  "batch": "0176_0179",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-ins-0176",
+      "company_name": "泰康保险集团股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.taikang.com/",
+      "roles_normalized": 11,
+      "final_acceptance_met": false,
+      "next_action": "继续按集团成员清单核验泰康人寿、泰康养老、泰康在线、泰康资产、泰康之家、泰康医疗及泰康口腔的公开招聘入口；对公开Zhiye路由使用合规渲染或站点适配器，不绕过访问控制。"
+    },
+    {
+      "company_id": "cn-ins-0177",
+      "company_name": "阳光保险集团股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://sunzhaopin.sinosig.com/",
+      "roles_normalized": 1,
+      "final_acceptance_met": false,
+      "next_action": "完整枚举社会招聘、校园招聘和实习生招聘分页，对每个唯一详情URL核验申请动作、字段和时效；所有记录保持candidate_raw或review_pending。"
+    },
+    {
+      "company_id": "cn-ins-0178",
+      "company_name": "大家保险集团有限责任公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://djbx.zhiye.com/campus",
+      "recruitment_announcements_observed": 1,
+      "roles_normalized": 0,
+      "final_acceptance_met": false,
+      "next_action": "使用合规公开渲染或Zhiye站点适配器枚举2026校园及其他公开频道；壳页不得解释为无岗位。"
+    },
+    {
+      "company_id": "cn-ins-0179",
+      "company_name": "富德生命人寿保险股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.sino-life.com/job/",
+      "roles_normalized": 0,
+      "final_acceptance_met": true,
+      "terminal_conclusion": "restricted_login_password_captcha",
+      "next_action": "除非官方开放无需登录和验证码的当前岗位清单，否则保留终局受限结论；定期复核入口变化。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "public_roles_normalized": 12,
+    "final_acceptance_met": 1,
+    "retry_required": 3,
+    "active_verified_created": 0
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
