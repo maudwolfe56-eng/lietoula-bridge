@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-16T17:51:13+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "automation_sequence_requested": 61,
+  "companies_reviewed": [
+    {
+      "company_id": "cn-ins-0174",
+      "company_name": "中国太平洋保险（集团）股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.cpic.com.cn/aboutUs/rlzy/ygzp/",
+      "roles_normalized": 0,
+      "final_acceptance_met": false,
+      "next_action": "Enumerate official subsidiary recruitment portals with a compliant rendered-browser or site-specific public-data adapter; retain candidate_raw/review_pending only after unique role detail pages are observed."
+    },
+    {
+      "company_id": "cn-ins-0175",
+      "company_name": "新华人寿保险股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.newchinalife.com/node/880_4",
+      "recruitment_announcements_observed": 2,
+      "roles_normalized": 0,
+      "final_acceptance_met": false,
+      "next_action": "Revisit the two official WeChat recruitment publications or an official public application portal using a compliant browser; enumerate role-level fields and verify whether applications remain open."
+    }
+  ],
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
