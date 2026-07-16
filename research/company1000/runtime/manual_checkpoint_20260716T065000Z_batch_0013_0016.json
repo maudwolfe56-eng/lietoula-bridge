@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "manual_batch_0013_0016_20260716T0650Z",
+  "observed_at": "2026-07-16T06:50:00+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "seed_start_index": 12,
+  "seed_end_index_exclusive": 16,
+  "company_ids": [
+    "cn-soe-0013",
+    "cn-soe-0014",
+    "cn-soe-0015",
+    "cn-soe-0016"
+  ],
+  "processed_count": 4,
+  "official_recruitment_entries_verified": 4,
+  "roles_normalized_this_run": 4,
+  "review_pending_created": 4,
+  "active_verified_created": 0,
+  "final_acceptance_met_count": 0,
+  "retryable_unresolved_count": 4,
+  "next_manual_priority": [
+    "cn-soe-0013: reconcile current 58-record/4-page campus inventory, complete remaining social and campus details, and recheck internship channel",
+    "cn-soe-0014: enumerate public positions through a compliant browser or official public endpoint without bypassing HTTP 412, login or CAPTCHA",
+    "cn-soe-0015: audit official member-unit recruitment channels because the group talent page has no central job enumeration",
+    "cn-soe-0016: extract auditable application routing from the official campaign image if publicly accessible and audit member-unit official channels"
+  ],
+  "global_runtime_checkpoint_mutated": false,
+  "reason_global_checkpoint_preserved": "All four companies remain incomplete under final acceptance. The four CSSC records are listing-only review_pending candidates and unresolved companies must stay in automated and manual retry queues.",
+  "output_files": {
+    "coverage": "output/coverage_manual_batch_0013_0016_20260716T0650Z.jsonl",
+    "failures": "output/failures_manual_batch_0013_0016_20260716T0650Z.jsonl",
+    "jobs": "output/jobs_manual_batch_0013_0016_20260716T0650Z.jsonl"
+  },
+  "source_observations": {
+    "cssc_social_unique_job_codes_observed": 12,
+    "cssc_current_2026_social_listings_observed": 5,
+    "cssc_campus_record_count_observed": 58,
+    "cssc_campus_page_count_observed": 4,
+    "sgcc_public_job_search_http_status": 412,
+    "sgcc_unfiltered_announcement_rows_observed": 0,
+    "avic_central_jobs_observed": 0,
+    "cetc_2026_campaign_announcement_published_date": "2025-09-08"
+  },
+  "policy": {
+    "official_sources_only": true,
+    "access_control_bypassed": false,
+    "salary_inference": false,
+    "auto_active_verified": false,
+    "third_party_listing_promoted_to_official": false
+  }
+}
