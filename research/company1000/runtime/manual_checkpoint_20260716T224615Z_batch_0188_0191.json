@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-16T22:46:15+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "batch": "0188_0191",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-amc-0188",
+      "company_name": "中国中信金融资产管理股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.famc.citic/rczp/zpxx/index.shtml",
+      "roles_normalized": 5,
+      "final_acceptance_met": false,
+      "next_action": "逐项核验官方招聘索引第2页及所有未载明截止日期的较早公告；通过合规公开访问解析bsurl.cn投递短链终点，确认申请入口仍有效或取得明确关闭证据。"
+    },
+    {
+      "company_id": "cn-sec-0189",
+      "company_name": "中信证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://careers.citics.com/zztf/",
+      "roles_normalized": 0,
+      "final_acceptance_met": false,
+      "next_action": "使用合规浏览器渲染或官方公开接口完整枚举分支机构社会招聘和2026暑期实习岗位；保留总部社招、总部实习空状态及总部校招已结束证据。"
+    },
+    {
+      "company_id": "cn-sec-0190",
+      "company_name": "中信建投证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.csc108.citic/joinus",
+      "roles_normalized": 0,
+      "final_acceptance_met": false,
+      "next_action": "通过合规浏览器渲染或官方公开数据请求枚举csc108.zhiye.com社会招聘、校园招聘及实习岗位；不得绕过登录、验证码、Cookie或其他访问控制。"
+    },
+    {
+      "company_id": "cn-sec-0191",
+      "company_name": "招商证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://cms.hotjob.cn/",
+      "roles_normalized": 0,
+      "final_acceptance_met": false,
+      "next_action": "通过合规浏览器渲染或官方公开数据请求枚举招商证券专属Wecruit站的社会招聘、校园招聘和实习岗位；不得绕过登录、验证码、Cookie或其他访问控制。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "public_roles_normalized": 5,
+    "candidate_raw_created": 5,
+    "final_acceptance_met": 0,
+    "retry_required": 4,
+    "active_verified_created": 0
+  },
+  "next_batch": {
+    "start_index": 192,
+    "end_index_inclusive": 195,
+    "expected_company_ids": [
+      "cn-sec-0192",
+      "cn-sec-0193",
+      "cn-sec-0194",
+      "cn-sec-0195"
+    ]
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
