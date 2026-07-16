@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-16T19:45:15+00:00",
+  "batch": "0180_0183",
+  "updates": [
+    {
+      "company_id": "cn-ins-0180",
+      "official_entry_status": "candidate_unverified_http_405",
+      "public_inventory_status": "not_enumerated",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_domain_http_405_and_recruitment_partner_linkage_unverified"
+    },
+    {
+      "company_id": "cn-amc-0181",
+      "official_entry_status": "verified",
+      "public_inventory_status": "groupwide_enumeration_pending",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "branch_and_subsidiary_current_inventory_pending"
+    },
+    {
+      "company_id": "cn-amc-0182",
+      "official_entry_status": "verified",
+      "public_inventory_status": "one_continuous_role_captured_dynamic_inventory_pending",
+      "final_acceptance_met": false,
+      "roles_added": 1,
+      "failure_reason": "dynamic_zhiye_and_group_member_inventory_pending"
+    },
+    {
+      "company_id": "cn-amc-0183",
+      "official_entry_status": "verified",
+      "public_inventory_status": "static_lists_empty_dynamic_and_subsidiary_inventory_pending",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "dynamic_portal_and_subsidiary_inventory_pending"
+    }
+  ],
+  "totals": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 3,
+    "roles_added": 1,
+    "final_acceptance_met": 0,
+    "active_verified_created": 0
+  }
+}
