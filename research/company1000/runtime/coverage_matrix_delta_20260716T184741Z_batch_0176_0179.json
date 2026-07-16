@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-16T18:47:41+00:00",
+  "batch": "0176_0179",
+  "summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "public_roles_normalized": 12,
+    "final_acceptance_met": 1,
+    "retry_required": 3,
+    "active_verified_created": 0
+  },
+  "companies": [
+    {
+      "company_id": "cn-ins-0176",
+      "company_name": "泰康保险集团股份有限公司",
+      "official_entry_status": "verified",
+      "enumeration_status": "partial_taikang_fund_11_roles_groupwide_pending",
+      "career_url": "https://www.taikang.com/",
+      "normalized_role_source": "https://www.tkfunds.com.cn/aboutus/job/index.html",
+      "last_checked_at": "2026-07-16T18:47:41+00:00",
+      "active_job_count_captured": 11,
+      "final_acceptance_met": false,
+      "evidence": "集团官方站已核验；泰康基金官方人才页公开展示11个含完整职责、要求和唯一投递URL的岗位。集团其他成员招聘库存尚未完成枚举。"
+    },
+    {
+      "company_id": "cn-ins-0177",
+      "company_name": "阳光保险集团股份有限公司",
+      "official_entry_status": "verified",
+      "enumeration_status": "partial_one_detail_normalized_multi_channel_pagination_pending",
+      "career_url": "https://sunzhaopin.sinosig.com/",
+      "last_checked_at": "2026-07-16T18:47:41+00:00",
+      "active_job_count_captured": 1,
+      "final_acceptance_met": false,
+      "evidence": "官方详情J19981仍显示“我要申请”，完整披露职责、要求、广州地点、面议和5人；社会、校园、实习多频道尚未全量分页。"
+    },
+    {
+      "company_id": "cn-ins-0178",
+      "company_name": "大家保险集团有限责任公司",
+      "official_entry_status": "verified",
+      "enumeration_status": "pending_dynamic_zhiye_public_enumeration",
+      "career_url": "https://djbx.zhiye.com/campus",
+      "last_checked_at": "2026-07-16T18:47:41+00:00",
+      "active_job_count_captured": 0,
+      "final_acceptance_met": false,
+      "evidence": "集团官网公开链接2026校园招聘及“加入大家”至官方门户；当前公共抓取仅返回壳页标题，不能证明无岗位。"
+    },
+    {
+      "company_id": "cn-ins-0179",
+      "company_name": "富德生命人寿保险股份有限公司",
+      "official_entry_status": "verified",
+      "enumeration_status": "complete_restricted_login_password_captcha",
+      "career_url": "https://www.sino-life.com/job/",
+      "last_checked_at": "2026-07-16T18:47:41+00:00",
+      "active_job_count_captured": 0,
+      "final_acceptance_met": true,
+      "evidence": "官方当前招聘入口要求账号、密码和验证码；未绕过访问控制。公开招聘归档为2013—2016年，未作为当前岗位。"
+    }
+  ]
+}
