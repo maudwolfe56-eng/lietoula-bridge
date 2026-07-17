@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T08:00:00+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "batch": "0216_0219",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-sec-0216",
+      "company_name": "华林证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.chinalions.com/main/IntoChinalions/cpyc/index.shtml",
+      "roles_normalized": 0,
+      "official_detail_candidates": 4,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "从华林证券官方公开请求或页面交互解析4条列表行的唯一详情URL及完整字段，并确认当前申请状态；不得以合成锚点代替唯一来源URL。"
+    },
+    {
+      "company_id": "cn-sec-0217",
+      "company_name": "天风证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://wecruit.hotjob.cn/SU6114cab40dcad4106ffc953b/pb/index.html",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "使用无需登录的合规浏览器渲染或官方公开载荷完整枚举天风证券Hotjob岗位及详情；若无法公开枚举，记录可审计受限结论。"
+    },
+    {
+      "company_id": "cn-sec-0218",
+      "company_name": "湘财证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.xcsc.com/main/aboutus/xcscrecruitment/index.shtml",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "核验湘财证券官方当前招聘列表接口、申请入口和最新活动信号；2021至2022年历史岗位在未证明仍开放前继续排除。"
+    },
+    {
+      "company_id": "cn-sec-0219",
+      "company_name": "国联民生证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://glsc.zhiye.com/social/jobs",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "通过国联民生证券品牌Zhiye门户的公开载荷或合规浏览器渲染枚举社会、校园及实习岗位，逐条取得唯一官方详情URL；第三方转载不得替代官方来源。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "official_detail_candidates_added": 4,
+    "public_roles_normalized": 0,
+    "candidate_raw_created": 0,
+    "final_acceptance_met": 0,
+    "retry_required": 4,
+    "active_verified_created": 0
+  },
+  "next_batch": {
+    "start_index": 220,
+    "end_index_inclusive": 223,
+    "expected_company_ids": [
+      "cn-sec-0220",
+      "cn-health-0221",
+      "cn-health-0222",
+      "cn-health-0223"
+    ]
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
