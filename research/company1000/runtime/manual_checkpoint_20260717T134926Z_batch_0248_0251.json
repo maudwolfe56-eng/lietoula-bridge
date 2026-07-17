@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T13:49:26+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "batch": "0248_0251",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-mining-0248",
+      "company_name": "紫金矿业集团股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.zijinmining.com/join/join-us.htm",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "为紫金矿业官方Moka社会招聘和校园招聘入口建立合规的站点专用公开枚举器；仅处理无需登录且公开可审计的岗位列表与详情，若持续重定向循环或仅有JavaScript外壳，应记录明确受限结论。"
+    },
+    {
+      "company_id": "cn-mining-0249",
+      "company_name": "洛阳栾川钼业集团股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.cmoc.com/html/CareerDevelopment/",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "继续核验洛阳钼业官方加入我们、公告和业务单位页面是否发布当前岗位；2020年存档岗位不得作为当前机会，只有观察到当前可申请详情或明确暂无岗位声明后才能形成终局结论。"
+    },
+    {
+      "company_id": "cn-mining-0250",
+      "company_name": "天齐锂业股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://tianqilithium-hr.zhiye.com/",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "为天齐锂业官方智联招聘门户建立合规的公开枚举器，仅访问无需认证的列表与详情；若公开页面持续仅呈现JavaScript外壳，应记录可审计受限原因。"
+    },
+    {
+      "company_id": "cn-re-0251",
+      "company_name": "万科企业股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.vanke.com/join/talent",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "为万科官方Moka社会招聘、校园招聘及rc.vanke.com入口建立合规的公开枚举器；不调用认证接口或绕过重定向、登录与验证码，无法枚举时记录明确受限结论。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "official_detail_candidates_added": 0,
+    "job_link_candidates_added": 16,
+    "public_roles_normalized": 0,
+    "candidate_raw_created": 0,
+    "inactive_expired_created": 0,
+    "final_acceptance_met": 0,
+    "retry_required": 4,
+    "active_verified_created": 0
+  },
+  "next_batch": {
+    "start_index": 252,
+    "end_index_inclusive": 255,
+    "expected_company_ids": [
+      "cn-re-0252",
+      "cn-re-0253",
+      "cn-re-0254",
+      "cn-re-0255"
+    ]
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
