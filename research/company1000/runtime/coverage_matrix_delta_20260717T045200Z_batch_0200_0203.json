@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T04:52:00+00:00",
+  "batch": "0200_0203",
+  "updates": [
+    {
+      "company_id": "cn-sec-0200",
+      "official_entry_status": "verified_official_corporate_social_recruitment",
+      "public_inventory_status": "partial_23_page_inventory_four_details_normalized_complete_enumeration_pending",
+      "final_acceptance_met": false,
+      "roles_added": 4,
+      "failure_reason": "official_social_recruitment_complete_23_page_pagination_and_all_detail_resolution_pending"
+    },
+    {
+      "company_id": "cn-sec-0201",
+      "official_entry_status": "verified_official_branded_zhiye_portal",
+      "public_inventory_status": "dynamic_zhiye_inventory_pending",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_zhiye_dynamic_inventory_not_exposed_in_static_response"
+    },
+    {
+      "company_id": "cn-sec-0202",
+      "official_entry_status": "verified_official_branded_hotjob_portal",
+      "public_inventory_status": "four_exact_official_detail_candidates_direct_confirmation_pending",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_hotjob_dynamic_inventory_and_detail_confirmation_pending"
+    },
+    {
+      "company_id": "cn-sec-0203",
+      "official_entry_status": "verified_official_branded_zhiye_portal",
+      "public_inventory_status": "campus_18_records_observed_details_and_social_channel_pending",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_zhiye_campus_18_record_detail_resolution_and_social_channel_enumeration_pending"
+    }
+  ],
+  "totals": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "roles_added": 4,
+    "candidate_raw_added": 4,
+    "final_acceptance_met": 0,
+    "active_verified_created": 0
+  }
+}
