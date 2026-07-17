@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T02:33:36+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "batch": "0192_0195",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-sec-0192",
+      "company_name": "广发证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://job.gf.com.cn/",
+      "roles_normalized": 0,
+      "final_acceptance_met": false,
+      "next_action": "通过合规浏览器渲染或官方公开数据请求枚举广发证券专属Wecruit站的社会招聘、校园招聘、实习生招聘和金融科技人才招聘岗位；不得绕过登录、验证码、Cookie或其他访问控制。"
+    },
+    {
+      "company_id": "cn-sec-0193",
+      "company_name": "国信证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://guosen.zhiye.com/",
+      "roles_normalized": 0,
+      "final_acceptance_met": false,
+      "next_action": "通过合规浏览器渲染或官方公开数据请求枚举guosen.zhiye.com社会招聘、校园招聘和实习生招聘岗位，并逐条核验职责、要求、城市和时效；不得以第三方转载补齐官方未返回字段。"
+    },
+    {
+      "company_id": "cn-sec-0194",
+      "company_name": "东方证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.dfzq.com.cn/osoa/views/main/home/index.shtml",
+      "roles_normalized": 0,
+      "final_acceptance_met": false,
+      "next_action": "解决东方证券官网字符解码问题，从官方‘加入我们’链接解析社会招聘、校园招聘和实习生招聘目标页，再通过合规公开访问枚举岗位；不得用历史或转载Moka链接替代官方链路核验。"
+    },
+    {
+      "company_id": "cn-sec-0195",
+      "company_name": "光大证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://ebscn.zhiye.com/social",
+      "roles_normalized": 0,
+      "final_acceptance_met": false,
+      "next_action": "通过合规浏览器渲染或官方公开数据请求完整枚举光大证券Zhiye社会招聘、校园招聘及实习岗位，并将官方公告与门户岗位做当前时效交叉核验。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "public_roles_normalized": 0,
+    "candidate_raw_created": 0,
+    "final_acceptance_met": 0,
+    "retry_required": 4,
+    "active_verified_created": 0
+  },
+  "next_batch": {
+    "start_index": 196,
+    "end_index_inclusive": 199,
+    "expected_company_ids": [
+      "cn-sec-0196",
+      "cn-sec-0197",
+      "cn-sec-0198",
+      "cn-sec-0199"
+    ]
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
