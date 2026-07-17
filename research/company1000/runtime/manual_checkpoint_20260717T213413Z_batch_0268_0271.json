@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T21:34:13+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "batch": "0268_0271",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-log-0268",
+      "company_name": "韵达控股股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.yundaex.com/cn/hr_online.php",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "继续沿官网在线招聘入口核验公开岗位接口、当前申请状态和唯一详情URL。"
+    },
+    {
+      "company_id": "cn-log-0269",
+      "company_name": "极兔速递环球有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.jtexpress.cn/distM/joinUs.html",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "使用合规公开浏览器或站点专用公开接口枚举官方飞书社会招聘与校园招聘岗位。"
+    },
+    {
+      "company_id": "cn-log-0270",
+      "company_name": "菜鸟网络科技有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.cainiao.com/about-us-join-us.html?from=subHeaderClick",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "使用合规公开浏览器或菜鸟官方公开接口枚举talent.cainiao.com当前岗位。"
+    },
+    {
+      "company_id": "cn-air-0271",
+      "company_name": "海南航空控股股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://recruitment.hnair.com/HRCandidateManageAir/PostList.aspx?ctype=1",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "重试官方招聘门户并核验校园、社会、空勤及招聘公告频道；确认当前零库存或补录仍在申请期内岗位。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "official_detail_candidates_added": 0,
+    "job_link_candidates_added": 11,
+    "public_roles_normalized": 0,
+    "candidate_raw_created": 0,
+    "review_pending_created": 0,
+    "inactive_expired_created": 0,
+    "final_acceptance_met": 0,
+    "retry_required": 4,
+    "active_verified_created": 0
+  },
+  "next_batch": {
+    "start_index": 272,
+    "end_index_inclusive": 275,
+    "expected_company_ids": [
+      "cn-air-0272",
+      "cn-air-0273",
+      "cn-air-0274",
+      "cn-air-0275"
+    ]
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
