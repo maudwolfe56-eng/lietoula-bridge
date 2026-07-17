@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T04:52:00+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "batch": "0200_0203",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-sec-0200",
+      "company_name": "方正证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.foundersc.com/aboutRecTalentSocial/index.jhtml",
+      "roles_normalized": 4,
+      "final_acceptance_met": false,
+      "next_action": "继续按23页社会招聘列表完整分页，去重后逐条解析全部官方详情并核验投递状态；不得绕过登录、验证码或其他访问控制。"
+    },
+    {
+      "company_id": "cn-sec-0201",
+      "company_name": "国金证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://gjzq.zhiye.com/",
+      "roles_normalized": 0,
+      "final_acceptance_met": false,
+      "next_action": "通过合规浏览器渲染或公开数据请求枚举国金证券社会、校园和实习岗位；只使用官方公开载荷，不得绕过登录、验证码、Cookie或其他访问控制。"
+    },
+    {
+      "company_id": "cn-sec-0202",
+      "company_name": "财通证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://wecruit.hotjob.cn/SU60613f74bef57c36adc66d0b/pb/index.html",
+      "roles_normalized": 0,
+      "final_acceptance_met": false,
+      "next_action": "直接核验品牌HotJob列表和4个精确官方详情候选URL，取得官方职责、要求、地点及投递状态后再结构化；第三方转载不得作为岗位正文来源。"
+    },
+    {
+      "company_id": "cn-sec-0203",
+      "company_name": "浙商证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://zszq.zhiye.com/",
+      "roles_normalized": 0,
+      "final_acceptance_met": false,
+      "next_action": "解析校园列表18条记录的全部唯一详情并补齐职责、要求等字段，同时完整枚举社会招聘和其他公开频道；主站HTTP 412不得绕过。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "public_roles_normalized": 4,
+    "candidate_raw_created": 4,
+    "final_acceptance_met": 0,
+    "retry_required": 4,
+    "active_verified_created": 0
+  },
+  "next_batch": {
+    "start_index": 204,
+    "end_index_inclusive": 207,
+    "expected_company_ids": [
+      "cn-sec-0204",
+      "cn-sec-0205",
+      "cn-sec-0206",
+      "cn-sec-0207"
+    ]
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
