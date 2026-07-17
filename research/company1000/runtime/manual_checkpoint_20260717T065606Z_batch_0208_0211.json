@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T06:56:06+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "batch": "0208_0211",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-sec-0208",
+      "company_name": "西部证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://wecruit.hotjob.cn/SU614049aebef57c3b638d207c/pb/index.html",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 1,
+      "final_acceptance_met": false,
+      "next_action": "通过合规浏览器渲染或Hotjob公开数据请求完整枚举当前岗位；解析西部证券官方首页2026-07-14公开选聘公告的唯一详情URL和完整官方字段。不得使用首页聚合URL代替岗位唯一来源URL，不得绕过登录、验证码、Cookie或其他访问控制。"
+    },
+    {
+      "company_id": "cn-sec-0209",
+      "company_name": "第一创业证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://wecruit.hotjob.cn/SU6212eaf20dcad466450cc295/pb/index.html",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "final_acceptance_met": false,
+      "next_action": "通过合规浏览器渲染或Hotjob公开数据请求完整枚举第一创业证券母公司当前岗位，并区分一创投行等子公司雇主；仅使用官方公开载荷，不得依据第三方转载补齐岗位正文。"
+    },
+    {
+      "company_id": "cn-sec-0210",
+      "company_name": "华安证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://hahr.hazq.com:8083/eip4ha-hyapp/recruitment",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "final_acceptance_met": false,
+      "next_action": "在不登录、不处理验证码、不复用受限Cookie的前提下，核验招聘系统是否提供公开岗位列表或公开数据接口；如公开申请期已结束，应从官方页面取得明确截止或关闭证据后记录可审计结论。"
+    },
+    {
+      "company_id": "cn-sec-0211",
+      "company_name": "国元证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://xxzx.gyzq.com.cn/",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "final_acceptance_met": false,
+      "next_action": "从国元证券官方信息中心的‘人才招聘’导航解析稳定落地URL，完整枚举当前公开岗位或取得明确无公开岗位结论；历史拟聘公示不得作为当前职位。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "official_detail_candidates_added": 0,
+    "public_roles_normalized": 0,
+    "candidate_raw_created": 0,
+    "final_acceptance_met": 0,
+    "retry_required": 4,
+    "active_verified_created": 0
+  },
+  "next_batch": {
+    "start_index": 212,
+    "end_index_inclusive": 215,
+    "expected_company_ids": [
+      "cn-sec-0212",
+      "cn-sec-0213",
+      "cn-sec-0214",
+      "cn-sec-0215"
+    ]
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
