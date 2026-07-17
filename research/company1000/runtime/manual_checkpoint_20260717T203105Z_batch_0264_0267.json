@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T20:31:05+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "batch": "0264_0267",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-retail-0264",
+      "company_name": "华润万家有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.crv.com.cn/rlzy1/index.html",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "继续沿官网招贤纳士、应聘指南和华润集团官方招聘入口枚举当前公开岗位并逐条核验详情、申请状态与时效。"
+    },
+    {
+      "company_id": "cn-retail-0265",
+      "company_name": "居然智家新零售集团股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://recruit.juran.com.cn/",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "使用合规公开浏览器或站点专用公开接口枚举官方社会招聘和校园招聘岗位；当前门户动态壳页尚未公开可审计库存。"
+    },
+    {
+      "company_id": "cn-log-0266",
+      "company_name": "圆通速递股份有限公司",
+      "official_entry_verified": false,
+      "official_entry_url": "https://www.yto.net.cn/",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "继续核验官网人才入口、企业官方公告及政府或监管官方当前招聘信息，排除历史和第三方单一来源。"
+    },
+    {
+      "company_id": "cn-log-0267",
+      "company_name": "申通快递股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.sto.cn/pc/about",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "继续沿官网人才招聘栏目核验公开岗位接口、当前申请状态和唯一岗位详情URL。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 3,
+    "official_detail_candidates_added": 0,
+    "job_link_candidates_added": 7,
+    "public_roles_normalized": 0,
+    "candidate_raw_created": 0,
+    "review_pending_created": 0,
+    "inactive_expired_created": 0,
+    "final_acceptance_met": 0,
+    "retry_required": 4,
+    "active_verified_created": 0
+  },
+  "next_batch": {
+    "start_index": 268,
+    "end_index_inclusive": 271,
+    "expected_company_ids": [
+      "cn-log-0268",
+      "cn-log-0269",
+      "cn-log-0270",
+      "cn-air-0271"
+    ]
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
