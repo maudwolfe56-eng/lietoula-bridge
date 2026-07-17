@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T09:52:02+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "batch": "0224_0227",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-health-0224",
+      "company_name": "上海医药集团股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://sph.zhiye.com/social/jobs",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 1,
+      "final_acceptance_met": false,
+      "next_action": "通过无需登录的公开载荷或合规浏览器完整枚举上海医药品牌Zhiye社会、校园岗位并解析唯一详情URL；不得绕过登录或验证码。"
+    },
+    {
+      "company_id": "cn-health-0225",
+      "company_name": "国药控股股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.sinopharmgroup.com.cn/gykg/rcfz/rczp/A006008002Gone1.html",
+      "roles_normalized": 1,
+      "official_detail_candidates": 2,
+      "current_official_recruitment_announcements_observed": 1,
+      "final_acceptance_met": false,
+      "next_action": "继续完整枚举官方链接的2026届校园招聘门户及国控成员企业公开职位；质量管理经理保持candidate_raw，管理培训生待补完整要求。"
+    },
+    {
+      "company_id": "cn-food-0226",
+      "company_name": "贵州茅台酒股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.moutaichina.com/mtgf/xxgk/zpgg/index.html",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 3,
+      "final_acceptance_met": false,
+      "next_action": "继续核验官方HCM招聘系统当前无需登录即可查看的岗位与新公告；最近三项2026公开报名窗口均已截止，不得作为在招岗位。"
+    },
+    {
+      "company_id": "cn-food-0227",
+      "company_name": "宜宾五粮液股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.wuliangye.com.cn/zhaopin/home",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "继续枚举官方招聘平台社会和实习频道；校园与公告频道当前明确暂无数据，若所有公开频道均无岗位则形成可审计无公开岗位结论。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "official_detail_candidates_added": 2,
+    "public_roles_normalized": 1,
+    "candidate_raw_created": 1,
+    "final_acceptance_met": 0,
+    "retry_required": 4,
+    "active_verified_created": 0
+  },
+  "next_batch": {
+    "start_index": 228,
+    "end_index_inclusive": 231,
+    "expected_company_ids": [
+      "cn-food-0228",
+      "cn-food-0229",
+      "cn-food-0230",
+      "cn-food-0231"
+    ]
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
