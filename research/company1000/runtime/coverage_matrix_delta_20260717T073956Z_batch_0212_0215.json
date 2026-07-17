@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T07:39:56+00:00",
+  "batch": "0212_0215",
+  "updates": [
+    {
+      "company_id": "cn-sec-0212",
+      "official_entry_status": "verified_official_multi_channel_recruitment_pages",
+      "public_inventory_status": "current_channels_expose_talent_reserve_only_known_2026_campaigns_closed_no_specific_openings_observed",
+      "final_acceptance_met": true,
+      "roles_added": 0,
+      "failure_reason": null
+    },
+    {
+      "company_id": "cn-sec-0213",
+      "official_entry_status": "verified_official_corporate_site_with_recruitment_navigation",
+      "public_inventory_status": "stable_recruitment_landing_and_current_inventory_unresolved",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_recruitment_landing_url_and_current_public_inventory_not_resolved"
+    },
+    {
+      "company_id": "cn-sec-0214",
+      "official_entry_status": "verified_current_official_recruitment_channels_on_95363_domain",
+      "public_inventory_status": "dynamic_inventory_and_detail_payload_unresolved_intermittent_safe_fetch_failure",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_recruitment_inventory_and_detail_payload_not_exposed_in_static_response_current_roles_unresolved"
+    },
+    {
+      "company_id": "cn-sec-0215",
+      "official_entry_status": "verified_official_2026_announcement_and_corporate_to_branded_hotjob_portal",
+      "public_inventory_status": "standard_deadline_expired_long_term_roles_possible_attachment_and_dynamic_inventory_pending",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_2026_announcement_attachment_and_dynamic_hotjob_inventory_not_enumerated_long_term_roles_pending"
+    }
+  ],
+  "totals": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "official_detail_candidates_added": 0,
+    "roles_added": 0,
+    "candidate_raw_added": 0,
+    "final_acceptance_met": 1,
+    "active_verified_created": 0
+  }
+}
