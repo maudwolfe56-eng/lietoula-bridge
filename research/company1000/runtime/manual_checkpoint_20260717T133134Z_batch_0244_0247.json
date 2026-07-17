@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T13:31:34+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "batch": "0244_0247",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-energy-0244",
+      "company_name": "隆基绿能科技股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.longi.com/cn/career/",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "为隆基绿能官方HotJob入口建立合规的站点专用公开枚举器，仅处理无需登录且公开可审计的岗位列表与详情；若持续只有JavaScript外壳或供应商回落页，应记录明确受限结论。"
+    },
+    {
+      "company_id": "cn-energy-0245",
+      "company_name": "通威集团有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.tongwei.com/recruit.html",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "继续核验通威集团及成员企业官方招聘公告和公开职位页；第三方热招链接不得作为唯一来源，只有官方详情可完整核验时才生成岗位。"
+    },
+    {
+      "company_id": "cn-energy-0246",
+      "company_name": "晶科能源股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.jinkosolar.com/en/site/brand",
+      "roles_normalized": 6,
+      "official_detail_candidates": 6,
+      "current_official_recruitment_announcements_observed": 6,
+      "final_acceptance_met": false,
+      "next_action": "定期复核晶科能源官方Careers页面的6个岗位是否仍展示，并查找岗位级发布日期、截止日期、薪酬或原生唯一详情入口；在时效字段未核验前保持candidate_raw。"
+    },
+    {
+      "company_id": "cn-energy-0247",
+      "company_name": "天合光能股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.trinasolar.com/cn",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "为天合光能官方Moka社会招聘门户建立合规的公开枚举器；若公开页面持续无法枚举，应记录受限原因，不调用认证接口或绕过访问控制。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "official_detail_candidates_added": 6,
+    "job_link_candidates_added": 14,
+    "public_roles_normalized": 6,
+    "candidate_raw_created": 6,
+    "inactive_expired_created": 0,
+    "final_acceptance_met": 0,
+    "retry_required": 4,
+    "active_verified_created": 0
+  },
+  "next_batch": {
+    "start_index": 248,
+    "end_index_inclusive": 251,
+    "expected_company_ids": [
+      "cn-mining-0248",
+      "cn-mining-0249",
+      "cn-mining-0250",
+      "cn-re-0251"
+    ]
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
