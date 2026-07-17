@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T10:25:48+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "batch": "0228_0231",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-food-0228",
+      "company_name": "泸州老窖股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://job.lzlj.com/",
+      "roles_normalized": 0,
+      "official_detail_candidates": 5,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "通过无需登录的公开载荷或合规浏览器枚举股份公司招聘门户岗位列表，解析5个详情候选的岗位名称、职责、要求、地点、日期和当前状态；不得绕过登录或验证码。"
+    },
+    {
+      "company_id": "cn-food-0229",
+      "company_name": "青岛啤酒股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://tsingtao.zhiye.com/",
+      "roles_normalized": 0,
+      "official_detail_candidates": 1,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "继续枚举新版Zhiye社会招聘与校园招聘公开库存，解析唯一详情URL和完整字段，并核验当前可申请状态。"
+    },
+    {
+      "company_id": "cn-food-0230",
+      "company_name": "内蒙古伊利实业集团股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.yili.com/joinus",
+      "roles_normalized": 1,
+      "official_detail_candidates": 2,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "基于官方HotJob公开职位载荷分页枚举社会、校园和实习岗位，将所有列表项解析为唯一详情URL并逐条核验申请周期；已过期HR数据分析岗位保持inactive_expired。"
+    },
+    {
+      "company_id": "cn-food-0231",
+      "company_name": "中国蒙牛乳业有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://mengniu.zhiye.com/",
+      "roles_normalized": 0,
+      "official_detail_candidates": 5,
+      "current_official_recruitment_announcements_observed": 1,
+      "final_acceptance_met": false,
+      "next_action": "继续枚举官方社会、校园、实习和博士招聘频道，解析5个公开详情候选的动态正文与当前申请状态；不得仅根据URL参数生成岗位。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "official_detail_candidates_added": 13,
+    "public_roles_normalized": 1,
+    "candidate_raw_created": 0,
+    "inactive_expired_created": 1,
+    "final_acceptance_met": 0,
+    "retry_required": 4,
+    "active_verified_created": 0
+  },
+  "next_batch": {
+    "start_index": 232,
+    "end_index_inclusive": 235,
+    "expected_company_ids": [
+      "cn-food-0232",
+      "cn-food-0233",
+      "cn-food-0234",
+      "cn-food-0235"
+    ]
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
