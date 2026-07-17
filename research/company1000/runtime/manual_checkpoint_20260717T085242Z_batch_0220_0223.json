@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T08:52:42+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "batch": "0220_0223",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-sec-0220",
+      "company_name": "信达证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.cindasc.com/osoa/views/zjxd/rczp/rczp_zpxx/index.html",
+      "roles_normalized": 5,
+      "official_detail_candidates": 5,
+      "current_official_recruitment_announcements_observed": 1,
+      "final_acceptance_met": false,
+      "next_action": "继续核验信达证券官方招聘索引全部近期公告及当前申请状态；本轮5条公告角色保持candidate_raw。"
+    },
+    {
+      "company_id": "cn-health-0221",
+      "company_name": "上海复星医药（集团）股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://fosunpharma.zhiye.com/social",
+      "roles_normalized": 5,
+      "official_detail_candidates": 10,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "继续完整枚举至少10页社会招聘库存并逐条解析唯一jobId详情，完成去重、新鲜度和申请状态核验。"
+    },
+    {
+      "company_id": "cn-health-0222",
+      "company_name": "华润三九医药股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.999.com.cn/applicationGuide/index.html",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "使用无需登录的公开载荷或合规浏览器渲染完整枚举华润三九品牌Hotjob社会、校园及实习岗位；若不可公开枚举，形成可审计受限结论。"
+    },
+    {
+      "company_id": "cn-health-0223",
+      "company_name": "云南白药集团股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.yunnanbaiyao.com.cn/list/ynbyM/1/229/auto/20/0.html",
+      "roles_normalized": 0,
+      "official_detail_candidates": 12,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "完整枚举官方Hotjob所示22个开放职位，并取得逐岗唯一详情URL、职责、要求、学历、经验及申请状态；12条索引行仅保留候选。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "official_detail_candidates_added": 22,
+    "public_roles_normalized": 10,
+    "candidate_raw_created": 10,
+    "final_acceptance_met": 0,
+    "retry_required": 4,
+    "active_verified_created": 0
+  },
+  "next_batch": {
+    "start_index": 224,
+    "end_index_inclusive": 227,
+    "expected_company_ids": [
+      "cn-health-0224",
+      "cn-health-0225",
+      "cn-food-0226",
+      "cn-food-0227"
+    ]
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
