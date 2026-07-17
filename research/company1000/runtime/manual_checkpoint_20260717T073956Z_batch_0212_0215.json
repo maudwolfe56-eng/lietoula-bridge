@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T07:39:56+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "batch": "0212_0215",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-sec-0212",
+      "company_name": "中原证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.ccnew.com/main/joinus/index.shtml",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 4,
+      "final_acceptance_met": true,
+      "next_action": "持续监测中原证券四个官方招聘频道及官方公告；当前仅保留人才储备邮箱且已知2026年春季及实习招聘均已截止，人才储备通道不得物化为具体岗位。"
+    },
+    {
+      "company_id": "cn-sec-0213",
+      "company_name": "山西证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.i618.com.cn/",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 2,
+      "final_acceptance_met": false,
+      "next_action": "通过山西证券当前官网‘诚聘英才’导航解析稳定唯一落地URL，并完整枚举当前官方公开岗位或取得明确无岗位结论；历史拟录用公示不得作为当前岗位。"
+    },
+    {
+      "company_id": "cn-sec-0214",
+      "company_name": "财达证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.95363.com/main/joinus/index.shtml",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "在不登录、不处理验证码、不复用受限Cookie的前提下，通过合规浏览器渲染或财达证券官方公开数据请求枚举社会、校园、实习频道；逐条取得唯一详情URL和完整字段，并复核间歇性502。"
+    },
+    {
+      "company_id": "cn-sec-0215",
+      "company_name": "红塔证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://wecruit.hotjob.cn/SU68245c3ad9c14f2a7d99fcc1/pb/index.html",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 1,
+      "final_acceptance_met": false,
+      "next_action": "通过合规公开请求解析红塔证券2026年度招聘官方xlsx附件，或枚举品牌Hotjob门户公开载荷，识别公告中标注‘长期招聘’且仍开放的岗位；常规2026-05-25截止岗位应保持过期，不得绕过访问控制。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "official_detail_candidates_added": 0,
+    "public_roles_normalized": 0,
+    "candidate_raw_created": 0,
+    "final_acceptance_met": 1,
+    "retry_required": 3,
+    "active_verified_created": 0
+  },
+  "next_batch": {
+    "start_index": 216,
+    "end_index_inclusive": 219,
+    "expected_company_ids": [
+      "cn-sec-0216",
+      "cn-sec-0217",
+      "cn-sec-0218",
+      "cn-sec-0219"
+    ]
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
