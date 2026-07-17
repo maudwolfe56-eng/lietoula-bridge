@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T15:50:18+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "batch": "0256_0259",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-re-0256",
+      "company_name": "新城控股集团股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.seazen.com.cn/join/plan.html",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "继续核验官网公开申请入口或招聘公告；人才计划仅证明招聘体系存在，不等于当前逐岗位库存。"
+    },
+    {
+      "company_id": "cn-re-0257",
+      "company_name": "绿城中国控股有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.chinagreentown.com/",
+      "roles_normalized": 4,
+      "official_detail_candidates": 4,
+      "current_official_recruitment_announcements_observed": 2,
+      "final_acceptance_met": false,
+      "next_action": "完整枚举社会招聘65条/5页和校园招聘39条/3页，逐条核验详情、停用状态及唯一URL。"
+    },
+    {
+      "company_id": "cn-re-0258",
+      "company_name": "金地（集团）股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://gemdale.zhiye.com/index",
+      "roles_normalized": 0,
+      "official_detail_candidates": 8,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "重试8个公开岗位详情并验证是否仍可申请；发布日期陈旧，未核实前不得写入正式JobImport。"
+    },
+    {
+      "company_id": "cn-re-0259",
+      "company_name": "杭州滨江房产集团股份有限公司",
+      "official_entry_verified": false,
+      "official_entry_url": "https://www.binjiang.com.cn/",
+      "roles_normalized": 0,
+      "official_detail_candidates": 15,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "重试主站与招聘门户，完成官网关联、岗位详情和全量分页核验。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 3,
+    "official_detail_candidates_added": 27,
+    "job_link_candidates_added": 130,
+    "public_roles_normalized": 4,
+    "candidate_raw_created": 4,
+    "review_pending_created": 0,
+    "inactive_expired_created": 0,
+    "final_acceptance_met": 0,
+    "retry_required": 4,
+    "active_verified_created": 0
+  },
+  "next_batch": {
+    "start_index": 260,
+    "end_index_inclusive": 263,
+    "expected_company_ids": [
+      "cn-re-0260",
+      "cn-retail-0261",
+      "cn-retail-0262",
+      "cn-retail-0263"
+    ]
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
