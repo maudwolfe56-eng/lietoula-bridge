@@ -1,6 +1,6 @@
 {
-  "requested_at": "2026-07-15T12:33:57Z",
-  "sequence": 4,
+  "requested_at": "2026-07-17T18:07:03Z",
+  "sequence": 5,
   "purpose": "Continue the next bounded official-source audit cycle: process the next uncompleted company entries, classify official recruitment detail candidates, expand recruitment navigation conservatively, resolve public job details and multi-position announcements, rebuild deliverables, and reassess final acceptance",
   "target_companies": 1000,
   "policy": {
