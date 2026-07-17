@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T13:31:34+00:00",
+  "batch": "0244_0247",
+  "updates": [
+    {
+      "company_id": "cn-energy-0244",
+      "official_entry_status": "verified_official_company_career_page_direct_link_to_hotjob",
+      "public_inventory_status": "javascript_shell_or_vendor_fallback_without_server_rendered_enumerable_jobs",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_hotjob_portal_javascript_shell_or_vendor_fallback_without_public_job_enumeration"
+    },
+    {
+      "company_id": "cn-energy-0245",
+      "official_entry_status": "verified_official_talent_and_recruitment_page",
+      "public_inventory_status": "current_hot_jobs_delegated_to_third_party_without_official_individual_role_details",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_source_does_not_publish_current_individual_job_inventory_and_third_party_cannot_be_sole_source"
+    },
+    {
+      "company_id": "cn-energy-0246",
+      "official_entry_status": "verified_official_careers_page_with_inline_job_inventory",
+      "public_inventory_status": "six_roles_normalized_dates_salary_and_native_unique_detail_routes_missing",
+      "final_acceptance_met": false,
+      "roles_added": 6,
+      "failure_reason": "official_inline_roles_missing_publication_deadline_salary_and_native_unique_detail_routes_requires_recheck"
+    },
+    {
+      "company_id": "cn-energy-0247",
+      "official_entry_status": "verified_official_company_site_direct_link_to_moka_social_portal",
+      "public_inventory_status": "official_moka_inventory_not_publicly_enumerable_in_accessible_html",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_moka_portal_fetch_failed_or_javascript_shell_without_public_job_enumeration"
+    }
+  ],
+  "totals": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "official_detail_candidates_added": 6,
+    "job_link_candidates_added": 14,
+    "roles_added": 6,
+    "candidate_raw_added": 6,
+    "inactive_expired_added": 0,
+    "final_acceptance_met": 0,
+    "active_verified_created": 0
+  }
+}
