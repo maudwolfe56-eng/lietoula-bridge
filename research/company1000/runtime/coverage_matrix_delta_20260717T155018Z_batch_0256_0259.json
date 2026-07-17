@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T15:50:18+00:00",
+  "batch": "0256_0259",
+  "company_deltas": [
+    {
+      "company_id": "cn-re-0256",
+      "official_entry_verified": true,
+      "roles_added": 0,
+      "candidate_links_added": 3,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-re-0257",
+      "official_entry_verified": true,
+      "roles_added": 4,
+      "candidate_links_added": 104,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-re-0258",
+      "official_entry_verified": true,
+      "roles_added": 0,
+      "candidate_links_added": 8,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-re-0259",
+      "official_entry_verified": false,
+      "roles_added": 0,
+      "candidate_links_added": 15,
+      "final_acceptance_met": false
+    }
+  ],
+  "aggregate_delta": {
+    "companies_audited": 4,
+    "official_entries_verified": 3,
+    "candidate_raw_added": 4,
+    "review_pending_added": 0,
+    "active_verified_added": 0,
+    "final_acceptance_added": 0
+  },
+  "next_batch_start_index": 260
+}
