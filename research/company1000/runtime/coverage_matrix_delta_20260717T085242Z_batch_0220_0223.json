@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T08:52:42+00:00",
+  "batch": "0220_0223",
+  "updates": [
+    {
+      "company_id": "cn-sec-0220",
+      "official_entry_status": "verified_official_recruitment_index_and_current_announcement",
+      "public_inventory_status": "five_current_announcement_roles_normalized_full_index_review_pending",
+      "final_acceptance_met": false,
+      "roles_added": 5,
+      "failure_reason": "official_current_announcement_normalized_but_full_recruitment_archive_and_current_inventory_not_fully_enumerated"
+    },
+    {
+      "company_id": "cn-health-0221",
+      "official_entry_status": "verified_official_brand_zhiye_social_portal",
+      "public_inventory_status": "at_least_ten_pages_page_one_ten_urls_observed_five_details_normalized",
+      "final_acceptance_met": false,
+      "roles_added": 5,
+      "failure_reason": "official_social_inventory_multi_page_complete_enumeration_and_remaining_detail_normalization_pending"
+    },
+    {
+      "company_id": "cn-health-0222",
+      "official_entry_status": "verified_official_site_to_branded_hotjob_portal",
+      "public_inventory_status": "javascript_application_shell_public_inventory_unresolved",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_branded_hotjob_portal_requires_public_dynamic_enumeration"
+    },
+    {
+      "company_id": "cn-health-0223",
+      "official_entry_status": "verified_official_site_to_branded_hotjob_portals",
+      "public_inventory_status": "twenty_two_open_positions_indexed_twelve_rows_observed_unique_details_unresolved",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_hotjob_inventory_partially_indexed_unique_detail_urls_and_complete_fields_unresolved"
+    }
+  ],
+  "totals": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "official_detail_candidates_added": 22,
+    "roles_added": 10,
+    "candidate_raw_added": 10,
+    "final_acceptance_met": 0,
+    "active_verified_created": 0
+  }
+}
