@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T10:50:15+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "batch": "0232_0235",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-food-0232",
+      "company_name": "河南双汇投资发展股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.shuanghui.net/job-50.html",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 3,
+      "final_acceptance_met": false,
+      "next_action": "继续按官方社会招聘栏目分页和公告编号枚举全部2026招聘启事，解析图片或组合公告中的岗位职责、要求、地点、发布日期与截止日期，并对已过期岗位保持inactive_expired；不得仅按公告标题生成岗位。"
+    },
+    {
+      "company_id": "cn-food-0233",
+      "company_name": "佛山市海天调味食品股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.haday.com/join-us/",
+      "roles_normalized": 0,
+      "official_detail_candidates": 1,
+      "current_official_recruitment_announcements_observed": 1,
+      "final_acceptance_met": false,
+      "next_action": "通过无需登录的官方HotJob公开载荷枚举社会招聘和校园招聘库存，解析供应链管理-生产管理候选及其他岗位的唯一详情、地点、申请期限和当前状态。"
+    },
+    {
+      "company_id": "cn-food-0234",
+      "company_name": "农夫山泉股份有限公司",
+      "official_entry_verified": false,
+      "official_entry_url": "https://www.nongfuspring.com/",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 1,
+      "final_acceptance_met": false,
+      "next_action": "在农夫山泉或养生堂官方站点中建立可审计的招聘门户直接链接证据，并合规枚举Moka或jobs.yst.com.cn公开库存与唯一岗位详情；高校转载不得作为岗位导入来源。"
+    },
+    {
+      "company_id": "cn-food-0235",
+      "company_name": "达利食品集团有限公司",
+      "official_entry_verified": false,
+      "official_entry_url": "https://www.dali-group.com/",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "继续核验达利食品集团中国官方主站、投资者关系或官方公众号公开招聘入口；仅在企业官方来源可审计时枚举岗位，地方政府及高校转载继续排除。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 2,
+    "official_detail_candidates_added": 1,
+    "public_roles_normalized": 0,
+    "candidate_raw_created": 0,
+    "inactive_expired_created": 0,
+    "final_acceptance_met": 0,
+    "retry_required": 4,
+    "active_verified_created": 0
+  },
+  "next_batch": {
+    "start_index": 236,
+    "end_index_inclusive": 239,
+    "expected_company_ids": [
+      "cn-chip-0236",
+      "cn-chip-0237",
+      "cn-chip-0238",
+      "cn-chip-0239"
+    ]
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
