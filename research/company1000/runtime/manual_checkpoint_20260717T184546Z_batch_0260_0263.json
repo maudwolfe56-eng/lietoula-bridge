@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T18:45:46+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "batch": "0260_0263",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-re-0260",
+      "company_name": "大连万达集团股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.wanda.cn/help/",
+      "roles_normalized": 0,
+      "official_detail_candidates": 735,
+      "current_official_recruitment_announcements_observed": 1,
+      "final_acceptance_met": false,
+      "next_action": "完整枚举官方社会招聘735条/74页和2026届校园招聘，逐条核验详情、申请状态、截止日期与去重。"
+    },
+    {
+      "company_id": "cn-retail-0261",
+      "company_name": "苏宁易购集团股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://careers.suning.cn/",
+      "roles_normalized": 3,
+      "official_detail_candidates": 213,
+      "current_official_recruitment_announcements_observed": 10,
+      "final_acceptance_met": false,
+      "next_action": "继续枚举社会招聘其余21页和校园招聘；重试两个缓存缺失详情并检测关闭/暂停。"
+    },
+    {
+      "company_id": "cn-retail-0262",
+      "company_name": "永辉超市股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.yonghui.com.cn/html/web/rencaizhongxin/gongzuojihui/index.html",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "使用公开浏览器或站点专用枚举器解析官方智联招聘社会和校园门户。"
+    },
+    {
+      "company_id": "cn-retail-0263",
+      "company_name": "物美科技集团有限公司",
+      "official_entry_verified": false,
+      "official_entry_url": "https://www.wumart.com/",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "重试官网并核验官方人才入口、企业官方公告及政府/监管官方信息；排除第三方旧帖。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 3,
+    "official_detail_candidates_added": 948,
+    "job_link_candidates_added": 12,
+    "public_roles_normalized": 3,
+    "candidate_raw_created": 3,
+    "review_pending_created": 0,
+    "inactive_expired_created": 0,
+    "final_acceptance_met": 0,
+    "retry_required": 4,
+    "active_verified_created": 0
+  },
+  "next_batch": {
+    "start_index": 264,
+    "end_index_inclusive": 267,
+    "expected_company_ids": [
+      "cn-retail-0264",
+      "cn-retail-0265",
+      "cn-log-0266",
+      "cn-log-0267"
+    ]
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
