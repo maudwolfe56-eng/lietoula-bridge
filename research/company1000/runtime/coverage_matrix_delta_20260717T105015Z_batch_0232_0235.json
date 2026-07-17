@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T10:50:15+00:00",
+  "batch": "0232_0235",
+  "updates": [
+    {
+      "company_id": "cn-food-0232",
+      "official_entry_status": "verified_official_company_static_social_recruitment_page",
+      "public_inventory_status": "latest_observed_2026_announcements_expired_complete_unique_role_normalization_pending",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_static_recruitment_inventory_not_fully_normalized_to_complete_unique_role_records"
+    },
+    {
+      "company_id": "cn-food-0233",
+      "official_entry_status": "verified_official_company_join_page_to_hotjob_social_and_school_portals",
+      "public_inventory_status": "dynamic_inventory_unresolved_one_unique_campus_detail_candidate_observed",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_hotjob_social_and_school_inventory_and_current_application_state_not_fully_enumerated"
+    },
+    {
+      "company_id": "cn-food-0234",
+      "official_entry_status": "official_company_site_observed_direct_recruitment_link_unresolved",
+      "public_inventory_status": "2026_employer_campaign_portal_observed_moka_unique_detail_inventory_unresolved",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_company_site_to_recruitment_portal_direct_link_not_observed_and_moka_inventory_unresolved"
+    },
+    {
+      "company_id": "cn-food-0235",
+      "official_entry_status": "official_china_group_recruitment_entry_not_verified",
+      "public_inventory_status": "noncompany_subsidiary_recruitment_sources_excluded_no_auditable_official_inventory",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_group_recruitment_entry_and_auditable_public_inventory_not_found"
+    }
+  ],
+  "totals": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 2,
+    "official_detail_candidates_added": 1,
+    "roles_added": 0,
+    "candidate_raw_added": 0,
+    "inactive_expired_added": 0,
+    "final_acceptance_met": 0,
+    "active_verified_created": 0
+  }
+}
