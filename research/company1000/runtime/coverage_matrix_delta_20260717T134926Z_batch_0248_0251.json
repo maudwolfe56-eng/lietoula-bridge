@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T13:49:26+00:00",
+  "batch": "0248_0251",
+  "updates": [
+    {
+      "company_id": "cn-mining-0248",
+      "official_entry_status": "verified_official_careers_vacancy_and_direct_moka_portals",
+      "public_inventory_status": "moka_redirect_loop_or_javascript_application_without_server_rendered_enumerable_jobs",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_moka_social_and_campus_portals_redirect_loop_or_javascript_shell_without_public_auditable_job_enumeration"
+    },
+    {
+      "company_id": "cn-mining-0249",
+      "official_entry_status": "verified_official_career_strategy_and_recruitment_contact",
+      "public_inventory_status": "only_legacy_2020_role_details_indexed_no_current_inventory_or_explicit_no_openings_statement",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_site_has_career_navigation_and_recruitment_contact_but_no_current_individual_job_inventory_or_explicit_no_openings_statement"
+    },
+    {
+      "company_id": "cn-mining-0250",
+      "official_entry_status": "verified_official_company_site_direct_link_to_zhiye_portal",
+      "public_inventory_status": "official_zhiye_javascript_shell_without_server_rendered_enumerable_jobs",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_zhiye_portal_javascript_shell_without_server_rendered_public_job_inventory"
+    },
+    {
+      "company_id": "cn-re-0251",
+      "official_entry_status": "verified_official_talent_page_and_direct_social_campus_portals",
+      "public_inventory_status": "official_moka_fetch_error_or_redirect_loop_without_publicly_enumerable_jobs",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_moka_social_and_campus_portals_fetch_error_or_redirect_loop_without_public_auditable_job_enumeration"
+    }
+  ],
+  "totals": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "official_detail_candidates_added": 0,
+    "job_link_candidates_added": 16,
+    "roles_added": 0,
+    "candidate_raw_added": 0,
+    "inactive_expired_added": 0,
+    "final_acceptance_met": 0,
+    "active_verified_created": 0
+  }
+}
