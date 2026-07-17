@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T14:48:06+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "batch": "0252_0255",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-re-0252",
+      "company_name": "保利发展控股集团股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://polycn.com/mobile/develpment.html",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 1,
+      "final_acceptance_met": false,
+      "next_action": "为保利发展官方智联招聘社会、校园和实习入口建立合规公开枚举器；仅处理无需登录的列表和详情，持续仅返回JavaScript外壳时记录明确受限结论。"
+    },
+    {
+      "company_id": "cn-re-0253",
+      "company_name": "招商局蛇口工业区控股股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.cmsk1979.com/join.aspx?type=43",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "为招商蛇口官方智联招聘jobs、campus、intern和mapwork公开路由建立合规枚举器；不得绕过登录、验证码或访问控制。"
+    },
+    {
+      "company_id": "cn-re-0254",
+      "company_name": "华润置地有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.crland.com.hk/employeeDevelop/index.html",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 1,
+      "final_acceptance_met": false,
+      "next_action": "继续核验华润置地官网或官网直接确认的招聘公众号/活动页是否公开岗位级详情；不以未经官网确认的第三方职位聚合页作为正式来源。"
+    },
+    {
+      "company_id": "cn-re-0255",
+      "company_name": "龙湖集团控股有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.longfor.com/join/job.html",
+      "roles_normalized": 9,
+      "official_detail_candidates": 9,
+      "current_official_recruitment_announcements_observed": 1,
+      "final_acceptance_met": false,
+      "next_action": "继续分页枚举龙湖社会招聘其余255个公开职位，解析真实岗位详情URL、发布日期和截止日期并去重；所有记录保持candidate_raw。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "official_detail_candidates_added": 9,
+    "job_link_candidates_added": 23,
+    "public_roles_normalized": 9,
+    "candidate_raw_created": 9,
+    "inactive_expired_created": 0,
+    "final_acceptance_met": 0,
+    "retry_required": 4,
+    "active_verified_created": 0
+  },
+  "next_batch": {
+    "start_index": 256,
+    "end_index_inclusive": 259,
+    "expected_company_ids": [
+      "cn-re-0256",
+      "cn-re-0257",
+      "cn-re-0258",
+      "cn-re-0259"
+    ]
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
