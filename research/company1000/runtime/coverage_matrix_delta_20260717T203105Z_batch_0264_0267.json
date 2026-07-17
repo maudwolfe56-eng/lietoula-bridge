@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T20:31:05+00:00",
+  "batch": "0264_0267",
+  "company_deltas": [
+    {
+      "company_id": "cn-retail-0264",
+      "official_entry_verified": true,
+      "roles_added": 0,
+      "candidate_links_added": 1,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-retail-0265",
+      "official_entry_verified": true,
+      "roles_added": 0,
+      "candidate_links_added": 3,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-log-0266",
+      "official_entry_verified": false,
+      "roles_added": 0,
+      "candidate_links_added": 1,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-log-0267",
+      "official_entry_verified": true,
+      "roles_added": 0,
+      "candidate_links_added": 2,
+      "final_acceptance_met": false
+    }
+  ],
+  "aggregate_delta": {
+    "companies_audited": 4,
+    "official_entries_verified": 3,
+    "candidate_raw_added": 0,
+    "review_pending_added": 0,
+    "active_verified_added": 0,
+    "final_acceptance_added": 0
+  },
+  "next_batch_start_index": 268
+}
