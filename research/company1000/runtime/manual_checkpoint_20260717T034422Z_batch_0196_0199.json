@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T03:44:22+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "batch": "0196_0199",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-sec-0196",
+      "company_name": "兴业证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.hotjob.cn/wt/xyzq/web/index",
+      "roles_normalized": 3,
+      "final_acceptance_met": false,
+      "next_action": "按社会招聘、海外招聘、实习生招聘和博士后招聘频道逐页调用公开页面或官方公开数据请求，去重后逐条核验详情与投递状态；不得绕过登录、验证码、Cookie或其他访问控制。"
+    },
+    {
+      "company_id": "cn-sec-0197",
+      "company_name": "申万宏源证券有限公司",
+      "official_entry_verified": false,
+      "official_entry_url": "https://www.swhysc.com/swhysc/",
+      "roles_normalized": 0,
+      "final_acceptance_met": false,
+      "next_action": "通过合规浏览器渲染申万宏源证券官方网站，解析“诚聘英才”目标URL及其社会、校园、实习渠道；只使用官方公开载荷，历史或第三方转载不得作为当前库存。"
+    },
+    {
+      "company_id": "cn-sec-0198",
+      "company_name": "国泰海通证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://hr.gtht.com/",
+      "roles_normalized": 0,
+      "final_acceptance_met": false,
+      "next_action": "重试hr.gtht.com公开访问并枚举当前社会、校园和实习岗位；2026-04-30已截止的2027届总部校招只作为历史审计证据，不进入当前岗位包。"
+    },
+    {
+      "company_id": "cn-sec-0199",
+      "company_name": "平安证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://talent.pingan.com/",
+      "roles_normalized": 0,
+      "final_acceptance_met": false,
+      "next_action": "保留平安证券校园频道“暂无发布中的相关职位”的审计结论，并通过合规公开请求或浏览器渲染按成员公司完整枚举中国平安社会招聘和实习生招聘库存；不得绕过登录或验证码。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 3,
+    "public_roles_normalized": 3,
+    "candidate_raw_created": 3,
+    "final_acceptance_met": 0,
+    "retry_required": 4,
+    "active_verified_created": 0
+  },
+  "next_batch": {
+    "start_index": 200,
+    "end_index_inclusive": 203,
+    "expected_company_ids": [
+      "cn-sec-0200",
+      "cn-sec-0201",
+      "cn-sec-0202",
+      "cn-sec-0203"
+    ]
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
