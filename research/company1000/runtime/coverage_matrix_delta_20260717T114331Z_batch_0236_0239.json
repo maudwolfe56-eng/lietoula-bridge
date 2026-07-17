@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T11:43:31+00:00",
+  "batch": "0236_0239",
+  "updates": [
+    {
+      "company_id": "cn-chip-0236",
+      "official_entry_status": "verified_official_company_human_resources_page_and_current_zhiye_social_campus_portals",
+      "public_inventory_status": "one_unique_social_detail_normalized_current_and_legacy_paginated_inventories_full_enumeration_and_deduplication_pending",
+      "final_acceptance_met": false,
+      "roles_added": 1,
+      "failure_reason": "parallel_official_recruitment_inventories_not_fully_enumerated_and_deduplicated"
+    },
+    {
+      "company_id": "cn-chip-0237",
+      "official_entry_status": "verified_official_huahong_group_recruitment_page_and_member_company_domain_association",
+      "public_inventory_status": "member_company_site_http_403_no_enumerable_current_public_inventory_observed",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "member_company_official_site_403_and_no_enumerable_public_job_inventory_observed"
+    },
+    {
+      "company_id": "cn-chip-0238",
+      "official_entry_status": "verified_official_company_join_page_to_dual_social_recruitment_portals",
+      "public_inventory_status": "dynamic_zhiye_and_jobs_cxmt_inventories_not_enumerated",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_dynamic_social_inventories_not_enumerable_from_public_html_without_client_payload"
+    },
+    {
+      "company_id": "cn-chip-0239",
+      "official_entry_status": "verified_official_company_join_page_to_zhiye_social_and_campus_portals",
+      "public_inventory_status": "one_canonical_detail_candidate_observed_dynamic_detail_fields_and_full_inventory_unresolved",
+      "final_acceptance_met": false,
+      "roles_added": 0,
+      "failure_reason": "official_zhiye_social_and_campus_inventories_and_unique_detail_fields_not_fully_enumerated"
+    }
+  ],
+  "totals": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "official_detail_candidates_added": 2,
+    "roles_added": 1,
+    "candidate_raw_added": 1,
+    "inactive_expired_added": 0,
+    "final_acceptance_met": 0,
+    "active_verified_created": 0
+  }
+}
