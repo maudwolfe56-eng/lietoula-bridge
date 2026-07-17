@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T11:43:31+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "batch": "0236_0239",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-chip-0236",
+      "company_name": "中芯国际集成电路制造有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.smics.com/tc/site/human",
+      "roles_normalized": 1,
+      "official_detail_candidates": 1,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "继续枚举smics.zhiye.com社会招聘29页及校园招聘全部分页，并对careers.smics.com公开显示的811条旧版库存执行状态分类、唯一来源URL规范化与跨系统去重；仅保留当前公开详情完整且可申请的岗位。"
+    },
+    {
+      "company_id": "cn-chip-0237",
+      "company_name": "华虹半导体有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.huahong.com.cn/?id=51&m=channel",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "从华虹集团官方招聘页和华虹半导体官方域名关系继续核验无需登录的公开ATS、招聘公告或明确无公开岗位证据；对huahonggrace.com的403仅记录限制，不绕过访问控制。"
+    },
+    {
+      "company_id": "cn-chip-0238",
+      "company_name": "长鑫科技集团股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.cxmt.com/join.html",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "为cxmt.zhiye.com和jobs.cxmt.com建立合规的站点专用公开枚举器，解析社会招聘、校园招聘和实习招聘的唯一岗位详情及当前状态；不得调用需认证的接口或将官网通用薪酬结构当作岗位薪酬。"
+    },
+    {
+      "company_id": "cn-chip-0239",
+      "company_name": "长江存储科技有限责任公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.ymtc.com/cn/joinus.html",
+      "roles_normalized": 0,
+      "official_detail_candidates": 1,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "继续合规枚举ymtc.zhiye.com社会招聘和校园招聘公开库存，解析已观察到的jobAdId详情及其他唯一岗位的名称、职责、要求、地点、学历、经验、日期和当前申请状态；动态正文不可核验时不得生成JobImport。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "official_detail_candidates_added": 2,
+    "public_roles_normalized": 1,
+    "candidate_raw_created": 1,
+    "inactive_expired_created": 0,
+    "final_acceptance_met": 0,
+    "retry_required": 4,
+    "active_verified_created": 0
+  },
+  "next_batch": {
+    "start_index": 240,
+    "end_index_inclusive": 243,
+    "expected_company_ids": [
+      "cn-elec-0240",
+      "cn-elec-0241",
+      "cn-elec-0242",
+      "cn-elec-0243"
+    ]
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
