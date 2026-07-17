@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T05:52:00+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "batch": "0204_0207",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-sec-0204",
+      "company_name": "东吴证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://dwzq.zhiye.com/home",
+      "roles_normalized": 0,
+      "official_detail_candidates": 7,
+      "final_acceptance_met": false,
+      "next_action": "通过合规浏览器渲染或公开数据请求完整枚举社会、校园和实习频道，逐一核验7个精确官方详情候选的岗位名称、职责、要求、地点、发布时间和投递状态；不得绕过登录、验证码、Cookie或其他访问控制。"
+    },
+    {
+      "company_id": "cn-sec-0205",
+      "company_name": "南京证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://njzq.zhiye.com/",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "final_acceptance_met": false,
+      "next_action": "通过合规浏览器渲染或公开数据请求完整枚举社会招聘、校园招聘和实习生招聘三个官方频道；只使用官方公开载荷，不得使用第三方转载补齐岗位正文。"
+    },
+    {
+      "company_id": "cn-sec-0206",
+      "company_name": "长江证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://cjzq.zhiye.com/",
+      "roles_normalized": 0,
+      "official_detail_candidates": 1,
+      "final_acceptance_met": false,
+      "next_action": "完整枚举社会、校园和实习招聘频道，并直接核验已发现的1个精确官方实习详情候选；取得官方岗位字段和投递状态后再结构化。"
+    },
+    {
+      "company_id": "cn-sec-0207",
+      "company_name": "东北证券股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://nesc.zhiye.com/",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "final_acceptance_met": false,
+      "next_action": "依据官方招聘渠道声明，通过合规浏览器渲染或公开数据请求完整枚举社会、校园和实习招聘频道；不得绕过登录、验证码、Cookie或其他访问控制。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "official_detail_candidates_added": 8,
+    "public_roles_normalized": 0,
+    "candidate_raw_created": 0,
+    "final_acceptance_met": 0,
+    "retry_required": 4,
+    "active_verified_created": 0
+  },
+  "next_batch": {
+    "start_index": 208,
+    "end_index_inclusive": 211,
+    "expected_company_ids": [
+      "cn-sec-0208",
+      "cn-sec-0209",
+      "cn-sec-0210",
+      "cn-sec-0211"
+    ]
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
