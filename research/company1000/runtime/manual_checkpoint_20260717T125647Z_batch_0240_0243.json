@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-17T12:56:47+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "batch": "0240_0243",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-elec-0240",
+      "company_name": "闻泰科技股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.wingtech.com/cn",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "为jobs.wingtech.com社会招聘和校园招聘建立合规的站点专用公开枚举器，处理公开页面超时或客户端渲染，仅采集无需登录且可完整核验的唯一岗位详情；不得调用需认证接口。"
+    },
+    {
+      "company_id": "cn-elec-0241",
+      "company_name": "立讯精密工业股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.luxshare-ict.com/careers.html",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "为立讯精密官方HotJob社会招聘和校园招聘门户建立合规的公开枚举器，解析无需登录的岗位列表和详情；若公开HTML持续只有JavaScript外壳，应形成可审计的受限结论，不绕过访问控制。"
+    },
+    {
+      "company_id": "cn-elec-0242",
+      "company_name": "歌尔股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.goertek.com/join/advertises.html",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 4,
+      "final_acceptance_met": false,
+      "next_action": "继续从歌尔官方网站的更多招聘信息入口核验当前逐一岗位库存和唯一申请详情；2026-07-02已过期的聚合类别仅保留为审计证据，不写入当前JobImport。"
+    },
+    {
+      "company_id": "cn-elec-0243",
+      "company_name": "舜宇光学科技（集团）有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.sunnyoptical.com/jobs.html",
+      "roles_normalized": 0,
+      "official_detail_candidates": 1,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "继续核验舜宇官方职位搜索的数据加载方式和无需登录的公开详情；只有在页面明确显示无在招职位，或全部公开岗位已完整枚举并核验当前状态后，才能形成最终结论。空白详情页不得生成JobImport。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "official_detail_candidates_added": 1,
+    "job_link_candidates_added": 11,
+    "public_roles_normalized": 0,
+    "candidate_raw_created": 0,
+    "inactive_expired_created": 0,
+    "final_acceptance_met": 0,
+    "retry_required": 4,
+    "active_verified_created": 0
+  },
+  "next_batch": {
+    "start_index": 244,
+    "end_index_inclusive": 247,
+    "expected_company_ids": [
+      "cn-energy-0244",
+      "cn-energy-0245",
+      "cn-energy-0246",
+      "cn-energy-0247"
+    ]
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
