@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T07:26:53Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0308_0311",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "company_source_updates_file": "research/company1000/output/company_source_manual_batch_0308_0311_20260718T072653Z.jsonl",
+  "job_import_updates_file": "research/company1000/output/jobs_manual_batch_0308_0311_20260718T072653Z.jsonl",
+  "coverage_updates_file": "research/company1000/output/coverage_manual_batch_0308_0311_20260718T072653Z.jsonl",
+  "failures_updates_file": "research/company1000/output/failures_manual_batch_0308_0311_20260718T072653Z.jsonl",
+  "job_changes_updates_file": "research/company1000/output/job_changes_manual_batch_0308_0311_20260718T072653Z.jsonl",
+  "company_source_updates": [
+    {"company_id":"cn-bank-0308","company_name":"苏州银行股份有限公司","career_url":"https://suzhoubank.zhiye.com/","source_type":"official_recruitment_portal","verified_at":"2026-07-18T07:26:53Z","final_acceptance_met":false,"review_recommendation":"enumerate_public_dynamic_ATS"},
+    {"company_id":"cn-bank-0309","company_name":"厦门国际银行股份有限公司","career_url":"https://xib.zhiye.com/","source_type":"official_recruitment_portal","verified_at":"2026-07-18T07:26:53Z","final_acceptance_met":false,"review_recommendation":"continue_seven_page_inventory_enumeration"},
+    {"company_id":"cn-bank-0310","company_name":"齐鲁银行股份有限公司","career_url":"https://www.qlbchina.com/qlbchina/rczp/shzp/zpgg/index.html","source_type":"official_recruitment_announcement_index","verified_at":"2026-07-18T07:26:53Z","final_acceptance_met":true,"review_recommendation":"mark_current_public_inventory_enumerated_zero_and_monitor"},
+    {"company_id":"cn-bank-0311","company_name":"贵阳银行股份有限公司","career_url":"https://www.bankgy.cn/","source_type":"official_website_recruitment_signal","verified_at":"2026-07-18T07:26:53Z","final_acceptance_met":false,"review_recommendation":"resolve_official_current_recruitment_index"}
+  ],
+  "job_import_updates": [
+    {"record_id":"f9880fa919474ec86fb93157","company_id":"cn-bank-0309","job_name":"总行投资监督岗","department":"资产托管部","city":"厦门","location":"福建省-厦门市","published_date":"2026-07-15","deadline_date":null,"source_url":"https://xib.zhiye.com/zpdetail/390846739","review_status":"candidate_raw","review_recommendation":"promote_to_review_pending_after_manual_duplicate_and_live_apply_check","salary_disclosure_status":"not_disclosed","active_verified":false}
+  ],
+  "coverage_updates": [
+    {"company_id":"cn-bank-0308","official_entry_verified":true,"current_job_inventory_enumerated":false,"roles_normalized_this_run":0,"final_acceptance_met":false},
+    {"company_id":"cn-bank-0309","official_entry_verified":true,"current_job_inventory_enumerated":false,"roles_normalized_this_run":1,"public_records_observed":98,"final_acceptance_met":false},
+    {"company_id":"cn-bank-0310","official_entry_verified":true,"current_job_inventory_enumerated":true,"roles_normalized_this_run":0,"enumeration_status":"current_public_active_inventory_zero","final_acceptance_met":true},
+    {"company_id":"cn-bank-0311","official_entry_verified":true,"current_job_inventory_enumerated":false,"roles_normalized_this_run":0,"final_acceptance_met":false}
+  ],
+  "update_summary": {
+    "companies_audited": 4,
+    "official_recruitment_entries_verified": 4,
+    "current_public_inventories_fully_enumerated": 1,
+    "zero_inventory_companies_confirmed": 1,
+    "public_roles_observed": 98,
+    "new_jobs_added": 1,
+    "candidate_raw_added": 1,
+    "review_pending_suggested": 1,
+    "active_verified_added": 0,
+    "job_changes_added": 1,
+    "structured_failures_added": 3,
+    "final_acceptance_added": 1
+  },
+  "cursor_handoff": {
+    "company_source_action": "upsert company_source file by company_id and preserve official evidence, verified_at and final_acceptance_met",
+    "job_import_action": "insert one candidate_raw role by unique source_url; do not auto-promote; perform duplicate and live-application review before review_pending",
+    "coverage_action": "append four coverage rows; cn-bank-0310 may be marked current inventory enumerated with zero active roles; keep global final_acceptance_met=false",
+    "failure_action": "append three structured retryable failures",
+    "job_changes_action": "append one newly_observed candidate_raw change",
+    "status_guard": "never set active_verified automatically",
+    "next_priority_indices": [312,313,314,315],
+    "next_priority_company_ids": ["cn-bank-0312","cn-bank-0313","cn-bank-0314","cn-bank-0315"]
+  }
+}
