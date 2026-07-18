@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T03:36:48Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0288_0291",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "company_source_updates": [
+    {
+      "company_id": "cn-travel-0288",
+      "company_name": "同程旅行控股有限公司",
+      "short_name": "同程旅行",
+      "industry": "在线旅游与数字服务",
+      "official_website": "https://www.tongchengir.com/cn/",
+      "career_url": "https://mhr.ly.com/recruit/schoolPortal/",
+      "career_entry_evidence": "2026-07-18核验同程旅行官方校园招聘门户；页面展示网申、笔试、面试及Offer流程，并标示同程网络科技股份有限公司备案信息。公开页面未暴露可审计的当前岗位详情字段和唯一详情URL。",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_recruitment_portal",
+      "verified_at": "2026-07-18T03:36:48Z",
+      "final_acceptance_met": false,
+      "source_company_id": null,
+      "company_id_repair_reason": null,
+      "review_recommendation": "retain_company_source; build_site_specific_public_data_resolver_before_job_import"
+    },
+    {
+      "company_id": "cn-edu-0289",
+      "company_name": "新东方教育科技集团有限公司",
+      "short_name": "新东方",
+      "industry": "教育与学习服务",
+      "official_website": "https://www.neworiental.org/",
+      "career_url": "https://zhaopin.xdf.cn/social/jobs",
+      "career_entry_evidence": "2026-07-18从新东方官方xdf.cn页面“加入我们”核验招聘官网、社会招聘和校园招聘入口；社会招聘门户为动态页面，公开HTML未返回岗位名称、职责、要求、地点、日期、薪酬等完整字段。",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_recruitment_portal",
+      "verified_at": "2026-07-18T03:36:48Z",
+      "final_acceptance_met": false,
+      "source_company_id": null,
+      "company_id_repair_reason": null,
+      "review_recommendation": "retain_company_source; enumerate_only_unique_official_position_urls_and validate_detail_fields"
+    },
+    {
+      "company_id": "cn-edu-0290",
+      "company_name": "好未来教育集团",
+      "short_name": "好未来",
+      "industry": "教育科技与学习服务",
+      "official_website": "https://www.tal.com/",
+      "career_url": "https://www.tal.com/zh-cn/about",
+      "career_entry_evidence": "2026-07-18核验好未来集团官方联系页面公开招聘联系邮箱recruiting@tal.com，但官网未提供可公开枚举的岗位列表、唯一详情URL或当前申请状态。",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_company_recruitment_contact",
+      "verified_at": "2026-07-18T03:36:48Z",
+      "final_acceptance_met": false,
+      "source_company_id": null,
+      "company_id_repair_reason": null,
+      "review_recommendation": "retain_company_source; do_not_create_job_records_without_official_position_page_or_announcement"
+    },
+    {
+      "company_id": "cn-edu-0291",
+      "company_name": "中公教育科技股份有限公司",
+      "short_name": "中公教育",
+      "industry": "职业教育与培训服务",
+      "official_website": "https://www.offcn.com/",
+      "career_url": "https://www.offcn.com/",
+      "career_entry_evidence": "2026-07-18核验中公教育官方主域名；本轮未在公开官网页面中定位到可核验的当前企业招聘入口或当前岗位详情。历史高校转载和第三方招聘页面未作为唯一来源使用。",
+      "seed_status": "official_entry_candidate",
+      "source_type": "official_company_website",
+      "verified_at": "2026-07-18T03:36:48Z",
+      "final_acceptance_met": false,
+      "source_company_id": null,
+      "company_id_repair_reason": null,
+      "review_recommendation": "manual_followup_required; search official corporate disclosure and current official recruitment announcement only"
+    }
+  ],
+  "job_import_updates": [],
+  "coverage_updates": [
+    {
+      "company_id": "cn-travel-0288",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_dynamic_campus_recruitment_portal_verified_but_current_role_inventory_not_exposed_in_auditable_public_html",
+      "failure_reason": "site_specific_public_data_resolver_required",
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-edu-0289",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_social_and_campus_recruitment_portals_verified_but_job_fields_are_client_rendered",
+      "failure_reason": "dynamic_job_detail_resolver_required",
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-edu-0290",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_recruitment_contact_verified_but_no_public_job_inventory_or_unique_detail_urls_published",
+      "failure_reason": "no_public_position_inventory",
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-edu-0291",
+      "official_entry_verified": false,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_company_domain_verified_but_current_official_recruitment_entry_not_located",
+      "failure_reason": "manual_official_entry_followup_required",
+      "final_acceptance_met": false
+    }
+  ],
+  "update_summary": {
+    "companies_audited": 4,
+    "official_recruitment_entries_verified": 3,
+    "official_entry_candidates_pending": 1,
+    "new_jobs_added": 0,
+    "changed_jobs_added": 0,
+    "closed_or_expired_jobs_added": 0,
+    "candidate_raw_added": 0,
+    "review_pending_suggested": 0,
+    "active_verified_added": 0,
+    "reason_no_job_import": "No role in this batch simultaneously exposed an official unique detail URL, title, location, responsibilities, requirements and current application/freshness evidence."
+  },
+  "cursor_handoff": {
+    "company_source_action": "upsert company_source_updates by company_id; preserve source evidence and verified_at",
+    "job_import_action": "no insert for this batch",
+    "coverage_action": "append coverage_updates and keep final_acceptance_met=false",
+    "failure_action": "record one structured failure per non-enumerated inventory using failure_reason",
+    "status_guard": "never set active_verified automatically",
+    "next_priority_indices": [292, 293, 294, 295],
+    "next_priority_company_ids": ["cn-edu-0292", "cn-edu-0293", "cn-edu-0294", "cn-edu-0295"]
+  }
+}
