@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T04:49:22Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0300_0303",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "company_source_updates": [
+    {
+      "company_id": "cn-software-0300",
+      "company_name": "用友网络科技股份有限公司",
+      "short_name": "用友网络",
+      "industry": "企业软件与云服务",
+      "official_website": "https://www.yonyou.com/",
+      "career_url": "https://career.yonyou.com/",
+      "career_entry_evidence": "2026-07-18核验用友集团官网‘加入用友’公开链接并直达career.yonyou.com官方招聘门户；门户公开响应为JavaScript应用外壳，当前岗位全量字段和稳定唯一详情URL仍不可审计。",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_recruitment_portal",
+      "verified_at": "2026-07-18T04:49:22Z",
+      "final_acceptance_met": false,
+      "source_company_id": null,
+      "company_id_repair_reason": null,
+      "review_recommendation": "retain_company_source; implement_site_specific_public_dynamic_resolver_without_login_or_access_control_bypass"
+    },
+    {
+      "company_id": "cn-bank-0301",
+      "company_name": "平安银行股份有限公司",
+      "short_name": "平安银行",
+      "industry": "银行",
+      "official_website": "https://bank.pingan.com/",
+      "career_url": "https://talent.pingan.com/",
+      "career_entry_evidence": "2026-07-18核验平安银行官网‘人才招聘’入口并确认其链接中国平安官方招聘门户；门户公开设置社会招聘、应届生招聘和实习生招聘路由，但当前未暴露可按平安银行主体完整审计的岗位库存。",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_group_recruitment_portal",
+      "verified_at": "2026-07-18T04:49:22Z",
+      "final_acceptance_met": false,
+      "source_company_id": null,
+      "company_id_repair_reason": null,
+      "review_recommendation": "retain_company_source; resolve_bank_specific_public_inventory_from_official_group_portal; do_not_login_or_infer_missing_fields"
+    },
+    {
+      "company_id": "cn-bank-0302",
+      "company_name": "成都银行股份有限公司",
+      "short_name": "成都银行",
+      "industry": "银行",
+      "official_website": "https://www.bocd.com.cn/",
+      "career_url": "https://www.bocd.com.cn/zyxxfb/rczp/zhaopingonggao/list1.html",
+      "career_entry_evidence": "2026-07-18核验成都银行官方网站人才招聘公告列表及2026年招聘公告；已观察的公开报名窗口均已截止或进入拟聘等后续流程，官方列表未发现更晚且仍处申请期的公告，完成当前公开岗位零库存快照。",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_recruitment_announcement_index",
+      "verified_at": "2026-07-18T04:49:22Z",
+      "final_acceptance_met": true,
+      "source_company_id": null,
+      "company_id_repair_reason": null,
+      "review_recommendation": "retain_company_source; mark_current_public_inventory_enumerated_zero; monitor_official_notice_index_for_new_open_announcements"
+    },
+    {
+      "company_id": "cn-bank-0303",
+      "company_name": "长沙银行股份有限公司",
+      "short_name": "长沙银行",
+      "industry": "银行",
+      "official_website": "https://www.bankofchangsha.com/",
+      "career_url": "https://cscb.zhiye.com/",
+      "career_entry_evidence": "2026-07-18核验长沙银行官网‘加入我们/人才招聘’公开链接并直达cscb.zhiye.com官方招聘门户；公开职位列表仅返回客户端渲染外壳，当前岗位字段和稳定唯一详情URL仍不可审计。",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_recruitment_portal",
+      "verified_at": "2026-07-18T04:49:22Z",
+      "final_acceptance_met": false,
+      "source_company_id": null,
+      "company_id_repair_reason": null,
+      "review_recommendation": "retain_company_source; implement_public_zhiye_inventory_resolver_without_login_or_captcha_bypass"
+    }
+  ],
+  "job_import_updates": [],
+  "coverage_updates": [
+    {
+      "company_id": "cn-software-0300",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_recruitment_portal_verified_but_current_inventory_is_not_exposed_with_auditable_fields_and_stable_detail_urls",
+      "failure_reason": "javascript_shell_requires_site_specific_public_resolver",
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-bank-0301",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_bank_to_group_recruitment_portal_chain_verified_but_bank_specific_current_inventory_not_auditable",
+      "failure_reason": "group_dynamic_portal_does_not_expose_bank_specific_complete_inventory_in_public_response",
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-bank-0302",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": true,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_recruitment_notice_index_audited_with_zero_current_open_positions",
+      "failure_reason": null,
+      "final_acceptance_met": true
+    },
+    {
+      "company_id": "cn-bank-0303",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_zhiye_recruitment_portal_verified_but_current_inventory_not_auditable_from_client_rendered_list",
+      "failure_reason": "dynamic_portal_requires_public_site_specific_resolver",
+      "final_acceptance_met": false
+    }
+  ],
+  "update_summary": {
+    "companies_audited": 4,
+    "official_recruitment_entries_verified": 4,
+    "official_entry_candidates_pending": 0,
+    "current_public_inventories_fully_enumerated": 1,
+    "zero_inventory_companies_confirmed": 1,
+    "new_jobs_added": 0,
+    "changed_jobs_added": 0,
+    "closed_or_expired_jobs_added": 0,
+    "candidate_raw_added": 0,
+    "review_pending_suggested": 0,
+    "active_verified_added": 0,
+    "reason_no_job_import": "No current role in this batch exposed an official, stable and complete combination of title, company, department, responsibilities, requirements, location, education, experience, dates, salary disclosure status and unique detail URL. Chengdu Bank's official notice index supports a current zero-open-position snapshot; the other three inventories remain client-rendered and incomplete for audit purposes."
+  },
+  "job_changes_updates": [],
+  "cursor_handoff": {
+    "company_source_action": "upsert company_source_updates by company_id; preserve official evidence, verified_at and final_acceptance_met",
+    "job_import_action": "no insert for this batch",
+    "coverage_action": "append coverage_updates; cn-bank-0302 may be marked current inventory enumerated with zero roles; keep global final_acceptance_met=false",
+    "failure_action": "append three structured failures from failures_manual_batch_0300_0303_20260718T044922Z.jsonl",
+    "job_changes_action": "no job change rows for this batch",
+    "checkpoint_action": "continue from runtime/manual_checkpoint_latest.json",
+    "status_guard": "never set active_verified automatically",
+    "next_priority_indices": [304, 305, 306, 307],
+    "next_priority_company_ids": ["cn-bank-0304", "cn-bank-0305", "cn-bank-0306", "cn-bank-0307"]
+  }
+}
