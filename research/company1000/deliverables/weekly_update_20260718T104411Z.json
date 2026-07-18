@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T10:44:11Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0332_0335",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "company_source_updates_file": "research/company1000/output/company_source_manual_batch_0332_0335_20260718T104411Z.jsonl",
+  "job_import_updates_file": "research/company1000/output/jobs_manual_batch_0332_0335_20260718T104411Z.jsonl",
+  "coverage_updates_file": "research/company1000/output/coverage_manual_batch_0332_0335_20260718T104411Z.jsonl",
+  "failure_updates_file": "research/company1000/output/failures_manual_batch_0332_0335_20260718T104411Z.jsonl",
+  "job_change_updates_file": "research/company1000/output/job_changes_manual_batch_0332_0335_20260718T104411Z.jsonl",
+  "update_summary": {
+    "companies_audited": 4,
+    "official_recruitment_entries_verified": 4,
+    "official_entry_candidates_pending": 0,
+    "new_jobs_added": 0,
+    "changed_jobs_added": 0,
+    "closed_or_expired_campaigns_observed": 5,
+    "candidate_raw_added": 0,
+    "review_pending_suggested": 0,
+    "active_verified_added": 0,
+    "final_acceptance_added": 1
+  },
+  "audit_outcomes": [
+    {
+      "company_id": "cn-bank-0332",
+      "company_name": "新疆银行股份有限公司",
+      "outcome": "official_recruitment_section_verified_via_historical_page",
+      "blocking_reason": "current_javascript_inventory_not_enumerated"
+    },
+    {
+      "company_id": "cn-bank-0333",
+      "company_name": "甘肃银行股份有限公司",
+      "outcome": "official_campus_and_social_recruitment_categories_verified",
+      "blocking_reason": "latest_social_campaign_has_no_explicit_current_status_or_deadline"
+    },
+    {
+      "company_id": "cn-bank-0334",
+      "company_name": "宁夏银行股份有限公司",
+      "outcome": "official_2026_recruitment_result_notice_verified",
+      "blocking_reason": "current_talent_listing_and_role_inventory_not_enumerated"
+    },
+    {
+      "company_id": "cn-bank-0335",
+      "company_name": "内蒙古银行股份有限公司",
+      "outcome": "official_talent_listing_enumerated_all_2026_campaigns_expired",
+      "blocking_reason": null
+    }
+  ],
+  "cursor_handoff": {
+    "company_source_action": "upsert four company-source JSONL records by company_id and preserve evidence plus verified_at",
+    "job_import_action": "no current job insert for this batch; empty JSONL intentionally records that no role met current-open and role-detail conditions",
+    "coverage_action": "append four coverage records; only cn-bank-0335 has final_acceptance_met=true",
+    "failure_action": "append three structured retryable failure records for unresolved current inventories",
+    "job_change_action": "append five closed_or_expired_campaign_observed records",
+    "status_guard": "never set active_verified automatically",
+    "next_priority_indices": [336, 337, 338, 339],
+    "next_priority_company_ids": ["cn-bank-0336", "cn-bank-0337", "cn-bank-0338", "cn-bank-0339"]
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
