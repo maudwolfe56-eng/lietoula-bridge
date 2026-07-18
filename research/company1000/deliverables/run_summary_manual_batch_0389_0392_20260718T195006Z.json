@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T19:50:06Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0389_0392",
+  "processed_indices": [389, 390, 391, 392],
+  "processed_company_ids": ["cn-health-0389", "cn-health-0390", "cn-health-0391", "cn-health-0392"],
+  "companies_audited": 4,
+  "official_recruitment_entries_verified": 4,
+  "official_entry_candidates_pending": 0,
+  "companies_final_acceptance_met": 0,
+  "current_roles_observed": 0,
+  "historical_roles_observed": 0,
+  "jobs_added": 0,
+  "job_status_additions": {
+    "candidate_raw": 0,
+    "review_pending": 0,
+    "active_verified": 0,
+    "inactive_expired": 0
+  },
+  "job_changes_added": 0,
+  "failures_added": 4,
+  "files": {
+    "company_source": "research/company1000/output/company_source_manual_batch_0389_0392_20260718T195006Z.jsonl",
+    "job_import": "research/company1000/output/jobs_manual_batch_0389_0392_20260718T195006Z.jsonl",
+    "coverage": "research/company1000/output/coverage_manual_batch_0389_0392_20260718T195006Z.jsonl",
+    "failures": "research/company1000/output/failures_manual_batch_0389_0392_20260718T195006Z.jsonl",
+    "job_changes": "research/company1000/output/job_changes_manual_batch_0389_0392_20260718T195006Z.jsonl",
+    "navigation_resolution": "research/company1000/output/recruitment_navigation_resolution_manual_batch_0389_0392_20260718T195006Z.jsonl",
+    "coverage_delta": "research/company1000/runtime/coverage_matrix_delta_20260718T195006Z_batch_0389_0392.json",
+    "checkpoint": "research/company1000/runtime/manual_checkpoint_20260718T195006Z_batch_0389_0392.json",
+    "weekly_update": "research/company1000/deliverables/weekly_update_20260718T195006Z.json"
+  },
+  "next_priority_indices": [393, 394, 395, 396],
+  "next_priority_company_ids": ["cn-health-0393", "cn-health-0394", "cn-health-0395", "cn-health-0396"],
+  "next_priority_company_names": ["郑州安图生物工程股份有限公司", "广州万孚生物技术股份有限公司", "深圳开立生物医疗科技股份有限公司", "深圳市理邦精密仪器股份有限公司"],
+  "source_table_gap_review": {
+    "missing_company_ids": ["cn-health-0373", "cn-health-0383"],
+    "status": "unresolved",
+    "action": "audit company_seed merge, deduplication and CompanySource master generation before assigning or repairing missing indices"
+  },
+  "policy": {
+    "official_sources_only": true,
+    "third_party_as_sole_source_allowed": false,
+    "login_captcha_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
