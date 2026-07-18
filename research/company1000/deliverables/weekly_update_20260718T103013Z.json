@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T10:30:13Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0328_0331",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "company_source_updates_file": "research/company1000/output/company_source_manual_batch_0328_0331_20260718T103013Z.jsonl",
+  "job_import_updates_file": "research/company1000/output/jobs_manual_batch_0328_0331_20260718T103013Z.jsonl",
+  "coverage_updates_file": "research/company1000/output/coverage_manual_batch_0328_0331_20260718T103013Z.jsonl",
+  "failure_updates_file": "research/company1000/output/failures_manual_batch_0328_0331_20260718T103013Z.jsonl",
+  "job_change_updates_file": "research/company1000/output/job_changes_manual_batch_0328_0331_20260718T103013Z.jsonl",
+  "update_summary": {
+    "companies_audited": 4,
+    "official_recruitment_entries_verified": 3,
+    "official_entry_candidates_pending": 1,
+    "new_jobs_added": 0,
+    "changed_jobs_added": 0,
+    "closed_or_expired_campaigns_observed": 0,
+    "candidate_raw_added": 0,
+    "review_pending_suggested": 0,
+    "active_verified_added": 0,
+    "final_acceptance_added": 0
+  },
+  "audit_outcomes": [
+    {
+      "company_id": "cn-bank-0328",
+      "company_name": "广东华兴银行股份有限公司",
+      "outcome": "official_talent_recruitment_entry_verified_no_auditable_current_inventory",
+      "blocking_reason": "public_portal_did_not_expose_unique_current_role_details"
+    },
+    {
+      "company_id": "cn-bank-0329",
+      "company_name": "四川银行股份有限公司",
+      "outcome": "official_social_campus_pages_and_hotjob_portal_verified",
+      "blocking_reason": "dynamic_position_rows_current_status_and_role_specific_details_unresolved"
+    },
+    {
+      "company_id": "cn-bank-0330",
+      "company_name": "中原银行股份有限公司",
+      "outcome": "official_homepage_direct_zhiye_portal_link_verified",
+      "blocking_reason": "client_rendered_inventory_and_role_detail_fields_unresolved"
+    },
+    {
+      "company_id": "cn-bank-0331",
+      "company_name": "海南银行股份有限公司",
+      "outcome": "official_domain_verified_current_recruitment_entry_not_located",
+      "blocking_reason": "official_recruitment_navigation_and_current_job_inventory_unresolved"
+    }
+  ],
+  "cursor_handoff": {
+    "company_source_action": "upsert four company-source JSONL records by company_id and preserve evidence plus verified_at",
+    "job_import_action": "no insert for this batch; empty JSONL intentionally records that no role met official unique-detail and freshness conditions",
+    "coverage_action": "append four coverage records and keep final_acceptance_met=false",
+    "failure_action": "append four structured retryable failure records",
+    "job_change_action": "no job changes for this batch",
+    "status_guard": "never set active_verified automatically",
+    "next_priority_indices": [332, 333, 334, 335],
+    "next_priority_company_ids": ["cn-bank-0332", "cn-bank-0333", "cn-bank-0334", "cn-bank-0335"]
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
