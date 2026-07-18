@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-18T01:44:16+00:00",
+  "target_branch": "research/company1000-crawler-20260713",
+  "batch": "0276_0279",
+  "companies_reviewed": [
+    {
+      "company_id": "cn-port-0276",
+      "company_name": "上海国际港务（集团）股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.portshanghai.com.cn/xyzp/index.jhtml",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 1,
+      "final_acceptance_met": false,
+      "next_action": "解析官方2026校园招聘长图及二维码指向的公开报名入口，并核验社会招聘当前零库存或岗位详情。"
+    },
+    {
+      "company_id": "cn-port-0277",
+      "company_name": "宁波舟山港股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.zjseaport.com/jtww/jrwm/rczp/",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "继续核验集团微招聘及官方公告指定公开招聘系统，确认当前零库存或补录唯一岗位详情URL。"
+    },
+    {
+      "company_id": "cn-port-0278",
+      "company_name": "青岛港国际股份有限公司",
+      "official_entry_verified": true,
+      "official_entry_url": "https://www.sd-port.com/talentDemandPage/index.html",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "继续核验山东港口及青岛港权属单位官网和官方公告指定系统，确认当前公开岗位库存。"
+    },
+    {
+      "company_id": "cn-port-0279",
+      "company_name": "广州港股份有限公司",
+      "official_entry_verified": false,
+      "official_entry_url": "https://www.gzpgroup.com/pub/gzport/index.html",
+      "roles_normalized": 0,
+      "official_detail_candidates": 0,
+      "current_official_recruitment_announcements_observed": 0,
+      "final_acceptance_met": false,
+      "next_action": "从广州港集团或广州港股份官方页面确认公开招聘入口及其与招聘系统的直接关联，再枚举当前岗位。"
+    }
+  ],
+  "batch_summary": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 3,
+    "official_detail_candidates_added": 0,
+    "job_link_candidates_added": 12,
+    "public_roles_normalized": 0,
+    "candidate_raw_created": 0,
+    "review_pending_created": 0,
+    "inactive_expired_created": 0,
+    "final_acceptance_met": 0,
+    "retry_required": 4,
+    "active_verified_created": 0
+  },
+  "next_batch": {
+    "start_index": 280,
+    "end_index_inclusive": 283,
+    "expected_company_ids": [
+      "cn-ship-0280",
+      "cn-ship-0281",
+      "cn-ship-0282",
+      "cn-hotel-0283"
+    ]
+  },
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "auto_active_verified": false
+  },
+  "notification_eligible": false
+}
