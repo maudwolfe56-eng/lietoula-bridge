@@ -1,17 +1,17 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-18T04:32:14+00:00",
+  "updated_at": "2026-07-18T04:49:22+00:00",
   "branch": "research/company1000-crawler-20260713",
-  "last_completed_manual_batch": "0296_0299",
-  "next_batch_start_index": 300,
-  "next_priority_indices": [300, 301, 302, 303],
+  "last_completed_manual_batch": "0300_0303",
+  "next_batch_start_index": 304,
+  "next_priority_indices": [304, 305, 306, 307],
   "next_priority_company_ids": [
-    "cn-software-0300",
-    "cn-bank-0301",
-    "cn-bank-0302",
-    "cn-bank-0303"
+    "cn-bank-0304",
+    "cn-bank-0305",
+    "cn-bank-0306",
+    "cn-bank-0307"
   ],
-  "last_checkpoint": "research/company1000/runtime/manual_checkpoint_20260718T043214Z.json",
+  "last_checkpoint": "research/company1000/runtime/manual_checkpoint_20260718T044922Z.json",
   "final_acceptance_met": false,
   "notification_eligible": false
 }
