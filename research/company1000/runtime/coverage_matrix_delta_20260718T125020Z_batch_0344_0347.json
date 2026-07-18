@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-18T12:50:20+00:00",
+  "batch": "0344_0347",
+  "company_deltas": [
+    {"company_id":"cn-bank-0344","official_entry_verified":true,"roles_added":0,"candidate_links_added":4,"final_acceptance_met":false},
+    {"company_id":"cn-bank-0345","official_entry_verified":true,"roles_added":10,"candidate_links_added":28,"final_acceptance_met":false},
+    {"company_id":"cn-bank-0346","official_entry_verified":true,"roles_added":0,"candidate_links_added":0,"final_acceptance_met":false},
+    {"company_id":"cn-bank-0347","official_entry_verified":true,"roles_added":0,"candidate_links_added":0,"final_acceptance_met":false}
+  ],
+  "aggregate_delta": {
+    "companies_audited": 4,
+    "official_entries_verified": 4,
+    "candidate_raw_added": 10,
+    "review_pending_added": 0,
+    "active_verified_added": 0,
+    "job_changes_added": 10,
+    "failures_added": 4,
+    "final_acceptance_added": 0
+  },
+  "next_batch_start_index": 348
+}
