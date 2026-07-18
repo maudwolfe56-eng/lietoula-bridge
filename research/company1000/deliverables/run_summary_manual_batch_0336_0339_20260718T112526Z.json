@@ -1,0 +1,76 @@
+{
+  "schema_version": "2.0",
+  "generated_at": "2026-07-18T11:25:26Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "manual_batch_0336_0339_20260718T112526Z",
+  "scope": "Official recruitment source verification and public current-job enumeration for company indices 336-339",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "companies": [
+    {
+      "company_id": "cn-bank-0336",
+      "company_name": "广西北部湾银行股份有限公司",
+      "official_entry_verified": true,
+      "roles_normalized": 0,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-bank-0337",
+      "company_name": "桂林银行股份有限公司",
+      "official_entry_verified": true,
+      "roles_normalized": 0,
+      "final_acceptance_met": true
+    },
+    {
+      "company_id": "cn-bank-0338",
+      "company_name": "柳州银行股份有限公司",
+      "official_entry_verified": false,
+      "roles_normalized": 0,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-bank-0339",
+      "company_name": "汉口银行股份有限公司",
+      "official_entry_verified": false,
+      "roles_normalized": 0,
+      "final_acceptance_met": false
+    }
+  ],
+  "metrics": {
+    "companies_audited": 4,
+    "official_entries_verified": 2,
+    "official_entry_candidates_pending": 2,
+    "new_jobs_candidate_raw": 0,
+    "review_pending_added": 0,
+    "active_verified_added": 0,
+    "closed_or_expired_campaigns_observed": 0,
+    "failures_added": 3,
+    "job_changes_added": 0,
+    "final_acceptance_added": 1
+  },
+  "quality_notes": [
+    "广西北部湾银行官方招聘子域名已核验，但当前岗位库存由JavaScript加载且公开HTML未暴露岗位级详情，本轮未绕过客户端访问控制或使用第三方转载导入岗位。",
+    "桂林银行官方人才招聘列表完整枚举，仅显示两项2019年历史内容，未出现2020—2026招聘公告或当前岗位，本次形成可审计的当前公开零库存结论。",
+    "柳州银行官方主域名已确认，但公开官网招聘入口尚未定位；外部高校页面线索未作为唯一来源。",
+    "汉口银行品牌化外部托管招聘页面缺少已核验的官网反向链接，未满足官方来源链要求，未导入岗位。"
+  ],
+  "output_files": [
+    "research/company1000/output/company_source_manual_batch_0336_0339_20260718T112526Z.jsonl",
+    "research/company1000/output/jobs_manual_batch_0336_0339_20260718T112526Z.jsonl",
+    "research/company1000/output/coverage_manual_batch_0336_0339_20260718T112526Z.jsonl",
+    "research/company1000/output/failures_manual_batch_0336_0339_20260718T112526Z.jsonl",
+    "research/company1000/output/job_changes_manual_batch_0336_0339_20260718T112526Z.jsonl",
+    "research/company1000/deliverables/run_summary_manual_batch_0336_0339_20260718T112526Z.json",
+    "research/company1000/deliverables/weekly_update_20260718T112526Z.json"
+  ],
+  "next_priority_indices": [340, 341, 342, 343],
+  "next_priority_company_ids": ["cn-bank-0340", "cn-bank-0341", "cn-bank-0342", "cn-bank-0343"],
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
