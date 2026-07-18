@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T20:52:42Z",
+  "branch": "research/company1000-crawler-20260713",
+  "last_completed_batch": "manual_batch_0397_0400_20260718T205242Z",
+  "processed_indices": [397, 398, 399, 400],
+  "last_processed_index": 400,
+  "next_batch_start_index": 401,
+  "batch_progress": {
+    "companies_audited": 4,
+    "official_entries_verified": 4,
+    "current_roles_observed": 0,
+    "historical_roles_observed": 5,
+    "jobs_added_candidate_raw": 0,
+    "review_pending_added": 0,
+    "active_verified_added": 0,
+    "failures_added": 4,
+    "job_changes_added": 0,
+    "companies_final_acceptance_met": 1
+  },
+  "aggregate_counts_status": "rebuild_required_from_all_manual_deltas_before_publishing_exact_global_totals",
+  "next_priority": [
+    {"company_id": "cn-indtech-0401", "company_name": "海尔智家股份有限公司"},
+    {"company_id": "cn-indtech-0404", "company_name": "海信家电集团股份有限公司"},
+    {"company_id": "cn-indtech-0406", "company_name": "四川长虹电器股份有限公司"},
+    {"company_id": "cn-indtech-0408", "company_name": "奥克斯集团有限公司"}
+  ],
+  "source_table_gap_review": {
+    "missing_company_ids": [
+      "cn-health-0373",
+      "cn-health-0383",
+      "cn-indtech-0402",
+      "cn-indtech-0403",
+      "cn-indtech-0405",
+      "cn-indtech-0407"
+    ],
+    "status": "unresolved",
+    "action": "audit company-seed merge, deduplication and CompanySource master generation before assigning or repairing missing indices; do not invent companies or IDs"
+  },
+  "hard_rules": {
+    "official_sources_only": true,
+    "third_party_as_sole_source_allowed": false,
+    "do_not_bypass_login_or_captcha": true,
+    "do_not_bypass_paywall_or_access_control": true,
+    "do_not_infer_salary": true,
+    "new_jobs_default_candidate_raw": true,
+    "do_not_set_active_verified_automatically": true
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
