@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T21:45:41Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0401_0404_0406_0408",
+  "summary": {
+    "companies_audited": 4,
+    "official_entries_verified": 4,
+    "new_candidate_raw_jobs": 4,
+    "review_pending_suggestions": 0,
+    "active_verified": 0,
+    "failures_recorded": 5,
+    "companies_final_acceptance_met": 0
+  },
+  "company_results": [
+    {
+      "company_id": "cn-indtech-0401",
+      "company_name": "海尔智家股份有限公司",
+      "result": "official_entry_verified_dynamic_inventory_not_publicly_auditable",
+      "jobs_added": 0,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-indtech-0404",
+      "company_name": "海信家电集团股份有限公司",
+      "result": "official_entry_verified_dynamic_inventory_not_publicly_auditable",
+      "jobs_added": 0,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-indtech-0406",
+      "company_name": "四川长虹电器股份有限公司",
+      "result": "official_paginated_inventory_partially_enumerated",
+      "jobs_added": 4,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-indtech-0408",
+      "company_name": "奥克斯集团有限公司",
+      "result": "official_careers_page_verified_no_public_role_inventory_exposed",
+      "jobs_added": 0,
+      "final_acceptance_met": false
+    }
+  ],
+  "new_jobs": [
+    {
+      "record_id": "c745b546ed2096b39e5c8461",
+      "job_title": "海外子公司HRBP",
+      "employer": "长虹国际控股（香港）有限公司",
+      "location": "广东省 中山市",
+      "review_status": "candidate_raw",
+      "source_url": "https://group.changhong.com/jrzh_295/shzp/202509/t20250928_422460.html"
+    },
+    {
+      "record_id": "f5c472e95600e8e16b287894",
+      "job_title": "党务管理主管",
+      "employer": "四川长虹民生物流股份有限公司",
+      "location": "四川省 成都市",
+      "review_status": "candidate_raw",
+      "source_url": "https://group.changhong.com/jrzh_295/shzp/202405/t20240530_372289.html"
+    },
+    {
+      "record_id": "b6df46793ac0276961b07250",
+      "job_title": "综合管理",
+      "employer": "四川长虹电器股份有限公司",
+      "location": "四川省 绵阳市",
+      "review_status": "candidate_raw",
+      "source_url": "https://group.changhong.com/jrzh_295/shzp/202304/t20230412_320842.html"
+    },
+    {
+      "record_id": "f2557af70f5ad3b918d16bb3",
+      "job_title": "国际法务高级经理",
+      "employer": "长虹国际控股（香港）有限公司",
+      "location": "广东省 中山市",
+      "review_status": "candidate_raw",
+      "source_url": "https://group.changhong.com/jrzh_295/shzp/202606/t20260617_480649.html"
+    }
+  ],
+  "compliance": {
+    "official_sources_only": true,
+    "no_login_captcha_paywall_or_access_control_bypass": true,
+    "salary_not_inferred": true,
+    "all_new_jobs_candidate_raw": true,
+    "active_verified_added": 0
+  },
+  "next_action": "resolve company indices 409-412 from the persisted seed master, continue official-entry audit, and complete Changhong full pagination/status reconciliation",
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
