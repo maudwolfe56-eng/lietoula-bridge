@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T22:32:21Z",
+  "branch": "research/company1000-crawler-20260713",
+  "last_completed_batch": "manual_batch_0409_0412_20260718T223221Z",
+  "processed_indices": [
+    409,
+    410,
+    411,
+    412
+  ],
+  "last_processed_index": 412,
+  "next_batch_start_index": 413,
+  "batch_progress": {
+    "companies_audited": 4,
+    "official_entries_verified": 4,
+    "current_roles_observed": 0,
+    "historical_roles_observed": 0,
+    "jobs_added_candidate_raw": 0,
+    "review_pending_added": 0,
+    "active_verified_added": 0,
+    "failures_added": 5,
+    "job_changes_added": 0,
+    "companies_final_acceptance_met": 0
+  },
+  "aggregate_counts_status": "rebuild_required_from_all_manual_deltas_before_publishing_exact_global_totals",
+  "next_priority": [
+    {
+      "company_id": "cn-indtech-0413",
+      "company_name": "公牛集团股份有限公司",
+      "index": 413,
+      "status": "official_entry_audit_pending"
+    },
+    {
+      "company_id": "cn-indtech-0414",
+      "company_name": "欧普照明股份有限公司",
+      "index": 414,
+      "status": "official_entry_audit_pending"
+    },
+    {
+      "company_id": "cn-indtech-0415",
+      "company_name": "科沃斯机器人股份有限公司",
+      "index": 415,
+      "status": "official_entry_audit_pending"
+    },
+    {
+      "company_id": "cn-indtech-0416",
+      "company_name": "北京石头世纪科技股份有限公司",
+      "index": 416,
+      "status": "official_entry_audit_pending"
+    }
+  ],
+  "source_table_gap_review": {
+    "missing_company_ids": [
+      "cn-health-0373",
+      "cn-health-0383",
+      "cn-indtech-0402",
+      "cn-indtech-0403",
+      "cn-indtech-0405",
+      "cn-indtech-0407"
+    ],
+    "status": "unresolved",
+    "action": "audit company-seed merge, deduplication and CompanySource master generation before assigning or repairing missing indices; do not invent companies or IDs"
+  },
+  "hard_rules": {
+    "official_sources_only": true,
+    "third_party_as_sole_source_allowed": false,
+    "do_not_bypass_login_or_captcha": true,
+    "do_not_bypass_paywall_or_access_control": true,
+    "do_not_infer_salary": true,
+    "new_jobs_default_candidate_raw": true,
+    "do_not_set_active_verified_automatically": true
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
