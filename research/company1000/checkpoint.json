@@ -1,56 +1,56 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-07-18T08:27:36Z",
+  "updated_at": "2026-07-18T08:47:25Z",
   "branch": "research/company1000-crawler-20260713",
-  "last_completed_batch": "manual_batch_0316_0319_20260718T082736Z",
+  "last_completed_batch": "manual_batch_0320_0323_20260718T084725Z",
   "progress": {
     "target_companies": 1000,
     "seeded_companies": 1020,
-    "coverage_records_projected": 1214,
+    "coverage_records_projected": 1218,
     "company_source_final_acceptance_count_projected": 4,
-    "jobs_captured_total_projected": 887,
-    "jobs_captured_candidate_raw_projected": 750,
+    "jobs_captured_total_projected": 888,
+    "jobs_captured_candidate_raw_projected": 751,
     "jobs_review_pending_projected": 87,
     "jobs_inactive_expired_projected": 50,
     "jobs_active_verified": 0,
-    "last_processed_index": 319,
-    "next_batch_start_index": 320
+    "last_processed_index": 323,
+    "next_batch_start_index": 324
   },
   "last_batch": {
     "companies_audited": 4,
-    "official_entries_verified": 4,
+    "official_entries_verified": 3,
     "jobs_added_candidate_raw": 1,
     "failures_added": 4,
     "final_acceptance_added": 0,
     "output_files": [
-      "research/company1000/output/company_source_manual_batch_0316_0319_20260718T082736Z.jsonl",
-      "research/company1000/output/jobs_manual_batch_0316_0319_20260718T082736Z.jsonl",
-      "research/company1000/output/coverage_manual_batch_0316_0319_20260718T082736Z.jsonl",
-      "research/company1000/output/failures_manual_batch_0316_0319_20260718T082736Z.jsonl",
-      "research/company1000/output/job_changes_manual_batch_0316_0319_20260718T082736Z.jsonl",
-      "research/company1000/deliverables/run_summary_manual_batch_0316_0319_20260718T082736Z.json",
-      "research/company1000/deliverables/weekly_update_20260718T082736Z.json"
+      "research/company1000/output/company_source_manual_batch_0320_0323_20260718T084725Z.jsonl",
+      "research/company1000/output/jobs_manual_batch_0320_0323_20260718T084725Z.jsonl",
+      "research/company1000/output/coverage_manual_batch_0320_0323_20260718T084725Z.jsonl",
+      "research/company1000/output/failures_manual_batch_0320_0323_20260718T084725Z.jsonl",
+      "research/company1000/output/job_changes_manual_batch_0320_0323_20260718T084725Z.jsonl",
+      "research/company1000/deliverables/run_summary_manual_batch_0320_0323_20260718T084725Z.json",
+      "research/company1000/deliverables/weekly_update_20260718T084725Z.json"
     ]
   },
   "next_work": [
     {
       "priority": 1,
-      "company_id": "cn-bank-0320",
+      "company_id": "cn-bank-0324",
       "action": "verify_official_recruitment_entry_and_enumerate_public_inventory"
     },
     {
       "priority": 2,
-      "company_id": "cn-bank-0321",
-      "action": "continue_verified_official_careers_index_and_enumerate_current_inventory"
+      "company_id": "cn-bank-0325",
+      "action": "verify_official_recruitment_entry_and_enumerate_public_inventory"
     },
     {
       "priority": 3,
-      "company_id": "cn-bank-0322",
+      "company_id": "cn-bank-0326",
       "action": "verify_official_recruitment_entry_and_enumerate_public_inventory"
     },
     {
       "priority": 4,
-      "company_id": "cn-bank-0323",
+      "company_id": "cn-bank-0327",
       "action": "verify_official_recruitment_entry_and_enumerate_public_inventory"
     }
   ],
