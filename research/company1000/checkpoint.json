@@ -1,8 +1,8 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-18T20:52:42Z",
+  "updated_at": "2026-07-18T23:26:05Z",
   "branch": "research/company1000-crawler-20260713",
-  "last_completed_batch": "manual_batch_0397_0400_20260718T205242Z",
+  "last_completed_batch": "manual_batch_0413_0416_20260718T232605Z",
   "progress": {
     "target_companies": 1000,
     "seeded_companies": 1020,
@@ -13,50 +13,46 @@
     "jobs_review_pending_projected": 87,
     "jobs_inactive_expired_projected": 50,
     "jobs_active_verified": 0,
-    "last_processed_index": 400,
-    "next_batch_start_index": 401,
-    "manual_batches_reconciled_through_index": 400,
+    "last_processed_index": 416,
+    "next_batch_start_index": 417,
+    "manual_batches_reconciled_through_index": 416,
     "aggregate_rebuild_required": true,
-    "aggregate_count_note": "Projected aggregate counters predate later manual deltas and must be deterministically rebuilt before publication; only the processed-index checkpoint is authoritative in this file."
+    "aggregate_count_note": "Projected aggregate counters above predate manual deltas after index 400, including 24 candidate_raw records added in batch 0413-0416. They must be deterministically rebuilt before publication; only processed-index fields are authoritative."
   },
   "last_batch": {
     "companies_audited": 4,
     "official_entries_verified": 4,
-    "current_roles_observed": 0,
-    "historical_roles_observed": 5,
-    "jobs_added_candidate_raw": 0,
-    "failures_added": 4,
-    "job_changes_added": 0,
-    "closed_or_expired_campaigns_observed": 5,
-    "final_acceptance_added": 1,
+    "current_roles_observed": 73,
+    "historical_roles_observed": 0,
+    "jobs_added_candidate_raw": 24,
+    "jobs_review_pending": 0,
+    "jobs_active_verified": 0,
+    "failures_added": 5,
+    "job_changes_added": 24,
+    "closed_or_expired_campaigns_observed": 0,
+    "final_acceptance_added": 0,
     "output_files": [
-      "research/company1000/output/company_source_manual_batch_0397_0400_20260718T205242Z.jsonl",
-      "research/company1000/output/jobs_manual_batch_0397_0400_20260718T205242Z.jsonl",
-      "research/company1000/output/coverage_manual_batch_0397_0400_20260718T205242Z.jsonl",
-      "research/company1000/output/failures_manual_batch_0397_0400_20260718T205242Z.jsonl",
-      "research/company1000/output/job_changes_manual_batch_0397_0400_20260718T205242Z.jsonl",
-      "research/company1000/output/recruitment_navigation_resolution_manual_batch_0397_0400_20260718T205242Z.jsonl",
-      "research/company1000/runtime/coverage_matrix_delta_20260718T205242Z_batch_0397_0400.json",
-      "research/company1000/runtime/manual_checkpoint_20260718T205242Z_batch_0397_0400.json",
-      "research/company1000/deliverables/run_summary_manual_batch_0397_0400_20260718T205242Z.json",
-      "research/company1000/deliverables/weekly_update_20260718T205242Z.json"
+      "research/company1000/output/company_source_manual_batch_0413_0416_20260718T232605Z.jsonl",
+      "research/company1000/output/jobs_manual_batch_0413_0416_20260718T232605Z_part1.jsonl",
+      "research/company1000/output/jobs_manual_batch_0413_0416_20260718T232605Z_part2.jsonl",
+      "research/company1000/output/jobs_manual_batch_0413_0416_20260718T232605Z_part3.jsonl",
+      "research/company1000/output/coverage_manual_batch_0413_0416_20260718T232605Z.jsonl",
+      "research/company1000/output/failures_manual_batch_0413_0416_20260718T232605Z.jsonl",
+      "research/company1000/output/job_changes_manual_batch_0413_0416_20260718T232605Z.jsonl",
+      "research/company1000/runtime/manual_checkpoint_20260718T232605Z_batch_0413_0416.json",
+      "research/company1000/deliverables/run_summary_manual_batch_0413_0416_20260718T232605Z.json"
     ]
   },
   "next_work": [
-    {"priority": 1, "company_id": "cn-indtech-0401", "company_name": "海尔智家股份有限公司", "action": "verify_official_recruitment_entry_and_enumerate_public_inventory"},
-    {"priority": 2, "company_id": "cn-indtech-0404", "company_name": "海信家电集团股份有限公司", "action": "verify_official_recruitment_entry_and_enumerate_public_inventory"},
-    {"priority": 3, "company_id": "cn-indtech-0406", "company_name": "四川长虹电器股份有限公司", "action": "verify_official_recruitment_entry_and_enumerate_public_inventory"},
-    {"priority": 4, "company_id": "cn-indtech-0408", "company_name": "奥克斯集团有限公司", "action": "verify_official_recruitment_entry_and_enumerate_public_inventory"}
+    {"priority": 1, "company_id": "cn-indtech-0417", "company_name": "追觅科技（苏州）有限公司", "action": "verify_official_recruitment_entry_and_enumerate_public_inventory"},
+    {"priority": 2, "company_id": "cn-indtech-0418", "company_name": "安克创新科技股份有限公司", "action": "verify_official_recruitment_entry_and_enumerate_public_inventory"},
+    {"priority": 3, "company_id": "cn-indtech-0419", "company_name": "深圳传音控股股份有限公司", "action": "verify_official_recruitment_entry_and_enumerate_public_inventory"},
+    {"priority": 4, "company_id": "cn-indtech-0420", "company_name": "广州视源电子科技股份有限公司", "action": "verify_official_recruitment_entry_and_enumerate_public_inventory"},
+    {"priority": 5, "company_id": "cn-indtech-0415", "company_name": "科沃斯机器人股份有限公司", "action": "continue official pages 2-4 and retry unresolved details"},
+    {"priority": 6, "company_id": "cn-indtech-0414", "company_name": "欧普照明股份有限公司", "action": "enumerate full official inventory and resolve core detail fields"}
   ],
   "source_table_gap_review": {
-    "missing_company_ids": [
-      "cn-health-0373",
-      "cn-health-0383",
-      "cn-indtech-0402",
-      "cn-indtech-0403",
-      "cn-indtech-0405",
-      "cn-indtech-0407"
-    ],
+    "missing_company_ids": ["cn-health-0373", "cn-health-0383", "cn-indtech-0402", "cn-indtech-0403", "cn-indtech-0405", "cn-indtech-0407"],
     "status": "unresolved",
     "action": "audit the company-seed merge, deduplication and CompanySource master generation before assigning or repairing missing indices; do not invent companies or IDs"
   },
