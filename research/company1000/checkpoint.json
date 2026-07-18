@@ -1,62 +1,62 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-07-18T10:44:11Z",
+  "updated_at": "2026-07-18T11:52:59Z",
   "branch": "research/company1000-crawler-20260713",
-  "last_completed_batch": "manual_batch_0332_0335_20260718T104411Z",
+  "last_completed_batch": "manual_batch_0340_0343_20260718T115259Z",
   "progress": {
     "target_companies": 1000,
     "seeded_companies": 1020,
-    "coverage_records_projected": 1230,
-    "company_source_final_acceptance_count_projected": 5,
+    "coverage_records_projected": 1238,
+    "company_source_final_acceptance_count_projected": 6,
     "jobs_captured_total_projected": 897,
     "jobs_captured_candidate_raw_projected": 760,
     "jobs_review_pending_projected": 87,
     "jobs_inactive_expired_projected": 50,
     "jobs_active_verified": 0,
-    "last_processed_index": 335,
-    "next_batch_start_index": 336
+    "last_processed_index": 343,
+    "next_batch_start_index": 344
   },
   "last_batch": {
     "companies_audited": 4,
-    "official_entries_verified": 4,
+    "official_entries_verified": 3,
     "jobs_added_candidate_raw": 0,
-    "failures_added": 3,
-    "job_changes_added": 5,
-    "closed_or_expired_campaigns_observed": 5,
-    "final_acceptance_added": 1,
+    "failures_added": 4,
+    "job_changes_added": 8,
+    "closed_or_expired_campaigns_observed": 8,
+    "final_acceptance_added": 0,
     "output_files": [
-      "research/company1000/output/company_source_manual_batch_0332_0335_20260718T104411Z.jsonl",
-      "research/company1000/output/jobs_manual_batch_0332_0335_20260718T104411Z.jsonl",
-      "research/company1000/output/coverage_manual_batch_0332_0335_20260718T104411Z.jsonl",
-      "research/company1000/output/failures_manual_batch_0332_0335_20260718T104411Z.jsonl",
-      "research/company1000/output/job_changes_manual_batch_0332_0335_20260718T104411Z.jsonl",
-      "research/company1000/deliverables/run_summary_manual_batch_0332_0335_20260718T104411Z.json",
-      "research/company1000/deliverables/weekly_update_20260718T104411Z.json"
+      "research/company1000/output/company_source_manual_batch_0340_0343_20260718T115259Z.jsonl",
+      "research/company1000/output/jobs_manual_batch_0340_0343_20260718T115259Z.jsonl",
+      "research/company1000/output/coverage_manual_batch_0340_0343_20260718T115259Z.jsonl",
+      "research/company1000/output/failures_manual_batch_0340_0343_20260718T115259Z.jsonl",
+      "research/company1000/output/job_changes_manual_batch_0340_0343_20260718T115259Z.jsonl",
+      "research/company1000/deliverables/run_summary_manual_batch_0340_0343_20260718T115259Z.json",
+      "research/company1000/deliverables/weekly_update_20260718T115259Z.json"
     ]
   },
   "next_work": [
     {
       "priority": 1,
-      "company_id": "cn-bank-0336",
-      "company_name": "广西北部湾银行股份有限公司",
+      "company_id": "cn-bank-0344",
+      "company_name": "广东南粤银行股份有限公司",
       "action": "verify_official_recruitment_entry_and_enumerate_public_inventory"
     },
     {
       "priority": 2,
-      "company_id": "cn-bank-0337",
-      "company_name": "桂林银行股份有限公司",
+      "company_id": "cn-bank-0345",
+      "company_name": "温州银行股份有限公司",
       "action": "verify_official_recruitment_entry_and_enumerate_public_inventory"
     },
     {
       "priority": 3,
-      "company_id": "cn-bank-0338",
-      "company_name": "柳州银行股份有限公司",
+      "company_id": "cn-bank-0346",
+      "company_name": "台州银行股份有限公司",
       "action": "verify_official_recruitment_entry_and_enumerate_public_inventory"
     },
     {
       "priority": 4,
-      "company_id": "cn-bank-0339",
-      "company_name": "汉口银行股份有限公司",
+      "company_id": "cn-bank-0347",
+      "company_name": "浙江泰隆商业银行股份有限公司",
       "action": "verify_official_recruitment_entry_and_enumerate_public_inventory"
     }
   ],
