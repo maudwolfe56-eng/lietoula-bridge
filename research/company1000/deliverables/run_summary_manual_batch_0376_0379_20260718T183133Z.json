@@ -1,0 +1,113 @@
+{
+  "schema_version": "2.0",
+  "generated_at": "2026-07-18T18:31:33Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "manual_batch_0376_0379_20260718T183133Z",
+  "scope": "Official recruitment source verification and public current-role inventory audit for company indices 376 through 379",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "companies": [
+    {
+      "company_id": "cn-health-0376",
+      "company_name": "凯莱英医药集团（天津）股份有限公司",
+      "official_entry_verified": true,
+      "roles_normalized": 0,
+      "current_rows_observed": 29,
+      "full_public_inventory_enumerated": false,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0377",
+      "company_name": "北京昭衍新药研究中心股份有限公司",
+      "official_entry_verified": true,
+      "roles_normalized": 0,
+      "current_rows_observed": 0,
+      "full_public_inventory_enumerated": false,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0378",
+      "company_name": "广州金域医学检验集团股份有限公司",
+      "official_entry_verified": true,
+      "roles_normalized": 0,
+      "current_rows_observed": 2,
+      "full_public_inventory_enumerated": false,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0379",
+      "company_name": "迪安诊断技术集团股份有限公司",
+      "official_entry_verified": true,
+      "roles_normalized": 0,
+      "current_rows_observed": 0,
+      "full_public_inventory_enumerated": false,
+      "final_acceptance_met": false
+    }
+  ],
+  "source_table_integrity": [
+    {
+      "company_id": "cn-health-0373",
+      "status": "missing_from_company_source_master",
+      "repair_performed": false,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0383",
+      "status": "missing_from_company_source_master",
+      "repair_performed": false,
+      "final_acceptance_met": false
+    }
+  ],
+  "metrics": {
+    "companies_audited": 4,
+    "source_table_integrity_gaps_audited": 2,
+    "official_entries_verified": 4,
+    "official_entry_candidates_pending": 0,
+    "new_jobs_candidate_raw": 0,
+    "review_pending_added": 0,
+    "active_verified_added": 0,
+    "failures_added": 4,
+    "job_changes_added": 0,
+    "final_acceptance_added": 0
+  },
+  "quality_notes": [
+    "凯莱英官网3页社会招聘清单观察到29个岗位及职责、要求、部门和天津地点，但缺少逐岗唯一详情URL与时效字段，未拆分导入。",
+    "昭衍新药官网直接链接官方Zhiye招聘门户；当前公开解析未枚举岗位级详情。",
+    "金域医学官网链接官方Zhiye门户并发布两则2026届招聘公告；公告职位信息为图片，未做OCR推测。",
+    "迪安诊断官方招聘入口为JavaScript动态应用；公开HTML仅返回应用壳，未绕过访问控制。",
+    "本批未创建JobImport、未推测薪酬、未建议review_pending、未自动设置active_verified。",
+    "CompanySource主表另发现cn-health-0383缺失，连同既有cn-health-0373继续保留空缺并待审计。"
+  ],
+  "output_files": [
+    "research/company1000/output/company_source_manual_batch_0376_0379_20260718T183133Z.jsonl",
+    "research/company1000/output/jobs_manual_batch_0376_0379_20260718T183133Z.jsonl",
+    "research/company1000/output/coverage_manual_batch_0376_0379_20260718T183133Z.jsonl",
+    "research/company1000/output/failures_manual_batch_0376_0379_20260718T183133Z.jsonl",
+    "research/company1000/output/job_changes_manual_batch_0376_0379_20260718T183133Z.jsonl",
+    "research/company1000/runtime/coverage_matrix_delta_20260718T183133Z_batch_0376_0379.json",
+    "research/company1000/runtime/manual_checkpoint_20260718T183133Z.json",
+    "research/company1000/deliverables/run_summary_manual_batch_0376_0379_20260718T183133Z.json",
+    "research/company1000/deliverables/weekly_update_20260718T183133Z.json"
+  ],
+  "next_priority_indices": [
+    380,
+    381,
+    382,
+    384
+  ],
+  "next_priority_company_ids": [
+    "cn-health-0380",
+    "cn-health-0381",
+    "cn-health-0382",
+    "cn-health-0384"
+  ],
+  "company_source_gap_review": "cn-health-0373 and cn-health-0383 remain absent from the CompanySource master; audit source-table generation before any ID repair.",
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
