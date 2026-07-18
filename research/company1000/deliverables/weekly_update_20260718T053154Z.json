@@ -1,0 +1,147 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T05:31:54Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0304_0307",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "company_source_updates": [
+    {
+      "company_id": "cn-bank-0304",
+      "company_name": "重庆农村商业银行股份有限公司",
+      "short_name": "重庆农商行",
+      "industry": "农村商业银行",
+      "official_website": "https://www.cqrcb.com/",
+      "career_url": "https://www.cqrcb.com/cqrcb/aboutus/job/index.html",
+      "career_entry_evidence": "2026-07-18核验重庆农商行官方网站人才招聘公告列表及2026年春季社会招聘、校园招聘后续公告；最新社会招聘报名已于2026-05-22 17:00截止，未发现更晚且仍处申请期的官方公告，完成当前公开岗位零库存快照。",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_recruitment_announcement_index",
+      "verified_at": "2026-07-18T05:31:54Z",
+      "final_acceptance_met": true,
+      "source_company_id": null,
+      "company_id_repair_reason": null,
+      "review_recommendation": "retain_company_source; mark_current_public_inventory_enumerated_zero; monitor_official_notice_index_for_new_open_announcements"
+    },
+    {
+      "company_id": "cn-bank-0305",
+      "company_name": "上海农村商业银行股份有限公司",
+      "short_name": "上海农商银行",
+      "industry": "农村商业银行",
+      "official_website": "https://www.shrcb.com/",
+      "career_url": "https://www.shrcb.com/shrcb/xxgk/gsjs/ygzp/index.html",
+      "career_entry_evidence": "2026-07-18核验上海农商银行现行官方主域名shrcb.com、员工招聘栏目及官网人才招聘入口；上海市国资委官方页面亦存在2027届暑期实习生等招聘信号，但部分材料为图片、附件或外部动态页面，当前岗位库存尚不能完整审计。",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_recruitment_announcement_index",
+      "verified_at": "2026-07-18T05:31:54Z",
+      "final_acceptance_met": false,
+      "source_company_id": null,
+      "company_id_repair_reason": "replace_legacy_srcb_com_seed_with_current_official_shrcb_com_domain",
+      "review_recommendation": "upsert_corrected_official_domain; retain_company_source; resolve_official_image_attachment_and_dynamic_application_materials_without_login_or_access_control_bypass"
+    },
+    {
+      "company_id": "cn-bank-0306",
+      "company_name": "广州农村商业银行股份有限公司",
+      "short_name": "广州农商银行",
+      "industry": "农村商业银行",
+      "official_website": "https://www.grcbank.com/",
+      "career_url": "https://cdms.grcbank.com:8083/",
+      "career_entry_evidence": "2026-07-18核验广州农商银行官方网站多处‘人才招聘’链接并确认其指向cdms.grcbank.com:8083官方招聘门户；当前运行环境未能从该公开端点取得可完整审计的岗位库存。",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_recruitment_portal",
+      "verified_at": "2026-07-18T05:31:54Z",
+      "final_acceptance_met": false,
+      "source_company_id": null,
+      "company_id_repair_reason": null,
+      "review_recommendation": "retain_company_source; retry_public_portal_from_supported_runtime; do_not_bypass_access_control_or_use_third_party_as_sole_source"
+    },
+    {
+      "company_id": "cn-bank-0307",
+      "company_name": "青岛银行股份有限公司",
+      "short_name": "青岛银行",
+      "industry": "银行",
+      "official_website": "https://www.qdccb.com/",
+      "career_url": "https://www.qdccb.com/qdbank/gywm/qygg/2025110711562640893/index.html",
+      "career_entry_evidence": "2026-07-18核验青岛银行官方网站常态化社会招聘公告；公告明确21个岗位且报名长期有效，职责、地点和条件位于官方XLS计划表。当前运行环境未能将附件解析为可审计岗位级字段。",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_recruitment_announcement",
+      "verified_at": "2026-07-18T05:31:54Z",
+      "final_acceptance_met": false,
+      "source_company_id": null,
+      "company_id_repair_reason": null,
+      "review_recommendation": "retain_company_source; fetch_and_parse_official_xls_attachment_in_supported_runtime; normalize_21_roles_as_candidate_raw_only_after_field_validation"
+    }
+  ],
+  "job_import_updates": [],
+  "coverage_updates": [
+    {
+      "company_id": "cn-bank-0304",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": true,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_recruitment_notice_index_audited_with_zero_current_open_positions",
+      "failure_reason": null,
+      "final_acceptance_met": true
+    },
+    {
+      "company_id": "cn-bank-0305",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_recruitment_index_and_government_official_recruitment_signals_verified_but_role_inventory_not_fully_auditable",
+      "failure_reason": "official_image_attachment_and_dynamic_application_materials_require_supported_public_resolver",
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-bank-0306",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_recruitment_portal_verified_but_current_inventory_not_auditable_from_nonstandard_endpoint_in_current_runtime",
+      "failure_reason": "public_nonstandard_portal_endpoint_requires_supported_runtime_retry",
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-bank-0307",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_long_term_recruitment_announcement_verified_with_21_roles_but_role_level_fields_remain_in_unparsed_official_xls_attachment",
+      "failure_reason": "official_xls_attachment_not_machine_readable_in_current_runtime",
+      "final_acceptance_met": false
+    }
+  ],
+  "update_summary": {
+    "companies_audited": 4,
+    "official_recruitment_entries_verified": 4,
+    "official_entry_candidates_pending": 0,
+    "current_public_inventories_fully_enumerated": 1,
+    "zero_inventory_companies_confirmed": 1,
+    "current_role_groups_observed_but_not_normalized": 21,
+    "new_jobs_added": 0,
+    "changed_jobs_added": 0,
+    "closed_or_expired_jobs_added": 0,
+    "candidate_raw_added": 0,
+    "review_pending_suggested": 0,
+    "active_verified_added": 0,
+    "reason_no_job_import": "重庆农商行完成当前零岗位快照；上海农商银行与广州农商银行的当前岗位库存仍依赖未完整暴露字段的官方动态或图片材料；青岛银行虽确认21个长期有效岗位，但岗位级职责、地点和任职条件位于当前运行环境无法解析的官方XLS附件。为避免缺字段、重复或错误岗位，本批不生成JobImport。"
+  },
+  "job_changes_updates": [],
+  "cursor_handoff": {
+    "company_source_action": "upsert company_source_updates by company_id; correct cn-bank-0305 official domain to shrcb.com; preserve official evidence, verified_at and final_acceptance_met",
+    "job_import_action": "no insert for this batch; after official Qingdao Bank XLS parsing, create role-level candidate_raw rows only",
+    "coverage_action": "append coverage_updates; cn-bank-0304 may be marked current inventory enumerated with zero roles; keep global final_acceptance_met=false",
+    "failure_action": "append three structured failures from failures_manual_batch_0304_0307_20260718T053154Z.jsonl",
+    "job_changes_action": "no job change rows for this batch",
+    "checkpoint_action": "continue from runtime/manual_checkpoint_latest.json",
+    "status_guard": "never set active_verified automatically",
+    "next_priority_indices": [308, 309, 310, 311],
+    "next_priority_company_ids": ["cn-bank-0308", "cn-bank-0309", "cn-bank-0310", "cn-bank-0311"]
+  }
+}
