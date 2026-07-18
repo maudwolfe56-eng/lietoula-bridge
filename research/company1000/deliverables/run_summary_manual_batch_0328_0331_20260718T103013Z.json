@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "generated_at": "2026-07-18T10:30:13Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "manual_batch_0328_0331_20260718T103013Z",
+  "scope": "Official recruitment source verification and public current-job enumeration for company indices 328-331",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "companies": [
+    {"company_id": "cn-bank-0328", "company_name": "广东华兴银行股份有限公司", "official_entry_verified": true, "roles_normalized": 0, "final_acceptance_met": false},
+    {"company_id": "cn-bank-0329", "company_name": "四川银行股份有限公司", "official_entry_verified": true, "roles_normalized": 0, "final_acceptance_met": false},
+    {"company_id": "cn-bank-0330", "company_name": "中原银行股份有限公司", "official_entry_verified": true, "roles_normalized": 0, "final_acceptance_met": false},
+    {"company_id": "cn-bank-0331", "company_name": "海南银行股份有限公司", "official_entry_verified": false, "roles_normalized": 0, "final_acceptance_met": false}
+  ],
+  "metrics": {
+    "companies_audited": 4,
+    "official_entries_verified": 3,
+    "official_entry_candidates_pending": 1,
+    "new_jobs_candidate_raw": 0,
+    "review_pending_added": 0,
+    "active_verified_added": 0,
+    "expired_or_closed_campaigns_observed": 0,
+    "failures_added": 4,
+    "job_changes_added": 0,
+    "final_acceptance_added": 0
+  },
+  "quality_notes": [
+    "广东华兴银行官网首页直接链接官方人才招聘入口，但公开页面未返回可审计的当前岗位库存或岗位级详情，未据此推断零库存。",
+    "四川银行官网公开社会招聘、校园招聘页面并直接链接官方HotJob门户；岗位行和详情由客户端动态加载，本轮未取得唯一岗位URL和完整字段。",
+    "中原银行官网直接链接官方智联招聘门户，但本轮门户仅返回客户端外壳；海南银行官方主域名可访问但当前招聘入口未定位。",
+    "本批未生成JobImport或JobChanges；未使用采购公告、第三方转载或缺乏岗位级详情的活动公告替代正式岗位记录。"
+  ],
+  "output_files": [
+    "research/company1000/output/company_source_manual_batch_0328_0331_20260718T103013Z.jsonl",
+    "research/company1000/output/jobs_manual_batch_0328_0331_20260718T103013Z.jsonl",
+    "research/company1000/output/coverage_manual_batch_0328_0331_20260718T103013Z.jsonl",
+    "research/company1000/output/failures_manual_batch_0328_0331_20260718T103013Z.jsonl",
+    "research/company1000/output/job_changes_manual_batch_0328_0331_20260718T103013Z.jsonl",
+    "research/company1000/deliverables/run_summary_manual_batch_0328_0331_20260718T103013Z.json",
+    "research/company1000/deliverables/weekly_update_20260718T103013Z.json"
+  ],
+  "next_priority_indices": [332, 333, 334, 335],
+  "next_priority_company_ids": ["cn-bank-0332", "cn-bank-0333", "cn-bank-0334", "cn-bank-0335"],
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
