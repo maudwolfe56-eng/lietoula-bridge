@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-18T17:26:14+00:00",
+  "batch": "0367_0370",
+  "company_deltas": [
+    {"company_id":"cn-health-0367","official_entry_verified":true,"roles_added":4,"candidate_links_added":6,"final_acceptance_met":false},
+    {"company_id":"cn-health-0368","official_entry_verified":true,"roles_added":0,"candidate_links_added":9,"final_acceptance_met":false},
+    {"company_id":"cn-health-0369","official_entry_verified":true,"roles_added":0,"candidate_links_added":16,"final_acceptance_met":false},
+    {"company_id":"cn-health-0370","official_entry_verified":true,"roles_added":0,"candidate_links_added":2,"final_acceptance_met":false}
+  ],
+  "aggregate_delta": {
+    "companies_audited": 4,
+    "official_entries_verified": 4,
+    "candidate_raw_added": 4,
+    "review_pending_added": 0,
+    "active_verified_added": 0,
+    "job_changes_added": 4,
+    "failures_added": 4,
+    "final_acceptance_added": 0
+  },
+  "next_batch_start_index": 371,
+  "next_available_company_ids": ["cn-health-0371","cn-health-0372","cn-health-0374","cn-health-0375"],
+  "company_id_gap_to_review": "cn-health-0373"
+}
