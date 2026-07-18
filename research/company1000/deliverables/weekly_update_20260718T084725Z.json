@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T08:47:25Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0320_0323",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "company_source_updates_file": "research/company1000/output/company_source_manual_batch_0320_0323_20260718T084725Z.jsonl",
+  "job_import_updates_file": "research/company1000/output/jobs_manual_batch_0320_0323_20260718T084725Z.jsonl",
+  "coverage_updates_file": "research/company1000/output/coverage_manual_batch_0320_0323_20260718T084725Z.jsonl",
+  "failures_updates_file": "research/company1000/output/failures_manual_batch_0320_0323_20260718T084725Z.jsonl",
+  "job_changes_updates_file": "research/company1000/output/job_changes_manual_batch_0320_0323_20260718T084725Z.jsonl",
+  "company_source_updates": [
+    {
+      "company_id": "cn-bank-0320",
+      "company_name": "江苏江阴农村商业银行股份有限公司",
+      "career_url": "https://www.jybank.com.cn/",
+      "source_type": "official_company_website",
+      "verified_at": "2026-07-18T08:47:25Z",
+      "final_acceptance_met": false,
+      "review_recommendation": "retain_company_source; retry_official_homepage_and_official_recruitment_navigation; do_not_infer_zero_inventory"
+    },
+    {
+      "company_id": "cn-bank-0321",
+      "company_name": "江西银行股份有限公司",
+      "career_url": "https://www.jx-bank.com/col226/list.html",
+      "source_type": "official_recruitment_index_and_announcement",
+      "verified_at": "2026-07-18T08:47:25Z",
+      "final_acceptance_met": false,
+      "review_recommendation": "retain_company_source; add_yinpeisheng_role_as_candidate_raw; manually_confirm_current_application_status_exact_cutoff_and_work_location_before_review_pending"
+    },
+    {
+      "company_id": "cn-bank-0322",
+      "company_name": "河北银行股份有限公司",
+      "career_url": "https://www.hebbank.com/hbbank/rzcp/index.html",
+      "source_type": "official_recruitment_index",
+      "verified_at": "2026-07-18T08:47:25Z",
+      "final_acceptance_met": false,
+      "review_recommendation": "retain_company_source; resolve_official_recruitment_index_template_or_public_detail_pages; do_not_create_jobs_without_unique_official_details"
+    },
+    {
+      "company_id": "cn-bank-0323",
+      "company_name": "盛京银行股份有限公司",
+      "career_url": "http://zhaopin.shengjingbank.com.cn:8080/",
+      "source_type": "official_company_website_recruitment_link",
+      "verified_at": "2026-07-18T08:47:25Z",
+      "final_acceptance_met": false,
+      "review_recommendation": "retain_company_source; retry_public_official_portal_without_access_control_bypass; enumerate_only_unique_official_job_details"
+    }
+  ],
+  "job_import_updates": [
+    {
+      "record_id": "ca37a0bce25f17520ba74df0",
+      "company_id": "cn-bank-0321",
+      "job_name": "总行专业技术岗（引培生）",
+      "department": "总行",
+      "city": "南昌",
+      "location": "江西省-南昌市（总行，具体工作地点待人工确认）",
+      "published_date": "2025-11-19",
+      "deadline_date": null,
+      "source_url": "https://www.jx-bank.com/col210/529923.html",
+      "review_status": "candidate_raw",
+      "review_recommendation": "promote_to_review_pending_only_after_manual_confirmation_that_applications_are_still_accepted_after_the_2026_04_20_proposed_hire_notice_and_confirmation_of_exact_work_location_and_exact_cutoff_date",
+      "salary_disclosure_status": "disclosed",
+      "active_verified": false
+    }
+  ],
+  "coverage_updates": [
+    {
+      "company_id": "cn-bank-0320",
+      "official_entry_verified": false,
+      "roles_normalized_this_run": 0,
+      "final_acceptance_met": false,
+      "current_job_inventory_enumerated": false
+    },
+    {
+      "company_id": "cn-bank-0321",
+      "official_entry_verified": true,
+      "roles_normalized_this_run": 1,
+      "final_acceptance_met": false,
+      "current_job_inventory_enumerated": false
+    },
+    {
+      "company_id": "cn-bank-0322",
+      "official_entry_verified": true,
+      "roles_normalized_this_run": 0,
+      "final_acceptance_met": false,
+      "current_job_inventory_enumerated": false
+    },
+    {
+      "company_id": "cn-bank-0323",
+      "official_entry_verified": true,
+      "roles_normalized_this_run": 0,
+      "final_acceptance_met": false,
+      "current_job_inventory_enumerated": false
+    }
+  ],
+  "update_summary": {
+    "companies_audited": 4,
+    "official_recruitment_entries_verified": 3,
+    "current_public_inventories_fully_enumerated": 0,
+    "zero_inventory_companies_confirmed": 0,
+    "zero_inventory_channels_confirmed": 0,
+    "public_roles_observed": 1,
+    "new_jobs_added": 1,
+    "candidate_raw_added": 1,
+    "review_pending_suggested": 1,
+    "active_verified_added": 0,
+    "expired_or_closed_campaigns_observed": 2,
+    "job_changes_added": 1,
+    "structured_failures_added": 4,
+    "final_acceptance_added": 0
+  },
+  "cursor_handoff": {
+    "company_source_action": "upsert four company-source rows by company_id; preserve official evidence, verified_at and final_acceptance_met",
+    "job_import_action": "insert one candidate_raw role by unique source_url; do not auto-promote; verify duplicate, current application status, exact deadline and exact work location before review_pending",
+    "coverage_action": "append four coverage rows and keep all four final_acceptance_met=false",
+    "failure_action": "append four structured retryable failures",
+    "job_changes_action": "append one newly_observed candidate_raw change",
+    "status_guard": "never set active_verified automatically",
+    "next_priority_indices": [
+      324,
+      325,
+      326,
+      327
+    ],
+    "next_priority_company_ids": [
+      "cn-bank-0324",
+      "cn-bank-0325",
+      "cn-bank-0326",
+      "cn-bank-0327"
+    ]
+  }
+}
