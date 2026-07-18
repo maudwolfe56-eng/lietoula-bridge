@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-18T07:26:53+00:00",
+  "branch": "research/company1000-crawler-20260713",
+  "last_completed_manual_batch": "0308_0311",
+  "batch_result": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "roles_observed": 98,
+    "roles_normalized": 1,
+    "candidate_raw_added": 1,
+    "review_pending_added": 0,
+    "active_verified_added": 0,
+    "job_changes_added": 1,
+    "failures_added": 3,
+    "final_acceptance_added": 1
+  },
+  "next_batch_start_index": 312,
+  "next_priority_indices": [312, 313, 314, 315],
+  "next_priority_company_ids": [
+    "cn-bank-0312",
+    "cn-bank-0313",
+    "cn-bank-0314",
+    "cn-bank-0315"
+  ],
+  "artifacts": {
+    "company_source": "research/company1000/output/company_source_manual_batch_0308_0311_20260718T072653Z.jsonl",
+    "coverage": "research/company1000/output/coverage_manual_batch_0308_0311_20260718T072653Z.jsonl",
+    "failures": "research/company1000/output/failures_manual_batch_0308_0311_20260718T072653Z.jsonl",
+    "jobs": "research/company1000/output/jobs_manual_batch_0308_0311_20260718T072653Z.jsonl",
+    "job_changes": "research/company1000/output/job_changes_manual_batch_0308_0311_20260718T072653Z.jsonl",
+    "coverage_delta": "research/company1000/runtime/coverage_matrix_delta_20260718T072653Z_batch_0308_0311.json",
+    "run_summary": "research/company1000/deliverables/run_summary_manual_batch_0308_0311_20260718T072653Z.json",
+    "handoff": "research/company1000/deliverables/weekly_update_20260718T072653Z.json"
+  },
+  "hard_rules": {
+    "official_sources_only": true,
+    "do_not_bypass_login_captcha_or_paywall": true,
+    "do_not_infer_salary": true,
+    "do_not_set_active_verified_automatically": true,
+    "new_jobs_default_candidate_raw": true
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
