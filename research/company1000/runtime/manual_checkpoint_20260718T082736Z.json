@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-18T08:27:36+00:00",
+  "branch": "research/company1000-crawler-20260713",
+  "completed_manual_batch": "0316_0319",
+  "processed_indices": [316, 317, 318, 319],
+  "processed_company_ids": [
+    "cn-bank-0316",
+    "cn-bank-0317",
+    "cn-bank-0318",
+    "cn-bank-0319"
+  ],
+  "output_files": [
+    "research/company1000/output/company_source_manual_batch_0316_0319_20260718T082736Z.jsonl",
+    "research/company1000/output/jobs_manual_batch_0316_0319_20260718T082736Z.jsonl",
+    "research/company1000/output/coverage_manual_batch_0316_0319_20260718T082736Z.jsonl",
+    "research/company1000/output/failures_manual_batch_0316_0319_20260718T082736Z.jsonl",
+    "research/company1000/output/job_changes_manual_batch_0316_0319_20260718T082736Z.jsonl",
+    "research/company1000/deliverables/run_summary_manual_batch_0316_0319_20260718T082736Z.json",
+    "research/company1000/deliverables/weekly_update_20260718T082736Z.json"
+  ],
+  "next_batch_start_index": 320,
+  "next_priority_indices": [320, 321, 322, 323],
+  "next_priority_company_ids": [
+    "cn-bank-0320",
+    "cn-bank-0321",
+    "cn-bank-0322",
+    "cn-bank-0323"
+  ],
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
