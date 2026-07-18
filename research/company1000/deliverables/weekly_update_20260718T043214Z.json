@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T04:32:14Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0296_0299",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "company_source_updates": [
+    {
+      "company_id": "cn-media-0296",
+      "company_name": "北京爱奇艺科技有限公司",
+      "short_name": "爱奇艺",
+      "industry": "数字媒体与内容娱乐",
+      "official_website": "https://www.iqiyi.com/",
+      "career_url": "https://careers.iqiyi.com/job",
+      "career_entry_evidence": "2026-07-18核验爱奇艺官网‘加入我们’及careers.iqiyi.com官方招聘门户，公开设有社会招聘、应届生招聘和实习生招聘路由；当前公开响应为客户端渲染外壳，未返回可审计的当前岗位全量字段，部分已索引实习详情路由现为404。",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_recruitment_portal",
+      "verified_at": "2026-07-18T04:32:14Z",
+      "final_acceptance_met": false,
+      "source_company_id": null,
+      "company_id_repair_reason": null,
+      "review_recommendation": "retain_company_source; build_site_specific_public_dynamic_resolver; do_not_import_404_or_shell_only_details"
+    },
+    {
+      "company_id": "cn-software-0297",
+      "company_name": "三六零安全科技股份有限公司",
+      "short_name": "三六零",
+      "industry": "网络安全与互联网服务",
+      "official_website": "https://www.360.cn/",
+      "career_url": "https://hr.360.cn/hr/list",
+      "career_entry_evidence": "2026-07-18核验三六零官方招聘域名hr.360.cn和社会招聘列表入口。页面为JavaScript应用，公开HTML只暴露筛选框架；本轮观察到的官方详情索引为空字段、客户端外壳或‘暂无数据’，未取得当前岗位完整快照。",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_recruitment_portal",
+      "verified_at": "2026-07-18T04:32:14Z",
+      "final_acceptance_met": false,
+      "source_company_id": null,
+      "company_id_repair_reason": null,
+      "review_recommendation": "retain_company_source; implement_public_javascript_data_resolver_without_login_or_captcha_bypass"
+    },
+    {
+      "company_id": "cn-software-0298",
+      "company_name": "金山软件有限公司",
+      "short_name": "金山软件",
+      "industry": "软件与互联网服务",
+      "official_website": "https://www.kingsoft.com/",
+      "career_url": "https://www.kingsoft.com/recruit",
+      "career_entry_evidence": "2026-07-18核验金山软件官网‘加入我们’页面；官方职位列表当前明确显示‘发现0个职位/还没有发布相关的职位’，完成本轮零库存快照。",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_company_careers_page",
+      "verified_at": "2026-07-18T04:32:14Z",
+      "final_acceptance_met": true,
+      "source_company_id": null,
+      "company_id_repair_reason": null,
+      "review_recommendation": "retain_company_source; mark_current_public_inventory_enumerated_zero; monitor_for_changes"
+    },
+    {
+      "company_id": "cn-software-0299",
+      "company_name": "北京金山办公软件股份有限公司",
+      "short_name": "金山办公",
+      "industry": "办公软件与云服务",
+      "official_website": "https://www.wps.cn/",
+      "career_url": "https://www.wps.cn/jobs/",
+      "career_entry_evidence": "2026-07-18核验金山办公官方企业主体页和wps.cn/jobs官方招聘路径；招聘页为旧版页面，保留2021版权且未展示当前岗位字段。本轮未从金山办公官方公开页面确认可枚举的当前申请门户，因此不采信第三方入口说明作为唯一来源。",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_company_careers_page",
+      "verified_at": "2026-07-18T04:32:14Z",
+      "final_acceptance_met": false,
+      "source_company_id": null,
+      "company_id_repair_reason": null,
+      "review_recommendation": "retain_company_source; flag_legacy_page; verify_current_portal_only_through_official_public_linkage_before_job_import"
+    }
+  ],
+  "job_import_updates": [],
+  "coverage_updates": [
+    {
+      "company_id": "cn-media-0296",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_recruitment_routes_verified_but_current_inventory_not_exposed_with_auditable_fields_and_stable_detail_urls",
+      "failure_reason": "client_rendered_inventory_not_auditable_and_indexed_detail_routes_stale_or_404",
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-software-0297",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_social_recruitment_portal_is_a_javascript_shell_and_current_detail_records_are_not_auditable",
+      "failure_reason": "site_specific_public_dynamic_resolver_required",
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-software-0298",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": true,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_current_job_list_publicly_enumerated_with_zero_positions",
+      "failure_reason": null,
+      "final_acceptance_met": true
+    },
+    {
+      "company_id": "cn-software-0299",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_legacy_recruitment_page_verified_but_current_inventory_and_current_official_application_portal_not_auditable",
+      "failure_reason": "legacy_page_without_current_roles_and_no_official_public_linkage_to_current_portal",
+      "final_acceptance_met": false
+    }
+  ],
+  "update_summary": {
+    "companies_audited": 4,
+    "official_recruitment_entries_verified": 4,
+    "official_entry_candidates_pending": 0,
+    "current_public_inventories_fully_enumerated": 1,
+    "zero_inventory_companies_confirmed": 1,
+    "new_jobs_added": 0,
+    "changed_jobs_added": 0,
+    "closed_or_expired_jobs_added": 0,
+    "candidate_raw_added": 0,
+    "review_pending_suggested": 0,
+    "active_verified_added": 0,
+    "reason_no_job_import": "No current role in this batch exposed an official, stable and complete combination of title, location, responsibilities, requirements, freshness and unique detail URL. Kingsoft's official page explicitly reported zero positions; the other three inventories were client-rendered, stale, incomplete or not officially linked to a current public portal."
+  },
+  "job_changes_updates": [],
+  "cursor_handoff": {
+    "company_source_action": "upsert company_source_updates by company_id; preserve official evidence, verified_at and final_acceptance_met",
+    "job_import_action": "no insert for this batch",
+    "coverage_action": "append coverage_updates; cn-software-0298 may be marked current inventory enumerated with zero roles; keep global final_acceptance_met=false",
+    "failure_action": "append three structured failures from failures_manual_batch_0296_0299_20260718T043214Z.jsonl",
+    "job_changes_action": "no job change rows for this batch",
+    "checkpoint_action": "continue from runtime/manual_checkpoint_latest.json",
+    "status_guard": "never set active_verified automatically",
+    "next_priority_indices": [300, 301, 302, 303],
+    "next_priority_company_ids": ["cn-software-0300", "cn-bank-0301", "cn-bank-0302", "cn-bank-0303"]
+  }
+}
