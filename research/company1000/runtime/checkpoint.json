@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-18T04:42:02.046890+00:00",
+  "updated_at": "2026-07-18T05:39:49.462699+00:00",
   "target_companies": 1000,
   "valid_seed_count": 1020,
   "official_entries_verified": 14,
@@ -11,7 +11,7 @@
   "job_records_review_pending": 64,
   "job_records_inactive_expired": 23,
   "companies_final_acceptance_met": 0,
-  "next_batch_start_index": 807,
+  "next_batch_start_index": 575,
   "batch_progress": {
     "batch_0001": {
       "companies_reviewed": 10,
@@ -148,8 +148,21 @@
     "cross_domain_candidate_requires_verified_seed_association": true
   },
   "last_auto_batch": {
-    "requested_start_index": 153,
+    "requested_start_index": 807,
     "selected_indices": [
+      829,
+      856,
+      863,
+      867,
+      886,
+      903,
+      969,
+      986,
+      987,
+      123,
+      132,
+      137,
+      152,
       161,
       170,
       173,
@@ -186,25 +199,12 @@
       542,
       558,
       565,
-      574,
-      584,
-      588,
-      602,
-      639,
-      644,
-      646,
-      649,
-      651,
-      687,
-      692,
-      706,
-      773,
-      806
+      574
     ],
     "selected_count": 50,
     "processed_count": 50,
     "job_detail_candidates": 0,
-    "recruitment_navigation_links": 15,
+    "recruitment_navigation_links": 13,
     "max_workers": 10
   },
   "pending_seed_audits": 13,
