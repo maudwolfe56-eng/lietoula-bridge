@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T20:52:42Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0397_0400",
+  "processed_indices": [397, 398, 399, 400],
+  "processed_company_ids": ["cn-health-0397", "cn-health-0398", "cn-health-0399", "cn-health-0400"],
+  "companies_audited": 4,
+  "official_recruitment_entries_verified": 4,
+  "official_entry_candidates_pending": 0,
+  "companies_final_acceptance_met": 1,
+  "current_roles_observed": 0,
+  "historical_roles_observed": 5,
+  "jobs_added": 0,
+  "job_status_additions": {
+    "candidate_raw": 0,
+    "review_pending": 0,
+    "active_verified": 0,
+    "inactive_expired": 0
+  },
+  "job_changes_added": 0,
+  "failures_added": 4,
+  "files": {
+    "company_source": "research/company1000/output/company_source_manual_batch_0397_0400_20260718T205242Z.jsonl",
+    "job_import": "research/company1000/output/jobs_manual_batch_0397_0400_20260718T205242Z.jsonl",
+    "coverage": "research/company1000/output/coverage_manual_batch_0397_0400_20260718T205242Z.jsonl",
+    "failures": "research/company1000/output/failures_manual_batch_0397_0400_20260718T205242Z.jsonl",
+    "job_changes": "research/company1000/output/job_changes_manual_batch_0397_0400_20260718T205242Z.jsonl",
+    "navigation_resolution": "research/company1000/output/recruitment_navigation_resolution_manual_batch_0397_0400_20260718T205242Z.jsonl",
+    "coverage_delta": "research/company1000/runtime/coverage_matrix_delta_20260718T205242Z_batch_0397_0400.json",
+    "checkpoint": "research/company1000/runtime/manual_checkpoint_20260718T205242Z_batch_0397_0400.json",
+    "weekly_update": "research/company1000/deliverables/weekly_update_20260718T205242Z.json"
+  },
+  "next_priority_indices": [401, 404, 406, 408],
+  "next_priority_company_ids": ["cn-indtech-0401", "cn-indtech-0404", "cn-indtech-0406", "cn-indtech-0408"],
+  "next_priority_company_names": ["海尔智家股份有限公司", "海信家电集团股份有限公司", "四川长虹电器股份有限公司", "奥克斯集团有限公司"],
+  "source_table_gap_review": {
+    "missing_company_ids": ["cn-health-0373", "cn-health-0383", "cn-indtech-0402", "cn-indtech-0403", "cn-indtech-0405", "cn-indtech-0407"],
+    "status": "unresolved",
+    "action": "audit the company-seed merge, deduplication and CompanySource master generation before assigning or repairing missing indices; do not invent companies or IDs"
+  },
+  "aggregate_counts_status": "batch delta complete; aggregate CompanySource, JobImport, Coverage, Failures, JobChanges and global run_summary require deterministic rebuild from all manual deltas",
+  "policy": {
+    "official_sources_only": true,
+    "third_party_as_sole_source_allowed": false,
+    "login_captcha_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
