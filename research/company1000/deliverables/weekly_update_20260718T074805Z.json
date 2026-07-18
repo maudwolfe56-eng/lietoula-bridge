@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T07:48:05Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0312_0315",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "company_source_updates_file": "research/company1000/output/company_source_manual_batch_0312_0315_20260718T074805Z.jsonl",
+  "job_import_updates_file": "research/company1000/output/jobs_manual_batch_0312_0315_20260718T074805Z.jsonl",
+  "coverage_updates_file": "research/company1000/output/coverage_manual_batch_0312_0315_20260718T074805Z.jsonl",
+  "failures_updates_file": "research/company1000/output/failures_manual_batch_0312_0315_20260718T074805Z.jsonl",
+  "job_changes_updates_file": "research/company1000/output/job_changes_manual_batch_0312_0315_20260718T074805Z.jsonl",
+  "company_source_updates": [
+    {
+      "company_id": "cn-bank-0312",
+      "company_name": "郑州银行股份有限公司",
+      "career_url": "https://wecruit.hotjob.cn/SU64f9783c1eb8051fabaf3fbc/pb/news.html?pageType=0",
+      "source_type": "official_recruitment_portal_and_announcement",
+      "verified_at": "2026-07-18T07:48:05Z",
+      "final_acceptance_met": false,
+      "review_recommendation": "retain_company_source; enumerate_public_hotjob_inventory_without_access_control_bypass; manually_review_new_postdoctoral_candidate"
+    },
+    {
+      "company_id": "cn-bank-0313",
+      "company_name": "西安银行股份有限公司",
+      "career_url": "https://job.xacbank.com:8001/",
+      "source_type": "official_recruitment_portal",
+      "verified_at": "2026-07-18T07:48:05Z",
+      "final_acceptance_met": false,
+      "review_recommendation": "retain_company_source; retry_official_nonstandard_port_from_compliant_public_runtime; import_only_after_direct_official_detail_verification"
+    },
+    {
+      "company_id": "cn-bank-0314",
+      "company_name": "厦门银行股份有限公司",
+      "career_url": "https://xmccb.zhaopin.com/jobs/index.html",
+      "source_type": "official_recruitment_portal",
+      "verified_at": "2026-07-18T07:48:05Z",
+      "final_acceptance_met": false,
+      "review_recommendation": "retain_company_source; resolve_public_branded_portal_and_official_wechat_position_matrix; do_not_import_without_unique_official_job_evidence"
+    },
+    {
+      "company_id": "cn-bank-0315",
+      "company_name": "兰州银行股份有限公司",
+      "career_url": "https://www.lzbank.com/",
+      "source_type": "official_company_website_recruitment_signal",
+      "verified_at": "2026-07-18T07:48:05Z",
+      "final_acceptance_met": false,
+      "review_recommendation": "manual_followup_required; resolve_official_current_careers_index; exclude_expired_campaign; do_not_infer_zero_inventory"
+    }
+  ],
+  "job_import_updates": [
+    {
+      "record_id": "b2f71195ab8f4a1e956de312",
+      "company_id": "cn-bank-0312",
+      "job_name": "博士后研究人员",
+      "department": "博士后科研工作站",
+      "city": "郑州",
+      "location": "河南省-郑州市",
+      "published_date": "2026-06-15",
+      "deadline_date": null,
+      "source_url": "https://www.zzbank.cn/about_214/bshkygzz/zsxx/202606/t20260615_41222.html",
+      "review_status": "candidate_raw",
+      "review_recommendation": "promote_to_review_pending_after_manual_duplicate_and_current_application_status_check",
+      "salary_disclosure_status": "not_disclosed",
+      "active_verified": false
+    }
+  ],
+  "coverage_updates": [
+    {
+      "company_id": "cn-bank-0312",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 1,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-bank-0313",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-bank-0314",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-bank-0315",
+      "official_entry_verified": false,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "final_acceptance_met": false
+    }
+  ],
+  "update_summary": {
+    "companies_audited": 4,
+    "official_recruitment_entries_verified": 3,
+    "current_public_inventories_fully_enumerated": 0,
+    "zero_inventory_companies_confirmed": 0,
+    "public_roles_observed": 1,
+    "new_jobs_added": 1,
+    "candidate_raw_added": 1,
+    "review_pending_suggested": 1,
+    "active_verified_added": 0,
+    "job_changes_added": 1,
+    "structured_failures_added": 4,
+    "final_acceptance_added": 0
+  },
+  "cursor_handoff": {
+    "company_source_action": "upsert company-source batch by company_id; preserve official evidence, verified_at and final_acceptance_met",
+    "job_import_action": "insert one candidate_raw role by unique source_url; do not auto-promote; perform duplicate and current-application review before review_pending",
+    "coverage_action": "append four coverage rows and keep all four final_acceptance_met=false",
+    "failure_action": "append four structured retryable failures",
+    "job_changes_action": "append one newly_observed candidate_raw change",
+    "status_guard": "never set active_verified automatically",
+    "next_priority_indices": [
+      316,
+      317,
+      318,
+      319
+    ],
+    "next_priority_company_ids": [
+      "cn-bank-0316",
+      "cn-bank-0317",
+      "cn-bank-0318",
+      "cn-bank-0319"
+    ]
+  }
+}
