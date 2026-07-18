@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.1",
+  "generated_at": "2026-07-18T17:50:22Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0371_0372_0374_0375",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "data_files": {
+    "CompanySource": "research/company1000/output/company_source_manual_batch_0371_0372_0374_0375_20260718T175022Z.jsonl",
+    "JobImport": "research/company1000/output/jobs_manual_batch_0371_0372_0374_0375_20260718T175022Z.jsonl",
+    "Coverage": "research/company1000/output/coverage_manual_batch_0371_0372_0374_0375_20260718T175022Z.jsonl",
+    "Failures": "research/company1000/output/failures_manual_batch_0371_0372_0374_0375_20260718T175022Z.jsonl",
+    "JobChanges": "research/company1000/output/job_changes_manual_batch_0371_0372_0374_0375_20260718T175022Z.jsonl",
+    "coverage_delta": "research/company1000/runtime/coverage_matrix_delta_20260718T175022Z_batch_0371_0372_0374_0375.json",
+    "checkpoint": "research/company1000/runtime/manual_checkpoint_20260718T175022Z.json",
+    "run_summary": "research/company1000/deliverables/run_summary_manual_batch_0371_0372_0374_0375_20260718T175022Z.json"
+  },
+  "company_source_updates": [
+    {
+      "company_id": "cn-health-0371",
+      "company_name": "人福医药集团股份公司",
+      "career_url": "https://www.humanwell.com.cn/jrwm",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_company_recruitment_page",
+      "verified_at": "2026-07-18T17:50:22Z",
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0372",
+      "company_name": "上海复旦张江生物医药股份有限公司",
+      "career_url": "https://www.fd-zj.com/desktopmodules/ht/chinese/HR/Index.aspx?LS=1",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_company_multi_position_recruitment_page",
+      "verified_at": "2026-07-18T17:50:22Z",
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0374",
+      "company_name": "康龙化成（北京）新药技术股份有限公司",
+      "career_url": "https://www.pharmaron.com/careers/job-openings/",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_company_careers_page_linking_official_moka_portal",
+      "verified_at": "2026-07-18T17:50:22Z",
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0375",
+      "company_name": "杭州泰格医药科技股份有限公司",
+      "career_url": "https://tigermed.zhiye.com/",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_company_careers_page_linking_official_zhiye_portal",
+      "verified_at": "2026-07-18T17:50:22Z",
+      "final_acceptance_met": false
+    }
+  ],
+  "job_import_updates": [],
+  "update_summary": {
+    "companies_audited": 4,
+    "source_table_integrity_gaps_audited": 1,
+    "official_recruitment_entries_verified": 4,
+    "new_jobs_added": 0,
+    "changed_jobs_added": 0,
+    "closed_or_expired_jobs_added": 0,
+    "candidate_raw_added": 0,
+    "review_pending_suggested": 0,
+    "active_verified_added": 0,
+    "reason_no_job_import": "No role in this batch satisfied the combined requirements for a role-specific unique official source URL, verified location, duties, requirements and current freshness/application evidence."
+  },
+  "codex_handoff": {
+    "company_source_action": "upsert CompanySource batch by company_id; preserve official evidence and verified_at",
+    "job_import_action": "no insert for this batch",
+    "coverage_action": "append five Coverage records, including the cn-health-0373 source-table integrity gap; keep final_acceptance_met=false",
+    "failure_action": "append five structured retryable Failures",
+    "job_change_action": "no append for this batch",
+    "status_guard": "never set active_verified automatically and do not create review_pending records without required source, location, content and freshness fields",
+    "next_priority_company_ids": [
+      "cn-health-0376",
+      "cn-health-0377",
+      "cn-health-0378",
+      "cn-health-0379"
+    ],
+    "company_source_gap_review": "audit missing cn-health-0373 in CompanySource master before assigning or repairing any company_id"
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
