@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T13:49:18Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "priority_0345_0348_0350",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "company_source_updates_file": "research/company1000/output/company_source_manual_batch_priority_0345_0348_0350_20260718T134918Z.jsonl",
+  "job_import_updates_file": "research/company1000/output/jobs_manual_batch_priority_0345_0348_0350_20260718T134918Z.jsonl",
+  "coverage_updates_file": "research/company1000/output/coverage_manual_batch_priority_0345_0348_0350_20260718T134918Z.jsonl",
+  "failure_updates_file": "research/company1000/output/failures_manual_batch_priority_0345_0348_0350_20260718T134918Z.jsonl",
+  "job_change_updates_file": "research/company1000/output/job_changes_manual_batch_priority_0345_0348_0350_20260718T134918Z.jsonl",
+  "update_summary": {
+    "companies_audited": 4,
+    "official_recruitment_entries_verified": 4,
+    "official_entry_candidates_pending": 0,
+    "new_jobs_added": 1,
+    "changed_jobs_added": 0,
+    "closed_or_expired_campaigns_observed": 0,
+    "candidate_raw_added": 1,
+    "review_pending_suggested": 0,
+    "active_verified_added": 0,
+    "final_acceptance_added": 0
+  },
+  "audit_outcomes": [
+    {
+      "company_id": "cn-bank-0345",
+      "company_name": "温州银行股份有限公司",
+      "outcome": "official_portal_reaudited_without_state_mutation",
+      "blocking_reason": "conflicting_public_cache_snapshots_and_remaining_inventory_unresolved"
+    },
+    {
+      "company_id": "cn-sec-0348",
+      "company_name": "东兴证券股份有限公司",
+      "outcome": "official_homepage_careers_navigation_verified",
+      "blocking_reason": "legacy_internal_careers_route_and_current_inventory_not_resolved"
+    },
+    {
+      "company_id": "cn-ins-0349",
+      "company_name": "友邦人寿保险有限公司",
+      "outcome": "official_china_careers_and_workday_verified_one_role_normalized",
+      "blocking_reason": "full_china_workday_inventory_and_three_hot_role_details_not_fully_enumerated"
+    },
+    {
+      "company_id": "cn-ins-0350",
+      "company_name": "众安在线财产保险股份有限公司",
+      "outcome": "official_social_and_campus_recruitment_entries_verified",
+      "blocking_reason": "dynamic_current_role_inventory_not_enumerated"
+    }
+  ],
+  "cursor_handoff": {
+    "company_source_action": "upsert four company-source JSONL records by company_id and preserve official evidence and verified_at",
+    "job_import_action": "insert one 友邦人寿 Specialist, Procurement record as candidate_raw only; preserve null published_date, deadline_date and salary; deduplicate by source_url",
+    "coverage_action": "append four coverage records and apply the coverage matrix delta; all final_acceptance_met remain false",
+    "failure_action": "append four structured retryable failures",
+    "job_change_action": "append one new_job_observed record with current_status=candidate_raw",
+    "status_guard": "never set active_verified automatically",
+    "next_priority_indices": [
+      351,
+      352,
+      353,
+      354
+    ],
+    "next_priority_company_ids": [
+      "cn-health-0351",
+      "cn-health-0352",
+      "cn-health-0353",
+      "cn-health-0354"
+    ]
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
