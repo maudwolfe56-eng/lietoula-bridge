@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "generated_at": "2026-07-18T09:43:58Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "manual_batch_0324_0327_20260718T094358Z",
+  "scope": "Official recruitment source verification and public current-job enumeration for company indices 324-327",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "companies": [
+    {"company_id": "cn-bank-0324", "company_name": "哈尔滨银行股份有限公司", "official_entry_verified": true, "roles_normalized": 9, "final_acceptance_met": false},
+    {"company_id": "cn-bank-0325", "company_name": "吉林银行股份有限公司", "official_entry_verified": true, "roles_normalized": 0, "final_acceptance_met": false},
+    {"company_id": "cn-bank-0326", "company_name": "大连银行股份有限公司", "official_entry_verified": false, "roles_normalized": 0, "final_acceptance_met": false},
+    {"company_id": "cn-bank-0327", "company_name": "天津银行股份有限公司", "official_entry_verified": false, "roles_normalized": 0, "final_acceptance_met": false}
+  ],
+  "metrics": {
+    "companies_audited": 4,
+    "official_entries_verified": 2,
+    "official_entry_candidates_pending": 2,
+    "new_jobs_candidate_raw": 9,
+    "review_pending_added": 0,
+    "active_verified_added": 0,
+    "expired_or_closed_campaigns_observed": 2,
+    "failures_added": 4,
+    "job_changes_added": 9,
+    "final_acceptance_added": 0
+  },
+  "quality_notes": [
+    "哈尔滨银行9类岗位来自2026-06-29官方公告，报名截止2026-07-20 17:00；岗位专项附件未解析，因此职责与专项要求未推测，状态保持candidate_raw。",
+    "吉林银行2026春季校园招聘已截止，未作为当前岗位导入；尚无可审计完整零库存结论。",
+    "大连银行主站公开访问返回412，天津银行主站公开访问超时；均未绕过访问控制，也未以外部转载替代官方岗位详情。"
+  ],
+  "output_files": [
+    "research/company1000/output/company_source_manual_batch_0324_0327_20260718T094358Z.jsonl",
+    "research/company1000/output/jobs_manual_batch_0324_0327_20260718T094358Z.jsonl",
+    "research/company1000/output/coverage_manual_batch_0324_0327_20260718T094358Z.jsonl",
+    "research/company1000/output/failures_manual_batch_0324_0327_20260718T094358Z.jsonl",
+    "research/company1000/output/job_changes_manual_batch_0324_0327_20260718T094358Z.jsonl",
+    "research/company1000/deliverables/run_summary_manual_batch_0324_0327_20260718T094358Z.json",
+    "research/company1000/deliverables/weekly_update_20260718T094358Z.json"
+  ],
+  "next_priority_indices": [328, 329, 330, 331],
+  "next_priority_company_ids": ["cn-bank-0328", "cn-bank-0329", "cn-bank-0330", "cn-bank-0331"],
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
