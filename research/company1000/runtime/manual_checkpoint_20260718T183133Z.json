@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-18T18:31:33+00:00",
+  "branch": "research/company1000-crawler-20260713",
+  "last_completed_manual_batch": "0376_0379",
+  "next_batch_start_index": 380,
+  "next_priority_indices": [380,381,382,384],
+  "next_priority_company_ids": ["cn-health-0380","cn-health-0381","cn-health-0382","cn-health-0384"],
+  "next_priority_company_names": ["爱尔眼科医院集团股份有限公司","通策医疗股份有限公司","美年大健康产业控股股份有限公司","上海联影医疗科技股份有限公司"],
+  "source_table_gap_review": {
+    "missing_company_ids": ["cn-health-0373","cn-health-0383"],
+    "status": "unresolved",
+    "action": "audit company_seed merge, deduplication and CompanySource master generation before assigning or repairing missing indices"
+  },
+  "last_checkpoint": "research/company1000/runtime/manual_checkpoint_20260718T183133Z.json",
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
