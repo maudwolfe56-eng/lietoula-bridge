@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T11:25:26Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0336_0339",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "company_source_updates_file": "research/company1000/output/company_source_manual_batch_0336_0339_20260718T112526Z.jsonl",
+  "job_import_updates_file": "research/company1000/output/jobs_manual_batch_0336_0339_20260718T112526Z.jsonl",
+  "coverage_updates_file": "research/company1000/output/coverage_manual_batch_0336_0339_20260718T112526Z.jsonl",
+  "failure_updates_file": "research/company1000/output/failures_manual_batch_0336_0339_20260718T112526Z.jsonl",
+  "job_change_updates_file": "research/company1000/output/job_changes_manual_batch_0336_0339_20260718T112526Z.jsonl",
+  "update_summary": {
+    "companies_audited": 4,
+    "official_recruitment_entries_verified": 2,
+    "official_entry_candidates_pending": 2,
+    "new_jobs_added": 0,
+    "changed_jobs_added": 0,
+    "closed_or_expired_campaigns_observed": 0,
+    "candidate_raw_added": 0,
+    "review_pending_suggested": 0,
+    "active_verified_added": 0,
+    "final_acceptance_added": 1
+  },
+  "audit_outcomes": [
+    {
+      "company_id": "cn-bank-0336",
+      "company_name": "广西北部湾银行股份有限公司",
+      "outcome": "official_recruitment_portal_verified",
+      "blocking_reason": "current_javascript_role_inventory_not_enumerated"
+    },
+    {
+      "company_id": "cn-bank-0337",
+      "company_name": "桂林银行股份有限公司",
+      "outcome": "official_recruitment_listing_enumerated_no_current_open_roles",
+      "blocking_reason": null
+    },
+    {
+      "company_id": "cn-bank-0338",
+      "company_name": "柳州银行股份有限公司",
+      "outcome": "official_website_verified_recruitment_entry_unresolved",
+      "blocking_reason": "public_official_recruitment_entry_not_located"
+    },
+    {
+      "company_id": "cn-bank-0339",
+      "company_name": "汉口银行股份有限公司",
+      "outcome": "official_domain_verified_hosted_campaign_source_chain_unresolved",
+      "blocking_reason": "hosted_campaign_lacks_verified_official_backlink"
+    }
+  ],
+  "cursor_handoff": {
+    "company_source_action": "upsert four company-source JSONL records by company_id and preserve evidence plus verified_at",
+    "job_import_action": "no current job insert for this batch; empty JSONL intentionally records that no role met official-source, current-open and role-detail conditions",
+    "coverage_action": "append four coverage records; only cn-bank-0337 has final_acceptance_met=true",
+    "failure_action": "append three structured retryable failure records for unresolved inventories or source chains",
+    "job_change_action": "no job-change insert for this batch",
+    "status_guard": "never set active_verified automatically",
+    "next_priority_indices": [340, 341, 342, 343],
+    "next_priority_company_ids": ["cn-bank-0340", "cn-bank-0341", "cn-bank-0342", "cn-bank-0343"]
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
