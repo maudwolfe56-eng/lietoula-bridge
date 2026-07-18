@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T23:26:05Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0413_0416",
+  "processed_indices": [413, 414, 415, 416],
+  "processed_company_ids": ["cn-indtech-0413", "cn-indtech-0414", "cn-indtech-0415", "cn-indtech-0416"],
+  "companies_audited": 4,
+  "official_recruitment_entries_verified": 4,
+  "official_entry_candidates_pending": 0,
+  "companies_final_acceptance_met": 0,
+  "current_roles_observed": 73,
+  "historical_roles_observed": 0,
+  "jobs_added": 24,
+  "job_status_additions": {"candidate_raw": 24, "review_pending": 0, "active_verified": 0, "inactive_expired": 0},
+  "job_changes_added": 24,
+  "failures_added": 5,
+  "files": {
+    "company_source": "research/company1000/output/company_source_manual_batch_0413_0416_20260718T232605Z.jsonl",
+    "coverage": "research/company1000/output/coverage_manual_batch_0413_0416_20260718T232605Z.jsonl",
+    "failures": "research/company1000/output/failures_manual_batch_0413_0416_20260718T232605Z.jsonl",
+    "job_changes": "research/company1000/output/job_changes_manual_batch_0413_0416_20260718T232605Z.jsonl",
+    "checkpoint": "research/company1000/runtime/manual_checkpoint_20260718T232605Z_batch_0413_0416.json",
+    "job_import_parts": [
+      "research/company1000/output/jobs_manual_batch_0413_0416_20260718T232605Z_part1.jsonl",
+      "research/company1000/output/jobs_manual_batch_0413_0416_20260718T232605Z_part2.jsonl",
+      "research/company1000/output/jobs_manual_batch_0413_0416_20260718T232605Z_part3.jsonl"
+    ],
+    "run_summary": "research/company1000/deliverables/run_summary_manual_batch_0413_0416_20260718T232605Z.json"
+  },
+  "company_results": [
+    {"company_id":"cn-indtech-0413","company_name":"公牛集团股份有限公司","official_entry_verified":true,"current_roles_observed":0,"jobs_added":0,"result":"official_social_and_campus_zhiye_portals_verified_public_auditable_inventory_unresolved","final_acceptance_met":false},
+    {"company_id":"cn-indtech-0414","company_name":"欧普照明股份有限公司","official_entry_verified":true,"current_roles_observed":4,"jobs_added":4,"result":"official_hotjob_homepage_four_current_featured_social_roles_normalized_candidate_raw_detail_fields_pending","final_acceptance_met":false},
+    {"company_id":"cn-indtech-0415","company_name":"科沃斯机器人股份有限公司","official_entry_verified":true,"current_roles_observed":69,"jobs_added":20,"result":"official_social_inventory_69_roles_page_one_20_normalized_candidate_raw_remaining_pages_and_three_details_pending","final_acceptance_met":false},
+    {"company_id":"cn-indtech-0416","company_name":"北京石头世纪科技股份有限公司","official_entry_verified":true,"current_roles_observed":0,"jobs_added":0,"result":"official_jobs_javascript_route_and_hr_contact_verified_public_inventory_unresolved","final_acceptance_met":false}
+  ],
+  "next_priority_indices": [417, 418, 419, 420],
+  "next_priority_company_ids": ["cn-indtech-0417", "cn-indtech-0418", "cn-indtech-0419", "cn-indtech-0420"],
+  "next_priority_company_names": ["追觅科技（苏州）有限公司", "安克创新科技股份有限公司", "深圳传音控股股份有限公司", "广州视源电子科技股份有限公司"],
+  "next_priority_resolution": "audit official recruitment entries and current public role inventories for companies 417-420; continue ECOVACS pages 2-4 and OPPLE full inventory; do not invent roles or IDs",
+  "source_table_gap_review": {
+    "missing_company_ids": ["cn-health-0373", "cn-health-0383", "cn-indtech-0402", "cn-indtech-0403", "cn-indtech-0405", "cn-indtech-0407"],
+    "status": "unresolved",
+    "action": "audit company-seed merge, deduplication and CompanySource master generation before assigning or repairing missing indices; do not invent companies or IDs"
+  },
+  "aggregate_counts_status": "batch delta complete; aggregate CompanySource, JobImport, Coverage, Failures, JobChanges and global run_summary require deterministic rebuild from all deltas",
+  "policy": {
+    "official_sources_only": true,
+    "third_party_as_sole_source_allowed": false,
+    "login_captcha_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
