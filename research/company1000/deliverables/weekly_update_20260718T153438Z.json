@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T15:34:38Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0355_0358",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "company_source_updates_file": "research/company1000/output/company_source_manual_batch_0355_0358_20260718T153438Z.jsonl",
+  "job_import_updates_file": "research/company1000/output/jobs_manual_batch_0355_0358_20260718T153438Z.jsonl",
+  "coverage_updates_file": "research/company1000/output/coverage_manual_batch_0355_0358_20260718T153438Z.jsonl",
+  "failure_updates_file": "research/company1000/output/failures_manual_batch_0355_0358_20260718T153438Z.jsonl",
+  "job_change_updates_file": "research/company1000/output/job_changes_manual_batch_0355_0358_20260718T153438Z.jsonl",
+  "update_summary": {
+    "companies_audited": 4,
+    "official_recruitment_entries_verified": 4,
+    "official_entry_candidates_pending": 0,
+    "new_jobs_added": 2,
+    "changed_jobs_added": 0,
+    "closed_or_expired_campaigns_observed": 0,
+    "candidate_raw_added": 0,
+    "review_pending_suggested": 2,
+    "active_verified_added": 0,
+    "final_acceptance_added": 0
+  },
+  "audit_outcomes": [
+    {
+      "company_id": "cn-health-0355",
+      "company_name": "上海君实生物医药科技股份有限公司",
+      "outcome": "official_corporate_careers_backlink_and_zhiye_portal_verified",
+      "blocking_reason": "dynamic_current_role_inventory_not_enumerated"
+    },
+    {
+      "company_id": "cn-health-0356",
+      "company_name": "康方生物科技（开曼）有限公司",
+      "outcome": "official_social_recruitment_inventory_verified_and_two_hr_roles_normalized",
+      "blocking_reason": "remaining_seventy_nine_or_more_official_role_details_not_yet_fully_enumerated"
+    },
+    {
+      "company_id": "cn-health-0357",
+      "company_name": "荣昌生物制药（烟台）股份有限公司",
+      "outcome": "official_corporate_backlink_to_moka_portal_verified",
+      "blocking_reason": "public_portal_redirect_loop_prevented_current_inventory_enumeration"
+    },
+    {
+      "company_id": "cn-health-0358",
+      "company_name": "再鼎医药有限公司",
+      "outcome": "official_hot_jobs_listing_verified_with_twenty_one_title_location_pairs",
+      "blocking_reason": "stable_job_detail_permalinks_and_core_fields_not_exposed"
+    }
+  ],
+  "implementation_handoff": {
+    "company_source_action": "upsert four company-source JSONL records by company_id and preserve official evidence and verified_at",
+    "job_import_action": "upsert two canonical Akeso HR job records as review_pending suggestions only; deduplicate by source_url and record_id; do not publish automatically",
+    "coverage_action": "append four coverage records and apply the coverage matrix delta; all company final_acceptance_met remain false",
+    "failure_action": "append four structured retryable failures",
+    "job_change_action": "append two newly_observed change rows for the Akeso HR roles",
+    "status_guard": "never set active_verified automatically",
+    "next_priority_indices": [
+      359,
+      360,
+      361,
+      362
+    ],
+    "next_priority_company_ids": [
+      "cn-health-0359",
+      "cn-health-0360",
+      "cn-health-0361",
+      "cn-health-0362"
+    ]
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
