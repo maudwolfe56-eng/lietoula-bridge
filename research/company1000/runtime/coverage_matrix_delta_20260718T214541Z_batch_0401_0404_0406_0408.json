@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T21:45:41Z",
+  "batch": "0401_0404_0406_0408",
+  "processed_company_ids": [
+    "cn-indtech-0401",
+    "cn-indtech-0404",
+    "cn-indtech-0406",
+    "cn-indtech-0408"
+  ],
+  "coverage_updates": [
+    {
+      "company_id": "cn-indtech-0401",
+      "official_entry_verified": true,
+      "enumeration_status": "official_group_careers_page_links_social_campus_and_tech_portals_but_public_dynamic_inventory_not_exposed_as_auditable_job_rows",
+      "roles_observed": 0,
+      "roles_normalized": 0,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-indtech-0404",
+      "official_entry_verified": true,
+      "enumeration_status": "official_group_site_links_dynamic_social_and_campus_portals_but_current_role_inventory_not_exposed_in_public_html",
+      "roles_observed": 0,
+      "roles_normalized": 0,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-indtech-0406",
+      "official_entry_verified": true,
+      "enumeration_status": "official_paginated_social_recruitment_inventory_partially_enumerated_four_unique_details_normalized_full_pagination_and_status_reconciliation_pending",
+      "roles_observed": 4,
+      "roles_normalized": 4,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-indtech-0408",
+      "official_entry_verified": true,
+      "enumeration_status": "official_careers_url_verified_but_page_renders_group_content_and_template_variables_without_public_role_inventory",
+      "roles_observed": 0,
+      "roles_normalized": 0,
+      "final_acceptance_met": false
+    }
+  ],
+  "summary": {
+    "companies_audited": 4,
+    "official_entries_verified": 4,
+    "current_roles_observed": 4,
+    "historical_roles_observed": 0,
+    "roles_normalized": 4,
+    "candidate_raw_added": 4,
+    "review_pending_added": 0,
+    "active_verified_added": 0,
+    "failures_added": 5,
+    "companies_final_acceptance_met": 0
+  },
+  "final_acceptance_met": false
+}
