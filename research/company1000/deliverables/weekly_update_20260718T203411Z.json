@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T20:34:11Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0393_0396",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "company_source_update_file": "research/company1000/output/company_source_manual_batch_0393_0396_20260718T203411Z.jsonl",
+  "job_import_update_file": "research/company1000/output/jobs_manual_batch_0393_0396_20260718T203411Z.jsonl",
+  "coverage_update_file": "research/company1000/output/coverage_manual_batch_0393_0396_20260718T203411Z.jsonl",
+  "failure_update_file": "research/company1000/output/failures_manual_batch_0393_0396_20260718T203411Z.jsonl",
+  "job_change_update_file": "research/company1000/output/job_changes_manual_batch_0393_0396_20260718T203411Z.jsonl",
+  "navigation_resolution_file": "research/company1000/output/recruitment_navigation_resolution_manual_batch_0393_0396_20260718T203411Z.jsonl",
+  "company_results": [
+    {
+      "company_id": "cn-health-0393",
+      "company_name": "郑州安图生物工程股份有限公司",
+      "official_entry": "https://wecruit.hotjob.cn/SU62302d11bef57c4972f79a6b/pb/index.html",
+      "result": "official HotJob entry verified; JavaScript shell exposed no auditable role inventory",
+      "jobs_added": 0,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0394",
+      "company_name": "广州万孚生物技术股份有限公司",
+      "official_entry": "https://en.wondfo.com/careers/",
+      "result": "nine current 2026 international roles listed; three official image details normalized; six image details pending retry",
+      "jobs_added": 3,
+      "job_status": "candidate_raw",
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0395",
+      "company_name": "深圳开立生物医疗科技股份有限公司",
+      "official_entry": "https://www.sonoscape.com.cn/career",
+      "result": "official page links campus and social Moka portals; campus fetch failed and social portal redirected in a loop",
+      "jobs_added": 0,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0396",
+      "company_name": "深圳市理邦精密仪器股份有限公司",
+      "official_entry": "https://www.edan.com.cn/",
+      "result": "official site navigation exposes a Join Edan signal; destination and current inventory unresolved because official site returned 521 or timed out",
+      "jobs_added": 0,
+      "final_acceptance_met": false
+    }
+  ],
+  "normalized_job_records": [
+    {
+      "record_id": "a9a5a9ec70ac6c57910cd665",
+      "company_id": "cn-health-0394",
+      "job_title": "Sales",
+      "location": "厄瓜多尔",
+      "source_url": "https://en.wondfo.com/vancheerfile/Files/2025/11/20251120073549692.jpg",
+      "review_status": "candidate_raw",
+      "salary_disclosure_status": "not_disclosed"
+    },
+    {
+      "record_id": "47ad2b713b9c4eec8908b34c",
+      "company_id": "cn-health-0394",
+      "job_title": "Technical Support Engineer",
+      "location": "菲律宾",
+      "source_url": "https://en.wondfo.com/vancheerfile/Files/2025/11/20251120073616257.jpg",
+      "review_status": "candidate_raw",
+      "salary_disclosure_status": "not_disclosed"
+    },
+    {
+      "record_id": "7bbbebea9beb41bdb70d99a5",
+      "company_id": "cn-health-0394",
+      "job_title": "Marketing",
+      "location": "俄罗斯",
+      "source_url": "https://en.wondfo.com/vancheerfile/Files/2025/11/2025112007378948.jpg",
+      "review_status": "candidate_raw",
+      "salary_disclosure_status": "not_disclosed"
+    }
+  ],
+  "update_summary": {
+    "companies_audited": 4,
+    "official_recruitment_entries_verified": 4,
+    "official_entry_candidates_pending": 0,
+    "companies_final_acceptance_met": 0,
+    "current_role_rows_observed": 9,
+    "current_role_details_normalized": 3,
+    "new_jobs_added": 3,
+    "changed_jobs_added": 0,
+    "closed_or_expired_jobs_added": 0,
+    "candidate_raw_added": 3,
+    "review_pending_suggested": 0,
+    "active_verified_added": 0,
+    "failures_added": 10
+  },
+  "cursor_handoff": {
+    "company_source_action": "upsert the company-source JSONL by company_id and preserve source evidence, source_type and verified_at",
+    "job_import_action": "insert the three cn-health-0394 records as candidate_raw only and deduplicate by source_url plus record_id",
+    "coverage_action": "append the four coverage rows; no company in this batch reaches company-level final acceptance",
+    "failure_action": "append ten structured retryable failures",
+    "navigation_resolution_action": "append four navigation-resolution rows",
+    "job_change_action": "append three new_job_observed events; do not infer changed or closed events without a matching prior source snapshot",
+    "status_guard": "never set active_verified automatically",
+    "next_priority_indices": [397, 398, 399, 400],
+    "next_priority_company_ids": ["cn-health-0397", "cn-health-0398", "cn-health-0399", "cn-health-0400"],
+    "next_priority_company_names": ["深圳市新产业生物医学工程股份有限公司", "上海奕瑞光电子科技股份有限公司", "健帆生物科技集团股份有限公司", "华熙生物科技股份有限公司"]
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
