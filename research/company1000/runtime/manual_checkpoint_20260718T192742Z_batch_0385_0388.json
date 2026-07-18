@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-18T19:27:42+00:00",
+  "branch": "research/company1000-crawler-20260713",
+  "completed_manual_batch": "0385_0388",
+  "processed_indices": [385, 386, 387, 388],
+  "processed_company_ids": ["cn-health-0385", "cn-health-0386", "cn-health-0387", "cn-health-0388"],
+  "companies_audited": 4,
+  "official_recruitment_entries_verified": 3,
+  "official_entry_candidates_pending": 1,
+  "companies_final_acceptance_met": 0,
+  "current_roles_observed": 0,
+  "historical_roles_observed": 19,
+  "jobs_added": 0,
+  "review_pending_suggested": 0,
+  "active_verified_added": 0,
+  "source_table_gap_review": {
+    "missing_company_ids": ["cn-health-0373", "cn-health-0383"],
+    "status": "unresolved",
+    "action": "audit company_seed merge, deduplication and CompanySource master generation before assigning or repairing missing indices"
+  },
+  "next_batch_start_index": 389,
+  "next_priority_indices": [389, 390, 391, 392],
+  "next_priority_company_ids": ["cn-health-0389", "cn-health-0390", "cn-health-0391", "cn-health-0392"],
+  "next_priority_company_names": ["山东新华医疗器械股份有限公司", "深圳华大基因股份有限公司", "成都市贝瑞和康基因技术股份有限公司", "广州达安基因股份有限公司"],
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
