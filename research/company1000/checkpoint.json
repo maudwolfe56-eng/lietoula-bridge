@@ -1,64 +1,46 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-07-18T11:52:59Z",
+  "updated_at": "2026-07-18T12:50:20Z",
   "branch": "research/company1000-crawler-20260713",
-  "last_completed_batch": "manual_batch_0340_0343_20260718T115259Z",
+  "last_completed_batch": "manual_batch_0344_0347_20260718T125020Z",
   "progress": {
     "target_companies": 1000,
     "seeded_companies": 1020,
-    "coverage_records_projected": 1238,
+    "coverage_records_projected": 1242,
     "company_source_final_acceptance_count_projected": 6,
-    "jobs_captured_total_projected": 897,
-    "jobs_captured_candidate_raw_projected": 760,
+    "jobs_captured_total_projected": 907,
+    "jobs_captured_candidate_raw_projected": 770,
     "jobs_review_pending_projected": 87,
     "jobs_inactive_expired_projected": 50,
     "jobs_active_verified": 0,
-    "last_processed_index": 343,
-    "next_batch_start_index": 344
+    "last_processed_index": 347,
+    "next_batch_start_index": 348
   },
   "last_batch": {
     "companies_audited": 4,
-    "official_entries_verified": 3,
-    "jobs_added_candidate_raw": 0,
+    "official_entries_verified": 4,
+    "jobs_added_candidate_raw": 10,
     "failures_added": 4,
-    "job_changes_added": 8,
-    "closed_or_expired_campaigns_observed": 8,
+    "job_changes_added": 10,
+    "closed_or_expired_campaigns_observed": 0,
     "final_acceptance_added": 0,
     "output_files": [
-      "research/company1000/output/company_source_manual_batch_0340_0343_20260718T115259Z.jsonl",
-      "research/company1000/output/jobs_manual_batch_0340_0343_20260718T115259Z.jsonl",
-      "research/company1000/output/coverage_manual_batch_0340_0343_20260718T115259Z.jsonl",
-      "research/company1000/output/failures_manual_batch_0340_0343_20260718T115259Z.jsonl",
-      "research/company1000/output/job_changes_manual_batch_0340_0343_20260718T115259Z.jsonl",
-      "research/company1000/deliverables/run_summary_manual_batch_0340_0343_20260718T115259Z.json",
-      "research/company1000/deliverables/weekly_update_20260718T115259Z.json"
+      "research/company1000/output/company_source_manual_batch_0344_0347_20260718T125020Z.jsonl",
+      "research/company1000/output/jobs_manual_batch_0344_0347_20260718T125020Z.jsonl",
+      "research/company1000/output/coverage_manual_batch_0344_0347_20260718T125020Z.jsonl",
+      "research/company1000/output/failures_manual_batch_0344_0347_20260718T125020Z.jsonl",
+      "research/company1000/output/job_changes_manual_batch_0344_0347_20260718T125020Z.jsonl",
+      "research/company1000/runtime/coverage_matrix_delta_20260718T125020Z_batch_0344_0347.json",
+      "research/company1000/runtime/manual_checkpoint_20260718T125020Z.json",
+      "research/company1000/deliverables/run_summary_manual_batch_0344_0347_20260718T125020Z.json",
+      "research/company1000/deliverables/weekly_update_20260718T125020Z.json"
     ]
   },
   "next_work": [
-    {
-      "priority": 1,
-      "company_id": "cn-bank-0344",
-      "company_name": "广东南粤银行股份有限公司",
-      "action": "verify_official_recruitment_entry_and_enumerate_public_inventory"
-    },
-    {
-      "priority": 2,
-      "company_id": "cn-bank-0345",
-      "company_name": "温州银行股份有限公司",
-      "action": "verify_official_recruitment_entry_and_enumerate_public_inventory"
-    },
-    {
-      "priority": 3,
-      "company_id": "cn-bank-0346",
-      "company_name": "台州银行股份有限公司",
-      "action": "verify_official_recruitment_entry_and_enumerate_public_inventory"
-    },
-    {
-      "priority": 4,
-      "company_id": "cn-bank-0347",
-      "company_name": "浙江泰隆商业银行股份有限公司",
-      "action": "verify_official_recruitment_entry_and_enumerate_public_inventory"
-    }
+    {"priority":1,"company_id":"cn-bank-0345","company_name":"温州银行股份有限公司","action":"continue_public_pages_2_3_enumeration_and_recheck_two_incomplete_detail_pages"},
+    {"priority":2,"company_id":"cn-sec-0348","company_name":"东兴证券股份有限公司","action":"verify_official_recruitment_entry_and_enumerate_public_inventory"},
+    {"priority":3,"company_id":"cn-ins-0349","company_name":"友邦人寿保险有限公司","action":"verify_official_recruitment_entry_and_enumerate_public_inventory"},
+    {"priority":4,"company_id":"cn-ins-0350","company_name":"众安在线财产保险股份有限公司","action":"verify_official_recruitment_entry_and_enumerate_public_inventory"}
   ],
   "hard_rules": {
     "do_not_bypass_login_or_captcha": true,
