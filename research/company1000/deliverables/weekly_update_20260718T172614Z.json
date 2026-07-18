@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.1",
+  "generated_at": "2026-07-18T17:26:14Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0367_0370",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "data_files": {
+    "CompanySource": "research/company1000/output/company_source_manual_batch_0367_0370_20260718T172614Z.jsonl",
+    "JobImport": "research/company1000/output/jobs_manual_batch_0367_0370_20260718T172614Z.jsonl",
+    "Coverage": "research/company1000/output/coverage_manual_batch_0367_0370_20260718T172614Z.jsonl",
+    "Failures": "research/company1000/output/failures_manual_batch_0367_0370_20260718T172614Z.jsonl",
+    "JobChanges": "research/company1000/output/job_changes_manual_batch_0367_0370_20260718T172614Z.jsonl",
+    "coverage_delta": "research/company1000/runtime/coverage_matrix_delta_20260718T172614Z_batch_0367_0370.json",
+    "checkpoint": "research/company1000/runtime/manual_checkpoint_20260718T172614Z.json",
+    "run_summary": "research/company1000/deliverables/run_summary_manual_batch_0367_0370_20260718T172614Z.json"
+  },
+  "company_source_updates": [
+    {"company_id":"cn-health-0367","company_name":"丽珠医药集团股份有限公司","career_url":"https://www.livzon.com.cn/Social.html","seed_status":"official_entry_verified","source_type":"official_company_recruitment_page_and_unique_job_details","verified_at":"2026-07-18T17:26:14Z","final_acceptance_met":false},
+    {"company_id":"cn-health-0368","company_name":"健康元药业集团股份有限公司","career_url":"https://www.joincare.com/Social_recruitment.html","seed_status":"official_entry_verified","source_type":"official_company_recruitment_listing","verified_at":"2026-07-18T17:26:14Z","final_acceptance_met":false},
+    {"company_id":"cn-health-0369","company_name":"浙江海正药业股份有限公司","career_url":"https://www.hisunpharm.com/main/recruit.thtml?cId=10981","seed_status":"official_entry_verified","source_type":"official_company_recruitment_portal","verified_at":"2026-07-18T17:26:14Z","final_acceptance_met":false},
+    {"company_id":"cn-health-0370","company_name":"浙江华海药业股份有限公司","career_url":"https://www.huahaipharm.com/zpgw.html","seed_status":"official_entry_verified","source_type":"official_company_recruitment_archive","verified_at":"2026-07-18T17:26:14Z","final_acceptance_met":false}
+  ],
+  "job_import_updates": [
+    {"record_id":"ec1948c1a484db8cf0dbe68c","company_id":"cn-health-0367","job_name":"PD制剂 研究员","source_url":"https://www.livzon.com.cn/product/138.html","review_status":"candidate_raw","completeness":0.714,"confidence":0.88,"salary_disclosure_status":"not_disclosed"},
+    {"record_id":"a5eb4d50b49f97d0ce124a22","company_id":"cn-health-0367","job_name":"PD制剂 总监/经理","source_url":"https://www.livzon.com.cn/product/137.html","review_status":"candidate_raw","completeness":0.714,"confidence":0.88,"salary_disclosure_status":"not_disclosed"},
+    {"record_id":"ec03717195ba87008778c387","company_id":"cn-health-0367","job_name":"QC（实验室运营）","source_url":"https://www.livzon.com.cn/product/134.html","review_status":"candidate_raw","completeness":0.714,"confidence":0.88,"salary_disclosure_status":"not_disclosed"},
+    {"record_id":"a00bbc289d8e391bf2776d00","company_id":"cn-health-0367","job_name":"QC（生化定量）","source_url":"https://www.livzon.com.cn/product/133.html","review_status":"candidate_raw","completeness":0.714,"confidence":0.88,"salary_disclosure_status":"not_disclosed"}
+  ],
+  "update_summary": {
+    "companies_audited": 4,
+    "official_recruitment_entries_verified": 4,
+    "new_jobs_added": 4,
+    "changed_jobs_added": 4,
+    "closed_or_expired_jobs_added": 0,
+    "candidate_raw_added": 4,
+    "review_pending_suggested": 0,
+    "active_verified_added": 0,
+    "reason_review_pending_not_used": "The four normalized roles have official unique detail pages and core duty/requirement fields, but location, publication date, deadline/current application status and exact employer unit are unresolved."
+  },
+  "codex_handoff": {
+    "company_source_action": "upsert CompanySource batch by company_id; preserve official evidence and verified_at",
+    "job_import_action": "insert four JobImport records only after deduplication by source_url and record_id; preserve candidate_raw and all null/not_disclosed fields",
+    "coverage_action": "append Coverage records and keep final_acceptance_met=false",
+    "failure_action": "append one structured retryable Failure per company",
+    "job_change_action": "append four new_candidate_raw_observed records after record_id deduplication",
+    "status_guard": "never set active_verified automatically; do not move the four jobs to review_pending until missing location and freshness fields are verified",
+    "next_priority_company_ids": ["cn-health-0371","cn-health-0372","cn-health-0374","cn-health-0375"],
+    "company_source_gap_review": "audit missing cn-health-0373 in company_source_1000 master before assigning or repairing any company_id"
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
