@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T12:50:20Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0344_0347",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "company_source_updates_file": "research/company1000/output/company_source_manual_batch_0344_0347_20260718T125020Z.jsonl",
+  "job_import_updates_file": "research/company1000/output/jobs_manual_batch_0344_0347_20260718T125020Z.jsonl",
+  "coverage_updates_file": "research/company1000/output/coverage_manual_batch_0344_0347_20260718T125020Z.jsonl",
+  "failure_updates_file": "research/company1000/output/failures_manual_batch_0344_0347_20260718T125020Z.jsonl",
+  "job_change_updates_file": "research/company1000/output/job_changes_manual_batch_0344_0347_20260718T125020Z.jsonl",
+  "update_summary": {
+    "companies_audited": 4,
+    "official_recruitment_entries_verified": 4,
+    "official_entry_candidates_pending": 0,
+    "new_jobs_added": 10,
+    "changed_jobs_added": 0,
+    "closed_or_expired_campaigns_observed": 0,
+    "candidate_raw_added": 10,
+    "review_pending_suggested": 0,
+    "active_verified_added": 0,
+    "final_acceptance_added": 0
+  },
+  "audit_outcomes": [
+    {"company_id":"cn-bank-0344","company_name":"广东南粤银行股份有限公司","outcome":"official_listing_and_multiple_current_announcements_verified","blocking_reason":"role_level_unique_urls_and_public_complete_duty_requirement_fields_unresolved"},
+    {"company_id":"cn-bank-0345","company_name":"温州银行股份有限公司","outcome":"official_portal_verified_and_first_page_ten_current_roles_normalized","blocking_reason":"remaining_eighteen_roles_and_missing_responsibilities_unresolved"},
+    {"company_id":"cn-bank-0346","company_name":"台州银行股份有限公司","outcome":"official_website_backlink_to_hotjob_portal_verified","blocking_reason":"current_javascript_role_inventory_not_enumerated"},
+    {"company_id":"cn-bank-0347","company_name":"浙江泰隆商业银行股份有限公司","outcome":"official_website_backlink_to_zhiye_portal_verified","blocking_reason":"current_javascript_role_inventory_not_enumerated"}
+  ],
+  "cursor_handoff": {
+    "company_source_action": "upsert four company-source JSONL records by company_id and preserve official evidence/verified_at",
+    "job_import_action": "insert ten 温州银行 records as candidate_raw only; preserve null responsibilities, published_date and undisclosed salary fields; deduplicate by source_url",
+    "coverage_action": "append four coverage records and apply the coverage matrix delta; all final_acceptance_met remain false",
+    "failure_action": "append four structured retryable failures",
+    "job_change_action": "append ten new_job_observed records with current_status=candidate_raw",
+    "status_guard": "never set active_verified automatically",
+    "next_priority_indices": [345, 348, 349, 350],
+    "next_priority_company_ids": ["cn-bank-0345", "cn-sec-0348", "cn-ins-0349", "cn-ins-0350"]
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
