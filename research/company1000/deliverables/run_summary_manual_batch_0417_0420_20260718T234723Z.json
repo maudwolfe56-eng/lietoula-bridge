@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T23:47:23Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0417_0420",
+  "processed_indices": [417, 418, 419, 420],
+  "processed_company_ids": ["cn-indtech-0417", "cn-indtech-0418", "cn-indtech-0419", "cn-indtech-0420"],
+  "companies_audited": 4,
+  "official_recruitment_entries_verified": 3,
+  "official_entry_candidates_pending": 1,
+  "companies_final_acceptance_met": 0,
+  "current_roles_observed": 0,
+  "unresolved_official_job_detail_routes_observed": 5,
+  "historical_roles_observed": 0,
+  "jobs_added": 0,
+  "job_status_additions": {"candidate_raw": 0, "review_pending": 0, "active_verified": 0, "inactive_expired": 0},
+  "job_changes_added": 0,
+  "failures_added": 5,
+  "files": {
+    "company_source": "research/company1000/output/company_source_manual_batch_0417_0420_20260718T234723Z.jsonl",
+    "coverage": "research/company1000/output/coverage_manual_batch_0417_0420_20260718T234723Z.jsonl",
+    "failures": "research/company1000/output/failures_manual_batch_0417_0420_20260718T234723Z.jsonl",
+    "job_changes": "research/company1000/output/job_changes_manual_batch_0417_0420_20260718T234723Z.jsonl",
+    "job_import": "research/company1000/output/jobs_manual_batch_0417_0420_20260718T234723Z.jsonl",
+    "checkpoint": "research/company1000/runtime/manual_checkpoint_20260718T234723Z_batch_0417_0420.json",
+    "weekly_update": "research/company1000/deliverables/weekly_update_20260718T234723Z.json",
+    "run_summary": "research/company1000/deliverables/run_summary_manual_batch_0417_0420_20260718T234723Z.json"
+  },
+  "company_results": [
+    {"company_id":"cn-indtech-0417","company_name":"追觅科技（苏州）有限公司","official_entry_verified":true,"current_roles_observed":0,"jobs_added":0,"result":"official_social_and_campus_zhiye_portals_verified_public_inventory_and_detail_fields_unresolved","final_acceptance_met":false},
+    {"company_id":"cn-indtech-0418","company_name":"安克创新科技股份有限公司","official_entry_verified":true,"current_roles_observed":0,"jobs_added":0,"result":"official_recruitment_site_verified_zero_parsed_rows_not_final_no_job_evidence_client_inventory_unresolved","final_acceptance_met":false},
+    {"company_id":"cn-indtech-0419","company_name":"深圳传音控股股份有限公司","official_entry_verified":false,"current_roles_observed":0,"jobs_added":0,"result":"official_company_and_employee_development_pages_verified_current_official_position_inventory_not_located","final_acceptance_met":false},
+    {"company_id":"cn-indtech-0420","company_name":"广州视源电子科技股份有限公司","official_entry_verified":true,"current_roles_observed":0,"jobs_added":0,"result":"official_social_and_campus_channels_verified_current_position_route_observed_core_fields_unresolved","final_acceptance_met":false}
+  ],
+  "next_priority_indices": [421, 422, 423, 424],
+  "next_priority_company_ids": [],
+  "next_priority_company_names": [],
+  "next_priority_resolution": "resolve indices 421-424 from company_seed_1000 master before audit; do not infer or invent missing IDs or company names; also continue ECOVACS pages 2-4 and OPPLE full inventory when a compliant public resolver is available",
+  "source_table_gap_review": {
+    "missing_company_ids": ["cn-health-0373", "cn-health-0383", "cn-indtech-0402", "cn-indtech-0403", "cn-indtech-0405", "cn-indtech-0407"],
+    "status": "unresolved",
+    "action": "audit company-seed merge, deduplication and CompanySource master generation before assigning or repairing missing indices; do not invent companies or IDs"
+  },
+  "aggregate_counts_status": "batch delta complete; aggregate CompanySource, JobImport, Coverage, Failures, JobChanges and global run_summary still require deterministic rebuild from all deltas",
+  "policy": {
+    "official_sources_only": true,
+    "third_party_as_sole_source_allowed": false,
+    "login_captcha_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
