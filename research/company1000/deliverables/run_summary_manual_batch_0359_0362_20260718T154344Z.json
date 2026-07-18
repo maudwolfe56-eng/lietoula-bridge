@@ -1,0 +1,96 @@
+{
+  "schema_version": "2.0",
+  "generated_at": "2026-07-18T15:43:44Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "manual_batch_0359_0362_20260718T154344Z",
+  "scope": "Official recruitment source verification and public current-role inventory audit for company indices 359 through 362",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "companies": [
+    {
+      "company_id": "cn-health-0359",
+      "company_name": "四川科伦药业股份有限公司",
+      "official_entry_verified": true,
+      "roles_normalized": 0,
+      "social_rows_observed": 158,
+      "campus_rows_observed": 34,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0360",
+      "company_name": "华东医药股份有限公司",
+      "official_entry_verified": true,
+      "roles_normalized": 0,
+      "portal_http_status": 502,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0361",
+      "company_name": "北京同仁堂股份有限公司",
+      "official_entry_verified": true,
+      "roles_normalized": 3,
+      "roles_suggested_review_pending": 3,
+      "current_announcements_observed": 2,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0362",
+      "company_name": "漳州片仔癀药业股份有限公司",
+      "official_entry_verified": true,
+      "roles_normalized": 0,
+      "official_archive_records_observed": 81,
+      "official_archive_pages_observed": 7,
+      "final_acceptance_met": false
+    }
+  ],
+  "metrics": {
+    "companies_audited": 4,
+    "official_entries_verified": 4,
+    "official_entry_candidates_pending": 0,
+    "new_jobs_candidate_raw": 0,
+    "review_pending_added": 3,
+    "active_verified_added": 0,
+    "closed_or_expired_campaigns_observed": 0,
+    "failures_added": 4,
+    "job_changes_added": 3,
+    "final_acceptance_added": 0
+  },
+  "quality_notes": [
+    "科伦药业官网与官方招聘门户关联已核验，社会招聘158条、校园招聘34条公开可见；岗位级详情公开缓存未命中，未导入标题型记录。",
+    "华东医药官网明确链接官方Wintalent招聘门户，但本轮公开访问返回502，未绕过访问控制。",
+    "北京同仁堂股份有限公司官方招聘公告中3个截至2026年9月报名、招满即止的岗位已结构化并建议进入review_pending；公告未给具体截止日，deadline_date保持空值。",
+    "片仔癀官方人才招聘归档显示81条记录、7页，近期多为招聘流程或结果公告；未把流程公告误作当前岗位，剩余页面和详情待继续枚举。",
+    "本批未推测薪酬，未自动设置active_verified。"
+  ],
+  "output_files": [
+    "research/company1000/output/company_source_manual_batch_0359_0362_20260718T154344Z.jsonl",
+    "research/company1000/output/jobs_manual_batch_0359_0362_20260718T154344Z.jsonl",
+    "research/company1000/output/coverage_manual_batch_0359_0362_20260718T154344Z.jsonl",
+    "research/company1000/output/failures_manual_batch_0359_0362_20260718T154344Z.jsonl",
+    "research/company1000/output/job_changes_manual_batch_0359_0362_20260718T154344Z.jsonl",
+    "research/company1000/runtime/coverage_matrix_delta_20260718T154344Z_batch_0359_0362.json",
+    "research/company1000/runtime/manual_checkpoint_20260718T154344Z.json",
+    "research/company1000/deliverables/run_summary_manual_batch_0359_0362_20260718T154344Z.json",
+    "research/company1000/deliverables/weekly_update_20260718T154344Z.json"
+  ],
+  "next_priority_indices": [
+    363,
+    364,
+    365,
+    366
+  ],
+  "next_priority_company_ids": [
+    "cn-health-0363",
+    "cn-health-0364",
+    "cn-health-0365",
+    "cn-health-0366"
+  ],
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
