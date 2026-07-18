@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-18T13:49:18+00:00",
+  "branch": "research/company1000-crawler-20260713",
+  "last_completed_manual_batch": "priority_0345_0348_0350",
+  "next_batch_start_index": 351,
+  "next_priority_indices": [
+    351,
+    352,
+    353,
+    354
+  ],
+  "next_priority_company_ids": [
+    "cn-health-0351",
+    "cn-health-0352",
+    "cn-health-0353",
+    "cn-health-0354"
+  ],
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
