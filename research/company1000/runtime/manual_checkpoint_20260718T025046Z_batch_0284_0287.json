@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-18T02:50:46+00:00",
+  "branch": "research/company1000-crawler-20260713",
+  "completed_batch": "0284_0287",
+  "processed_company_indices": [284, 285, 286, 287],
+  "processed_company_ids": [
+    "cn-hotel-0284",
+    "cn-hotel-0285",
+    "cn-hotel-0286",
+    "cn-travel-0287"
+  ],
+  "companies_audited": 4,
+  "official_entries_verified": 4,
+  "jobs_added": 0,
+  "active_verified_added": 0,
+  "final_acceptance_added": 0,
+  "next_batch_start_index": 288,
+  "continuation_mode": "continue_from_persisted_checkpoint",
+  "hard_rules": {
+    "official_sources_only": true,
+    "do_not_bypass_login_captcha_paywall_or_access_controls": true,
+    "do_not_infer_salary": true,
+    "do_not_set_active_verified_automatically": true,
+    "new_jobs_default_candidate_raw": true
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
