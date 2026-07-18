@@ -1,17 +1,17 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-18T10:30:13+00:00",
+  "updated_at": "2026-07-18T11:25:26+00:00",
   "branch": "research/company1000-crawler-20260713",
-  "last_completed_manual_batch": "0328_0331",
-  "next_batch_start_index": 332,
-  "next_priority_indices": [332, 333, 334, 335],
+  "last_completed_manual_batch": "0336_0339",
+  "next_batch_start_index": 340,
+  "next_priority_indices": [340, 341, 342, 343],
   "next_priority_company_ids": [
-    "cn-bank-0332",
-    "cn-bank-0333",
-    "cn-bank-0334",
-    "cn-bank-0335"
+    "cn-bank-0340",
+    "cn-bank-0341",
+    "cn-bank-0342",
+    "cn-bank-0343"
   ],
-  "last_checkpoint": "research/company1000/runtime/manual_checkpoint_20260718T103013Z.json",
+  "last_checkpoint": "research/company1000/runtime/manual_checkpoint_20260718T112526Z.json",
   "final_acceptance_met": false,
   "notification_eligible": false
 }
