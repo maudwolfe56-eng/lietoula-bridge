@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T14:49:51Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0351_0354",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "company_source_updates_file": "research/company1000/output/company_source_manual_batch_0351_0354_20260718T144951Z.jsonl",
+  "job_import_updates_file": "research/company1000/output/jobs_manual_batch_0351_0354_20260718T144951Z.jsonl",
+  "coverage_updates_file": "research/company1000/output/coverage_manual_batch_0351_0354_20260718T144951Z.jsonl",
+  "failure_updates_file": "research/company1000/output/failures_manual_batch_0351_0354_20260718T144951Z.jsonl",
+  "job_change_updates_file": "research/company1000/output/job_changes_manual_batch_0351_0354_20260718T144951Z.jsonl",
+  "update_summary": {
+    "companies_audited": 4,
+    "official_recruitment_entries_verified": 4,
+    "official_entry_candidates_pending": 0,
+    "new_jobs_added": 0,
+    "changed_jobs_added": 0,
+    "closed_or_expired_campaigns_observed": 0,
+    "candidate_raw_added": 0,
+    "review_pending_suggested": 0,
+    "active_verified_added": 0,
+    "final_acceptance_added": 0
+  },
+  "audit_outcomes": [
+    {
+      "company_id": "cn-health-0351",
+      "company_name": "江苏恒瑞医药股份有限公司",
+      "outcome": "official_careers_page_verified",
+      "blocking_reason": "current_job_level_inventory_and_core_fields_not_enumerated_from_official_public_sources"
+    },
+    {
+      "company_id": "cn-health-0352",
+      "company_name": "石药集团有限公司",
+      "outcome": "official_social_and_campus_entries_verified",
+      "blocking_reason": "nonstandard_port_recruitment_inventory_not_stably_resolved"
+    },
+    {
+      "company_id": "cn-health-0353",
+      "company_name": "中国生物制药有限公司",
+      "outcome": "official_group_and_member_recruitment_entries_verified",
+      "blocking_reason": "five_member_enterprise_current_inventories_not_fully_enumerated"
+    },
+    {
+      "company_id": "cn-health-0354",
+      "company_name": "信达生物制药（苏州）有限公司",
+      "outcome": "official_corporate_backlink_and_zhiye_portal_verified",
+      "blocking_reason": "dynamic_current_role_inventory_not_enumerated"
+    }
+  ],
+  "implementation_handoff": {
+    "company_source_action": "upsert four company-source JSONL records by company_id and preserve official evidence and verified_at",
+    "job_import_action": "no JobImport rows in this batch; do not synthesize job records from category links, QR codes or dynamic portal roots",
+    "coverage_action": "append four coverage records and apply the coverage matrix delta; all final_acceptance_met remain false",
+    "failure_action": "append four structured retryable failures",
+    "job_change_action": "no job-change rows in this batch",
+    "status_guard": "never set active_verified automatically",
+    "next_priority_indices": [
+      355,
+      356,
+      357,
+      358
+    ],
+    "next_priority_company_ids": [
+      "cn-health-0355",
+      "cn-health-0356",
+      "cn-health-0357",
+      "cn-health-0358"
+    ]
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
