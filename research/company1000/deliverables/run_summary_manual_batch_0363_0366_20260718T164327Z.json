@@ -1,0 +1,95 @@
+{
+  "schema_version": "2.0",
+  "generated_at": "2026-07-18T16:43:27Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "manual_batch_0363_0366_20260718T164327Z",
+  "scope": "Official recruitment source verification and public current-role inventory audit for company indices 363 through 366",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "companies": [
+    {
+      "company_id": "cn-health-0363",
+      "company_name": "天士力医药集团股份有限公司",
+      "official_entry_verified": true,
+      "roles_normalized": 0,
+      "current_rows_observed": 15,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0364",
+      "company_name": "石家庄以岭药业股份有限公司",
+      "official_entry_verified": true,
+      "roles_normalized": 0,
+      "official_recruitment_channels_observed": 2,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0365",
+      "company_name": "湖北济川药业股份有限公司",
+      "official_entry_verified": true,
+      "roles_normalized": 0,
+      "current_2026_rows_observed": 0,
+      "stale_2022_rows_observed": 15,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0366",
+      "company_name": "山东步长制药股份有限公司",
+      "official_entry_verified": true,
+      "roles_normalized": 0,
+      "current_2026_rows_observed": 0,
+      "expired_campaigns_observed": 1,
+      "final_acceptance_met": false
+    }
+  ],
+  "metrics": {
+    "companies_audited": 4,
+    "official_entries_verified": 4,
+    "official_entry_candidates_pending": 0,
+    "new_jobs_candidate_raw": 0,
+    "review_pending_added": 0,
+    "active_verified_added": 0,
+    "closed_or_expired_campaigns_observed": 1,
+    "failures_added": 4,
+    "job_changes_added": 1,
+    "final_acceptance_added": 0
+  },
+  "quality_notes": [
+    "天士力官方Hotjob门户显示15条当前社会招聘记录，但第二页、唯一详情URL及职责要求等核心字段未完整解析，因此未创建标题型岗位。",
+    "以岭药业官网明确链接官方社会招聘和校园招聘门户，但岗位库存由客户端动态加载，本轮未绕过访问控制。",
+    "济川药业官网公开招聘列表主要为2022年岗位且有效期为空，未将历史岗位推定为当前在招，也未将历史薪酬作为当前薪酬使用。",
+    "步长制药官网唯一可见招聘活动明确于2025-06-15截止，本轮仅记录inactive_expired变化证据，不生成当前JobImport。",
+    "本批未推测薪酬，未自动设置active_verified。"
+  ],
+  "output_files": [
+    "research/company1000/output/company_source_manual_batch_0363_0366_20260718T164327Z.jsonl",
+    "research/company1000/output/jobs_manual_batch_0363_0366_20260718T164327Z.jsonl",
+    "research/company1000/output/coverage_manual_batch_0363_0366_20260718T164327Z.jsonl",
+    "research/company1000/output/failures_manual_batch_0363_0366_20260718T164327Z.jsonl",
+    "research/company1000/output/job_changes_manual_batch_0363_0366_20260718T164327Z.jsonl",
+    "research/company1000/runtime/coverage_matrix_delta_20260718T164327Z_batch_0363_0366.json",
+    "research/company1000/runtime/manual_checkpoint_20260718T164327Z.json",
+    "research/company1000/deliverables/run_summary_manual_batch_0363_0366_20260718T164327Z.json",
+    "research/company1000/deliverables/weekly_update_20260718T164327Z.json"
+  ],
+  "next_priority_indices": [
+    367,
+    368,
+    369,
+    370
+  ],
+  "next_priority_company_ids": [
+    "cn-health-0367",
+    "cn-health-0368",
+    "cn-health-0369",
+    "cn-health-0370"
+  ],
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
