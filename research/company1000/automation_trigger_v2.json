@@ -1,7 +1,7 @@
 {
-  "requested_at": "2026-07-17T18:07:03Z",
-  "sequence": 5,
-  "purpose": "Continue the next bounded official-source audit cycle: process the next uncompleted company entries, classify official recruitment detail candidates, expand recruitment navigation conservatively, resolve public job details and multi-position announcements, rebuild deliverables, and reassess final acceptance",
+  "requested_at": "2026-07-18T01:44:16Z",
+  "sequence": 6,
+  "purpose": "Continue from the persisted checkpoint after manual audit batch 0276-0279: process the next uncompleted companies, reconcile official recruitment coverage and failures, classify official recruitment candidates conservatively, resolve public job details only when auditable, rebuild deliverables, and reassess final acceptance",
   "target_companies": 1000,
   "policy": {
     "official_sources_only": true,
