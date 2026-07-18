@@ -72,6 +72,34 @@ def load_seed_rows() -> list[dict[str, Any]]:
     return rows
 
 
+def load_company_source_overrides() -> dict[str, dict[str, Any]]:
+    """Load audited CompanySource updates from timestamped handoff packages.
+
+    Seed files are discovery inputs. The weekly_update packages contain later, manually
+    verified official URLs, evidence and per-company acceptance outcomes. Process them
+    chronologically so the newest non-null value wins and aggregate rebuilds do not
+    regress verified records back to seed candidates.
+    """
+    overrides: dict[str, dict[str, Any]] = {}
+    for path in sorted(DELIVERABLES.glob("weekly_update_*.json")):
+        try:
+            data = read_json(path)
+        except (json.JSONDecodeError, OSError):
+            continue
+        updates = data.get("company_source_updates", []) if isinstance(data, dict) else []
+        for row in updates:
+            if not isinstance(row, dict):
+                continue
+            company_id = str(row.get("company_id") or "").strip()
+            if not company_id:
+                continue
+            target = overrides.setdefault(company_id, {})
+            for key, value in row.items():
+                if value is not None:
+                    target[key] = value
+    return overrides
+
+
 def load_job_rows() -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
     for pattern in ("jobs*.jsonl", "*jobs*.jsonl"):
@@ -179,12 +207,29 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
 def main() -> int:
     DELIVERABLES.mkdir(parents=True, exist_ok=True)
     seed_rows = load_seed_rows()
-    company_sources = []
+    company_source_overrides = load_company_source_overrides()
+    company_sources: list[dict[str, Any]] = []
+    seen_company_ids: set[str] = set()
     for row in seed_rows:
         item = dict(row)
-        item["source_type"] = "official_company_or_recruitment_portal"
+        company_id = str(item.get("company_id") or "").strip()
+        if company_id:
+            seen_company_ids.add(company_id)
+            item.update(company_source_overrides.get(company_id, {}))
+        item["source_type"] = item.get("source_type") or "official_company_or_recruitment_portal"
         item["verified_at"] = item.get("verified_at") or utc_now()
-        item["final_acceptance_met"] = False
+        item["final_acceptance_met"] = bool(item.get("final_acceptance_met", False))
+        company_sources.append(item)
+
+    # Preserve a verified handoff even if a malformed/late seed merge temporarily omits it.
+    for company_id, override in company_source_overrides.items():
+        if company_id in seen_company_ids:
+            continue
+        item = dict(override)
+        item["company_id"] = company_id
+        item["source_type"] = item.get("source_type") or "official_company_or_recruitment_portal"
+        item["verified_at"] = item.get("verified_at") or utc_now()
+        item["final_acceptance_met"] = bool(item.get("final_acceptance_met", False))
         company_sources.append(item)
 
     raw_jobs = load_job_rows()
@@ -228,6 +273,7 @@ def main() -> int:
     for job in jobs:
         status = str(job.get("review_status") or "candidate_raw")
         status_counts[status] = status_counts.get(status, 0) + 1
+    company_source_acceptance_count = sum(1 for row in company_sources if row.get("final_acceptance_met") is True)
     summary = {
         "schema_version": "1.0",
         "generated_at": utc_now(),
@@ -235,6 +281,7 @@ def main() -> int:
         "seeded_companies": len(company_sources),
         "coverage_records": len(coverage),
         "companies_with_coverage": len({row.get("company_id") for row in coverage if row.get("company_id")}),
+        "company_source_final_acceptance_count": company_source_acceptance_count,
         "job_records": len(jobs),
         "job_status_counts": status_counts,
         "failure_records": len(failures),
