@@ -1,47 +1,68 @@
 {
-  "schema_version": "1.0",
-  "updated_at": "2026-07-13T12:23:00Z",
+  "schema_version": "2.0",
+  "updated_at": "2026-07-18T07:48:05Z",
   "branch": "research/company1000-crawler-20260713",
-  "last_completed_batch": "batch_0001_20260713",
+  "last_completed_batch": "manual_batch_0312_0315_20260718T074805Z",
   "progress": {
     "target_companies": 1000,
-    "seeded_companies": 12,
-    "companies_complete": 1,
-    "companies_partial": 1,
-    "companies_pending": 10,
-    "jobs_captured_candidate_raw": 10,
-    "jobs_active_verified": 0
+    "seeded_companies": 1020,
+    "coverage_records_projected": 1210,
+    "company_source_final_acceptance_count_projected": 4,
+    "jobs_captured_total_projected": 886,
+    "jobs_captured_candidate_raw_projected": 749,
+    "jobs_review_pending_projected": 87,
+    "jobs_inactive_expired_projected": 50,
+    "jobs_active_verified": 0,
+    "last_processed_index": 315,
+    "next_batch_start_index": 316
+  },
+  "last_batch": {
+    "companies_audited": 4,
+    "official_entries_verified": 3,
+    "jobs_added_candidate_raw": 1,
+    "failures_added": 4,
+    "final_acceptance_added": 0,
+    "output_files": [
+      "research/company1000/output/company_source_manual_batch_0312_0315_20260718T074805Z.jsonl",
+      "research/company1000/output/jobs_manual_batch_0312_0315_20260718T074805Z.jsonl",
+      "research/company1000/output/coverage_manual_batch_0312_0315_20260718T074805Z.jsonl",
+      "research/company1000/output/failures_manual_batch_0312_0315_20260718T074805Z.jsonl",
+      "research/company1000/output/job_changes_manual_batch_0312_0315_20260718T074805Z.jsonl",
+      "research/company1000/deliverables/run_summary_manual_batch_0312_0315_20260718T074805Z.json",
+      "research/company1000/deliverables/weekly_update_20260718T074805Z.json"
+    ]
   },
   "next_work": [
     {
       "priority": 1,
-      "company_id": "cn-soe-0011",
-      "action": "enumerate_social_jobs",
-      "start_page": 2,
-      "end_page_discovered": 40,
-      "required_followup": "resolve canonical unique detail URL for each job code before final import"
+      "company_id": "cn-bank-0316",
+      "action": "verify_official_recruitment_entry_and_enumerate_public_inventory"
     },
     {
       "priority": 2,
-      "company_id": "cn-soe-0012",
-      "action": "enumerate_social_headquarters_overseas_channels",
-      "required_followup": "capture every public posting and channel-specific empty-state evidence"
+      "company_id": "cn-bank-0317",
+      "action": "verify_official_recruitment_entry_and_enumerate_public_inventory"
     },
     {
       "priority": 3,
-      "company_id": "cn-fin-0010",
-      "action": "retry_official_entry_after_timeout"
+      "company_id": "cn-bank-0318",
+      "action": "continue_verified_official_careers_index_and_enumerate_current_inventory"
     },
     {
       "priority": 4,
-      "action": "expand_seed",
-      "required_followup": "replace partial 12-company seed with auditable 1000-company target list before claiming target coverage"
+      "company_id": "cn-bank-0319",
+      "action": "verify_official_recruitment_entry_and_enumerate_public_inventory"
     }
   ],
   "hard_rules": {
     "do_not_bypass_login_or_captcha": true,
+    "do_not_bypass_paywall_or_access_control": true,
     "do_not_infer_salary": true,
     "do_not_set_active_verified_automatically": true,
-    "retain_source_evidence": true
-  }
+    "new_jobs_default_candidate_raw": true,
+    "retain_source_evidence": true,
+    "third_party_not_sufficient_as_sole_source": true
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
 }
