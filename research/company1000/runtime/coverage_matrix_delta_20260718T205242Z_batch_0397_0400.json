@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T20:52:42Z",
+  "batch": "0397_0400",
+  "processed_company_ids": [
+    "cn-health-0397",
+    "cn-health-0398",
+    "cn-health-0399",
+    "cn-health-0400"
+  ],
+  "coverage_updates": [
+    {
+      "company_id": "cn-health-0397",
+      "official_entry_verified": true,
+      "enumeration_status": "official_company_website_links_zhiye_social_and_campus_portals_but_dynamic_current_role_inventory_not_exposed_in_public_html",
+      "roles_observed": 0,
+      "roles_normalized": 0,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0398",
+      "official_entry_verified": true,
+      "enumeration_status": "official_career_pages_fully_enumerated_no_current_role_rows_five_legacy_2017_2018_roles_explicitly_expired",
+      "roles_observed": 0,
+      "historical_roles_observed": 5,
+      "roles_normalized": 0,
+      "final_acceptance_met": true
+    },
+    {
+      "company_id": "cn-health-0399",
+      "official_entry_verified": true,
+      "enumeration_status": "official_join_page_links_self_hosted_social_recruitment_and_ai_interview_but_current_role_inventory_not_publicly_enumerated",
+      "roles_observed": 0,
+      "roles_normalized": 0,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0400",
+      "official_entry_verified": true,
+      "enumeration_status": "official_join_page_links_hotjob_tenant_but_tenant_currently_exposes_no_company_role_inventory_and_resolves_generic_ats_content",
+      "roles_observed": 0,
+      "roles_normalized": 0,
+      "final_acceptance_met": false
+    }
+  ],
+  "summary": {
+    "companies_audited": 4,
+    "official_entries_verified": 4,
+    "current_roles_observed": 0,
+    "historical_roles_observed": 5,
+    "roles_normalized": 0,
+    "candidate_raw_added": 0,
+    "review_pending_added": 0,
+    "active_verified_added": 0,
+    "failures_added": 4,
+    "companies_final_acceptance_met": 1
+  },
+  "final_acceptance_met": false
+}
