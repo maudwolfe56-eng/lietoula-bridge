@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T11:52:59Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0340_0343",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "company_source_updates_file": "research/company1000/output/company_source_manual_batch_0340_0343_20260718T115259Z.jsonl",
+  "job_import_updates_file": "research/company1000/output/jobs_manual_batch_0340_0343_20260718T115259Z.jsonl",
+  "coverage_updates_file": "research/company1000/output/coverage_manual_batch_0340_0343_20260718T115259Z.jsonl",
+  "failure_updates_file": "research/company1000/output/failures_manual_batch_0340_0343_20260718T115259Z.jsonl",
+  "job_change_updates_file": "research/company1000/output/job_changes_manual_batch_0340_0343_20260718T115259Z.jsonl",
+  "update_summary": {
+    "companies_audited": 4,
+    "official_recruitment_entries_verified": 3,
+    "official_entry_candidates_pending": 1,
+    "new_jobs_added": 0,
+    "changed_jobs_added": 0,
+    "closed_or_expired_campaigns_observed": 8,
+    "candidate_raw_added": 0,
+    "review_pending_suggested": 0,
+    "active_verified_added": 0,
+    "final_acceptance_added": 0
+  },
+  "audit_outcomes": [
+    {"company_id":"cn-bank-0340","company_name":"湖北银行股份有限公司","outcome":"hosted_2026_campaign_observed_official_backlink_unresolved","blocking_reason":"hosted_campaign_lacks_verified_official_backlink"},
+    {"company_id":"cn-bank-0341","company_name":"湖南银行股份有限公司","outcome":"official_listing_and_eight_expired_campaigns_audited","blocking_reason":"one_undated_event_and_dynamic_application_inventory_unresolved"},
+    {"company_id":"cn-bank-0342","company_name":"东莞银行股份有限公司","outcome":"official_website_backlink_to_recruitment_portal_verified","blocking_reason":"current_javascript_role_inventory_not_enumerated"},
+    {"company_id":"cn-bank-0343","company_name":"珠海华润银行股份有限公司","outcome":"official_website_backlink_to_hotjob_portal_verified_and_rename_noted","blocking_reason":"current_javascript_role_inventory_not_enumerated"}
+  ],
+  "cursor_handoff": {
+    "company_source_action": "upsert four company-source JSONL records by company_id; preserve official evidence, rename alias and verified_at",
+    "job_import_action": "no current job insert for this batch; empty JSONL intentionally records that no role met official-source, current-open and complete role-detail conditions",
+    "coverage_action": "append four coverage records; all retain final_acceptance_met=false",
+    "failure_action": "append four structured retryable failure records for source-chain or dynamic-inventory blockers",
+    "job_change_action": "append eight湖南银行 closed_or_expired campaign observations; do not surface them as active jobs",
+    "status_guard": "never set active_verified automatically",
+    "next_priority_indices": [344,345,346,347],
+    "next_priority_company_ids": ["cn-bank-0344","cn-bank-0345","cn-bank-0346","cn-bank-0347"]
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
