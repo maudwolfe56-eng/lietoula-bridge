@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T21:45:41Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0401_0404_0406_0408",
+  "processed_indices": [
+    401,
+    404,
+    406,
+    408
+  ],
+  "processed_company_ids": [
+    "cn-indtech-0401",
+    "cn-indtech-0404",
+    "cn-indtech-0406",
+    "cn-indtech-0408"
+  ],
+  "companies_audited": 4,
+  "official_recruitment_entries_verified": 4,
+  "official_entry_candidates_pending": 0,
+  "companies_final_acceptance_met": 0,
+  "current_roles_observed": 4,
+  "historical_roles_observed": 0,
+  "jobs_added": 4,
+  "job_status_additions": {
+    "candidate_raw": 4,
+    "review_pending": 0,
+    "active_verified": 0,
+    "inactive_expired": 0
+  },
+  "job_changes_added": 4,
+  "failures_added": 5,
+  "files": {
+    "company_source": "research/company1000/output/company_source_manual_batch_0401_0404_0406_0408_20260718T214541Z.jsonl",
+    "job_import": "research/company1000/output/jobs_manual_batch_0401_0404_0406_0408_20260718T214541Z.jsonl",
+    "coverage": "research/company1000/output/coverage_manual_batch_0401_0404_0406_0408_20260718T214541Z.jsonl",
+    "failures": "research/company1000/output/failures_manual_batch_0401_0404_0406_0408_20260718T214541Z.jsonl",
+    "job_changes": "research/company1000/output/job_changes_manual_batch_0401_0404_0406_0408_20260718T214541Z.jsonl",
+    "navigation_resolution": "research/company1000/output/recruitment_navigation_resolution_manual_batch_0401_0404_0406_0408_20260718T214541Z.jsonl",
+    "coverage_delta": "research/company1000/runtime/coverage_matrix_delta_20260718T214541Z_batch_0401_0404_0406_0408.json",
+    "checkpoint": "research/company1000/runtime/manual_checkpoint_20260718T214541Z_batch_0401_0404_0406_0408.json",
+    "weekly_update": "research/company1000/deliverables/weekly_update_20260718T214541Z.json"
+  },
+  "next_priority_indices": [
+    409,
+    410,
+    411,
+    412
+  ],
+  "next_priority_company_ids": [],
+  "next_priority_company_names": [],
+  "next_priority_resolution": "resolve indices 409-412 from company_seed_1000 master before audit; do not invent IDs",
+  "source_table_gap_review": {
+    "missing_company_ids": [
+      "cn-health-0373",
+      "cn-health-0383",
+      "cn-indtech-0402",
+      "cn-indtech-0403",
+      "cn-indtech-0405",
+      "cn-indtech-0407"
+    ],
+    "status": "unresolved",
+    "action": "audit company-seed merge, deduplication and CompanySource master generation before assigning or repairing missing indices; do not invent companies or IDs"
+  },
+  "aggregate_counts_status": "batch delta complete; aggregate CompanySource, JobImport, Coverage, Failures, JobChanges and global run_summary require deterministic rebuild from all manual deltas",
+  "policy": {
+    "official_sources_only": true,
+    "third_party_as_sole_source_allowed": false,
+    "login_captcha_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
