@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T09:43:58Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0324_0327",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "company_source_updates_file": "research/company1000/output/company_source_manual_batch_0324_0327_20260718T094358Z.jsonl",
+  "job_import_updates_file": "research/company1000/output/jobs_manual_batch_0324_0327_20260718T094358Z.jsonl",
+  "coverage_updates_file": "research/company1000/output/coverage_manual_batch_0324_0327_20260718T094358Z.jsonl",
+  "failure_updates_file": "research/company1000/output/failures_manual_batch_0324_0327_20260718T094358Z.jsonl",
+  "job_change_updates_file": "research/company1000/output/job_changes_manual_batch_0324_0327_20260718T094358Z.jsonl",
+  "update_summary": {
+    "companies_audited": 4,
+    "official_recruitment_entries_verified": 2,
+    "official_entry_candidates_pending": 2,
+    "new_jobs_added": 9,
+    "changed_jobs_added": 0,
+    "closed_or_expired_campaigns_observed": 2,
+    "candidate_raw_added": 9,
+    "review_pending_suggested": 0,
+    "active_verified_added": 0,
+    "final_acceptance_added": 0
+  },
+  "audit_outcomes": [
+    {
+      "company_id": "cn-bank-0324",
+      "company_name": "哈尔滨银行股份有限公司",
+      "outcome": "official_current_campaign_verified_nine_roles_candidate_raw",
+      "blocking_reason": "official_role_attachment_and_role_specific_application_urls_unresolved"
+    },
+    {
+      "company_id": "cn-bank-0325",
+      "company_name": "吉林银行股份有限公司",
+      "outcome": "official_indexes_verified_latest_2026_campaign_expired",
+      "blocking_reason": "no_current_open_inventory_observed_and_no_explicit_zero_inventory_proof"
+    },
+    {
+      "company_id": "cn-bank-0326",
+      "company_name": "大连银行股份有限公司",
+      "outcome": "official_domain_verified_public_fetch_412",
+      "blocking_reason": "current_official_recruitment_entry_not_located"
+    },
+    {
+      "company_id": "cn-bank-0327",
+      "company_name": "天津银行股份有限公司",
+      "outcome": "official_domain_registered_public_fetch_timeout",
+      "blocking_reason": "direct_current_official_recruitment_entry_not_verified"
+    }
+  ],
+  "cursor_handoff": {
+    "company_source_action": "upsert batch company-source JSONL by company_id and retain evidence plus verified_at",
+    "job_import_action": "insert nine Harbin Bank roles as candidate_raw only; do not promote until official attachment and role-level URL checks pass",
+    "coverage_action": "append four coverage records and keep final_acceptance_met=false",
+    "failure_action": "append four structured retryable failure records",
+    "job_change_action": "append nine new_candidate_observed records after repository-level duplicate validation",
+    "status_guard": "never set active_verified automatically",
+    "next_priority_indices": [328, 329, 330, 331],
+    "next_priority_company_ids": ["cn-bank-0328", "cn-bank-0329", "cn-bank-0330", "cn-bank-0331"]
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
