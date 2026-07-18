@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-17T22:51:01.345328+00:00",
+  "generated_at": "2026-07-18T04:38:23.109970+00:00",
   "target_companies": 1000,
   "seeded_companies": 1020,
-  "coverage_records": 1173,
+  "coverage_records": 1195,
   "companies_with_coverage": 1027,
   "job_records": 884,
   "job_status_counts": {
@@ -11,13 +11,13 @@
     "candidate_raw": 747,
     "review_pending": 87
   },
-  "failure_records": 8768,
+  "failure_records": 8781,
   "job_change_records": 884,
   "active_verified_records": 0,
   "final_acceptance_met": false,
   "checkpoint": {
     "schema_version": "1.0",
-    "updated_at": "2026-07-17T22:51:00.499853+00:00",
+    "updated_at": "2026-07-18T04:38:22.268638+00:00",
     "target_companies": 1000,
     "valid_seed_count": 1020,
     "official_entries_verified": 14,
@@ -28,7 +28,7 @@
     "job_records_review_pending": 64,
     "job_records_inactive_expired": 23,
     "companies_final_acceptance_met": 0,
-    "next_batch_start_index": 253,
+    "next_batch_start_index": 153,
     "batch_progress": {
       "batch_0001": {
         "companies_reviewed": 10,
@@ -165,8 +165,21 @@
       "cross_domain_candidate_requires_verified_seed_association": true
     },
     "last_auto_batch": {
-      "requested_start_index": 421,
+      "requested_start_index": 253,
       "selected_indices": [
+        283,
+        296,
+        305,
+        327,
+        329,
+        369,
+        388,
+        393,
+        395,
+        403,
+        416,
+        417,
+        420,
         468,
         483,
         485,
@@ -203,25 +216,12 @@
         123,
         132,
         137,
-        152,
-        161,
-        170,
-        173,
-        175,
-        181,
-        183,
-        187,
-        195,
-        227,
-        230,
-        242,
-        243,
-        252
+        152
       ],
       "selected_count": 50,
       "processed_count": 50,
       "job_detail_candidates": 0,
-      "recruitment_navigation_links": 15,
+      "recruitment_navigation_links": 16,
       "max_workers": 10
     },
     "pending_seed_audits": 13,
