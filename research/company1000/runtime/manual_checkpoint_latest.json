@@ -1,18 +1,18 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-18T19:27:42+00:00",
+  "updated_at": "2026-07-18T19:50:06+00:00",
   "branch": "research/company1000-crawler-20260713",
-  "last_completed_manual_batch": "0385_0388",
-  "next_batch_start_index": 389,
-  "next_priority_indices": [389, 390, 391, 392],
-  "next_priority_company_ids": ["cn-health-0389", "cn-health-0390", "cn-health-0391", "cn-health-0392"],
-  "next_priority_company_names": ["山东新华医疗器械股份有限公司", "深圳华大基因股份有限公司", "成都市贝瑞和康基因技术股份有限公司", "广州达安基因股份有限公司"],
+  "last_completed_manual_batch": "0389_0392",
+  "next_batch_start_index": 393,
+  "next_priority_indices": [393, 394, 395, 396],
+  "next_priority_company_ids": ["cn-health-0393", "cn-health-0394", "cn-health-0395", "cn-health-0396"],
+  "next_priority_company_names": ["郑州安图生物工程股份有限公司", "广州万孚生物技术股份有限公司", "深圳开立生物医疗科技股份有限公司", "深圳市理邦精密仪器股份有限公司"],
   "source_table_gap_review": {
     "missing_company_ids": ["cn-health-0373", "cn-health-0383"],
     "status": "unresolved",
     "action": "audit company_seed merge, deduplication and CompanySource master generation before assigning or repairing missing indices"
   },
-  "last_checkpoint": "research/company1000/runtime/manual_checkpoint_20260718T192742Z_batch_0385_0388.json",
+  "last_checkpoint": "research/company1000/runtime/manual_checkpoint_20260718T195006Z_batch_0389_0392.json",
   "final_acceptance_met": false,
   "notification_eligible": false
 }
