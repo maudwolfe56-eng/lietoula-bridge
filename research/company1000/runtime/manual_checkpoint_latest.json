@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-18T03:52:23+00:00",
+  "branch": "research/company1000-crawler-20260713",
+  "last_completed_manual_batch": "0292_0295",
+  "next_batch_start_index": 296,
+  "next_priority_indices": [296, 297, 298, 299],
+  "next_priority_company_ids": [
+    "cn-media-0296",
+    "cn-software-0297",
+    "cn-software-0298",
+    "cn-software-0299"
+  ],
+  "last_checkpoint": "research/company1000/runtime/manual_checkpoint_20260718T035223Z.json",
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
