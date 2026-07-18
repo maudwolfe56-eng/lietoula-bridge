@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T20:34:11Z",
+  "batch": "0393_0396",
+  "processed_company_ids": [
+    "cn-health-0393",
+    "cn-health-0394",
+    "cn-health-0395",
+    "cn-health-0396"
+  ],
+  "coverage_updates": [
+    {
+      "company_id": "cn-health-0393",
+      "official_entry_verified": true,
+      "enumeration_status": "official_company_website_linked_hotjob_portal_verified_but_dynamic_current_role_inventory_not_exposed_in_public_html",
+      "roles_observed": 0,
+      "roles_normalized": 0,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0394",
+      "official_entry_verified": true,
+      "enumeration_status": "official_careers_page_lists_nine_2026_international_roles_three_image_details_normalized_six_pending_retry",
+      "roles_observed": 9,
+      "roles_normalized": 3,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0395",
+      "official_entry_verified": true,
+      "enumeration_status": "official_join_page_links_moka_campus_and_social_portals_but_dynamic_inventory_not_enumerated",
+      "roles_observed": 0,
+      "roles_normalized": 0,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0396",
+      "official_entry_verified": true,
+      "enumeration_status": "official_site_join_signal_observed_but_recruitment_entry_target_and_current_inventory_unresolved",
+      "roles_observed": 0,
+      "roles_normalized": 0,
+      "final_acceptance_met": false
+    }
+  ],
+  "summary": {
+    "companies_audited": 4,
+    "official_entries_verified": 4,
+    "current_roles_observed": 9,
+    "roles_normalized": 3,
+    "candidate_raw_added": 3,
+    "review_pending_added": 0,
+    "active_verified_added": 0,
+    "failures_added": 10,
+    "companies_final_acceptance_met": 0
+  },
+  "final_acceptance_met": false
+}
