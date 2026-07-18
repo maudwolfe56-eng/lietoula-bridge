@@ -1,22 +1,33 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-18T15:43:44+00:00",
+  "updated_at": "2026-07-18T17:50:22+00:00",
   "branch": "research/company1000-crawler-20260713",
-  "last_completed_manual_batch": "0359_0362",
-  "next_batch_start_index": 363,
+  "last_completed_manual_batch": "0371_0372_0374_0375",
+  "next_batch_start_index": 376,
   "next_priority_indices": [
-    363,
-    364,
-    365,
-    366
+    376,
+    377,
+    378,
+    379
   ],
   "next_priority_company_ids": [
-    "cn-health-0363",
-    "cn-health-0364",
-    "cn-health-0365",
-    "cn-health-0366"
+    "cn-health-0376",
+    "cn-health-0377",
+    "cn-health-0378",
+    "cn-health-0379"
   ],
-  "last_checkpoint": "research/company1000/runtime/manual_checkpoint_20260718T154344Z.json",
+  "next_priority_company_names": [
+    "凯莱英医药集团（天津）股份有限公司",
+    "北京昭衍新药研究中心股份有限公司",
+    "广州金域医学检验集团股份有限公司",
+    "迪安诊断技术集团股份有限公司"
+  ],
+  "source_table_gap_review": {
+    "missing_company_id": "cn-health-0373",
+    "status": "unresolved",
+    "action": "audit company_seed merge, deduplication and CompanySource master generation before assigning or repairing the missing index"
+  },
+  "last_checkpoint": "research/company1000/runtime/manual_checkpoint_20260718T175022Z.json",
   "final_acceptance_met": false,
   "notification_eligible": false
 }
