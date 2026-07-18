@@ -1,0 +1,107 @@
+{
+  "schema_version": "2.0",
+  "generated_at": "2026-07-18T17:50:22Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "manual_batch_0371_0372_0374_0375_20260718T175022Z",
+  "scope": "Official recruitment source verification and public current-role inventory audit for company indices 371, 372, 374 and 375, plus CompanySource index-gap audit for 373",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "companies": [
+    {
+      "company_id": "cn-health-0371",
+      "company_name": "人福医药集团股份公司",
+      "official_entry_verified": true,
+      "roles_normalized": 0,
+      "current_rows_observed": 0,
+      "full_public_inventory_enumerated": false,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0372",
+      "company_name": "上海复旦张江生物医药股份有限公司",
+      "official_entry_verified": true,
+      "roles_normalized": 0,
+      "current_rows_observed": 4,
+      "full_public_inventory_enumerated": false,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0374",
+      "company_name": "康龙化成（北京）新药技术股份有限公司",
+      "official_entry_verified": true,
+      "roles_normalized": 0,
+      "current_rows_observed": 0,
+      "full_public_inventory_enumerated": false,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0375",
+      "company_name": "杭州泰格医药科技股份有限公司",
+      "official_entry_verified": true,
+      "roles_normalized": 0,
+      "current_rows_observed": 0,
+      "full_public_inventory_enumerated": false,
+      "final_acceptance_met": false
+    }
+  ],
+  "source_table_integrity": [
+    {
+      "company_id": "cn-health-0373",
+      "status": "missing_from_company_source_master",
+      "repair_performed": false,
+      "final_acceptance_met": false
+    }
+  ],
+  "metrics": {
+    "companies_audited": 4,
+    "source_table_integrity_gaps_audited": 1,
+    "official_entries_verified": 4,
+    "official_entry_candidates_pending": 0,
+    "new_jobs_candidate_raw": 0,
+    "review_pending_added": 0,
+    "active_verified_added": 0,
+    "failures_added": 5,
+    "job_changes_added": 0,
+    "final_acceptance_added": 0
+  },
+  "quality_notes": [
+    "人福医药官网招聘/人力资源入口已核验，但未公开枚举当前岗位或逐岗详情字段。",
+    "复旦张江官网单页公开4个热招岗位及职责、要求，但缺少逐岗唯一URL、地点和时效字段，未拆分导入。",
+    "康龙化成官方Job Openings页面链接中国Moka门户；动态公开访问超时，未绕过访问控制。",
+    "泰格医药官网链接官方Zhiye门户；当前公开解析未枚举可审计岗位详情。",
+    "CompanySource主表缺少cn-health-0373；本轮保留ID空缺并记录完整性失败，未猜测或重排ID。",
+    "本批未创建JobImport、未推测薪酬、未建议review_pending、未自动设置active_verified。"
+  ],
+  "output_files": [
+    "research/company1000/output/company_source_manual_batch_0371_0372_0374_0375_20260718T175022Z.jsonl",
+    "research/company1000/output/jobs_manual_batch_0371_0372_0374_0375_20260718T175022Z.jsonl",
+    "research/company1000/output/coverage_manual_batch_0371_0372_0374_0375_20260718T175022Z.jsonl",
+    "research/company1000/output/failures_manual_batch_0371_0372_0374_0375_20260718T175022Z.jsonl",
+    "research/company1000/output/job_changes_manual_batch_0371_0372_0374_0375_20260718T175022Z.jsonl",
+    "research/company1000/runtime/coverage_matrix_delta_20260718T175022Z_batch_0371_0372_0374_0375.json",
+    "research/company1000/runtime/manual_checkpoint_20260718T175022Z.json",
+    "research/company1000/deliverables/run_summary_manual_batch_0371_0372_0374_0375_20260718T175022Z.json",
+    "research/company1000/deliverables/weekly_update_20260718T175022Z.json"
+  ],
+  "next_priority_indices": [
+    376,
+    377,
+    378,
+    379
+  ],
+  "next_priority_company_ids": [
+    "cn-health-0376",
+    "cn-health-0377",
+    "cn-health-0378",
+    "cn-health-0379"
+  ],
+  "company_source_gap_review": "cn-health-0373 remains absent from the CompanySource master; audit source-table generation before any ID repair.",
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
