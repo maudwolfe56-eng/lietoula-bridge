@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T16:43:27Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0363_0366",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "company_source_updates_file": "research/company1000/output/company_source_manual_batch_0363_0366_20260718T164327Z.jsonl",
+  "job_import_updates_file": "research/company1000/output/jobs_manual_batch_0363_0366_20260718T164327Z.jsonl",
+  "coverage_updates_file": "research/company1000/output/coverage_manual_batch_0363_0366_20260718T164327Z.jsonl",
+  "failure_updates_file": "research/company1000/output/failures_manual_batch_0363_0366_20260718T164327Z.jsonl",
+  "job_change_updates_file": "research/company1000/output/job_changes_manual_batch_0363_0366_20260718T164327Z.jsonl",
+  "update_summary": {
+    "companies_audited": 4,
+    "official_recruitment_entries_verified": 4,
+    "official_entry_candidates_pending": 0,
+    "new_jobs_added": 0,
+    "changed_jobs_added": 0,
+    "closed_or_expired_campaigns_observed": 1,
+    "candidate_raw_added": 0,
+    "review_pending_suggested": 0,
+    "active_verified_added": 0,
+    "final_acceptance_added": 0
+  },
+  "audit_outcomes": [
+    {
+      "company_id": "cn-health-0363",
+      "company_name": "天士力医药集团股份有限公司",
+      "outcome": "official_hotjob_social_inventory_verified_with_15_current_rows_observed",
+      "blocking_reason": "second_page_unique_job_details_and_core_fields_not_fully_resolved"
+    },
+    {
+      "company_id": "cn-health-0364",
+      "company_name": "石家庄以岭药业股份有限公司",
+      "outcome": "official_corporate_backlinks_to_zhiye_social_and_campus_portals_verified",
+      "blocking_reason": "client_rendered_current_inventory_and_unique_job_details_not_resolved"
+    },
+    {
+      "company_id": "cn-health-0365",
+      "company_name": "湖北济川药业股份有限公司",
+      "outcome": "official_social_and_campus_recruitment_archives_verified_with_only_stale_2022_roles_observed",
+      "blocking_reason": "no_current_2025_2026_inventory_or_auditable_expiry_status_confirmed"
+    },
+    {
+      "company_id": "cn-health-0366",
+      "company_name": "山东步长制药股份有限公司",
+      "outcome": "official_recruitment_page_verified_and_one_expired_2025_campaign_recorded",
+      "blocking_reason": "no_current_role_confirmed_and_visible_detail_url_is_non_unique"
+    }
+  ],
+  "implementation_handoff": {
+    "company_source_action": "upsert four company-source JSONL records by company_id and preserve official evidence and verified_at",
+    "job_import_action": "no current JobImport insert for this batch; do not import title-only, stale or expired roles",
+    "coverage_action": "append four coverage records and apply the coverage matrix delta; all company final_acceptance_met remain false",
+    "failure_action": "append four structured retryable failures",
+    "job_change_action": "append one inactive_expired observation for the Step Pharmaceutical campaign; do not publish it as current",
+    "status_guard": "never set active_verified automatically",
+    "next_priority_indices": [
+      367,
+      368,
+      369,
+      370
+    ],
+    "next_priority_company_ids": [
+      "cn-health-0367",
+      "cn-health-0368",
+      "cn-health-0369",
+      "cn-health-0370"
+    ]
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
