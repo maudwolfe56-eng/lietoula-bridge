@@ -1,36 +1,18 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-18T18:51:09+00:00",
+  "updated_at": "2026-07-18T19:27:42+00:00",
   "branch": "research/company1000-crawler-20260713",
-  "last_completed_manual_batch": "0380_0381_0382_0384",
-  "next_batch_start_index": 385,
-  "next_priority_indices": [
-    385,
-    386,
-    387,
-    388
-  ],
-  "next_priority_company_ids": [
-    "cn-health-0385",
-    "cn-health-0386",
-    "cn-health-0387",
-    "cn-health-0388"
-  ],
-  "next_priority_company_names": [
-    "江苏鱼跃医疗设备股份有限公司",
-    "乐普（北京）医疗器械股份有限公司",
-    "微创医疗科学有限公司",
-    "山东威高集团医用高分子制品股份有限公司"
-  ],
+  "last_completed_manual_batch": "0385_0388",
+  "next_batch_start_index": 389,
+  "next_priority_indices": [389, 390, 391, 392],
+  "next_priority_company_ids": ["cn-health-0389", "cn-health-0390", "cn-health-0391", "cn-health-0392"],
+  "next_priority_company_names": ["山东新华医疗器械股份有限公司", "深圳华大基因股份有限公司", "成都市贝瑞和康基因技术股份有限公司", "广州达安基因股份有限公司"],
   "source_table_gap_review": {
-    "missing_company_ids": [
-      "cn-health-0373",
-      "cn-health-0383"
-    ],
+    "missing_company_ids": ["cn-health-0373", "cn-health-0383"],
     "status": "unresolved",
     "action": "audit company_seed merge, deduplication and CompanySource master generation before assigning or repairing missing indices"
   },
-  "last_checkpoint": "research/company1000/runtime/manual_checkpoint_20260718T185109Z_batch_0380_0381_0382_0384.json",
+  "last_checkpoint": "research/company1000/runtime/manual_checkpoint_20260718T192742Z_batch_0385_0388.json",
   "final_acceptance_met": false,
   "notification_eligible": false
 }
