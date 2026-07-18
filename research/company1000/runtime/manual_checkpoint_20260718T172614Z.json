@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-18T17:26:14+00:00",
+  "branch": "research/company1000-crawler-20260713",
+  "last_completed_manual_batch": "0367_0370",
+  "next_batch_start_index": 371,
+  "next_priority_indices": [371,372,374,375],
+  "next_priority_company_ids": ["cn-health-0371","cn-health-0372","cn-health-0374","cn-health-0375"],
+  "next_priority_company_names": ["人福医药集团股份公司","上海复旦张江生物医药股份有限公司","康龙化成（北京）新药技术股份有限公司","杭州泰格医药科技股份有限公司"],
+  "source_table_gap_review": {
+    "missing_company_id": "cn-health-0373",
+    "action": "audit_company_source_1000_master_for_index_gap_before_assigning_or_repairing_id"
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
