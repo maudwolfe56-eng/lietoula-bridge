@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-18T03:52:23+00:00",
+  "branch": "research/company1000-crawler-20260713",
+  "last_completed_manual_batch": "0292_0295",
+  "batch_result": {
+    "companies_reviewed": 4,
+    "official_entries_verified": 4,
+    "roles_normalized": 0,
+    "candidate_raw_added": 0,
+    "review_pending_added": 0,
+    "active_verified_added": 0,
+    "final_acceptance_added": 0
+  },
+  "next_batch_start_index": 296,
+  "next_priority_indices": [296, 297, 298, 299],
+  "next_priority_company_ids": [
+    "cn-media-0296",
+    "cn-software-0297",
+    "cn-software-0298",
+    "cn-software-0299"
+  ],
+  "artifacts": {
+    "coverage": "research/company1000/output/coverage_manual_batch_0292_0295_20260718T035223Z.jsonl",
+    "failures": "research/company1000/output/failures_manual_batch_0292_0295_20260718T035223Z.jsonl",
+    "jobs": "research/company1000/output/jobs_manual_batch_0292_0295_20260718T035223Z.jsonl",
+    "coverage_delta": "research/company1000/runtime/coverage_matrix_delta_20260718T035223Z_batch_0292_0295.json",
+    "handoff": "research/company1000/deliverables/weekly_update_20260718T035223Z.json"
+  },
+  "hard_rules": {
+    "official_sources_only": true,
+    "do_not_bypass_login_captcha_or_paywall": true,
+    "do_not_infer_salary": true,
+    "do_not_set_active_verified_automatically": true,
+    "new_jobs_default_candidate_raw": true
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
