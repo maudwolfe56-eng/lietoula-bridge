@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-18T04:32:14+00:00",
+  "batch": "0296_0299",
+  "company_deltas": [
+    {
+      "company_id": "cn-media-0296",
+      "official_entry_verified": true,
+      "roles_added": 0,
+      "candidate_links_added": 5,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-software-0297",
+      "official_entry_verified": true,
+      "roles_added": 0,
+      "candidate_links_added": 4,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-software-0298",
+      "official_entry_verified": true,
+      "roles_added": 0,
+      "candidate_links_added": 0,
+      "final_acceptance_met": true
+    },
+    {
+      "company_id": "cn-software-0299",
+      "official_entry_verified": true,
+      "roles_added": 0,
+      "candidate_links_added": 2,
+      "final_acceptance_met": false
+    }
+  ],
+  "aggregate_delta": {
+    "companies_audited": 4,
+    "official_entries_verified": 4,
+    "candidate_raw_added": 0,
+    "review_pending_added": 0,
+    "active_verified_added": 0,
+    "final_acceptance_added": 1
+  },
+  "next_batch_start_index": 300
+}
