@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T07:26:53+00:00",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0308_0311",
+  "baseline_run_summary_generated_at": "2026-07-18T05:39:50.209906+00:00",
+  "baseline": {
+    "target_companies": 1000,
+    "seeded_companies": 1020,
+    "coverage_records": 1202,
+    "companies_with_coverage": 1027,
+    "company_source_final_acceptance_count": 3,
+    "job_records": 884,
+    "candidate_raw": 747,
+    "review_pending": 87,
+    "inactive_expired": 50,
+    "failure_records": 8786,
+    "job_change_records": 884,
+    "active_verified_records": 0
+  },
+  "manual_delta": {
+    "companies_audited": 4,
+    "official_entries_verified": 4,
+    "coverage_records_added": 4,
+    "company_source_final_acceptance_added": 1,
+    "job_records_added": 1,
+    "candidate_raw_added": 1,
+    "review_pending_added": 0,
+    "inactive_expired_added": 0,
+    "failure_records_added": 3,
+    "job_change_records_added": 1,
+    "active_verified_added": 0
+  },
+  "projected_after_manual_delta": {
+    "coverage_records": 1206,
+    "company_source_final_acceptance_count": 4,
+    "job_records": 885,
+    "candidate_raw": 748,
+    "review_pending": 87,
+    "inactive_expired": 50,
+    "failure_records": 8789,
+    "job_change_records": 885,
+    "active_verified_records": 0
+  },
+  "current_batch_result": {
+    "fully_enumerated_current_inventories": 1,
+    "confirmed_zero_current_inventories": 1,
+    "partially_enumerated_inventories": 1,
+    "unresolved_dynamic_or_navigation_inventories": 2,
+    "new_candidate_raw_record_ids": ["f9880fa919474ec86fb93157"]
+  },
+  "next_batch_start_index": 312,
+  "next_priority_company_ids": ["cn-bank-0312","cn-bank-0313","cn-bank-0314","cn-bank-0315"],
+  "final_acceptance_met": false,
+  "notification_eligible": false,
+  "policy": {
+    "official_sources_only": true,
+    "auto_active_verified": false,
+    "salary_inference_allowed": false,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "new_jobs_default_candidate_raw": true
+  }
+}
