@@ -1,1 +1,1 @@
-2026-07-18T12:32:14+08:00 mode=next_unprocessed batch_size=50 max_workers=10 automation_turn=2 purpose=continue_incomplete_company_audits_and_rebuild_companysource_jobimport_coverage_failures_jobchanges_run_summary
+2026-07-18T12:46:00+08:00 mode=next_unprocessed batch_size=50 max_workers=10 automation_turn=2 purpose=rebuild_aggregates_with_manual_companysource_overrides_and_continue_incomplete_audits
