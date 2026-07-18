@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T20:52:42Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0397_0400",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "company_source_update_file": "research/company1000/output/company_source_manual_batch_0397_0400_20260718T205242Z.jsonl",
+  "job_import_update_file": "research/company1000/output/jobs_manual_batch_0397_0400_20260718T205242Z.jsonl",
+  "coverage_update_file": "research/company1000/output/coverage_manual_batch_0397_0400_20260718T205242Z.jsonl",
+  "failure_update_file": "research/company1000/output/failures_manual_batch_0397_0400_20260718T205242Z.jsonl",
+  "job_change_update_file": "research/company1000/output/job_changes_manual_batch_0397_0400_20260718T205242Z.jsonl",
+  "navigation_resolution_file": "research/company1000/output/recruitment_navigation_resolution_manual_batch_0397_0400_20260718T205242Z.jsonl",
+  "company_results": [
+    {
+      "company_id": "cn-health-0397",
+      "company_name": "深圳市新产业生物医学工程股份有限公司",
+      "official_entry": "https://snibe.zhiye.com/social",
+      "result": "official company site links Zhiye social and campus portals; public HTML exposes application shells without auditable role inventory",
+      "jobs_added": 0,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0398",
+      "company_name": "奕瑞电子科技集团股份有限公司",
+      "previous_company_name": "上海奕瑞光电子科技股份有限公司",
+      "official_entry": "https://www.iraygroup.com/site/career?lang=CN",
+      "result": "official career pages fully enumerated; CN page has resume email only and EN page has five explicitly dated 2017/2018 legacy roles, so current public inventory is empty",
+      "jobs_added": 0,
+      "historical_roles_observed": 5,
+      "final_acceptance_met": true
+    },
+    {
+      "company_id": "cn-health-0399",
+      "company_name": "健帆生物科技集团股份有限公司",
+      "official_entry": "https://www.jafron.com/join_us/",
+      "result": "official join page links a self-hosted social recruitment portal on a nonstandard port and an AI interview page; no auditable current role inventory was exposed",
+      "jobs_added": 0,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0400",
+      "company_name": "华熙生物科技股份有限公司",
+      "official_entry": "https://www.bloomagebiotech.com/join.html",
+      "result": "official join page links the company HotJob tenant; tenant currently exposes no company role inventory and resolves empty or generic ATS content",
+      "jobs_added": 0,
+      "final_acceptance_met": false
+    }
+  ],
+  "normalized_job_records": [],
+  "update_summary": {
+    "companies_audited": 4,
+    "official_recruitment_entries_verified": 4,
+    "official_entry_candidates_pending": 0,
+    "companies_final_acceptance_met": 1,
+    "current_role_rows_observed": 0,
+    "historical_role_rows_observed": 5,
+    "current_role_details_normalized": 0,
+    "new_jobs_added": 0,
+    "changed_jobs_added": 0,
+    "closed_or_expired_jobs_added": 0,
+    "candidate_raw_added": 0,
+    "review_pending_suggested": 0,
+    "active_verified_added": 0,
+    "failures_added": 4,
+    "reason_no_job_import": "No current role in this batch exposed an official unique detail URL together with current application evidence and the required core fields. The five iRay role rows are explicitly dated 2017 or 2018 and were treated as historical expired content."
+  },
+  "cursor_handoff": {
+    "company_source_action": "upsert the four company-source JSONL rows by company_id; update cn-health-0398 legal name while preserving the prior name as an alias",
+    "job_import_action": "no JobImport insert for this batch",
+    "coverage_action": "append the four coverage rows; only cn-health-0398 reaches company-level final acceptance based on a fully enumerated no-current-public-role conclusion",
+    "failure_action": "append four structured retryable failures for the unresolved dynamic or inaccessible official portals",
+    "navigation_resolution_action": "append four navigation-resolution rows",
+    "job_change_action": "no event insert because no new, modified, closed or current role snapshot was established",
+    "status_guard": "never set active_verified automatically",
+    "next_priority_indices": [401, 404, 406, 408],
+    "next_priority_company_ids": ["cn-indtech-0401", "cn-indtech-0404", "cn-indtech-0406", "cn-indtech-0408"],
+    "next_priority_company_names": ["海尔智家股份有限公司", "海信家电集团股份有限公司", "四川长虹电器股份有限公司", "奥克斯集团有限公司"],
+    "source_table_gap_action": "audit missing indices 0373, 0383, 0402, 0403, 0405 and 0407 before any ID repair; do not invent records"
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
