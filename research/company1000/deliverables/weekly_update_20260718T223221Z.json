@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T22:32:21Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0409_0412",
+  "summary": {
+    "companies_audited": 4,
+    "official_entries_verified": 4,
+    "new_candidate_raw_jobs": 0,
+    "review_pending_suggestions": 0,
+    "active_verified": 0,
+    "failures_recorded": 5,
+    "companies_final_acceptance_met": 0
+  },
+  "company_results": [
+    {
+      "company_id": "cn-indtech-0409",
+      "company_name": "杭州老板电器股份有限公司",
+      "result": "official_recruitment_navigation_verified_child_routes_and_role_inventory_not_publicly_auditable",
+      "jobs_added": 0,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-indtech-0410",
+      "company_name": "宁波方太厨具有限公司",
+      "result": "official_social_and_campus_portals_verified_dynamic_inventory_not_publicly_auditable",
+      "jobs_added": 0,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-indtech-0411",
+      "company_name": "九阳股份有限公司",
+      "result": "official_same_domain_recruitment_portal_verified_application_shell_without_public_role_inventory",
+      "jobs_added": 0,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-indtech-0412",
+      "company_name": "浙江苏泊尔股份有限公司",
+      "result": "official_recruitment_page_verified_table_headers_visible_without_public_role_rows",
+      "jobs_added": 0,
+      "final_acceptance_met": false
+    }
+  ],
+  "new_jobs": [],
+  "compliance": {
+    "official_sources_only": true,
+    "no_login_captcha_paywall_or_access_control_bypass": true,
+    "salary_not_inferred": true,
+    "all_new_jobs_candidate_raw": true,
+    "active_verified_added": 0
+  },
+  "next_action": "continue official-entry audit for companies 413-416, retry compliant dynamic enumeration for companies 409-412, and complete unresolved source-table gap review",
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
