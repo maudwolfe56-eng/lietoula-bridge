@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T08:47:25+00:00",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0320_0323",
+  "baseline_run_summary_generated_at": "2026-07-18T08:27:36+00:00",
+  "baseline": {
+    "target_companies": 1000,
+    "seeded_companies": 1020,
+    "coverage_records": 1214,
+    "companies_with_coverage": 1027,
+    "company_source_final_acceptance_count": 4,
+    "job_records": 887,
+    "candidate_raw": 750,
+    "review_pending": 87,
+    "inactive_expired": 50,
+    "failure_records": 8797,
+    "job_change_records": 887,
+    "active_verified_records": 0
+  },
+  "manual_delta": {
+    "companies_audited": 4,
+    "official_entries_verified": 3,
+    "coverage_records_added": 4,
+    "company_source_final_acceptance_added": 0,
+    "job_records_added": 1,
+    "candidate_raw_added": 1,
+    "review_pending_added": 0,
+    "inactive_expired_added": 0,
+    "failure_records_added": 4,
+    "job_change_records_added": 1,
+    "active_verified_added": 0
+  },
+  "projected_after_manual_delta": {
+    "coverage_records": 1218,
+    "company_source_final_acceptance_count": 4,
+    "job_records": 888,
+    "candidate_raw": 751,
+    "review_pending": 87,
+    "inactive_expired": 50,
+    "failure_records": 8801,
+    "job_change_records": 888,
+    "active_verified_records": 0
+  },
+  "current_batch_result": {
+    "fully_enumerated_current_inventories": 0,
+    "confirmed_zero_current_inventories": 0,
+    "confirmed_zero_channels": 0,
+    "partially_enumerated_inventories": 1,
+    "unresolved_dynamic_or_navigation_inventories": 4,
+    "expired_or_closed_campaigns_observed": 2,
+    "new_candidate_raw_record_ids": [
+      "ca37a0bce25f17520ba74df0"
+    ]
+  },
+  "next_batch_start_index": 324,
+  "next_priority_company_ids": [
+    "cn-bank-0324",
+    "cn-bank-0325",
+    "cn-bank-0326",
+    "cn-bank-0327"
+  ],
+  "final_acceptance_met": false,
+  "notification_eligible": false,
+  "policy": {
+    "official_sources_only": true,
+    "auto_active_verified": false,
+    "salary_inference_allowed": false,
+    "login_captcha_or_paywall_bypass_allowed": false,
+    "new_jobs_default_candidate_raw": true
+  }
+}
