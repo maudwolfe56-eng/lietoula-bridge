@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T08:27:36Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0316_0319",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "company_source_updates_file": "research/company1000/output/company_source_manual_batch_0316_0319_20260718T082736Z.jsonl",
+  "job_import_updates_file": "research/company1000/output/jobs_manual_batch_0316_0319_20260718T082736Z.jsonl",
+  "coverage_updates_file": "research/company1000/output/coverage_manual_batch_0316_0319_20260718T082736Z.jsonl",
+  "failures_updates_file": "research/company1000/output/failures_manual_batch_0316_0319_20260718T082736Z.jsonl",
+  "job_changes_updates_file": "research/company1000/output/job_changes_manual_batch_0316_0319_20260718T082736Z.jsonl",
+  "company_source_updates": [
+    {
+      "company_id": "cn-bank-0316",
+      "company_name": "青岛农村商业银行股份有限公司",
+      "career_url": "https://www.qrcb.com.cn/qrcb/rczp/",
+      "source_type": "official_recruitment_portal_and_announcement",
+      "verified_at": "2026-07-18T08:27:36Z",
+      "final_acceptance_met": false,
+      "review_recommendation": "retain_company_source; mark_2026_campus_campaign_expired; resolve_current_recruitment_detail_pages; do_not_infer_zero_inventory"
+    },
+    {
+      "company_id": "cn-bank-0317",
+      "company_name": "江苏紫金农村商业银行股份有限公司",
+      "career_url": "https://hr1.zjrcbank.com/",
+      "source_type": "official_recruitment_portal",
+      "verified_at": "2026-07-18T08:27:36Z",
+      "final_acceptance_met": false,
+      "review_recommendation": "retain_company_source; record_confirmed_zero_social_inventory; continue_public_campus_and_intern_inventory_audit; no_job_import_without_unique_official_detail"
+    },
+    {
+      "company_id": "cn-bank-0318",
+      "company_name": "江苏常熟农村商业银行股份有限公司",
+      "career_url": "https://www.csrcbank.com/tb/rczp/",
+      "source_type": "official_recruitment_index_and_announcement",
+      "verified_at": "2026-07-18T08:27:36Z",
+      "final_acceptance_met": false,
+      "review_recommendation": "retain_company_source; add_postdoctoral_role_as_candidate_raw; verify_current_application_status_and_duplicates_before_review_pending; mark_spring_campus_campaign_closed"
+    },
+    {
+      "company_id": "cn-bank-0319",
+      "company_name": "江苏张家港农村商业银行股份有限公司",
+      "career_url": "https://zbwww.zrcbank.com/",
+      "source_type": "official_company_website_recruitment_signal_and_announcement",
+      "verified_at": "2026-07-18T08:27:36Z",
+      "final_acceptance_met": false,
+      "review_recommendation": "retain_company_source; record_2026_campus_campaign_closed_to_new_applications; resolve_current_public_careers_index; do_not_infer_zero_inventory"
+    }
+  ],
+  "job_import_updates": [
+    {
+      "record_id": "ed2afb43d6786cd0a384d59a",
+      "company_id": "cn-bank-0318",
+      "job_name": "博士后研究员",
+      "department": "博士后创新实践基地",
+      "city": "苏州",
+      "location": "江苏省-苏州市-常熟市",
+      "published_date": "2025-03-11",
+      "deadline_date": null,
+      "source_url": "https://www.csrcbank.com/tb/rczp/zxzp_358/202503/t20250312_38567941.html",
+      "review_status": "candidate_raw",
+      "review_recommendation": "promote_to_review_pending_only_after_manual_duplicate_check_and_confirmation_that_application_is_still_open",
+      "salary_disclosure_status": "not_disclosed",
+      "active_verified": false
+    }
+  ],
+  "coverage_updates": [
+    {
+      "company_id": "cn-bank-0316",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-bank-0317",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-bank-0318",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 1,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-bank-0319",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "final_acceptance_met": false
+    }
+  ],
+  "update_summary": {
+    "companies_audited": 4,
+    "official_recruitment_entries_verified": 4,
+    "current_public_inventories_fully_enumerated": 0,
+    "zero_inventory_companies_confirmed": 0,
+    "zero_inventory_channels_confirmed": 1,
+    "public_roles_observed": 1,
+    "new_jobs_added": 1,
+    "candidate_raw_added": 1,
+    "review_pending_suggested": 1,
+    "active_verified_added": 0,
+    "expired_or_closed_campaigns_observed": 3,
+    "job_changes_added": 1,
+    "structured_failures_added": 4,
+    "final_acceptance_added": 0
+  },
+  "cursor_handoff": {
+    "company_source_action": "upsert four company-source rows by company_id; preserve official evidence, verified_at and final_acceptance_met",
+    "job_import_action": "insert one candidate_raw role by unique source_url; do not auto-promote; verify duplicate and current application status before review_pending",
+    "coverage_action": "append four coverage rows and keep all four final_acceptance_met=false",
+    "failure_action": "append four structured retryable failures",
+    "job_changes_action": "append one newly_observed candidate_raw change; retain campaign closure evidence in Coverage and summary",
+    "status_guard": "never set active_verified automatically",
+    "next_priority_indices": [320, 321, 322, 323],
+    "next_priority_company_ids": [
+      "cn-bank-0320",
+      "cn-bank-0321",
+      "cn-bank-0322",
+      "cn-bank-0323"
+    ]
+  }
+}
