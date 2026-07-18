@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-18T12:50:20+00:00",
+  "branch": "research/company1000-crawler-20260713",
+  "last_completed_manual_batch": "0344_0347",
+  "next_batch_start_index": 348,
+  "next_priority_indices": [345, 348, 349, 350],
+  "next_priority_company_ids": ["cn-bank-0345", "cn-sec-0348", "cn-ins-0349", "cn-ins-0350"],
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
