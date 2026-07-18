@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T20:34:11Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0393_0396",
+  "processed_indices": [393, 394, 395, 396],
+  "processed_company_ids": ["cn-health-0393", "cn-health-0394", "cn-health-0395", "cn-health-0396"],
+  "companies_audited": 4,
+  "official_recruitment_entries_verified": 4,
+  "official_entry_candidates_pending": 0,
+  "companies_final_acceptance_met": 0,
+  "current_roles_observed": 9,
+  "historical_roles_observed": 0,
+  "jobs_added": 3,
+  "job_status_additions": {
+    "candidate_raw": 3,
+    "review_pending": 0,
+    "active_verified": 0,
+    "inactive_expired": 0
+  },
+  "job_changes_added": 3,
+  "failures_added": 10,
+  "files": {
+    "company_source": "research/company1000/output/company_source_manual_batch_0393_0396_20260718T203411Z.jsonl",
+    "job_import": "research/company1000/output/jobs_manual_batch_0393_0396_20260718T203411Z.jsonl",
+    "coverage": "research/company1000/output/coverage_manual_batch_0393_0396_20260718T203411Z.jsonl",
+    "failures": "research/company1000/output/failures_manual_batch_0393_0396_20260718T203411Z.jsonl",
+    "job_changes": "research/company1000/output/job_changes_manual_batch_0393_0396_20260718T203411Z.jsonl",
+    "navigation_resolution": "research/company1000/output/recruitment_navigation_resolution_manual_batch_0393_0396_20260718T203411Z.jsonl",
+    "coverage_delta": "research/company1000/runtime/coverage_matrix_delta_20260718T203411Z_batch_0393_0396.json",
+    "checkpoint": "research/company1000/runtime/manual_checkpoint_20260718T203411Z_batch_0393_0396.json",
+    "weekly_update": "research/company1000/deliverables/weekly_update_20260718T203411Z.json"
+  },
+  "next_priority_indices": [397, 398, 399, 400],
+  "next_priority_company_ids": ["cn-health-0397", "cn-health-0398", "cn-health-0399", "cn-health-0400"],
+  "next_priority_company_names": ["深圳市新产业生物医学工程股份有限公司", "上海奕瑞光电子科技股份有限公司", "健帆生物科技集团股份有限公司", "华熙生物科技股份有限公司"],
+  "source_table_gap_review": {
+    "missing_company_ids": ["cn-health-0373", "cn-health-0383"],
+    "status": "unresolved",
+    "action": "audit the company-seed merge, deduplication and CompanySource master generation before assigning or repairing missing indices"
+  },
+  "aggregate_counts_status": "batch delta complete; aggregate CompanySource, JobImport, Coverage, Failures, JobChanges and global run_summary require deterministic rebuild from all manual deltas",
+  "policy": {
+    "official_sources_only": true,
+    "third_party_as_sole_source_allowed": false,
+    "login_captcha_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
