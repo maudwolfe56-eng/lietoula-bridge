@@ -1,0 +1,92 @@
+{
+  "schema_version": "2.0",
+  "generated_at": "2026-07-18T15:34:38Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "manual_batch_0355_0358_20260718T153438Z",
+  "scope": "Official recruitment source verification and public current-role inventory audit for company indices 355 through 358",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "companies": [
+    {
+      "company_id": "cn-health-0355",
+      "company_name": "上海君实生物医药科技股份有限公司",
+      "official_entry_verified": true,
+      "roles_normalized": 0,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0356",
+      "company_name": "康方生物科技（开曼）有限公司",
+      "official_entry_verified": true,
+      "roles_normalized": 2,
+      "roles_suggested_review_pending": 2,
+      "public_job_links_observed": 81,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0357",
+      "company_name": "荣昌生物制药（烟台）股份有限公司",
+      "official_entry_verified": true,
+      "roles_normalized": 0,
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-health-0358",
+      "company_name": "再鼎医药有限公司",
+      "official_entry_verified": true,
+      "roles_normalized": 0,
+      "current_title_location_pairs_observed": 21,
+      "final_acceptance_met": false
+    }
+  ],
+  "metrics": {
+    "companies_audited": 4,
+    "official_entries_verified": 4,
+    "official_entry_candidates_pending": 0,
+    "new_jobs_candidate_raw": 0,
+    "review_pending_added": 2,
+    "active_verified_added": 0,
+    "closed_or_expired_campaigns_observed": 0,
+    "failures_added": 4,
+    "job_changes_added": 2,
+    "final_acceptance_added": 0
+  },
+  "quality_notes": [
+    "君实生物官网人才招聘页与企业官方智联招聘门户关联已核验，但动态岗位库存未从公开HTML中完整枚举。",
+    "康方生物官网社会招聘页公开展示81个岗位详情链接；本轮优先结构化两个人力资源方向岗位，均具备唯一详情URL、地点、发布日期、职责、任职要求和在线申请表，建议进入review_pending人工审核。",
+    "荣昌生物官网已确认官方Moka人才招聘平台链接，但公开访问出现重定向循环，未绕过访问控制。",
+    "再鼎医药官方热招页观察到21个岗位标题/地点组合，但未取得稳定岗位级详情URL和完整职责要求，因此未生成标题型占位岗位。",
+    "本批未推测薪酬，未自动设置active_verified。"
+  ],
+  "output_files": [
+    "research/company1000/output/company_source_manual_batch_0355_0358_20260718T153438Z.jsonl",
+    "research/company1000/output/jobs_manual_batch_0355_0358_20260718T153438Z.jsonl",
+    "research/company1000/output/coverage_manual_batch_0355_0358_20260718T153438Z.jsonl",
+    "research/company1000/output/failures_manual_batch_0355_0358_20260718T153438Z.jsonl",
+    "research/company1000/output/job_changes_manual_batch_0355_0358_20260718T153438Z.jsonl",
+    "research/company1000/runtime/coverage_matrix_delta_20260718T153438Z_batch_0355_0358.json",
+    "research/company1000/runtime/manual_checkpoint_20260718T153438Z.json",
+    "research/company1000/deliverables/run_summary_manual_batch_0355_0358_20260718T153438Z.json",
+    "research/company1000/deliverables/weekly_update_20260718T153438Z.json"
+  ],
+  "next_priority_indices": [
+    359,
+    360,
+    361,
+    362
+  ],
+  "next_priority_company_ids": [
+    "cn-health-0359",
+    "cn-health-0360",
+    "cn-health-0361",
+    "cn-health-0362"
+  ],
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
