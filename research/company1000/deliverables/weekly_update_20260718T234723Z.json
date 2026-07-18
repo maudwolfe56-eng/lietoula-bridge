@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T23:47:23Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0417_0420",
+  "scope": "China mainland priority enterprise-source verification and conservative public job-inventory audit",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "company_source_updates": [
+    {
+      "company_id": "cn-indtech-0417",
+      "company_name": "追觅科技（苏州）有限公司",
+      "career_url": "https://dreame.zhiye.com/social/jobs",
+      "source_type": "official_company_website_and_official_zhiye_recruitment_portal",
+      "seed_status": "official_entry_verified",
+      "verified_at": "2026-07-18T23:47:23Z",
+      "final_acceptance_met": false,
+      "review_recommendation": "retain source; public dynamic inventory and job-detail fields remain unresolved"
+    },
+    {
+      "company_id": "cn-indtech-0418",
+      "company_name": "安克创新科技股份有限公司",
+      "career_url": "https://career.anker.com.cn/social/recruitment/",
+      "source_type": "official_company_recruitment_website",
+      "seed_status": "official_entry_verified",
+      "verified_at": "2026-07-18T23:47:23Z",
+      "final_acceptance_met": false,
+      "review_recommendation": "retain source; zero parsed rows are not treated as final no-job evidence until client-rendered inventory is resolved"
+    },
+    {
+      "company_id": "cn-indtech-0419",
+      "company_name": "深圳传音控股股份有限公司",
+      "career_url": "https://www.transsion.com/zh-CN/concern",
+      "source_type": "official_company_website_join_us_or_employee_development_page",
+      "seed_status": "official_entry_candidate",
+      "verified_at": "2026-07-18T23:47:23Z",
+      "final_acceptance_met": false,
+      "review_recommendation": "continue official-source discovery; no position-level evidence found"
+    },
+    {
+      "company_id": "cn-indtech-0420",
+      "company_name": "广州视源电子科技股份有限公司",
+      "career_url": "https://campus.cvte.com/",
+      "source_type": "official_company_statement_and_official_social_campus_recruitment_portals",
+      "seed_status": "official_entry_verified",
+      "verified_at": "2026-07-18T23:47:23Z",
+      "final_acceptance_met": false,
+      "review_recommendation": "retain source; current official position route observed but core job fields remain unresolved"
+    }
+  ],
+  "job_import_updates": [],
+  "job_changes": [],
+  "coverage_updates": [
+    {"company_id":"cn-indtech-0417","official_entry_verified":true,"current_job_inventory_enumerated":false,"roles_normalized_this_run":0,"failure_reason":"official_zhiye_dynamic_inventory_unresolved","final_acceptance_met":false},
+    {"company_id":"cn-indtech-0418","official_entry_verified":true,"current_job_inventory_enumerated":false,"roles_normalized_this_run":0,"failure_reason":"official_client_rendered_inventory_unresolved","final_acceptance_met":false},
+    {"company_id":"cn-indtech-0419","official_entry_verified":false,"current_job_inventory_enumerated":false,"roles_normalized_this_run":0,"failure_reason":"current_official_position_inventory_not_located","final_acceptance_met":false},
+    {"company_id":"cn-indtech-0420","official_entry_verified":true,"current_job_inventory_enumerated":false,"roles_normalized_this_run":0,"failure_reason":"official_social_and_campus_position_fields_unresolved","final_acceptance_met":false}
+  ],
+  "update_summary": {
+    "companies_audited": 4,
+    "official_recruitment_entries_verified": 3,
+    "official_entry_candidates_pending": 1,
+    "new_jobs_added": 0,
+    "changed_jobs_added": 0,
+    "closed_or_expired_jobs_added": 0,
+    "candidate_raw_added": 0,
+    "review_pending_suggested": 0,
+    "active_verified_added": 0,
+    "failures_added": 5,
+    "reason_no_job_import": "No official role in this batch exposed a simultaneously auditable title, company, responsibilities, requirements, city or location, freshness or application-state evidence, and unique current detail URL. Missing salary remained undisclosed and was not inferred."
+  },
+  "cursor_handoff": {
+    "company_source_action": "upsert company_source batch file by company_id and preserve source evidence and verified_at",
+    "job_import_action": "no inserts for this batch",
+    "coverage_action": "append four coverage records and keep final_acceptance_met=false",
+    "failure_action": "append five structured failures; retry only through compliant public rendering or official announcements",
+    "job_changes_action": "no normalized job changes for this batch",
+    "status_guard": "never set active_verified automatically",
+    "next_priority_indices": [421, 422, 423, 424],
+    "next_priority_resolution": "resolve names and IDs from company_seed_1000 before audit; do not infer"
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
