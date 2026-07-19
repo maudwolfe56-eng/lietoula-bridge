@@ -1,44 +1,45 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-18T23:47:23Z",
+  "updated_at": "2026-07-19T00:44:32Z",
   "branch": "research/company1000-crawler-20260713",
-  "last_completed_batch": "manual_batch_0417_0420_20260718T234723Z",
+  "last_completed_batch": "manual_batch_0425_0428_20260719T004432Z",
   "progress": {
     "target_companies": 1000,
     "seeded_companies": 1020,
-    "last_processed_index": 420,
-    "next_batch_start_index": 421,
-    "manual_batches_reconciled_through_index": 420,
+    "last_processed_index": 428,
+    "next_batch_start_index": 429,
+    "manual_batches_reconciled_through_index": 428,
     "aggregate_rebuild_required": true,
-    "aggregate_count_note": "Batch 0417-0420 added no JobImport records and five structured failures; aggregate counters require deterministic rebuild from all deltas before publication."
+    "aggregate_count_note": "Batch 0425-0428 added no JobImport or JobChanges records and four structured failures; aggregate counters require deterministic rebuild from all deltas before publication."
   },
   "last_batch": {
     "companies_audited": 4,
     "official_entries_verified": 3,
     "official_entry_candidates_pending": 1,
     "current_roles_observed": 0,
-    "unresolved_official_job_detail_routes_observed": 5,
     "jobs_added_candidate_raw": 0,
     "jobs_review_pending": 0,
     "jobs_active_verified": 0,
-    "failures_added": 5,
+    "failures_added": 4,
     "job_changes_added": 0,
     "final_acceptance_added": 0
   },
   "next_work": [
-    {"priority":1,"index":421,"action":"resolve_company_id_and_name_from_company_seed_1000_then_verify_official_recruitment_entry_and_enumerate_public_inventory"},
-    {"priority":2,"index":422,"action":"resolve_company_id_and_name_from_company_seed_1000_then_verify_official_recruitment_entry_and_enumerate_public_inventory"},
-    {"priority":3,"index":423,"action":"resolve_company_id_and_name_from_company_seed_1000_then_verify_official_recruitment_entry_and_enumerate_public_inventory"},
-    {"priority":4,"index":424,"action":"resolve_company_id_and_name_from_company_seed_1000_then_verify_official_recruitment_entry_and_enumerate_public_inventory"},
-    {"priority":5,"company_id":"cn-indtech-0415","company_name":"科沃斯机器人股份有限公司","action":"continue official pages 2-4 and retry unresolved details"},
-    {"priority":6,"company_id":"cn-indtech-0414","company_name":"欧普照明股份有限公司","action":"enumerate full official inventory and resolve core detail fields"}
+    {"priority": 1, "index": 429, "action": "resolve_company_id_and_name_from_company_seed_1000_then_verify_official_recruitment_entry_and_enumerate_public_inventory"},
+    {"priority": 2, "index": 430, "action": "resolve_company_id_and_name_from_company_seed_1000_then_verify_official_recruitment_entry_and_enumerate_public_inventory"},
+    {"priority": 3, "index": 431, "action": "resolve_company_id_and_name_from_company_seed_1000_then_verify_official_recruitment_entry_and_enumerate_public_inventory"},
+    {"priority": 4, "index": 432, "action": "resolve_company_id_and_name_from_company_seed_1000_then_verify_official_recruitment_entry_and_enumerate_public_inventory"},
+    {"priority": 5, "company_id": "cn-indtech-0425", "company_name": "深圳市汇川技术股份有限公司", "action": "resolve compliant public Zhiye inventory and role-level details"},
+    {"priority": 6, "company_id": "cn-indtech-0426", "company_name": "南京埃斯顿自动化股份有限公司", "action": "confirm direct official linkage to branded recruitment portal and resolve public inventory"},
+    {"priority": 7, "company_id": "cn-indtech-0427", "company_name": "沈阳新松机器人自动化股份有限公司", "action": "resolve compliant public Zhiye inventory and role-level details"},
+    {"priority": 8, "company_id": "cn-indtech-0428", "company_name": "大族激光科技产业集团股份有限公司", "action": "resolve official Moka inventory, separating group and subsidiary role sets"}
   ],
   "source_table_gap_review": {
     "missing_company_ids": ["cn-health-0373", "cn-health-0383", "cn-indtech-0402", "cn-indtech-0403", "cn-indtech-0405", "cn-indtech-0407"],
     "status": "unresolved",
     "action": "audit company_seed merge, deduplication and CompanySource master generation before assigning or repairing missing indices"
   },
-  "last_checkpoint": "research/company1000/runtime/manual_checkpoint_20260718T234723Z_batch_0417_0420.json",
+  "last_checkpoint": "research/company1000/runtime/manual_checkpoint_20260719T004432Z_batch_0425_0428.json",
   "hard_rules": {
     "do_not_bypass_login_or_captcha": true,
     "do_not_bypass_paywall_or_access_control": true,
