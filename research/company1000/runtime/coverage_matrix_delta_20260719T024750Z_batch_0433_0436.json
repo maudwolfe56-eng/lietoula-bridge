@@ -1,0 +1,25 @@
+{
+  "schema_version": "2.1",
+  "batch": "manual_batch_0433_0436_20260719T024750Z",
+  "observed_at": "2026-07-19T02:47:50+00:00",
+  "priority_indices_handled": [433, 434, 435, 436],
+  "company_ids": [
+    "cn-indtech-0433",
+    "cn-indtech-0434",
+    "cn-indtech-0435",
+    "cn-indtech-0436"
+  ],
+  "identified_companies_audited": 3,
+  "source_table_gaps_recorded": 1,
+  "official_entries_verified": 3,
+  "official_entry_candidates_pending": 1,
+  "roles_normalized": 0,
+  "candidate_raw_added": 0,
+  "review_pending_added": 0,
+  "active_verified_added": 0,
+  "failures_added": 4,
+  "job_changes_added": 0,
+  "final_acceptance_added": 0,
+  "aggregate_rebuild_required": true,
+  "notes": "Priority index 433 remains an auditable CompanySource master gap and no company identity was inferred. Official recruitment entry provenance was verified for Tianma, Visionox and GigaDevice through their official company websites, but their linked Moka portals did not expose a complete auditable current role-level inventory with stable unique detail URLs and all required fields. No JobImport records were created."
+}
