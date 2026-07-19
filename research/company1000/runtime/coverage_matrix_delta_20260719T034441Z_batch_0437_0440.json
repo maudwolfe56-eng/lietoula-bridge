@@ -1,0 +1,26 @@
+{
+  "schema_version": "2.1",
+  "batch": "manual_batch_0437_0440_20260719T034441Z",
+  "observed_at": "2026-07-19T03:44:41+00:00",
+  "priority_indices_handled": [437, 438, 439, 440],
+  "company_ids": [
+    "cn-indtech-0437",
+    "cn-indtech-0438",
+    "cn-indtech-0439",
+    "cn-indtech-0440"
+  ],
+  "identified_companies_audited": 4,
+  "source_table_gaps_recorded": 0,
+  "official_entries_verified": 3,
+  "official_entry_candidates_pending": 1,
+  "current_roles_observed": 8,
+  "roles_normalized": 0,
+  "candidate_raw_added": 0,
+  "review_pending_added": 0,
+  "active_verified_added": 0,
+  "failures_added": 4,
+  "job_changes_added": 0,
+  "final_acceptance_added": 0,
+  "aggregate_rebuild_required": true,
+  "notes": "Official recruitment provenance was verified for Montage Technology, NAURA and Piotech. Montage exposed eight role blocks, but its shared listing and generic CAPTCHA application form did not provide unique role-level URLs or freshness dates. AMEC remained behind a human-verification control that was not bypassed. NAURA's linked portal was client-rendered without auditable role rows, and Piotech's official recruitment section exposed no current role inventory. No JobImport or JobChanges records were created."
+}
