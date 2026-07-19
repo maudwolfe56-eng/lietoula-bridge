@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-19T00:25:43Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0421_0424",
+  "processed_indices": [421, 422, 423, 424],
+  "processed_company_ids": ["cn-indtech-0421", "cn-indtech-0422", "cn-indtech-0423", "cn-indtech-0424"],
+  "companies_audited": 4,
+  "official_recruitment_entries_verified": 4,
+  "official_entry_candidates_pending": 0,
+  "companies_final_acceptance_met": 0,
+  "public_shared_listing_pages_observed": 12,
+  "official_2026_recruitment_announcements_observed": 1,
+  "current_roles_normalized": 0,
+  "jobs_added": 0,
+  "job_status_additions": {"candidate_raw": 0, "review_pending": 0, "active_verified": 0, "inactive_expired": 0},
+  "job_changes_added": 0,
+  "failures_added": 4,
+  "files": {
+    "company_source": "research/company1000/output/company_source_manual_batch_0421_0424_20260719T002543Z.jsonl",
+    "coverage": "research/company1000/output/coverage_manual_batch_0421_0424_20260719T002543Z.jsonl",
+    "failures": "research/company1000/output/failures_manual_batch_0421_0424_20260719T002543Z.jsonl",
+    "job_changes": "research/company1000/output/job_changes_manual_batch_0421_0424_20260719T002543Z.jsonl",
+    "job_import": "research/company1000/output/jobs_manual_batch_0421_0424_20260719T002543Z.jsonl",
+    "checkpoint": "research/company1000/runtime/manual_checkpoint_20260719T002543Z_batch_0421_0424.json",
+    "weekly_update": "research/company1000/deliverables/weekly_update_20260719T002543Z.json",
+    "run_summary": "research/company1000/deliverables/run_summary_manual_batch_0421_0424_20260719T002543Z.json"
+  },
+  "company_results": [
+    {"company_id":"cn-indtech-0421","company_name":"欣旺达电子股份有限公司","official_entry_verified":true,"current_roles_normalized":0,"jobs_added":0,"result":"official_company_careers_page_links_official_zhiye_portal_public_inventory_and_detail_fields_unresolved","final_acceptance_met":false},
+    {"company_id":"cn-indtech-0422","company_name":"惠州亿纬锂能股份有限公司","official_entry_verified":true,"current_roles_normalized":0,"jobs_added":0,"result":"official_twelve_page_shared_social_inventory_observed_unique_role_urls_and_freshness_unresolved","final_acceptance_met":false},
+    {"company_id":"cn-indtech-0423","company_name":"国轩高科股份有限公司","official_entry_verified":true,"current_roles_normalized":0,"jobs_added":0,"result":"official_zhiye_portal_verified_legacy_shared_listing_not_sufficient_for_current_role_inventory","final_acceptance_met":false},
+    {"company_id":"cn-indtech-0424","company_name":"无锡先导智能装备股份有限公司","official_entry_verified":true,"current_roles_normalized":0,"jobs_added":0,"result":"official_social_and_campus_channels_and_2026_announcement_verified_role_inventory_and_fields_unresolved","final_acceptance_met":false}
+  ],
+  "next_priority_indices": [425, 426, 427, 428],
+  "next_priority_company_ids": ["cn-indtech-0425", "cn-indtech-0426", "cn-indtech-0427", "cn-indtech-0428"],
+  "next_priority_company_names": ["深圳市汇川技术股份有限公司", "南京埃斯顿自动化股份有限公司", "沈阳新松机器人自动化股份有限公司", "大族激光科技产业集团股份有限公司"],
+  "next_priority_resolution": "verify only official company career pages, official recruitment portals, official recruitment announcements, or government and regulatory public information; enumerate public current role inventory without authentication or access-control bypass",
+  "source_table_gap_review": {
+    "missing_company_ids": ["cn-health-0373", "cn-health-0383", "cn-indtech-0402", "cn-indtech-0403", "cn-indtech-0405", "cn-indtech-0407"],
+    "status": "unresolved",
+    "action": "audit company-seed merge, deduplication and CompanySource master generation before assigning or repairing missing indices; do not invent companies or IDs"
+  },
+  "aggregate_counts_status": "batch delta complete; aggregate CompanySource, JobImport, Coverage, Failures, JobChanges and global run_summary still require deterministic rebuild from all deltas",
+  "policy": {
+    "official_sources_only": true,
+    "third_party_as_sole_source_allowed": false,
+    "login_captcha_paywall_bypass_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
