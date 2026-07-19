@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-19T03:44:41Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0437_0440",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "company_source_updates": [
+    {
+      "company_id": "cn-indtech-0437",
+      "company_name": "澜起科技股份有限公司",
+      "short_name": "澜起科技",
+      "industry": "集成电路设计",
+      "official_website": "https://www.montage-tech.com/",
+      "career_url": "https://www.montage-tech.com/index.php/cn/Open_Positions",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_company_recruitment_listing_page",
+      "verified_at": "2026-07-19T03:44:41+00:00",
+      "final_acceptance_met": false,
+      "review_recommendation": "retain source and eight-role observation; require stable unique official role URL and freshness fields before JobImport; do not submit CAPTCHA"
+    },
+    {
+      "company_id": "cn-indtech-0438",
+      "company_name": "中微半导体设备（上海）股份有限公司",
+      "short_name": "中微公司",
+      "industry": "半导体设备",
+      "official_website": "https://www.amec-inc.com/",
+      "career_url": "https://www.amec-inc.com/",
+      "seed_status": "official_entry_candidate",
+      "source_type": "official_company_website_access_controlled",
+      "verified_at": "2026-07-19T03:44:41+00:00",
+      "final_acceptance_met": false,
+      "review_recommendation": "retry ordinary public access only; retain access-restricted evidence if human verification persists; no bypass and no JobImport"
+    },
+    {
+      "company_id": "cn-indtech-0439",
+      "company_name": "北方华创科技集团股份有限公司",
+      "short_name": "北方华创",
+      "industry": "半导体设备与电子装备",
+      "official_website": "https://www.naura.com/",
+      "career_url": "https://career.naura.com/social",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_company_website_linked_recruitment_portal",
+      "verified_at": "2026-07-19T03:44:41+00:00",
+      "final_acceptance_met": false,
+      "review_recommendation": "retain source; resolve compliant public client-rendered current role inventory and stable role URLs before JobImport"
+    },
+    {
+      "company_id": "cn-indtech-0440",
+      "company_name": "拓荆科技股份有限公司",
+      "short_name": "拓荆科技",
+      "industry": "半导体设备",
+      "official_website": "https://www.piotech.cn/",
+      "career_url": "https://www.piotech.cn/",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_company_website_recruitment_section",
+      "verified_at": "2026-07-19T03:44:41+00:00",
+      "final_acceptance_met": false,
+      "review_recommendation": "upsert corrected official domain piotech.cn and locate an official-site-linked current inventory or official announcement before JobImport"
+    }
+  ],
+  "job_import_updates": [],
+  "coverage_updates": [
+    {
+      "company_id": "cn-indtech-0437",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": true,
+      "current_roles_observed": 8,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "eight_visible_role_blocks_enumerated_but_not_importable_without_unique_role_urls_and_freshness_fields",
+      "failure_reason": "shared_listing_and_generic_captcha_application_no_unique_job_detail_urls",
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-indtech-0438",
+      "official_entry_verified": false,
+      "current_job_inventory_enumerated": false,
+      "current_roles_observed": 0,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_domain_access_blocked_by_human_verification_before_recruitment_entry",
+      "failure_reason": "official_site_human_verification_access_control_no_bypass",
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-indtech-0439",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "current_roles_observed": 0,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_join_page_links_recruitment_portals_but_current_role_inventory_is_client_rendered",
+      "failure_reason": "official_career_portal_client_rendered_no_auditable_inventory",
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-indtech-0440",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "current_roles_observed": 0,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_recruitment_section_verified_after_domain_correction_but_current_inventory_unresolved",
+      "failure_reason": "official_recruitment_section_without_auditable_current_role_inventory",
+      "final_acceptance_met": false
+    }
+  ],
+  "update_summary": {
+    "priority_indices_handled": 4,
+    "identified_companies_audited": 4,
+    "source_table_gaps_recorded": 0,
+    "official_recruitment_entries_verified": 3,
+    "official_entry_candidates_pending": 1,
+    "current_roles_observed": 8,
+    "new_jobs_added": 0,
+    "changed_jobs_added": 0,
+    "closed_or_expired_jobs_added": 0,
+    "candidate_raw_added": 0,
+    "review_pending_suggested": 0,
+    "active_verified_added": 0,
+    "reason_no_job_import": "No observed role met all required identity and freshness rules. Montage exposed eight role blocks but no stable unique role URLs or dates; AMEC required human verification; NAURA was client-rendered without auditable role rows; Piotech exposed a recruitment section but no current inventory."
+  },
+  "cursor_handoff": {
+    "company_source_action": "upsert all four company_source_updates by company_id, including corrected Piotech official domain",
+    "job_import_action": "no insert for this batch",
+    "coverage_action": "append all coverage_updates and keep final_acceptance_met=false",
+    "failure_action": "append the four structured failures from the batch failure artifact",
+    "status_guard": "never set active_verified automatically",
+    "next_priority_indices": [441, 442, 443, 444]
+  }
+}
