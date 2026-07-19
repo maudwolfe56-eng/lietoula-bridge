@@ -1,16 +1,16 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-19T00:44:32Z",
+  "updated_at": "2026-07-19T01:30:08Z",
   "branch": "research/company1000-crawler-20260713",
-  "last_completed_batch": "manual_batch_0425_0428_20260719T004432Z",
+  "last_completed_batch": "manual_batch_0429_0432_20260719T013008Z",
   "progress": {
     "target_companies": 1000,
     "seeded_companies": 1020,
-    "last_processed_index": 428,
-    "next_batch_start_index": 429,
-    "manual_batches_reconciled_through_index": 428,
+    "last_processed_index": 432,
+    "next_batch_start_index": 433,
+    "manual_batches_reconciled_through_index": 432,
     "aggregate_rebuild_required": true,
-    "aggregate_count_note": "Batch 0425-0428 added no JobImport or JobChanges records and four structured failures; aggregate counters require deterministic rebuild from all deltas before publication."
+    "aggregate_count_note": "Batch 0429-0432 added no JobImport or JobChanges records and four structured failures; aggregate counters require deterministic rebuild from all deltas before publication."
   },
   "last_batch": {
     "companies_audited": 4,
@@ -25,21 +25,21 @@
     "final_acceptance_added": 0
   },
   "next_work": [
-    {"priority": 1, "index": 429, "action": "resolve_company_id_and_name_from_company_seed_1000_then_verify_official_recruitment_entry_and_enumerate_public_inventory"},
-    {"priority": 2, "index": 430, "action": "resolve_company_id_and_name_from_company_seed_1000_then_verify_official_recruitment_entry_and_enumerate_public_inventory"},
-    {"priority": 3, "index": 431, "action": "resolve_company_id_and_name_from_company_seed_1000_then_verify_official_recruitment_entry_and_enumerate_public_inventory"},
-    {"priority": 4, "index": 432, "action": "resolve_company_id_and_name_from_company_seed_1000_then_verify_official_recruitment_entry_and_enumerate_public_inventory"},
-    {"priority": 5, "company_id": "cn-indtech-0425", "company_name": "深圳市汇川技术股份有限公司", "action": "resolve compliant public Zhiye inventory and role-level details"},
-    {"priority": 6, "company_id": "cn-indtech-0426", "company_name": "南京埃斯顿自动化股份有限公司", "action": "confirm direct official linkage to branded recruitment portal and resolve public inventory"},
-    {"priority": 7, "company_id": "cn-indtech-0427", "company_name": "沈阳新松机器人自动化股份有限公司", "action": "resolve compliant public Zhiye inventory and role-level details"},
-    {"priority": 8, "company_id": "cn-indtech-0428", "company_name": "大族激光科技产业集团股份有限公司", "action": "resolve official Moka inventory, separating group and subsidiary role sets"}
+    {"priority": 1, "index": 433, "action": "resolve_company_id_and_name_from_company_seed_1000_then_verify_official_recruitment_entry_and_enumerate_public_inventory"},
+    {"priority": 2, "index": 434, "action": "resolve_company_id_and_name_from_company_seed_1000_then_verify_official_recruitment_entry_and_enumerate_public_inventory"},
+    {"priority": 3, "index": 435, "action": "resolve_company_id_and_name_from_company_seed_1000_then_verify_official_recruitment_entry_and_enumerate_public_inventory"},
+    {"priority": 4, "index": 436, "action": "resolve_company_id_and_name_from_company_seed_1000_then_verify_official_recruitment_entry_and_enumerate_public_inventory"},
+    {"priority": 5, "company_id": "cn-indtech-0429", "company_name": "华工科技产业股份有限公司", "action": "resolve compliant public Redsea inventory and role-level details"},
+    {"priority": 6, "company_id": "cn-indtech-0430", "company_name": "中控技术股份有限公司", "action": "resolve official Join Us application target and current public inventory"},
+    {"priority": 7, "company_id": "cn-indtech-0431", "company_name": "上海宝信软件股份有限公司", "action": "retry official job-recruitment page and enumerate current role-level details"},
+    {"priority": 8, "company_id": "cn-indtech-0432", "company_name": "富士康工业互联网股份有限公司", "action": "resolve current official application inventory and separate historical campus campaign content"}
   ],
   "source_table_gap_review": {
-    "missing_company_ids": ["cn-health-0373", "cn-health-0383", "cn-indtech-0402", "cn-indtech-0403", "cn-indtech-0405", "cn-indtech-0407"],
+    "missing_company_ids": ["cn-health-0373", "cn-health-0383", "cn-indtech-0402", "cn-indtech-0403", "cn-indtech-0405", "cn-indtech-0407", "cn-indtech-0433"],
     "status": "unresolved",
     "action": "audit company_seed merge, deduplication and CompanySource master generation before assigning or repairing missing indices"
   },
-  "last_checkpoint": "research/company1000/runtime/manual_checkpoint_20260719T004432Z_batch_0425_0428.json",
+  "last_checkpoint": "research/company1000/runtime/manual_checkpoint_20260719T013008Z_batch_0429_0432.json",
   "hard_rules": {
     "do_not_bypass_login_or_captcha": true,
     "do_not_bypass_paywall_or_access_control": true,
