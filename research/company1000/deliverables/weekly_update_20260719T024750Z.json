@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-19T02:47:50Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0433_0436",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "source_table_gap_updates": [
+    {
+      "company_id": "cn-indtech-0433",
+      "status": "company_identity_and_source_master_record_unresolved",
+      "evidence": "The persisted checkpoint and missing_company_ids review confirm cn-indtech-0433 is absent from the consolidated CompanySource master.",
+      "action": "deterministically rebuild and reconcile the seed-to-CompanySource mapping; do not infer the company identity"
+    }
+  ],
+  "company_source_updates": [
+    {
+      "company_id": "cn-indtech-0434",
+      "company_name": "天马微电子股份有限公司",
+      "short_name": "深天马",
+      "industry": "显示面板与电子器件",
+      "official_website": "https://www.tianma.cn/",
+      "career_url": "https://app.mokahr.com/campus-recruitment/tianma/140235",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_company_website_linked_moka_recruitment_portal",
+      "verified_at": "2026-07-19T02:47:50+00:00",
+      "final_acceptance_met": false,
+      "review_recommendation": "retain company source and normalized official domain; resolve public current role inventory and unique official role details before JobImport"
+    },
+    {
+      "company_id": "cn-indtech-0435",
+      "company_name": "维信诺科技股份有限公司",
+      "short_name": "维信诺",
+      "industry": "OLED显示与电子器件",
+      "official_website": "https://www.visionox.com/",
+      "career_url": "https://app.mokahr.com/apply/newvisionox/24734/",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_company_join_us_page_linked_moka_social_recruitment_portal",
+      "verified_at": "2026-07-19T02:47:50+00:00",
+      "final_acceptance_met": false,
+      "review_recommendation": "retain company source; retry compliant public role inventory and require stable official detail URLs plus complete core fields before JobImport"
+    },
+    {
+      "company_id": "cn-indtech-0436",
+      "company_name": "北京兆易创新科技股份有限公司",
+      "short_name": "兆易创新",
+      "industry": "集成电路设计",
+      "official_website": "https://www.gigadevice.com.cn/",
+      "career_url": "https://app.mokahr.com/social-recruitment/gigadevice/100227",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_company_career_page_linked_moka_social_recruitment_portal",
+      "verified_at": "2026-07-19T02:47:50+00:00",
+      "final_acceptance_met": false,
+      "review_recommendation": "retain company source and normalized Chinese official domain; resolve redirect-safe public inventory before JobImport"
+    }
+  ],
+  "job_import_updates": [],
+  "coverage_updates": [
+    {
+      "company_id": "cn-indtech-0433",
+      "official_entry_verified": false,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "source_table_gap_company_identity_and_official_entry_unresolved",
+      "failure_reason": "company_source_master_missing_seed_index_record",
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-indtech-0434",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_company_website_links_moka_portal_but_public_auditable_inventory_unresolved",
+      "failure_reason": "official_moka_shell_no_public_auditable_current_role_inventory",
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-indtech-0435",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_join_us_page_links_2026_recruitment_portals_but_public_current_role_inventory_unresolved",
+      "failure_reason": "official_moka_target_unavailable_or_dynamic_no_auditable_role_inventory",
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-indtech-0436",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_career_page_links_social_moka_portal_but_public_inventory_unresolved_due_redirect_loop",
+      "failure_reason": "official_moka_social_portal_redirect_loop_no_auditable_inventory",
+      "final_acceptance_met": false
+    }
+  ],
+  "update_summary": {
+    "priority_indices_handled": 4,
+    "identified_companies_audited": 3,
+    "source_table_gaps_recorded": 1,
+    "official_recruitment_entries_verified": 3,
+    "new_jobs_added": 0,
+    "changed_jobs_added": 0,
+    "closed_or_expired_jobs_added": 0,
+    "candidate_raw_added": 0,
+    "review_pending_suggested": 0,
+    "active_verified_added": 0,
+    "reason_no_job_import": "The unresolved source-master gap at index 433 prevents an official-source audit for that record. The three identified companies link official Moka recruitment portals, but no portal exposed a complete auditable current role inventory with stable unique role URLs and all required fields."
+  },
+  "cursor_handoff": {
+    "company_source_action": "upsert the three company_source_updates by company_id; repair cn-indtech-0433 only after deterministic seed reconciliation",
+    "job_import_action": "no insert for this batch",
+    "coverage_action": "append all coverage_updates and keep final_acceptance_met=false",
+    "failure_action": "append the four structured failures from the batch failure artifact",
+    "status_guard": "never set active_verified automatically",
+    "next_priority_indices": [437, 438, 439, 440]
+  }
+}
