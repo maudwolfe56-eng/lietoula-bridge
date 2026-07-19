@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-19T01:30:08Z",
+  "branch": "research/company1000-crawler-20260713",
+  "last_completed_batch": "manual_batch_0429_0432_20260719T013008Z",
+  "progress": {
+    "target_companies": 1000,
+    "seeded_companies": 1020,
+    "last_processed_index": 432,
+    "next_batch_start_index": 433,
+    "manual_batches_reconciled_through_index": 432,
+    "aggregate_rebuild_required": true,
+    "aggregate_count_note": "Batch 0429-0432 added no JobImport or JobChanges records and four structured failures; aggregate counters require deterministic rebuild from all deltas before publication."
+  },
+  "last_batch": {
+    "companies_audited": 4,
+    "official_entries_verified": 3,
+    "official_entry_candidates_pending": 1,
+    "current_roles_observed": 0,
+    "jobs_added_candidate_raw": 0,
+    "jobs_review_pending": 0,
+    "jobs_active_verified": 0,
+    "failures_added": 4,
+    "job_changes_added": 0,
+    "final_acceptance_added": 0
+  },
+  "next_work": [
+    {"priority": 1, "index": 433, "action": "resolve_company_id_and_name_from_company_seed_1000_then_verify_official_recruitment_entry_and_enumerate_public_inventory"},
+    {"priority": 2, "index": 434, "action": "resolve_company_id_and_name_from_company_seed_1000_then_verify_official_recruitment_entry_and_enumerate_public_inventory"},
+    {"priority": 3, "index": 435, "action": "resolve_company_id_and_name_from_company_seed_1000_then_verify_official_recruitment_entry_and_enumerate_public_inventory"},
+    {"priority": 4, "index": 436, "action": "resolve_company_id_and_name_from_company_seed_1000_then_verify_official_recruitment_entry_and_enumerate_public_inventory"},
+    {"priority": 5, "company_id": "cn-indtech-0429", "company_name": "华工科技产业股份有限公司", "action": "resolve compliant public Redsea inventory and role-level details"},
+    {"priority": 6, "company_id": "cn-indtech-0430", "company_name": "中控技术股份有限公司", "action": "resolve official Join Us application target and current public inventory"},
+    {"priority": 7, "company_id": "cn-indtech-0431", "company_name": "上海宝信软件股份有限公司", "action": "retry official job-recruitment page and enumerate current role-level details"},
+    {"priority": 8, "company_id": "cn-indtech-0432", "company_name": "富士康工业互联网股份有限公司", "action": "resolve current official application inventory and separate historical campus campaign content"}
+  ],
+  "source_table_gap_review": {
+    "missing_company_ids": ["cn-health-0373", "cn-health-0383", "cn-indtech-0402", "cn-indtech-0403", "cn-indtech-0405", "cn-indtech-0407", "cn-indtech-0433"],
+    "status": "unresolved",
+    "action": "audit company_seed merge, deduplication and CompanySource master generation before assigning or repairing missing indices"
+  },
+  "last_checkpoint": "research/company1000/runtime/manual_checkpoint_20260719T013008Z_batch_0429_0432.json",
+  "hard_rules": {
+    "do_not_bypass_login_or_captcha": true,
+    "do_not_bypass_paywall_or_access_control": true,
+    "do_not_infer_salary": true,
+    "do_not_set_active_verified_automatically": true,
+    "new_jobs_default_candidate_raw": true,
+    "retain_source_evidence": true,
+    "third_party_not_sufficient_as_sole_source": true
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
