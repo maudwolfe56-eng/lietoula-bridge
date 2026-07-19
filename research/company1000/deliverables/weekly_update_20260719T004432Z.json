@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-19T00:44:32Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "0425_0428",
+  "scope": "China mainland priority enterprise-source verification and job-library handoff",
+  "policy": {
+    "official_sources_only": true,
+    "login_captcha_paywall_bypass_allowed": false,
+    "third_party_as_sole_source_allowed": false,
+    "salary_inference_allowed": false,
+    "new_job_default_status": "candidate_raw",
+    "auto_active_verified": false
+  },
+  "company_source_updates": [
+    {
+      "company_id": "cn-indtech-0425",
+      "company_name": "深圳市汇川技术股份有限公司",
+      "short_name": "汇川技术",
+      "industry": "工业自动化与新能源汽车核心部件",
+      "official_website": "https://www.inovance.com/",
+      "career_url": "https://inovance.zhiye.com/",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_company_website_and_branded_zhiye_recruitment_portal",
+      "verified_at": "2026-07-19T00:44:32+00:00",
+      "final_acceptance_met": false,
+      "review_recommendation": "retain_company_source; resolve compliant public inventory and unique official role details before JobImport"
+    },
+    {
+      "company_id": "cn-indtech-0426",
+      "company_name": "南京埃斯顿自动化股份有限公司",
+      "short_name": "埃斯顿",
+      "industry": "工业自动化、机器人与智能制造",
+      "official_website": "https://www.estun.com/",
+      "career_url": "https://estun1.zhiye.com/",
+      "seed_status": "official_entry_candidate",
+      "source_type": "official_company_website_plus_branded_zhiye_portal_pending_direct_link_audit",
+      "verified_at": "2026-07-19T00:44:32+00:00",
+      "final_acceptance_met": false,
+      "review_recommendation": "confirm direct official linkage before inventory resolution; do not create JobImport from third-party discovery"
+    },
+    {
+      "company_id": "cn-indtech-0427",
+      "company_name": "沈阳新松机器人自动化股份有限公司",
+      "short_name": "新松机器人",
+      "industry": "机器人与智能制造系统",
+      "official_website": "https://www.siasun.com/",
+      "career_url": "https://siasun.zhiye.com/",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_company_careers_page_linked_zhiye_recruitment_portal",
+      "verified_at": "2026-07-19T00:44:32+00:00",
+      "final_acceptance_met": false,
+      "review_recommendation": "retain_company_source; resolve compliant public inventory and unique official role details before JobImport"
+    },
+    {
+      "company_id": "cn-indtech-0428",
+      "company_name": "大族激光科技产业集团股份有限公司",
+      "short_name": "大族激光",
+      "industry": "激光、机器人与智能制造装备",
+      "official_website": "https://www.hanslaser.com/",
+      "career_url": "https://app.mokahr.com/social-recruitment/hanslaser/46382",
+      "seed_status": "official_entry_verified",
+      "source_type": "official_company_website_linked_moka_recruitment_portal",
+      "verified_at": "2026-07-19T00:44:32+00:00",
+      "final_acceptance_met": false,
+      "review_recommendation": "retain_company_source; resolve official Moka inventory and separate group from subsidiary roles before JobImport"
+    }
+  ],
+  "job_import_updates": [],
+  "coverage_updates": [
+    {
+      "company_id": "cn-indtech-0425",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_branded_zhiye_portal_verified_but_public_auditable_inventory_unresolved",
+      "failure_reason": "official_zhiye_dynamic_shell_no_public_auditable_inventory",
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-indtech-0426",
+      "official_entry_verified": false,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "branded_zhiye_portal_observed_but_direct_official_linkage_and_public_inventory_unresolved",
+      "failure_reason": "branded_portal_direct_official_linkage_and_dynamic_inventory_unresolved",
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-indtech-0427",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_careers_page_linked_zhiye_portal_but_public_auditable_inventory_unresolved",
+      "failure_reason": "official_zhiye_dynamic_shell_no_public_auditable_inventory",
+      "final_acceptance_met": false
+    },
+    {
+      "company_id": "cn-indtech-0428",
+      "official_entry_verified": true,
+      "current_job_inventory_enumerated": false,
+      "roles_normalized_this_run": 0,
+      "enumeration_status": "official_company_site_linked_moka_portal_but_public_group_inventory_unresolved",
+      "failure_reason": "official_moka_dynamic_shell_no_public_auditable_inventory",
+      "final_acceptance_met": false
+    }
+  ],
+  "update_summary": {
+    "companies_audited": 4,
+    "official_recruitment_entries_verified": 3,
+    "official_entry_candidates_pending": 1,
+    "new_jobs_added": 0,
+    "changed_jobs_added": 0,
+    "closed_or_expired_jobs_added": 0,
+    "candidate_raw_added": 0,
+    "review_pending_suggested": 0,
+    "active_verified_added": 0,
+    "reason_no_job_import": "No role in this batch simultaneously exposed an auditable official current inventory, stable unique role URL, title, location, responsibilities, requirements and freshness evidence."
+  },
+  "cursor_handoff": {
+    "company_source_action": "upsert company_source_updates by company_id; preserve source evidence and verified_at",
+    "job_import_action": "no insert for this batch",
+    "coverage_action": "append coverage_updates and keep final_acceptance_met=false",
+    "failure_action": "record one structured failure per unresolved official inventory using the batch failure artifact",
+    "status_guard": "never set active_verified automatically",
+    "next_priority_indices": [429, 430, 431, 432]
+  }
+}
