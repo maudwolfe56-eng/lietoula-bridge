@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.1",
+  "generated_at": "2026-07-19T03:44:41Z",
+  "branch": "research/company1000-crawler-20260713",
+  "batch": "manual_batch_0437_0440_20260719T034441Z",
+  "priority_indices_handled": 4,
+  "companies_audited": 4,
+  "source_table_gaps_recorded": 0,
+  "official_entries_verified": 3,
+  "official_entry_candidates_pending": 1,
+  "current_roles_observed": 8,
+  "job_import_records_added": 0,
+  "candidate_raw_added": 0,
+  "review_pending_added": 0,
+  "active_verified_added": 0,
+  "failures_added": 4,
+  "job_changes_added": 0,
+  "final_acceptance_met": false,
+  "aggregate_rebuild_required": true,
+  "reason_no_job_import": "Montage Technology's official listing exposed eight role blocks with responsibilities, requirements and locations, but all shared one generic CAPTCHA application form and lacked stable unique role-detail URLs, publication dates and deadlines. AMEC was blocked by human verification that was not bypassed. NAURA's official linked portal was client-rendered without auditable role rows. Piotech's corrected official domain confirmed a recruitment section but exposed no current role inventory or unique role URLs. Required JobImport identity, currentness and completeness rules were therefore not met.",
+  "artifacts": [
+    "research/company1000/output/company_source_manual_batch_0437_0440_20260719T034441Z.jsonl",
+    "research/company1000/output/coverage_manual_batch_0437_0440_20260719T034441Z.jsonl",
+    "research/company1000/output/failures_manual_batch_0437_0440_20260719T034441Z.jsonl",
+    "research/company1000/output/jobs_manual_batch_0437_0440_20260719T034441Z.jsonl",
+    "research/company1000/output/job_changes_manual_batch_0437_0440_20260719T034441Z.jsonl",
+    "research/company1000/runtime/coverage_matrix_delta_20260719T034441Z_batch_0437_0440.json",
+    "research/company1000/runtime/manual_checkpoint_20260719T034441Z_batch_0437_0440.json"
+  ],
+  "compliance": {
+    "official_sources_only_for_final_evidence": true,
+    "third_party_as_sole_source_used": false,
+    "login_or_captcha_bypass_used": false,
+    "paywall_or_access_control_bypass_used": false,
+    "salary_inference_used": false,
+    "automatic_active_verified_used": false,
+    "new_job_default_status": "candidate_raw"
+  },
+  "next_priority_indices": [441, 442, 443, 444],
+  "retained_backlog": [
+    "cn-indtech-0433 CompanySource master repair",
+    "cn-indtech-0434 public Moka role inventory",
+    "cn-indtech-0435 public Moka role inventory",
+    "cn-indtech-0436 redirect-safe public Moka role inventory",
+    "cn-indtech-0437 unique official role URLs and freshness evidence",
+    "cn-indtech-0438 access-restricted official recruitment entry",
+    "cn-indtech-0439 client-rendered public role inventory",
+    "cn-indtech-0440 official-site-linked current role inventory"
+  ]
+}
