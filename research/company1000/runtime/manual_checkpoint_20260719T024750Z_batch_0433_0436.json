@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-19T02:47:50Z",
+  "branch": "research/company1000-crawler-20260713",
+  "last_completed_batch": "manual_batch_0433_0436_20260719T024750Z",
+  "progress": {
+    "target_companies": 1000,
+    "seeded_companies": 1020,
+    "last_processed_index": 436,
+    "next_batch_start_index": 437,
+    "sequential_priority_indices_handled_through": 436,
+    "unresolved_source_table_gaps_retained": [433],
+    "aggregate_rebuild_required": true,
+    "aggregate_count_note": "Batch 0433-0436 added no JobImport or JobChanges records, three verified CompanySource deltas and four structured failures. Index 433 remains a source-master gap. Aggregate counters require deterministic rebuild from all deltas before publication."
+  },
+  "last_batch": {
+    "priority_indices_handled": 4,
+    "identified_companies_audited": 3,
+    "source_table_gaps_recorded": 1,
+    "official_entries_verified": 3,
+    "official_entry_candidates_pending": 1,
+    "current_roles_observed": 0,
+    "jobs_added_candidate_raw": 0,
+    "jobs_review_pending": 0,
+    "jobs_active_verified": 0,
+    "failures_added": 4,
+    "job_changes_added": 0,
+    "final_acceptance_added": 0
+  },
+  "next_work": [
+    {"priority": 1, "index": 437, "company_id": "cn-indtech-0437", "company_name": "澜起科技股份有限公司", "action": "verify official recruitment entry and enumerate public current role inventory"},
+    {"priority": 2, "index": 438, "company_id": "cn-indtech-0438", "company_name": "中微半导体设备（上海）股份有限公司", "action": "verify official recruitment entry and enumerate public current role inventory"},
+    {"priority": 3, "index": 439, "company_id": "cn-indtech-0439", "company_name": "北方华创科技集团股份有限公司", "action": "verify official recruitment entry and enumerate public current role inventory"},
+    {"priority": 4, "index": 440, "company_id": "cn-indtech-0440", "company_name": "拓荆科技股份有限公司", "action": "verify official recruitment entry and enumerate public current role inventory"},
+    {"priority": 5, "company_id": "cn-indtech-0433", "company_name": "未解析（CompanySource主表缺失）", "action": "rebuild CompanySource deterministically from seed and expansion files, reconcile deduplication and restore the verified company identity before source audit"},
+    {"priority": 6, "company_id": "cn-indtech-0434", "company_name": "天马微电子股份有限公司", "action": "resolve compliant public Moka inventory and current role-level details"},
+    {"priority": 7, "company_id": "cn-indtech-0435", "company_name": "维信诺科技股份有限公司", "action": "retry official Moka social-recruitment inventory and enumerate current role-level details"},
+    {"priority": 8, "company_id": "cn-indtech-0436", "company_name": "北京兆易创新科技股份有限公司", "action": "resolve official Moka redirect loop through compliant public access and enumerate current role-level details"}
+  ],
+  "source_table_gap_review": {
+    "missing_company_ids": ["cn-health-0373", "cn-health-0383", "cn-indtech-0402", "cn-indtech-0403", "cn-indtech-0405", "cn-indtech-0407", "cn-indtech-0433"],
+    "status": "unresolved",
+    "action": "audit company_seed merge, deduplication and CompanySource master generation before assigning or repairing missing indices; never infer the missing company identity"
+  },
+  "last_checkpoint": "research/company1000/runtime/manual_checkpoint_20260719T024750Z_batch_0433_0436.json",
+  "hard_rules": {
+    "do_not_bypass_login_or_captcha": true,
+    "do_not_bypass_paywall_or_access_control": true,
+    "do_not_infer_salary": true,
+    "do_not_set_active_verified_automatically": true,
+    "new_jobs_default_candidate_raw": true,
+    "retain_source_evidence": true,
+    "third_party_not_sufficient_as_sole_source": true
+  },
+  "final_acceptance_met": false,
+  "notification_eligible": false
+}
