@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.1",
+  "batch": "manual_batch_0429_0432_20260719T013008Z",
+  "observed_at": "2026-07-19T01:30:08+00:00",
+  "company_ids": [
+    "cn-indtech-0429",
+    "cn-indtech-0430",
+    "cn-indtech-0431",
+    "cn-indtech-0432"
+  ],
+  "official_entries_verified": 3,
+  "official_entry_candidates_pending": 1,
+  "roles_normalized": 0,
+  "candidate_raw_added": 0,
+  "review_pending_added": 0,
+  "active_verified_added": 0,
+  "failures_added": 4,
+  "job_changes_added": 0,
+  "final_acceptance_added": 0,
+  "aggregate_rebuild_required": true,
+  "notes": "All four companies were audited against official company pages, official recruitment portals or official recruitment announcements. Three official recruitment entries were verified and one remains pending resolution of the official application target. No source exposed a complete, current, role-level public inventory with stable unique detail URLs and all required fields, so no JobImport records were created."
+}
